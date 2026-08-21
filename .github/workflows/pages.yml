@@ -1,0 +1,45 @@
+name: Publicar a carta no GitHub Pages
+
+on:
+  push:
+    branches: [claude/slave-trade-route-maps-ssz5s4]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - name: Buscar o repositório
+        uses: actions/checkout@v4
+
+      - name: Reconstruir index.html a partir dos dados
+        run: node build/gerar.mjs
+
+      - name: Conferir que a carta foi gerada
+        run: test -s index.html
+
+      - name: Configurar o Pages (ativa se ainda não estiver)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Empacotar o site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Publicar
+        id: publicar
+        uses: actions/deploy-pages@v4
