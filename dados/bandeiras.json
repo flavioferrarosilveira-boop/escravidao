@@ -1,0 +1,95 @@
+{
+  "_fonte": "Trans-Atlantic Slave Trade Database (SlaveVoyages.org). EMBARCADOS por bandeira/nacionalidade do navio, 1501-1866.",
+  "bandeiras": [
+    {
+      "id": "portugal",
+      "nome": "Portugal / Brasil",
+      "embarcados": 5848300,
+      "cor": "#1f6f4a",
+      "periodo": "1501-1866",
+      "portos_armadores": [
+        { "nome": "Lisboa", "lon": -9.14, "lat": 38.71 },
+        { "nome": "Rio de Janeiro", "lon": -43.18, "lat": -22.9 },
+        { "nome": "Bahia", "lon": -38.51, "lat": -12.97 },
+        { "nome": "Porto", "lon": -8.61, "lat": 41.15 }
+      ],
+      "nota": "Maior traficante de todos os tempos. Após 1808 a maioria dos navios era armada no próprio Brasil, não em Portugal."
+    },
+    {
+      "id": "gra_bretanha",
+      "nome": "Grã-Bretanha",
+      "embarcados": 3259400,
+      "cor": "#8c2f2f",
+      "periodo": "1562-1808",
+      "portos_armadores": [
+        { "nome": "Liverpool", "lon": -3.0, "lat": 53.41 },
+        { "nome": "Bristol", "lon": -2.59, "lat": 51.45 },
+        { "nome": "Londres", "lon": -0.1, "lat": 51.5 }
+      ],
+      "nota": "Liverpool sozinha armou cerca de 40% de todas as viagens britânicas. Abolição do tráfico em 1807."
+    },
+    {
+      "id": "franca",
+      "nome": "França",
+      "embarcados": 1381400,
+      "cor": "#2f4f8c",
+      "periodo": "1594-1831",
+      "portos_armadores": [
+        { "nome": "Nantes", "lon": -1.55, "lat": 47.22 },
+        { "nome": "La Rochelle", "lon": -1.15, "lat": 46.16 },
+        { "nome": "Bordéus", "lon": -0.58, "lat": 44.84 },
+        { "nome": "Le Havre", "lon": 0.11, "lat": 49.49 }
+      ],
+      "nota": "Nantes foi o maior porto negreiro francês; Saint-Domingue era o destino da maioria."
+    },
+    {
+      "id": "espanha",
+      "nome": "Espanha / Uruguai",
+      "embarcados": 1061500,
+      "cor": "#b8860b",
+      "periodo": "1501-1866",
+      "portos_armadores": [
+        { "nome": "Cádis", "lon": -6.29, "lat": 36.53 },
+        { "nome": "Sevilha", "lon": -5.99, "lat": 37.39 },
+        { "nome": "Havana", "lon": -82.36, "lat": 23.13 },
+        { "nome": "Montevidéu", "lon": -56.19, "lat": -34.9 }
+      ],
+      "nota": "Durante quase dois séculos a Espanha terceirizou o tráfico via asientos (Portugal, Holanda, França, Grã-Bretanha). O grosso do volume espanhol é do séc. XIX, para Cuba."
+    },
+    {
+      "id": "paises_baixos",
+      "nome": "Países Baixos",
+      "embarcados": 554300,
+      "cor": "#c05a1f",
+      "periodo": "1596-1829",
+      "portos_armadores": [
+        { "nome": "Amsterdã", "lon": 4.9, "lat": 52.37 },
+        { "nome": "Middelburg", "lon": 3.61, "lat": 51.5 },
+        { "nome": "Flushing (Vlissingen)", "lon": 3.57, "lat": 51.44 }
+      ],
+      "nota": "Companhia das Índias Ocidentais (WIC). Elmina e Curaçao como entrepostos."
+    },
+    {
+      "id": "estados_unidos",
+      "nome": "Estados Unidos",
+      "embarcados": 305300,
+      "cor": "#6b4fa0",
+      "periodo": "1645-1860",
+      "portos_armadores": [
+        { "nome": "Newport (Rhode Island)", "lon": -71.31, "lat": 41.49 },
+        { "nome": "Bristol (R.I.)", "lon": -71.27, "lat": 41.68 },
+        { "nome": "Charleston", "lon": -79.93, "lat": 32.78 }
+      ],
+      "nota": "Rhode Island dominou o tráfico norte-americano, trocando rum por cativos. Proibido em 1808, continuou clandestino."
+    },
+    {
+      "id": "dinamarca",
+      "nome": "Dinamarca / Báltico",
+      "embarcados": 111000,
+      "cor": "#4a7f9e",
+      "periodo": "1660-1802",
+      "portos_armadores": [{ "nome": "Copenhague", "lon": 12.57, "lat": 55.68 }],
+      "nota": "Primeira potência a decretar o fim do tráfico (1792, com vigência em 1803)."
+    }
+  ]
+}

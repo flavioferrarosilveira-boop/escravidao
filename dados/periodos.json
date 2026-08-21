@@ -1,0 +1,161 @@
+{
+  "_fonte": "Trans-Atlantic Slave Trade Database (SlaveVoyages.org), Estimates. EMBARCADOS por período.",
+  "periodos": [
+    {
+      "id": "xvi",
+      "rotulo": "1501-1600",
+      "embarcados": 277500,
+      "regioes_dominantes": [
+        "senegambia",
+        "centro_ocidental"
+      ],
+      "destinos_dominantes": [
+        "terra_firme",
+        "brasil_pernambuco",
+        "brasil_bahia",
+        "europa_africa",
+        "cuba"
+      ],
+      "bandeiras_dominantes": [
+        "portugal",
+        "espanha"
+      ],
+      "sintese": "Tráfico ainda pequeno. Portugueses levam cativos da Senegâmbia e do Congo para as ilhas atlânticas (São Tomé, Cabo Verde), para a Península Ibérica e, a partir de 1550, para os engenhos de Pernambuco e da Bahia. Hispano-América abastecida por licenças e contratos."
+    },
+    {
+      "id": "xvii",
+      "rotulo": "1601-1700",
+      "embarcados": 1875600,
+      "regioes_dominantes": [
+        "centro_ocidental",
+        "benim",
+        "costa_ouro"
+      ],
+      "destinos_dominantes": [
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "brasil_sudeste",
+        "caribe_britanico",
+        "caribe_holandes",
+        "terra_firme"
+      ],
+      "bandeiras_dominantes": [
+        "portugal",
+        "paises_baixos",
+        "gra_bretanha"
+      ],
+      "sintese": "A revolução do açúcar chega ao Caribe. Holandeses tomam Elmina (1637) e Luanda (1641-48), britânicos ocupam Barbados e Jamaica, franceses as Antilhas. Angola torna-se o grande viveiro do Brasil."
+    },
+    {
+      "id": "xviii",
+      "rotulo": "1701-1800",
+      "embarcados": 6494600,
+      "regioes_dominantes": [
+        "centro_ocidental",
+        "benim",
+        "biafra",
+        "costa_ouro"
+      ],
+      "destinos_dominantes": [
+        "brasil_sudeste",
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "caribe_britanico",
+        "caribe_frances",
+        "america_norte",
+        "caribe_danes",
+        "terra_firme",
+        "caribe_holandes"
+      ],
+      "bandeiras_dominantes": [
+        "gra_bretanha",
+        "portugal",
+        "franca"
+      ],
+      "sintese": "Auge absoluto: mais da metade de todo o tráfico da história ocorre neste século. Liverpool e Nantes dominam; Saint-Domingue torna-se a colônia mais lucrativa do mundo; o ouro de Minas Gerais puxa o tráfico da Costa da Mina para a Bahia."
+    },
+    {
+      "id": "xix",
+      "rotulo": "1801-1866",
+      "embarcados": 3873600,
+      "regioes_dominantes": [
+        "centro_ocidental",
+        "benim",
+        "biafra",
+        "sudeste"
+      ],
+      "destinos_dominantes": [
+        "brasil_sudeste",
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "brasil_norte",
+        "cuba",
+        "rio_da_prata",
+        "porto_rico"
+      ],
+      "bandeiras_dominantes": [
+        "portugal",
+        "espanha"
+      ],
+      "sintese": "Tráfico ilegal e concentrado: Brasil (café e açúcar) e Cuba absorvem quase tudo, sob perseguição do esquadrão britânico. Cresce o embarque em Moçambique. Última viagem documentada às Américas em 1866."
+    }
+  ],
+  "marcos": [
+    {
+      "ano": 1444,
+      "texto": "Primeiro desembarque de cativos africanos em Lagos, Portugal"
+    },
+    {
+      "ano": 1518,
+      "texto": "Primeira licença para viagem direta África–Américas (Carlos V)"
+    },
+    {
+      "ano": 1526,
+      "texto": "Primeira viagem negreira documentada até o Brasil"
+    },
+    {
+      "ano": 1637,
+      "texto": "Holandeses tomam São Jorge da Mina (Elmina)"
+    },
+    {
+      "ano": 1641,
+      "texto": "Holandeses ocupam Luanda (retomada portuguesa em 1648)"
+    },
+    {
+      "ano": 1713,
+      "texto": "Asiento de negros transferido à Grã-Bretanha (Tratado de Utrecht)"
+    },
+    {
+      "ano": 1791,
+      "texto": "Revolução Haitiana começa em Saint-Domingue"
+    },
+    {
+      "ano": 1803,
+      "texto": "Fim efetivo do tráfico dinamarquês"
+    },
+    {
+      "ano": 1807,
+      "texto": "Grã-Bretanha e Estados Unidos proíbem o tráfico (vigência em 1808)"
+    },
+    {
+      "ano": 1815,
+      "texto": "Congresso de Viena: Portugal proíbe o tráfico ao norte do Equador"
+    },
+    {
+      "ano": 1831,
+      "texto": "Lei Feijó no Brasil — 'para inglês ver'; tráfico segue clandestino"
+    },
+    {
+      "ano": 1850,
+      "texto": "Lei Eusébio de Queirós encerra o tráfico para o Brasil"
+    },
+    {
+      "ano": 1866,
+      "texto": "Último desembarque documentado nas Américas (Cuba)"
+    },
+    {
+      "ano": 1888,
+      "texto": "Lei Áurea abole a escravidão no Brasil, último país das Américas"
+    }
+  ]
+}

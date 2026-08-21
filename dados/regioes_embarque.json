@@ -1,0 +1,266 @@
+{
+  "_fonte": "Trans-Atlantic Slave Trade Database (SlaveVoyages.org), Estimates, revisao Eltis 2018-2021. Totais de EMBARCADOS 1501-1866.",
+  "regioes": [
+    {
+      "id": "senegambia",
+      "nome": "Senegâmbia e Atlântico costeiro",
+      "nome_epoca": "Senegâmbia / Rios da Guiné do Cabo Verde",
+      "embarcados": 755500,
+      "porto": {
+        "nome": "Gorée",
+        "lon": -17.4,
+        "lat": 14.7
+      },
+      "portos_secundarios": [
+        {
+          "nome": "São Luís do Senegal",
+          "lon": -16.03,
+          "lat": 16.02
+        },
+        {
+          "nome": "Cacheu",
+          "lon": -16.17,
+          "lat": 12.28
+        },
+        {
+          "nome": "Bissau",
+          "lon": -15.6,
+          "lat": 11.86
+        }
+      ],
+      "povos": [
+        "Wolof",
+        "Mandinga",
+        "Fula",
+        "Serer",
+        "Bambara",
+        "Balanta"
+      ],
+      "polities": "Império do Mali (decadência), Jolof, Kaabu, Futa Toro, Futa Jallon",
+      "nome_carta": "SENEGÂMBIA"
+    },
+    {
+      "id": "serra_leoa",
+      "nome": "Serra Leoa",
+      "nome_epoca": "Costa da Serra Leoa",
+      "embarcados": 388800,
+      "porto": {
+        "nome": "Ilha de Bunce",
+        "lon": -13.2,
+        "lat": 8.5
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Ilhas de Los",
+          "lon": -13.8,
+          "lat": 9.5
+        }
+      ],
+      "povos": [
+        "Temne",
+        "Mende",
+        "Susu",
+        "Baga",
+        "Kissi"
+      ],
+      "polities": "Reinos Mane, Estados Susu e Temne",
+      "nome_carta": "SERRA LEOA"
+    },
+    {
+      "id": "barlavento",
+      "nome": "Costa do Barlavento",
+      "nome_epoca": "Costa da Malagueta / Costa do Barlavento",
+      "embarcados": 336900,
+      "porto": {
+        "nome": "Cabo Monte",
+        "lon": -9.3,
+        "lat": 5.9
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Grande Bassa",
+          "lon": -10.05,
+          "lat": 6.32
+        },
+        {
+          "nome": "Cabo das Palmas",
+          "lon": -7.7,
+          "lat": 4.4
+        }
+      ],
+      "povos": [
+        "Kru",
+        "Vai",
+        "Gola",
+        "Bassa"
+      ],
+      "polities": "Chefias costeiras Kru e Vai",
+      "nome_carta": "COSTA DO BARLAVENTO"
+    },
+    {
+      "id": "costa_ouro",
+      "nome": "Costa do Ouro",
+      "nome_epoca": "Costa do Ouro / Costa da Mina",
+      "embarcados": 1209300,
+      "porto": {
+        "nome": "São Jorge da Mina (Elmina)",
+        "lon": -1.35,
+        "lat": 5.05
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Cape Coast",
+          "lon": -1.24,
+          "lat": 5.1
+        },
+        {
+          "nome": "Anomabu",
+          "lon": -1.12,
+          "lat": 5.17
+        }
+      ],
+      "povos": [
+        "Akan (Fante, Ashanti)",
+        "Ga",
+        "Ewe"
+      ],
+      "polities": "Império Ashanti, Denkyira, Fante, Akwamu",
+      "nome_carta": "COSTA DO OURO"
+    },
+    {
+      "id": "benim",
+      "nome": "Golfo do Benim",
+      "nome_epoca": "Costa dos Escravos / Baía do Benim",
+      "embarcados": 1999100,
+      "porto": {
+        "nome": "Ajudá (Ouidah)",
+        "lon": 2.09,
+        "lat": 6.36
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Porto Novo",
+          "lon": 2.6,
+          "lat": 6.5
+        },
+        {
+          "nome": "Lagos (Onim)",
+          "lon": 3.4,
+          "lat": 6.45
+        }
+      ],
+      "povos": [
+        "Ioruba (Nagô)",
+        "Fon (Jeje)",
+        "Ewe",
+        "Hauçá"
+      ],
+      "polities": "Reino do Daomé, Império Oyo, Reino de Alada, Reino do Benim",
+      "nome_carta": "COSTA DOS ESCRAVOS"
+    },
+    {
+      "id": "biafra",
+      "nome": "Golfo do Biafra",
+      "nome_epoca": "Baía de Biafra / Calabar",
+      "embarcados": 1594600,
+      "porto": {
+        "nome": "Bonny e Velho Calabar",
+        "lon": 7.6,
+        "lat": 4.45
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Novo Calabar",
+          "lon": 6.9,
+          "lat": 4.6
+        },
+        {
+          "nome": "Rio dos Camarões",
+          "lon": 9.4,
+          "lat": 4.0
+        }
+      ],
+      "povos": [
+        "Igbo",
+        "Ibibio",
+        "Efik",
+        "Ijaw"
+      ],
+      "polities": "Confederação Aro, cidades-estado de Bonny e Calabar",
+      "nome_carta": "BAÍA DE BIAFRA"
+    },
+    {
+      "id": "centro_ocidental",
+      "nome": "África Centro-Ocidental",
+      "nome_epoca": "Congo, Loango, Angola e Benguela",
+      "embarcados": 5694600,
+      "porto": {
+        "nome": "São Paulo de Luanda",
+        "lon": 13.23,
+        "lat": -8.83
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Cabinda · Loango",
+          "lon": 12.0,
+          "lat": -5.2
+        },
+        {
+          "nome": "Benguela",
+          "lon": 13.41,
+          "lat": -12.58
+        },
+        {
+          "nome": "Ambriz",
+          "lon": 13.11,
+          "lat": -7.85
+        }
+      ],
+      "povos": [
+        "Bacongo",
+        "Mbundu",
+        "Ovimbundu",
+        "Lunda",
+        "Teke"
+      ],
+      "polities": "Reino do Congo, Ndongo e Matamba, Império Lunda, Reino de Loango",
+      "nome_carta": "CONGO E ANGOLA"
+    },
+    {
+      "id": "sudeste",
+      "nome": "Sudeste da África e Ilhas do Índico",
+      "nome_epoca": "Costa de Moçambique e Madagáscar",
+      "embarcados": 542700,
+      "porto": {
+        "nome": "Ilha de Moçambique",
+        "lon": 40.7,
+        "lat": -15.0
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Quelimane",
+          "lon": 36.9,
+          "lat": -17.9
+        },
+        {
+          "nome": "Inhambane",
+          "lon": 35.4,
+          "lat": -23.9
+        },
+        {
+          "nome": "Madagáscar",
+          "lon": 47.5,
+          "lat": -18.9
+        }
+      ],
+      "povos": [
+        "Macua",
+        "Iao",
+        "Chona",
+        "Malgaxe"
+      ],
+      "polities": "Sultanatos suaílis, Império Gaza (séc. XIX), Reino Merina",
+      "nome_carta": "COSTA DE MOÇAMBIQUE"
+    }
+  ]
+}

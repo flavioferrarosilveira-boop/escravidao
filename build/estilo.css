@@ -1,0 +1,136 @@
+/* ---- paleta de papel de época ---- */
+:root{
+  --papel:#f2e7cd; --papel-2:#e9dcbd; --papel-3:#ded0ac;
+  --mar:#f1e8d1; --terra:#d3b98c; --terra-borda:#8d7147;
+  --tinta:#33261a; --tinta-2:#6b573c; --tinta-3:#9a856a;
+  --sangue:#8c2f2f; --realce:#1f6f4a;
+  --fonte-mapa:'IM Fell English',Georgia,'Times New Roman',serif;
+  --fonte-texto:'EB Garamond',Georgia,'Times New Roman',serif;
+  --borda:1px solid rgba(141,113,71,.45);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--papel);color:var(--tinta);
+  font-family:var(--fonte-texto);font-size:18px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.envoltorio{max-width:1500px;margin:0 auto;padding:0 clamp(14px,3vw,40px) 80px}
+h1,h2,h3{font-family:var(--fonte-mapa);font-weight:400;line-height:1.15;margin:0}
+a{color:var(--sangue)}
+
+/* ---- capa ---- */
+.capa{padding:clamp(36px,6vw,76px) 0 26px;text-align:center;position:relative}
+.capa .filete{height:3px;background:linear-gradient(90deg,transparent,var(--terra-borda),transparent);margin:22px auto;max-width:760px}
+.capa h1{font-size:clamp(34px,6.2vw,68px);letter-spacing:.01em}
+.capa .sub{font-size:clamp(17px,2.1vw,23px);color:var(--tinta-2);font-style:italic;margin-top:10px}
+.capa .periodo{font-family:var(--fonte-mapa);letter-spacing:.34em;text-transform:uppercase;font-size:14px;color:var(--tinta-3);margin-top:16px}
+
+.numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:34px 0 10px}
+.numero{border:var(--borda);background:var(--papel-2);padding:18px 14px;text-align:center;border-radius:2px}
+.numero b{display:block;font-family:var(--fonte-mapa);font-size:clamp(26px,3.4vw,38px);line-height:1;color:var(--tinta)}
+.numero b.morte{color:var(--sangue)}
+.numero span{display:block;font-size:14px;color:var(--tinta-2);margin-top:9px;letter-spacing:.04em}
+
+/* ---- seções ---- */
+section{margin-top:clamp(44px,6vw,78px)}
+.titulo-secao{display:flex;align-items:baseline;gap:16px;margin-bottom:6px;flex-wrap:wrap}
+.titulo-secao h2{font-size:clamp(24px,3.4vw,36px)}
+.titulo-secao .marca{font-family:var(--fonte-mapa);color:var(--tinta-3);letter-spacing:.3em;font-size:13px;text-transform:uppercase}
+.intro{color:var(--tinta-2);max-width:78ch;margin:8px 0 22px}
+
+/* ---- controles ---- */
+.controles{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:flex-start;
+  border:var(--borda);border-left:0;border-right:0;padding:14px 0;margin-bottom:14px;background:rgba(222,208,172,.28)}
+.grupo{display:flex;flex-direction:column;gap:7px}
+.grupo>label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-3);font-family:var(--fonte-mapa)}
+.fichas{display:flex;flex-wrap:wrap;gap:6px}
+.ficha{font:inherit;font-size:14px;line-height:1;padding:7px 11px;border:1px solid var(--tinta-3);
+  background:transparent;color:var(--tinta-2);border-radius:2px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.ficha:hover{background:var(--papel-3)}
+.ficha[aria-pressed="true"]{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.ficha .ponto{width:10px;height:10px;border-radius:50%;background:currentColor;flex:0 0 auto}
+.ficha[aria-pressed="true"] .ponto{box-shadow:0 0 0 1px var(--papel)}
+.ficha.pequena{font-size:13px;padding:5px 9px}
+.acoes{display:flex;gap:8px;align-items:center;margin-left:auto}
+
+/* ---- palco do mapa ---- */
+.palco{position:relative;border:var(--borda);box-shadow:inset 0 0 0 5px var(--papel),inset 0 0 0 6px rgba(141,113,71,.5);background:var(--mar);border-radius:2px;overflow:hidden}
+.palco svg{display:block;width:100%;height:auto;touch-action:pan-y}
+.dica{position:absolute;pointer-events:none;opacity:0;transition:opacity .12s;z-index:5;
+  background:rgba(39,29,19,.96);color:#f4e9d2;padding:11px 13px;border-radius:3px;max-width:330px;
+  font-size:14px;line-height:1.45;box-shadow:0 6px 22px rgba(0,0,0,.35)}
+.dica.visivel{opacity:1}
+.dica h4{margin:0 0 6px;font-family:var(--fonte-mapa);font-size:16px;color:#fff}
+.dica dl{margin:6px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 12px}
+.dica dt{color:#c9b492}
+.dica dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+.dica .nota{margin-top:7px;color:#c9b492;font-style:italic;font-size:13px}
+
+/* elementos do mapa */
+.terra{fill:var(--terra);stroke:var(--terra-borda);stroke-width:.7;stroke-linejoin:round}
+.dominio{stroke:none;opacity:.42}
+.graticula{fill:none;stroke:var(--terra-borda);stroke-width:.45;opacity:.28}
+.rota{fill:none;stroke-linecap:round;cursor:pointer;transition:opacity .18s}
+.rota-toque{fill:none;stroke:transparent;stroke-width:22;cursor:pointer}
+.apagado{opacity:.07 !important}
+.rotulo{font-family:var(--fonte-mapa);fill:var(--tinta-2);paint-order:stroke;stroke:#f0e6cd;stroke-width:3.6;stroke-linejoin:round}
+.rotulo.polity{font-size:15px;letter-spacing:.14em;text-transform:uppercase;fill:#7c6446}
+.rotulo.oceano{font-size:26px;letter-spacing:.5em;text-transform:uppercase;fill:#a8926f;opacity:.7}
+.rotulo.porto{font-size:13.5px;fill:var(--tinta)}
+.rotulo.regiao{font-size:14.5px;letter-spacing:.14em;text-transform:uppercase}
+.rotulo.destino{font-size:16px;letter-spacing:.1em;text-transform:uppercase;fill:var(--tinta)}
+.colchete{fill:none;stroke-width:5;stroke-linecap:round;opacity:.85}
+.porto{stroke:var(--tinta);stroke-width:1.1}
+.vento{fill:none;stroke:#6b573c;stroke-width:1.2;stroke-dasharray:2 6;opacity:.55}
+.rotulo.vento{font-size:13px;font-style:italic;letter-spacing:.08em;fill:#6b573c;opacity:.8}
+
+@media (prefers-reduced-motion:no-preference){
+  .fluxo{stroke-dasharray:2 26;animation:correr 2.6s linear infinite}
+  @keyframes correr{to{stroke-dashoffset:-28}}
+}
+
+/* ---- legenda ---- */
+.legenda{display:flex;flex-wrap:wrap;gap:12px 34px;align-items:center;padding:14px 2px;
+  border-bottom:var(--borda);font-size:14px;color:var(--tinta-2)}
+.legenda .item{display:flex;align-items:center;gap:8px}
+.legenda svg{overflow:visible}
+
+/* ---- tabelas e barras ---- */
+table{width:100%;border-collapse:collapse;font-size:16px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(141,113,71,.28)}
+th{font-family:var(--fonte-mapa);font-weight:400;font-size:13px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--tinta-3);white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:hover{background:rgba(222,208,172,.4)}
+.barra{height:9px;background:var(--papel-3);border-radius:1px;overflow:hidden;min-width:60px}
+.barra i{display:block;height:100%}
+.rolagem{overflow-x:auto}
+
+.colunas{display:grid;gap:clamp(24px,3vw,40px);grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.cartao{border:var(--borda);background:var(--papel-2);padding:18px 20px;border-radius:2px}
+.cartao h3{font-size:21px;display:flex;align-items:center;gap:10px}
+.cartao .selo{width:13px;height:13px;border-radius:2px;flex:0 0 auto}
+.cartao .grande{font-family:var(--fonte-mapa);font-size:31px;line-height:1.1;margin:8px 0 2px}
+.cartao .miudo{font-size:14.5px;color:var(--tinta-2)}
+.cartao ul{margin:10px 0 0;padding-left:18px;font-size:15px;color:var(--tinta-2)}
+
+/* ---- cronologia ---- */
+.cronologia{border-left:2px solid var(--terra-borda);margin-left:8px;padding-left:22px}
+.cronologia li{list-style:none;margin-bottom:14px;position:relative}
+.cronologia li::before{content:"";position:absolute;left:-29px;top:.55em;width:9px;height:9px;
+  border-radius:50%;background:var(--papel);border:2px solid var(--terra-borda)}
+.cronologia b{font-family:var(--fonte-mapa);font-size:19px;margin-right:10px}
+
+/* ---- notas ---- */
+.notas{font-size:15.5px;color:var(--tinta-2);border-top:var(--borda);padding-top:18px}
+.notas h3{font-size:19px;margin:20px 0 6px;color:var(--tinta)}
+.notas code{background:var(--papel-3);padding:1px 5px;border-radius:2px;font-size:.9em}
+.aviso{border:1px solid var(--sangue);background:rgba(140,47,47,.07);padding:14px 16px;border-radius:2px;margin:18px 0}
+.aviso b{color:var(--sangue)}
+
+@media (max-width:640px){
+  body{font-size:17px}
+  .controles{gap:12px 16px}
+  .acoes{margin-left:0;width:100%}
+}
+.sumido{opacity:.14 !important}

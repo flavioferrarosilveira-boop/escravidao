@@ -1,0 +1,214 @@
+{
+  "_metodo": "Sementes (priors) da distribuição de cada região africana de embarque entre os destinos, montadas a partir da historiografia dos corredores dominantes (Eltis & Richardson, 'Atlas of the Transatlantic Slave Trade', 2010; Alencastro, 'O Trato dos Viventes'; Klein, 'The Atlantic Slave Trade'). Estas sementes NÃO são o resultado final: elas são ajustadas por IPF (Iterative Proportional Fitting / RAS) até que as somas de linha reproduzam os embarcados por região e as somas de coluna reproduzam os desembarcados por destino do TSTD.",
+  "colunas": [
+    "brasil",
+    "caribe_britanico",
+    "caribe_frances",
+    "hispano_america",
+    "caribe_holandes",
+    "america_norte",
+    "caribe_danes",
+    "europa_africa"
+  ],
+  "linhas": {
+    "senegambia": [
+      0.09,
+      0.22,
+      0.27,
+      0.18,
+      0.04,
+      0.16,
+      0.01,
+      0.03
+    ],
+    "serra_leoa": [
+      0.05,
+      0.38,
+      0.22,
+      0.1,
+      0.05,
+      0.13,
+      0.02,
+      0.05
+    ],
+    "barlavento": [
+      0.03,
+      0.35,
+      0.35,
+      0.06,
+      0.05,
+      0.12,
+      0.02,
+      0.02
+    ],
+    "costa_ouro": [
+      0.1,
+      0.43,
+      0.15,
+      0.08,
+      0.13,
+      0.05,
+      0.04,
+      0.02
+    ],
+    "benim": [
+      0.38,
+      0.17,
+      0.22,
+      0.12,
+      0.05,
+      0.02,
+      0.02,
+      0.02
+    ],
+    "biafra": [
+      0.11,
+      0.5,
+      0.13,
+      0.12,
+      0.06,
+      0.05,
+      0.01,
+      0.02
+    ],
+    "centro_ocidental": [
+      0.62,
+      0.08,
+      0.09,
+      0.11,
+      0.04,
+      0.02,
+      0.01,
+      0.03
+    ],
+    "sudeste": [
+      0.55,
+      0.04,
+      0.17,
+      0.18,
+      0.02,
+      0.01,
+      0.0,
+      0.03
+    ]
+  },
+  "_subdivisoes_nota": "As colunas 'brasil' e 'hispano_america' são macro-destinos: cada linha da matriz é repartida entre os portos reais de desembarque pelas proporções em 'subdivisoes', também tiradas da historiografia (Alencastro para o eixo Rio–Luanda e Bahia–Costa da Mina; Florentino para o Rio; TSTD 'principal place of landing'). O IPF então ajusta tudo às marginais publicadas.",
+  "subdivisoes": {
+    "brasil": {
+      "destinos": [
+        "brasil_sudeste",
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "brasil_norte"
+      ],
+      "linhas": {
+        "senegambia": [
+          0.2,
+          0.15,
+          0.15,
+          0.5
+        ],
+        "serra_leoa": [
+          0.3,
+          0.2,
+          0.2,
+          0.3
+        ],
+        "barlavento": [
+          0.4,
+          0.25,
+          0.25,
+          0.1
+        ],
+        "costa_ouro": [
+          0.3,
+          0.45,
+          0.2,
+          0.05
+        ],
+        "benim": [
+          0.2,
+          0.62,
+          0.15,
+          0.03
+        ],
+        "biafra": [
+          0.45,
+          0.2,
+          0.3,
+          0.05
+        ],
+        "centro_ocidental": [
+          0.5,
+          0.24,
+          0.22,
+          0.04
+        ],
+        "sudeste": [
+          0.75,
+          0.18,
+          0.06,
+          0.01
+        ]
+      }
+    },
+    "hispano_america": {
+      "destinos": [
+        "cuba",
+        "terra_firme",
+        "porto_rico",
+        "rio_da_prata"
+      ],
+      "linhas": {
+        "senegambia": [
+          0.25,
+          0.6,
+          0.1,
+          0.05
+        ],
+        "serra_leoa": [
+          0.45,
+          0.4,
+          0.1,
+          0.05
+        ],
+        "barlavento": [
+          0.45,
+          0.4,
+          0.1,
+          0.05
+        ],
+        "costa_ouro": [
+          0.4,
+          0.45,
+          0.1,
+          0.05
+        ],
+        "benim": [
+          0.6,
+          0.28,
+          0.08,
+          0.04
+        ],
+        "biafra": [
+          0.55,
+          0.33,
+          0.08,
+          0.04
+        ],
+        "centro_ocidental": [
+          0.55,
+          0.3,
+          0.06,
+          0.09
+        ],
+        "sudeste": [
+          0.8,
+          0.12,
+          0.04,
+          0.04
+        ]
+      }
+    }
+  }
+}

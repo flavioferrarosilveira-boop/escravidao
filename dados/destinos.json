@@ -1,0 +1,356 @@
+{
+  "_fonte": "Trans-Atlantic Slave Trade Database (SlaveVoyages.org), Estimates. Totais de DESEMBARCADOS 1501-1866.",
+  "destinos": [
+    {
+      "id": "brasil_sudeste",
+      "nome": "Brasil — Sudeste (Rio de Janeiro)",
+      "nome_epoca": "Capitania do Rio de Janeiro",
+      "grupo": "brasil",
+      "grupo_nome": "Brasil",
+      "potencia": "portugal",
+      "desembarcados": 2250000,
+      "porto": {
+        "nome": "Rio de Janeiro",
+        "lon": -43.18,
+        "lat": -22.9
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Santos",
+          "lon": -46.33,
+          "lat": -23.96
+        },
+        {
+          "nome": "Campos dos Goytacazes",
+          "lon": -41.05,
+          "lat": -21.76
+        }
+      ],
+      "economia": "Ouro e diamantes de Minas Gerais (séc. XVIII); café do Vale do Paraíba (séc. XIX)"
+    },
+    {
+      "id": "brasil_bahia",
+      "nome": "Brasil — Bahia",
+      "nome_epoca": "Cidade do Salvador · Recôncavo",
+      "grupo": "brasil",
+      "grupo_nome": "Brasil",
+      "potencia": "portugal",
+      "desembarcados": 1550000,
+      "porto": {
+        "nome": "São Salvador da Bahia",
+        "lon": -38.51,
+        "lat": -12.97
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Cachoeira",
+          "lon": -38.97,
+          "lat": -12.6
+        }
+      ],
+      "economia": "Açúcar do Recôncavo e fumo de rolo — a moeda de troca na Costa da Mina"
+    },
+    {
+      "id": "brasil_pernambuco",
+      "nome": "Brasil — Pernambuco e Nordeste",
+      "nome_epoca": "Capitania de Pernambuco",
+      "grupo": "brasil",
+      "grupo_nome": "Brasil",
+      "potencia": "portugal",
+      "desembarcados": 850000,
+      "porto": {
+        "nome": "Recife (Pernambuco)",
+        "lon": -34.88,
+        "lat": -8.05
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Olinda",
+          "lon": -34.86,
+          "lat": -8.01
+        },
+        {
+          "nome": "Alagoas",
+          "lon": -35.73,
+          "lat": -9.67
+        }
+      ],
+      "economia": "Açúcar — o primeiro grande complexo escravista das Américas"
+    },
+    {
+      "id": "brasil_norte",
+      "nome": "Brasil — Maranhão e Pará",
+      "nome_epoca": "Estado do Maranhão e Grão-Pará",
+      "grupo": "brasil",
+      "grupo_nome": "Brasil",
+      "potencia": "portugal",
+      "desembarcados": 214400,
+      "porto": {
+        "nome": "São Luís do Maranhão",
+        "lon": -44.3,
+        "lat": -2.53
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Belém do Pará",
+          "lon": -48.5,
+          "lat": -1.45
+        }
+      ],
+      "economia": "Algodão e arroz; abastecido pela Companhia Geral do Grão-Pará e Maranhão a partir de Bissau e Cacheu"
+    },
+    {
+      "id": "caribe_britanico",
+      "nome": "Caribe Britânico",
+      "nome_epoca": "British West Indies",
+      "potencia": "gra_bretanha",
+      "desembarcados": 2318300,
+      "porto": {
+        "nome": "Kingston (Jamaica)",
+        "lon": -76.8,
+        "lat": 17.99
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Bridgetown (Barbados)",
+          "lon": -59.62,
+          "lat": 13.1
+        },
+        {
+          "nome": "Demerara (Guiana)",
+          "lon": -58.16,
+          "lat": 6.8
+        },
+        {
+          "nome": "St. John's (Antígua)",
+          "lon": -61.85,
+          "lat": 17.12
+        }
+      ],
+      "economia": "Açúcar",
+      "grupo": "caribe_britanico",
+      "grupo_nome": "Caribe Britânico"
+    },
+    {
+      "id": "caribe_frances",
+      "nome": "Caribe Francês",
+      "nome_epoca": "Saint-Domingue, Martinique, Guadeloupe",
+      "potencia": "franca",
+      "desembarcados": 1120200,
+      "porto": {
+        "nome": "Cap-Français (Saint-Domingue)",
+        "lon": -72.2,
+        "lat": 19.76
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Saint-Pierre (Martinica)",
+          "lon": -61.18,
+          "lat": 14.74
+        },
+        {
+          "nome": "Pointe-à-Pitre (Guadalupe)",
+          "lon": -61.53,
+          "lat": 16.24
+        },
+        {
+          "nome": "Caiena (Guiana)",
+          "lon": -52.33,
+          "lat": 4.93
+        }
+      ],
+      "economia": "Açúcar e café",
+      "grupo": "caribe_frances",
+      "grupo_nome": "Caribe Francês"
+    },
+    {
+      "id": "cuba",
+      "nome": "Cuba",
+      "nome_epoca": "Ilha de Cuba",
+      "grupo": "hispano_america",
+      "grupo_nome": "Hispano-América",
+      "potencia": "espanha",
+      "desembarcados": 750000,
+      "porto": {
+        "nome": "Havana (Cuba)",
+        "lon": -82.36,
+        "lat": 23.13
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Matanzas",
+          "lon": -81.57,
+          "lat": 23.05
+        },
+        {
+          "nome": "Santiago de Cuba",
+          "lon": -75.82,
+          "lat": 20.02
+        }
+      ],
+      "economia": "Açúcar e tabaco — o auge cubano é do séc. XIX, com o tráfico já ilegal"
+    },
+    {
+      "id": "terra_firme",
+      "nome": "Terra Firme e Nova Espanha",
+      "nome_epoca": "Cartagena, Portobelo, Vera Cruz",
+      "grupo": "hispano_america",
+      "grupo_nome": "Hispano-América",
+      "potencia": "espanha",
+      "desembarcados": 430000,
+      "porto": {
+        "nome": "Cartagena das Índias",
+        "lon": -75.51,
+        "lat": 10.39
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Vera Cruz",
+          "lon": -96.13,
+          "lat": 19.19
+        },
+        {
+          "nome": "Portobelo",
+          "lon": -79.65,
+          "lat": 9.55
+        }
+      ],
+      "economia": "Portos de asiento: daí os cativos seguiam por terra para as minas de prata e para o Peru"
+    },
+    {
+      "id": "porto_rico",
+      "nome": "Porto Rico",
+      "nome_epoca": "Puerto Rico",
+      "grupo": "hispano_america",
+      "grupo_nome": "Hispano-América",
+      "potencia": "espanha",
+      "desembarcados": 62900,
+      "porto": {
+        "nome": "San Juan (Porto Rico)",
+        "lon": -66.1,
+        "lat": 18.46
+      },
+      "portos_secundarios": [],
+      "economia": "Açúcar e café"
+    },
+    {
+      "id": "rio_da_prata",
+      "nome": "Rio da Prata",
+      "nome_epoca": "Vice-Reino do Rio da Prata",
+      "grupo": "hispano_america",
+      "grupo_nome": "Hispano-América",
+      "potencia": "espanha",
+      "desembarcados": 50000,
+      "porto": {
+        "nome": "Buenos Aires · Montevidéu",
+        "lon": -56.2,
+        "lat": -34.9
+      },
+      "portos_secundarios": [],
+      "economia": "Charque, couros e reexportação para o Alto Peru e para o Chile"
+    },
+    {
+      "id": "caribe_holandes",
+      "nome": "Américas Holandesas",
+      "nome_epoca": "Nieuw-Nederland, Suriname, Curaçao",
+      "potencia": "paises_baixos",
+      "desembarcados": 444700,
+      "porto": {
+        "nome": "Paramaribo (Suriname)",
+        "lon": -55.17,
+        "lat": 5.85
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Willemstad (Curaçao)",
+          "lon": -68.93,
+          "lat": 12.11
+        },
+        {
+          "nome": "Saint Eustatius",
+          "lon": -62.98,
+          "lat": 17.49
+        }
+      ],
+      "economia": "Açúcar e entreposto de reexportação",
+      "grupo": "caribe_holandes",
+      "grupo_nome": "Américas Holandesas"
+    },
+    {
+      "id": "america_norte",
+      "nome": "América do Norte continental",
+      "nome_epoca": "Treze Colônias · Estados Unidos",
+      "potencia": "gra_bretanha",
+      "desembarcados": 388700,
+      "porto": {
+        "nome": "Charleston (Carolina do Sul)",
+        "lon": -79.93,
+        "lat": 32.78
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Baía de Chesapeake (Virgínia)",
+          "lon": -76.3,
+          "lat": 37.0
+        },
+        {
+          "nome": "Nova Orleans (Luisiana)",
+          "lon": -90.07,
+          "lat": 29.95
+        }
+      ],
+      "economia": "Tabaco, arroz e (séc. XIX) algodão",
+      "grupo": "america_norte",
+      "grupo_nome": "América do Norte"
+    },
+    {
+      "id": "caribe_danes",
+      "nome": "Antilhas Dinamarquesas",
+      "nome_epoca": "Dansk Vestindien (St. Croix, St. Thomas)",
+      "potencia": "dinamarca",
+      "desembarcados": 109000,
+      "porto": {
+        "nome": "Christiansted (St. Croix)",
+        "lon": -64.7,
+        "lat": 17.75
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Charlotte Amalie (St. Thomas)",
+          "lon": -64.93,
+          "lat": 18.34
+        }
+      ],
+      "economia": "Açúcar e entreposto",
+      "grupo": "caribe_danes",
+      "grupo_nome": "Antilhas Dinamarquesas"
+    },
+    {
+      "id": "europa_africa",
+      "nome": "Europa e recapturados na África",
+      "nome_epoca": "Metrópoles · Serra Leoa e Santa Helena (pós-1808)",
+      "potencia": "outros",
+      "desembarcados": 174000,
+      "porto": {
+        "nome": "Freetown — recapturados",
+        "lon": -14.1,
+        "lat": 8.2
+      },
+      "portos_secundarios": [
+        {
+          "nome": "Lisboa",
+          "lon": -9.14,
+          "lat": 38.71
+        },
+        {
+          "nome": "Santa Helena",
+          "lon": -5.72,
+          "lat": -15.96
+        }
+      ],
+      "economia": "Africanos libertos de navios apreendidos pelos esquadrões antitráfico",
+      "grupo": "europa_africa",
+      "grupo_nome": "Europa e recapturados na África"
+    }
+  ]
+}

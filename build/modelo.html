@@ -1,0 +1,126 @@
+<title>Rotas do Tráfico Atlântico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>/*__CSS__*/</style>
+
+<div class="envoltorio">
+
+  <header class="capa">
+    <div class="periodo">Mar Oceano · 1501 &ndash; 1866</div>
+    <h1>Rotas do Tráfico Atlântico<br>de Africanos Escravizados</h1>
+    <div class="filete"></div>
+    <p class="sub">Quantidades, origens, destinos e bandeiras &mdash; sobre o mapa do mundo tal como era navegado</p>
+
+    <div class="numeros">
+      <div class="numero"><b id="n-embarcados">&mdash;</b><span>embarcados na África</span></div>
+      <div class="numero"><b id="n-desembarcados">&mdash;</b><span>desembarcados vivos</span></div>
+      <div class="numero"><b class="morte" id="n-mortos">&mdash;</b><span>mortos na travessia</span></div>
+      <div class="numero"><b id="n-viagens">366</b><span>anos de tráfico</span></div>
+    </div>
+  </header>
+
+  <section id="mapa-secao">
+    <div class="titulo-secao">
+      <span class="marca">Carta I</span>
+      <h2>O mapa das rotas</h2>
+    </div>
+    <p class="intro">
+      Cada linha é um corredor entre uma região africana de embarque e uma região americana de desembarque.
+      A <b>espessura</b> é proporcional ao número de pessoas. As linhas curvam-se para o Equador porque era assim
+      que se navegava: os alísios e as correntes equatoriais impunham o caminho. Passe o cursor sobre uma rota
+      para ver os números; clique numa ficha para isolar uma origem, um destino ou uma bandeira.
+    </p>
+
+    <div class="controles" id="controles">
+      <div class="grupo">
+        <label for="fichas-modo">Carta</label>
+        <div class="fichas" id="fichas-modo"></div>
+      </div>
+      <div class="grupo">
+        <label>Colorir por</label>
+        <div class="fichas" id="fichas-cor"></div>
+      </div>
+      <div class="grupo" id="grupo-filtro">
+        <label id="rotulo-filtro">Regiões de embarque</label>
+        <div class="fichas" id="fichas-filtro"></div>
+      </div>
+      <div class="grupo">
+        <label>Camadas</label>
+        <div class="fichas" id="fichas-camadas"></div>
+      </div>
+    </div>
+
+    <div class="palco" id="palco">
+      <svg id="mapa" role="img" aria-label="Mapa do Atlântico com as rotas do tráfico de escravizados"></svg>
+      <div class="dica" id="dica" role="status" aria-live="polite"></div>
+    </div>
+    <div class="legenda" id="legenda"></div>
+    <p class="intro" id="nota-carta" style="margin-top:16px"></p>
+  </section>
+
+  <section id="secao-tabela">
+    <div class="titulo-secao">
+      <span class="marca">Quadro I</span>
+      <h2>Os corredores, um a um</h2>
+    </div>
+    <p class="intro">Corredores com mais de 15 mil pessoas embarcadas. Clique num cabeçalho para reordenar.</p>
+    <div class="rolagem"><table id="tabela-rotas"></table></div>
+  </section>
+
+  <section id="secao-quantidades">
+    <div class="titulo-secao">
+      <span class="marca">Quadro II</span>
+      <h2>As quantidades</h2>
+    </div>
+    <div class="colunas">
+      <div><h3 style="margin-bottom:10px">De onde saíram</h3><div class="rolagem"><table id="tabela-origens"></table></div></div>
+      <div><h3 style="margin-bottom:10px">Onde desembarcaram</h3><div class="rolagem"><table id="tabela-destinos"></table></div></div>
+      <div><h3 style="margin-bottom:10px">Quando</h3><div class="rolagem"><table id="tabela-periodos"></table></div></div>
+    </div>
+  </section>
+
+  <section id="secao-nacionalidades">
+    <div class="titulo-secao">
+      <span class="marca">Quadro III</span>
+      <h2>As bandeiras</h2>
+    </div>
+    <p class="intro">
+      Nacionalidade do navio que transportava &mdash; não do comprador nem do destino final.
+      Sete potências responderam por praticamente todo o tráfico atlântico.
+    </p>
+    <div class="colunas" id="cartoes-bandeiras"></div>
+  </section>
+
+  <section id="secao-povos">
+    <div class="titulo-secao">
+      <span class="marca">Quadro IV</span>
+      <h2>Quem eram &mdash; povos e Estados de origem</h2>
+    </div>
+    <p class="intro">
+      Ninguém foi capturado num vazio. Cada região de embarque correspondia a Estados, impérios e
+      confederações africanas com nomes, línguas e fronteiras próprias.
+    </p>
+    <div class="colunas" id="cartoes-regioes"></div>
+  </section>
+
+  <section id="secao-cronologia">
+    <div class="titulo-secao">
+      <span class="marca">Quadro V</span>
+      <h2>Cronologia</h2>
+    </div>
+    <ul class="cronologia" id="cronologia"></ul>
+  </section>
+
+  <section id="secao-notas">
+    <div class="titulo-secao">
+      <span class="marca">Apêndice</span>
+      <h2>Fontes e método</h2>
+    </div>
+    <div class="notas" id="notas"></div>
+  </section>
+
+</div>
+
+<script>/*__DADOS__*/</script>
+<script>/*__JS__*/</script>
