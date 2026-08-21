@@ -288,6 +288,15 @@
       "agora": "na resistência",
       "estado": "novo",
       "obs": ""
+    },
+    {
+      "item": "População escravizada por província, 1872",
+      "antes": "—",
+      "livro": "fora do escopo: o vol. I termina em 1695",
+      "pagina": "—",
+      "agora": "Carta III, 2ª vista",
+      "estado": "novo",
+      "obs": "Fonte externa, não o livro: Recenseamento Geral do Império de 1872, o único censo brasileiro que contou a população escravizada. Os números por província foram levantados em busca na web e conferidos por soma — as 20 províncias mais o Município Neutro dão exatamente 1.510.806, o total publicado. Há uma digitalização do Cedeplar/UFMG que corrige erros aritméticos do original e difere em algumas províncias; a carta usa a tabulação corrente."
     }
   ]
 }

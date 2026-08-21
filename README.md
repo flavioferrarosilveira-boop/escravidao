@@ -17,7 +17,7 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Comércio triangular** | O circuito mercantil completo de cada uma das sete potências: ida com mercadorias, travessia do meio com pessoas, retorno com gêneros coloniais |
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
 | **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, o navio negreiro, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas, **a guerra luso-holandesa pelo fornecimento de cativos** |
-| **A Escravidão** (aba) | **Carta III do Brasil escravista** — onde as pessoas desembarcaram, por região, e o que eram as cidades coloniais. Mais: a chegada e o Valongo, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
+| **A Escravidão** (aba) | **Carta III do Brasil escravista**, em duas vistas que se alternam: onde as pessoas desembarcaram (1501-1856) e onde estavam vivas no censo de 1872, província a província. Mais: a chegada e o Valongo, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
 Quadros: os corredores um a um · as quantidades · as bandeiras · os portos que armavam as
 viagens · os quatro ciclos do tráfico brasileiro · povos e Estados de origem ·
@@ -125,6 +125,20 @@ e a proporção de Angola no conjunto do Brasil já batiam antes e continuam bat
 
 Onde **não** segui o livro: a linha do tempo dele (p. 7) data a construção de São Jorge da Mina
 em 1492; a data estabelecida é 1482, e é essa que a carta usa.
+
+## O censo de 1872
+
+A segunda vista da Carta III não vem de Gomes — o volume I termina em 1695. Vem do
+**Recenseamento Geral do Império de 1872**, o único censo brasileiro que contou a
+população escravizada. Os números por província foram levantados em fontes externas e
+**conferidos por soma**: as 20 províncias mais o Município Neutro totalizam exatamente
+1.510.806, o total publicado. Uma digitalização do Cedeplar/UFMG corrige erros
+aritméticos do original e difere em algumas províncias; a carta usa a tabulação corrente
+e diz isso na própria página.
+
+O contraste entre as duas vistas é o ponto: Minas Gerais quase não recebeu africanos
+direto da África e tinha a maior população escravizada do Império; Bahia e Pernambuco
+receberam 2,4 milhões e tinham 256 mil pessoas em 1872.
 
 ## Método e limites
 

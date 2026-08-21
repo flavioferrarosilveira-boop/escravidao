@@ -1011,6 +1011,9 @@ function tabela(destino, colunas, linhas) {
       <li>ANTONIL, André João. <i>Cultura e opulência no Brasil por suas drogas e minas</i> [1711]. Brasília: Senado Federal, 2011.</li>
       <li>ZURARA, Gomes Eanes de. <i>Crónica do descobrimento e da conquista da Guiné</i> [1453]. Lisboa: Europa-América, 1989.</li>
       <li>REDIKER, Marcus. <i>The Slave Ship: a Human History</i>. Nova York: Viking, 2007.</li>
+      <li>BRASIL. Diretoria Geral de Estatística. <i>Recenseamento Geral do Império do Brasil de 1872</i>.
+        Rio de Janeiro, 1873-1876. Original na Biblioteca do IBGE; digitalização com correção de erros
+        aritméticos pelo Cedeplar/UFMG.</li>
     </ul>
     <p style="font-size:14.5px">As quatro últimas entram por indicação da bibliografia do volume I
     de Gomes (p. 440-451), que reúne as fontes usadas por ele.</p>
@@ -1340,12 +1343,99 @@ function montarMapaBrasil() {
     (origens[r.destino] = origens[r.destino] || []).push(r);
   }
 
-  const maxB = Math.max(...B.desembarques.map((d) => d.pessoas));
-  const raio = (v) => Math.max(6, Math.sqrt(v / maxB) * 36);
   const dicaB = html('dica-br'), palcoB = html('palco-br');
   palcoB.addEventListener('pointerleave', () => dicaB.classList.remove('visivel'));
+  const mostrarB = (e, conteudo) => {
+    dicaB.innerHTML = conteudo;
+    dicaB.classList.add('visivel');
+    const cx = palcoB.getBoundingClientRect();
+    let px = e.clientX - cx.left + 16, py = e.clientY - cx.top + 16;
+    if (px + dicaB.offsetWidth > cx.width - 8) px = e.clientX - cx.left - dicaB.offsetWidth - 16;
+    if (py + dicaB.offsetHeight > cx.height - 8) py = Math.max(8, e.clientY - cx.top - dicaB.offsetHeight - 16);
+    dicaB.style.left = px + 'px'; dicaB.style.top = py + 'px';
+  };
 
-  for (const d of B.desembarques) {
+  let vista = 'desembarques';
+  let rotulosBr = [];
+
+  // Mesma lógica das outras cartas: quatro posições candidatas, senão some.
+  function descongestionarBr() {
+    const ocupados = [];
+    const colide = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+    const medir = (t) => { const b = t.getBBox(); return { x: b.x - 4, y: b.y - 2, w: b.width + 8, h: b.height + 4 }; };
+    for (const it of [...rotulosBr].sort((a, b) => b.peso - a.peso)) {
+      const opcoes = [
+        [it.x + it.r + 7, it.y - 1, 'start'], [it.x - it.r - 7, it.y - 1, 'end'],
+        [it.x, it.y - it.r - 16, 'middle'], [it.x, it.y + it.r + 15, 'middle'],
+        [it.x + it.r + 7, it.y - it.r - 12, 'start'], [it.x - it.r - 7, it.y + it.r + 12, 'end'],
+      ];
+      it.t.style.display = '';
+      let posto = false;
+      for (const [px, py, anc] of opcoes) {
+        it.t.setAttribute('text-anchor', anc);
+        it.l1.setAttribute('x', px); it.l1.setAttribute('y', py);
+        it.l2.setAttribute('x', px); it.l2.setAttribute('y', py + 15);
+        const r = medir(it.t);
+        if (!ocupados.some((o) => colide(r, o))) { ocupados.push(r); posto = true; break; }
+      }
+      if (!posto) it.t.style.display = 'none';
+    }
+  }
+
+  const desenhar = () => {
+    while (gB.firstChild) gB.removeChild(gB.firstChild);
+    while (gL.firstChild) gL.removeChild(gL.firstChild);
+    rotulosBr = [];
+    if (vista === 'desembarques') desenharDesembarques(); else desenharCenso();
+    descongestionarBr();
+    legendaB();
+  };
+
+  function legendaB() {
+    const escalas = vista === 'desembarques' ? [2000000, 500000] : [300000, 50000];
+    const g = el('g', null, gL);
+    const bx = x1 - 96, by = y1 - 30;
+    const rMax = raio(escalas[0]);
+    for (const v of escalas) {
+      const r = raio(v);
+      el('circle', { cx: bx, cy: by - r, r, fill: 'none', stroke: '#5d4a30', 'stroke-width': .9, opacity: .7 }, g);
+      el('line', { x1: bx, y1: by - 2 * r, x2: bx + rMax + 6, y2: by - 2 * r,
+        stroke: '#5d4a30', 'stroke-width': .5, opacity: .45 }, g);
+      texto(num(v), { x: bx + rMax + 10, y: by - 2 * r + 4, class: 'rotulo', 'font-size': 12 }, g);
+    }
+    texto(vista === 'desembarques' ? 'desembarcados · 1501-1856' : 'escravizados · censo de 1872',
+      { x: x1 - 10, y: by + 22, 'text-anchor': 'end', class: 'rotulo',
+        'font-size': 12.5, 'font-style': 'italic' }, g);
+  }
+
+  let maxB = Math.max(...B.desembarques.map((d) => d.pessoas));
+  const raio = (v) => Math.max(5, Math.sqrt(v / maxB) * 36);
+
+  function desenharCenso() {
+    maxB = B.censo1872.provincias[0].escravos;
+    for (const p of B.censo1872.provincias) {
+      const [x, y] = proj(p.lon, p.lat);
+      const r = raio(p.escravos);
+      const c = el('circle', { cx: x, cy: y, r, fill: '#8c2f2f', 'fill-opacity': .42, class: 'bolha' }, gB);
+      const conteudo = `<h4>${p.nome} — 1872</h4>
+        <dl><dt>Pessoas escravizadas</dt><dd>${num(p.escravos)}</dd>
+        <dt>Do total do Império</dt><dd>${((p.escravos / B.censo1872.total) * 100).toFixed(1).replace('.', ',')}%</dd></dl>`;
+      c.addEventListener('pointermove', (e) => mostrarB(e, conteudo));
+      c.addEventListener('pointerleave', () => dicaB.classList.remove('visivel'));
+      if (p.escravos >= 20000) {
+        const t = el('text', { class: 'rotulo porto', 'font-size': 13, 'text-anchor': 'start' }, gL);
+        const l1 = el('tspan', {}, t);
+        l1.textContent = p.nome.replace(' (província)', '').replace(' (Corte)', '');
+        const l2 = el('tspan', { 'font-size': 12, fill: 'var(--tinta-2)' }, t);
+        l2.textContent = num(p.escravos);
+        rotulosBr.push({ t, l1, l2, x, y, r, peso: p.escravos });
+      }
+    }
+  }
+
+  function desenharDesembarques() {
+    maxB = Math.max(...B.desembarques.map((d) => d.pessoas));
+    for (const d of B.desembarques) {
     const [x, y] = proj(d.lon, d.lat);
     const r = raio(d.pessoas);
     const c = el('circle', { cx: x, cy: y, r, fill: corBandeira('portugal'),
@@ -1358,40 +1448,47 @@ function montarMapaBrasil() {
         lista.map((o) => `<span style="color:${corRegiao(o.origem)}">■</span> ${REG[o.origem].nome} — ` +
           `${num(o.desembarcados)} (${((o.desembarcados / soma) * 100).toFixed(0)}%)`).join('<br>')}</div>
       <div class="nota">${d.nota}</div>`;
-    c.addEventListener('pointermove', (e) => {
-      dicaB.innerHTML = conteudo;
-      dicaB.classList.add('visivel');
-      const cx = palcoB.getBoundingClientRect();
-      let px = e.clientX - cx.left + 16, py = e.clientY - cx.top + 16;
-      if (px + dicaB.offsetWidth > cx.width - 8) px = e.clientX - cx.left - dicaB.offsetWidth - 16;
-      if (py + dicaB.offsetHeight > cx.height - 8) py = Math.max(8, e.clientY - cx.top - dicaB.offsetHeight - 16);
-      dicaB.style.left = px + 'px'; dicaB.style.top = py + 'px';
-    });
+    c.addEventListener('pointermove', (e) => mostrarB(e, conteudo));
     c.addEventListener('pointerleave', () => dicaB.classList.remove('visivel'));
 
     const t = el('text', { class: 'rotulo porto', 'font-size': 14.5, 'text-anchor': 'start' }, gL);
-    const l1 = el('tspan', { x: x + r + 8, y: y - 2 }, t); l1.textContent = d.rotulo || d.nome;
-    const l2 = el('tspan', { x: x + r + 8, y: y + 15, 'font-size': 13, fill: 'var(--tinta-2)' }, t);
+    const l1 = el('tspan', {}, t); l1.textContent = d.rotulo || d.nome;
+    const l2 = el('tspan', { 'font-size': 13, fill: 'var(--tinta-2)' }, t);
     l2.textContent = num(d.pessoas);
+    rotulosBr.push({ t, l1, l2, x, y, r, peso: d.pessoas });
+    }
   }
 
-  // Legenda de escala
+  // Fichas de troca de vista
   {
-    const g = el('g', null, svgB);
-    const bx = x1 - 96, by = y1 - 30;
-    for (const v of [2000000, 500000]) {
-      const r = raio(v);
-      el('circle', { cx: bx, cy: by - r, r, fill: 'none', stroke: '#5d4a30', 'stroke-width': .9, opacity: .7 }, g);
-      el('line', { x1: bx, y1: by - 2 * r, x2: bx + raio(2000000) + 6, y2: by - 2 * r,
-        stroke: '#5d4a30', 'stroke-width': .5, opacity: .45 }, g);
-      texto(num(v), { x: bx + raio(2000000) + 10, y: by - 2 * r + 4, class: 'rotulo', 'font-size': 12 }, g);
-    }
-    texto('pessoas desembarcadas', { x: bx - raio(2000000) - 4, y: by + 20, class: 'rotulo',
-      'font-size': 12.5, 'font-style': 'italic' }, g);
+    const fb = html('fichas-br');
+    const opcoes = [['desembarques', 'Desembarques · 1501-1856'], ['censo1872', 'População escravizada · censo de 1872']];
+    const pintar = () => {
+      fb.innerHTML = '';
+      for (const [id, rot] of opcoes) {
+        fb.appendChild(ficha(rot, vista === id, null, () => { vista = id; pintar(); desenhar(); }));
+      }
+    };
+    pintar();
   }
+  desenhar();
 
   html('lacuna-brasil').innerHTML = `<b>O que esta carta não mostra.</b> ${B._lacuna}`;
   const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+  html('nota-censo').innerHTML = B.censo1872._fonte + ' ' + B.censo1872._nota;
+  {
+    const maxC = B.censo1872.provincias[0].escravos;
+    tabela('tabela-censo',
+      [{ rotulo: 'Província' }, { rotulo: 'Pessoas escravizadas', num: true }, { rotulo: '% do Império', num: true }, { rotulo: '' }],
+      B.censo1872.provincias.map((p) => [
+        p.nome, num(p.escravos),
+        ((p.escravos / B.censo1872.total) * 100).toFixed(2).replace('.', ',') + '%',
+        barra(p.escravos, maxC, '#8c2f2f'),
+      ]).concat([[`<b>Total do Império</b>`, `<b>${num(B.censo1872.total)}</b>`,
+        `<b>${B.censo1872.pct_populacao}</b>`, '']]));
+  }
+  html('cartoes-contraste').innerHTML = B.censo1872.contraste.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="miudo" style="margin-top:10px">${c.texto}</div></div>`).join('');
   html('cartoes-cidades').innerHTML = B.cidades.map((c) => `<div class="cartao">
     <div class="quando" style="font-family:var(--fonte-mapa);letter-spacing:.14em;
       text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">${c.quando}</div>

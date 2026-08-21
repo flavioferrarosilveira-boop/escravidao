@@ -146,5 +146,157 @@
       "detalhe": "Metade do número estimado duzentos anos antes.",
       "pagina": "360"
     }
-  ]
+  ],
+  "censo1872": {
+    "_fonte": "Recenseamento Geral do Império do Brasil de 1872 — o único censo brasileiro que contou a população escravizada. Números por província conforme a tabulação corrente do censo, conferidos por soma: as 20 províncias mais o Município Neutro totalizam exatamente 1.510.806, o total publicado. Fontes externas consultadas em agosto de 2026; o censo original está na Biblioteca do IBGE, e uma digitalização com correção de erros aritméticos e de agregação foi feita pelo Cedeplar/UFMG — em algumas províncias ela dá números um pouco diferentes dos aqui usados.",
+    "_nota": "As províncias de 1872 não coincidem com os estados de hoje: Tocantins fazia parte de Goiás, Mato Grosso do Sul de Mato Grosso, e Acre, Rondônia, Roraima e Amapá ainda não existiam. O Município Neutro era a cidade do Rio de Janeiro, sede da Corte, contada à parte da província.",
+    "total": 1510806,
+    "pct_populacao": "15,2% dos 9.930.478 habitantes",
+    "provincias": [
+      {
+        "nome": "Minas Gerais",
+        "escravos": 370459,
+        "lon": -44.5,
+        "lat": -18.5
+      },
+      {
+        "nome": "Rio de Janeiro (província)",
+        "escravos": 292637,
+        "lon": -42.4,
+        "lat": -22.0
+      },
+      {
+        "nome": "Bahia",
+        "escravos": 167824,
+        "lon": -41.5,
+        "lat": -12.5
+      },
+      {
+        "nome": "São Paulo",
+        "escravos": 156612,
+        "lon": -48.6,
+        "lat": -22.2
+      },
+      {
+        "nome": "Pernambuco",
+        "escravos": 89028,
+        "lon": -37.9,
+        "lat": -8.4
+      },
+      {
+        "nome": "Maranhão",
+        "escravos": 74939,
+        "lon": -45.3,
+        "lat": -5.2
+      },
+      {
+        "nome": "Rio Grande do Sul",
+        "escravos": 67791,
+        "lon": -53.5,
+        "lat": -30.0
+      },
+      {
+        "nome": "Município Neutro (Corte)",
+        "escravos": 48939,
+        "lon": -43.2,
+        "lat": -23.6
+      },
+      {
+        "nome": "Alagoas",
+        "escravos": 35741,
+        "lon": -36.4,
+        "lat": -9.7
+      },
+      {
+        "nome": "Ceará",
+        "escravos": 31913,
+        "lon": -39.5,
+        "lat": -5.2
+      },
+      {
+        "nome": "Pará",
+        "escravos": 27458,
+        "lon": -52.5,
+        "lat": -4.0
+      },
+      {
+        "nome": "Piauí",
+        "escravos": 23795,
+        "lon": -42.8,
+        "lat": -7.5
+      },
+      {
+        "nome": "Espírito Santo",
+        "escravos": 22659,
+        "lon": -40.4,
+        "lat": -19.8
+      },
+      {
+        "nome": "Sergipe",
+        "escravos": 22623,
+        "lon": -37.3,
+        "lat": -10.7
+      },
+      {
+        "nome": "Paraíba",
+        "escravos": 21526,
+        "lon": -36.6,
+        "lat": -7.1
+      },
+      {
+        "nome": "Santa Catarina",
+        "escravos": 14984,
+        "lon": -50.4,
+        "lat": -27.3
+      },
+      {
+        "nome": "Rio Grande do Norte",
+        "escravos": 13020,
+        "lon": -36.6,
+        "lat": -5.7
+      },
+      {
+        "nome": "Goiás",
+        "escravos": 10652,
+        "lon": -48.6,
+        "lat": -13.8
+      },
+      {
+        "nome": "Paraná",
+        "escravos": 10560,
+        "lon": -51.6,
+        "lat": -24.7
+      },
+      {
+        "nome": "Mato Grosso",
+        "escravos": 6667,
+        "lon": -55.5,
+        "lat": -13.5
+      },
+      {
+        "nome": "Amazonas",
+        "escravos": 979,
+        "lon": -64.5,
+        "lat": -4.5
+      }
+    ],
+    "contraste": [
+      {
+        "titulo": "Minas Gerais",
+        "texto": "Tinha a maior população escravizada do Império — quase um quarto do total — e quase não recebeu africanos direto da África. Sua gente veio pelo porto do Rio de Janeiro, e depois pelo tráfico interno, comprada de senhores do Nordeste em decadência."
+      },
+      {
+        "titulo": "O Nordeste",
+        "texto": "Bahia e Pernambuco receberam juntas 2,4 milhões de africanos ao longo de três séculos e meio. Em 1872 tinham 256 mil pessoas escravizadas — pouco mais de um décimo do que haviam importado."
+      },
+      {
+        "titulo": "São Paulo",
+        "texto": "Quarta província em número de escravizados, e crescendo: é o café do Oeste Paulista que sustenta o tráfico interno depois de 1850 e adia a abolição."
+      },
+      {
+        "titulo": "A conta que não fecha",
+        "texto": "O Brasil importou quase 5 milhões de pessoas e tinha 1,5 milhão vivas em 1872 — e cerca de 700 mil em 1888. Não é emigração: é mortalidade alta, natalidade baixa no cativeiro e alforria. A diferença entre as duas vistas desta carta é o retrato dessa aritmética."
+      }
+    ]
+  }
 }
