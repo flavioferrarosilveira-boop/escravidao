@@ -88,9 +88,12 @@ const POLITIES = [
 const OCEANOS = [
   ['Mar Oceano Atlântico', -28, -26, 26], ['Oceano Índico', 42.5, -21.5, 16],
 ];
+// Dois sistemas de vento e corrente comandavam o tráfico (Gomes, vol. I, p. 208):
+// o giro horário ao norte do Equador, dos europeus, e o anti-horário ao sul,
+// dos brasileiros e portugueses — que dispensava a Europa.
 const VENTOS = [
-  { nome: 'Alísios de NE', pts: [[-19, 24], [-38, 19], [-58, 13]] },
-  { nome: 'Alísios de SE', pts: [[4, -19], [-16, -10], [-33, -3]] },
+  { nome: 'Alísios de NE  ·  giro horário, dos europeus', pts: [[-19, 24], [-38, 19], [-58, 13]] },
+  { nome: 'Alísios de SE  ·  giro anti-horário, dos brasileiros', pts: [[4, -19], [-16, -10], [-33, -3]] },
   { nome: 'Ventos de oeste · Corrente do Golfo', pts: [[-72, 33], [-46, 42], [-16, 48]] },
   { nome: 'Corrente de Benguela', pts: [[12, -30], [10, -20], [11.5, -12]] },
 ];
@@ -235,6 +238,15 @@ const marcarPorto = (porto, cor, tamanho, classe, peso) => {
   texto(porto.nome, { x: x + tamanho + 5, y: y + 4, class: 'rotulo porto',
     'font-size': classe === 'porto-principal' ? 13.5 : 11.5, 'data-rot': classe,
     'data-ax': x, 'data-ay': y, 'data-r': tamanho, 'data-peso': peso || 0 }, g);
+  if (porto.embarcados) {
+    const alvo = el('circle', { cx: x, cy: y, r: tamanho + 9, fill: 'transparent',
+      style: 'cursor:pointer' }, g);
+    const conteudo = `<h4>${porto.nome}</h4>
+      <dl><dt>Cativos embarcados</dt><dd>${num(porto.embarcados)}</dd></dl>
+      <div class="nota">${porto.nota || ''}</div>`;
+    alvo.addEventListener('pointermove', (e) => mostrarDica(e, conteudo));
+    alvo.addEventListener('pointerleave', () => esconderDica());
+  }
   return g;
 };
 for (const r of D.regioes) {
@@ -427,6 +439,7 @@ function desenharRotas() {
   limpar(gRotas);
   const sel = estado.selecao;
   for (const r of D.rotas) {
+    if (!r.tracada) continue;
     const a = arco(r.de, r.para);
     const cor = corRota(r);
     const ativo = sel.size === 0 || sel.has(chaveRota(r));
@@ -511,6 +524,7 @@ function desenharSeculo() {
   }
   const dominante = (r) => p.regioes_dominantes.includes(r.origem) && p.destinos_dominantes.includes(r.destino);
   for (const r of D.rotas) {
+    if (!r.tracada) continue;
     const a = arco(r.de, r.para);
     const cor = corRota(r);
     const dom = dominante(r);
@@ -736,7 +750,7 @@ function montarResumo() {
         ${barra(i.valor, maxItem, i.cor)}
       </li>`).join('')}</ol>
       <div class="miudo" style="margin-top:9px">
-        Repartição pela matriz reconstruída (ver apêndice); soma ${num(somaItens)} nas rotas traçadas.
+        Repartição pela matriz reconstruída (ver apêndice); soma ${num(somaItens)}.
       </div>
     </div>`;
 }
@@ -766,9 +780,9 @@ function render() {
       total 1501–1866 — as estimativas do TSTD por século são confiáveis nos totais, não numa matriz
       origem × destino ano a ano.</i>`;
   } else {
-    nota.innerHTML = `Traçadas ${D.rotas.length} rotas com mais de ${num(D.meta.limiarRota)} pessoas embarcadas.
-      Os fluxos menores existem — quase todo porto africano mandou gente para quase todo porto americano —
-      mas não cabem numa carta legível.`;
+    nota.innerHTML = `Traçadas ${D.rotas.filter((r) => r.tracada).length} rotas com mais de ${num(D.meta.limiarRota)} pessoas embarcadas — os fluxos menores entram nas contas, mas não no traço.
+      Quase todo porto africano mandou gente para quase todo porto americano, mas isso não cabe
+      numa carta legível.`;
   }
 }
 
@@ -823,7 +837,7 @@ function tabela(destino, colunas, linhas) {
   tabela('tabela-rotas',
     [{ rotulo: 'Região de embarque' }, { rotulo: 'Destino' }, { rotulo: 'Embarcados', num: true },
      { rotulo: 'Desembarcados', num: true }, { rotulo: 'Mortos', num: true }, { rotulo: '% do total', num: true }, { rotulo: '' }],
-    D.rotas.map((r) => [
+    D.rotas.filter((r) => r.tracada).map((r) => [
       `<span style="color:${corRegiao(r.origem)}">■</span> ${REG[r.origem].nome}`,
       DES[r.destino].nome, num(r.embarcados), num(r.desembarcados),
       num(r.embarcados - r.desembarcados), pct(r.embarcados, D.meta.totalEmbarcados),
@@ -914,7 +928,8 @@ function tabela(destino, colunas, linhas) {
   const ul = html('cronologia');
   for (const m of D.marcos) {
     const li = document.createElement('li');
-    li.innerHTML = `<b>${m.ano}</b>${m.texto}`;
+    const cite = m.fonte ? ` <span class="cite">${m.fonte}, p. ${m.pagina}</span>` : '';
+    li.innerHTML = `<b>${m.ano}</b>${m.texto}${cite}`;
     ul.appendChild(li);
   }
 }
@@ -930,6 +945,16 @@ function tabela(destino, colunas, linhas) {
       reconstrói o tráfico a partir de cerca de 36 mil viagens documentadas e estima o não documentado.
       São <b>estimativas</b>, e o próprio banco as revisa.
     </div>
+    <h3>O cotejo com o livro</h3>
+    <p>${D.cotejoNota} Verde = mudou por causa do livro; vermelho = onde não segui o livro.</p>
+    <div class="rolagem"><table class="cotejo"><thead><tr>
+      <th>O quê</th><th>A carta antes</th><th>Escravidão, vol. I</th><th class="num">p.</th><th>Como ficou</th>
+    </tr></thead><tbody>${D.cotejo.map((c) => `<tr class="est-${c.estado}">
+      <td><b>${c.item}</b>${c.obs ? `<div class="miudo" style="font-size:13.5px">${c.obs}</div>` : ''}</td>
+      <td class="num">${c.antes}</td><td class="num">${c.livro}</td>
+      <td class="num">${c.pagina}</td><td class="num"><b>${c.agora}</b></td>
+    </tr>`).join('')}</tbody></table></div>
+
     <h3>Como a matriz de rotas foi montada</h3>
     <p>O TSTD publica com segurança as <i>marginais</i> — quantos saíram de cada região africana e
     quantos chegaram a cada região americana. A tabela cruzada completa (cada origem × cada destino)
@@ -972,13 +997,22 @@ function tabela(destino, colunas, linhas) {
     e a Corrente do Golfo. As curvas do mapa são esquemáticas, mas a lógica é a real.</p>
     <h3>Bibliografia</h3>
     <ul>
+      <li>GOMES, Laurentino. <i>Escravidão — Volume I: Do primeiro leilão de cativos em Portugal
+        até a morte de Zumbi dos Palmares</i>. Revisão e anotações de Alberto da Costa e Silva.
+        Rio de Janeiro: Globo Livros, 2019.</li>
       <li>ELTIS, David; RICHARDSON, David. <i>Atlas of the Transatlantic Slave Trade</i>. Yale University Press, 2010.</li>
       <li><i>Trans-Atlantic Slave Trade Database</i> — SlaveVoyages.org (Emory University / Rice University).</li>
       <li>ALENCASTRO, Luiz Felipe de. <i>O Trato dos Viventes: formação do Brasil no Atlântico Sul</i>. Companhia das Letras, 2000.</li>
       <li>KLEIN, Herbert S. <i>The Atlantic Slave Trade</i>. 2ª ed. Cambridge University Press, 2010.</li>
       <li>FLORENTINO, Manolo. <i>Em Costas Negras</i>. Companhia das Letras, 1997.</li>
       <li>THORNTON, John. <i>Africa and Africans in the Making of the Atlantic World, 1400-1800</i>. Cambridge, 1998.</li>
+      <li>BOXER, C. R. <i>Salvador de Sá and the Struggle for Brazil and Angola, 1602-1686</i>. Londres: Athlone Press, 1952.</li>
+      <li>ANTONIL, André João. <i>Cultura e opulência no Brasil por suas drogas e minas</i> [1711]. Brasília: Senado Federal, 2011.</li>
+      <li>ZURARA, Gomes Eanes de. <i>Crónica do descobrimento e da conquista da Guiné</i> [1453]. Lisboa: Europa-América, 1989.</li>
+      <li>REDIKER, Marcus. <i>The Slave Ship: a Human History</i>. Nova York: Viking, 2007.</li>
     </ul>
+    <p style="font-size:14.5px">As quatro últimas entram por indicação da bibliografia do volume I
+    de Gomes (p. 440-451), que reúne as fontes usadas por ele.</p>
     <p style="margin-top:22px;font-style:italic">Cada linha desta carta é uma contagem de pessoas
     sequestradas, e cada número redondo esconde nomes que não foram registrados.</p>`;
 }
@@ -1020,13 +1054,13 @@ function montarMapaPopulacoes() {
   }
   const gBolhas = gp(svgP), gRotulosP = gp(svgP);
 
-  const maxPop = Math.max(...D.populacoes.map((x) => x.pessoas));
+  const maxPop = Math.max(...D.populacoes.filter((x) => !x.apenas_tabela).map((x) => x.pessoas));
   const raio = (v) => Math.max(5, Math.sqrt(v / maxPop) * 62);
   const dicaP = html('dica-pop'), palcoP = html('palco-pop');
   palcoP.addEventListener('pointerleave', () => dicaP.classList.remove('visivel'));
 
   const rotulos = [];
-  for (const pop of [...D.populacoes].sort((a, b) => b.pessoas - a.pessoas)) {
+  for (const pop of D.populacoes.filter((x) => !x.apenas_tabela).sort((a, b) => b.pessoas - a.pessoas)) {
     const [x, y] = proj(pop.lon, pop.lat);
     const r = raio(pop.pessoas);
     const cor = corBandeira(pop.potencia);
@@ -1132,6 +1166,57 @@ function montarMapaPopulacoes() {
   html('cronologia-abolicao').innerHTML = D.abolicoes
     .map((a) => `<li><b>${a.ano}</b><b style="font-family:var(--fonte-texto);font-size:inherit">${a.lugar}</b> — ${a.texto}</li>`)
     .join('');
+}
+
+
+// --- Quadro IV: os portos que armavam as viagens (Gomes, vol. I, p. 217)
+{
+  const max = Math.max(...D.armadores.map((x) => x.pessoas));
+  tabela('tabela-armadores',
+    [{ rotulo: 'Porto' }, { rotulo: 'Onde' }, { rotulo: 'Cativos transportados', num: true }, { rotulo: '' }, { rotulo: '' }],
+    D.armadores.map((a) => [
+      `<span style="color:${corBandeira(a.potencia)}">■</span> <b>${a.nome}</b>`,
+      a.pais, num(a.pessoas), barra(a.pessoas, max, corBandeira(a.potencia)),
+      `<span class="miudo" style="font-size:14px">${a.nota}</span>`,
+    ]));
+  const legenda = document.createElement('p');
+  legenda.className = 'miudo';
+  legenda.style.marginTop = '10px';
+  legenda.innerHTML = D.armadoresNota +
+    ' <span class="cite">Gomes I, p. 203, 205 e 217</span>';
+  html('secao-armadores').appendChild(legenda);
+}
+
+// --- Quadro V: os quatro ciclos do tráfico brasileiro (Gomes, vol. I, p. 202)
+{
+  const c = html('cartoes-ciclos');
+  c.innerHTML = D.ciclos.map((ci) => {
+    const cores = ci.regioes.map((r) => corRegiao(r));
+    return `<div class="cartao ciclo" data-regioes="${ci.regioes.join(',')}">
+      <div class="quando">${ci.quando}</div>
+      <h3 style="margin-top:4px">${ci.nome}</h3>
+      <div style="display:flex;gap:5px;margin:10px 0">
+        ${cores.map((k) => `<span style="height:6px;flex:1;background:${k};border-radius:1px"></span>`).join('')}
+      </div>
+      <div class="miudo">${ci.texto}</div>
+      <div class="miudo" style="margin-top:8px">
+        ${ci.regioes.map((r) => REG[r].nome).join(' · ')}
+      </div>
+    </div>`;
+  }).join('');
+  // Passar o cursor num ciclo acende as regiões dele na carta principal.
+  for (const cartao of c.querySelectorAll('.ciclo')) {
+    const regioes = cartao.dataset.regioes.split(',');
+    cartao.addEventListener('pointerenter', () => {
+      if (estado.modo !== 'rotas' || estado.dimensao !== 'regiao') return;
+      for (const g of gRotas.children) g.classList.add('apagado');
+      [...gRotas.children].forEach((g, i) => {
+        const r = D.rotas.filter((x) => x.tracada)[i];
+        if (r && regioes.includes(r.origem)) g.classList.remove('apagado');
+      });
+    });
+    cartao.addEventListener('pointerleave', () => { if (estado.modo === 'rotas') desenharRotas(); });
+  }
 }
 
 // --- troca de abas

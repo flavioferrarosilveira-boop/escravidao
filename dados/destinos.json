@@ -1,5 +1,5 @@
 {
-  "_fonte": "Trans-Atlantic Slave Trade Database (SlaveVoyages.org), Estimates. Totais de DESEMBARCADOS 1501-1866.",
+  "_fonte": "Trans-Atlantic Slave Trade Database (SlaveVoyages.org), Estimates. Totais de DESEMBARCADOS 1501-1866. Repartição do Brasil pelos portos conforme GOMES, Laurentino. Escravidão, vol. I, pp. 205, 211, 213-214 e 217 — Sudeste 2,3 milhões, Pernambuco 854 mil, Amazônia 142 mil. A Bahia absorve o resíduo até o total brasileiro do TSTD, ficando em 1.568.400, entre os 1,5 milhão (p. 205) e os 1,6 milhão (p. 212) que o próprio livro dá em páginas diferentes.",
   "destinos": [
     {
       "id": "brasil_sudeste",
@@ -8,7 +8,7 @@
       "grupo": "brasil",
       "grupo_nome": "Brasil",
       "potencia": "portugal",
-      "desembarcados": 2250000,
+      "desembarcados": 2300000,
       "porto": {
         "nome": "Rio de Janeiro",
         "lon": -43.18,
@@ -35,7 +35,7 @@
       "grupo": "brasil",
       "grupo_nome": "Brasil",
       "potencia": "portugal",
-      "desembarcados": 1550000,
+      "desembarcados": 1568400,
       "porto": {
         "nome": "São Salvador da Bahia",
         "lon": -38.51,
@@ -57,7 +57,7 @@
       "grupo": "brasil",
       "grupo_nome": "Brasil",
       "potencia": "portugal",
-      "desembarcados": 850000,
+      "desembarcados": 854000,
       "porto": {
         "nome": "Recife (Pernambuco)",
         "lon": -34.88,
@@ -84,7 +84,7 @@
       "grupo": "brasil",
       "grupo_nome": "Brasil",
       "potencia": "portugal",
-      "desembarcados": 214400,
+      "desembarcados": 142000,
       "porto": {
         "nome": "São Luís do Maranhão",
         "lon": -44.3,

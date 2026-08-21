@@ -11,9 +11,11 @@ const lerTexto = (p) => readFileSync(RAIZ + p, 'utf8');
 const { regioes } = ler('dados/regioes_embarque.json');
 const { destinos } = ler('dados/destinos.json');
 const { bandeiras } = ler('dados/bandeiras.json');
-const { periodos, marcos } = ler('dados/periodos.json');
+const { periodos, marcos, ciclos } = ler('dados/periodos.json');
 const sementes = ler('dados/matriz_sementes.json');
 const escravidao = ler('dados/escravidao.json');
+const armadores = ler('dados/portos_armadores.json');
+const cotejo = ler('dados/cotejo.json');
 const geo = ler('dados/geo_atlantico.json');
 
 // ---------------------------------------------------------------------------
@@ -79,12 +81,13 @@ const erroColuna = COLS.map((c, j) => {
 // 2. Rotas desenháveis
 // ---------------------------------------------------------------------------
 
-const LIMIAR = 15000; // pessoas — abaixo disso a rota vira "outros" e não é traçada
+const LIMIAR = 15000;  // pessoas — abaixo disso a rota não é traçada (mas continua nas contas)
+const PISO = 1500;     // abaixo disso a célula é ruído do ajuste e sai de vez
 const rotas = [];
 for (let i = 0; i < LINHAS.length; i++) {
   for (let j = 0; j < COLS.length; j++) {
     const emb = M[i][j];
-    if (emb < LIMIAR) continue;
+    if (emb < PISO) continue;
     const reg = regioes[i];
     const des = destinos.find((d) => d.id === COLS[j]);
     rotas.push({
@@ -97,6 +100,7 @@ for (let i = 0; i < LINHAS.length; i++) {
       para: [des.porto.lon, des.porto.lat],
       nomeDe: reg.porto.nome,
       nomePara: des.porto.nome,
+      tracada: emb >= LIMIAR,
     });
   }
 }
@@ -140,6 +144,8 @@ const dados = {
   populacoes: escravidao.populacoes, demografia: escravidao.demografia,
   trabalho: escravidao.trabalho, resistencia: escravidao.resistencia,
   abolicoes: escravidao.abolicoes, depois: escravidao.depois,
+  armadores: armadores.portos, armadoresNota: armadores._nota, ciclos: ciclos.lista,
+  cotejo: cotejo.linhas, cotejoNota: cotejo._nota,
   coresRegiao: CORES_REGIAO,
 };
 
@@ -151,7 +157,8 @@ const html = modelo
 
 writeFileSync(RAIZ + 'index.html', html);
 
-console.log(`rotas traçadas: ${rotas.length} (limiar ${LIMIAR.toLocaleString('pt-BR')})`);
+console.log(`células: ${rotas.length} · traçadas no mapa: ${rotas.filter((r) => r.tracada).length}` +
+  ` (limiar ${LIMIAR.toLocaleString('pt-BR')})`);
 console.log('conferência das colunas (desembarcados ajustados vs. TSTD):');
 for (const e of erroColuna) {
   const dif = e.ajustado - e.tstd;

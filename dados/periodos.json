@@ -103,15 +103,85 @@
   "marcos": [
     {
       "ano": 1444,
-      "texto": "Primeiro desembarque de cativos africanos em Lagos, Portugal"
+      "texto": "Primeiro leilão documentado de africanos escravizados em Portugal, diante do infante dom Henrique, na vila de Lagos, no Algarve",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1455,
+      "texto": "A bula Romanus Pontifex, do papa Nicolau V, autoriza os portugueses a escravizar 'infiéis' entre o Marrocos e a Índia",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1456,
+      "texto": "Portugueses chegam a Cabo Verde, até então desabitado",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1482,
+      "texto": "Construção do Castelo de São Jorge da Mina (Elmina), primeiro grande entreposto do tráfico na costa africana"
+    },
+    {
+      "ano": 1484,
+      "texto": "Início da colonização da Ilha de São Tomé",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1485,
+      "texto": "O rei do Congo converte-se ao cristianismo",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1494,
+      "texto": "Tratado de Tordesilhas: Portugal e Espanha repartem o mundo entre si",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1500,
+      "texto": "Os portugueses já haviam comprado ou capturado 150 mil africanos — antes de qualquer travessia do Atlântico",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1501,
+      "texto": "Início oficial do tráfico de africanos para os domínios espanhóis na América. Os primeiros navios partiam de Sevilha, não da África",
+      "fonte": "Gomes I",
+      "pagina": "8, 203"
     },
     {
       "ano": 1518,
-      "texto": "Primeira licença para viagem direta África–Américas (Carlos V)"
+      "texto": "Carlos I autoriza o transporte de 4 mil escravizados à América em sete anos — o primeiro grande contrato",
+      "fonte": "Gomes I",
+      "pagina": "204"
     },
     {
-      "ano": 1526,
-      "texto": "Primeira viagem negreira documentada até o Brasil"
+      "ano": 1535,
+      "texto": "Notícia da chegada dos primeiros africanos escravizados ao Brasil; engenhos começam a funcionar em Pernambuco",
+      "fonte": "Gomes I",
+      "pagina": "8"
+    },
+    {
+      "ano": 1560,
+      "texto": "Começa o tráfico sistemático de cativos para o Brasil",
+      "fonte": "Gomes I",
+      "pagina": "204"
+    },
+    {
+      "ano": 1575,
+      "texto": "Paulo Dias de Novais dá início à ocupação portuguesa de Angola",
+      "fonte": "Gomes I",
+      "pagina": "8"
+    },
+    {
+      "ano": 1630,
+      "texto": "Holandeses ocupam Pernambuco; em Angola, a rainha Jinga enfrenta as tropas portuguesas",
+      "fonte": "Gomes I",
+      "pagina": "9"
     },
     {
       "ano": 1637,
@@ -119,15 +189,71 @@
     },
     {
       "ano": 1641,
-      "texto": "Holandeses ocupam Luanda (retomada portuguesa em 1648)"
+      "texto": "Holandeses ocupam Luanda, Benguela e São Tomé",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1645,
+      "texto": "A expedição do capitão João Blaer sobe a Serra da Barriga e fracassa diante de Palmares; o diário de Reijimbach descreve um mocambo de 220 casas, com igreja, quatro forjas e casa de conselho",
+      "fonte": "Gomes I",
+      "pagina": "332-334"
+    },
+    {
+      "ano": 1648,
+      "texto": "Tropas vindas de Salvador, sob Salvador de Sá e Benevides, expulsam os holandeses de Angola",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1654,
+      "texto": "Holandeses são expulsos do Recife",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1660,
+      "texto": "Criada em Londres a Royal African Company, com o monopólio inglês do tráfico",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1665,
+      "texto": "A Batalha de Ambuíla destrói o Reino do Congo",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1672,
+      "texto": "O Rio de Janeiro tem 4 mil habitantes brancos e 20 mil africanos",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1695,
+      "texto": "Palmares é destruído; a cabeça de Zumbi é exposta num poste no Recife, em 20 de novembro",
+      "fonte": "Gomes I",
+      "pagina": "10, 346"
+    },
+    {
+      "ano": 1697,
+      "texto": "Chegam a Salvador as primeiras notícias de ouro em Minas Gerais",
+      "fonte": "Gomes I",
+      "pagina": "10"
+    },
+    {
+      "ano": 1700,
+      "texto": "A população total do Brasil é estimada em 300 mil habitantes; 85% de todas as viagens negreiras da história ainda estão por vir",
+      "fonte": "Gomes I",
+      "pagina": "10, 204"
     },
     {
       "ano": 1713,
-      "texto": "Asiento de negros transferido à Grã-Bretanha (Tratado de Utrecht)"
+      "texto": "O asiento de negros passa à Grã-Bretanha pelo Tratado de Utrecht"
     },
     {
       "ano": 1791,
-      "texto": "Revolução Haitiana começa em Saint-Domingue"
+      "texto": "Começa a Revolução Haitiana em Saint-Domingue"
     },
     {
       "ano": 1803,
@@ -135,7 +261,9 @@
     },
     {
       "ano": 1807,
-      "texto": "Grã-Bretanha e Estados Unidos proíbem o tráfico (vigência em 1808)"
+      "texto": "Grã-Bretanha e Estados Unidos proíbem o tráfico, com vigência em 1808. Ainda assim, cerca de 3 milhões de africanos seriam embarcados depois disso — mais da metade rumo ao Brasil",
+      "fonte": "Gomes I",
+      "pagina": "200"
     },
     {
       "ano": 1815,
@@ -143,7 +271,7 @@
     },
     {
       "ano": 1831,
-      "texto": "Lei Feijó no Brasil — 'para inglês ver'; tráfico segue clandestino"
+      "texto": "Lei Feijó, no Brasil — 'para inglês ver'; o tráfico segue clandestino"
     },
     {
       "ano": 1850,
@@ -151,11 +279,52 @@
     },
     {
       "ano": 1866,
-      "texto": "Último desembarque documentado nas Américas (Cuba)"
+      "texto": "Último desembarque documentado nas Américas, em Cuba"
     },
     {
       "ano": 1888,
-      "texto": "Lei Áurea abole a escravidão no Brasil, último país das Américas"
+      "texto": "Lei Áurea abole a escravidão no Brasil, último país das Américas. Restavam cerca de 700 mil escravizados",
+      "fonte": "Gomes I",
+      "pagina": "207"
     }
-  ]
+  ],
+  "ciclos": {
+    "_fonte": "GOMES, Laurentino. Escravidão, vol. I, p. 202.",
+    "lista": [
+      {
+        "nome": "Ciclo da Guiné",
+        "quando": "século XVI",
+        "regioes": [
+          "senegambia",
+          "serra_leoa"
+        ],
+        "texto": "Começa poucas décadas depois da chegada de Cabral. Portos de origem no Senegal, na Gâmbia e na Guiné-Bissau, com escala em Cabo Verde."
+      },
+      {
+        "nome": "Ciclo do Congo e Angola",
+        "quando": "do século XVI a 1850",
+        "regioes": [
+          "centro_ocidental"
+        ],
+        "texto": "De onde veio a imensa maioria dos cativos. Atravessa todos os outros ciclos e só termina com o fim do tráfico."
+      },
+      {
+        "nome": "Ciclo da Costa da Mina",
+        "quando": "século XVIII",
+        "regioes": [
+          "costa_ouro",
+          "benim"
+        ],
+        "texto": "Tinha entre seus maiores traficantes os baianos, que compravam cativos em troca de fumo de corda."
+      },
+      {
+        "nome": "Ciclo de Moçambique",
+        "quando": "século XIX",
+        "regioes": [
+          "sudeste"
+        ],
+        "texto": "O último a se abrir, já no tráfico ilegal, alimentando sobretudo o Sudeste cafeeiro."
+      }
+    ]
+  }
 }

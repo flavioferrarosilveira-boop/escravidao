@@ -135,7 +135,9 @@
       "porto": {
         "nome": "Ajudá (Ouidah)",
         "lon": 2.09,
-        "lat": 6.36
+        "lat": 6.36,
+        "embarcados": 1000000,
+        "nota": "Segundo maior porto de embarque da África (Gomes, vol. I, p. 205)."
       },
       "portos_secundarios": [
         {
@@ -197,7 +199,9 @@
       "porto": {
         "nome": "São Paulo de Luanda",
         "lon": 13.23,
-        "lat": -8.83
+        "lat": -8.83,
+        "embarcados": 2800000,
+        "nota": "O maior porto de embarque de toda a história do tráfico (Gomes, vol. I, p. 205 e 219). Angola, sozinha, embarcou 5,7 milhões de cativos para o Novo Mundo."
       },
       "portos_secundarios": [
         {
@@ -208,7 +212,9 @@
         {
           "nome": "Benguela",
           "lon": 13.41,
-          "lat": -12.58
+          "lat": -12.58,
+          "embarcados": 764000,
+          "nota": "Terceiro maior porto de embarque da África (Gomes, vol. I, p. 205)."
         },
         {
           "nome": "Ambriz",

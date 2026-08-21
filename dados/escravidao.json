@@ -1,98 +1,346 @@
 {
-  "_fonte": "Censos nacionais, atos de emancipação e historiografia. Os números de população escravizada são contagens de censo ou de emancipação, com o ano indicado em cada caso — não estimativas de auge.",
+  "_fonte": "Censos nacionais, atos de emancipação e historiografia. Os números de população escravizada são contagens de censo ou de emancipação, com o ano indicado em cada caso — não estimativas de auge. Cifras demográficas e dados de Palmares conforme GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019 — páginas indicadas em cada verbete.",
   "populacoes": [
-    { "id": "eua", "lugar": "Estados Unidos", "ano": 1860, "pessoas": 3953760, "tipo": "censo",
-      "lon": -86.5, "lat": 33.0, "potencia": "estados_unidos",
-      "nota": "12,6% da população do país; 32% da população dos estados do Sul. Desembarcaram na América do Norte apenas 388.700 africanos — todo o resto é crescimento vegetativo." },
-    { "id": "brasil", "lugar": "Brasil", "ano": 1872, "pessoas": 1510806, "tipo": "censo",
-      "lon": -45.0, "lat": -18.5, "potencia": "portugal",
-      "nota": "15,2% dos 9.930.478 habitantes. No censo de 1819 eram 1.107.389 de 3.596.132 — quase um terço do país." },
-    { "id": "saint_domingue", "lugar": "Saint-Domingue", "ano": 1789, "pessoas": 465000, "tipo": "estimativa",
-      "lon": -72.3, "lat": 19.2, "potencia": "franca",
-      "nota": "Cerca de 90% da população da colônia. Produzia mais açúcar e café que toda a América britânica somada — e ruiu em 1791." },
-    { "id": "cuba", "lugar": "Cuba", "ano": 1862, "pessoas": 368550, "tipo": "censo",
-      "lon": -79.5, "lat": 21.8, "potencia": "espanha",
-      "nota": "O único lugar das Américas onde a população escravizada ainda crescia por importação em pleno século XIX." },
-    { "id": "jamaica", "lugar": "Jamaica", "ano": 1834, "pessoas": 311000, "tipo": "emancipação",
-      "lon": -77.4, "lat": 18.1, "potencia": "gra_bretanha",
-      "nota": "Contagem no ato de emancipação. A ilha recebeu mais de um milhão de africanos ao longo do tráfico." },
-    { "id": "antilhas_francesas", "lugar": "Martinica e Guadalupe", "ano": 1848, "pessoas": 160000, "tipo": "emancipação",
-      "lon": -61.2, "lat": 15.4, "potencia": "franca", "nota": "Libertados pelo decreto de 27 de abril de 1848." },
-    { "id": "barbados", "lugar": "Barbados", "ano": 1834, "pessoas": 83000, "tipo": "emancipação",
-      "lon": -59.5, "lat": 13.2, "potencia": "gra_bretanha",
-      "nota": "A ilha onde a plantation de açúcar das Américas foi inventada, na década de 1640." },
-    { "id": "suriname", "lugar": "Suriname", "ano": 1863, "pessoas": 34000, "tipo": "emancipação",
-      "lon": -55.9, "lat": 4.6, "potencia": "paises_baixos",
-      "nota": "Libertados em 1863, mas sob tutela obrigatória nas mesmas fazendas até 1873." },
-    { "id": "porto_rico", "lugar": "Porto Rico", "ano": 1873, "pessoas": 29000, "tipo": "emancipação",
-      "lon": -66.4, "lat": 18.2, "potencia": "espanha", "nota": "Abolição sem período de aprendizado, mas com indenização aos proprietários." },
-    { "id": "antilhas_danesas", "lugar": "Antilhas Dinamarquesas", "ano": 1848, "pessoas": 22000, "tipo": "emancipação",
-      "lon": -64.8, "lat": 17.75, "potencia": "dinamarca",
-      "nota": "Libertados após a revolta de julho de 1848 em St. Croix, liderada por 'General Buddhoe'." }
+    {
+      "id": "eua",
+      "lugar": "Estados Unidos",
+      "ano": 1860,
+      "pessoas": 3953760,
+      "tipo": "censo",
+      "lon": -86.5,
+      "lat": 33.0,
+      "potencia": "estados_unidos",
+      "nota": "12,6% da população do país; 32% da população dos estados do Sul. Desembarcaram na América do Norte apenas 388.700 africanos — todo o resto é crescimento vegetativo."
+    },
+    {
+      "id": "brasil",
+      "lugar": "Brasil",
+      "ano": 1872,
+      "pessoas": 1510806,
+      "tipo": "censo",
+      "lon": -45.0,
+      "lat": -18.5,
+      "potencia": "portugal",
+      "nota": "15,2% dos 9.930.478 habitantes. No censo de 1819 eram 1.107.389 de 3.596.132 — quase um terço do país."
+    },
+    {
+      "id": "saint_domingue",
+      "lugar": "Saint-Domingue",
+      "ano": 1789,
+      "pessoas": 465000,
+      "tipo": "estimativa",
+      "lon": -72.3,
+      "lat": 19.2,
+      "potencia": "franca",
+      "nota": "Cerca de 90% da população da colônia. Produzia mais açúcar e café que toda a América britânica somada — e ruiu em 1791."
+    },
+    {
+      "id": "cuba",
+      "lugar": "Cuba",
+      "ano": 1862,
+      "pessoas": 368550,
+      "tipo": "censo",
+      "lon": -79.5,
+      "lat": 21.8,
+      "potencia": "espanha",
+      "nota": "O único lugar das Américas onde a população escravizada ainda crescia por importação em pleno século XIX."
+    },
+    {
+      "id": "jamaica",
+      "lugar": "Jamaica",
+      "ano": 1834,
+      "pessoas": 311000,
+      "tipo": "emancipação",
+      "lon": -77.4,
+      "lat": 18.1,
+      "potencia": "gra_bretanha",
+      "nota": "Contagem no ato de emancipação. A ilha recebeu mais de um milhão de africanos ao longo do tráfico."
+    },
+    {
+      "id": "antilhas_francesas",
+      "lugar": "Martinica e Guadalupe",
+      "ano": 1848,
+      "pessoas": 160000,
+      "tipo": "emancipação",
+      "lon": -61.2,
+      "lat": 15.4,
+      "potencia": "franca",
+      "nota": "Libertados pelo decreto de 27 de abril de 1848."
+    },
+    {
+      "id": "barbados",
+      "lugar": "Barbados",
+      "ano": 1834,
+      "pessoas": 83000,
+      "tipo": "emancipação",
+      "lon": -59.5,
+      "lat": 13.2,
+      "potencia": "gra_bretanha",
+      "nota": "A ilha onde a plantation de açúcar das Américas foi inventada, na década de 1640."
+    },
+    {
+      "id": "suriname",
+      "lugar": "Suriname",
+      "ano": 1863,
+      "pessoas": 34000,
+      "tipo": "emancipação",
+      "lon": -55.9,
+      "lat": 4.6,
+      "potencia": "paises_baixos",
+      "nota": "Libertados em 1863, mas sob tutela obrigatória nas mesmas fazendas até 1873."
+    },
+    {
+      "id": "porto_rico",
+      "lugar": "Porto Rico",
+      "ano": 1873,
+      "pessoas": 29000,
+      "tipo": "emancipação",
+      "lon": -66.4,
+      "lat": 18.2,
+      "potencia": "espanha",
+      "nota": "Abolição sem período de aprendizado, mas com indenização aos proprietários."
+    },
+    {
+      "id": "antilhas_danesas",
+      "lugar": "Antilhas Dinamarquesas",
+      "ano": 1848,
+      "pessoas": 22000,
+      "tipo": "emancipação",
+      "lon": -64.8,
+      "lat": 17.75,
+      "potencia": "dinamarca",
+      "nota": "Libertados após a revolta de julho de 1848 em St. Croix, liderada por 'General Buddhoe'."
+    },
+    {
+      "id": "brasil_1888",
+      "lugar": "Brasil, na Lei Áurea",
+      "ano": 1888,
+      "pessoas": 700000,
+      "tipo": "estimativa",
+      "lon": -40.0,
+      "lat": -13.0,
+      "potencia": "portugal",
+      "nota": "Depois de importar quase 5 milhões de africanos, o Brasil tinha cerca de 700 mil escravizados em 1888 — resultado de alta mortalidade, baixa natalidade no cativeiro e de uma taxa de alforria relativamente alta (Gomes, vol. I, p. 207).",
+      "apenas_tabela": true
+    }
   ],
   "demografia": [
-    { "rotulo": "Homens e meninos", "valor": "≈ 2 em cada 3", "detalhe": "Cerca de 64% dos embarcados. Os compradores pagavam mais por homens jovens; os traficantes africanos retinham mais mulheres." },
-    { "rotulo": "Crianças", "valor": "≈ 1 em cada 4", "detalhe": "A proporção de crianças sobe ao longo do tempo e chega a mais de um terço no tráfico ilegal do século XIX." },
-    { "rotulo": "Mortos na travessia", "valor": "≈ 14,5%", "detalhe": "Cerca de 1,8 milhão de pessoas. A viagem durava de 30 a 90 dias, conforme a rota." },
-    { "rotulo": "Mortos antes de embarcar", "valor": "tantos quanto os embarcados", "detalhe": "Na captura, nas marchas até a costa e nos barracões. Não entram em nenhuma estatística do tráfico." },
-    { "rotulo": "Vida produtiva após o desembarque", "valor": "7 a 15 anos", "detalhe": "Estimativas para o Brasil e o Caribe. O número é debatido e varia muito por região e atividade, mas a direção não: em quase todas as colônias as mortes superavam os nascimentos." },
-    { "rotulo": "O contraste norte-americano", "valor": "389 mil → 3,95 milhões", "detalhe": "Os Estados Unidos receberam 3,1% do tráfico atlântico e abrigavam, em 1860, a maior população escravizada das Américas. Foi o único caso de crescimento vegetativo positivo — e isso é um fato sobre a demografia, não sobre a brandura do regime." }
+    {
+      "rotulo": "Homens e meninos",
+      "valor": "≈ 2 em cada 3",
+      "detalhe": "Cerca de 64% dos embarcados. Os compradores pagavam mais por homens jovens; os traficantes africanos retinham mais mulheres."
+    },
+    {
+      "rotulo": "Crianças",
+      "valor": "≈ 1 em cada 4",
+      "detalhe": "A proporção sobe ao longo do tempo e passa de um terço no tráfico ilegal do século XIX."
+    },
+    {
+      "rotulo": "Mortos na travessia",
+      "valor": "1.818.680",
+      "detalhe": "De 12.521.337 embarcados, 10.702.657 chegaram vivos. A viagem durava de 30 a 90 dias, conforme a rota (Gomes, vol. I, p. 201, a partir do slavevoyages.org)."
+    },
+    {
+      "rotulo": "Mortos antes de embarcar",
+      "valor": "sem registro",
+      "detalhe": "Na captura, nas marchas até a costa e nos barracões. Não entram em nenhuma estatística do tráfico, e várias estimativas os equiparam ao número dos embarcados."
+    },
+    {
+      "rotulo": "Expectativa de vida ao nascer",
+      "valor": "18,3 anos",
+      "detalhe": "Homem escravizado no Brasil, em 1872 — um terço abaixo da média da população, que era de 27,4 anos. Nos Estados Unidos, um homem na mesma condição nascido por volta de 1850 podia esperar chegar aos 35,5 (Gomes, vol. I, p. 206)."
+    },
+    {
+      "rotulo": "O plantel encolhia sozinho",
+      "valor": "5% a 8% ao ano",
+      "detalhe": "Ritmo de declínio da população cativa brasileira no início do século XIX. Só a importação massiva da África mantinha o número de pé — é isso que explica por que o tráfico não parava (Gomes, vol. I, p. 206)."
+    },
+    {
+      "rotulo": "Alforrias no Brasil",
+      "valor": "≈ 1% ao ano",
+      "detalhe": "Ao longo de três séculos isso produziu a maior população negra livre das Américas: por volta de 1800, alforriados eram cerca de 30% da população brasileira — a mesma proporção de brancos (Gomes, vol. I, p. 206-207)."
+    },
+    {
+      "rotulo": "O contraste norte-americano",
+      "valor": "389 mil → 3,95 milhões",
+      "detalhe": "Os Estados Unidos receberam 3,1% do tráfico atlântico e abrigavam, em 1860, a maior população escravizada das Américas. Baixa alforria e alta natalidade dispensaram a reposição pelo tráfico — o inverso exato do Brasil (Gomes, vol. I, p. 207)."
+    },
+    {
+      "rotulo": "Quem chegou ao Brasil",
+      "valor": "86 em cada 100",
+      "detalhe": "Até meados do século XIX entraram no Brasil cerca de 750 mil imigrantes portugueses, contra quase 5 milhões de africanos escravizados. De cada cem pessoas que chegaram, 86 eram cativas (Gomes, vol. I, p. 202)."
+    }
   ],
   "trabalho": [
-    { "titulo": "O engenho de açúcar", "lugar": "Nordeste do Brasil, Antilhas",
-      "texto": "A safra ia de agosto a maio. Durante a moagem trabalhava-se de 16 a 18 horas por dia, em turnos que atravessavam a noite, alimentando a moenda com cana — a mutilação de mãos e braços era rotina, e havia um facão preso junto à moenda para amputar o braço preso antes que o corpo inteiro fosse levado." },
-    { "titulo": "As minas", "lugar": "Minas Gerais, séculos XVIII",
-      "texto": "Faiscação nos rios e lavra subterrânea. A mineração concentrou o maior fluxo de africanos da história do Brasil colonial e produziu, ao mesmo tempo, mais alforrias que a lavoura: o escravizado 'de ganho' podia comprar a própria liberdade com o ouro que achasse além da cota." },
-    { "titulo": "O cafezal", "lugar": "Vale do Paraíba, século XIX",
-      "texto": "O eito sob o feitor, 14 a 16 horas. É a lavoura que sustenta o tráfico ilegal depois de 1831 e adia a abolição brasileira por meio século." },
-    { "titulo": "O algodão e o arroz", "lugar": "Carolina do Sul, Geórgia, Mississipi",
-      "texto": "O arroz das Carolinas dependia de técnicas de irrigação que os compradores buscavam deliberadamente na Alta Guiné, onde já se cultivava arroz há séculos. Depois de 1793, o descaroçador de algodão multiplica a demanda e empurra a escravidão para o oeste, no tráfico interno que separou cerca de um milhão de famílias." },
-    { "titulo": "A cidade", "lugar": "Rio de Janeiro, Salvador, Havana, Charleston",
-      "texto": "Escravos 'de ganho' e 'de aluguel': carregadores, quitandeiras, barbeiros, marceneiros, amas de leite. Entregavam ao senhor uma quantia fixa por semana e ficavam com o excedente — a via mais comum de alforria, e a base das irmandades negras e das caixas de manumissão." }
+    {
+      "titulo": "O engenho de açúcar",
+      "lugar": "Nordeste do Brasil, Antilhas",
+      "texto": "A safra ia de agosto a maio. Durante a moagem trabalhava-se de 16 a 18 horas por dia, em turnos que atravessavam a noite, alimentando a moenda com cana — a mutilação de mãos e braços era rotina, e havia um facão preso junto à moenda para amputar o braço preso antes que o corpo inteiro fosse levado."
+    },
+    {
+      "titulo": "As minas",
+      "lugar": "Minas Gerais, séculos XVIII",
+      "texto": "Faiscação nos rios e lavra subterrânea. A mineração concentrou o maior fluxo de africanos da história do Brasil colonial e produziu, ao mesmo tempo, mais alforrias que a lavoura: o escravizado 'de ganho' podia comprar a própria liberdade com o ouro que achasse além da cota."
+    },
+    {
+      "titulo": "O cafezal",
+      "lugar": "Vale do Paraíba, século XIX",
+      "texto": "O eito sob o feitor, 14 a 16 horas. É a lavoura que sustenta o tráfico ilegal depois de 1831 e adia a abolição brasileira por meio século."
+    },
+    {
+      "titulo": "O algodão e o arroz",
+      "lugar": "Carolina do Sul, Geórgia, Mississipi",
+      "texto": "O arroz das Carolinas dependia de técnicas de irrigação que os compradores buscavam deliberadamente na Alta Guiné, onde já se cultivava arroz há séculos. Depois de 1793, o descaroçador de algodão multiplica a demanda e empurra a escravidão para o oeste, no tráfico interno que separou cerca de um milhão de famílias."
+    },
+    {
+      "titulo": "A cidade",
+      "lugar": "Rio de Janeiro, Salvador, Havana, Charleston",
+      "texto": "Escravos 'de ganho' e 'de aluguel': carregadores, quitandeiras, barbeiros, marceneiros, amas de leite. Entregavam ao senhor uma quantia fixa por semana e ficavam com o excedente — a via mais comum de alforria, e a base das irmandades negras e das caixas de manumissão."
+    }
   ],
   "resistencia": [
-    { "ano": "1605-1694", "titulo": "Quilombo dos Palmares", "lugar": "Serra da Barriga, Alagoas",
-      "texto": "Chegou a reunir dezenas de milhares de pessoas em vários mocambos e resistiu por quase um século a expedições holandesas e portuguesas. Destruído em 1694; Zumbi é morto em 20 de novembro de 1695 — data que hoje é o Dia da Consciência Negra." },
-    { "ano": "1728-1740", "titulo": "Primeira Guerra dos Maroons", "lugar": "Jamaica",
-      "texto": "Comunidades fugidas nas Blue Mountains, sob Cudjoe e Nanny, forçaram a Coroa britânica a assinar tratados em 1739 reconhecendo terra e autonomia." },
-    { "ano": "1760-1762", "titulo": "Tratados com os Saramaka e Ndyuka", "lugar": "Suriname",
-      "texto": "Os neerlandeses reconhecem por tratado a liberdade e o território de comunidades quilombolas do interior — que existem até hoje." },
-    { "ano": "1791-1804", "titulo": "Revolução Haitiana", "lugar": "Saint-Domingue",
-      "texto": "Começa na cerimônia de Bois Caïman, em agosto de 1791. É a única revolta de escravizados da história que derruba um regime escravista e funda um Estado independente. Toussaint Louverture, depois Dessalines. A França cobrará do Haiti, a partir de 1825, uma indenização pela perda dos escravizados — dívida paga até 1947." },
-    { "ano": "1831", "titulo": "Revolta de Nat Turner", "lugar": "Condado de Southampton, Virgínia",
-      "texto": "A resposta foi o endurecimento dos códigos escravistas em todo o Sul, inclusive a proibição de ensinar escravizados a ler." },
-    { "ano": "1835", "titulo": "Revolta dos Malês", "lugar": "Salvador, Bahia",
-      "texto": "Organizada por africanos muçulmanos — hauçás e nagôs —, com planos escritos em árabe. A maior revolta urbana de escravizados das Américas; a repressão deportou centenas de africanos libertos de volta à África." },
-    { "ano": "1770-1795", "titulo": "Quilombo do Quariterê", "lugar": "Mato Grosso",
-      "texto": "Comunidade liderada por Tereza de Benguela, que manteve estrutura política própria, roças e comércio de ouro com povos indígenas vizinhos." },
-    { "ano": "cotidiano", "titulo": "A resistência que não vira data", "lugar": "Em toda parte",
-      "texto": "Fuga, sabotagem da moenda, aborto, quebra de ferramenta, banzo, greve de braços caídos, compra de alforria pelas irmandades — e a preservação de candomblé, vodu, santería, capoeira e línguas africanas sob nomes emprestados de santos católicos." }
+    {
+      "ano": "1605-1695",
+      "titulo": "Quilombo dos Palmares",
+      "lugar": "Serra da Barriga, Alagoas",
+      "texto": "Capital na Cerca Real do Macaco, protegida por uma paliçada de quase cinco quilômetros. O diário do tenente Reijimbach descreve, em 1645, um mocambo de 220 casas com igreja, quatro forjas e uma grande casa de conselho. As estimativas de população vão de 6 mil a 30 mil; Manolo Florentino e Márcia Amantino calculam cerca de 11 mil pessoas em dez comunidades. Ganga Zumba assinou a paz e morreu envenenado no Cucaú; seu sobrinho Zumbi resistiu até 20 de novembro de 1695, quando foi morto numa emboscada — hoje o Dia da Consciência Negra. O assalto final coube ao bandeirante Domingos Jorge Velho, com cerca de 6 mil homens (Gomes, vol. I, p. 332-352)."
+    },
+    {
+      "ano": "1728-1740",
+      "titulo": "Primeira Guerra dos Maroons",
+      "lugar": "Jamaica",
+      "texto": "Comunidades fugidas nas Blue Mountains, sob Cudjoe e Nanny, forçaram a Coroa britânica a assinar tratados em 1739 reconhecendo terra e autonomia."
+    },
+    {
+      "ano": "1760-1762",
+      "titulo": "Tratados com os Saramaka e Ndyuka",
+      "lugar": "Suriname",
+      "texto": "Os neerlandeses reconhecem por tratado a liberdade e o território de comunidades quilombolas do interior — que existem até hoje."
+    },
+    {
+      "ano": "1791-1804",
+      "titulo": "Revolução Haitiana",
+      "lugar": "Saint-Domingue",
+      "texto": "Começa na cerimônia de Bois Caïman, em agosto de 1791. É a única revolta de escravizados da história que derruba um regime escravista e funda um Estado independente. Toussaint Louverture, depois Dessalines. A França cobrará do Haiti, a partir de 1825, uma indenização pela perda dos escravizados — dívida paga até 1947."
+    },
+    {
+      "ano": "1831",
+      "titulo": "Revolta de Nat Turner",
+      "lugar": "Condado de Southampton, Virgínia",
+      "texto": "A resposta foi o endurecimento dos códigos escravistas em todo o Sul, inclusive a proibição de ensinar escravizados a ler."
+    },
+    {
+      "ano": "1835",
+      "titulo": "Revolta dos Malês",
+      "lugar": "Salvador, Bahia",
+      "texto": "Organizada por africanos muçulmanos — hauçás e nagôs —, com planos escritos em árabe. A maior revolta urbana de escravizados das Américas; a repressão deportou centenas de africanos libertos de volta à África."
+    },
+    {
+      "ano": "1770-1795",
+      "titulo": "Quilombo do Quariterê",
+      "lugar": "Mato Grosso",
+      "texto": "Comunidade liderada por Tereza de Benguela, que manteve estrutura política própria, roças e comércio de ouro com povos indígenas vizinhos."
+    },
+    {
+      "ano": "cotidiano",
+      "titulo": "A resistência que não vira data",
+      "lugar": "Em toda parte",
+      "texto": "Fuga, sabotagem da moenda, aborto, quebra de ferramenta, banzo, greve de braços caídos, compra de alforria pelas irmandades — e a preservação de candomblé, vodu, santería, capoeira e línguas africanas sob nomes emprestados de santos católicos."
+    }
   ],
   "abolicoes": [
-    { "ano": 1793, "lugar": "Saint-Domingue", "texto": "Proclamação de Sonthonax; generalizada pela Convenção em 1794 e revogada por Napoleão em 1802." },
-    { "ano": 1804, "lugar": "Haiti", "texto": "Independência com a escravidão abolida na constituição." },
-    { "ano": 1823, "lugar": "Chile", "texto": "Primeira abolição definitiva da América hispânica continental." },
-    { "ano": 1824, "lugar": "América Central", "texto": "Províncias Unidas do Centro da América." },
-    { "ano": 1829, "lugar": "México", "texto": "Decreto de Vicente Guerrero." },
-    { "ano": 1834, "lugar": "Império Britânico", "texto": "Slavery Abolition Act de 1833. Os libertos ficam sob 'aprendizado' compulsório até 1838; os proprietários recebem 20 milhões de libras de indenização — dívida que o Tesouro britânico só terminou de pagar em 2015." },
-    { "ano": 1842, "lugar": "Uruguai", "texto": "Abolição completa após leis de ventre livre desde 1825." },
-    { "ano": 1848, "lugar": "França e Dinamarca", "texto": "Decreto francês de 27 de abril; nas Antilhas Dinamarquesas, abolição arrancada por uma revolta em St. Croix." },
-    { "ano": 1851, "lugar": "Colômbia e Equador", "texto": "Com indenização aos proprietários." },
-    { "ano": 1854, "lugar": "Peru e Venezuela", "texto": "Fecha o ciclo abolicionista da América hispânica continental." },
-    { "ano": 1863, "lugar": "Países Baixos", "texto": "Suriname e Antilhas; tutela obrigatória nas mesmas fazendas até 1873." },
-    { "ano": 1865, "lugar": "Estados Unidos", "texto": "Proclamação de Emancipação em 1863, 13ª Emenda em dezembro de 1865, ao fim da Guerra Civil." },
-    { "ano": 1873, "lugar": "Porto Rico", "texto": "Com indenização aos proprietários." },
-    { "ano": 1886, "lugar": "Cuba", "texto": "O 'patronato' de 1880 mantivera os libertos trabalhando por mais seis anos." },
-    { "ano": 1888, "lugar": "Brasil", "texto": "Lei Áurea, 13 de maio. Último país das Américas a abolir a escravidão — 370 anos depois da primeira viagem negreira direta. Sem terra, sem indenização e sem qualquer política de integração para os libertos." }
+    {
+      "ano": 1793,
+      "lugar": "Saint-Domingue",
+      "texto": "Proclamação de Sonthonax; generalizada pela Convenção em 1794 e revogada por Napoleão em 1802."
+    },
+    {
+      "ano": 1804,
+      "lugar": "Haiti",
+      "texto": "Independência com a escravidão abolida na constituição."
+    },
+    {
+      "ano": 1823,
+      "lugar": "Chile",
+      "texto": "Primeira abolição definitiva da América hispânica continental."
+    },
+    {
+      "ano": 1824,
+      "lugar": "América Central",
+      "texto": "Províncias Unidas do Centro da América."
+    },
+    {
+      "ano": 1829,
+      "lugar": "México",
+      "texto": "Decreto de Vicente Guerrero."
+    },
+    {
+      "ano": 1834,
+      "lugar": "Império Britânico",
+      "texto": "Slavery Abolition Act de 1833. Os libertos ficam sob 'aprendizado' compulsório até 1838; os proprietários recebem 20 milhões de libras de indenização — dívida que o Tesouro britânico só terminou de pagar em 2015."
+    },
+    {
+      "ano": 1842,
+      "lugar": "Uruguai",
+      "texto": "Abolição completa após leis de ventre livre desde 1825."
+    },
+    {
+      "ano": 1848,
+      "lugar": "França e Dinamarca",
+      "texto": "Decreto francês de 27 de abril; nas Antilhas Dinamarquesas, abolição arrancada por uma revolta em St. Croix."
+    },
+    {
+      "ano": 1851,
+      "lugar": "Colômbia e Equador",
+      "texto": "Com indenização aos proprietários."
+    },
+    {
+      "ano": 1854,
+      "lugar": "Peru e Venezuela",
+      "texto": "Fecha o ciclo abolicionista da América hispânica continental."
+    },
+    {
+      "ano": 1863,
+      "lugar": "Países Baixos",
+      "texto": "Suriname e Antilhas; tutela obrigatória nas mesmas fazendas até 1873."
+    },
+    {
+      "ano": 1865,
+      "lugar": "Estados Unidos",
+      "texto": "Proclamação de Emancipação em 1863, 13ª Emenda em dezembro de 1865, ao fim da Guerra Civil."
+    },
+    {
+      "ano": 1873,
+      "lugar": "Porto Rico",
+      "texto": "Com indenização aos proprietários."
+    },
+    {
+      "ano": 1886,
+      "lugar": "Cuba",
+      "texto": "O 'patronato' de 1880 mantivera os libertos trabalhando por mais seis anos."
+    },
+    {
+      "ano": 1888,
+      "lugar": "Brasil",
+      "texto": "Lei Áurea, 13 de maio. Último país das Américas a abolir a escravidão — 370 anos depois da primeira viagem negreira direta. Sem terra, sem indenização e sem qualquer política de integração para os libertos."
+    }
   ],
   "depois": [
-    { "titulo": "Nenhuma reparação, em lugar nenhum",
-      "texto": "Onde houve indenização, ela foi paga aos proprietários — nunca às pessoas escravizadas. A Grã-Bretanha indenizou os senhores em 1834; a França indenizou os senhores em 1848 e ainda cobrou do Haiti o valor dos escravizados libertos; o Brasil não indenizou ninguém e mandou queimar os arquivos do tráfico em 1890." },
-    { "titulo": "A terra fechada antes da porta",
-      "texto": "A Lei de Terras brasileira de 1850 — no mesmo ano em que o tráfico acaba — determina que terra pública só se obtém por compra. Quando a abolição chega, em 1888, o acesso à propriedade já estava vedado a quem não tinha dinheiro." },
-    { "titulo": "A substituição planejada",
-      "texto": "A partir da década de 1870 o Estado brasileiro subsidia a imigração europeia para as mesmas lavouras, com passagem, terra e crédito que jamais foram oferecidos aos libertos." },
-    { "titulo": "O que ficou",
-      "texto": "Cerca de 10,7 milhões de pessoas desembarcadas e seus descendentes moldaram a língua, a comida, a música, as religiões e a estrutura social de todo o Atlântico. Quase metade delas veio parar no Brasil, que tem hoje a maior população de origem africana fora da África." }
+    {
+      "titulo": "Nenhuma reparação, em lugar nenhum",
+      "texto": "Onde houve indenização, ela foi paga aos proprietários — nunca às pessoas escravizadas. A Grã-Bretanha indenizou os senhores em 1834; a França indenizou os senhores em 1848 e ainda cobrou do Haiti o valor dos escravizados libertos; o Brasil não indenizou ninguém e mandou queimar os arquivos do tráfico em 1890."
+    },
+    {
+      "titulo": "A terra fechada antes da porta",
+      "texto": "A Lei de Terras brasileira de 1850 — no mesmo ano em que o tráfico acaba — determina que terra pública só se obtém por compra. Quando a abolição chega, em 1888, o acesso à propriedade já estava vedado a quem não tinha dinheiro."
+    },
+    {
+      "titulo": "A substituição planejada",
+      "texto": "A partir da década de 1870 o Estado brasileiro subsidia a imigração europeia para as mesmas lavouras, com passagem, terra e crédito que jamais foram oferecidos aos libertos."
+    },
+    {
+      "titulo": "O que ficou",
+      "texto": "Cerca de 10,7 milhões de pessoas desembarcadas e seus descendentes moldaram a língua, a comida, a música, as religiões e a estrutura social de todo o Atlântico. Quase metade delas veio parar no Brasil, que tem hoje a maior população de origem africana fora da África."
+    }
   ]
 }

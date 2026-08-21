@@ -18,6 +18,9 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
 | **A Escravidão** (aba) | O que veio depois do desembarque: populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
+Quadros: os corredores um a um · as quantidades · as bandeiras · **os portos que armavam as
+viagens** · **os quatro ciclos do tráfico brasileiro** · povos e Estados de origem · cronologia.
+
 Na carta das rotas dá para **colorir e filtrar por três eixos**: região africana de
 embarque, **país de destino** ou bandeira do navio. Ao escolher um filtro — *Brasil*,
 por exemplo — aparece sob o mapa um resumo com o total de pessoas desembarcadas ali
@@ -47,6 +50,8 @@ dados/
   bandeiras.json          7 bandeiras: totais, período, portos armadores
   periodos.json           totais por século + cronologia
   escravidao.json         populações, demografia, trabalho, resistência, abolições
+  portos_armadores.json   onde as viagens eram organizadas (Gomes I, p. 217)
+  cotejo.json             confronto linha a linha entre a carta, o livro e o resultado
   circuitos.json          pernas do comércio triangular por bandeira
   matriz_sementes.json    priors historiográficos da matriz origem × destino
   matriz_rotas.csv        SAÍDA — a matriz ajustada, auditável linha a linha
@@ -87,6 +92,31 @@ Para refazer a base geográfica a partir do Natural Earth:
 npm i world-atlas@2 topojson-client
 MODS_DIR=$PWD/node_modules node build/extrair_geo.mjs
 ```
+
+## O cotejo com Laurentino Gomes
+
+Os números foram confrontados com **GOMES, Laurentino. *Escravidão*, vol. I** (Globo Livros,
+2019), que bebe da mesma fonte primária — slavevoyages.org, em consulta de junho de 2019.
+O confronto completo está em `dados/cotejo.json` e no apêndice do próprio mapa. O que mudou:
+
+| | Antes | Livro | Agora |
+|---|---|---|---|
+| Brasil — Maranhão e Pará | 214.400 | 142 mil (p. 205, 214) | **142.000** |
+| Brasil — Sudeste | 2.250.000 | 2,3 milhões (p. 205, 213) | **2.300.000** |
+| Brasil — Pernambuco | 850.000 | 854 mil (p. 205, 211) | **854.000** |
+| Bahia — vindos da Costa da Mina | 615 mil · 39% | 810 mil de 1,5 milhão (p. 206) | **810.163 · 52%** |
+| Maranhão e Pará — vindos da Senegâmbia | 37 mil · 20% | 97 mil de 142 mil (p. 206) | **95.902 · 80%** |
+| Pernambuco — vindos de Angola e Congo | 77,5% | quase 90% (p. 211) | **89,0%** |
+| Sudeste — vindos de Moçambique | 218 mil | 280 mil (p. 213) | **278.039** |
+| Expectativa de vida ao nascer | 'vida produtiva de 7 a 15 anos' | 18,3 anos, Brasil 1872 (p. 206) | **18,3 anos** |
+
+As duas linhas do meio eram **inversões**: a matriz reconstruída dava a maioria dos cativos da
+Bahia como angolana e a da Amazônia também, quando o livro mostra que a Bahia vinha
+majoritariamente da Costa da Mina e a Amazônia, da Guiné-Bissau. Os totais globais, as bandeiras
+e a proporção de Angola no conjunto do Brasil já batiam antes e continuam batendo.
+
+Onde **não** segui o livro: a linha do tempo dele (p. 7) data a construção de São Jorge da Mina
+em 1492; a data estabelecida é 1482, e é essa que a carta usa.
 
 ## Método e limites
 
