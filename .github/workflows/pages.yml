@@ -1,14 +1,21 @@
 name: Publicar a carta no GitHub Pages
 
+# O site é servido pelo branch gh-pages (Settings → Pages → Deploy from a branch).
+# Este workflow reconstrói index.html a partir de dados/ e republica esse branch
+# a cada push, para que a carta no ar nunca fique atrás dos dados.
+
 on:
   push:
     branches: [claude/slave-trade-route-maps-ssz5s4]
+    paths:
+      - 'dados/**'
+      - 'build/**'
+      - 'README.md'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -17,9 +24,6 @@ concurrency:
 jobs:
   publicar:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.publicar.outputs.page_url }}
     steps:
       - name: Buscar o repositório
         uses: actions/checkout@v4
@@ -28,18 +32,21 @@ jobs:
         run: node build/gerar.mjs
 
       - name: Conferir que a carta foi gerada
-        run: test -s index.html
+        run: test -s index.html && grep -q 'window.DADOS' index.html
 
-      - name: Configurar o Pages (ativa se ainda não estiver)
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
+      - name: Montar o conteúdo do site
+        run: |
+          rm -rf site && mkdir site
+          cp index.html README.md site/
+          cp -r dados site/
+          touch site/.nojekyll
 
-      - name: Empacotar o site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Publicar
-        id: publicar
-        uses: actions/deploy-pages@v4
+      - name: Republicar o branch gh-pages
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          cd site
+          git init -q -b gh-pages
+          git add -A
+          git commit -q -m "Site publicado a partir de ${GITHUB_SHA::7}"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
