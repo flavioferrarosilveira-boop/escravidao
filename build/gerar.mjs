@@ -18,6 +18,7 @@ const armadores = ler('dados/portos_armadores.json');
 const cotejo = ler('dados/cotejo.json');
 const negocio = ler('dados/negocio.json');
 const africa = ler('dados/africa.json');
+const brasil = ler('dados/brasil.json');
 const geo = ler('dados/geo_atlantico.json');
 
 // ---------------------------------------------------------------------------
@@ -148,7 +149,7 @@ const dados = {
   abolicoes: escravidao.abolicoes, depois: escravidao.depois,
   chegada: escravidao.chegada, castigos: escravidao.castigos,
   armadores: armadores.portos, armadoresNota: armadores._nota, ciclos: ciclos.lista,
-  cotejo: cotejo.linhas, cotejoNota: cotejo._nota, negocio, africa,
+  cotejo: cotejo.linhas, cotejoNota: cotejo._nota, negocio, africa, brasil,
   coresRegiao: CORES_REGIAO,
 };
 

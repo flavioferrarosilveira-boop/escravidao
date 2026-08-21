@@ -1,0 +1,150 @@
+{
+  "_fonte": "GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019. Volumes de desembarque das pp. 205 e 210-214; dados de cidades e engenhos dos capítulos 20, 21 e 30 e da linha do tempo. Páginas indicadas em cada verbete.",
+  "_lacuna": "O volume I termina em 1695. A distribuição da população escravizada pelas províncias brasileiras no século XIX — Minas Gerais, Rio de Janeiro, Bahia, São Paulo e as demais — vem do Recenseamento Geral do Império de 1872, que não está neste volume. Esta carta mostra, portanto, quantas pessoas DESEMBARCARAM em cada região ao longo de três séculos e meio, e o retrato das cidades coloniais no ponto em que o livro as descreve — não quantas estavam vivas em cada província num dado ano.",
+  "desembarques": [
+    {
+      "id": "brasil_sudeste",
+      "nome": "Sudeste",
+      "detalhe": "Rio de Janeiro, São Paulo, Minas Gerais, Mato Grosso e Goiás",
+      "pessoas": 2300000,
+      "lon": -43.18,
+      "lat": -22.9,
+      "pagina": "205, 213",
+      "nota": "Um em cada dois africanos levados ao Brasil veio parar aqui. Só entre 1826 e 1850, em 25 anos, chegaram 776 mil. De Moçambique vieram 280 mil; quase todo o resto, de Angola.",
+      "rotulo": "Sudeste"
+    },
+    {
+      "id": "brasil_bahia",
+      "nome": "Bahia",
+      "detalhe": "Salvador e o Recôncavo",
+      "pessoas": 1568400,
+      "lon": -38.51,
+      "lat": -12.97,
+      "pagina": "205, 212",
+      "nota": "Mais da metade veio da Costa da Mina — Nigéria, Benim e Togo —, e não de Angola: 810 mil pessoas. Era o fumo de rolo do Recôncavo que pagava por elas.",
+      "rotulo": "Bahia"
+    },
+    {
+      "id": "brasil_pernambuco",
+      "nome": "Pernambuco e Nordeste",
+      "detalhe": "Recife, Olinda, Alagoas, Paraíba",
+      "pessoas": 854000,
+      "lon": -34.88,
+      "lat": -8.05,
+      "pagina": "205, 211",
+      "nota": "Quase 90% vieram de Angola e do Congo. Foi aqui que o complexo açucareiro das Américas começou.",
+      "rotulo": "Pernambuco"
+    },
+    {
+      "id": "brasil_norte",
+      "nome": "Maranhão e Pará",
+      "detalhe": "São Luís, Belém e o estuário do Amazonas",
+      "pessoas": 142000,
+      "lon": -44.3,
+      "lat": -2.53,
+      "pagina": "205, 214",
+      "nota": "A última grande fronteira escravista do Brasil. Dos 142 mil, 97 mil vieram da Senegâmbia, sobretudo da Guiné-Bissau, trazidos pela Companhia Geral do Grão-Pará e Maranhão. O primeiro carregamento direto da África é de 1680; o último, de 1846.",
+      "rotulo": "Maranhão e Pará"
+    }
+  ],
+  "cidades": [
+    {
+      "nome": "Salvador",
+      "lon": -38.51,
+      "lat": -12.97,
+      "quando": "1585 → 1750",
+      "cifra": "14 mil → 40 mil habitantes",
+      "texto": "A primeira capital quase triplicou em 65 anos. Em 1695, a arquidiocese tinha cerca de 90 mil habitantes e a população branca era um em cada cinco. 'Os brancos só servem para determinar aos escravos o que hão de fazer', escrevia à Coroa o arcebispo dom Sebastião Monteiro da Vide.",
+      "pagina": "264, 359"
+    },
+    {
+      "nome": "Rio de Janeiro",
+      "lon": -43.18,
+      "lat": -22.9,
+      "quando": "1672",
+      "cifra": "4 mil brancos, 20 mil africanos",
+      "texto": "Cinco africanos para cada branco, um século antes de o Rio se tornar o maior porto negreiro da história.",
+      "pagina": "9"
+    },
+    {
+      "nome": "Pernambuco",
+      "lon": -34.88,
+      "lat": -8.05,
+      "quando": "1580",
+      "cifra": "66 engenhos",
+      "texto": "Operados por 2 mil famílias portuguesas, já liderando a produção de açúcar do Brasil, nos solos de massapé da Zona da Mata.",
+      "pagina": "263"
+    },
+    {
+      "nome": "São Paulo",
+      "lon": -46.63,
+      "lat": -23.55,
+      "quando": "1687",
+      "cifra": "1,5 mil brancos, 10 mil indígenas escravizados",
+      "texto": "A vila dos bandeirantes escravizava sobretudo indígenas. Em 1632, Raposo Tavares sozinho escravizou entre 40 e 60 mil.",
+      "pagina": "10"
+    },
+    {
+      "nome": "São Luís e Belém",
+      "lon": -44.3,
+      "lat": -2.53,
+      "quando": "1637",
+      "cifra": "250 e 80 habitantes",
+      "texto": "O extremo norte mal existia quando o Nordeste já era o maior produtor de açúcar do mundo.",
+      "pagina": "9"
+    },
+    {
+      "nome": "Minas Gerais",
+      "lon": -43.5,
+      "lat": -20.4,
+      "quando": "1697",
+      "cifra": "as primeiras notícias de ouro",
+      "texto": "Chegam a Salvador e mudam a geografia do tráfico: o eixo se desloca do Nordeste para o Sudeste, e o Rio de Janeiro vira o porto de entrada.",
+      "pagina": "10"
+    }
+  ],
+  "colonia": [
+    {
+      "rotulo": "O Brasil em 1695",
+      "valor": "300 mil habitantes",
+      "detalhe": "Menos que Taubaté ou Pelotas hoje. E de cada três brasileiros, um era escravizado.",
+      "pagina": "359"
+    },
+    {
+      "rotulo": "Entrada anual",
+      "valor": "10 mil africanos por ano",
+      "detalhe": "Média despejada pelos navios negreiros nos portos de Salvador, Recife e Rio de Janeiro no fim do século XVII.",
+      "pagina": "359"
+    },
+    {
+      "rotulo": "Um engenho grande",
+      "valor": "100 a 150 escravizados",
+      "detalhe": "As engenhocas precisavam de no mínimo quarenta; os lavradores que só plantavam cana empregavam trinta em média.",
+      "pagina": "262"
+    },
+    {
+      "rotulo": "Quanto do capital",
+      "valor": "quase a metade",
+      "detalhe": "Nos inventários do Recôncavo entre 1716 e 1816 analisados por Stuart Schwartz, as pessoas escravizadas representavam quase metade do capital investido num engenho. O retorno ficava entre 10% e 15%.",
+      "pagina": "262"
+    },
+    {
+      "rotulo": "A safra",
+      "valor": "18 a 20 horas por dia",
+      "detalhe": "No auge da moagem. As caldeiras ferviam dia e noite, seis a nove meses por ano. Escravizados com um só braço, mutilados pela moenda, eram comuns nos engenhos baianos.",
+      "pagina": "267-268"
+    },
+    {
+      "rotulo": "Por que o tráfico não parava",
+      "valor": "12 a 14 anos",
+      "detalhe": "Era o tempo que uma criança nascida no Brasil levava para se tornar força produtiva num engenho — e o custo de criá-la superava o preço de comprar um adulto recém-chegado da África. A aritmética que sustentou três séculos e meio de travessias.",
+      "pagina": "270"
+    },
+    {
+      "rotulo": "Os indígenas",
+      "valor": "2 milhões no fim do século XVII",
+      "detalhe": "Metade do número estimado duzentos anos antes.",
+      "pagina": "360"
+    }
+  ]
+}

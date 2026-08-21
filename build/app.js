@@ -1313,6 +1313,96 @@ function montarMapaPopulacoes() {
     <div class="miudo" style="margin-top:10px">${c.itens}</div></div>`).join('');
 }
 
+
+// --- Carta III: o Brasil escravista
+let brMontado = false;
+function montarMapaBrasil() {
+  if (brMontado) return;
+  brMontado = true;
+  const B = D.brasil;
+  const svgB = html('mapa-br');
+  const [x0] = proj(-76, 0), [x1] = proj(-24, 0);
+  const [, y0] = proj(0, 8), [, y1] = proj(0, -35);
+  svgB.setAttribute('viewBox', `${x0.toFixed(0)} ${y0.toFixed(0)} ${(x1 - x0).toFixed(0)} ${(y1 - y0).toFixed(0)}`);
+  svgB.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+  el('rect', { x: x0, y: y0, width: x1 - x0, height: y1 - y0, fill: 'var(--mar)' }, svgB);
+  const gT = el('g', { class: 'terra' }, svgB);
+  for (const anel of D.geo.litoral) el('path', { d: caminho(anel) }, gT);
+  const gD = el('g', { class: 'dominio', fill: corBandeira('portugal'), opacity: .34 }, svgB);
+  for (const anel of D.geo.dominios.portugal) el('path', { d: caminho(anel) }, gD);
+  const gB = el('g', null, svgB), gL = el('g', null, svgB);
+
+  // O que veio de cada região africana para cada porto brasileiro.
+  const origens = {};
+  for (const r of D.rotas) {
+    if (!r.destino.startsWith('brasil')) continue;
+    (origens[r.destino] = origens[r.destino] || []).push(r);
+  }
+
+  const maxB = Math.max(...B.desembarques.map((d) => d.pessoas));
+  const raio = (v) => Math.max(6, Math.sqrt(v / maxB) * 36);
+  const dicaB = html('dica-br'), palcoB = html('palco-br');
+  palcoB.addEventListener('pointerleave', () => dicaB.classList.remove('visivel'));
+
+  for (const d of B.desembarques) {
+    const [x, y] = proj(d.lon, d.lat);
+    const r = raio(d.pessoas);
+    const c = el('circle', { cx: x, cy: y, r, fill: corBandeira('portugal'),
+      'fill-opacity': .42, class: 'bolha' }, gB);
+    const lista = (origens[d.id] || []).sort((a, b) => b.desembarcados - a.desembarcados);
+    const soma = lista.reduce((t, x2) => t + x2.desembarcados, 0) || 1;
+    const conteudo = `<h4>${d.nome}</h4><div>${d.detalhe}</div>
+      <dl><dt>Desembarcados</dt><dd>${num(d.pessoas)}</dd></dl>
+      <div class="nota" style="margin-top:8px"><b>De onde vieram</b><br>${
+        lista.map((o) => `<span style="color:${corRegiao(o.origem)}">■</span> ${REG[o.origem].nome} — ` +
+          `${num(o.desembarcados)} (${((o.desembarcados / soma) * 100).toFixed(0)}%)`).join('<br>')}</div>
+      <div class="nota">${d.nota}</div>`;
+    c.addEventListener('pointermove', (e) => {
+      dicaB.innerHTML = conteudo;
+      dicaB.classList.add('visivel');
+      const cx = palcoB.getBoundingClientRect();
+      let px = e.clientX - cx.left + 16, py = e.clientY - cx.top + 16;
+      if (px + dicaB.offsetWidth > cx.width - 8) px = e.clientX - cx.left - dicaB.offsetWidth - 16;
+      if (py + dicaB.offsetHeight > cx.height - 8) py = Math.max(8, e.clientY - cx.top - dicaB.offsetHeight - 16);
+      dicaB.style.left = px + 'px'; dicaB.style.top = py + 'px';
+    });
+    c.addEventListener('pointerleave', () => dicaB.classList.remove('visivel'));
+
+    const t = el('text', { class: 'rotulo porto', 'font-size': 14.5, 'text-anchor': 'start' }, gL);
+    const l1 = el('tspan', { x: x + r + 8, y: y - 2 }, t); l1.textContent = d.rotulo || d.nome;
+    const l2 = el('tspan', { x: x + r + 8, y: y + 15, 'font-size': 13, fill: 'var(--tinta-2)' }, t);
+    l2.textContent = num(d.pessoas);
+  }
+
+  // Legenda de escala
+  {
+    const g = el('g', null, svgB);
+    const bx = x1 - 96, by = y1 - 30;
+    for (const v of [2000000, 500000]) {
+      const r = raio(v);
+      el('circle', { cx: bx, cy: by - r, r, fill: 'none', stroke: '#5d4a30', 'stroke-width': .9, opacity: .7 }, g);
+      el('line', { x1: bx, y1: by - 2 * r, x2: bx + raio(2000000) + 6, y2: by - 2 * r,
+        stroke: '#5d4a30', 'stroke-width': .5, opacity: .45 }, g);
+      texto(num(v), { x: bx + raio(2000000) + 10, y: by - 2 * r + 4, class: 'rotulo', 'font-size': 12 }, g);
+    }
+    texto('pessoas desembarcadas', { x: bx - raio(2000000) - 4, y: by + 20, class: 'rotulo',
+      'font-size': 12.5, 'font-style': 'italic' }, g);
+  }
+
+  html('lacuna-brasil').innerHTML = `<b>O que esta carta não mostra.</b> ${B._lacuna}`;
+  const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+  html('cartoes-cidades').innerHTML = B.cidades.map((c) => `<div class="cartao">
+    <div class="quando" style="font-family:var(--fonte-mapa);letter-spacing:.14em;
+      text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">${c.quando}</div>
+    <h3 style="margin-top:4px">${c.nome}</h3>
+    <div class="grande" style="font-size:22px">${c.cifra}</div>
+    <div class="miudo" style="margin-top:8px">${c.texto} ${cite(c.pagina)}</div></div>`).join('');
+  html('cartoes-colonia').innerHTML = B.colonia.map((c) => `<div class="cartao">
+    <h3>${c.rotulo}</h3><div class="grande" style="font-size:23px">${c.valor}</div>
+    <div class="miudo" style="margin-top:8px">${c.detalhe} ${cite(c.pagina)}</div></div>`).join('');
+}
+
 // --- troca de abas
 {
   const paineis = {
@@ -1324,7 +1414,7 @@ function montarMapaPopulacoes() {
   const ir = (nome) => {
     for (const b of botoes) b.setAttribute('aria-selected', String(b.dataset.aba === nome));
     for (const [k, el2] of Object.entries(paineis)) el2.hidden = k !== nome;
-    if (nome === 'escravidao') { montarMapaPopulacoes(); }
+    if (nome === 'escravidao') { montarMapaPopulacoes(); montarMapaBrasil(); }
     else if (prontoParaMedir) { descongestionar(); aplicarCamadas(); }
     if (location.hash !== '#' + nome) history.replaceState(null, '', '#' + nome);
   };

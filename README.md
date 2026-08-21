@@ -17,7 +17,7 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Comércio triangular** | O circuito mercantil completo de cada uma das sete potências: ida com mercadorias, travessia do meio com pessoas, retorno com gêneros coloniais |
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
 | **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, o navio negreiro, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas, **a guerra luso-holandesa pelo fornecimento de cativos** |
-| **A Escravidão** (aba) | O que veio depois do desembarque: **a chegada e o Valongo**, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
+| **A Escravidão** (aba) | **Carta III do Brasil escravista** — onde as pessoas desembarcaram, por região, e o que eram as cidades coloniais. Mais: a chegada e o Valongo, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
 Quadros: os corredores um a um · as quantidades · as bandeiras · os portos que armavam as
 viagens · os quatro ciclos do tráfico brasileiro · povos e Estados de origem ·
@@ -54,6 +54,7 @@ dados/
   escravidao.json         populações, demografia, trabalho, resistência, abolições
   negocio.json            moeda, trocas, navio, lucros, mortalidade real, Luanda, companhias
   africa.json             a África antes do tráfico, os topônimos, a guerra luso-holandesa
+  brasil.json             desembarques por região, cidades coloniais, economia do engenho
   portos_armadores.json   onde as viagens eram organizadas (Gomes I, p. 217)
   cotejo.json             confronto linha a linha entre a carta, o livro e o resultado
   circuitos.json          pernas do comércio triangular por bandeira
