@@ -243,6 +243,24 @@
       "agora": "Quadro XV",
       "estado": "novo",
       "obs": ""
+    },
+    {
+      "item": "O navio negreiro",
+      "antes": "—",
+      "livro": "cap. 18, pp. 221-236",
+      "pagina": "221-236",
+      "agora": "Quadro XV",
+      "estado": "novo",
+      "obs": "As cinco marcas a ferro, a tripulação dobrada, as seiscentas revoltas em alto-mar, a ração diária, o speculum oris."
+    },
+    {
+      "item": "A chegada e o Valongo",
+      "antes": "—",
+      "livro": "cap. 19, pp. 237-248",
+      "pagina": "237-248",
+      "agora": "Quadros XX e XXI",
+      "estado": "novo",
+      "obs": "O leilão em três escolhas, o exame do corpo, o Valongo com 18 a 22 mil pessoas por ano em 1808, os instrumentos de castigo na classificação de Artur Ramos."
     }
   ]
 }

@@ -145,6 +145,7 @@ const dados = {
   populacoes: escravidao.populacoes, demografia: escravidao.demografia,
   trabalho: escravidao.trabalho, resistencia: escravidao.resistencia,
   abolicoes: escravidao.abolicoes, depois: escravidao.depois,
+  chegada: escravidao.chegada, castigos: escravidao.castigos,
   armadores: armadores.portos, armadoresNota: armadores._nota, ciclos: ciclos.lista,
   cotejo: cotejo.linhas, cotejoNota: cotejo._nota, negocio,
   coresRegiao: CORES_REGIAO,

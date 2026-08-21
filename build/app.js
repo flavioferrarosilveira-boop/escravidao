@@ -1244,6 +1244,10 @@ function montarMapaPopulacoes() {
     <h3>${i.termo}</h3>
     <div class="miudo" style="margin-top:10px">${i.texto} ${cite(i.pagina)}</div></div>`));
 
+  encher('cartoes-navio', N.navio.map((n) => `<div class="cartao">
+    <h3>${n.titulo}</h3><div class="grande" style="font-size:23px">${n.cifra}</div>
+    <div class="miudo" style="margin-top:8px">${n.texto} ${cite(n.pagina)}</div></div>`));
+
   encher('cartoes-lucros', N.lucros.map((l) => `<div class="cartao">
     <div class="quando" style="font-family:var(--fonte-mapa);letter-spacing:.14em;
       text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">${l.quando}</div>
@@ -1269,6 +1273,18 @@ function montarMapaPopulacoes() {
     <span class="miudo">· ${c.pais}</span>
     ${c.texto ? `<div class="miudo" style="margin-top:5px">${c.texto}</div>` : ''}
     <div style="margin-top:4px">${cite(c.pagina)}</div></li>`).join('');
+}
+
+// --- A chegada e os instrumentos de castigo
+{
+  const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+  html('cartoes-chegada').innerHTML = D.chegada.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3>
+    <div class="miudo" style="margin-top:10px">${c.texto} ${cite(c.pagina)}</div></div>`).join('');
+  html('nota-castigos').innerHTML = D.castigos._fonte;
+  html('cartoes-castigos').innerHTML = D.castigos.categorias.map((c) => `<div class="cartao">
+    <h3>${c.nome}</h3>
+    <div class="miudo" style="margin-top:10px">${c.itens}</div></div>`).join('');
 }
 
 // --- troca de abas

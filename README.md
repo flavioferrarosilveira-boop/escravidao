@@ -16,8 +16,8 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Rotas do tráfico** | 72 corredores região africana → porto americano, espessura proporcional ao número de pessoas embarcadas; filtro por região de origem ou por bandeira |
 | **Comércio triangular** | O circuito mercantil completo de cada uma das sete potências: ida com mercadorias, travessia do meio com pessoas, retorno com gêneros coloniais |
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
-| **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas |
-| **A Escravidão** (aba) | O que veio depois do desembarque: populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
+| **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, **o navio negreiro**, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas |
+| **A Escravidão** (aba) | O que veio depois do desembarque: **a chegada e o Valongo**, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
 Quadros: os corredores um a um · as quantidades · as bandeiras · **os portos que armavam as
 viagens** · **os quatro ciclos do tráfico brasileiro** · povos e Estados de origem · cronologia.

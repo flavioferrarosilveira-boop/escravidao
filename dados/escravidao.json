@@ -1,5 +1,5 @@
 {
-  "_fonte": "Censos nacionais, atos de emancipação e historiografia. Os números de população escravizada são contagens de censo ou de emancipação, com o ano indicado em cada caso — não estimativas de auge. Cifras demográficas e dados de Palmares conforme GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019 — páginas indicadas em cada verbete.",
+  "_fonte": "Censos nacionais, atos de emancipação e historiografia. Os números de população escravizada são contagens de censo ou de emancipação, com o ano indicado em cada caso — não estimativas de auge. Cifras demográficas e dados de Palmares conforme GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019 — páginas indicadas em cada verbete. Os quadros da chegada e dos castigos vêm dos capítulos 19 e seguintes (pp. 237-248).",
   "populacoes": [
     {
       "id": "eua",
@@ -342,5 +342,69 @@
       "titulo": "O que ficou",
       "texto": "Cerca de 10,7 milhões de pessoas desembarcadas e seus descendentes moldaram a língua, a comida, a música, as religiões e a estrutura social de todo o Atlântico. Quase metade delas veio parar no Brasil, que tem hoje a maior população de origem africana fora da África."
     }
-  ]
+  ],
+  "chegada": [
+    {
+      "titulo": "A quarentena",
+      "texto": "Antes de vender, o capitão registrava a carga, pagava os impostos e passava pela fiscalização sanitária; os doentes ficavam retidos. Várias epidemias brasileiras do início do século XVII vieram por ali.",
+      "pagina": "239"
+    },
+    {
+      "titulo": "Primeira escolha, segunda escolha, ponta de estoque",
+      "texto": "Os leilões começavam pela 'primeira escolha', em que os compradores mais ricos levavam os mais jovens e fortes. Depois vinha a 'segunda escolha'. Por fim, idosos, doentes e pessoas com deficiência eram vendidos pela melhor oferta. Havia até um mercado secundário: investidores compravam doentes e desnutridos para curá-los, engordá-los e revender. Os fracos demais para achar comprador eram abandonados nas ruas do Rio, onde morriam como indigentes.",
+      "pagina": "239-240"
+    },
+    {
+      "titulo": "O exame do corpo",
+      "texto": "Nus, em praça pública, eram pesados, medidos, apalpados e cheirados; tinham de correr, pular, tossir, mostrar os dentes e a língua. Havia inspeção dos genitais à procura de sífilis e gonorreia. Como os vendedores barbeavam e poliam com pedra-pomes o rosto dos mais velhos, muitos compradores passavam a língua na face dos cativos à procura de barba cortada.",
+      "pagina": "240"
+    },
+    {
+      "titulo": "Boçal e ladino",
+      "texto": "Valia mais quem já falasse algum português, estivesse batizado ou tivesse passado pelas ilhas atlânticas — e mais ainda quem soubesse mineração, metalurgia, carpintaria ou criação de gado. O recém-chegado sem nada disso era o 'boçal', avaliado só pelo vigor.",
+      "pagina": "243"
+    },
+    {
+      "titulo": "O preço, em mulas e cavalos",
+      "texto": "Em 1817, um adolescente custava cerca de 100 mil réis no Rio — o preço de três mulas de carga. Um século antes, Antonil registrava que em Minas Gerais, em 1711, 'um negro bem-feito, valente e ladino' valia trezentas oitavas de ouro, três vezes o valor de um cavalo sendeiro.",
+      "pagina": "239"
+    },
+    {
+      "titulo": "O Valongo",
+      "texto": "Entre os atuais bairros da Gamboa, da Saúde e do Santo Cristo, no Rio de Janeiro, foi por quase duzentos anos o maior entreposto negreiro da América. Em 1808, quando a corte portuguesa chegou ao Brasil, os navios despejavam ali entre 18 mil e 22 mil pessoas por ano. Maria Graham anotou em maio de 1823 que quase toda casa daquela rua longuíssima era um depósito, com filas de jovens sentados nos bancos, cabeça raspada e corpos macilentos — e alguns fracos demais para se sentar.",
+      "pagina": "241-242"
+    },
+    {
+      "titulo": "O 'temperar'",
+      "texto": "Nas Antilhas britânicas chamava-se seasoning: o período inicial de tortura física e psicológica destinado a mostrar ao recém-chegado quem mandava. No Recôncavo, segundo o jesuíta Manuel Ribeiro Rocha, muitos senhores açoitavam os africanos como primeira providência depois da compra, 'sem mais causa que a vontade própria de o fazer assim'.",
+      "pagina": "245"
+    },
+    {
+      "titulo": "Casa-grande, senzala, mucama",
+      "texto": "A palavra senzala vem do quimbundo — a língua franca de Angola no tempo do tráfico — e significava povoado, comunidade, aglomeração de trabalhadores. Sheila de Castro Faria observa que as condições variaram muito: o cubículo de taipa sem janelas, trancado por fora à noite, descreve melhor os séculos XVI e XVII que as fazendas dos séculos XVIII e XIX, onde havia famílias relativamente estáveis.",
+      "pagina": "244-245"
+    },
+    {
+      "titulo": "As leis que não pegaram",
+      "texto": "Em 1688 duas leis permitiram que qualquer pessoa, mesmo cativa, denunciasse senhores de crueldade excessiva. Em 1700, dom Pedro II mandou o governador da Bahia averiguar os castigos com argolas de ferro, que 'ofende a natureza e as leis'. O governador recusou-se: punir fazendeiros brancos poderia fazer os escravizados acreditar que a Justiça lhes daria liberdade. Numa lista de processados na vila de Cachoeira entre 1780 e 1838 não aparece um só nome de dono de engenho.",
+      "pagina": "246-247"
+    }
+  ],
+  "castigos": {
+    "_fonte": "Classificação de Artur Ramos (1938), em GOMES, Laurentino. Escravidão, vol. I, p. 248.",
+    "categorias": [
+      {
+        "nome": "Contenção",
+        "itens": "Correntes, colares de ferro, algemas, machos e peias (que prendiam um só pé ou uma só mão), o tronco — madeira em duas metades com buracos para imobilizar cabeça, pés e mãos — e o vira-mundo, um tronco menor de ferro. A máscara de folha de flandres impedia comer cana ou rapadura e engolir pepitas. O cepo era um tarugo pesado preso ao tornozelo, que a pessoa tinha de carregar na cabeça para se mover."
+      },
+      {
+        "nome": "Tortura",
+        "itens": "O 'anjinho', de origem medieval: dois anéis metálicos em torniquete, introduzidos no dedo e atarraxados aos poucos até esmagar o osso."
+      },
+      {
+        "nome": "Surra",
+        "itens": "A palmatória e o bacalhau — chicote de cabo curto com cinco tiras de couro retorcido; nos navios ingleses, com nove, o cat-o'-nine-tails. Para marcar fugitivos, a letra F a ferro quente e o libambo: uma argola no pescoço com haste de ferro voltada para cima, às vezes com chocalhos."
+      }
+    ]
+  }
 }
