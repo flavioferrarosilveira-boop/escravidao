@@ -16,10 +16,19 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Rotas do tráfico** | 72 corredores região africana → porto americano, espessura proporcional ao número de pessoas embarcadas; filtro por região de origem ou por bandeira |
 | **Comércio triangular** | O circuito mercantil completo de cada uma das sete potências: ida com mercadorias, travessia do meio com pessoas, retorno com gêneros coloniais |
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
+| **A Escravidão** (aba) | O que veio depois do desembarque: populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
+
+Na carta das rotas dá para **colorir e filtrar por três eixos**: região africana de
+embarque, **país de destino** ou bandeira do navio. Ao escolher um filtro — *Brasil*,
+por exemplo — aparece sob o mapa um resumo com o total de pessoas desembarcadas ali
+e a repartição por região africana de origem.
 
 Camadas ligáveis: domínios coloniais, Estados africanos, ventos e correntes,
 portos principais, portos secundários e graticulado. Arrastar move a carta;
 `Ctrl`/`Shift` + roda dá zoom; duplo clique restaura.
+
+**Versão em PDF:** [carta-do-trafico-atlantico.pdf](https://flavioferrarosilveira-boop.github.io/escravidao/carta-do-trafico-atlantico.pdf)
+— 18 páginas A3, as duas abas inteiras, vetorial.
 
 ## Números-chave
 
@@ -37,6 +46,7 @@ dados/
   destinos.json           14 destinos americanos: totais, portos, potência colonial
   bandeiras.json          7 bandeiras: totais, período, portos armadores
   periodos.json           totais por século + cronologia
+  escravidao.json         populações, demografia, trabalho, resistência, abolições
   circuitos.json          pernas do comércio triangular por bandeira
   matriz_sementes.json    priors historiográficos da matriz origem × destino
   matriz_rotas.csv        SAÍDA — a matriz ajustada, auditável linha a linha
@@ -44,8 +54,10 @@ dados/
 build/
   extrair_geo.mjs         gera geo_atlantico.json (roda uma vez, precisa de rede)
   gerar.mjs               ajusta a matriz por IPF e monta o index.html
+  gerar_pdf.mjs           imprime index.html em PDF (precisa de playwright)
   modelo.html estilo.css app.js
 index.html                SAÍDA — a carta, autocontida
+carta-do-trafico-atlantico.pdf   SAÍDA — a versão impressa
 ```
 
 ## Publicação
@@ -60,6 +72,13 @@ workflow — de modo que a carta no ar nunca fique atrás dos dados.
 
 ```bash
 node build/gerar.mjs      # sem dependências
+```
+
+Para refazer o PDF:
+
+```bash
+npm i playwright && npx playwright install chromium
+node build/gerar_pdf.mjs
 ```
 
 Para refazer a base geográfica a partir do Natural Earth:

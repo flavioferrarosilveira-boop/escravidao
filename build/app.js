@@ -36,7 +36,7 @@ const caminho = (anel) => {
 // ------------------------------------------------------------ estado da carta
 const estado = {
   modo: 'rotas',
-  cor: 'regiao',
+  dimensao: 'regiao',
   selecao: new Set(),
   bandeiraCircuito: 'gra_bretanha',
   periodo: 'xviii',
@@ -48,7 +48,30 @@ const DES = Object.fromEntries(D.destinos.map((d) => [d.id, d]));
 const BAN = Object.fromEntries(D.bandeiras.map((b) => [b.id, b]));
 const corRegiao = (id) => D.coresRegiao[id] || '#6b573c';
 const corBandeira = (id) => (BAN[id] ? BAN[id].cor : '#6b573c');
-const corRota = (r) => (estado.cor === 'regiao' ? corRegiao(r.origem) : corBandeira(r.potencia));
+
+// Grupos de destino — o "país" para quem filtra (Brasil, Cuba e Terra Firme
+// somam-se em Hispano-América, os quatro portos brasileiros somam-se em Brasil).
+const CORES_DESTINO = {
+  brasil: '#1f6f4a', caribe_britanico: '#8c2f2f', caribe_frances: '#2f4f8c',
+  hispano_america: '#b8860b', caribe_holandes: '#c05a1f', america_norte: '#6b4fa0',
+  caribe_danes: '#4a7f9e', europa_africa: '#6b573c',
+};
+const GRUPOS = [];
+for (const d of D.destinos) {
+  let g = GRUPOS.find((x) => x.id === d.grupo);
+  if (!g) { g = { id: d.grupo, nome: d.grupo_nome, desembarcados: 0, itens: [] }; GRUPOS.push(g); }
+  g.desembarcados += d.desembarcados;
+  g.itens.push(d);
+}
+GRUPOS.sort((a, b) => b.desembarcados - a.desembarcados);
+const grupoDe = (idDestino) => DES[idDestino].grupo;
+const corDestino = (grupo) => CORES_DESTINO[grupo] || '#6b573c';
+const GRUPO = Object.fromEntries(GRUPOS.map((g) => [g.id, g]));
+
+const chaveRota = (r) => (estado.dimensao === 'regiao' ? r.origem
+  : estado.dimensao === 'destino' ? grupoDe(r.destino) : r.potencia);
+const corRota = (r) => (estado.dimensao === 'regiao' ? corRegiao(r.origem)
+  : estado.dimensao === 'destino' ? corDestino(grupoDe(r.destino)) : corBandeira(r.potencia));
 
 // ------------------------------------------------- toponímia e ornamentos
 const POLITIES = [
@@ -120,7 +143,7 @@ const gOrnamento = el('g', null, palcoG);
 
 // --- mar e papel
 el('rect', { x: 0, y: 0, width: LARG, height: ALT, fill: 'var(--mar)' }, gMar);
-el('rect', { x: 0, y: 0, width: LARG, height: ALT, fill: '#8d7147', filter: 'url(#papel)', opacity: '.14' }, gMar);
+el('rect', { x: 0, y: 0, width: LARG, height: ALT, fill: '#8d7147', filter: 'url(#papel)', opacity: '.14', class: 'textura' }, gMar);
 
 // --- graticula
 for (let lon = -100; lon <= LON_MAX; lon += 10) {
@@ -403,11 +426,10 @@ function limpar(g) { while (g.firstChild) g.removeChild(g.firstChild); }
 function desenharRotas() {
   limpar(gRotas);
   const sel = estado.selecao;
-  const chave = (r) => (estado.cor === 'regiao' ? r.origem : r.potencia);
   for (const r of D.rotas) {
     const a = arco(r.de, r.para);
     const cor = corRota(r);
-    const ativo = sel.size === 0 || sel.has(chave(r));
+    const ativo = sel.size === 0 || sel.has(chaveRota(r));
     const g = el('g', { class: ativo ? '' : 'apagado' }, gRotas);
     const recaptura = r.destino === 'europa_africa';
     el('path', { d: a.d, class: 'rota', stroke: cor, 'stroke-width': larguraRota(r.embarcados),
@@ -534,8 +556,10 @@ function montarControles() {
     fm.appendChild(ficha(rot, estado.modo === id, null, () => { estado.modo = id; estado.selecao.clear(); render(); }));
   }
   const fc = html('fichas-cor'); fc.innerHTML = '';
-  for (const [id, rot] of [['regiao', 'Região africana'], ['bandeira', 'Bandeira do navio']]) {
-    fc.appendChild(ficha(rot, estado.cor === id, null, () => { estado.cor = id; estado.selecao.clear(); render(); }));
+  for (const [id, rot] of [['regiao', 'Região africana'], ['destino', 'País de destino'],
+                           ['bandeira', 'Bandeira do navio']]) {
+    fc.appendChild(ficha(rot, estado.dimensao === id, null,
+      () => { estado.dimensao = id; estado.selecao.clear(); render(); }));
   }
 
   const ff = html('fichas-filtro'); ff.innerHTML = '';
@@ -551,11 +575,17 @@ function montarControles() {
     for (const p of D.periodos) {
       ff.appendChild(ficha(p.rotulo, estado.periodo === p.id, null, () => { estado.periodo = p.id; render(); }));
     }
-  } else if (estado.cor === 'regiao') {
+  } else if (estado.dimensao === 'regiao') {
     rf.textContent = 'Regiões de embarque';
     ff.appendChild(ficha('Todas', estado.selecao.size === 0, null, () => { estado.selecao.clear(); render(); }, true));
     for (const r of D.regioes) {
       ff.appendChild(ficha(r.nome, estado.selecao.has(r.id), corRegiao(r.id), () => alternar(r.id), true));
+    }
+  } else if (estado.dimensao === 'destino') {
+    rf.textContent = 'País de destino';
+    ff.appendChild(ficha('Todos', estado.selecao.size === 0, null, () => { estado.selecao.clear(); render(); }, true));
+    for (const g of GRUPOS) {
+      ff.appendChild(ficha(g.nome, estado.selecao.has(g.id), corDestino(g.id), () => alternar(g.id), true));
     }
   } else {
     rf.textContent = 'Bandeiras';
@@ -621,7 +651,8 @@ function montarLegenda() {
     }
     s += '</svg>';
     item(s + '&nbsp;Espessura ∝ pessoas embarcadas');
-    const fonte = estado.cor === 'regiao' ? D.regioes.map((r) => [r.nome, corRegiao(r.id)])
+    const fonte = estado.dimensao === 'regiao' ? D.regioes.map((r) => [r.nome, corRegiao(r.id)])
+      : estado.dimensao === 'destino' ? GRUPOS.map((g) => [g.nome, corDestino(g.id)])
       : D.bandeiras.map((b) => [b.nome, b.cor]);
     for (const [nome, cor] of fonte) {
       item(`<span style="width:13px;height:13px;border-radius:2px;background:${cor};display:inline-block"></span> ${nome}`);
@@ -630,6 +661,86 @@ function montarLegenda() {
 }
 
 // ------------------------------------------------------------------- render
+// ------------------------------------------------- resumo da seleção
+// Responde à pergunta direta: escolhi o Brasil — quantas pessoas, vindas de onde?
+const barra = (v, max, cor) =>
+  `<div class="barra"><i style="width:${((v / max) * 100).toFixed(1)}%;background:${cor}"></i></div>`;
+
+function montarResumo() {
+  const caixa = html('resumo');
+  const sel = estado.selecao;
+  if (estado.modo !== 'rotas' || sel.size === 0) { caixa.hidden = true; caixa.innerHTML = ''; return; }
+  caixa.hidden = false;
+
+  const rotas = D.rotas.filter((r) => sel.has(chaveRota(r)));
+  const nomes = [...sel].map((id) => estado.dimensao === 'regiao' ? REG[id].nome
+    : estado.dimensao === 'destino' ? GRUPO[id].nome : BAN[id].nome);
+
+  let cifra, unidade, corTema, tituloLista, itens;
+
+  if (estado.dimensao === 'destino') {
+    cifra = [...sel].reduce((t, id) => t + GRUPO[id].desembarcados, 0);
+    unidade = 'pessoas desembarcadas';
+    corTema = corDestino([...sel][0]);
+    tituloLista = 'De onde vieram';
+    const porOrigem = new Map();
+    for (const r of rotas) porOrigem.set(r.origem, (porOrigem.get(r.origem) || 0) + r.desembarcados);
+    itens = [...porOrigem].map(([id, v]) => ({ nome: REG[id].nome, cor: corRegiao(id), valor: v }));
+  } else if (estado.dimensao === 'regiao') {
+    cifra = [...sel].reduce((t, id) => t + REG[id].embarcados, 0);
+    unidade = 'pessoas embarcadas';
+    corTema = corRegiao([...sel][0]);
+    tituloLista = 'Para onde foram';
+    const porDestino = new Map();
+    for (const r of rotas) {
+      const g = grupoDe(r.destino);
+      porDestino.set(g, (porDestino.get(g) || 0) + r.embarcados);
+    }
+    itens = [...porDestino].map(([id, v]) => ({ nome: GRUPO[id].nome, cor: corDestino(id), valor: v }));
+  } else {
+    cifra = [...sel].reduce((t, id) => t + BAN[id].embarcados, 0);
+    unidade = 'pessoas embarcadas por essa bandeira';
+    corTema = corBandeira([...sel][0]);
+    tituloLista = 'Colônias sob essa bandeira';
+    const porDestino = new Map();
+    for (const r of rotas) {
+      const g = grupoDe(r.destino);
+      porDestino.set(g, (porDestino.get(g) || 0) + r.desembarcados);
+    }
+    itens = [...porDestino].map(([id, v]) => ({ nome: GRUPO[id].nome, cor: corDestino(id), valor: v }));
+  }
+
+  itens.sort((a, b) => b.valor - a.valor);
+  const maxItem = itens.length ? itens[0].valor : 1;
+  const somaItens = itens.reduce((t, i) => t + i.valor, 0) || 1;
+
+  const mortos = num(rotas.reduce((t, r) => t + (r.embarcados - r.desembarcados), 0));
+  const rodape = estado.dimensao === 'destino'
+    ? `${num(rotas.reduce((t, r) => t + r.embarcados, 0))} embarcados na África · ${mortos} mortos na travessia`
+    : estado.dimensao === 'regiao'
+      ? `${num(rotas.reduce((t, r) => t + r.desembarcados, 0))} chegaram vivos · ${mortos} mortos na travessia`
+      : `${pct(cifra, D.meta.totalEmbarcados)} de todo o tráfico atlântico`;
+
+  caixa.innerHTML = `
+    <div>
+      <h4>${nomes.join(' + ')}</h4>
+      <div class="cifra" style="color:${corTema}">${num(cifra)}</div>
+      <div class="miudo">${unidade}</div>
+      <div class="miudo" style="margin-top:8px">${rodape}</div>
+    </div>
+    <div>
+      <div class="miudo" style="margin-bottom:8px"><b>${tituloLista}</b></div>
+      <ol>${itens.map((i) => `<li>
+        <span><span style="color:${i.cor}">■</span> ${i.nome}</span>
+        <b>${num(i.valor)}</b>
+        ${barra(i.valor, maxItem, i.cor)}
+      </li>`).join('')}</ol>
+      <div class="miudo" style="margin-top:9px">
+        Repartição pela matriz reconstruída (ver apêndice); soma ${num(somaItens)} nas rotas traçadas.
+      </div>
+    </div>`;
+}
+
 let prontoParaMedir = false;
 function render() {
   if (prontoParaMedir) descongestionar();
@@ -639,6 +750,7 @@ function render() {
   else desenharSeculo();
   montarControles();
   montarLegenda();
+  montarResumo();
   const nota = html('nota-carta');
   if (estado.modo === 'circuitos') {
     const c = D.circuitos.find((x) => x.bandeira === estado.bandeiraCircuito);
@@ -705,9 +817,6 @@ function tabela(destino, colunas, linhas) {
       `<td class="${colunas[i].num ? 'num' : ''}">${c}</td>`).join('') + '</tr>').join('') + '</tbody>';
   return t;
 }
-const barra = (v, max, cor) =>
-  `<div class="barra"><i style="width:${((v / max) * 100).toFixed(1)}%;background:${cor}"></i></div>`;
-
 // rotas
 {
   const max = D.rotas[0].embarcados;
@@ -875,6 +984,171 @@ const barra = (v, max, cor) =>
 }
 
 render();
+
+// =====================================================================
+//  ABA "A ESCRAVIDÃO"
+// =====================================================================
+
+// --- link do PDF: relativo no site, absoluto em qualquer outro hospedeiro
+{
+  const a = html('link-pdf');
+  if (a && !/github\.io$/.test(location.hostname)) {
+    a.href = 'https://flavioferrarosilveira-boop.github.io/escravidao/carta-do-trafico-atlantico.pdf';
+  }
+}
+
+// --- carta II: populações escravizadas
+let popMontada = false;
+function montarMapaPopulacoes() {
+  if (popMontada) return;
+  popMontada = true;
+  const svgP = html('mapa-pop');
+  // Mesmo plano projetado da carta I, recortado nas Américas.
+  const [x0] = proj(-100, 0), [x1] = proj(-25, 0);
+  const [, y0] = proj(0, 46), [, y1] = proj(0, -34);
+  svgP.setAttribute('viewBox', `${x0.toFixed(0)} ${y0.toFixed(0)} ${(x1 - x0).toFixed(0)} ${(y1 - y0).toFixed(0)}`);
+  svgP.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+  const gp = (pai) => el('g', null, pai);
+  el('rect', { x: x0, y: y0, width: x1 - x0, height: y1 - y0, fill: 'var(--mar)' }, svgP);
+  const gTerraP = el('g', { class: 'terra' }, svgP);
+  for (const anel of D.geo.litoral) el('path', { d: caminho(anel) }, gTerraP);
+  const gDomP = el('g', null, svgP);
+  for (const [potencia, aneis] of Object.entries(D.geo.dominios)) {
+    const g = el('g', { class: 'dominio', fill: corBandeira(potencia), opacity: .3 }, gDomP);
+    for (const anel of aneis) el('path', { d: caminho(anel) }, g);
+  }
+  const gBolhas = gp(svgP), gRotulosP = gp(svgP);
+
+  const maxPop = Math.max(...D.populacoes.map((x) => x.pessoas));
+  const raio = (v) => Math.max(5, Math.sqrt(v / maxPop) * 62);
+  const dicaP = html('dica-pop'), palcoP = html('palco-pop');
+  palcoP.addEventListener('pointerleave', () => dicaP.classList.remove('visivel'));
+
+  const rotulos = [];
+  for (const pop of [...D.populacoes].sort((a, b) => b.pessoas - a.pessoas)) {
+    const [x, y] = proj(pop.lon, pop.lat);
+    const r = raio(pop.pessoas);
+    const cor = corBandeira(pop.potencia);
+    const c = el('circle', { cx: x, cy: y, r, fill: cor, 'fill-opacity': .55, class: 'bolha' }, gBolhas);
+    const conteudo = `<h4>${pop.lugar} — ${pop.ano}</h4>
+      <dl><dt>Pessoas escravizadas</dt><dd>${num(pop.pessoas)}</dd></dl>
+      <div class="nota">Contagem de ${pop.tipo}. ${pop.nota}</div>`;
+    c.addEventListener('pointermove', (e) => {
+      dicaP.innerHTML = conteudo;
+      dicaP.classList.add('visivel');
+      const cx = palcoP.getBoundingClientRect();
+      let px = e.clientX - cx.left + 16, py = e.clientY - cx.top + 16;
+      if (px + dicaP.offsetWidth > cx.width - 8) px = e.clientX - cx.left - dicaP.offsetWidth - 16;
+      if (py + dicaP.offsetHeight > cx.height - 8) py = Math.max(8, e.clientY - cx.top - dicaP.offsetHeight - 16);
+      dicaP.style.left = px + 'px'; dicaP.style.top = py + 'px';
+    });
+    c.addEventListener('pointerleave', () => dicaP.classList.remove('visivel'));
+
+    const t = el('text', { class: 'rotulo porto', 'font-size': 15, 'data-ax': x, 'data-ay': y, 'data-r': r }, gRotulosP);
+    const l1 = el('tspan', { x, dy: 0 }, t); l1.textContent = pop.lugar;
+    const l2 = el('tspan', { x, dy: 17, 'font-size': 13.5, fill: 'var(--tinta-2)' }, t);
+    l2.textContent = `${num(pop.pessoas)} · ${pop.ano}`;
+    rotulos.push({ t, l1, l2, x, y, r, cor });
+  }
+
+  // Descongestionamento: quatro posições, senão vira chamada com linha-guia.
+  const ocupados = [];
+  const colide = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+  const medir = (t) => { const b = t.getBBox(); return { x: b.x - 5, y: b.y - 3, w: b.width + 10, h: b.height + 6 }; };
+  let escadaY = y0 + 250;
+  for (const it of rotulos) {
+    const opcoes = [
+      [it.x + it.r + 8, it.y - 4, 'start'], [it.x - it.r - 8, it.y - 4, 'end'],
+      [it.x, it.y - it.r - 20, 'middle'], [it.x, it.y + it.r + 18, 'middle'],
+    ];
+    let posto = false;
+    for (const [px, py, anc] of opcoes) {
+      it.t.setAttribute('text-anchor', anc);
+      it.t.setAttribute('y', py);
+      it.l1.setAttribute('x', px); it.l2.setAttribute('x', px);
+      const cx = medir(it.t);
+      if (!ocupados.some((o) => colide(cx, o))) { ocupados.push(cx); posto = true; break; }
+    }
+    if (!posto) {           // chamada à direita, empilhada, com linha-guia
+      const px = x1 - 150, py = escadaY;
+      escadaY += 44;
+      it.t.setAttribute('text-anchor', 'start');
+      it.t.setAttribute('y', py);
+      it.l1.setAttribute('x', px); it.l2.setAttribute('x', px);
+      ocupados.push(medir(it.t));
+      el('line', { x1: it.x + it.r, y1: it.y, x2: px - 6, y2: py - 4, stroke: it.cor,
+        'stroke-width': .9, 'stroke-dasharray': '3 4', opacity: .7 }, gRotulosP);
+    }
+  }
+
+  // Legenda de escala das bolhas
+  {
+    const g = el('g', null, svgP);
+    const bx = x0 + 70, by = y1 - 46;
+    const rMaior = raio(4000000);
+    for (const v of [4000000, 1000000, 100000]) {
+      const r = raio(v);
+      el('circle', { cx: bx, cy: by - r, r, fill: 'none', stroke: '#5d4a30', 'stroke-width': .9, opacity: .7 }, g);
+      const rotulo = v === 1e6 ? '1 milhão' : v > 1e6 ? v / 1e6 + ' milhões' : num(v);
+      texto(rotulo, { x: bx + rMaior + 12, y: by - 2 * r + 5, class: 'rotulo', 'font-size': 12 }, g);
+      el('line', { x1: bx, y1: by - 2 * r, x2: bx + rMaior + 8, y2: by - 2 * r,
+        stroke: '#5d4a30', 'stroke-width': .5, opacity: .45 }, g);
+    }
+    texto('pessoas escravizadas', { x: bx - rMaior, y: by + 22, class: 'rotulo',
+      'font-size': 12.5, 'font-style': 'italic' }, g);
+  }
+}
+
+// --- quadros da aba
+{
+  const maxP = Math.max(...D.populacoes.map((x) => x.pessoas));
+  tabela('tabela-populacoes',
+    [{ rotulo: 'Lugar' }, { rotulo: 'Ano', num: true }, { rotulo: 'Fonte da contagem' },
+     { rotulo: 'Pessoas escravizadas', num: true }, { rotulo: '' }],
+    [...D.populacoes].sort((a, b) => b.pessoas - a.pessoas).map((x) => [
+      `<span style="color:${corBandeira(x.potencia)}">■</span> ${x.lugar}`, x.ano, x.tipo,
+      num(x.pessoas), barra(x.pessoas, maxP, corBandeira(x.potencia)),
+    ]));
+
+  const cartao = (destino, itens) => {
+    const c = html(destino);
+    c.innerHTML = itens.join('');
+  };
+  cartao('cartoes-demografia', D.demografia.map((d) => `<div class="cartao">
+    <h3>${d.rotulo}</h3><div class="grande">${d.valor}</div>
+    <div class="miudo" style="margin-top:8px">${d.detalhe}</div></div>`));
+  cartao('cartoes-trabalho', D.trabalho.map((t) => `<div class="cartao">
+    <h3>${t.titulo}</h3><div class="miudo" style="font-style:italic">${t.lugar}</div>
+    <div class="miudo" style="margin-top:10px">${t.texto}</div></div>`));
+  cartao('cartoes-resistencia', D.resistencia.map((r) => `<div class="cartao">
+    <div class="miudo" style="font-family:var(--fonte-mapa);letter-spacing:.14em;text-transform:uppercase">${r.ano}</div>
+    <h3 style="margin-top:4px">${r.titulo}</h3>
+    <div class="miudo" style="font-style:italic">${r.lugar}</div>
+    <div class="miudo" style="margin-top:10px">${r.texto}</div></div>`));
+  cartao('cartoes-depois', D.depois.map((d) => `<div class="cartao">
+    <h3>${d.titulo}</h3><div class="miudo" style="margin-top:10px">${d.texto}</div></div>`));
+
+  html('cronologia-abolicao').innerHTML = D.abolicoes
+    .map((a) => `<li><b>${a.ano}</b><b style="font-family:var(--fonte-texto);font-size:inherit">${a.lugar}</b> — ${a.texto}</li>`)
+    .join('');
+}
+
+// --- troca de abas
+{
+  const paineis = { trafico: html('painel-trafico'), escravidao: html('painel-escravidao') };
+  const botoes = [...document.querySelectorAll('.aba')];
+  const ir = (nome) => {
+    for (const b of botoes) b.setAttribute('aria-selected', String(b.dataset.aba === nome));
+    for (const [k, el2] of Object.entries(paineis)) el2.hidden = k !== nome;
+    if (nome === 'escravidao') { montarMapaPopulacoes(); }
+    else if (prontoParaMedir) { descongestionar(); aplicarCamadas(); }
+    if (location.hash !== '#' + nome) history.replaceState(null, '', '#' + nome);
+  };
+  for (const b of botoes) b.addEventListener('click', () => ir(b.dataset.aba));
+  if (location.hash === '#escravidao') ir('escravidao');
+}
+
 
 // A medição dos rótulos depende da fonte já carregada.
 const ajustar = () => { prontoParaMedir = true; descongestionar(); aplicarCamadas(); };

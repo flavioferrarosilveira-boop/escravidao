@@ -13,6 +13,7 @@ const { destinos } = ler('dados/destinos.json');
 const { bandeiras } = ler('dados/bandeiras.json');
 const { periodos, marcos } = ler('dados/periodos.json');
 const sementes = ler('dados/matriz_sementes.json');
+const escravidao = ler('dados/escravidao.json');
 const geo = ler('dados/geo_atlantico.json');
 
 // ---------------------------------------------------------------------------
@@ -136,6 +137,9 @@ const dados = {
     geradoPor: 'build/gerar.mjs',
   },
   geo, regioes, destinos, bandeiras, periodos, marcos, rotas, circuitos: CIRCUITOS,
+  populacoes: escravidao.populacoes, demografia: escravidao.demografia,
+  trabalho: escravidao.trabalho, resistencia: escravidao.resistencia,
+  abolicoes: escravidao.abolicoes, depois: escravidao.depois,
   coresRegiao: CORES_REGIAO,
 };
 

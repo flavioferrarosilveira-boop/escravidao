@@ -32,13 +32,29 @@ jobs:
         run: node build/gerar.mjs
 
       - name: Conferir que a carta foi gerada
-        run: test -s index.html && grep -q 'window.DADOS' index.html
+        run: |
+          test -s index.html
+          grep -q 'window.DADOS' index.html
+          grep -q 'painel-escravidao' index.html
+
+      - name: Gerar o PDF da carta
+        id: pdf
+        continue-on-error: true
+        run: |
+          npm i --no-save --no-audit --no-fund playwright@1.56.0
+          npx playwright install --with-deps chromium
+          node build/gerar_pdf.mjs
+
+      - name: Aviso se o PDF não pôde ser regerado
+        if: steps.pdf.outcome != 'success'
+        run: echo "::warning::PDF não regerado nesta execução; o site usa a versão versionada no repositório."
 
       - name: Montar o conteúdo do site
         run: |
           rm -rf site && mkdir site
           cp index.html README.md site/
           cp -r dados site/
+          cp carta-do-trafico-atlantico.pdf site/
           touch site/.nojekyll
 
       - name: Republicar o branch gh-pages

@@ -20,6 +20,14 @@
     </div>
   </header>
 
+  <nav class="abas" id="abas" aria-label="Seções">
+    <button class="aba" type="button" data-aba="trafico" aria-selected="true">O Tráfico</button>
+    <button class="aba" type="button" data-aba="escravidao" aria-selected="false">A Escravidão</button>
+    <a class="aba-pdf" id="link-pdf" href="carta-do-trafico-atlantico.pdf" target="_blank" rel="noopener">Baixar em PDF</a>
+  </nav>
+
+  <div id="painel-trafico">
+
   <section id="mapa-secao">
     <div class="titulo-secao">
       <span class="marca">Carta I</span>
@@ -56,6 +64,7 @@
       <div class="dica" id="dica" role="status" aria-live="polite"></div>
     </div>
     <div class="legenda" id="legenda"></div>
+    <div id="resumo" class="resumo" hidden></div>
     <p class="intro" id="nota-carta" style="margin-top:16px"></p>
   </section>
 
@@ -111,6 +120,82 @@
     </div>
     <ul class="cronologia" id="cronologia"></ul>
   </section>
+
+  </div><!-- /painel-trafico -->
+
+  <div id="painel-escravidao" hidden>
+
+    <section id="secao-populacoes">
+      <div class="titulo-secao">
+        <span class="marca">Carta II</span>
+        <h2>Onde a escravidão se instalou</h2>
+      </div>
+      <p class="intro">
+        O tráfico mostra quem foi levado. Esta carta mostra quem estava lá depois — populações
+        escravizadas contadas em censos ou nos próprios atos de emancipação, com o ano de cada
+        contagem. O tamanho do círculo é proporcional ao número de pessoas.
+      </p>
+      <div class="palco" id="palco-pop">
+        <svg id="mapa-pop" role="img" aria-label="Mapa das populações escravizadas nas Américas"></svg>
+        <div class="dica" id="dica-pop" role="status" aria-live="polite"></div>
+      </div>
+      <p class="intro" style="margin-top:16px">
+        Repare no desencontro entre as duas cartas: os Estados Unidos receberam 3,1% de todo o
+        tráfico atlântico e abrigavam, em 1860, a maior população escravizada das Américas.
+        O Caribe e o Brasil receberam a esmagadora maioria das pessoas e tinham, a cada momento,
+        muito menos gente viva do que haviam importado.
+      </p>
+      <div class="rolagem" style="margin-top:22px"><table id="tabela-populacoes"></table></div>
+    </section>
+
+    <section id="secao-demografia">
+      <div class="titulo-secao">
+        <span class="marca">Quadro VI</span>
+        <h2>Quem, e por quanto tempo</h2>
+      </div>
+      <div class="colunas" id="cartoes-demografia"></div>
+    </section>
+
+    <section id="secao-trabalho">
+      <div class="titulo-secao">
+        <span class="marca">Quadro VII</span>
+        <h2>O trabalho</h2>
+      </div>
+      <p class="intro">
+        Cada rota da primeira carta terminava numa destas atividades. É por elas que se explica
+        por que uma região comprava homens jovens e outra comprava famílias inteiras.
+      </p>
+      <div class="colunas" id="cartoes-trabalho"></div>
+    </section>
+
+    <section id="secao-resistencia">
+      <div class="titulo-secao">
+        <span class="marca">Quadro VIII</span>
+        <h2>A resistência</h2>
+      </div>
+      <p class="intro">
+        Não houve um só ano de escravidão nas Américas sem revolta, fuga ou quilombo.
+      </p>
+      <div class="colunas" id="cartoes-resistencia"></div>
+    </section>
+
+    <section id="secao-abolicoes">
+      <div class="titulo-secao">
+        <span class="marca">Quadro IX</span>
+        <h2>A abolição, país a país</h2>
+      </div>
+      <ul class="cronologia" id="cronologia-abolicao"></ul>
+    </section>
+
+    <section id="secao-depois">
+      <div class="titulo-secao">
+        <span class="marca">Quadro X</span>
+        <h2>Depois</h2>
+      </div>
+      <div class="colunas" id="cartoes-depois"></div>
+    </section>
+
+  </div><!-- /painel-escravidao -->
 
   <section id="secao-notas">
     <div class="titulo-secao">

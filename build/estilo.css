@@ -134,3 +134,64 @@ tbody tr:hover{background:rgba(222,208,172,.4)}
   .acoes{margin-left:0;width:100%}
 }
 .sumido{opacity:.14 !important}
+
+/* ---- abas ---- */
+.abas{display:flex;align-items:flex-end;gap:4px;border-bottom:2px solid var(--terra-borda);
+  margin-top:22px;flex-wrap:wrap}
+.aba{font-family:var(--fonte-mapa);font-size:clamp(17px,2.2vw,21px);line-height:1;
+  padding:13px 24px;border:1px solid transparent;border-bottom:0;background:transparent;
+  color:var(--tinta-2);cursor:pointer;border-radius:3px 3px 0 0;margin-bottom:-2px;
+  letter-spacing:.03em}
+.aba:hover{background:var(--papel-3);color:var(--tinta)}
+.aba[aria-selected="true"]{background:var(--papel-2);border-color:var(--terra-borda);
+  border-bottom:2px solid var(--papel-2);color:var(--tinta)}
+.aba-pdf{margin-left:auto;align-self:center;font-family:var(--fonte-mapa);font-size:14.5px;
+  padding:8px 14px;border:1px solid var(--terra-borda);border-radius:2px;color:var(--tinta-2);
+  text-decoration:none;background:var(--papel-2)}
+.aba-pdf:hover{background:var(--papel-3);color:var(--tinta)}
+.aba-pdf::before{content:"⤓ ";}
+
+/* ---- resumo da seleção ---- */
+.resumo{border:var(--borda);border-top:0;background:var(--papel-2);padding:16px 18px;
+  display:grid;gap:14px;grid-template-columns:minmax(220px,1fr) 2fr;align-items:start}
+.resumo h4{margin:0 0 4px;font-family:var(--fonte-mapa);font-size:20px;font-weight:400}
+.resumo .cifra{font-family:var(--fonte-mapa);font-size:clamp(26px,3.4vw,36px);line-height:1.05}
+.resumo .miudo{font-size:14.5px;color:var(--tinta-2)}
+.resumo ol{margin:0;padding:0;list-style:none;display:grid;gap:5px;font-size:15px}
+.resumo ol li{display:grid;grid-template-columns:1fr auto 90px;gap:10px;align-items:center}
+.resumo ol b{font-variant-numeric:tabular-nums;font-weight:400}
+@media (max-width:700px){.resumo{grid-template-columns:1fr}}
+
+/* ---- bolhas de população ---- */
+.bolha{stroke:#3a2b1a;stroke-width:1;cursor:pointer}
+.bolha:hover{stroke-width:2}
+
+/* ---- impressão / PDF ---- */
+@media print{
+  @page{size:A3 landscape;margin:12mm 12mm 16mm}
+  body{background:var(--papel)}
+  .envoltorio{max-width:none;padding:0}
+  .controles,.abas,.aba-pdf,.dica,.resumo{display:none !important}
+  #painel-trafico,#painel-escravidao,#painel-escravidao[hidden]{display:block !important}
+  .capa{padding:0 0 18px}
+  .capa h1{font-size:44px}
+  .capa .sub{font-size:19px}
+  .numeros{grid-template-columns:repeat(4,1fr);margin:24px 0 0}
+  section{margin-top:26px;break-before:page}
+  #mapa-secao{break-before:auto}
+  .palco{break-inside:avoid;border-width:1px;box-shadow:none}
+  .palco svg{width:auto;height:150mm;max-width:100%;margin:0 auto}
+  #palco-pop svg{height:168mm}
+  .colunas{grid-template-columns:repeat(3,1fr);gap:16px}
+  .cartao{padding:14px 16px}
+  .cartao .grande{font-size:25px}
+  .cartao h3{font-size:18px}
+  .titulo-secao{break-after:avoid}
+  .intro{break-after:avoid;max-width:none}
+  .cartao,.numero,.cronologia li,tr,.legenda{break-inside:avoid}
+  table{font-size:13.5px}
+  th,td{padding:5px 8px}
+  .fluxo{animation:none !important}
+  .textura{display:none}
+  a{text-decoration:none;color:var(--tinta)}
+}
