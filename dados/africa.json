@@ -1,0 +1,50 @@
+{
+  "_fonte": "GOMES, Laurentino. Escravidão, vol. I, capítulo 9 (pp. 106-120), com revisão e anotações de Alberto da Costa e Silva.",
+  "epigrafe": { "texto": "Um grande e contínuo formigueiro negro.", "autor": "Missionários capuchinhos, ao descrever o Reino de Aladá, 1662", "pagina": "106" },
+  "cartas": [
+    { "titulo": "Duzentos milhões de pessoas", "cifra": "≈ a população do Brasil hoje",
+      "texto": "É a estimativa para a África na chegada dos portugueses. Em algumas regiões a densidade superava a brasileira atual: John Thornton calcula mais de trinta habitantes por quilômetro quadrado na Baixa Guiné — Gana, Togo, Benim e Nigéria — em meados do século XVII, acima da Europa da época.", "pagina": "111" },
+    { "titulo": "O Mali", "cifra": "40 a 50 milhões de habitantes",
+      "texto": "Equivalente a todo o continente americano antes da chegada dos europeus. Cerca de quatrocentas cidades; a capital Niani com 100 mil habitantes. No auge, no século XIV, teria sido a sociedade mais rica do planeta. Tombuctu abrigava universidade e biblioteca, e recebia teólogos, filósofos e poetas de todo o mundo islâmico.", "pagina": "111-112" },
+    { "titulo": "A peregrinação de mansa Musa", "cifra": "mais de uma tonelada de ouro",
+      "texto": "Em 1324 o rei do Mali foi a Meca com milhares de pessoas e cem camelos cobertos de ouro. Levava entre 9 e 14 mil escravizados que funcionavam como cheques de viagem, resgatados ao longo do caminho — só no Cairo vendeu 4 mil. O ouro que despejou no mercado desvalorizou o metal em todo o Oriente Médio por anos.", "pagina": "106-107" },
+    { "titulo": "As duas frotas que sumiram", "cifra": "2.200 embarcações",
+      "texto": "Cerca de duzentos anos antes de Cabral, mansa Mohamed intuiu que se podia chegar à outra margem do Atlântico. Mandou duzentas embarcações: voltou uma. Preparou então 2 mil canoas e embarcou nelas — nunca mais se teve notícia. A história foi contada no Cairo pelo filho dele e registrada pelo cronista árabe Al Umari.", "pagina": "106" },
+    { "titulo": "Estados, não tribos", "cifra": "60 milhões de hauçás",
+      "texto": "Alberto da Costa e Silva observa que não se pode chamar de tribo um agrupamento humano maior que a Bélgica, o Chile ou Portugal. No Daomé a ideia de Estado-nação transcendia a geografia: era a soma de todos os mortos desde a criação do mundo com os vivos e os ainda por nascer.", "pagina": "109" },
+    { "titulo": "Do tamanho do Ceará", "cifra": "Oió, Songai, Aladá",
+      "texto": "O Império Songai ocupava entre 500 mil e 1 milhão de km². Oió, de onde saíram muitos dos cativos da Bahia, tinha o tamanho da Inglaterra ou do Ceará; Hauçá, Benim, Nupe e Igala, metade disso. Aladá, com 5 mil km², cabia no Distrito Federal — e ainda assim foi um dos maiores fornecedores de cativos para o Brasil no século XVIII.", "pagina": "116" },
+    { "titulo": "A fragmentação era a norma", "cifra": "1,6 mil microestados",
+      "texto": "Thornton estima que mais da metade da África Ocidental era governada por microestados de 3 a 5 mil habitantes e 500 a 1.000 km². Por volta de 1600 o Império do Grande Fulo, no vale do Senegal, reunia cerca de 1,6 mil deles como vassalos.", "pagina": "116" },
+    { "titulo": "O que se fabricava", "cifra": "150 mil peças de couro por ano",
+      "texto": "Exportação dos fulani de Futa Jallon em meados do século XVII. Metalúrgicos igbos faziam barras e pulseiras de cobre e enxadas em miniatura, os anyu, usados como moeda nas feiras. O cultivo de algodão e a tecelagem já eram conhecidos no Togo e na Costa do Marfim desde o século XI.", "pagina": "113" },
+    { "titulo": "O que não havia", "cifra": "roda, torno, parafuso",
+      "texto": "Por volta de 1500, ao sul do Saara não se conheciam rodas, roldanas, engrenagens, serrote, plaina, torno nem parafuso. Nenhuma carroça circulava; a carga ia na cabeça ou em canoas escavadas num só tronco, algumas de 25 metros e capazes de levar cem pessoas.", "pagina": "113-114" },
+    { "titulo": "A noz-de-cola", "cifra": "dos acã para o mundo",
+      "texto": "Da floresta equatorial dos povos acã saíam dois produtos disputadíssimos: o ouro e a noz-de-cola, castanha de alto teor de cafeína que trezentos anos depois John Pemberton usaria para inventar a Coca-Cola.", "pagina": "115" }
+  ],
+  "toponimos": {
+    "_nota": "Quase todos os nomes que esta carta usa foram inventados por cartógrafos europeus que nunca puseram os pés no interior do continente. Estão aqui porque é assim que os documentos da época chamam esses lugares — não porque descrevam a África.",
+    "lista": [
+      { "nome": "Guiné", "texto": "Construção imaginária dos cartógrafos. Num mapa francês de 1730 designava toda a costa entre o Senegal e o Gabão; noutro, do ano anterior, ia do rio Serra Leoa ao rio Camarões — quase 2 mil quilômetros de diferença." },
+      { "nome": "Etiópias · Nigrita · Negrolândia", "texto": "Nomes genéricos para regiões nunca exploradas. A Nigrita do geógrafo real da França, em 1730, ocupava tudo entre a Núbia e as nascentes do Níger, rio que alguns cartógrafos julgavam ser um braço do Nilo — a 5 mil quilômetros de distância." },
+      { "nome": "Senegâmbia", "texto": "Outra invenção cartográfica europeia, e a primeira grande fonte de cativos do tráfico atlântico." },
+      { "nome": "Costa da Malagueta", "texto": "Pela pimenta que os italianos chamavam grani del paradiso, grãos do paraíso, por supostos poderes afrodisíacos. Vizinha da Costa do Arroz e da Ilha da Banana." },
+      { "nome": "Costa do Ouro · Costa da Mina", "texto": "Batizada em 1471 por Martim Fernandes e Álvaro Esteves, que encontraram moradores usando adornos de ouro a preços acessíveis e supuseram estar ali a fonte do metal. O ouro vinha, na verdade, de bem mais longe. Em 1482 ergueu-se ali o Castelo de São Jorge da Mina, com pedra local e tijolo vermelho trazido de Portugal." },
+      { "nome": "Costa dos Escravos", "texto": "Entre o rio Volta e o delta do Níger — Togo, Benim e Nigéria de hoje. Uma das maiores refinarias de petróleo da Nigéria ainda se chama Escravos Oil Plant." },
+      { "nome": "Camarões", "texto": "Pelo crustáceo, abundante nas vilas de pescadores. A Costa do Marfim, pelo comércio de presas de elefante." }
+    ]
+  },
+  "guerra": {
+    "_nota": "A guerra luso-holandesa do século XVII foi, antes de tudo, uma disputa pelo controle do fornecimento de cativos. O destino do Nordeste brasileiro decidiu-se primeiro na África.",
+    "epigrafe": { "texto": "Sem negros nada se pode cultivar aqui.", "autor": "Adriann van der Dussen, conselheiro da Companhia das Índias Ocidentais, Recife, 1640", "pagina": "289" },
+    "marcos": [
+      { "ano": 1630, "titulo": "A invasão", "texto": "Sessenta e sete navios, 1.170 canhões e 7 mil homens armados das Províncias Unidas ocupam Pernambuco.", "pagina": "289" },
+      { "ano": 1637, "titulo": "Elmina", "texto": "Os holandeses tomam São Jorge da Mina, o maior entreposto da Costa do Ouro.", "pagina": "9" },
+      { "ano": 1641, "titulo": "Luanda", "texto": "Em 24 de agosto, 21 navios com 3 mil homens despachados de Pernambuco por Maurício de Nassau tomam Luanda, Benguela e São Tomé. Sem Angola, o Brasil holandês teria o fornecimento de cativos garantido — e o português, cortado.", "pagina": "328" },
+      { "ano": 1648, "titulo": "A retomada", "texto": "Tropas partidas de Salvador, sob Salvador de Sá e Benevides, expulsam os holandeses de Angola. É a vitória que decide o Nordeste, seis anos antes de Guararapes.", "pagina": "9" },
+      { "ano": 1654, "titulo": "Guararapes", "texto": "Em janeiro, depois de duas batalhas em dez meses, os holandeses capitulam. Entre os comandantes luso-brasileiros estavam o indígena Felipe Camarão e o negro Henrique Dias.", "pagina": "290" },
+      { "ano": 1661, "titulo": "A compra", "texto": "Em 6 de agosto, em Haia, Portugal compra de volta o Nordeste por 4 milhões de cruzados — mais de 1 bilhão de dólares, ou 25 toneladas de ouro, em valores de hoje —, pagos em dezesseis prestações anuais. Um milhão de quilômetros quadrados, duas vezes a Espanha. A transação foi revelada pelo historiador Evaldo Cabral de Mello.", "pagina": "289-291" }
+    ]
+  }
+}

@@ -102,6 +102,12 @@
   ],
   "marcos": [
     {
+      "ano": 1324,
+      "texto": "Mansa Musa, rei do Mali, peregrina a Meca esbanjando mais de uma tonelada de ouro e vendendo 4 mil escravizados só no Cairo",
+      "fonte": "Gomes I",
+      "pagina": "106-107"
+    },
+    {
       "ano": 1444,
       "texto": "Primeiro leilão documentado de africanos escravizados em Portugal, diante do infante dom Henrique, na vila de Lagos, no Algarve",
       "fonte": "Gomes I",
@@ -118,6 +124,12 @@
       "texto": "Portugueses chegam a Cabo Verde, até então desabitado",
       "fonte": "Gomes I",
       "pagina": "7"
+    },
+    {
+      "ano": 1471,
+      "texto": "Portugueses batizam a Costa do Ouro ao encontrar moradores com adornos de ouro no Cabo das Três Pontas",
+      "fonte": "Gomes I",
+      "pagina": "108"
     },
     {
       "ano": 1482,
@@ -208,6 +220,12 @@
       "pagina": "170"
     },
     {
+      "ano": 1624,
+      "texto": "Jinga toma o trono do Reino do Andongo e inicia quase quarenta anos de guerrilha contra Portugal, atacando os comboios de cativos",
+      "fonte": "Gomes I",
+      "pagina": "327"
+    },
+    {
       "ano": 1630,
       "texto": "Holandeses ocupam Pernambuco; em Angola, a rainha Jinga enfrenta as tropas portuguesas",
       "fonte": "Gomes I",
@@ -248,10 +266,28 @@
       "pagina": "9"
     },
     {
+      "ano": 1654,
+      "texto": "Holandeses capitulam em Guararapes, dez meses e duas batalhas depois",
+      "fonte": "Gomes I",
+      "pagina": "290"
+    },
+    {
       "ano": 1660,
       "texto": "Criada em Londres a Royal African Company, com o monopólio inglês do tráfico",
       "fonte": "Gomes I",
       "pagina": "9"
+    },
+    {
+      "ano": 1661,
+      "texto": "Portugal compra de volta o Nordeste dos holandeses por 4 milhões de cruzados, pagos em dezesseis prestações",
+      "fonte": "Gomes I",
+      "pagina": "289-290"
+    },
+    {
+      "ano": 1663,
+      "texto": "Morre a rainha Jinga, aos 81 anos. Nos cem anos seguintes, mulheres ocupariam o trono do Andongo e da Matamba por oitenta",
+      "fonte": "Gomes I",
+      "pagina": "330-331"
     },
     {
       "ano": 1665,

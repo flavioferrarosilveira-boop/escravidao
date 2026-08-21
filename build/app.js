@@ -1275,6 +1275,32 @@ function montarMapaPopulacoes() {
     <div style="margin-top:4px">${cite(c.pagina)}</div></li>`).join('');
 }
 
+// --- Quadro VII: a África antes do tráfico, e a origem dos topônimos
+{
+  const A = D.africa;
+  const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+  html('epigrafe-africa').innerHTML =
+    `<p>“${A.epigrafe.texto}”</p><footer>${A.epigrafe.autor} ${cite(A.epigrafe.pagina)}</footer>`;
+  html('cartoes-africa').innerHTML = A.cartas.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="grande" style="font-size:23px">${c.cifra}</div>
+    <div class="miudo" style="margin-top:8px">${c.texto} ${cite(c.pagina)}</div></div>`).join('');
+  html('nota-toponimos').textContent = A.toponimos._nota;
+  tabela('tabela-toponimos', [{ rotulo: 'Nome' }, { rotulo: 'De onde veio' }],
+    A.toponimos.lista.map((t) => [`<b>${t.nome}</b>`, t.texto]));
+}
+
+// --- Quadro XX: a guerra luso-holandesa pelo fornecimento de cativos
+{
+  const G = D.africa.guerra;
+  const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+  html('epigrafe-guerra').innerHTML =
+    `<p>“${G.epigrafe.texto}”</p><footer>${G.epigrafe.autor} ${cite(G.epigrafe.pagina)}</footer>`;
+  html('nota-guerra').textContent = G._nota;
+  html('cronologia-guerra').innerHTML = G.marcos.map((m) => `<li>
+    <b>${m.ano}</b><b style="font-family:var(--fonte-texto);font-size:inherit">${m.titulo}</b>
+    <div class="miudo" style="margin-top:5px">${m.texto} ${cite(m.pagina)}</div></li>`).join('');
+}
+
 // --- A chegada e os instrumentos de castigo
 {
   const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;

@@ -202,11 +202,11 @@
     {
       "item": "Construção de São Jorge da Mina",
       "antes": "—",
-      "livro": "1492",
-      "pagina": "7",
+      "livro": "1492 (p. 7) e 1482 (p. 109)",
+      "pagina": "7, 109",
       "agora": "1482",
       "estado": "divergente",
-      "obs": "Aqui não segui o livro. A data estabelecida da fundação do castelo de Elmina por Diogo de Azambuja é 1482; a linha do tempo do volume traz 1492, o que parece ser lapso."
+      "obs": "Quarta contradição interna. A linha do tempo do livro data Elmina em 1492; o capítulo 9 traz 1482, que é a data estabelecida da fundação por Diogo de Azambuja. A carta segue o capítulo."
     },
     {
       "item": "Luanda — cativos embarcados",
@@ -261,6 +261,33 @@
       "agora": "Quadros XX e XXI",
       "estado": "novo",
       "obs": "O leilão em três escolhas, o exame do corpo, o Valongo com 18 a 22 mil pessoas por ano em 1808, os instrumentos de castigo na classificação de Artur Ramos."
+    },
+    {
+      "item": "A África antes do tráfico",
+      "antes": "—",
+      "livro": "cap. 9, pp. 106-120",
+      "pagina": "106-120",
+      "agora": "Quadro VII",
+      "estado": "novo",
+      "obs": "População, tamanho dos Estados, cidades, manufaturas — e a origem inventada dos topônimos que esta própria carta usa."
+    },
+    {
+      "item": "A guerra luso-holandesa",
+      "antes": "cronologia apenas",
+      "livro": "cap. 23, pp. 289-299",
+      "pagina": "289-299",
+      "agora": "Quadro XX",
+      "estado": "novo",
+      "obs": "A tese de que o destino do Nordeste se decidiu primeiro na África, e a compra do Nordeste de volta em 1661 por 4 milhões de cruzados."
+    },
+    {
+      "item": "A rainha Jinga",
+      "antes": "—",
+      "livro": "cap. 27, pp. 324-331",
+      "pagina": "324-331",
+      "agora": "na resistência",
+      "estado": "novo",
+      "obs": ""
     }
   ]
 }
