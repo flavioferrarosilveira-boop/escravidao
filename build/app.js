@@ -919,7 +919,8 @@ function tabela(destino, colunas, linhas) {
       <div class="barra" style="margin:12px 0"><i style="width:${((r.embarcados / 5694600) * 100).toFixed(1)}%;background:${corRegiao(r.id)}"></i></div>
       <div class="miudo"><b>Povos:</b> ${r.povos.join(', ')}</div>
       <div class="miudo" style="margin-top:6px"><b>Estados:</b> ${r.polities}</div>
-      <div class="miudo" style="margin-top:6px"><b>Portos:</b> ${[r.porto, ...(r.portos_secundarios || [])].map((p) => p.nome).join(' · ')}</div>`;
+      <div class="miudo" style="margin-top:6px"><b>Portos:</b> ${[r.porto, ...(r.portos_secundarios || [])].map((p) => p.nome).join(' · ')}</div>
+      ${r.vocabulario ? `<div class="miudo" style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(141,113,71,.3)">${r.vocabulario}</div>` : ''}`;
     c.appendChild(d);
   }
 }
@@ -1219,9 +1220,64 @@ function montarMapaPopulacoes() {
   }
 }
 
+
+// =====================================================================
+//  ABA "O NEGÓCIO"  —  como o tráfico funcionava por dentro
+//  Fonte: GOMES, Laurentino. Escravidão, vol. I, caps. 14 a 16.
+// =====================================================================
+{
+  const N = D.negocio;
+  const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+  const encher = (id, itens) => { html(id).innerHTML = itens.join(''); };
+
+  html('epigrafe').innerHTML =
+    `<p>“${N.epigrafe.texto}”</p><footer>${N.epigrafe.autor} ${cite(N.epigrafe.pagina)}</footer>`;
+
+  encher('cartoes-moeda', N.moeda.map((m) => `<div class="cartao">
+    <h3>${m.titulo}</h3><div class="grande">${m.cifra}</div>
+    <div class="miudo" style="margin-top:8px">${m.texto} ${cite(m.pagina)}</div></div>`));
+
+  tabela('tabela-troca', [{ rotulo: 'Onde' }, { rotulo: 'O que ia no porão de ida' }, { rotulo: '' }],
+    N.troca.map((t) => [`<b>${t.regiao}</b>`, t.itens, cite(t.pagina)]));
+
+  encher('cartoes-interior', N.interior.map((i) => `<div class="cartao">
+    <h3>${i.termo}</h3>
+    <div class="miudo" style="margin-top:10px">${i.texto} ${cite(i.pagina)}</div></div>`));
+
+  encher('cartoes-lucros', N.lucros.map((l) => `<div class="cartao">
+    <div class="quando" style="font-family:var(--fonte-mapa);letter-spacing:.14em;
+      text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">${l.quando}</div>
+    <h3 style="margin-top:4px">${l.onde}</h3>
+    <div class="grande">${l.taxa}</div>
+    <div class="miudo" style="margin-top:8px">${l.texto} ${cite(l.pagina)}</div></div>`));
+
+  encher('cartoes-viagens', N.viagens.map((v) => `<div class="cartao">
+    <h3>${v.navio} <span class="miudo" style="font-family:var(--fonte-texto)">· ${v.ano}</span></h3>
+    <div class="grande" style="color:${v.bom ? 'var(--realce)' : 'var(--sangue)'};font-size:24px">${v.resultado}</div>
+    <div class="miudo" style="margin-top:8px">${v.texto} ${cite(v.pagina)}</div></div>`));
+
+  encher('cartoes-mortalidade', N.mortalidade.map((m) => `<div class="cartao">
+    <h3>${m.rotulo}</h3><div class="grande" style="color:var(--sangue)">${m.valor}</div>
+    <div class="miudo" style="margin-top:8px">${m.detalhe} ${cite(m.pagina)}</div></div>`));
+
+  encher('cartoes-luanda', N.luanda.map((l) => `<div class="cartao">
+    <h3>${l.rotulo}</h3><div class="grande">${l.valor}</div>
+    <div class="miudo" style="margin-top:8px">${l.detalhe} ${cite(l.pagina)}</div></div>`));
+
+  html('cronologia-companhias').innerHTML = N.companhias.map((c) => `<li>
+    <b>${c.ano}</b><b style="font-family:var(--fonte-texto);font-size:inherit">${c.nome}</b>
+    <span class="miudo">· ${c.pais}</span>
+    ${c.texto ? `<div class="miudo" style="margin-top:5px">${c.texto}</div>` : ''}
+    <div style="margin-top:4px">${cite(c.pagina)}</div></li>`).join('');
+}
+
 // --- troca de abas
 {
-  const paineis = { trafico: html('painel-trafico'), escravidao: html('painel-escravidao') };
+  const paineis = {
+    trafico: html('painel-trafico'),
+    negocio: html('painel-negocio'),
+    escravidao: html('painel-escravidao'),
+  };
   const botoes = [...document.querySelectorAll('.aba')];
   const ir = (nome) => {
     for (const b of botoes) b.setAttribute('aria-selected', String(b.dataset.aba === nome));
@@ -1231,7 +1287,8 @@ function montarMapaPopulacoes() {
     if (location.hash !== '#' + nome) history.replaceState(null, '', '#' + nome);
   };
   for (const b of botoes) b.addEventListener('click', () => ir(b.dataset.aba));
-  if (location.hash === '#escravidao') ir('escravidao');
+  const inicial = location.hash.replace('#', '');
+  if (paineis[inicial] && inicial !== 'trafico') ir(inicial);
 }
 
 

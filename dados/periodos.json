@@ -172,10 +172,40 @@
       "pagina": "204"
     },
     {
+      "ano": 1560,
+      "texto": "Primeira embaixada portuguesa ao reino de Angola fracassa: Paulo Dias de Novais fica cinco anos preso em Ngoleme, cidade de 5 a 6 mil casas",
+      "fonte": "Gomes I",
+      "pagina": "168"
+    },
+    {
+      "ano": 1562,
+      "texto": "Os ingleses entram no tráfico com John Hawkins, sócio da rainha Elizabeth I, que saqueia navios portugueses em Cacheu e na Serra Leoa",
+      "fonte": "Gomes I",
+      "pagina": "187"
+    },
+    {
+      "ano": 1571,
+      "texto": "Angola é entregue a Paulo Dias de Novais como Capitania Hereditária",
+      "fonte": "Gomes I",
+      "pagina": "169"
+    },
+    {
       "ano": 1575,
       "texto": "Paulo Dias de Novais dá início à ocupação portuguesa de Angola",
       "fonte": "Gomes I",
       "pagina": "8"
+    },
+    {
+      "ano": 1576,
+      "texto": "Fundação de Luanda, em 25 de janeiro — o porto de onde partiriam cerca de 12 mil viagens negreiras",
+      "fonte": "Gomes I",
+      "pagina": "166"
+    },
+    {
+      "ano": 1618,
+      "texto": "Os portugueses chegam às supostas minas de prata do interior de Angola e encontram chumbo. A partir daí todo o esforço se volta ao tráfico",
+      "fonte": "Gomes I",
+      "pagina": "170"
     },
     {
       "ano": 1630,
@@ -206,6 +236,12 @@
       "pagina": "9"
     },
     {
+      "ano": 1649,
+      "texto": "Criada a Companhia Geral de Comércio do Brasil",
+      "fonte": "Gomes I",
+      "pagina": "191"
+    },
+    {
       "ano": 1654,
       "texto": "Holandeses são expulsos do Recife",
       "fonte": "Gomes I",
@@ -230,6 +266,12 @@
       "pagina": "9"
     },
     {
+      "ano": 1681,
+      "texto": "Em Aladá, 19,2 mil búzios cauris valem uma onça de ouro; em 1760 serão precisos 32 mil",
+      "fonte": "Gomes I",
+      "pagina": "186"
+    },
+    {
       "ano": 1695,
       "texto": "Palmares é destruído; a cabeça de Zumbi é exposta num poste no Recife, em 20 de novembro",
       "fonte": "Gomes I",
@@ -242,6 +284,12 @@
       "pagina": "10"
     },
     {
+      "ano": 1698,
+      "texto": "O Parlamento inglês abre o tráfico a traficantes privados, mediante taxa de 10% à Royal African Company",
+      "fonte": "Gomes I",
+      "pagina": "191"
+    },
+    {
       "ano": 1700,
       "texto": "A população total do Brasil é estimada em 300 mil habitantes; 85% de todas as viagens negreiras da história ainda estão por vir",
       "fonte": "Gomes I",
@@ -252,8 +300,32 @@
       "texto": "O asiento de negros passa à Grã-Bretanha pelo Tratado de Utrecht"
     },
     {
+      "ano": 1713,
+      "texto": "A França abre o tráfico a investidores particulares; os Países Baixos farão o mesmo em 1730",
+      "fonte": "Gomes I",
+      "pagina": "191"
+    },
+    {
+      "ano": 1755,
+      "texto": "Companhia Geral do Grão-Pará e Maranhão começa a operar, abastecendo o norte do Brasil a partir de Bissau e Cacheu",
+      "fonte": "Gomes I",
+      "pagina": "192"
+    },
+    {
+      "ano": 1781,
+      "texto": "O navio Zong lança ao mar 133 pessoas vivas para cobrar o seguro da 'carga perdida'; o caso vira ícone do abolicionismo inglês",
+      "fonte": "Gomes I",
+      "pagina": "193"
+    },
+    {
       "ano": 1791,
       "texto": "Começa a Revolução Haitiana em Saint-Domingue"
+    },
+    {
+      "ano": 1800,
+      "texto": "Um levantamento conta 840 mercadores de escravos em Benguela, cidade de 1,5 a 3 mil habitantes",
+      "fonte": "Gomes I",
+      "pagina": "172"
     },
     {
       "ano": 1803,

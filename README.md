@@ -16,6 +16,7 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Rotas do tráfico** | 72 corredores região africana → porto americano, espessura proporcional ao número de pessoas embarcadas; filtro por região de origem ou por bandeira |
 | **Comércio triangular** | O circuito mercantil completo de cada uma das sete potências: ida com mercadorias, travessia do meio com pessoas, retorno com gêneros coloniais |
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
+| **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas |
 | **A Escravidão** (aba) | O que veio depois do desembarque: populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
 Quadros: os corredores um a um · as quantidades · as bandeiras · **os portos que armavam as
@@ -50,6 +51,7 @@ dados/
   bandeiras.json          7 bandeiras: totais, período, portos armadores
   periodos.json           totais por século + cronologia
   escravidao.json         populações, demografia, trabalho, resistência, abolições
+  negocio.json            moeda, trocas, lucros, mortalidade real, Luanda, companhias
   portos_armadores.json   onde as viagens eram organizadas (Gomes I, p. 217)
   cotejo.json             confronto linha a linha entre a carta, o livro e o resultado
   circuitos.json          pernas do comércio triangular por bandeira
@@ -109,6 +111,9 @@ O confronto completo está em `dados/cotejo.json` e no apêndice do próprio map
 | Pernambuco — vindos de Angola e Congo | 77,5% | quase 90% (p. 211) | **89,0%** |
 | Sudeste — vindos de Moçambique | 218 mil | 280 mil (p. 213) | **278.039** |
 | Expectativa de vida ao nascer | 'vida produtiva de 7 a 15 anos' | 18,3 anos, Brasil 1872 (p. 206) | **18,3 anos** |
+
+O livro se contradiz internamente em três pontos, todos anotados no apêndice: Bahia
+(1,5 vs 1,6 milhão), Grã-Bretanha (3,2 vs 3,3 milhões) e Luanda (2,8 vs 4 milhões).
 
 As duas linhas do meio eram **inversões**: a matriz reconstruída dava a maioria dos cativos da
 Bahia como angolana e a da Amazônia também, quando o livro mostra que a Bahia vinha

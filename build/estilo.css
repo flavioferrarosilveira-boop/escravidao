@@ -172,7 +172,8 @@ tbody tr:hover{background:rgba(222,208,172,.4)}
   body{background:var(--papel)}
   .envoltorio{max-width:none;padding:0}
   .controles,.abas,.aba-pdf,.dica,.resumo{display:none !important}
-  #painel-trafico,#painel-escravidao,#painel-escravidao[hidden]{display:block !important}
+  #painel-trafico,#painel-negocio,#painel-escravidao,
+  #painel-negocio[hidden],#painel-escravidao[hidden]{display:block !important}
   .capa{padding:0 0 18px}
   .capa h1{font-size:44px}
   .capa .sub{font-size:19px}
@@ -207,3 +208,9 @@ table.cotejo tr.est-novo td:last-child{color:var(--tinta-2);font-style:italic}
 table.cotejo tr.est-divergente td:last-child{color:var(--sangue)}
 table.cotejo tr.est-corrigido td:first-child b::after{content:" ▸";color:var(--realce)}
 table.cotejo tr.est-divergente td:first-child b::after{content:" ▸";color:var(--sangue)}
+
+.epigrafe{margin:clamp(30px,5vw,54px) 0 0;padding:0 0 0 22px;border-left:3px solid var(--terra-borda);
+  max-width:60ch}
+.epigrafe p{font-family:var(--fonte-mapa);font-size:clamp(21px,2.8vw,28px);line-height:1.35;
+  margin:0;color:var(--tinta)}
+.epigrafe footer{margin-top:10px;font-size:15px;color:var(--tinta-2);font-style:italic}

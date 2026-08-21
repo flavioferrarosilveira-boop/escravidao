@@ -16,6 +16,7 @@ const sementes = ler('dados/matriz_sementes.json');
 const escravidao = ler('dados/escravidao.json');
 const armadores = ler('dados/portos_armadores.json');
 const cotejo = ler('dados/cotejo.json');
+const negocio = ler('dados/negocio.json');
 const geo = ler('dados/geo_atlantico.json');
 
 // ---------------------------------------------------------------------------
@@ -145,7 +146,7 @@ const dados = {
   trabalho: escravidao.trabalho, resistencia: escravidao.resistencia,
   abolicoes: escravidao.abolicoes, depois: escravidao.depois,
   armadores: armadores.portos, armadoresNota: armadores._nota, ciclos: ciclos.lista,
-  cotejo: cotejo.linhas, cotejoNota: cotejo._nota,
+  cotejo: cotejo.linhas, cotejoNota: cotejo._nota, negocio,
   coresRegiao: CORES_REGIAO,
 };
 

@@ -125,7 +125,8 @@
         "Ewe"
       ],
       "polities": "Império Ashanti, Denkyira, Fante, Akwamu",
-      "nome_carta": "COSTA DO OURO"
+      "nome_carta": "COSTA DO OURO",
+      "vocabulario": "Só na antiga Costa do Ouro há mais de sessenta fortes e castelos do tráfico ainda de pé (Gomes I, p. 190)."
     },
     {
       "id": "benim",
@@ -230,7 +231,8 @@
         "Teke"
       ],
       "polities": "Reino do Congo, Ndongo e Matamba, Império Lunda, Reino de Loango",
-      "nome_carta": "CONGO E ANGOLA"
+      "nome_carta": "CONGO E ANGOLA",
+      "vocabulario": "Os cativos eram comprados nas feiras do interior — os pumbos ou kitandas, de onde vem a palavra quitanda — por agentes chamados pombeiros, muitos deles escravizados eles próprios. Iam ao litoral em libambos: filas acorrentadas pelo pescoço (Gomes I, p. 171-172)."
     },
     {
       "id": "sudeste",

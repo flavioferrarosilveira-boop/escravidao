@@ -1,0 +1,73 @@
+{
+  "_fonte": "GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019 — capítulos 14 (Angola), 15 (O Negócio) e 16 (Os Lucros do Tráfico), pp. 164-199. Páginas indicadas em cada verbete.",
+  "epigrafe": {
+    "texto": "Sem Angola não há negros; e, sem negros, não há Pernambuco.",
+    "autor": "Padre Antônio Vieira, 1648",
+    "pagina": "164"
+  },
+  "moeda": [
+    { "titulo": "O búzio como padrão monetário", "cifra": "4 bilhões de conchas",
+      "texto": "Só holandeses e ingleses movimentaram cerca de 4 bilhões de búzios cauris entre 1700 e 1790 — no auge, 40 milhões por ano. Vinham das ilhas Maldivas, no Índico, compradas na Índia e revendidas na África, onde circulavam como moeda local. Herbert Klein observa que a escolha fazia sentido econômico: fonte única, o que permitia controlar o valor; raras, fáceis de identificar e impossíveis de falsificar.", "pagina": "185" },
+    { "titulo": "As unidades de conta", "cifra": "40 conchas = 1 toque",
+      "texto": "As conchas eram furadas e enfiadas em fieiras. A unidade básica, o 'toque', era um colar de quarenta búzios; a 'cabeça' era um saco de 4 mil.", "pagina": "185" },
+    { "titulo": "O zimbo da Bahia", "cifra": "pipas cheias",
+      "texto": "Búzios idênticos apareciam na foz do rio Caravelas e nas praias do sul da Bahia. Frei Vicente do Salvador registrou em 1630 que dali se levavam 'pipas cheias' de zimbo, o dinheiro de Angola, trocado por navios de escravizados. A concorrência do zimbo brasileiro desvalorizou a moeda africana na década de 1610 — e o bispo do Congo e de Angola reclamou que chegava 'em tanta quantidade que vá deitando aquele reino a perder'.", "pagina": "185" },
+    { "titulo": "A inflação em Aladá", "cifra": "de 10 para 300 conchas",
+      "texto": "Uma galinha custava cerca de dez conchas por volta de 1650. Um século depois, trezentas — trinta vezes mais. Em 1681, 19,2 mil cauris valiam uma onça de ouro; em 1760, eram precisos 32 mil. Em Ajudá, em 1690, uma ovelha valia 1,6 mil conchas e uma vaca, 8 mil.", "pagina": "186" }
+  ],
+  "troca": [
+    { "regiao": "Angola e Congo", "itens": "Cachaça brasileira, fumo, farinha de mandioca, fubá de milho, tecidos asiáticos e europeus, contas de vidro, marmelada, peixe seco e salgado, queijos, peças de cerâmica, zimbos", "pagina": "171" },
+    { "regiao": "Costa da Mina", "itens": "Fumo de rolo de terceira qualidade da Bahia, aguardente, ouro, búzios cauris", "pagina": "202" },
+    { "regiao": "Costa do Ouro e Golfo do Benim (europeus)", "itens": "Algodões de Manchester e da Índia, armas de fogo, barras de ferro, pólvora, aguardente, manilhas de cobre, cauris das Maldivas", "pagina": "185" }
+  ],
+  "interior": [
+    { "termo": "Pumbo · kitanda", "texto": "As feiras do interior de Angola onde mercadorias eram trocadas por seres humanos. Cada uma tinha um escrivão, para registrar as negociações e garantir o imposto da Coroa. Da palavra kitanda vem a quitanda brasileira.", "pagina": "171" },
+    { "termo": "Pombeiro · sertanejo", "texto": "Os agentes que percorriam o interior com mercadorias compradas a crédito, comprando um ou dois cativos por vilarejo até formar um grupo. Conheciam a geografia, os dialetos e a estrutura de poder de cada região; muitos tinham laços de família com chefes locais. Muitos eram, eles próprios, escravizados, despachados pelos donos para negociar outros cativos.", "pagina": "171-172" },
+    { "termo": "Libambo", "texto": "A caravana de cativos levada em fila indiana até o litoral, acorrentados uns aos outros por argolas no pescoço e, às vezes, correntes nos tornozelos. Em inglês, coffle.", "pagina": "172" },
+    { "termo": "Soba", "texto": "Os chefes locais de Angola. A Coroa portuguesa lhes impunha uma contribuição obrigatória de trezentos cativos por ano só para o colégio jesuíta de Luanda, dos quais os padres ficavam com cerca de cem e vendiam o resto para pagar as despesas.", "pagina": "165" },
+    { "termo": "'Negro calçado'", "texto": "Em Luanda, quem usasse sapatos era tido por branco, qualquer que fosse a cor da pele. 'Ser negro ou branco não depende da cor da pele, mas da forma como se veste', escreviam os jesuítas em 1576. Um funcionário da Coroa reclamava em 1799: 'Tantas pessoas estão usando calçados, e assim se tornando nominalmente brancos, que em breve não haverá mais negros'.", "pagina": "172" }
+  ],
+  "lucros": [
+    { "quando": "1761-1807", "onde": "Tráfico britânico", "taxa": "8% a 10%",
+      "texto": "Resultado modesto: um investidor obteria o mesmo em letras do tesouro britânico, sem risco. A tese de Eric Williams, de que o tráfico teria financiado a Revolução Industrial, nunca foi sustentada por números.", "pagina": "192" },
+    { "quando": "início do séc. XIX", "onde": "Rio de Janeiro", "taxa": "19,2%",
+      "texto": "Cálculo de Manolo Florentino. Pouco acima de uma fazenda de café, estimada em 15% ao ano.", "pagina": "192" },
+    { "quando": "depois de 1830", "onde": "Tráfico ilegal", "taxa": "até 300%",
+      "texto": "Os lucros subiram na proporção do risco, com a Marinha britânica patrulhando o Atlântico Sul.", "pagina": "192" }
+  ],
+  "viagens": [
+    { "navio": "Feliz dia", "ano": 1812, "resultado": "lucro bruto de 82,8%",
+      "texto": "Comprou 235 cativos em Moçambique por 12.690 réis, registrou doze mortos na travessia e revendeu os 223 restantes no Rio de Janeiro por 23.192 réis.", "pagina": "193", "bom": true },
+    { "navio": "Protector", "ano": 1812, "resultado": "prejuízo de 30,8%",
+      "texto": "Embarcou 397 cativos em Luanda por 36.980 réis e teve 151 mortos na travessia. Os 246 restantes renderam 25.584 réis. O resultado era sempre proporcional à mortalidade a bordo.", "pagina": "193", "bom": false },
+    { "navio": "Zong", "ano": 1781, "resultado": "133 pessoas atiradas ao mar",
+      "texto": "Saiu da África para a Jamaica superlotado. Com sessenta mortos a bordo e temendo perder a carga, o capitão Luke Collingwood mandou lançar ao mar, vivos, todos os doentes e desnutridos — 133 pessoas em três dias. O dono do navio pediu indenização à seguradora pela 'carga perdida'. O caso foi parar na Justiça inglesa e virou um ícone do movimento abolicionista.", "pagina": "193", "bom": false }
+  ],
+  "mortalidade": [
+    { "rotulo": "Século XVI", "valor": "≈ 20%", "detalhe": "De cada cinco pessoas embarcadas, uma morria antes de chegar ao Brasil.", "pagina": "195" },
+    { "rotulo": "Por volta de 1830", "valor": "≈ 6%", "detalhe": "Nos navios portugueses. A queda ao longo de 350 anos veio de travessias mais rápidas, mais ventilação nos porões e maior capacidade de levar água e alimento fresco — não de compaixão.", "pagina": "195" },
+    { "rotulo": "Rotas do Índico, séc. XVIII", "valor": "≈ 30%", "detalhe": "As piores de todas. De Moçambique ao Rio de Janeiro a viagem levava cerca de setenta dias, quase o dobro das que partiam de Angola ou do Golfo do Benim.", "pagina": "195" },
+    { "rotulo": "Antes de embarcar", "valor": "≈ 7%", "detalhe": "Perdas por fuga ou morte nos barracões da costa, segundo os registros da Companhia do Grão-Pará e Maranhão. Malária, febre amarela, varíola e disenteria eram endêmicas nos depósitos.", "pagina": "189" },
+    { "rotulo": "A tripulação", "valor": "metade não voltava", "detalhe": "De cem marinheiros que partiam de Liverpool entre 1784 e 1788, só cinquenta retornavam com vida: 23,7% morriam e 26,3% desertavam ou eram demitidos. Cálculo do abolicionista Thomas Clarkson.", "pagina": "195" },
+    { "rotulo": "Os europeus na costa africana", "valor": "até 45% ao mês", "detalhe": "Nas longas esperas ancorados na África, à espera de completar a carga. Os ocupantes dos fortes tinham de ser substituídos o tempo todo para não perecerem.", "pagina": "190, 195" },
+    { "rotulo": "Naufrágios e pirataria", "valor": "14 de 43 navios", "detalhe": "Um terço da frota da Companhia do Grão-Pará e Maranhão naufragou na segunda metade do século XVIII. Na década de 1820, jornais do Rio registraram dezesseis ataques de piratas a negreiros, a maioria de corsários norte-americanos.", "pagina": "190" }
+  ],
+  "companhias": [
+    { "ano": 1649, "nome": "Companhia Geral de Comércio do Brasil", "pais": "Portugal", "texto": "", "pagina": "191" },
+    { "ano": 1660, "nome": "Royal African Company", "pais": "Grã-Bretanha", "texto": "Estatutos que lhe davam o monopólio do tráfico por mil anos, até 2660. Entre os sócios: o rei Charles II, o duque de York, a rainha Catarina de Bragança e o filósofo John Locke — que escreveria que a verdadeira liberdade consiste em não estar sujeito à vontade arbitrária de outro ser humano.", "pagina": "188, 191" },
+    { "ano": 1682, "nome": "Companhia de Comércio do Maranhão", "pais": "Portugal", "texto": "", "pagina": "191" },
+    { "ano": 1698, "nome": "Fim do monopólio inglês", "pais": "Grã-Bretanha", "texto": "O Parlamento autoriza traficantes privados, mediante taxa de 10% à Royal African Company.", "pagina": "191" },
+    { "ano": 1713, "nome": "Abertura francesa", "pais": "França", "texto": "O tráfico é aberto a investidores particulares.", "pagina": "191" },
+    { "ano": 1730, "nome": "Abertura holandesa", "pais": "Países Baixos", "texto": "", "pagina": "191" },
+    { "ano": 1755, "nome": "Companhia Geral do Grão-Pará e Maranhão", "pais": "Portugal", "texto": "Criada por Pombal para abastecer o norte do Brasil a partir de Bissau e Cacheu.", "pagina": "192" },
+    { "ano": 1759, "nome": "Companhia de Pernambuco e Paraíba", "pais": "Portugal", "texto": "As duas companhias pombalinas faliram por má administração e falta de capital, depois de importar mais de 80 mil africanos. Daí em diante o tráfico foi negócio inteiramente privado.", "pagina": "192" }
+  ],
+  "luanda": [
+    { "rotulo": "Fundada em", "valor": "25 de janeiro de 1576", "detalhe": "Por Paulo Dias de Novais, neto de Bartolomeu Dias, que chegara em fevereiro de 1575 com sete navios e setecentos homens — dos quais 350 soldados.", "pagina": "166, 169" },
+    { "rotulo": "Viagens partidas de Luanda", "valor": "≈ 12.000", "detalhe": "O maior porto negreiro da história.", "pagina": "166" },
+    { "rotulo": "Fim do século XVI", "valor": "10 mil cativos por ano", "detalhe": "Registrados na alfândega de Luanda com destino ao Brasil. Em 1591 o acumulado chegava a 52 mil — sem contar o contrabando.", "pagina": "170" },
+    { "rotulo": "A ilusão da prata", "valor": "só chumbo", "detalhe": "A guerra contra os sobas foi mantida acesa pela crença em minas de prata no interior. Em 1618 o governador chegou às jazidas e encontrou chumbo. A partir daí todo o esforço se voltou ao tráfico.", "pagina": "170" },
+    { "rotulo": "Mercadores em Benguela", "valor": "840", "detalhe": "Num levantamento de 1800, numa cidade de 1,5 mil a 3 mil habitantes. Num único dia de setembro de 1816, trinta deles partiram para o interior, cada um com quarenta a duzentos carregadores.", "pagina": "166, 172" },
+    { "rotulo": "Mortos europeus em Angola", "valor": "1,7 mil entre 1575 e 1591", "detalhe": "Só cerca de quatrocentos em combate; o resto de malária e febre amarela. O número de mortos africanos, incomparavelmente maior, nunca foi contado.", "pagina": "169" }
+  ]
+}
