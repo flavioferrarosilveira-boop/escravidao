@@ -5,6 +5,8 @@ regiões de origem, portos de desembarque e bandeiras dos navios — desenhado s
 base cartográfica de época (projeção de Mercator, toponímia dos séculos XVI a XIX,
 domínios coloniais de c. 1750 e Estados africanos do período).
 
+**No ar:** https://flavioferrarosilveira-boop.github.io/escravidao/
+
 O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no navegador.
 
 ## O que o mapa mostra
@@ -45,6 +47,14 @@ build/
   modelo.html estilo.css app.js
 index.html                SAÍDA — a carta, autocontida
 ```
+
+## Publicação
+
+O site é servido pelo GitHub Pages a partir do branch **`gh-pages`**
+(*Settings → Pages → Deploy from a branch*). O workflow
+`.github/workflows/pages.yml` reconstrói `index.html` a partir de `dados/` e
+republica esse branch a cada push que toque `dados/`, `build/` ou o próprio
+workflow — de modo que a carta no ar nunca fique atrás dos dados.
 
 ## Como reconstruir
 
