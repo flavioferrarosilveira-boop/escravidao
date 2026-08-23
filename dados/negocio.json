@@ -1,5 +1,5 @@
 {
-  "_fonte": "GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019 — capítulos 14 (Angola), 15 (O Negócio) e 16 (Os Lucros do Tráfico), pp. 164-199. Páginas indicadas em cada verbete. O quadro do navio negreiro vem do capítulo 18 (pp. 221-236).",
+  "_fonte": "GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019 — capítulos 14 (Angola), 15 (O Negócio) e 16 (Os Lucros do Tráfico), pp. 164-199. Páginas indicadas em cada verbete.",
   "epigrafe": {
     "texto": "Sem Angola não há negros; e, sem negros, não há Pernambuco.",
     "autor": "Padre Antônio Vieira, 1648",
@@ -262,80 +262,6 @@
       "valor": "1,7 mil entre 1575 e 1591",
       "detalhe": "Só cerca de quatrocentos em combate; o resto de malária e febre amarela. O número de mortos africanos, incomparavelmente maior, nunca foi contado.",
       "pagina": "169"
-    }
-  ],
-  "navio": [
-    {
-      "titulo": "As cinco marcas",
-      "cifra": "a ferro em brasa",
-      "texto": "Antes de embarcar, cada pessoa recebia até quatro sinais: o do comerciante que a mandara do interior, o selo da Coroa no peito direito (atestando impostos pagos), uma cruz de batismo e o nome do traficante. No Brasil vinha a quinta, do novo dono. Quem fugia mais de uma vez ganhava um F no rosto. O ofício chamava-se carimbar — de carimbo, que em quimbundo quer dizer marca — e era exercido por um funcionário do governo, o 'marcador de negros', supervisionado pelo 'capitão das marcas'. Cobria-se o local com cera e papel oleado para que a pele não se arrancasse junto com o ferro.",
-      "pagina": "224"
-    },
-    {
-      "titulo": "Os sobas também eram marcados",
-      "cifra": "selo real, peito esquerdo",
-      "texto": "Nas cerimônias de vassalagem do século XVIII, os chefes africanos aliados de Benguela recebiam a marca do selo real e passavam a ser súditos do rei de Portugal — obrigados a pagar tributo em cativos e a franquear seu território a traficantes e tropas.",
-      "pagina": "225"
-    },
-    {
-      "titulo": "Uma tripulação dobrada",
-      "cifra": "35 contra 16",
-      "texto": "Um negreiro levava mais que o dobro dos marinheiros de um mercante comum, todos armados. O inventário do navio Diligent: 55 mosquetes, 18 pistolas, 20 espadas, dois canhões e sessenta balas. No meio do convés erguia-se uma barricada de tábuas com furos para atirar sobre os porões.",
-      "pagina": "226, 228"
-    },
-    {
-      "titulo": "O que se pagava a quem embarcava",
-      "cifra": "160 búzios por pessoa",
-      "texto": "No porto de Jakin, no Benim, os franceses pagavam os capatazes em conhaque — uma garrafa a cada dez cativos embarcados. Os guardas armados da praia recebiam 160 búzios por escravo, pagos todo dia. O embarque era o momento mais perigoso da jornada.",
-      "pagina": "226"
-    },
-    {
-      "titulo": "Seiscentas revoltas em alto-mar",
-      "cifra": "26 vitoriosas",
-      "texto": "Em toda a história do tráfico documentaram-se cerca de seiscentas rebeliões a bordo. Em apenas 26 os cativos tomaram o navio e conseguiram voltar à costa africana. A mais conhecida, a do Amistad, é de 1839.",
-      "pagina": "228"
-    },
-    {
-      "titulo": "O medo de ser devorado",
-      "cifra": "desde 1456",
-      "texto": "Corria pela costa a convicção de que os europeus eram canibais. O veneziano Cadamosto foi atacado na foz do Gâmbia em 1456 por isso; no Congo, o frade Cavazzi ouviu que os compradores tirariam 'dos seus ossos a pólvora, e dos miolos e das carnes, o azeite'.",
-      "pagina": "227"
-    },
-    {
-      "titulo": "Menos espaço que um caixão",
-      "cifra": "deitado, de lado",
-      "texto": "Os porões eram subdivididos em prateleiras de madeira baixas demais para ficar de pé. Acorrentados aos pares, perna com perna e mão com mão, muitos passavam a travessia deitados de lado, por não haver espaço para todos ficarem de costas — a observação é de Thomas Clarkson, dentro de um navio.",
-      "pagina": "229"
-    },
-    {
-      "titulo": "A ração",
-      "cifra": "1,8 litro de farinha por dia",
-      "texto": "Em Angola, cada pessoa embarcada recebia por dia farinha de mandioca, um quinto de litro de feijão ou milho, farinha de emba, peixe seco e carne de boi, baleia, hipopótamo ou elefante — e, do século XVIII em diante, charque do Rio Grande do Sul. Os do Golfo do Benim comiam inhame. Uma lei de 1684 mandava servir três refeições e uma canada de água, 1,375 litro.",
-      "pagina": "234"
-    },
-    {
-      "titulo": "Quem se recusava a comer",
-      "cifra": "speculum oris",
-      "texto": "Quem entrava em banzo e fazia greve de fome era açoitado e alimentado à força por um tubo de metal enfiado garganta abaixo. A água era vistoriada antes da partida pelos 'cheiradores das pipas', fiscais cujo instrumento de trabalho era o olfato — e que os capitães subornavam com frequência.",
-      "pagina": "234"
-    },
-    {
-      "titulo": "O mal de Luanda",
-      "cifra": "escorbuto",
-      "texto": "Tão comum nos negreiros que no século XVII o escorbuto era conhecido por esse nome. A gengiva necrosava e os dentes caíam ao toque. Matava menos, porém, que a disenteria — o 'fluxo' das embarcações portuguesas.",
-      "pagina": "232-233"
-    },
-    {
-      "titulo": "O porão das mulheres",
-      "cifra": "junto à tripulação",
-      "texto": "Ficava na proa, perto dos alojamentos dos marinheiros. Os oficiais dividiam as mulheres entre si ainda no porto africano. O capitão John Newton — que depois viraria abolicionista e escreveria o hino Amazing Grace — registrou o hábito; segundo ele, 'recusa ou resistência seriam totalmente em vão'.",
-      "pagina": "231-232"
-    },
-    {
-      "titulo": "O cheiro",
-      "cifra": "sentido antes de aparecer no horizonte",
-      "texto": "Marinheiros diziam identificar um negreiro contra o vento a quilômetros de distância. Jean Barbot anotou que a ventilação era tão precária que às vezes não se conseguia manter uma vela acesa. Em 1720, o capuchinho Giuseppe Monari partiu de Luanda para a Bahia com 789 cativos; oitenta morreram nos 36 dias de travessia.",
-      "pagina": "232"
     }
   ]
 }

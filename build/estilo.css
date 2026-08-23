@@ -172,8 +172,9 @@ tbody tr:hover{background:rgba(222,208,172,.4)}
   body{background:var(--papel)}
   .envoltorio{max-width:none;padding:0}
   .controles,.abas,.aba-pdf,.dica,.resumo{display:none !important}
-  #painel-trafico,#painel-negocio,#painel-escravidao,
-  #painel-negocio[hidden],#painel-escravidao[hidden]{display:block !important}
+  #painel-trafico,#painel-negocio,#painel-navio,#painel-escravidao,
+  #painel-negocio[hidden],#painel-navio[hidden],#painel-escravidao[hidden]{display:block !important}
+  .figura{break-inside:avoid}
   .capa{padding:0 0 18px}
   .capa h1{font-size:44px}
   .capa .sub{font-size:19px}
@@ -214,3 +215,13 @@ table.cotejo tr.est-divergente td:first-child b::after{content:" ▸";color:var(
 .epigrafe p{font-family:var(--fonte-mapa);font-size:clamp(21px,2.8vw,28px);line-height:1.35;
   margin:0;color:var(--tinta)}
 .epigrafe footer{margin-top:10px;font-size:15px;color:var(--tinta-2);font-style:italic}
+
+/* ---- figuras ---- */
+.figura{margin:0;border:var(--borda);background:var(--papel-2);padding:20px clamp(12px,2vw,26px)}
+.figura svg{display:block;width:100%;max-width:100%;height:auto;color:var(--tinta)}
+.figura figcaption{margin-top:14px;font-size:15px;color:var(--tinta-2);font-style:italic;
+  border-top:1px solid rgba(141,113,71,.3);padding-top:12px}
+.figura .diag-rot{font-family:var(--fonte-texto);font-size:13px;fill:var(--tinta)}
+.figura .diag-nome{font-family:var(--fonte-mapa);font-size:15px;fill:var(--tinta)}
+.figura .diag-cifra{font-family:var(--fonte-mapa);font-size:19px;fill:var(--tinta)}
+.figura .diag-fraco{font-size:12px;fill:var(--tinta-2)}

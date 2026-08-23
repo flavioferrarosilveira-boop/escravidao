@@ -23,6 +23,7 @@
   <nav class="abas" id="abas" aria-label="Seções">
     <button class="aba" type="button" data-aba="trafico" aria-selected="true">O Tráfico</button>
     <button class="aba" type="button" data-aba="negocio" aria-selected="false">O Negócio</button>
+    <button class="aba" type="button" data-aba="navio" aria-selected="false">O Navio</button>
     <button class="aba" type="button" data-aba="escravidao" aria-selected="false">A Escravidão</button>
     <a class="aba-pdf" id="link-pdf" href="carta-do-trafico-atlantico.pdf" target="_blank" rel="noopener">Baixar em PDF</a>
   </nav>
@@ -193,17 +194,8 @@
       <div class="colunas" id="cartoes-interior"></div>
     </section>
 
-    <section id="secao-navio">
-      <div class="titulo-secao"><span class="marca">Quadro XV</span><h2>O navio negreiro</h2></div>
-      <p class="intro">
-        Marcus Rediker o definiu como “uma estranha combinação de máquina de guerra, prisão móvel
-        e fábrica”. Cada uma das três coisas tinha regulamento, ofício e vocabulário próprios.
-      </p>
-      <div class="colunas" id="cartoes-navio"></div>
-    </section>
-
     <section id="secao-lucros">
-      <div class="titulo-secao"><span class="marca">Quadro XVI</span><h2>Os lucros</h2></div>
+      <div class="titulo-secao"><span class="marca">Quadro XV</span><h2>Os lucros</h2></div>
       <p class="intro">
         Ao contrário do que se costuma supor, o tráfico não era um negócio de rentabilidade
         extraordinária — até virar crime.
@@ -214,7 +206,7 @@
     </section>
 
     <section id="secao-mortalidade">
-      <div class="titulo-secao"><span class="marca">Quadro XVII</span><h2>A mortalidade, de verdade</h2></div>
+      <div class="titulo-secao"><span class="marca">Quadro XVI</span><h2>A mortalidade, de verdade</h2></div>
       <p class="intro">
         A carta principal aplica uma taxa média única a todas as rotas, por limitação do método.
         Os números reais variavam muito — e não poupavam a tripulação.
@@ -223,7 +215,7 @@
     </section>
 
     <section id="secao-luanda">
-      <div class="titulo-secao"><span class="marca">Quadro XVIII</span><h2>Luanda</h2></div>
+      <div class="titulo-secao"><span class="marca">Quadro XVII</span><h2>Luanda</h2></div>
       <p class="intro">
         O maior porto negreiro da história, e a única grande extensão da África que os
         portugueses conseguiram ocupar de fato antes do século XIX.
@@ -232,7 +224,7 @@
     </section>
 
     <section id="secao-companhias">
-      <div class="titulo-secao"><span class="marca">Quadro XIX</span><h2>As companhias monopolistas</h2></div>
+      <div class="titulo-secao"><span class="marca">Quadro XVIII</span><h2>As companhias monopolistas</h2></div>
       <p class="intro">
         No começo o tráfico era caro e arriscado demais para a iniciativa privada, e as Coroas
         europeias assumiram parte do risco. Quando a demanda do Novo Mundo superou a capacidade
@@ -242,13 +234,55 @@
     </section>
 
     <section id="secao-guerra">
-      <div class="titulo-secao"><span class="marca">Quadro XX</span><h2>A guerra pelo Atlântico</h2></div>
+      <div class="titulo-secao"><span class="marca">Quadro XIX</span><h2>A guerra pelo Atlântico</h2></div>
       <blockquote class="epigrafe" id="epigrafe-guerra" style="margin:0 0 22px"></blockquote>
       <p class="intro" id="nota-guerra"></p>
       <ul class="cronologia" id="cronologia-guerra"></ul>
     </section>
 
   </div><!-- /painel-negocio -->
+
+  <div id="painel-navio" hidden>
+
+    <blockquote class="epigrafe" id="epigrafe-navio"></blockquote>
+
+    <section id="secao-cadeia">
+      <div class="titulo-secao"><span class="marca">Figura I</span><h2>Um ano de cativeiro</h2></div>
+      <p class="intro" id="nota-cadeia"></p>
+      <figure class="figura" id="fig-cadeia"></figure>
+      <div class="colunas" id="cartoes-cadeia" style="margin-top:24px"></div>
+    </section>
+
+    <section id="secao-corte">
+      <div class="titulo-secao"><span class="marca">Figura II</span><h2>Por dentro do navio</h2></div>
+      <p class="intro">
+        A disposição a bordo não era acaso: era projeto. Uma barricada no meio do convés separava
+        a tripulação dos cativos, e o porão das mulheres ficava do lado dos alojamentos dos marinheiros.
+      </p>
+      <figure class="figura" id="fig-corte"></figure>
+    </section>
+
+    <section id="secao-navio-cartas">
+      <div class="titulo-secao"><span class="marca">Quadro XX</span><h2>A bordo</h2></div>
+      <div class="colunas" id="cartoes-navio"></div>
+    </section>
+
+    <section id="secao-tripulacao">
+      <div class="titulo-secao"><span class="marca">Quadro XXI</span><h2>Quem tripulava</h2></div>
+      <div class="colunas" id="cartoes-tripulacao"></div>
+      <div class="aviso" id="marinheiros-cativos" style="margin-top:20px"></div>
+    </section>
+
+    <section id="secao-navios-nomeados">
+      <div class="titulo-secao"><span class="marca">Quadro XXII</span><h2>Navios com nome</h2></div>
+      <p class="intro">
+        De cerca de 36 mil viagens documentadas, estas são as que o volume conta uma a uma.
+      </p>
+      <div class="rolagem"><table id="tabela-navios"></table></div>
+      <div class="aviso" id="lei-1684" style="margin-top:22px"></div>
+    </section>
+
+  </div><!-- /painel-navio -->
 
   <div id="painel-escravidao" hidden>
 
@@ -308,7 +342,7 @@
     </section>
 
     <section id="secao-chegada">
-      <div class="titulo-secao"><span class="marca">Quadro XX</span><h2>A chegada</h2></div>
+      <div class="titulo-secao"><span class="marca">Quadro XXIII</span><h2>A chegada</h2></div>
       <p class="intro">
         A rota terminava num cais. O que vinha depois do desembarque tinha etapas tão
         organizadas quanto a travessia.
@@ -317,14 +351,14 @@
     </section>
 
     <section id="secao-castigos">
-      <div class="titulo-secao"><span class="marca">Quadro XXI</span><h2>Os instrumentos</h2></div>
+      <div class="titulo-secao"><span class="marca">Quadro XXIV</span><h2>Os instrumentos</h2></div>
       <p class="intro" id="nota-castigos"></p>
       <div class="colunas" id="cartoes-castigos"></div>
     </section>
 
     <section id="secao-demografia">
       <div class="titulo-secao">
-        <span class="marca">Quadro XXII</span>
+        <span class="marca">Quadro XXV</span>
         <h2>Quem, e por quanto tempo</h2>
       </div>
       <div class="colunas" id="cartoes-demografia"></div>
@@ -332,7 +366,7 @@
 
     <section id="secao-trabalho">
       <div class="titulo-secao">
-        <span class="marca">Quadro XXIII</span>
+        <span class="marca">Quadro XXVI</span>
         <h2>O trabalho</h2>
       </div>
       <p class="intro">
@@ -344,7 +378,7 @@
 
     <section id="secao-resistencia">
       <div class="titulo-secao">
-        <span class="marca">Quadro XXIV</span>
+        <span class="marca">Quadro XXVII</span>
         <h2>A resistência</h2>
       </div>
       <p class="intro">
@@ -355,7 +389,7 @@
 
     <section id="secao-abolicoes">
       <div class="titulo-secao">
-        <span class="marca">Quadro XXV</span>
+        <span class="marca">Quadro XXVIII</span>
         <h2>A abolição, país a país</h2>
       </div>
       <ul class="cronologia" id="cronologia-abolicao"></ul>
@@ -363,7 +397,7 @@
 
     <section id="secao-depois">
       <div class="titulo-secao">
-        <span class="marca">Quadro XXVI</span>
+        <span class="marca">Quadro XXIX</span>
         <h2>Depois</h2>
       </div>
       <div class="colunas" id="cartoes-depois"></div>

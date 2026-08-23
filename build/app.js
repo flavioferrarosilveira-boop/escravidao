@@ -1247,10 +1247,6 @@ function montarMapaPopulacoes() {
     <h3>${i.termo}</h3>
     <div class="miudo" style="margin-top:10px">${i.texto} ${cite(i.pagina)}</div></div>`));
 
-  encher('cartoes-navio', N.navio.map((n) => `<div class="cartao">
-    <h3>${n.titulo}</h3><div class="grande" style="font-size:23px">${n.cifra}</div>
-    <div class="miudo" style="margin-top:8px">${n.texto} ${cite(n.pagina)}</div></div>`));
-
   encher('cartoes-lucros', N.lucros.map((l) => `<div class="cartao">
     <div class="quando" style="font-family:var(--fonte-mapa);letter-spacing:.14em;
       text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">${l.quando}</div>
@@ -1500,11 +1496,148 @@ function montarMapaBrasil() {
     <div class="miudo" style="margin-top:8px">${c.detalhe} ${cite(c.pagina)}</div></div>`).join('');
 }
 
+
+// =====================================================================
+//  ABA "O NAVIO"
+// =====================================================================
+{
+  const V = D.navio;
+  const cite = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+
+  html('epigrafe-navio').innerHTML =
+    `<p>“${V.epigrafe.texto}”</p><footer>${V.epigrafe.autor} ${cite(V.epigrafe.pagina)}</footer>`;
+  html('nota-cadeia').innerHTML =
+    `O navio era “${V.definicao.texto}”, na definição de ${V.definicao.autor} ${cite(V.definicao.pagina)}. ` +
+    `Mas ele foi só um trecho do percurso. ${V.cadeia._nota}`;
+
+  // --- Figura I: a cadeia, com as etapas em escala de tempo
+  {
+    const etapas = V.cadeia.etapas;
+    const total = etapas.reduce((t, e) => t + e.meses, 0);
+    const W = 990, ESQ = 90, DIR = 130, FAIXA = W - ESQ - DIR;
+    const px = (m) => (m / total) * FAIXA;
+    const CORES = ['#b8912b', '#c05a1f', '#8c2f2f'];
+    let x = ESQ, barras = '', rotulos = '', ticks = '';
+    etapas.forEach((e, i) => {
+      const w = px(e.meses);
+      barras += `<rect x="${x.toFixed(1)}" y="96" width="${w.toFixed(1)}" height="46"
+        fill="${CORES[i]}" fill-opacity="0.55" stroke="${CORES[i]}" stroke-width="1"/>`;
+      rotulos += `<text class="diag-nome" x="${(x + w / 2).toFixed(1)}" y="84" text-anchor="middle">${e.nome}</text>`;
+      rotulos += `<text class="diag-cifra" x="${(x + w / 2).toFixed(1)}" y="128" text-anchor="middle"
+        >${e.meses === 1.5 ? '1½' : e.meses} ${e.meses === 1 ? 'mês' : 'meses'}</text>`;
+      x += w;
+    });
+    for (let m = 0; m <= Math.ceil(total); m++) {
+      const tx = ESQ + px(m);
+      ticks += `<line x1="${tx.toFixed(1)}" y1="142" x2="${tx.toFixed(1)}" y2="${m % 3 === 0 ? 156 : 149}"
+        stroke="currentColor" stroke-width="0.8" opacity="0.45"/>`;
+      if (m % 3 === 0 && m > 0) ticks += `<text class="diag-fraco" x="${tx.toFixed(1)}" y="172"
+        text-anchor="middle">${m} meses</text>`;
+    }
+    // as cinco transações de compra e venda ao longo do percurso
+    let vendas = '';
+    for (let i = 0; i < 5; i++) {
+      const vx = ESQ + (FAIXA * (i + 0.5)) / 5;
+      vendas += `<circle cx="${vx.toFixed(1)}" cy="40" r="7" fill="var(--papel)" stroke="currentColor" stroke-width="1.2"/>`;
+      vendas += `<text class="diag-fraco" x="${vx.toFixed(1)}" y="44" text-anchor="middle">${i + 1}</text>`;
+      vendas += `<line x1="${vx.toFixed(1)}" y1="48" x2="${vx.toFixed(1)}" y2="60" stroke="currentColor"
+        stroke-width="0.8" stroke-dasharray="2 3" opacity="0.5"/>`;
+    }
+    html('fig-cadeia').innerHTML = `
+      <svg viewBox="0 0 ${W} 200" role="img"
+        aria-label="Linha do tempo do cativeiro: seis meses de marcha até o litoral, cinco meses no barracão do porto e um mês e meio de travessia do Atlântico, somando quase um ano.">
+        <text class="diag-rot" x="10" y="44">até 5 vendas</text>
+        ${vendas}
+        <text class="diag-nome" x="10" y="124" text-anchor="start">Captura</text>
+        <line x1="76" y1="96" x2="76" y2="142" stroke="currentColor" stroke-width="1.4"/>
+        ${barras}${ticks}${rotulos}
+        <line x1="${(W - DIR + 4)}" y1="96" x2="${(W - DIR + 4)}" y2="142" stroke="currentColor" stroke-width="1.4"/>
+        <text class="diag-fraco" x="${W - DIR + 10}" y="116">venda</text>
+        <text class="diag-fraco" x="${W - DIR + 10}" y="130">no Brasil</text>
+      </svg>
+      <figcaption>A travessia do Atlântico ocupa quase toda a imagem que se faz do tráfico e foi a etapa
+      mais curta: um mês e meio contra os onze anteriores. Ao pisar na fazenda, a pessoa tinha quase um ano
+      de cativeiro e já havia sido comprada e vendida até cinco vezes. ${cite('222-223')}</figcaption>`;
+  }
+
+  // --- Figura II: corte esquemático do navio
+  html('fig-corte').innerHTML = `
+    <svg viewBox="0 0 900 400" role="img"
+      aria-label="Corte esquemático de um navio negreiro: convés dividido ao meio por uma barricada, porão dos homens à ré e porão das mulheres à proa, junto aos alojamentos da tripulação.">
+      <path d="M 70,140 H 830 L 800,300 Q 450,335 100,300 Z"
+        fill="var(--terra)" fill-opacity="0.35" stroke="currentColor" stroke-width="1.6"/>
+      <line x1="70" y1="196" x2="830" y2="196" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="250" y1="140" x2="250" y2="46" stroke="currentColor" stroke-width="2"/>
+      <line x1="620" y1="140" x2="620" y2="30" stroke="currentColor" stroke-width="2"/>
+      <line x1="190" y1="70" x2="310" y2="70" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="556" y1="58" x2="684" y2="58" stroke="currentColor" stroke-width="1.2"/>
+
+      <rect x="432" y="104" width="16" height="92" fill="#8c2f2f" fill-opacity="0.5"
+        stroke="#8c2f2f" stroke-width="1.4"/>
+      <circle cx="440" cy="124" r="2.6" fill="var(--papel)"/>
+      <circle cx="440" cy="146" r="2.6" fill="var(--papel)"/>
+      <circle cx="440" cy="168" r="2.6" fill="var(--papel)"/>
+
+      <rect x="105" y="206" width="320" height="84" fill="#4b3f9e" fill-opacity="0.22"/>
+      <line x1="105" y1="234" x2="425" y2="234" stroke="currentColor" stroke-width="0.7" opacity="0.6"/>
+      <line x1="108" y1="262" x2="422" y2="262" stroke="currentColor" stroke-width="0.7" opacity="0.6"/>
+      <rect x="455" y="206" width="300" height="84" fill="#8a3f8c" fill-opacity="0.22"/>
+      <line x1="455" y1="234" x2="755" y2="234" stroke="currentColor" stroke-width="0.7" opacity="0.6"/>
+      <line x1="458" y1="262" x2="752" y2="262" stroke="currentColor" stroke-width="0.7" opacity="0.6"/>
+      <rect x="700" y="150" width="120" height="44" fill="#b8912b" fill-opacity="0.3"/>
+
+      <text class="diag-nome" x="265" y="253" text-anchor="middle">porão dos homens</text>
+      <text class="diag-fraco" x="265" y="273" text-anchor="middle">à ré, o mais distante da tripulação</text>
+      <text class="diag-nome" x="605" y="253" text-anchor="middle">porão das mulheres</text>
+      <text class="diag-fraco" x="605" y="273" text-anchor="middle">à proa, do lado dos marinheiros</text>
+      <text class="diag-rot" x="760" y="177" text-anchor="middle">tripulação</text>
+
+      <text class="diag-rot" x="440" y="96" text-anchor="middle">barricada</text>
+      <line x1="440" y1="100" x2="440" y2="104" stroke="currentColor" stroke-width="1"/>
+      <line x1="440" y1="300" x2="440" y2="322" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 3"/>
+      <text class="diag-fraco" x="440" y="338" text-anchor="middle">tábuas transversais com furos para atirar sobre o convés</text>
+
+      <text class="diag-fraco" x="105" y="190" text-anchor="start">convés</text>
+      <line x1="220" y1="292" x2="220" y2="356" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 3"/>
+      <text class="diag-fraco" x="234" y="372" text-anchor="start">prateleiras de madeira: impossível ficar de pé</text>
+    </svg>
+    <figcaption>Esquema, não a planta de um navio real. O que a disposição mostra: a barricada no meio do
+    convés era uma trincheira contra os cativos, e o porão das mulheres ficava do lado dos alojamentos da
+    tripulação — o que as deixava sem ninguém que pudesse defendê-las. Nos porões, prateleiras de madeira
+    baixas demais para ficar de pé: passava-se a travessia deitado, acorrentado aos pares, perna com perna
+    e mão com mão. ${cite('228-232')}</figcaption>`;
+
+  html('cartoes-cadeia').innerHTML = V.cadeia.etapas.map((e) => `<div class="cartao">
+    <h3>${e.nome}</h3><div class="miudo" style="margin-top:10px">${e.detalhe} ${cite(e.pagina)}</div></div>`).join('');
+
+  html('cartoes-navio').innerHTML = V.cartas.map((n) => `<div class="cartao">
+    <h3>${n.titulo}</h3><div class="grande" style="font-size:23px">${n.cifra}</div>
+    <div class="miudo" style="margin-top:8px">${n.texto} ${cite(n.pagina)}</div></div>`).join('');
+
+  html('cartoes-tripulacao').innerHTML = V.tripulacao.map((t) => `<div class="cartao">
+    <h3>${t.cargo}</h3>
+    ${t.pago ? `<div class="grande" style="font-size:20px">${t.pago}</div>` : ''}
+    ${t.hoje ? `<div class="miudo">${t.hoje}</div>` : ''}
+    <div class="miudo" style="margin-top:8px">${t.texto} ${cite(t.pagina)}</div></div>`).join('');
+
+  html('marinheiros-cativos').innerHTML =
+    `<b>Escravizados na tripulação — ${V.marinheiros_cativos.cifra}.</b> ` +
+    `${V.marinheiros_cativos.texto} ${cite(V.marinheiros_cativos.pagina)}`;
+
+  tabela('tabela-navios', [{ rotulo: 'Navio' }, { rotulo: 'Quando' }, { rotulo: 'O que se sabe dele' }, { rotulo: '' }],
+    V.navios.map((n) => [
+      `<b style="${n.grave ? 'color:var(--sangue)' : ''}">${n.nome}</b>`,
+      n.ano, n.fato, cite(n.pagina)]));
+
+  html('lei-1684').innerHTML = `<b>${V.lei1684.titulo}.</b> ${V.lei1684.texto} ${cite(V.lei1684.pagina)}`;
+}
+
 // --- troca de abas
 {
   const paineis = {
     trafico: html('painel-trafico'),
     negocio: html('painel-negocio'),
+    navio: html('painel-navio'),
     escravidao: html('painel-escravidao'),
   };
   const botoes = [...document.querySelectorAll('.aba')];

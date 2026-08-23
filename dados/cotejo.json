@@ -297,6 +297,15 @@
       "agora": "Carta III, 2ª vista",
       "estado": "novo",
       "obs": "Fonte externa, não o livro: Recenseamento Geral do Império de 1872, o único censo brasileiro que contou a população escravizada. Os números por província foram levantados em busca na web e conferidos por soma — as 20 províncias mais o Município Neutro dão exatamente 1.510.806, o total publicado. Há uma digitalização do Cedeplar/UFMG que corrige erros aritméticos do original e difere em algumas províncias; a carta usa a tabulação corrente."
+    },
+    {
+      "item": "Aba O Navio",
+      "antes": "um quadro dentro de O Negócio",
+      "livro": "cap. 18, pp. 221-236",
+      "pagina": "221-236",
+      "agora": "aba própria, com dois diagramas",
+      "estado": "novo",
+      "obs": "A cadeia inteira do cativeiro em escala de tempo — seis meses de marcha, cinco de barracão, um e meio de travessia — e um corte esquemático do navio mostrando a barricada e a posição dos dois porões. Mais a tripulação e seus salários, os escravizados que iam como marinheiros, oito navios documentados um a um e o alvará de 1684 que nunca pegou."
     }
   ]
 }
