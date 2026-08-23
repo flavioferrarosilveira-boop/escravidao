@@ -996,6 +996,20 @@ function tabela(destino, colunas, linhas) {
     correntes equatoriais: um navio de Liverpool não cruzava o Atlântico em linha reta, descia até a
     costa africana, atravessava com o alísio de nordeste e voltava pelo norte com os ventos de oeste
     e a Corrente do Golfo. As curvas do mapa são esquemáticas, mas a lógica é a real.</p>
+    <h3>Fontes externas ao livro</h3>
+    <p>Duas coisas que a carta mostra estão <b>fora</b> do volume I de Gomes, que termina em 1695:
+    o censo de 1872 (Carta III) e o tráfico por dentro do Brasil (Carta IV). Procurei nas 457
+    páginas os termos <i>tráfico interno</i>, <i>interprovincial</i>, <i>revenda</i>,
+    <i>cabotagem</i>, <i>sampauleiro</i>, <i>Caminho Novo</i> e <i>Minas Gerais</i>: nenhuma
+    ocorrência. Essa matéria é dos volumes II e III. O que a Carta IV traz vem, portanto, da
+    bibliografia acadêmica brasileira, com cada número preso ao autor que o calculou:</p>
+    <ul>${D.interno.fontes.map((f) => `<li>${f.autor !== '—' ? `${f.autor}. ` : ''}` +
+      `<i>${f.obra}</i>. ${f.onde}.${f.url ? ` <a href="${f.url}" target="_blank" rel="noopener">${f.url}</a>` : ''}</li>`).join('')}</ul>
+    <p style="font-size:14.5px">Os três conjuntos de números do tráfico interno — as remessas do
+    porto do Rio (1809-1833), as transferências entre províncias (1850-1881) e a série fiscal
+    cearense — vêm de métodos diferentes sobre recortes que se sobrepõem, e <b>não se somam</b>.
+    A Carta IV declara isso na própria página.</p>
+
     <h3>Bibliografia</h3>
     <ul>
       <li>GOMES, Laurentino. <i>Escravidão — Volume I: Do primeiro leilão de cativos em Portugal
@@ -1497,6 +1511,305 @@ function montarMapaBrasil() {
 }
 
 
+
+// =====================================================================
+//  Carta IV: o trafico interno, por dentro do Brasil
+// =====================================================================
+let intMontado = false;
+function montarMapaInterno() {
+  if (intMontado) return;
+  intMontado = true;
+  const I = D.interno;
+
+  html('epigrafe-interno').innerHTML =
+    `<p>“${I.epigrafe.texto}”</p><footer>${I.epigrafe.credito}</footer>`;
+  html('abertura-interno').innerHTML = I.abertura;
+  html('lacuna-interno').innerHTML = `<b>Aviso de origem.</b> ${I.lacuna_livro}`;
+  html('cautela-interno').innerHTML = `<b>Como ler estes números.</b> ${I.cautela}`;
+
+  // O Atlântico inteiro é desenhado a 10 px por grau; o Brasil sozinho pede quatro
+  // vezes mais, senão traço e letra saem grandes demais para a moldura.
+  const KI = 30;
+  const projI = (lon, lat) => [(lon - LON_MIN) * KI, (mercY(lat) - Y0) * KI];
+  const caminhoI = (anel) => {
+    let d = '';
+    for (let i = 0; i < anel.length; i++) {
+      const [x, y] = projI(anel[i][0], anel[i][1]);
+      d += (i ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1);
+    }
+    return d + 'Z';
+  };
+
+  const LUG = {};
+  for (const l of I.lugares) LUG[l.id] = l;
+
+  const svgI = html('mapa-interno');
+  const [ax0] = projI(-76, 0), [ax1] = projI(-24, 0);
+  const [, ay0] = projI(0, 8), [, ay1] = projI(0, -38);
+  svgI.setAttribute('viewBox', `${ax0.toFixed(0)} ${ay0.toFixed(0)} ${(ax1 - ax0).toFixed(0)} ${(ay1 - ay0).toFixed(0)}`);
+  svgI.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+  el('rect', { x: ax0, y: ay0, width: ax1 - ax0, height: ay1 - ay0, fill: 'var(--mar)' }, svgI);
+  const gTi = el('g', { class: 'terra' }, svgI);
+  for (const anel of D.geo.litoral) el('path', { d: caminhoI(anel) }, gTi);
+  const gRi = el('g', null, svgI);      // rotas
+  const gPi = el('g', null, svgI);      // pontos
+  const gLL = el('g', null, svgI);      // fios de chamada
+  const gLi = el('g', null, svgI);      // rotulos
+  const gEi = el('g', null, svgI);      // legenda
+
+  const dicaI = html('dica-interno'), palcoI = html('palco-interno');
+  palcoI.addEventListener('pointerleave', () => dicaI.classList.remove('visivel'));
+  const mostrarI = (e, conteudo) => {
+    dicaI.innerHTML = conteudo;
+    dicaI.classList.add('visivel');
+    const cx = palcoI.getBoundingClientRect();
+    let px = e.clientX - cx.left + 16, py = e.clientY - cx.top + 16;
+    if (px + dicaI.offsetWidth > cx.width - 8) px = e.clientX - cx.left - dicaI.offsetWidth - 16;
+    if (py + dicaI.offsetHeight > cx.height - 8) py = Math.max(8, e.clientY - cx.top - dicaI.offsetHeight - 16);
+    dicaI.style.left = px + 'px'; dicaI.style.top = py + 'px';
+  };
+
+  const TRACO = {
+    mar:   { cor: '#22525c', dash: null,     rot: 'por mar · cabotagem' },
+    terra: { cor: '#7a5a2e', dash: '9 6',    rot: 'por terra · comboio' },
+    rio:   { cor: '#3f6a72', dash: '2 6',    rot: 'por rio' },
+  };
+  const ESP = { 1: 2.6, 2: 4.4, 3: 6.4 };
+  // Centro aproximado do territorio: as rotas de mar arqueiam para fora dele,
+  // as de terra para dentro. E o que faz o desenho parecer o que era.
+  
+
+  let era = 'interprovincial';
+  let rotulosInt = [];
+
+  // A cabotagem não cortava o continente: descia colada à costa, contornando o
+  // bico do Nordeste. Esta é a linha d'água por onde as rotas de mar passam.
+  const COSTA = [
+    [-47.0, 0.2], [-43.0, -1.0], [-38.0, -1.8], [-36.2, -3.6], [-33.6, -6.2],
+    [-33.2, -9.2], [-35.4, -12.2], [-36.6, -15.2], [-38.2, -18.2], [-39.6, -21.0],
+    [-41.6, -23.6], [-44.6, -25.1], [-47.6, -26.6], [-49.6, -29.6], [-51.2, -32.6],
+    [-54.2, -35.6], [-57.2, -35.8],
+  ];
+  const maisPerto = (l) => {
+    let m = 0, d = Infinity;
+    for (let i = 0; i < COSTA.length; i++) {
+      const v = (COSTA[i][0] - l.lon) ** 2 + (COSTA[i][1] - l.lat) ** 2;
+      if (v < d) { d = v; m = i; }
+    }
+    return m;
+  };
+  const suave = (p) => {
+    if (p.length < 3) return `M${p[0][0].toFixed(1)},${p[0][1].toFixed(1)}L${p[1][0].toFixed(1)},${p[1][1].toFixed(1)}`;
+    let d = `M${p[0][0].toFixed(1)},${p[0][1].toFixed(1)}`;
+    for (let i = 1; i < p.length - 1; i++) {
+      const mx = (p[i][0] + p[i + 1][0]) / 2, my = (p[i][1] + p[i + 1][1]) / 2;
+      d += `Q${p[i][0].toFixed(1)},${p[i][1].toFixed(1)} ${mx.toFixed(1)},${my.toFixed(1)}`;
+    }
+    return d + `L${p[p.length - 1][0].toFixed(1)},${p[p.length - 1][1].toFixed(1)}`;
+  };
+
+  // Cada rota sai do porto, entra na linha d'água e volta ao porto de destino.
+  // O afastamento `off` abre as rotas em leque para que não virem um traço só.
+  const COSTA_P = COSTA.map(([lo, la]) => projI(lo, la));
+  const NORMAL = COSTA_P.map((_, i) => {
+    const a = COSTA_P[Math.max(0, i - 1)], b = COSTA_P[Math.min(COSTA_P.length - 1, i + 1)];
+    const tx = b[0] - a[0], ty = b[1] - a[1], m = Math.hypot(tx, ty) || 1;
+    return [ty / m, -tx / m];   // aponta para o alto-mar
+  });
+  function derrota(a, b, off) {
+    const ia = maisPerto(a), ib = maisPerto(b);
+    const passo = ib >= ia ? 1 : -1;
+    const pts = [projI(a.lon, a.lat)];
+    for (let i = ia; i !== ib + passo; i += passo) {
+      pts.push([COSTA_P[i][0] + NORMAL[i][0] * off, COSTA_P[i][1] + NORMAL[i][1] * off]);
+    }
+    pts.push(projI(b.lon, b.lat));
+    return pts;
+  }
+
+  function arco(a, b, meio) {
+    const [x1, y1] = projI(a.lon, a.lat);
+    const [x2, y2] = projI(b.lon, b.lat);
+    const dx = x2 - x1, dy = y2 - y1;
+    const comp = Math.hypot(dx, dy) || 1;
+    let nx = -dy / comp, ny = dx / comp;
+    const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+    // A costa brasileira corre de nordeste a sul: o alto-mar fica sempre a leste.
+    // As rotas de cabotagem arqueiam para fora da terra; as de terra, para dentro.
+    if (meio === 'mar' ? nx < 0 : nx > 0) { nx = -nx; ny = -ny; }
+    void mx; void my;
+    const mag = comp * (meio === 'mar' ? 0.17 : 0.08);
+    return { x1, y1, x2, y2, cx: mx + nx * mag, cy: my + ny * mag };
+  }
+  const ponto = (a, t) => {
+    const u = 1 - t;
+    return [u * u * a.x1 + 2 * u * t * a.cx + t * t * a.x2,
+            u * u * a.y1 + 2 * u * t * a.cy + t * t * a.y2];
+  };
+
+  function descongestionarInt(obstaculos) {
+    const ocupados = (obstaculos || []).slice();
+    const colide = (p, q) => p.x < q.x + q.w && p.x + p.w > q.x && p.y < q.y + q.h && p.y + p.h > q.y;
+    const medir = (t) => { const b = t.getBBox(); return { x: b.x - 3, y: b.y - 2, w: b.width + 6, h: b.height + 4 }; };
+    for (const it of [...rotulosInt].sort((a, b) => b.peso - a.peso)) {
+      const opcoes = [
+        [it.x + 9, it.y + 4, 'start'], [it.x - 9, it.y + 4, 'end'],
+        [it.x, it.y - 10, 'middle'], [it.x, it.y + 17, 'middle'],
+        [it.x + 9, it.y - 8, 'start'], [it.x - 9, it.y + 16, 'end'],
+        [it.x + 9, it.y + 16, 'start'], [it.x - 9, it.y - 8, 'end'],
+        [it.x + 9, it.y + 28, 'start'], [it.x - 9, it.y + 28, 'end'],
+        [it.x + 9, it.y - 20, 'start'], [it.x - 9, it.y - 20, 'end'],
+        [it.x, it.y + 30, 'middle'], [it.x, it.y - 23, 'middle'],
+        [it.x + 9, it.y + 40, 'start'], [it.x - 9, it.y - 32, 'end'],
+      ];
+      it.t.style.display = '';
+      let posto = false;
+      for (let k = 0; k < opcoes.length; k++) {
+        const [px, py, anc] = opcoes[k];
+        it.t.setAttribute('x', px); it.t.setAttribute('y', py);
+        it.t.setAttribute('text-anchor', anc);
+        const r = medir(it.t);
+        if (ocupados.some((o) => colide(r, o))) continue;
+        ocupados.push(r); posto = true;
+        // Rótulo longe do seu ponto ganha fio de chamada, como nas cartas antigas.
+        if (k >= 2) el('line', { x1: it.x, y1: it.y, x2: px, y2: py - 4,
+          stroke: 'var(--tinta-3)', 'stroke-width': .7, opacity: .6 }, gLL);
+        break;
+      }
+      if (!posto) it.t.style.display = 'none';
+    }
+  }
+
+  // Devolve a caixa da legenda, para que os rótulos a evitem.
+  function legendaI() {
+    while (gEi.firstChild) gEi.removeChild(gEi.firstChild);
+    const lx = ax0 + 22, ly = ay1 - 150, lw = 300, lh = 130;
+    el('rect', { x: lx, y: ly, width: lw, height: lh, fill: 'var(--papel)',
+      'fill-opacity': .82, stroke: 'var(--terra-borda)', 'stroke-width': .8 }, gEi);
+    let yy = ly + 26;
+    for (const k of ['mar', 'terra', 'rio']) {
+      const t = TRACO[k];
+      el('line', { x1: lx + 14, y1: yy, x2: lx + 62, y2: yy, stroke: t.cor,
+        'stroke-width': 3.4, 'stroke-dasharray': t.dash, 'stroke-linecap': 'round' }, gEi);
+      texto(t.rot, { x: lx + 70, y: yy + 5, class: 'rotulo', 'font-size': 13,
+        stroke: 'none' }, gEi);
+      yy += 24;
+    }
+    texto('a espessura é qualitativa, não medida', { x: lx + 14, y: yy + 6,
+      class: 'rotulo', 'font-size': 11.5, 'font-style': 'italic', stroke: 'none' }, gEi);
+    return { x: lx - 4, y: ly - 4, w: lw + 8, h: lh + 8 };
+  }
+
+  function desenhar() {
+    for (const g of [gRi, gPi, gLL, gLi]) while (g.firstChild) g.removeChild(g.firstChild);
+    rotulosInt = [];
+    const rotas = I.rotas.filter((r) => r.era === era);
+    const usados = new Set();
+    for (const r of rotas) { usados.add(r.de); usados.add(r.para); }
+
+    let leque = 0;
+    for (const r of rotas.slice().sort((a, b) => a.peso - b.peso)) {
+      const a = LUG[r.de], b = LUG[r.para];
+      if (!a || !b) continue;
+      const t = TRACO[r.meio], w = ESP[r.peso] || 2.2;
+      let d, seta;
+      if (r.meio === 'mar') {
+        const pts = derrota(a, b, 6 + (leque++) * 4.5);
+        d = suave(pts);
+        seta = [pts[pts.length - 2], pts[pts.length - 1]];
+      } else {
+        const g = arco(a, b, r.meio);
+        d = `M${g.x1.toFixed(1)},${g.y1.toFixed(1)}Q${g.cx.toFixed(1)},${g.cy.toFixed(1)} ${g.x2.toFixed(1)},${g.y2.toFixed(1)}`;
+        seta = [ponto(g, 0.88), ponto(g, 0.985)];
+      }
+      // colchao branco para a rota nao se perder no litoral
+      el('path', { d, fill: 'none', stroke: 'var(--papel)', 'stroke-width': w + 3.4,
+        'stroke-linecap': 'round', opacity: .5 }, gRi);
+      const p = el('path', { d, class: 'rota-int', stroke: t.cor, 'stroke-width': w,
+        'stroke-dasharray': t.dash, opacity: .9 }, gRi);
+      // seta indicando o sentido da viagem
+      const [px1, py1] = seta[0], [px2, py2] = seta[1];
+      const ang = Math.atan2(py2 - py1, px2 - px1);
+      const s = 7 + w * 0.95;
+      el('path', { fill: t.cor, opacity: .95, d:
+        `M${px2.toFixed(1)},${py2.toFixed(1)}` +
+        `L${(px2 - s * Math.cos(ang - 0.42)).toFixed(1)},${(py2 - s * Math.sin(ang - 0.42)).toFixed(1)}` +
+        `L${(px2 - s * Math.cos(ang + 0.42)).toFixed(1)},${(py2 - s * Math.sin(ang + 0.42)).toFixed(1)}Z` }, gRi);
+      const conteudo = `<h4>${a.nome} → ${b.nome}</h4>
+        <dl><dt>Rota</dt><dd>${r.nome}</dd><dt>Meio</dt><dd>${t.rot.split(' · ')[0]}</dd></dl>
+        ${r.nota ? `<div class="nota">${r.nota}</div>` : ''}`;
+      const toque = el('path', { d, class: 'rota-toque' }, gRi);
+      for (const alvo of [p, toque]) {
+        alvo.addEventListener('pointermove', (e) => mostrarI(e, conteudo));
+        alvo.addEventListener('pointerleave', () => dicaI.classList.remove('visivel'));
+      }
+    }
+
+    for (const id of usados) {
+      const l = LUG[id]; if (!l) continue;
+      const [x, y] = projI(l.lon, l.lat);
+      if (l.tipo === 'porto') {
+        el('circle', { cx: x, cy: y, r: 4.4, fill: 'var(--papel)', class: 'porto' }, gPi);
+        el('circle', { cx: x, cy: y, r: 1.9, fill: 'var(--tinta)' }, gPi);
+      } else if (l.tipo === 'praca') {
+        el('path', { d: `M${x},${y - 5.2}L${x + 5.2},${y}L${x},${y + 5.2}L${x - 5.2},${y}Z`,
+          fill: '#8c2f2f', 'fill-opacity': .8, stroke: 'var(--papel)', 'stroke-width': 1 }, gPi);
+      } else {
+        el('rect', { x: x - 4, y: y - 4, width: 8, height: 8, fill: '#7a5a2e',
+          'fill-opacity': .8, stroke: 'var(--papel)', 'stroke-width': 1 }, gPi);
+      }
+      const peso = I.rotas.filter((r) => r.era === era && (r.de === id || r.para === id))
+        .reduce((s, r) => s + r.peso, 0);
+      const tx = texto(l.nome, { class: 'rotulo porto', 'font-size': 15 }, gLi);
+      rotulosInt.push({ t: tx, x, y, peso });
+    }
+    descongestionarInt([legendaI()]);
+    pintarResumo();
+  }
+
+  function pintarResumo() {
+    const e = I.eras.find((x) => x.id === era);
+    html('resumo-interno').innerHTML = `<div class="painel-era">
+      <p class="quando">${e.periodo}</p>
+      <h3>${e.titulo}</h3>
+      <p class="corpo">${e.resumo}</p>
+      <div class="cifra">${e.volume ? num(e.volume) : '—'}
+        <small>${e.volume ? e.unidade_volume + '. ' : ''}${e.nota_volume}</small></div>
+    </div>`;
+  }
+
+  {
+    const fi = html('fichas-interno');
+    const pintar = () => {
+      fi.innerHTML = '';
+      for (const e of I.eras) {
+        fi.appendChild(ficha(`${e.nome} · ${e.periodo}`, era === e.id, null,
+          () => { era = e.id; pintar(); desenhar(); }));
+      }
+    };
+    pintar();
+  }
+  desenhar();
+
+  html('cartoes-interno').innerHTML = I.mecanica.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3>
+    <div class="miudo" style="margin-top:10px">${c.texto}</div>
+    <div class="miudo" style="margin-top:9px"><span class="cite">${c.fonte}</span></div></div>`).join('');
+
+  tabela('tabela-interno',
+    [{ rotulo: 'O que foi contado' }, { rotulo: 'Quanto', num: true },
+     { rotulo: 'Período' }, { rotulo: 'De quem é o número' }],
+    I.numeros.map((n) => [
+      n.rubrica + (n.detalhe ? `<div class="cite" style="white-space:normal">${n.detalhe}</div>` : ''),
+      `<b>${n.valor}</b>`, n.periodo, n.fonte]));
+
+  html('fontes-interno').innerHTML = I.fontes.map((f) => `<li>${
+    f.autor !== '—' ? `${f.autor}. ` : ''}<i>${f.obra}</i>. ${f.onde}.${
+    f.url ? ` <a href="${f.url}" target="_blank" rel="noopener">${f.url}</a>` : ''}</li>`).join('');
+}
+
+
 // =====================================================================
 //  ABA "O NAVIO"
 // =====================================================================
@@ -1644,7 +1957,7 @@ function montarMapaBrasil() {
   const ir = (nome) => {
     for (const b of botoes) b.setAttribute('aria-selected', String(b.dataset.aba === nome));
     for (const [k, el2] of Object.entries(paineis)) el2.hidden = k !== nome;
-    if (nome === 'escravidao') { montarMapaPopulacoes(); montarMapaBrasil(); }
+    if (nome === 'escravidao') { montarMapaPopulacoes(); montarMapaBrasil(); montarMapaInterno(); }
     else if (prontoParaMedir) { descongestionar(); aplicarCamadas(); }
     if (location.hash !== '#' + nome) history.replaceState(null, '', '#' + nome);
   };

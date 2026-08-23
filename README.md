@@ -18,7 +18,7 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
 | **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, o navio negreiro, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas, **a guerra luso-holandesa pelo fornecimento de cativos** |
 | **O Navio** (aba) | Dois diagramas — a cadeia do cativeiro em escala de tempo e um corte esquemático do navio — mais a tripulação, os escravizados que iam como marinheiros, oito navios documentados e o alvará de 1684 |
-| **A Escravidão** (aba) | **Carta III do Brasil escravista**, em duas vistas que se alternam: onde as pessoas desembarcaram (1501-1856) e onde estavam vivas no censo de 1872, província a província. Mais: a chegada e o Valongo, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
+| **A Escravidão** (aba) | **Carta III do Brasil escravista**, em duas vistas que se alternam: onde as pessoas desembarcaram (1501-1856) e onde estavam vivas no censo de 1872, província a província. **Carta IV — o tráfico por dentro do Brasil**, em três tempos: os caminhos das Minas (c. 1690-1800), as remessas do porto do Rio (1809-1833) e o tráfico interprovincial do café (1850-1881), com as rotas de cabotagem coladas à costa e os comboios de terra. Mais: a chegada e o Valongo, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
 Quadros: os corredores um a um · as quantidades · as bandeiras · os portos que armavam as
 viagens · os quatro ciclos do tráfico brasileiro · povos e Estados de origem ·
@@ -57,6 +57,7 @@ dados/
   africa.json             a África antes do tráfico, os topônimos, a guerra luso-holandesa
   brasil.json             desembarques por região, cidades coloniais, economia do engenho
   navio.json              cadeia do cativeiro, tripulação, navios nomeados, alvará de 1684
+  trafico_interno.json    o tráfico dentro do Brasil: três tempos, rotas, números e fontes
   portos_armadores.json   onde as viagens eram organizadas (Gomes I, p. 217)
   cotejo.json             confronto linha a linha entre a carta, o livro e o resultado
   circuitos.json          pernas do comércio triangular por bandeira
@@ -141,6 +142,33 @@ e diz isso na própria página.
 O contraste entre as duas vistas é o ponto: Minas Gerais quase não recebeu africanos
 direto da África e tinha a maior população escravizada do Império; Bahia e Pernambuco
 receberam 2,4 milhões e tinham 256 mil pessoas em 1872.
+
+## O tráfico por dentro do Brasil
+
+A Carta IV também **não** vem de Gomes. Procurei nas 457 páginas do volume I os termos
+*tráfico interno*, *interprovincial*, *revenda*, *cabotagem*, *sampauleiro*,
+*Caminho Novo* e *Minas Gerais*: **nenhuma ocorrência**. Não é lacuna do autor — o volume
+termina em 1695, antes de o tráfico interno existir como sistema; a matéria é dos volumes
+II (o ouro) e III (o café). O livro toca no assunto por duas bordas: a cronologia registra
+que em 1675 Domingos Jorge Velho abre o caminho que liga São Paulo e Minas Gerais (p. 10),
+e a p. 327 descreve os *libambos* — os comboios de cativos conduzidos pelos pombeiros do
+interior de Angola até o litoral, o mesmo mecanismo do outro lado do oceano.
+
+O resto vem da bibliografia acadêmica brasileira, com cada número preso ao autor que o
+calculou:
+
+| O que foi contado | Quanto | Período | De quem |
+|---|---:|---|---|
+| Pessoas remetidas do porto do Rio para o interior e os Portos do Sul, em 49.395 partidas | 247.663 | 1809-1833 | Florentino, Machado e Valencia Villa, *Afro-Ásia* n. 70 |
+| Dessas, com destino a Minas Gerais | 95.000 | 1809-1833 | idem |
+| Pessoas transferidas entre províncias (~7.200/ano) | 222.500 | 1850-1881 | Robert Slenes |
+| O mesmo, somando as transações intraprovinciais | até 400.000 | 1850-1881 | Robert Slenes |
+| Vendidos para fora do Ceará durante a grande seca | 7.667 | 1877-1879 | *Hist. Ciênc. Saúde — Manguinhos* 27(1) |
+
+Os três conjuntos vêm de métodos diferentes sobre recortes que se sobrepõem e **não se
+somam** — a carta diz isso na própria página. As espessuras das rotas são qualitativas:
+não existe, que eu tenha encontrado, uma matriz província-a-província do tráfico interno
+comparável à do tráfico atlântico.
 
 ## Método e limites
 

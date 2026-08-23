@@ -225,3 +225,23 @@ table.cotejo tr.est-divergente td:first-child b::after{content:" ▸";color:var(
 .figura .diag-nome{font-family:var(--fonte-mapa);font-size:15px;fill:var(--tinta)}
 .figura .diag-cifra{font-family:var(--fonte-mapa);font-size:19px;fill:var(--tinta)}
 .figura .diag-fraco{font-size:12px;fill:var(--tinta-2)}
+
+/* ---- Carta IV: o tráfico interno ---- */
+.legenda-meio{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;font-size:14px;color:var(--tinta-2)}
+.legenda-meio span{display:flex;align-items:center;gap:7px}
+.legenda-meio .tra{width:30px;height:0;flex:0 0 auto;border-top:2.6px solid #5d4a30}
+.legenda-meio .tra-terra{border-top-style:dashed;border-top-color:#7a5a2e}
+.legenda-meio .tra-rio{border-top-style:dotted;border-top-width:3px;border-top-color:#3f6a72}
+.rota-int{fill:none;stroke-linecap:round;cursor:pointer;transition:opacity .18s}
+.lista-fontes{font-size:15px;color:var(--tinta-2);padding-left:22px;margin:0}
+.lista-fontes li{margin-bottom:10px}
+.lista-fontes a{color:var(--tinta-2)}
+.painel-era{border:var(--borda);background:var(--papel-2);padding:20px 22px;border-radius:2px}
+.painel-era h3{font-size:22px;margin:0}
+.painel-era .quando{font-family:var(--fonte-mapa);letter-spacing:.22em;text-transform:uppercase;
+  font-size:12.5px;color:var(--tinta-3);margin:0 0 4px}
+.painel-era .corpo{margin-top:10px;color:var(--tinta-2);max-width:82ch}
+.painel-era .cifra{font-family:var(--fonte-mapa);font-size:clamp(26px,3.2vw,36px);line-height:1.05;
+  margin-top:14px;color:var(--tinta)}
+.painel-era .cifra small{display:block;font-family:var(--fonte-texto);font-size:14.5px;
+  color:var(--tinta-2);margin-top:5px;font-style:italic}
