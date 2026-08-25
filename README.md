@@ -18,6 +18,7 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **Século a século** | Os corredores dominantes de cada período, com o total de embarcados |
 | **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, o navio negreiro, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas, **a guerra luso-holandesa pelo fornecimento de cativos** |
 | **O Navio** (aba) | Dois diagramas — a cadeia do cativeiro em escala de tempo e um corte esquemático do navio — mais a tripulação, os escravizados que iam como marinheiros, oito navios documentados e o alvará de 1684 |
+| **As Origens** (aba) | **Carta V — o outro tráfico e a frente de captura**: as rotas transaarianas, do Mar Vermelho e do Índico (12 milhões de pessoas entre os séculos VII e XIX, tantas quantas o Atlântico levou em 350 anos) e a linha de captura avançando para o interior do continente. **Figura III — a cascata de mortalidade** de Joseph Miller, de 100 capturados a 34-39 sobreviventes. Mais: a escravidão antes do Atlântico, o leilão de Lagos em 1444, dom Henrique, a volta do mar, as ilhas-laboratório, os lançados, o Reino do Congo, a escravidão indígena e sua substituição medida num só engenho, as três bulas papais e a cicatriz da corresponsabilidade africana |
 | **A Escravidão** (aba) | **Carta III do Brasil escravista**, em duas vistas que se alternam: onde as pessoas desembarcaram (1501-1856) e onde estavam vivas no censo de 1872, província a província. **Carta IV — o tráfico por dentro do Brasil**, em três tempos: os caminhos das Minas (c. 1690-1800), as remessas do porto do Rio (1809-1833) e o tráfico interprovincial do café (1850-1881), com as rotas de cabotagem coladas à costa e os comboios de terra. Mais: a chegada e o Valongo, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
 Quadros: os corredores um a um · as quantidades · as bandeiras · os portos que armavam as
@@ -58,6 +59,8 @@ dados/
   brasil.json             desembarques por região, cidades coloniais, economia do engenho
   navio.json              cadeia do cativeiro, tripulação, navios nomeados, alvará de 1684
   trafico_interno.json    o tráfico dentro do Brasil: três tempos, rotas, números e fontes
+  origens.json            a aba As Origens: Carta V, cascata de mortalidade, treze quadros
+  leituras.json           o que a leitura dos capítulos restantes acrescentou às outras abas
   portos_armadores.json   onde as viagens eram organizadas (Gomes I, p. 217)
   cotejo.json             confronto linha a linha entre a carta, o livro e o resultado
   circuitos.json          pernas do comércio triangular por bandeira
@@ -169,6 +172,36 @@ Os três conjuntos vêm de métodos diferentes sobre recortes que se sobrepõem 
 somam** — a carta diz isso na própria página. As espessuras das rotas são qualitativas:
 não existe, que eu tenha encontrado, uma matriz província-a-província do tráfico interno
 comparável à do tráfico atlântico.
+
+## As duas leituras do livro
+
+O volume I tem **trinta capítulos**. A carta foi construída em duas etapas, e o registro disso
+importa porque a segunda corrigiu a primeira.
+
+Na primeira etapa foram lidos **onze** capítulos — 9, 14 a 20, 23, 27 e 28. Deles saíram a
+recalibração da matriz, a aba O Negócio, a aba O Navio e as cartas II e III.
+
+Na segunda, os **dezenove restantes** — 1 a 8, 10 a 13, 21, 22, 24 a 26, 29 e 30. Deles saíram:
+
+- a aba **As Origens**, com a **Carta V** (o tráfico transaariano, do Mar Vermelho e do Índico,
+  mais a frente de captura) e a **Figura III** (a cascata de mortalidade de Joseph Miller);
+- a figura da **substituição do cativo indígena pelo africano** num só engenho — Sergipe do Conde,
+  no Recôncavo: 7% de africanos em 1574, 37% em 1591, 100% em 1638;
+- quinze quadros novos, das três bulas papais ao dote de Catarina de Bragança;
+- e **quatro correções ao que a carta já dizia**.
+
+### O que a segunda leitura corrigiu
+
+| O quê | O que a carta dizia | O que se lê no livro |
+|---|---|---|
+| O tráfico interno na Carta IV | «nenhuma ocorrência no volume I» | quatro passagens tratam de circulação forçada dentro da colônia (pp. 97, 100, 352) — e a rota das monções, que a Carta IV citava de fonte externa, está descrita na p. 360 |
+| Palmares | 11 mil pessoas em dez comunidades | o número estava certo; o resto do que circula, não — não era república, não era socialista e **não era abolicionista**: os chefes quilombolas tinham seus próprios escravos |
+| A cascata de mortalidade | — | o livro diz «apenas quarenta sobreviveriam»; refazendo a multiplicação das cinco etapas, sobram **34 a 39** — o número redondo adota o piso de cada faixa |
+| A velocidade da frente de captura | — | 30 km por década dariam 900 km em três séculos, não os 2.000 que o livro dá para meados do século XIX |
+
+E mais duas contradições internas do livro, que se somam às quatro já registradas: a Feitoria de
+Arguim é datada de **1445** no capítulo 2 e de **1448** no capítulo 5; e a figura de pedra de
+Sagres tem **48 linhas** numa frase e **58** três frases adiante, na mesma página.
 
 ## Método e limites
 

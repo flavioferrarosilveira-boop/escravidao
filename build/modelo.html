@@ -22,6 +22,7 @@
 
   <nav class="abas" id="abas" aria-label="Seções">
     <button class="aba" type="button" data-aba="trafico" aria-selected="true">O Tráfico</button>
+    <button class="aba" type="button" data-aba="origens" aria-selected="false">As Origens</button>
     <button class="aba" type="button" data-aba="negocio" aria-selected="false">O Negócio</button>
     <button class="aba" type="button" data-aba="navio" aria-selected="false">O Navio</button>
     <button class="aba" type="button" data-aba="escravidao" aria-selected="false">A Escravidão</button>
@@ -170,6 +171,187 @@
 
   </div><!-- /painel-trafico -->
 
+  <div id="painel-origens" hidden>
+
+    <blockquote class="epigrafe" id="epigrafe-origens"></blockquote>
+    <p class="intro" id="abertura-origens" style="margin-top:26px"></p>
+
+    <section id="secao-carta-origens">
+      <div class="titulo-secao"><span class="marca">Carta V</span><h2 id="titulo-origens"></h2></div>
+      <p class="intro" id="intro-origens"></p>
+      <div class="controles" id="controles-origens" style="margin:20px 0 14px">
+        <div class="grupo"><label>Camadas</label><div class="fichas" id="fichas-origens"></div></div>
+      </div>
+      <div class="palco" id="palco-origens">
+        <svg id="mapa-origens" role="img" aria-label="Mapa das rotas transaarianas, do Mar Vermelho e do Índico e da frente de captura"></svg>
+        <div class="dica" id="dica-origens" role="status" aria-live="polite"></div>
+      </div>
+      <div class="aviso" id="nota-origens" style="margin-top:18px"></div>
+      <div class="numeros" id="numeros-origens"></div>
+    </section>
+
+    <section id="secao-mortalidade">
+      <div class="titulo-secao"><span class="marca">Figura III</span><h2 id="titulo-mortalidade"></h2></div>
+      <p class="intro" id="intro-mortalidade"></p>
+      <figure class="figura" id="fig-mortalidade"></figure>
+      <div class="aviso" id="verificacao-mortalidade" style="margin-top:20px"></div>
+      <div class="numeros" id="totais-mortalidade"></div>
+      <p class="intro" id="catorze-mortalidade" style="margin-top:20px"></p>
+      <div class="colunas" id="casos-mortalidade"></div>
+      <p class="intro" id="tubaroes-mortalidade" style="margin-top:26px"></p>
+    </section>
+
+    <section id="secao-antes">
+      <div class="titulo-secao"><span class="marca">Quadro XXX</span><h2 id="titulo-antes"></h2></div>
+      <p class="intro" id="intro-antes"></p>
+      <div class="colunas" id="cartoes-antes"></div>
+    </section>
+
+    <section id="secao-definicao">
+      <div class="titulo-secao"><span class="marca">Quadro XXXI</span><h2 id="titulo-definicao"></h2></div>
+      <div class="colunas" id="listas-definicao"></div>
+      <p class="intro" id="morte-social" style="margin-top:24px"></p>
+      <p class="intro" id="nomes-definicao"></p>
+      <p class="intro" id="estrangeiro-definicao"></p>
+    </section>
+
+    <section id="secao-racismo">
+      <div class="titulo-secao"><span class="marca">Quadro XXXII</span><h2 id="titulo-racismo"></h2></div>
+      <p class="intro" id="intro-racismo"></p>
+      <p class="intro" id="cam-racismo"></p>
+      <h3 style="margin:30px 0 12px" id="titulo-iluministas"></h3>
+      <div class="colunas" id="cartoes-iluministas"></div>
+      <p class="intro" id="fecho-racismo" style="margin-top:24px"></p>
+    </section>
+
+    <section id="secao-leilao">
+      <div class="titulo-secao"><span class="marca">Quadro XXXIII</span><h2 id="titulo-leilao"></h2></div>
+      <p class="intro" id="texto-leilao"></p>
+      <p class="intro" id="cronista-leilao"></p>
+      <blockquote class="epigrafe" id="citacao-leilao"></blockquote>
+      <p class="intro" id="consolo-leilao" style="margin-top:24px"></p>
+      <p class="intro" id="quem-leilao"></p>
+      <p class="intro" id="antes-leilao"></p>
+      <p class="intro" id="virada-leilao"></p>
+      <h3 style="margin:30px 0 10px">Portugal, medido</h3>
+      <div class="rolagem"><table id="tabela-leilao"></table></div>
+      <blockquote class="epigrafe" id="saunders-leilao" style="margin-top:26px"></blockquote>
+      <p class="intro" id="braga-leilao" style="margin-top:24px"></p>
+    </section>
+
+    <section id="secao-patrono">
+      <div class="titulo-secao"><span class="marca">Quadro XXXIV</span><h2 id="titulo-patrono"></h2></div>
+      <p class="intro" id="intro-patrono"></p>
+      <blockquote class="epigrafe" id="definicao-patrono" style="margin:0 0 26px"></blockquote>
+      <div class="colunas" id="cartoes-patrono"></div>
+    </section>
+
+    <section id="secao-mar">
+      <div class="titulo-secao"><span class="marca">Quadro XXXV</span><h2 id="titulo-mar"></h2></div>
+      <p class="intro" id="intro-mar"></p>
+      <p class="intro" id="bojador-mar"></p>
+      <p class="intro" id="volta-mar"></p>
+      <h3 style="margin:30px 0 10px" id="titulo-calendario"></h3>
+      <p class="intro" id="calendario-mar"></p>
+      <h3 style="margin:30px 0 12px" id="titulo-consequencias"></h3>
+      <div class="colunas" id="cartoes-mar"></div>
+      <blockquote class="epigrafe" id="thornton-mar"></blockquote>
+      <p class="intro" id="financiadores-mar" style="margin-top:26px"></p>
+      <p class="intro" id="primeira-carga-mar"></p>
+      <div class="aviso" id="sangria-mar"></div>
+    </section>
+
+    <section id="secao-ilhas">
+      <div class="titulo-secao"><span class="marca">Quadro XXXVI</span><h2 id="titulo-ilhas"></h2></div>
+      <p class="intro" id="intro-ilhas"></p>
+      <div class="colunas" id="cartoes-ilhas"></div>
+      <p class="intro" id="procedimentos-ilhas" style="margin-top:24px"></p>
+      <p class="intro" id="bocais-ilhas"></p>
+      <p class="intro" id="jardim-ilhas"></p>
+      <p class="intro" id="mandioca-ilhas"></p>
+      <div class="aviso" id="amador-ilhas"></div>
+      <p class="intro" id="assientos-ilhas"></p>
+      <p class="intro" id="preco-ilhas"></p>
+      <p class="intro" id="elvas-ilhas"></p>
+      <h3 style="margin:32px 0 10px" id="titulo-lancados"></h3>
+      <p class="intro" id="lancados-ilhas"></p>
+      <blockquote class="epigrafe" id="citacao-lancados" style="margin:0 0 26px"></blockquote>
+      <div class="colunas" id="cartoes-lancados"></div>
+    </section>
+
+    <section id="secao-congo">
+      <div class="titulo-secao"><span class="marca">Quadro XXXVII</span><h2 id="titulo-congo"></h2></div>
+      <p class="intro" id="intro-congo"></p>
+      <blockquote class="epigrafe" id="boxer-congo" style="margin:0 0 26px"></blockquote>
+      <p class="intro" id="cidade-congo"></p>
+      <ol class="cronologia" id="linha-congo" style="margin-top:26px"></ol>
+      <p class="intro" id="cartas-congo" style="margin-top:26px"></p>
+      <blockquote class="epigrafe" id="costa-congo"></blockquote>
+      <p class="intro" id="irmao-congo" style="margin-top:26px"></p>
+      <p class="intro" id="coroa-congo"></p>
+    </section>
+
+    <section id="secao-indigena">
+      <div class="titulo-secao"><span class="marca">Quadro XXXVIII</span><h2 id="titulo-indigena"></h2></div>
+      <p class="intro" id="intro-indigena"></p>
+      <div class="rolagem"><table id="tabela-catastrofe"></table></div>
+      <blockquote class="epigrafe" id="alencastro-indigena" style="margin-top:26px"></blockquote>
+      <p class="intro" id="epidemias-indigena" style="margin-top:24px"></p>
+      <p class="intro" id="bandeiras-indigena"></p>
+      <p class="intro" id="guarani-indigena"></p>
+      <h3 style="margin:32px 0 6px" id="titulo-substituicao"></h3>
+      <p class="intro" id="nota-substituicao"></p>
+      <figure class="figura" id="fig-substituicao"></figure>
+      <h3 style="margin:32px 0 12px" id="titulo-razoes"></h3>
+      <div class="colunas" id="cartoes-razoes"></div>
+      <h3 style="margin:32px 0 10px" id="titulo-lei"></h3>
+      <p class="intro" id="lei-indigena"></p>
+      <div class="colunas" id="cartoes-excecoes"></div>
+      <div class="aviso" id="vieira-indigena" style="margin-top:24px"></div>
+    </section>
+
+    <section id="secao-igreja">
+      <div class="titulo-secao"><span class="marca">Quadro XXXIX</span><h2 id="titulo-igreja"></h2></div>
+      <blockquote class="epigrafe" id="epigrafe-igreja" style="margin:0 0 26px"></blockquote>
+      <p class="intro" id="intro-igreja"></p>
+      <div class="colunas" id="cartoes-bulas"></div>
+      <p class="intro" id="indulgencia-igreja" style="margin-top:24px"></p>
+      <h3 style="margin:32px 0 12px" id="titulo-proprietarios"></h3>
+      <div class="colunas" id="cartoes-proprietarios"></div>
+      <p class="intro" id="loyola-igreja" style="margin-top:24px"></p>
+      <p class="intro" id="moeda-igreja"></p>
+      <div class="aviso" id="concurso-igreja"></div>
+      <p class="intro" id="vieira-igreja"></p>
+      <p class="intro" id="benci-igreja"></p>
+      <p class="intro" id="malta-igreja"></p>
+      <h3 style="margin:32px 0 10px" id="titulo-sangue"></h3>
+      <p class="intro" id="sangue-igreja"></p>
+      <p class="intro" id="claver-igreja"></p>
+      <p class="intro" id="irmandades-igreja"></p>
+    </section>
+
+    <section id="secao-cicatriz">
+      <div class="titulo-secao"><span class="marca">Quadro XL</span><h2 id="titulo-cicatriz"></h2></div>
+      <p class="intro" id="intro-cicatriz"></p>
+      <div class="colunas" id="cartoes-cicatriz"></div>
+      <h3 style="margin:32px 0 10px" id="titulo-armas"></h3>
+      <div class="rolagem"><table id="tabela-armas"></table></div>
+      <blockquote class="epigrafe" id="rediker-cicatriz" style="margin-top:26px"></blockquote>
+      <p class="intro" id="geografia-cicatriz" style="margin-top:24px"></p>
+      <p class="intro" id="aliada-cicatriz"></p>
+      <h3 style="margin:32px 0 10px" id="titulo-numeros-cicatriz"></h3>
+      <div class="rolagem"><table id="tabela-cicatriz"></table></div>
+      <blockquote class="epigrafe" id="mbokolo-cicatriz" style="margin-top:26px"></blockquote>
+      <p class="intro" id="peonagem-cicatriz" style="margin-top:24px"></p>
+      <blockquote class="epigrafe" id="desterro-cicatriz" style="margin:0 0 26px"></blockquote>
+      <p class="intro" id="terra-cicatriz"></p>
+      <h3 style="margin:32px 0 10px" id="titulo-reconciliacao"></h3>
+      <p class="intro" id="reconciliacao-cicatriz"></p>
+      <blockquote class="epigrafe" id="araujo-cicatriz"></blockquote>
+    </section>
+
+  </div><!-- /painel-origens -->
+
   <div id="painel-negocio" hidden>
 
     <blockquote class="epigrafe" id="epigrafe"></blockquote>
@@ -240,6 +422,40 @@
       <ul class="cronologia" id="cronologia-guerra"></ul>
     </section>
 
+
+    <section id="secao-guerra-extra">
+      <div class="titulo-secao"><span class="marca">Quadro IX</span><h2 id="titulo-guerra-extra"></h2></div>
+      <p class="intro" id="intro-guerra-extra"></p>
+      <div class="colunas" id="cartoes-guerra-extra"></div>
+      <h3 style="margin:32px 0 10px" id="titulo-calote"></h3>
+      <p class="intro" id="calote-texto"></p>
+      <h3 style="margin:32px 0 10px" id="titulo-acucar"></h3>
+      <div class="rolagem"><table id="tabela-acucar"></table></div>
+      <div class="aviso" id="nota-acucar"></div>
+    </section>
+
+    <section id="secao-padre-eterno">
+      <div class="titulo-secao"><span class="marca">Quadro X</span><h2 id="titulo-padre-eterno"></h2></div>
+      <p class="intro" id="texto-padre-eterno"></p>
+      <p class="intro" id="titanic-padre-eterno"></p>
+      <p class="intro" id="estaleiros-padre-eterno"></p>
+      <h3 style="margin:32px 0 10px" id="titulo-dono"></h3>
+      <p class="intro" id="dono-padre-eterno"></p>
+      <h3 style="margin:32px 0 10px" id="titulo-angola-1648"></h3>
+      <p class="intro" id="angola-padre-eterno"></p>
+      <div class="aviso" id="carnificina-padre-eterno"></div>
+      <p class="intro" id="guardiao-padre-eterno"></p>
+      <p class="intro" id="fim-padre-eterno"></p>
+    </section>
+
+    <section id="secao-catarina">
+      <div class="titulo-secao"><span class="marca">Quadro XI</span><h2 id="titulo-catarina"></h2></div>
+      <p class="intro" id="texto-catarina"></p>
+      <div class="aviso" id="pai-catarina"></div>
+      <p class="intro" id="rac-catarina"></p>
+      <p class="intro" id="estatua-catarina"></p>
+      <p class="intro" id="cha-catarina"></p>
+    </section>
   </div><!-- /painel-negocio -->
 
   <div id="painel-navio" hidden>
@@ -349,6 +565,7 @@
       <blockquote class="epigrafe" id="epigrafe-interno" style="margin:0 0 22px"></blockquote>
       <p class="intro" id="abertura-interno"></p>
       <div class="aviso" id="lacuna-interno" style="margin-top:16px"></div>
+      <div class="aviso" id="ancoras-interno" style="margin-top:16px"></div>
       <div class="controles" id="controles-interno" style="margin:22px 0 14px">
         <div class="grupo">
           <label>Tempo</label>
@@ -437,6 +654,31 @@
         <h2>Depois</h2>
       </div>
       <div class="colunas" id="cartoes-depois"></div>
+    </section>
+
+  
+    <section id="secao-inferno">
+      <div class="titulo-secao"><span class="marca">Quadro XII</span><h2 id="titulo-inferno"></h2></div>
+      <p class="intro" id="intro-inferno"></p>
+      <blockquote class="epigrafe" id="citacao-inferno" style="margin:0 0 26px"></blockquote>
+      <ul class="lista-fontes" id="detalhes-inferno"></ul>
+    </section>
+
+    <section id="secao-zumbi3">
+      <div class="titulo-secao"><span class="marca">Quadro XLI</span><h2 id="titulo-zumbi3"></h2></div>
+      <p class="intro" id="intro-zumbi3"></p>
+      <div class="colunas" id="cartoes-zumbi3"></div>
+      <h3 style="margin:32px 0 10px" id="titulo-correcoes"></h3>
+      <div class="rolagem"><table id="tabela-zumbi3"></table></div>
+      <p class="intro" id="calendario-zumbi3" style="margin-top:24px"></p>
+      <div class="aviso" id="fecho-zumbi3"></div>
+    </section>
+
+    <section id="secao-fim1695">
+      <div class="titulo-secao"><span class="marca">Quadro XLII</span><h2 id="titulo-fim1695"></h2></div>
+      <div class="rolagem"><table id="tabela-fim1695"></table></div>
+      <blockquote class="epigrafe" id="caranguejos-fim1695" style="margin-top:28px"></blockquote>
+      <p class="intro" id="virada-fim1695" style="margin-top:24px"></p>
     </section>
 
   </div><!-- /painel-escravidao -->

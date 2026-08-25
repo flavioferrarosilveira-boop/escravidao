@@ -1,0 +1,1259 @@
+{
+  "epigrafe": {
+    "texto": "A escravidão não nasceu do racismo; mas o racismo foi a consequência da escravidão.",
+    "autor": "Eric Williams, historiador e primeiro-ministro de Trinidad e Tobago, citado por Gomes",
+    "pagina": 62
+  },
+  "abertura": "As três cartas anteriores começam onde o tráfico atlântico já estava montado. Falta o começo — e o começo não é o Atlântico. A escravidão é anterior a ele em milênios, foi branca antes de ser negra, e teve outro oceano antes deste. Esta aba percorre os treze primeiros capítulos do volume I de <i>Escravidão</i>, que reconstroem o que havia antes de 1500: a instituição em toda parte, o leilão de Lagos em 1444, o homem que a patrocinou, os ventos que decidiram para onde a gente iria, as duas ilhas onde o modelo foi testado, o reino africano que tentou entrar no negócio como sócio e foi destruído por ele, e a escravidão indígena que veio antes da africana no Brasil. Mais três capítulos que o livro põe no fim e que pertencem a este mesmo argumento: as bulas papais que autorizaram tudo, a cicatriz da corresponsabilidade africana e a aritmética da morte.",
+  "carta": {
+    "titulo": "O outro tráfico, e a frente que avançava",
+    "intro": "Esta carta mostra o que a Carta I não mostra. Primeiro, o tráfico que não cruzou o Atlântico: cerca de <b>12 milhões</b> de africanos levados pelo Saara, pelo Mar Vermelho e pelo Oceano Índico entre os séculos VII e XIX — <b>o mesmo número</b> que o Atlântico levou em 350 anos (p. 63). Segundo, a fronteira de captura: uma linha que partiu do litoral por volta de 1520 e foi comendo o continente para dentro, cerca de 30 quilômetros por década, até chegar ao miolo da África em meados do século XIX (p. 33).",
+    "nota": "As linhas de frente são <b>esquemáticas</b>. O livro dá três marcos — as razias começam nas zonas próximas do litoral entre 1520 e 1570; em dois séculos a fronteira avança cerca de 800 km; em meados do século XIX está a quase 2.000 km do litoral, a meio caminho entre Luanda e a Ilha de Moçambique — e uma taxa, 30 km por década. Desenhei as três linhas paralelas à costa, às distâncias que o livro dá. Não são um levantamento de campo; são a ordem de grandeza que o autor descreve, posta no mapa.",
+    "lugares": [
+      {
+        "id": "lagos_pt",
+        "nome": "Lagos",
+        "lon": -8.67,
+        "lat": 37.1,
+        "tipo": "europa",
+        "rotulo": "Lagos (Algarve)"
+      },
+      {
+        "id": "lisboa",
+        "nome": "Lisboa",
+        "lon": -9.14,
+        "lat": 38.72,
+        "tipo": "europa"
+      },
+      {
+        "id": "arguim",
+        "nome": "Arguim",
+        "lon": -16.53,
+        "lat": 20.6,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "ribeira_grande",
+        "nome": "Ribeira Grande",
+        "lon": -23.6,
+        "lat": 14.92,
+        "tipo": "ilha"
+      },
+      {
+        "id": "goreia",
+        "nome": "Ilha de Goreia",
+        "lon": -17.4,
+        "lat": 14.67,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "cacheu",
+        "nome": "Cacheu",
+        "lon": -16.17,
+        "lat": 12.27,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "elmina",
+        "nome": "São Jorge da Mina",
+        "lon": -1.35,
+        "lat": 5.08,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "ajuda",
+        "nome": "Ajudá",
+        "lon": 2.08,
+        "lat": 6.36,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "onim",
+        "nome": "Onim",
+        "lon": 3.39,
+        "lat": 6.52,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "sao_tome",
+        "nome": "São Tomé",
+        "lon": 6.73,
+        "lat": 0.34,
+        "tipo": "ilha"
+      },
+      {
+        "id": "mbanza",
+        "nome": "M'banza-Congo",
+        "lon": 14.24,
+        "lat": -6.27,
+        "tipo": "reino"
+      },
+      {
+        "id": "luanda",
+        "nome": "Luanda",
+        "lon": 13.23,
+        "lat": -8.84,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "benguela",
+        "nome": "Benguela",
+        "lon": 13.41,
+        "lat": -12.58,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "cassanje",
+        "nome": "Feira de Cassanje",
+        "lon": 17.9,
+        "lat": -9.6,
+        "tipo": "interior"
+      },
+      {
+        "id": "tombuctu",
+        "nome": "Tombuctu",
+        "lon": -3.01,
+        "lat": 16.77,
+        "tipo": "interior"
+      },
+      {
+        "id": "gao",
+        "nome": "Gao",
+        "lon": 0.05,
+        "lat": 16.27,
+        "tipo": "interior"
+      },
+      {
+        "id": "agadez",
+        "nome": "Agadez",
+        "lon": 7.99,
+        "lat": 16.97,
+        "tipo": "interior"
+      },
+      {
+        "id": "bilma",
+        "nome": "Bilma",
+        "lon": 12.92,
+        "lat": 18.69,
+        "tipo": "interior"
+      },
+      {
+        "id": "bornu",
+        "nome": "Bornu",
+        "lon": 13.55,
+        "lat": 12.92,
+        "tipo": "reino"
+      },
+      {
+        "id": "fez",
+        "nome": "Fez",
+        "lon": -5.0,
+        "lat": 34.03,
+        "tipo": "mercado"
+      },
+      {
+        "id": "argel",
+        "nome": "Argel",
+        "lon": 3.06,
+        "lat": 36.75,
+        "tipo": "mercado"
+      },
+      {
+        "id": "tripoli",
+        "nome": "Trípoli",
+        "lon": 13.19,
+        "lat": 32.89,
+        "tipo": "mercado"
+      },
+      {
+        "id": "cairo",
+        "nome": "Cairo",
+        "lon": 31.24,
+        "lat": 30.04,
+        "tipo": "mercado"
+      },
+      {
+        "id": "sennar",
+        "nome": "Sennar",
+        "lon": 33.63,
+        "lat": 13.55,
+        "tipo": "interior"
+      },
+      {
+        "id": "suakin",
+        "nome": "Suakin",
+        "lon": 37.33,
+        "lat": 19.11,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "jida",
+        "nome": "Jidá",
+        "lon": 39.17,
+        "lat": 21.49,
+        "tipo": "mercado"
+      },
+      {
+        "id": "zanzibar",
+        "nome": "Zanzibar",
+        "lon": 39.2,
+        "lat": -6.16,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "kilwa",
+        "nome": "Kilwa",
+        "lon": 39.55,
+        "lat": -8.93,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "ilha_moc",
+        "nome": "Ilha de Moçambique",
+        "lon": 40.73,
+        "lat": -15.03,
+        "tipo": "feitoria"
+      },
+      {
+        "id": "golfo",
+        "nome": "para Omã e a Índia",
+        "lon": 46.5,
+        "lat": 11.0,
+        "tipo": "saida"
+      }
+    ],
+    "rotas": [
+      {
+        "de": "tombuctu",
+        "para": "fez",
+        "sistema": "saara",
+        "peso": 3,
+        "nome": "Rota do Magrebe ocidental",
+        "nota": "Marchas a pé de 1.500 quilômetros ou mais, traçadas pela existência de fontes de água e pela disponibilidade de camelos (p. 65)."
+      },
+      {
+        "de": "gao",
+        "para": "tripoli",
+        "sistema": "saara",
+        "peso": 3,
+        "nome": "Rota do Fezzan",
+        "nota": "Ibn Battuta cruzou o Saara em meados do século XIV com uma caravana de seiscentos escravos (p. 64)."
+      },
+      {
+        "de": "agadez",
+        "para": "tripoli",
+        "sistema": "saara",
+        "peso": 2,
+        "nome": "Rota de Agadez",
+        "nota": ""
+      },
+      {
+        "de": "bornu",
+        "para": "bilma",
+        "sistema": "saara",
+        "peso": 2,
+        "nome": "Rota de Bornu",
+        "nota": "No Império de Bornu, no início do século XVI, um cavalo árabe valia entre quinze e vinte escravos (p. 68 e p. 7)."
+      },
+      {
+        "de": "bilma",
+        "para": "tripoli",
+        "sistema": "saara",
+        "peso": 2,
+        "nome": "Bilma · Trípoli",
+        "nota": ""
+      },
+      {
+        "de": "tombuctu",
+        "para": "argel",
+        "sistema": "saara",
+        "peso": 2,
+        "nome": "Rota de Argel",
+        "nota": "Em Argel, no Cairo e em Bagdá circulavam manuais para o perfeito mercador muçulmano de escravos (p. 64)."
+      },
+      {
+        "de": "sennar",
+        "para": "cairo",
+        "sistema": "saara",
+        "peso": 2,
+        "nome": "Vale do Nilo",
+        "nota": ""
+      },
+      {
+        "de": "sennar",
+        "para": "suakin",
+        "sistema": "vermelho",
+        "peso": 2,
+        "nome": "Sudão · Mar Vermelho",
+        "nota": ""
+      },
+      {
+        "de": "suakin",
+        "para": "jida",
+        "sistema": "vermelho",
+        "peso": 3,
+        "nome": "Travessia do Mar Vermelho",
+        "nota": "No começo do século XIX, a segurança da Kaaba, em Meca, era feita por quarenta eunucos vindos do Sudão (p. 68)."
+      },
+      {
+        "de": "kilwa",
+        "para": "golfo",
+        "sistema": "indico",
+        "peso": 3,
+        "nome": "Costa suaíli · Golfo",
+        "nota": "O Império Otomano sozinho comprava entre 16 mil e 18 mil pessoas por ano até o final do século XIX (p. 63)."
+      },
+      {
+        "de": "zanzibar",
+        "para": "golfo",
+        "sistema": "indico",
+        "peso": 3,
+        "nome": "Zanzibar · Golfo",
+        "nota": ""
+      },
+      {
+        "de": "ilha_moc",
+        "para": "zanzibar",
+        "sistema": "indico",
+        "peso": 2,
+        "nome": "Moçambique · Zanzibar",
+        "nota": ""
+      },
+      {
+        "de": "cassanje",
+        "para": "luanda",
+        "sistema": "atlantico",
+        "peso": 3,
+        "nome": "O libambo",
+        "nota": "Os comboios de cativos que os pombeiros conduziam do interior ao litoral. Por volta de 1750 o horror dominava as serras e os vales de Cassanje: cerca de 90% da população envolvida nos conflitos foi dizimada (p. 33)."
+      },
+      {
+        "de": "mbanza",
+        "para": "luanda",
+        "sistema": "atlantico",
+        "peso": 2,
+        "nome": "Congo · Luanda",
+        "nota": "Em 1530 o Reino do Congo exportava entre 4 mil e 5 mil «peças da Índia» por ano (p. 159)."
+      },
+      {
+        "de": "elmina",
+        "para": "ajuda",
+        "sistema": "interno",
+        "peso": 2,
+        "nome": "O tráfico dentro da África",
+        "nota": "Um terço de todos os escravos comprados pelos portugueses no fim do século XV era revendido aos próprios africanos em troca de ouro. Entre 1500 e 1535 levaram do Benim para São Jorge da Mina entre 10 mil e 12 mil pessoas e trouxeram para Lisboa mais de uma tonelada de ouro (p. 82)."
+      },
+      {
+        "de": "arguim",
+        "para": "lagos_pt",
+        "sistema": "europa",
+        "peso": 2,
+        "nome": "Arguim · Portugal",
+        "nota": "Em 1448 mil escravos africanos já haviam sido transportados por via marítima para Portugal (p. 44)."
+      },
+      {
+        "de": "ribeira_grande",
+        "para": "lisboa",
+        "sistema": "europa",
+        "peso": 2,
+        "nome": "Cabo Verde · Lisboa",
+        "nota": ""
+      },
+      {
+        "de": "goreia",
+        "para": "ribeira_grande",
+        "sistema": "europa",
+        "peso": 2,
+        "nome": "Senegâmbia · Cabo Verde",
+        "nota": "Os cativos eram apanhados ao longo de mais de mil quilômetros da costa, onde hoje fazem fronteira seis países (p. 140)."
+      },
+      {
+        "de": "cacheu",
+        "para": "ribeira_grande",
+        "sistema": "europa",
+        "peso": 1,
+        "nome": "Cacheu · Cabo Verde",
+        "nota": "Cacheu foi fundada por volta de 1590 pelos lançados (p. 149)."
+      }
+    ],
+    "frente": {
+      "nota": "Frente de captura no eixo atlântico, a partir da costa de Angola, e a segunda onda vinda do Índico.",
+      "costa_atlantica": [
+        [
+          12.3,
+          -6.0
+        ],
+        [
+          13.0,
+          -8.8
+        ],
+        [
+          13.4,
+          -12.6
+        ],
+        [
+          11.8,
+          -17.0
+        ]
+      ],
+      "costa_indica": [
+        [
+          40.5,
+          -11.0
+        ],
+        [
+          36.9,
+          -18.0
+        ],
+        [
+          32.9,
+          -25.9
+        ]
+      ],
+      "faixas": [
+        {
+          "km": 150,
+          "quando": "1520-1570",
+          "rotulo": "a frente na costa",
+          "cor": "#8c6a3a"
+        },
+        {
+          "km": 800,
+          "quando": "c. 1750",
+          "rotulo": "800 km — Cassanje",
+          "cor": "#a8452f"
+        },
+        {
+          "km": 2000,
+          "quando": "meados do séc. XIX",
+          "rotulo": "2.000 km — o miolo do continente",
+          "cor": "#7a1f1f"
+        }
+      ]
+    },
+    "sistemas": [
+      {
+        "id": "saara",
+        "nome": "pelo Saara",
+        "cor": "#9c6b2f",
+        "dash": "10 6"
+      },
+      {
+        "id": "vermelho",
+        "nome": "pelo Mar Vermelho",
+        "cor": "#8c2f2f",
+        "dash": "10 6"
+      },
+      {
+        "id": "indico",
+        "nome": "pelo Oceano Índico",
+        "cor": "#2f5d66",
+        "dash": null
+      },
+      {
+        "id": "atlantico",
+        "nome": "do interior ao litoral atlântico",
+        "cor": "#3d6b3a",
+        "dash": "3 5"
+      },
+      {
+        "id": "interno",
+        "nome": "dentro da própria África",
+        "cor": "#6a4a7a",
+        "dash": "3 5"
+      },
+      {
+        "id": "europa",
+        "nome": "para a Europa, antes da América",
+        "cor": "#3f4d7a",
+        "dash": null
+      }
+    ],
+    "numeros": [
+      {
+        "valor": "12 milhões",
+        "rubrica": "africanos levados pelo Saara, pelo Mar Vermelho e pelo Índico, séculos VII a XIX",
+        "pagina": 63
+      },
+      {
+        "valor": "3,8 milhões",
+        "rubrica": "só no século XIX, por essas mesmas rotas",
+        "pagina": 63
+      },
+      {
+        "valor": "1 milhão",
+        "rubrica": "vendidos à América por mercadores muçulmanos a partir do século XVI, da Senegâmbia e da Alta Guiné",
+        "pagina": 63
+      },
+      {
+        "valor": "16 a 18 mil",
+        "rubrica": "pessoas compradas por ano só pelo Império Otomano, até o fim do século XIX",
+        "pagina": 63
+      },
+      {
+        "valor": "1.500 km",
+        "rubrica": "a marcha a pé de uma caravana transaariana, ou mais",
+        "pagina": 65
+      },
+      {
+        "valor": "30 a 60 dinares",
+        "rubrica": "o preço de um escravo no Magrebe nos séculos IX e X — 141 a 283 gramas de ouro",
+        "pagina": 65
+      }
+    ]
+  },
+  "mortalidade": {
+    "titulo": "De cada cem, quantos chegavam",
+    "intro": "O historiador Joseph Miller decompôs a mortalidade do tráfico em cinco etapas sucessivas. A carta as encadeia e refaz a conta. Não é uma taxa: é uma cascata, e cada degrau incide sobre o que sobrou do anterior.",
+    "etapas": [
+      {
+        "rotulo": "Da captura até o litoral",
+        "min": 40,
+        "max": 45,
+        "nota": "Meses de marcha em comboio, o libambo, a perna esquerda de um presa à perna direita do outro."
+      },
+      {
+        "rotulo": "À espera do embarque",
+        "min": 10,
+        "max": 15,
+        "nota": "Um mês, em média, nos barracões do porto. Em Benguela, até o fim do século XVIII, os traficantes jogavam os cadáveres nas praias, nos rios e nos esgotos a céu aberto."
+      },
+      {
+        "rotulo": "Na travessia do oceano",
+        "min": 10,
+        "max": 10,
+        "nota": "A etapa mais curta e a mais bem contada — cada morte era registrada nos Livros dos mortos, porque cada morte era um prejuízo."
+      },
+      {
+        "rotulo": "No desembarque, na venda e no transporte",
+        "min": 5,
+        "max": 5,
+        "nota": "Longas caminhadas a pé por trilhas até minas e lavouras do interior distante."
+      },
+      {
+        "rotulo": "Nos três primeiros anos de cativeiro",
+        "min": 15,
+        "max": 15,
+        "nota": "O ambiente novo, o trabalho novo, as doenças novas."
+      }
+    ],
+    "verificacao": "Refiz a conta. Com o <b>piso</b> de cada faixa sobram <b>39</b> de cada cem; com o <b>teto</b>, sobram <b>34</b>. O livro arredonda para <b>quarenta</b> — ou seja, adota o piso. É uma escolha defensável e o texto a declara como estimativa, mas vale dizer que o número redondo é o melhor dos casos, não o caso médio.",
+    "totais": [
+      {
+        "valor": "23 a 24 milhões",
+        "rubrica": "pessoas lançadas nas engrenagens do tráfico em todo o continente, ao longo de mais de 350 anos"
+      },
+      {
+        "valor": "11 a 12 milhões",
+        "rubrica": "mortas antes mesmo de sair da África"
+      },
+      {
+        "valor": "12,5 milhões",
+        "rubrica": "despachadas nos porões dos navios"
+      },
+      {
+        "valor": "10,7 milhões",
+        "rubrica": "chegadas aos portos da América"
+      },
+      {
+        "valor": "1,8 milhão",
+        "rubrica": "mortas na travessia do oceano"
+      },
+      {
+        "valor": "9 milhões",
+        "rubrica": "sobreviventes aos três primeiros anos de escravidão"
+      }
+    ],
+    "catorze": "1,8 milhão de mortos ao longo de 350 anos são, em média, <b>catorze cadáveres lançados ao mar por dia</b>, todos os dias, durante três séculos e meio. Daí o nome dos navios: <b>tumbeiros</b>, tumbas flutuantes.",
+    "casos": [
+      {
+        "navio": "Brigue do capitão Félix da Costa Ribeiro",
+        "ano": "1805",
+        "rota": "Biafra · Salvador",
+        "texto": "340 embarcados, 230 mortos em quarenta dias — entre cinco e seis corpos por dia."
+      },
+      {
+        "navio": "Protector",
+        "ano": "1781",
+        "rota": "Luanda · Rio de Janeiro",
+        "texto": "151 mortos numa viagem de cinquenta dias. É o mesmo navio que fechou a viagem com 30,8% de prejuízo, na aba O Negócio."
+      },
+      {
+        "navio": "Flor da Bahia",
+        "ano": "—",
+        "rota": "Moçambique · Salvador",
+        "texto": "192 mortos de 557 embarcados em cerca de setenta dias — quase três corpos por dia."
+      }
+    ],
+    "tubaroes": "Mortes tão frequentes e em cifras tão grandes fizeram com que os tubarões mudassem suas rotas migratórias e passassem a acompanhar os navios negreiros. Foram vistos da Senegâmbia ao Congo, sempre que os navios estavam ancorados ou se moviam devagar. Em 1785, jornais de Kingston noticiaram que a chegada de novas cargas de escravos trouxera consigo tal quantidade de tubarões que banhar-se no rio local se tornara extremamente perigoso.",
+    "pagina": "34-39"
+  },
+  "antes": {
+    "titulo": "A escravidão antes do Atlântico",
+    "intro": "Por volta de 1800 havia cerca de <b>45 milhões</b> de escravos no mundo — 5% de toda a humanidade. Na Índia e na China, que já detinham mais da metade da população mundial, cerca de 10% dos habitantes viviam em cativeiro (p. 50). E, até trezentos anos atrás, o total de escravos brancos, amarelos e indianos na Europa, no Oriente Médio e na Ásia era provavelmente maior do que o de africanos levados à América: <b>só no fim do século XVII a população cativa negra se tornou majoritária</b> (p. 51).",
+    "itens": [
+      {
+        "titulo": "A palavra",
+        "texto": "<i>Escravo</i>, <i>esclave</i>, <i>schiavo</i>, <i>sklave</i>, <i>slave</i> vêm todas do latim <i>slavus</i> — os <b>eslavos</b> dos Bálcãs, do Leste Europeu, do sul da Rússia e das margens do Mar Negro, a grande região fornecedora de mão de obra cativa para o Oriente Médio e o Mediterrâneo até o início do século XVIII. O escravo típico da palavra era branco, de cabelos loiros e olhos azuis.",
+        "pagina": 51
+      },
+      {
+        "titulo": "Os números do cativeiro branco",
+        "texto": "Os tártaros da Crimeia capturaram cerca de <b>2 milhões</b> de russos, ucranianos e poloneses entre 1468 e 1694. Os otomanos importaram <b>2,5 milhões</b> de escravos brancos das regiões do Mar Negro entre 1450 e 1700. No ataque a Viena, em 1683, tomaram 8 mil cristãos. Entre 5% e 15% da população da Rússia era escrava até 1725.",
+        "pagina": 51
+      },
+      {
+        "titulo": "Roma",
+        "texto": "Meio milhão de cativos em Roma na época de Jesus; entre 2 e 3 milhões em toda a Itália, de 26% a 40% de uma população de 7,5 milhões. As campanhas de Júlio César na Gália, entre 58 e 51 a.C., teriam produzido <b>1 milhão</b> de escravos. Em Delos, o maior mercado do império, chegavam a desembarcar 10 mil cativos por dia.",
+        "pagina": 55
+      },
+      {
+        "titulo": "Os quatrocentos de Pedanius",
+        "texto": "No ano 61 d.C. um escravo assassinou o prefeito de Roma, Pedanius Secundus. A lei mandava executar todos os cativos da casa — eram quatrocentos, e representavam um patrimônio valioso para os herdeiros. O Senado debateu o prejuízo e decidiu pela segurança do império: os quatrocentos foram crucificados.",
+        "pagina": 56
+      },
+      {
+        "titulo": "Spartacus",
+        "texto": "Em 74 a.C. o gladiador trácio liderou uma revolta que chegou a reunir mais de 70 mil cativos. Os últimos 6 mil sobreviventes foram crucificados um a um, lado a lado, ao longo de 190 quilômetros da estrada entre Roma e Cápua — quase metade da distância entre São Paulo e o Rio de Janeiro. «Todos os escravos são nossos inimigos», dizia um provérbio romano.",
+        "pagina": 56
+      },
+      {
+        "titulo": "Hamurabi",
+        "texto": "O primeiro conjunto de leis da história, escrito por volta de 1772 a.C., já dividia a sociedade em homens livres, funcionários públicos e escravos, e prescrevia <b>pena de morte para quem ajudasse um cativo a fugir</b>. Recapturados, os fugitivos tinham o rosto marcado a ferro em brasa.",
+        "pagina": 54
+      },
+      {
+        "titulo": "Os senhores que a história celebra",
+        "texto": "Aristóteles era senhor de escravos. Thomas Jefferson também. Tiradentes possuiu pelo menos seis. John Newton, autor de <i>Amazing Grace</i>, foi capitão de navio negreiro. <b>John Locke</b>, o pensador da liberdade moderna, era acionista da Royal African Company. John Brown, da família fundadora da universidade que hoje é centro de estudos da escravidão, era traficante.",
+        "pagina": 50
+      },
+      {
+        "titulo": "E as marcas físicas",
+        "texto": "Os 21.196 quilômetros da Grande Muralha da China, erguidos ao longo de quase mil anos com o trabalho forçado de cerca de 1 milhão de cativos. E, do outro lado do mundo, os 639 diamantes da coroa de dom Pedro II, garimpados por escravos em Minas Gerais.",
+        "pagina": 49
+      }
+    ]
+  },
+  "definicao": {
+    "titulo": "O que era, exatamente, ser escravo",
+    "lovejoy_titulo": "As sete características, segundo Paul E. Lovejoy",
+    "lovejoy": [
+      "O escravo é uma propriedade.",
+      "É objeto de compra e venda, como qualquer outra mercadoria.",
+      "Mesmo que o reconheçam como ser humano, é um estrangeiro por natureza, arrancado do seu meio familiar e social.",
+      "A relação entre senhor e escravo é baseada na violência.",
+      "Seu trabalho está sempre à disposição do seu dono.",
+      "Cabe ao senhor o controle da procriação do cativo, cujos filhos não lhe pertencem. Sua própria sexualidade não lhe pertence.",
+      "A escravidão é hereditária, passa de pai para filho."
+    ],
+    "patterson_titulo": "As oito maneiras de produzir um escravo, segundo Orlando Patterson",
+    "patterson": [
+      "Captura na guerra.",
+      "Sequestro.",
+      "Pagamento de taxas ou tributos.",
+      "Quitação de dívidas.",
+      "Punição por crimes.",
+      "Abandono ou venda de crianças.",
+      "Autoescravidão — a peonagem africana.",
+      "Nascimento em uma família cativa."
+    ],
+    "morte_social": "Patterson define a escravidão como uma <b>morte social</b>: o cativo é arrancado do seu lugar, da sua língua, das suas crenças, dos seus laços familiares e ancestrais. A identidade antiga é obliterada e uma nova é construída, dependente do senhor. Daí os rituais que acompanhavam a escravização — a marca a ferro quente, o colar de metal com o nome do dono, o batismo em outra religião, o aprendizado de outra língua e de outra maneira de se vestir e, por fim, a atribuição de um novo nome.",
+    "nomes": "Um censo de 1759 no território da atual Colômbia mostra o resultado: <b>40%</b> dos escravos tinham um único nome — José, João, Francisco. Outros <b>30%</b> usavam «Crioulo» como sobrenome. Os demais carregavam o povo ou a região de origem: Benedito Nagô, Joaquim Angola, José Congo, Antônio Mina. Alforriados tendiam a adotar o sobrenome do antigo dono.",
+    "estrangeiro": "Entre os axantes de Gana, <i>adonke</i> significava ao mesmo tempo «escravo» e «estrangeiro». Platão defendia que as cidades gregas não tivessem escravos helênicos; a lei islâmica proibia o cativeiro de fiéis muçulmanos; os cristãos europeus fizeram o mesmo. O escravo era sempre o outro.",
+    "pagina": "52-54"
+  },
+  "racismo": {
+    "titulo": "Onde o racismo foi fabricado",
+    "intro": "A escravidão americana se distingue de todas as anteriores por duas coisas: o regime de trabalho — a plantação intensiva, organizada como as linhas de produção que só apareceriam na Revolução Industrial — e o nascimento de uma <b>ideologia racista</b> que passou a associar a cor da pele à condição de cativo (p. 56-57).",
+    "cam": "A justificativa teológica mais antiga e recorrente é a <b>maldição de Cam</b>. No capítulo nove do Gênesis, Noé se embriaga e adormece nu; Cam vê a nudez do pai e corre a contar aos irmãos; ao acordar, Noé amaldiçoa a descendência de Cam na pessoa do neto Canaã: «Maldito seja Canaã. Que se torne o último dos escravos de seus irmãos». Segundo a tradição, os descendentes de Canaã foram para a África. O jesuíta Jorge Benci, em <i>Economia cristã dos senhores no governo dos escravos</i> (Roma, 1705), escreveu: «É a mesma geração dos pretos que nos servem; e, aprovando Deus essa maldição, foi condenada à escravidão e cativeiro».",
+    "iluministas_titulo": "E a justificativa filosófica veio de quem menos se esperaria",
+    "iluministas": [
+      {
+        "autor": "David Hume",
+        "ano": 1748,
+        "texto": "Eu suspeito que os negros, como em geral todas as outras espécies de seres humanos, sejam naturalmente inferiores aos brancos. Nunca houve entre eles nação alguma tão civilizada quanto entre os brancos. Nenhum grande inventor entre eles, nenhuma Arte, nenhuma ciência."
+      },
+      {
+        "autor": "Voltaire",
+        "ano": 1756,
+        "texto": "Os olhos redondos, o nariz achatado, os lábios sempre grossos, o formato diferente das orelhas, o cabelo encrespado na cabeça, e mesmo a sua capacidade mental estabelecem uma prodigiosa diferença entre eles e as outras espécies de seres humanos."
+      },
+      {
+        "autor": "Immanuel Kant",
+        "ano": 1764,
+        "texto": "Os negros africanos não receberam da natureza qualquer inteligência que os coloque acima da tolice. Portanto, a diferença entre as duas raças é muito substancial."
+      },
+      {
+        "autor": "G. W. F. Hegel",
+        "ano": 1837,
+        "texto": "A falta de controle distingue o caráter dos negros. Essa condição incapacita o desenvolvimento e a cultura. [...] A única essencial ligação que existiu e permaneceu entre negros e europeus é aquela da escravidão."
+      }
+    ],
+    "fecho": "São os quatro nomes que a escola ensina como fundadores do pensamento moderno sobre a liberdade e a razão. Os quatro estão nas páginas 61 e 62 deste livro dizendo isto. O historiador Eric Williams resumiu a inversão que a carta usa como epígrafe: a escravidão não nasceu do racismo — o racismo nasceu dela.",
+    "pagina": "60-62"
+  },
+  "leilao": {
+    "titulo": "8 de agosto de 1444, Lagos",
+    "texto": "Ao amanhecer, meia dúzia de caravelas ancoradas no cais começou a desembarcar 235 homens, mulheres e crianças. Quatro foram separados e doados a igrejas e monastérios — um deles acabou vendido na mesma manhã, porque o padre precisava comprar ornamentos novos para o altar. Os 231 restantes foram divididos em cinco lotes. O primeiro, de <b>46 cativos</b>, ficou reservado ao homem que supervisionava tudo a cavalo: o infante dom Henrique. Era o <b>Quinto Real</b>, 20% da carga, que lhe cabia como financiador da expedição.",
+    "cronista": "A cena só é conhecida porque havia ali uma testemunha encarregada de descrevê-la: <b>Gomes Eanes de Azurara</b>, cronista real e biógrafo de dom Henrique. Seu manuscrito, redigido em 1448, ficou perdido durante quase quatro séculos — foi encontrado em 1837 na Biblioteca Real de Paris e publicado quatro anos depois.",
+    "citacao": "Qual seria o coração, por duro que pudesse ser, que não fosse pungido de piedoso sentimento vendo assim aquela campanha? Porque uns tinham as caras baixas e os rostos lavados de lágrimas; outros estavam gemendo muito dolorosamente, olhando para os céus; outros feriam o rosto com as suas palmas, lançando-se estendidos no chão; outros faziam suas lamentações em cantos, segundo o costume de sua terra. [...] Pelo que convinha a necessidade de se apartarem os filhos dos pais; as mulheres, dos maridos; e os irmãos, uns dos outros.",
+    "citacao_autor": "Gomes Eanes de Azurara, Crônica do descobrimento e conquista da Guiné",
+    "consolo": "Diante de tanta dor, o piedoso coração de Azurara encontrava um motivo de consolo: aquele cativeiro era a oportunidade de salvar-lhes as almas. E assim também pensava o infante, cuja vontade e grande prazer estavam, na interpretação do cronista, «na salvação daquelas almas que antes eram perdidas».",
+    "quem": "Os cativos eram <b>azenegues</b>, berberes da parte ocidental do Saara, hoje Mauritânia, muçulmanos desde o século XI — logo, «infiéis». O grupo incluía também negros e mulatos de regiões ao sul do Saara, talvez cativos dos próprios azenegues.",
+    "antes": "As primeiras capturas registradas são de <b>1441</b>, três anos antes: Antão Gonçalves e Nuno Tristão, no cabo Branco, levaram doze negros a Lagos como troféu. No ano seguinte, mais dez. Gonçalves foi promovido a governador de Tomar e cavaleiro da Ordem de Cristo.",
+    "virada": "A técnica era a razia pura: desembarcar armado, atacar o vilarejo, levar os moradores a bordo. Revelou-se perigosa. Os africanos usavam flechas com pontas preparadas com <i>Strophanthus hispidus</i>, veneno capaz de matar em dez a trinta minutos. Em <b>1446</b> uma expedição de Nuno Tristão foi emboscada por uma dúzia de canoas: quatro homens morreram na hora e outros dezessete nos dias seguintes, o próprio Tristão entre eles; o navio ficou à deriva nas mãos de cinco meninos aprendizes e só foi resgatado nove semanas depois. <b>A partir de 1448 mudou-se a estratégia: em vez de caçar pessoas, comprá-las</b> dos mercadores já estabelecidos na costa. Estabeleceu-se ali um equilíbrio de poder favorável aos chefes e mercadores africanos que se manteria pelos quatro séculos seguintes.",
+    "portugal": [
+      {
+        "rubrica": "Cativos capturados ou comprados pelos portugueses na costa da África",
+        "valor": "150 mil",
+        "periodo": "1450-1500",
+        "pagina": 44
+      },
+      {
+        "rubrica": "Escravos em Portugal, pouco mais de 3% de 1 milhão de habitantes",
+        "valor": "32 mil",
+        "periodo": "c. 1550",
+        "pagina": 44
+      },
+      {
+        "rubrica": "Proporção de cativos entre os moradores de Lisboa, Évora, Lagos e Porto",
+        "valor": "10%",
+        "periodo": "séc. XVI",
+        "pagina": 44
+      },
+      {
+        "rubrica": "Fundação da Casa dos Escravos, onde hoje é a Praça do Município de Lisboa",
+        "valor": "1486",
+        "periodo": "—",
+        "pagina": 44
+      }
+    ],
+    "saunders": "Com exceção dos mendigos, todo mundo tinha escravos em Portugal, do rei ao mais simples trabalhador, incluindo as prostitutas.",
+    "saunders_autor": "A. C. Saunders, historiador",
+    "braga": "Em 1466, em Braga, o chefe de uma comitiva alemã pediu ao rei Afonso V que lhe dessem dois negros, para levar como curiosidade à Alemanha. Os nobres portugueses ficaram surpresos com a modéstia do pedido. «Isso que pedes, amigo, não vale nada», respondeu o irmão do rei, o duque de Viseu. «Pede coisa mais importante e decente que dois negros.»",
+    "pagina": "40-48"
+  },
+  "patrono": {
+    "titulo": "O patrono",
+    "intro": "A história oficial fez de dom Henrique o Navegador. Hoje sabe-se que ele provavelmente nunca se aventurou em expedição oceânica de longo curso — toda a sua experiência marítima se resumiria a duas curtas travessias do Mediterrâneo. O historiador Malyn Newitt é categórico: «Henrique não era versado em geografia nem em matemática, não tinha qualquer conhecimento de náutica, e a suposta existência de um grupo de cientistas ao redor dele nunca se comprovou». O mérito da expansão seria mais do irmão Pedro, o regente. Henrique era, isso sim, um bem-sucedido propagandista de si mesmo — e financiava o cronista que o louvava.",
+    "definicao": "o pioneiro e o patrono do negócio de cativos africanos",
+    "definicao_autor": "Stephen Bown, historiador",
+    "itens": [
+      {
+        "titulo": "O que ele de fato acumulou",
+        "texto": "Licença para povoar os Açores; exclusividade das navegações na costa africana; monopólio da pesca no Tejo e do fabrico de açúcar e de sabão; <b>o direito de escravizar os nativos de todos os territórios recém-descobertos</b>; e, a partir de 1455, a propriedade de todas as terras conquistadas ou ainda por conquistar. Ainda assim morreu falido e endividado, em 1460.",
+        "pagina": 71
+      },
+      {
+        "titulo": "Ceuta, 1415",
+        "texto": "Aos 21 anos comandou, ao lado dos irmãos, o ataque à cidadela muçulmana de Ceuta, para o qual os portugueses mobilizaram <b>242 navios e cerca de 50 mil homens</b>. Nomeado governador, tornou-se em seguida grão-mestre da Ordem de Cristo.",
+        "pagina": 70
+      },
+      {
+        "titulo": "A Ordem de Cristo",
+        "texto": "Era a versão aportuguesada dos <b>templários</b>. Extinta a Ordem do Templo em 1312 e queimado seu grão-mestre em 1314, o rei dom Dinis acolheu os perseguidos em 1317 e lhes deu por sede o Castelo-Convento de Tomar. Em um século, <b>onze bulas papais</b> concederam à nova Ordem monopólio nas navegações, posse de terras, isenção de impostos e autorização para capturar e vender escravos. A cruz que ostentava nas velas era a dela.",
+        "pagina": "75-77"
+      },
+      {
+        "titulo": "O sigilo",
+        "texto": "«Em Tomar e em Lagos, os navegadores progrediam na hierarquia apenas depois que sua lealdade era comprovada, se possível em batalha», escreveu Jorge Caldeira. «Só então tinham acesso aos relatórios reservados de pilotos que já haviam explorado regiões desconhecidas e a preciosidades como as tábuas de declinação magnética.»",
+        "pagina": 77
+      },
+      {
+        "titulo": "O enigma de Sagres",
+        "texto": "A mítica Escola de Sagres é questionada desde o fim do século XIX: nunca se achou documento algum da época que se referisse a ela. Em 1919, escavações revelaram no meio da fortaleza uma figura de pedra — um círculo e dezenas de linhas retas convergindo para o centro. Rosa dos ventos? Relógio solar? Ninguém decifrou.",
+        "pagina": 69
+      }
+    ],
+    "pagina": "69-77"
+  },
+  "mar": {
+    "titulo": "O maior segredo português",
+    "intro": "Não era um mapa nem um instrumento: era o conhecimento do sistema de ventos e correntes do Atlântico. «Rios invisíveis», que obrigavam um navio a seguir numa direção mesmo contra a vontade da tripulação. Quem os conhecia escolhia estradas líquidas; quem não os conhecia não voltava.",
+    "bojador": "O <b>cabo Bojador</b> projeta-se quarenta quilômetros mar adentro e é batido por ondas fortíssimas. Ventos e correntes deixavam passar para o sul, rente à costa, e não deixavam voltar. Lendas medievais falavam de monstros, águas ferventes e o próprio Satanás; em 1291 os irmãos genoveses Vivaldi o cruzaram e nunca mais foram vistos. Em <b>1434</b>, Gil Eanes descobriu o truque: não resistir à corrente, mas afastar-se do continente até encontrar, em alto mar, ventos que fluíssem para o norte, e voltar percorrendo um semicírculo no Atlântico. É a <b>volta do mar</b> — a razão pela qual as rotas desta carta são curvas, e não retas.",
+    "volta_grande": "O mesmo raciocínio, em escala maior, deu a <b>volta grande</b>: para chegar à Índia era inútil contornar a África colado à costa; era preciso navegar a sudoeste, em direção ao Brasil, e só na altura do Cabo de Santo Agostinho virar para sudeste, rumo à África do Sul. Foi ela que levou Vasco da Gama à Índia e Cabral à Bahia.",
+    "calendario_titulo": "O calendário marítimo",
+    "calendario": "As estações abriam e fechavam janelas. Era preciso zarpar de <b>Lisboa entre 15 e 25 de outubro</b> para chegar ao Recife dois meses depois; e levantar velas em Pernambuco ou na Bahia <b>até o fim de abril</b> para chegar a Portugal em julho. Fora desses períodos, o tempo de travessia <b>dobrava</b>, e com ele o risco de tempestades, doenças e calmarias equatoriais.",
+    "consequencias_titulo": "As três consequências",
+    "consequencias": [
+      {
+        "titulo": "O caminho da Índia",
+        "texto": "A volta grande, que só os portugueses conheciam até o começo do século XVI."
+      },
+      {
+        "titulo": "Dois tráficos, não um",
+        "texto": "As duas engrenagens opostas criaram <b>dois sistemas</b>. O do sul, português, saía das regiões próximas ou abaixo do Equador e ia direto ao litoral brasileiro — e voltava com a mesma facilidade, sem passar pela Europa. O do norte, de britânicos, franceses e holandeses, saía entre Gana e o Senegal rumo ao Caribe e só voltava à África <b>depois</b> de passar pela Europa: é o comércio triangular. As duas formas que a Carta I desenha lado a lado não são estilo — são o regime de ventos."
+      },
+      {
+        "titulo": "Dois Brasis",
+        "texto": "A colônia foi partida em duas unidades administrativas com pouca comunicação entre si: o <b>Estado do Maranhão</b>, com o litoral acima do Rio Grande do Norte, o Pará e a bacia amazônica, e o <b>Estado do Brasil</b>, com capital em Salvador e, depois de 1763, no Rio. A fronteira ficava na altura do <b>Cabo de São Roque</b> — exatamente o ponto em que as correntes marítimas se divergem, uma para o sul e a outra para o oeste. A divisão política do Brasil colonial foi decidida pela água."
+      }
+    ],
+    "thornton": "A verdadeira razão por trás das grandes navegações, em seus estágios iniciais, nada mais era do que explorar a oportunidade imediata de lucros mediante a captura ou a compra de escravos na costa da África.",
+    "thornton_autor": "John Thornton, historiador",
+    "financiadores": "Cada avanço financiava o passo seguinte. O florentino <b>Bartolomeu Marchionni</b>, banqueiro em Lisboa e traficante, financiou as principais expedições da época: sua nau <i>Santiago</i> ia na esquadra de Vasco da Gama e sua nau <i>Anunciada</i> acompanhava Cabral em 1500 — o mesmo navio que depois traficaria escravos entre a África e Valência. Dos 3.600 cativos registrados na Casa dos Escravos de Lisboa entre 1493 e 1495, <b>1.648</b> viajaram em embarcações dele. Foi Marchionni quem sugeriu ao rei que contratasse Américo Vespúcio.",
+    "primeira_carga": "E a primeira carga de escravos a cruzar o Atlântico não foi de africanos indo para oeste: foi de <b>índios taino indo para leste</b>, capturados por Colombo em Santo Domingo em 1493 e despachados ao representante de Marchionni em Sevilha. No ano seguinte, quatrocentos indígenas — metade morreu antes de tocar a Espanha, porque «não estavam habituados ao frio». Calcula-se que Colombo tenha enviado 4 mil indígenas cativos à Espanha.",
+    "sangria": "Há ainda uma razão para a escravidão que raramente se conta: <b>Portugal estava se esvaziando</b>. Saíam do reino cerca de 2.400 pessoas por ano no século XVI, quase todas homens jovens, e poucas voltavam. Dos 5.228 marinheiros que partiram de Lisboa rumo à Índia entre 1629 e 1634, só 2.495 chegaram. Ao longo do século, a sangria passou de 200 mil pessoas — entre um sexto e um quinto de uma população de cerca de 1 milhão. Regiões inteiras do interior ficaram despovoadas e terras férteis deixaram de ser cultivadas. Portugal precisava de pelo menos mil escravos por ano só para se repor a si mesmo.",
+    "pagina": "78-87"
+  },
+  "ilhas": {
+    "titulo": "O laboratório",
+    "intro": "Antes do Brasil, o modelo foi testado em duas ilhas atlânticas que estavam <b>desabitadas</b> quando os portugueses chegaram. Nelas se juntaram pela primeira vez as três condições da sociedade escravista americana: clima tropical, cana-de-açúcar e mão de obra cativa africana. E nelas se definiram os procedimentos que se manteriam por três séculos.",
+    "cabo_verde": {
+      "nome": "Ribeira Grande, Cabo Verde",
+      "quando": "1462",
+      "texto": "A <b>primeira aglomeração urbana construída pelos europeus nos trópicos</b>. «Um hipermercado de escravos», na expressão do historiador senegalês Charles Akibodé. Chegou a ter quinhentas casas de cal e pedra. Por ali passaram Vasco da Gama a caminho da Índia, em 1497, e Colombo na terceira viagem à América, em 1498; no fim do século XVI foi saqueada duas vezes por Francis Drake. Os cativos vinham de mais de mil quilômetros de costa, onde hoje fazem fronteira seis países. <b>Entre junho de 1541 e dezembro de 1546 partiram de lá 68 navios com 7.442 escravos para as colônias espanholas.</b>",
+      "pagina": "138-145"
+    },
+    "sao_tome": {
+      "nome": "São Tomé",
+      "quando": "1484",
+      "texto": "Entre os primeiros colonos: criminosos degredados, <b>centenas de crianças judias separadas de suas famílias e deportadas por volta de 1490</b>, e cativos africanos. A produção de açúcar saltou de 5 mil arrobas (75 toneladas) em 1530 para <b>150 mil arrobas (2.250 toneladas) em 1550</b> — trinta vezes em duas décadas. Charles Boxer: «A transplantação do cultivo de açúcar e da escravaria negra para o Brasil foi uma consequência natural do exemplo fornecido por São Tomé».",
+      "pagina": "141-144"
+    },
+    "procedimentos": "Em São Tomé foram definidas pela primeira vez as regras para <b>triar, embarcar, alimentar, marcar a ferro quente e transportar</b> os cativos. A função de marcador virou cargo com salário: o funcionário encarregado de carimbar as pessoas no peito ou no braço em Luanda ganhava quarenta réis por cabeça e repetia a operação 10 mil vezes por ano — mil cruzados anuais, uma fortuna.",
+    "boçais": "Em Ribeira Grande os missionários ganhavam dinheiro transformando «boçais» em «ladinos»: batizando os cativos e ensinando-lhes rudimentos de português, para que valessem mais no leilão do outro lado do oceano.",
+    "jardim": "As ilhas foram também um jardim botânico. Ali se cultivaram lado a lado, pela primeira vez, plantas da África, da Ásia e da América. Vieram com os navios negreiros e ficaram na mesa brasileira o <b>dendê</b>, o quiabo, o inhame, o sorgo, a banana-da-terra, o feijão-fradinho, o milhete, o tamarindo, o hibisco e a pimenta-malagueta — mais a galinha-d'angola. Já se catalogaram na América mais de 150 espécies comestíveis nativas da África Ocidental.",
+    "mandioca": "E houve tráfego no sentido inverso. A <b>mandioca</b> americana, transplantada para a África, é apontada como responsável por um aumento populacional lá, por ser alimento barato e calórico. No Brasil era «o principal mantimento», segundo edital da Câmara Fluminense de 1646 que obrigava os pequenos agricultores a cultivá-la; um quarto do soldo das tropas do governo-geral da Bahia era pago em farinha. <b>O colégio dos jesuítas da Bahia exportava farinha de mandioca para Angola em troca de escravos</b>, e no começo do século XVII a Baía de Guanabara mandava cerca de 680 toneladas por ano para lá, vendidas por quatro vezes o preço do Rio.",
+    "amador": "Em <b>1595</b>, em São Tomé, 2,5 mil escravos sob a liderança de <b>Amador</b>, cativo natural da ilha que se proclamou rei, incendiaram canaviais, engenhos e casas de fazenda. Cinco de seus lugares-tenentes se entregaram; foram todos enforcados e esquartejados. É um Palmares cem anos antes de Palmares, do outro lado do oceano.",
+    "assientos": "Foi também das ilhas que saiu o regime dos <b>assientos</b> — contratos exclusivos de fornecimento de escravos leiloados pelos reis da Espanha. Os primeiros leilões são de 1518; houve mais de 360 contratos entre 1529 e 1537; em 1552 as remessas já chegavam a 3 mil pessoas por ano. Os navios descarregavam em Cartagena, Vera Cruz e Buenos Aires, e dali os cativos eram redistribuídos para as minas de ouro e prata de todo o império — que produziram entre 25 mil e 30 mil toneladas de prata de 1560 a 1685. Em 1663 o porto de Cartagena chegou a ter catorze navios ancorados de uma só vez, cada um com oitocentos a novecentos cativos.",
+    "preco": "A pressão dos assientos fez o preço disparar: <b>entre 1490 e 1590 o preço médio de um escravo em Portugal aumentou dez vezes</b>, de 3 mil para 30 mil réis.",
+    "elvas": "O regime produziu as primeiras grandes fortunas do tráfico. <b>Antônio Fernandes Elvas</b>, cristão-novo, acumulou três concessões ao mesmo tempo — Espanha, Coroa portuguesa e Cabo Verde — e transportou <b>37 mil escravos em 264 navios entre 1616 e 1625</b>. Acusado de trapacear nos números e enganar o rei, morreu na prisão.",
+    "lancados_titulo": "Os lançados",
+    "lancados": "Nas negociações da costa, os capitães dependiam de um personagem intermediário: os <b>lançados</b>, ou <b>tangomaus</b> — europeus que se adaptaram ao ambiente africano e passaram a morar junto à população nativa, casar com mulheres africanas e entrar nas linhagens locais. A palavra vem de <i>lançar</i>: jogar fora, degredar. Muitos eram cristãos-novos, dissidentes, náufragos ou degredados; havia cerca de duzentos na Guiné e em Serra Leoa em 1546, e foram eles que fundaram Cacheu por volta de 1590. As Ordenações Manuelinas proibiam a prática sob pena de morte; foi inútil.",
+    "lancados_citacao": "Andam nus, riscam o corpo todo com um ferro e andam por todo aquele Guiné tratando e comprando escravos por qualquer título que os podem haver.",
+    "lancados_autor": "André Álvares de Almada, cronista cabo-verdiano, 1594",
+    "lancados_itens": [
+      {
+        "titulo": "João Fernandes, 1445",
+        "texto": "O primeiro de que se tem notícia. Escudeiro de dom Henrique, desembarcou por vontade própria no Rio do Ouro e ficou sete meses entre os azenegues. Recolhido pela caravela de Antão Gonçalves, foi avaliado «bem pesado e gordo». Falava a língua e conhecia os costumes: «um misto de espião, agente diplomático e negociador comercial»."
+      },
+      {
+        "titulo": "Gana-Goga, c. 1570",
+        "texto": "O alentejano João Ferreira, a quem os fulas chamavam de «o homem que fala muitas línguas», subiu trezentos quilômetros do rio Gâmbia e casou-se com uma princesa local. Sua parentela passou a dominar o tráfico em toda a região do Senegal e da Gâmbia."
+      },
+      {
+        "titulo": "As donas",
+        "texto": "As viúvas dos lançados ficaram conhecidas como <b>donas</b>. Dona Maria Mar, dona de muitos escravos e de um grande rebanho, era em 1682 a segunda pessoa mais importante do Reino da Barra, atrás apenas do rei."
+      },
+      {
+        "titulo": "O que ficou",
+        "texto": "Os lançados firmaram o <b>português acrioulado como língua franca</b> ao longo de todo o litoral africano. Era em português que o rei de Aladá negociava com holandeses e ingleses; e era por isso que, um século depois, os navios holandeses precisavam levar intérpretes brasileiros a bordo."
+      }
+    ],
+    "pagina": "138-151"
+  },
+  "congo": {
+    "titulo": "O reino que quis ser sócio",
+    "intro": "Entre os séculos XV e XVI a Coroa portuguesa perseguiu duas tarefas que hoje pareceriam inconciliáveis: catequizar um grande reino africano e extrair dele o maior número possível de cativos. Por algum tempo pareceu funcionar. O Reino do Congo converteu-se e adotou nomes, códigos e rituais portugueses com velocidade surpreendente — e tornou-se logo uma das principais fontes do tráfico.",
+    "boxer": "a dicotomia que afligiu a aproximação portuguesa aos negros africanos durante tanto tempo: o desejo de salvar suas almas imortais associado ao anseio de escravizar seus corpos vis",
+    "boxer_autor": "Charles Boxer, historiador",
+    "linha": [
+      {
+        "ano": "1483",
+        "texto": "Diogo Cão ancora na foz do rio Zaire. Como os mensageiros demoram, leva quatro reféns para Portugal e promete devolvê-los em quinze luas."
+      },
+      {
+        "ano": "1485",
+        "texto": "Cumpre a promessa: volta com os quatro, vestidos à moda europeia e falando português fluente. O manicongo manda uma embaixada a Lisboa pedindo missionários e mestres de ofícios — pedreiros, carpinteiros, agricultores."
+      },
+      {
+        "ano": "1491",
+        "texto": "Os jesuítas erguem em M'banza-Congo, entre maio e julho, a <b>primeira igreja católica de toda a África Subsaariana</b>. O manicongo é batizado como dom João I. A catedral, Kulumbimbi, seria concluída em 1596 e é hoje Patrimônio Mundial."
+      },
+      {
+        "ano": "1506",
+        "texto": "Morre dom João I. Seu filho Mbemba Nzinga, batizado dom Afonso I, mata o irmão na disputa pelo trono. Diz-se que viu no céu o sinal da cruz — a mesma visão que a tradição atribui ao primeiro rei português no Campo de Ourique."
+      },
+      {
+        "ano": "1512",
+        "texto": "Dom Manuel I manda a dom Afonso I um conjunto de instruções que Alberto da Costa e Silva chama de <b>«um verdadeiro plano diretor da europeização do reino africano»</b> — orientava até o formato da assinatura do rei do Congo nos documentos."
+      },
+      {
+        "ano": "1526",
+        "texto": "Dom Afonso I escreve a dom João III <b>pedindo o fim do tráfico</b>: «nossa vontade é que neste reino não haja trato de escravos nem saída deles». Pede também para comprar um navio e comerciar direto com a Europa. Portugueses seriam bem-vindos, mas só padres e professores. <b>O rei português levou dez anos para responder, e não aceitou nada.</b>"
+      },
+      {
+        "ano": "1543",
+        "texto": "Morre dom Afonso I. O projeto já fracassara. Entre os traficantes estava o próprio superior dos jesuítas, padre Jorge Vaz. Nas cartas do manicongo, queixas constantes contra o clero — um padre havia «enchido suas casas de putas» e «emprenhado uma mulher», o que fez fugir os alunos da escola em que ela ensinava."
+      },
+      {
+        "ano": "1568",
+        "texto": "O Congo é invadido pelos jagas. A partir de 1614, oito soberanos se revezam no trono em vinte e cinco anos; três são depostos e um, envenenado."
+      },
+      {
+        "ano": "1665",
+        "texto": "<b>Batalha de Ambuíla.</b> Contra 190 mosqueteiros e dezenas de milhares de arqueiros congoleses, André Vidal de Negreiros alinha dois canhões, 550 mosqueteiros, 3 mil arqueiros e milhares de guerreiros jagas. Morrem mais de 5 mil, incluindo quatrocentos fidalgos titulares. O rei dom Antônio I Afonso é morto e degolado; sua cabeça é levada em procissão pelas ruas de Luanda."
+      }
+    ],
+    "cidade": "<b>M'banza-Congo</b>, rebatizada São Salvador, tinha entre 60 mil e 70 mil habitantes — uma cidade enorme para os padrões da época. O palácio do rei media 2,4 mil metros de circunferência. <b>Metade dos 200 mil moradores do reino era escrava.</b>",
+    "cartas": "A correspondência entre os dois reis é uma das documentações mais surpreendentes da história da escravidão: um deles dominava um império em quatro continentes, o outro tentava entender a maré de acontecimentos que ameaçava o seu povo — e, ao menos formalmente, tratavam-se como iguais. «Muito poderoso e excelente rei do Manicongo», escrevia dom Manuel em 1512. «Mui alto e mui poderoso Senhor», respondia dom Afonso em 1515, «com aquele acatamento e reverência que de rei a rei devemos fazer».",
+    "costa_silva": "o reino do Congo tinha Portugal dentro dele como uma espécie de doença",
+    "costa_silva_autor": "Alberto da Costa e Silva",
+    "coroa": "A coroa dos reis do Congo, presente do papa Inocêncio X, foi enviada de volta ao Vaticano depois de Ambuíla. Numa escala em Pernambuco, foi roubada por alguém que julgou estar se apossando de uma grande quantidade de ouro. Era de latão. Nunca mais se teve notícia dela nem do ladrão. Vidal de Negreiros voltou ao Brasil sem pagar os soldos das tropas.",
+    "irmao": "Em 1651, catorze anos antes de Ambuíla, um estatuto do Conselho Ultramarino ainda dizia: <b>«el-rei de Congo não é vassalo desta coroa, senão irmão de armas dos reis dela»</b>. Quem consumou a destruição não foram os portugueses: foram <b>três brasileiros</b> — Salvador de Sá, João Fernandes Vieira e André Vidal de Negreiros, heróis da guerra contra os holandeses, recompensados com o governo de Angola entre 1648 e 1661, que viam o Congo com olhos de traficantes: o último grande bolsão de mão de obra nunca devidamente pilhado.",
+    "pagina": "152-163"
+  },
+  "indigena": {
+    "titulo": "A escravidão que veio antes",
+    "intro": "No Brasil, a primeira mão de obra cativa não foi africana. Foi indígena, e durou mais de cem anos. O que a substituiu não foi um escrúpulo: foi uma catástrofe demográfica somada à constatação de que, na África, já existia um mercado montado e no Brasil não.",
+    "catastrofe": [
+      {
+        "rubrica": "População da América em 1420",
+        "valor": "50 milhões",
+        "detalhe": "11% da humanidade, então estimada em 450 milhões"
+      },
+      {
+        "rubrica": "População da América em 1600",
+        "valor": "10 milhões",
+        "detalhe": "quarenta milhões de pessoas desaparecidas em cem anos"
+      },
+      {
+        "rubrica": "População da América em 1804",
+        "valor": "25 milhões",
+        "detalhe": "metade do número anterior à presença europeia, e apenas 2,8% da humanidade"
+      },
+      {
+        "rubrica": "Indígenas no Brasil em 1500",
+        "valor": "3 a 4 milhões",
+        "detalhe": "centenas de povos, mais de mil línguas"
+      },
+      {
+        "rubrica": "Indígenas no Brasil em 1808",
+        "valor": "700 mil",
+        "detalhe": "cerca de 20% do contingente original"
+      },
+      {
+        "rubrica": "Média do extermínio no período colonial",
+        "valor": "1 milhão",
+        "detalhe": "a cada cem anos"
+      }
+    ],
+    "alencastro": "choque epidemiológico resultante da união microbiana do mundo completada pelos Descobrimentos",
+    "alencastro_autor": "Luiz Felipe de Alencastro",
+    "epidemias": "Entre 1559 e 1562 uma epidemia de varíola varreu a costa. Na Bahia matou mais de 70% de todos os índios aldeados nas fazendas jesuíticas; no Espírito Santo, seiscentos morreram em tão pouco tempo que foi preciso enterrar dois corpos por cova. Em 1562 já eram 30 mil mortos. No ano seguinte o sarampo matou outros 30 mil. Novos surtos no Maranhão em 1621-1623 e no Grão-Pará em 1660, «com tanto estrago dos índios que acabou a maior parte deles».",
+    "bandeiras": "A bandeira de <b>Raposo Tavares</b> partiu de São Paulo em 1628 recrutando quase todos os homens de uma vila de pouco mais de 2 mil habitantes: somados, <b>2,9 mil mamelucos e indígenas contra apenas 69 brancos</b>. Avançando em três colunas, aprisionou entre 1628 e 1630 <b>entre 40 mil e 60 mil guaranis</b> aldeados no Guairá. Alencastro calcula em cerca de <b>100 mil</b> o total de cativos capturados nas entradas dos bandeirantes entre 1627 e 1640 — «uma das operações escravistas mais predatórias da história moderna». Entre 1625 e 1650, o número de índios capturados foi <b>muito superior</b> ao de africanos introduzidos no Brasil.",
+    "guarani": "Os guaranis se retiraram para o atual Paraguai. Na língua guarani paraguaia, <i>banderante</i> é, até hoje, sinônimo de bandido.",
+    "substituicao_titulo": "A troca, medida num só engenho",
+    "substituicao_nota": "O engenho Sergipe do Conde, no Recôncavo Baiano, pertencia à Companhia de Jesus e teve sua rotina estudada pelo padre Antonil. A composição da sua escravaria dá a curva da substituição:",
+    "substituicao": [
+      {
+        "ano": 1574,
+        "africanos": 7,
+        "indios": 93
+      },
+      {
+        "ano": 1591,
+        "africanos": 37,
+        "indios": 63
+      },
+      {
+        "ano": 1638,
+        "africanos": 100,
+        "indios": 0
+      }
+    ],
+    "razoes_titulo": "Por que a escravidão indígena fracassou",
+    "razoes": [
+      {
+        "titulo": "As doenças",
+        "texto": "Dizimaram a população nativa antes que ela pudesse ser explorada."
+      },
+      {
+        "titulo": "As guerras e a fuga",
+        "texto": "Reduziram o número de índios nas regiões próximas aos engenhos; e quem fugia tinha para onde ir. Gandavo, em 1576, foi direto ao ponto ao explicar a preferência pelos africanos: «Estes são mais seguros que os índios da terra porque nunca fogem nem têm para onde»."
+      },
+      {
+        "titulo": "A causa preponderante",
+        "texto": "Não havia mercado. Alencastro: no Brasil «não surgiram redes internas de tráfico, drenando a eventual oferta de cativos para os enclaves coloniais. Nenhuma comunidade indígena se firmou no horizonte da América Portuguesa como fornecedora de cativos». Na África, ao contrário, funcionavam havia séculos centros fornecedores, rotas, feiras e preços definidos."
+      },
+      {
+        "titulo": "E o que os africanos traziam",
+        "texto": "Adaptação às doenças do Velho Mundo; experiência de agricultura em larga escala com enxada; alguns, experiência com gado. E outros — «muito valorizados em Minas Gerais a partir do início do século XVIII» — eram <b>hábeis mineradores de ouro e pedras preciosas</b>."
+      }
+    ],
+    "lei_titulo": "A lei que proibiu, e as duas portas que deixou abertas",
+    "lei": "Em <b>1570</b> a Coroa declarou todos os nativos súditos do rei: «Mando que daqui em diante não se use nas ditas partes do Brasil o modo que se usou até agora em fazer cativos os ditos gentios». Os aimorés foram excluídos do benefício. Em <b>1609</b> um alvará de Filipe II declarou «todos os gentios daquelas partes do Brasil por livres» — e provocou uma revolta dos moradores na Bahia, que alegavam ser impossível produzir açúcar sem eles. A Coroa voltou atrás e abriu duas exceções que anulavam a lei:",
+    "excecoes": [
+      {
+        "titulo": "A guerra justa",
+        "texto": "Podiam ser escravizados os índios «tomados em guerra justa». E o que era uma guerra justa? O próprio alvará explicava: aquela que «os portugueses fizerem ao dito gentio com autoridade ou licença minha ou do governador das ditas partes». Ou seja, a escravização continuava sujeita à conveniência de cada momento. Foi com esse recurso que se conquistou Sergipe Del Rey — cerca de 4 mil escravizados entre 1575 e 1590 — e, ainda em 1808, que dom João ordenou a investida contra os botocudos e os guaranis de Guarapuava."
+      },
+      {
+        "titulo": "O resgate",
+        "texto": "Trocar mercadorias por índios já prisioneiros de outras tribos, «à corda», prestes a ser mortos. O colono que os «resgatasse» tinha direito de escravizá-los por dez anos. Com o tempo, <b>resgate</b> virou sinônimo de compra de escravos também na África — e é a palavra que aparece nos papéis do tráfico atlântico."
+      }
+    ],
+    "vieira": "Provincial dos jesuítas no Maranhão entre 1653 e 1661, <b>padre Antônio Vieira</b> foi aprisionado e expulso pelos moradores por defender a liberdade dos índios. Em 8 de dezembro de 1655 queixava-se ao rei: «Temos contra nós o povo, as religiões, os donatários das capitanias-mores e, igualmente, todos os que neste reino e neste estado são interessados no sangue e no suor dos índios». <b>A solução que ele defendia era substituí-los por africanos.</b> Em 1679 criou-se, por ideia sua, a Companhia do Estanco do Maranhão, para trazer 10 mil cativos negros. O fracasso do projeto deflagrou a revolta de Manuel Beckman, em 1684, cujo programa prometia «entregar muitos escravos» aos maranhenses.",
+    "pagina": "92-105"
+  },
+  "igreja": {
+    "titulo": "A cruz e o chicote",
+    "epigrafe": "Nunca consideramos este tráfico ilícito. Na América, todo escrúpulo é fora de propósito.",
+    "epigrafe_autor": "Padre Luís Brandão, reitor do colégio jesuíta de Luanda, em carta de 1611",
+    "intro": "O tráfico atlântico não começou apesar da Igreja: começou <b>autorizado</b> por ela, e por escrito. Três bulas papais, em quatro anos, deram aos portugueses a justificativa religiosa e o respaldo político de que precisavam.",
+    "bulas": [
+      {
+        "nome": "Dum diversas",
+        "data": "18 de junho de 1452",
+        "papa": "Nicolau V",
+        "texto": "Autoriza o rei de Portugal a atacar, conquistar e subjugar mouros, pagãos e outros «inimigos de Cristo», capturar seus bens e territórios, <b>escravizá-los</b> e transferir suas terras à Coroa de forma perpétua."
+      },
+      {
+        "nome": "Romanus Pontifex",
+        "data": "8 de janeiro de 1455",
+        "papa": "Nicolau V",
+        "texto": "Chamada pelos historiadores de «carta régia do imperialismo português». Autoriza dom Henrique a escravizar não apenas os muçulmanos, mas <b>todos os pagãos entre o Marrocos e a Índia</b> — ou seja, o continente africano inteiro mais grande parte da Ásia. E formula a justificativa que serviria por quatro séculos: era uma forma de salvar suas almas."
+      },
+      {
+        "nome": "Inter Coetera",
+        "data": "13 de março de 1456",
+        "papa": "Calisto III",
+        "texto": "Reserva à Ordem de Cristo portuguesa a prerrogativa de administrar os assuntos da Santa Sé nas regiões conquistadas ou por conquistar, incluindo a nomeação de bispos e padres. <b>O clero católico passa a ser parte da burocracia estatal portuguesa.</b>"
+      }
+    ],
+    "indulgencia": "Em 1482, concluída a construção do Castelo de São Jorge da Mina, o papa Sisto IV concedeu <b>indulgência plenária</b> a todos os cristãos que ali falecessem a serviço da Coroa. Morrer no castelo do tráfico negreiro garantia o perdão total dos pecados.",
+    "proprietarios_titulo": "Quem era dono de quem",
+    "proprietarios": [
+      {
+        "titulo": "Os franciscanos",
+        "texto": "Faziam votos de pobreza absoluta e eram chamados de frades mendicantes. Tinham escravos.",
+        "pagina": 276
+      },
+      {
+        "titulo": "Os beneditinos",
+        "texto": "No começo do século XIX, mais de mil cativos em suas fazendas no Rio de Janeiro e em São Paulo.",
+        "pagina": 276
+      },
+      {
+        "titulo": "Os frades do Carmo e das Mercês, no Maranhão",
+        "texto": "Possuíram escravos até <b>março de 1887</b> — catorze meses antes da Lei Áurea.",
+        "pagina": 276
+      },
+      {
+        "titulo": "Os jesuítas em Angola",
+        "texto": "Em 1558 tinham <b>mais de 10 mil escravos</b> em quinhentos sítios e fazendas. No começo do século XVII eram a maior proprietária de escravos da colônia. O envio de quinhentos cativos ao Brasil pagou a construção da igreja de Nossa Senhora dos Remédios.",
+        "pagina": 284
+      },
+      {
+        "titulo": "O bispo do Congo e Angola",
+        "texto": "Recebia 600 mil réis por ano da Coroa — pagos com <b>direitos de exportação de escravos</b>.",
+        "pagina": 276
+      },
+      {
+        "titulo": "A rota interna dos colégios",
+        "texto": "O colégio jesuíta de Luanda enviava regularmente cargas de africanos aos colégios de Salvador e Olinda, que os revendiam aos senhores de engenho do Recôncavo e da Zona da Mata. De Cabo Verde vendiam-se cativos a Cartagena. <b>A Igreja era isenta de impostos e taxas alfandegárias no tráfico.</b>",
+        "pagina": 276
+      }
+    ],
+    "loyola": "Não era consenso. Santo Inácio de Loyola era contra. Em 1569 o superior-geral Francisco de Borja escreveu ao provincial de Portugal: «Não convém que a Companhia se sirva de escravos». Pressionado em 1590, o superior da missão em Angola respondeu que seus padres não conseguiriam se sustentar sem o tráfico, e sugeriu usar intermediários para disfarçar. A resposta do superior-geral foi seca: <b>«que se vivesse então de esmolas, se tanto fosse necessário»</b>. Não pegou.",
+    "moeda": "A justificativa que pegou está numa carta da Companhia de Jesus de Angola, de 1553: «assim como na Europa o dinheiro corrente é o ouro e a prata, e no Brasil o açúcar, <b>assim os são em Angola e reinos vizinhos os escravos</b>. Pelo que, quando os padres do Brasil nos mandam que lhes pedimos, não querem receber de nós a paga em outra moeda, senão a que corre pela terra, que são escravos».",
+    "concurso": "Em <b>1620</b> o governador de Angola promoveu um concurso de poesia em homenagem a São Francisco Xavier. O primeiro prêmio era uma «peça da Índia» — um africano adulto, forte e saudável. Venceu um traficante de escravos.",
+    "vieira": "<b>Padre Antônio Vieira</b> pregava que o tráfico era «o maior e mais universal milagre» de Nossa Senhora do Rosário, porque tirava os cativos do paganismo. No sermão de 1633 a uma irmandade de escravos na Bahia: «Em um engenho sois imitadores de Cristo crucificado, porque padeceis em um modo muito semelhante o que o mesmo Senhor padeceu na sua cruz».",
+    "benci": "O jesuíta <b>Jorge Benci</b> escreveu o manual. Para ele o cativeiro era efeito do pecado original, e a primeira obrigação do senhor era doutrinar a alma do cativo; a segunda, não deixá-lo ocioso, «porque os pretos são sem comparação mais hábeis para o gênero de maldades que os brancos»; e a terceira, castigá-lo — o que, no seu entender, era <b>«uma das sete obras da misericórdia»</b>: «Haja açoites, haja correntes e grilhões, tudo a seu tempo e com regra e moderação devida; e vereis como em breve fica domada a rebeldia dos servos».",
+    "claver": "Houve uma exceção, e virou santo. <b>Pedro Claver</b>, jesuíta catalão, passou mais de quarenta dos seus 74 anos esperando os navios em Cartagena das Índias, descendo aos porões para curar feridas, dar água e comida e confortar os desesperados. Fez um quarto voto, particular: ser <b>«sempre escravo dos etíopes»</b> — <i>aethiopum semper servus</i>. Por suas mãos teriam passado mais de 300 mil cativos. Ironia amarga: parte dos que ele socorria vinha nos navios de Cabo Verde despachados pelos jesuítas. Foi canonizado em <b>1888</b>, o mesmo ano da Lei Áurea, e no mesmo ano em que, finalmente, o papa Leão XIII condenou a escravidão de forma inequívoca — quatro séculos depois da <i>Dum diversas</i>.",
+    "sangue_titulo": "A pureza de sangue",
+    "sangue": "Em 1680, na Bahia, um grupo de «moços pardos» protestou à Coroa contra sua exclusão das escolas jesuítas. Um parecer real de 1686 lhes deu razão; dois anos depois foi contestado por <b>Antônio Vieira</b>, então visitador-geral da Companhia em Salvador: os pardos eram «quase sempre malcriados», de «vil e obscura origem», e por isso «nesta costa do Brasil, já lhes está totalmente fechado o ingresso ao sacerdócio e aos claustros religiosos e a qualquer função governativa». As constituições sinodais do arcebispado da Bahia, de <b>1707</b>, exigiam do candidato à ordenação estar isento de «mácula» — «judeu, mouro, mourisco, mulato, herético ou de alguma outra infecta nação reprovada» — comprovada por inquérito judicial sobre pais e avós dos dois lados. Em <b>1763</b>, os estatutos da Ordem Terceira de São Francisco de Mariana exigiam nascimento «branco legítimo», e expulsavam sumariamente quem se casasse com mulher de sangue africano ou cristão-novo.",
+    "irmandades": "E, apesar de tudo isso, foi dentro da Igreja que milhões de escravos encontraram onde reconstruir laços: as <b>irmandades</b>. A mais conhecida é a de Nossa Senhora do Rosário dos Homens Pretos; havia as de São Benedito, Santa Ifigênia, Santo Elesbão, São Jorge, Santo Antônio de Categeró, São Gonçalo Garcia. Coletavam dinheiro para sepultar seus membros, emprestavam em momentos de aperto e <b>angariavam recursos para comprar alforrias</b> — como um consórcio. Deram aos africanos e seus descendentes papéis sociais e espaços de convivência que a escravidão lhes negava. Outras irmandades eram o oposto: a de São José, em Salvador, era formada por traficantes de escravos.",
+    "malta": "A Igreja também escravizou muçulmanos, e por muito mais tempo do que se lembra. Cerca de 10 mil na queda de Málaga, em 1487; milhares em Trípoli, em 1510; escravos muçulmanos trabalhavam nas minas de mercúrio de Almadén e enterravam cadáveres na cólera de Marselha, em 1720. Os <b>Cavaleiros de Santo Estêvão</b>, ordem fundada pelos Médici e aprovada pelo papa em 1562, registram em seus arquivos a captura de <b>10.115 escravos entre 1568 e 1688</b>. Em 1749 havia 9 mil cativos em Malta, e a Ordem massacrou os que tentaram se rebelar. Em <b>1798</b> — nove anos depois da Revolução Francesa — os exércitos de Napoleão ainda encontraram cerca de 2 mil escravos a serviço dos cristãos na ilha.",
+    "pagina": "275-288"
+  },
+  "cicatriz": {
+    "titulo": "A cicatriz",
+    "intro": "Há uma pergunta que o livro enfrenta de frente e que qualquer carta sobre o tráfico precisa enfrentar também: <b>os africanos escravizaram africanos?</b> A resposta do autor não é sim nem não — é uma aula de método, e vale reproduzir o raciocínio, porque ele muda o que se pode e o que não se pode ler nos mapas desta carta.",
+    "passos": [
+      {
+        "titulo": "Sim, havia um mercado, e ele era antigo",
+        "texto": "Reis, chefes e oligarquias africanas participavam do comércio de cativos antes dos europeus e continuaram a lucrar com ele. Charles Boxer sustenta que só a existência de um mercado já estruturado — com fornecedores, compradores, rotas, feiras e preços definidos — explica a rapidez com que o tráfico atlântico se consolidou. Thornton: «Quando os europeus chegaram à África e se ofereceram para comprá-los, a oferta foi imediatamente aceita»."
+      },
+      {
+        "titulo": "E os europeus raramente entravam no continente",
+        "texto": "Preferiam comprar nas feitorias do litoral. <b>Com uma exceção decisiva: Angola</b> — justamente o maior território escravagista da África —, onde os portugueses procuraram controlar todas as pontas, da captura ao embarque."
+      },
+      {
+        "titulo": "Mas dizer «africanos escravizavam africanos» é anacronismo",
+        "texto": "A identidade pan-africana é um conceito recente, fruto das lutas anticoloniais do século XX. Ninguém se reconhecia como africano; muitos nem sabiam que habitavam um mesmo continente. Um habitante de Oió capturado pelos rivais do Daomé era tão estrangeiro <b>na África</b> quanto o cativo daometano seria ao chegar ao Brasil. E nem todos os africanos eram negros: alguns dos grandes traficantes eram berberes muçulmanos de pele clara."
+      },
+      {
+        "titulo": "E a culpa não é transferível",
+        "texto": "Embora a escravidão já existisse na África, <b>foi a demanda europeia que levou o negócio às proporções que atingiu</b>. Os europeus estimularam a captura oferecendo mercadorias, armas e munições. Nos dois primeiros séculos de contato os africanos ainda exportavam ouro, marfim, madeira, pimenta, couro e algodão; a partir de 1650 a venda de seres humanos virou a principal atividade econômica da costa, e no fim do século XVIII já respondia por <b>90% da pauta de exportações do continente</b>, nos cálculos de Joseph Inikori."
+      }
+    ],
+    "armas_titulo": "O que ia no porão de ida, medido",
+    "armas": [
+      {
+        "rubrica": "Armas de fogo exportadas pelos ingleses para a costa ocidental da África, em todo o período do tráfico",
+        "valor": "20 milhões",
+        "fonte": "Paul E. Lovejoy"
+      },
+      {
+        "rubrica": "Pólvora vendida por ano pela Inglaterra aos chefes africanos, em média, entre 1750 e 1807",
+        "valor": "384 mil quilos",
+        "fonte": "idem"
+      },
+      {
+        "rubrica": "Chumbo, no mesmo período",
+        "valor": "91 mil quilos",
+        "fonte": "idem"
+      },
+      {
+        "rubrica": "Participação das bebidas alcoólicas nas mercadorias entregues pelos negreiros no Golfo de Biafra, meados do século XIX",
+        "valor": "21%",
+        "fonte": "idem"
+      }
+    ],
+    "rediker": "A guerra era um eufemismo para o roubo e a captura organizada de seres humanos. Em geral, começavam quando um navio negreiro aparecia no horizonte, o que levava os fornecedores locais a seguir imediatamente para o interior do continente em busca da carga humana, que o comprador pagaria com armas e munições.",
+    "rediker_autor": "Marcus Rediker, historiador",
+    "geografia": "O tráfico <b>mudou a geografia da África</b>. À medida que a demanda crescia, a fronteira de guerra avançava para o interior; Estados menores sucumbiam e novos Estados poderosos e centralizados surgiam, armados pelos europeus, como intermediários no fornecimento: os Reinos Axante e Fanti em Gana, Aladá no Benim, Oió na Nigéria, Daomé entre os dois, Cassanje e Matamba em Angola. Entre 1650 e 1700, no Golfo da Guiné, o número de escravos embarcados <b>sextuplicou</b>.",
+    "aliada": "A capital do Reino de Aladá tinha entre 19 e 25 quilômetros de circunferência e cerca de 30 mil habitantes. O rei vivia recluso num palácio de dois andares — e <b>falava fluentemente português</b>, o idioma comercial predominante ao longo do litoral africano.",
+    "numeros_titulo": "O que ficou na África",
+    "numeros": [
+      {
+        "rubrica": "Parcela dos africanos escravizados que <b>não</b> saiu do continente",
+        "valor": "55%",
+        "fonte": "Paul E. Lovejoy",
+        "detalhe": "apenas 45% foram vendidos ou embarcados para fora; no total, mais de 30 milhões de pessoas escravizadas, contando as que ficaram e as que partiram"
+      },
+      {
+        "rubrica": "Escravos na África no século XVIII, auge do tráfico atlântico",
+        "valor": "3 a 5 milhões",
+        "fonte": "—",
+        "detalhe": "tantos quantos nas Américas"
+      },
+      {
+        "rubrica": "Escravos na África por volta de 1850",
+        "valor": "cerca de 10 milhões",
+        "fonte": "Herbert Klein",
+        "detalhe": "mais do que em toda a América — o fim do tráfico atlântico não significou o fim da escravidão africana"
+      },
+      {
+        "rubrica": "Perda demográfica da África em três séculos",
+        "valor": "22 milhões",
+        "fonte": "Patrick Manning",
+        "detalhe": "a África tropical era 30% da soma de América, Europa e Oriente Médio em 1600; caiu para 20% em 1800 e 10% em 1900"
+      },
+      {
+        "rubrica": "Proporção de mulheres para cada homem adulto em Angola, censo português de 1777-1778",
+        "valor": "duas",
+        "fonte": "—",
+        "detalhe": "dois terços dos embarcados eram homens; no Brasil ocorria o oposto. As mulheres que sobravam na África faltavam na América"
+      }
+    ],
+    "mbokolo": "Nenhum continente conheceu, durante um período tão longo, uma sangria tão contínua e tão sistemática como o africano.",
+    "mbokolo_autor": "Elikia M'Bokolo, historiador congolês",
+    "peonagem": "Nem toda escravidão africana era a mesma coisa. Havia a <b>peonagem</b>: pessoas em dificuldade se ofereciam como peões, escravos temporários, em troca de abrigo e apoio material, e a liberdade seria resgatada com o pagamento da dívida. Se não fosse, o peão podia virar escravo pelo resto da vida — mas raramente era vendido a terceiros, e <b>seus filhos nasciam livres</b>. Havia também o cativeiro judicial: condenados por roubo, adultério ou feitiçaria. Nas palavras de G. Ugo Nwokeji, «por que matar um criminoso condenado se era possível fazer dinheiro vendendo-o como escravo?». Em meados do século XIX, o linguista Sigmund Koelle calculou que <b>75%</b> de todos os cativos libertados por navios britânicos tinham sido escravizados por guerra, sequestro ou condenação criminal.",
+    "desterro": "A escravidão funcionava, assim, como desterro político.",
+    "desterro_autor": "Alberto da Costa e Silva, sobre os candidatos derrotados nas disputas sucessórias africanas",
+    "terra": "E havia uma diferença de fundo. Na Europa, o poder se media pela posse da <b>terra</b>. Na África, o bem escasso era o <b>trabalho</b>: o solo era um bem grupal, que valia pelo que nele se fizesse. Costa e Silva: «Se, na Europa, como primeiro passo para ser admitido na aristocracia, o burguês rico devia tornar-se proprietário de terras, na África, as portas das classes dominantes eram abertas pelo plantel de escravos».",
+    "reconciliacao_titulo": "A reconciliação",
+    "reconciliacao": "Em 2013, 150 afrodescendentes brasileiros fizeram um teste genético para descobrir de que povos africanos vinham. Cinco foram levados às regiões de origem. O arquiteto baiano <b>Zulu Araújo</b>, que se julgava iorubá, descobriu-se ticar, de uma pequena comunidade no interior de Camarões. Diante do trono do rei ticar Gah Ibrahim, em Bankim, fez a pergunta que ninguém fazia: <i>«como é que nós, que somos da etnia ticar, fomos parar no Brasil?»</i>. Houve silêncio na sala; o tradutor conferiu duas vezes; o rei pediu para responder no dia seguinte. E respondeu: «Naquele tempo, o chefe do povo tinha autoridade sobre a vida de qualquer pessoa. Quando alguém cometia algum crime ou era considerado adúltero, podia ser vendido. Os homens brancos já estavam aqui. É por isso que eu peço que haja uma reconciliação entre nós. Pedimos perdão por tudo o que aconteceu, porque o que os nossos ancestrais fizeram, o fizeram por ignorância».",
+    "araujo": "Sempre tive a consciência de que um dos maiores crimes contra a população negra não foi nem a tortura, nem a violência: foi retirar a possibilidade de que conhecêssemos nossas origens. Se qualquer pessoa me perguntar de onde sou, agora já sei responder. Só quem é negro pode entender a dimensão que isso possui. Enquanto não superarmos a escravidão, não teremos paz — nem os escravizados, nem os escravizadores.",
+    "araujo_autor": "Zulu Araújo, arquiteto, ex-presidente da Fundação Palmares",
+    "pagina": "121-137"
+  },
+  "bibliografia": {
+    "nota": "Autores que entram na carta com a leitura dos dezenove capítulos restantes. Todos são citados por Gomes no corpo do texto e constam das notas e da bibliografia do volume I (p. 366-457); nenhum foi consultado diretamente por mim.",
+    "itens": [
+      {
+        "autor": "MILLER, Joseph C.",
+        "obra": "Way of Death: Merchant Capitalism and the Angolan Slave Trade, 1730-1830",
+        "uso": "a cascata de mortalidade da Figura III e a frente de captura da Carta V"
+      },
+      {
+        "autor": "PATTERSON, Orlando",
+        "obra": "Slavery and Social Death",
+        "uso": "a definição de morte social e as oito maneiras de produzir um escravo"
+      },
+      {
+        "autor": "LOVEJOY, Paul E.",
+        "obra": "Transformations in Slavery: a History of Slavery in Africa",
+        "uso": "as sete características do cativeiro, os 45% que saíram do continente e as armas de fogo"
+      },
+      {
+        "autor": "DAVIS, David Brion",
+        "obra": "The Problem of Slavery in Western Culture",
+        "uso": "a contradição insolúvel entre as leis civis e as eclesiásticas"
+      },
+      {
+        "autor": "SAUNDERS, A. C. de C. M.",
+        "obra": "A Social History of Black Slaves and Freedmen in Portugal, 1441-1555",
+        "uso": "os números da escravidão em Portugal"
+      },
+      {
+        "autor": "NEWITT, Malyn",
+        "obra": "A History of Portuguese Overseas Expansion",
+        "uso": "a desmontagem de dom Henrique, o Navegador"
+      },
+      {
+        "autor": "CALDEIRA, Jorge",
+        "obra": "História da riqueza no Brasil",
+        "uso": "a Ordem de Cristo como herdeira dos templários e o regime de sigilo"
+      },
+      {
+        "autor": "COSTA E SILVA, Alberto da",
+        "obra": "A manilha e o libambo: a África e a escravidão de 1500 a 1700; Um rio chamado Atlântico",
+        "uso": "as notas de rodapé deste próprio volume, a peonagem, o desterro político e o Congo"
+      },
+      {
+        "autor": "MANNING, Patrick",
+        "obra": "Slavery and African Life",
+        "uso": "a perda de 22 milhões de habitantes em três séculos"
+      },
+      {
+        "autor": "INIKORI, Joseph",
+        "obra": "estudos sobre o comércio africano",
+        "uso": "os 90% da pauta de exportações do continente no fim do século XVIII"
+      },
+      {
+        "autor": "RUSSELL-WOOD, John",
+        "obra": "Histórias do Atlântico português",
+        "uso": "«um exercício de desilusão mútua» sobre o Congo"
+      },
+      {
+        "autor": "MELLO, Evaldo Cabral de",
+        "obra": "estudos sobre o Brasil holandês",
+        "uso": "a compra do Nordeste e a última prestação, em 1711"
+      },
+      {
+        "autor": "VAINFAS, Ronaldo",
+        "obra": "Ideologia e escravidão",
+        "uso": "a «moral cristã da escravidão» e o «projeto escravista dos religiosos»"
+      },
+      {
+        "autor": "FRANÇA, Jean Marcel Carvalho; FERREIRA, Ricardo Alexandre",
+        "obra": "Três vezes Zumbi: a construção de um herói brasileiro",
+        "uso": "os três Zumbis e a ficção biográfica"
+      },
+      {
+        "autor": "FERREIRA, Roquinaldo",
+        "obra": "Cross-Cultural Exchange in the Atlantic World: Angola and Brazil",
+        "uso": "os jesuítas como maiores proprietários de escravos em Angola e o vaivém de governadores"
+      },
+      {
+        "autor": "CANDIDO, Mariana",
+        "obra": "An African Slaving Port and the Atlantic World: Benguela",
+        "uso": "os administradores de Benguela vindos do Brasil"
+      },
+      {
+        "autor": "BENCI, Jorge",
+        "obra": "Economia cristã dos senhores no governo dos escravos [1705]",
+        "uso": "o manual da moral escravista e a maldição de Cam"
+      },
+      {
+        "autor": "STADEN, Hans",
+        "obra": "Duas viagens ao Brasil [1557]",
+        "uso": "a descrição dos tupinambás"
+      },
+      {
+        "autor": "GANDAVO, Pero de Magalhães",
+        "obra": "História da Província de Santa Cruz [1576]",
+        "uso": "os índios como «a principal fazenda da terra» e a venda entre capitanias"
+      },
+      {
+        "autor": "SALVADOR, frei Vicente do",
+        "obra": "História do Brasil [1627]",
+        "uso": "os portugueses «arranhando ao longo do mar, como caranguejos»"
+      }
+    ]
+  }
+}

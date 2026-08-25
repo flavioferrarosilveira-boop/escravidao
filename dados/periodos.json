@@ -102,16 +102,58 @@
   ],
   "marcos": [
     {
+      "ano": 1291,
+      "texto": "Os irmãos genoveses Vivaldi cruzam o cabo Bojador em busca de um caminho para a Índia e desaparecem para sempre",
+      "fonte": "Gomes I",
+      "pagina": "71-72"
+    },
+    {
+      "ano": 1307,
+      "texto": "Filipe, o Belo, manda invadir as sedes dos templários na França; dez anos depois, dom Dinis os acolhe em Portugal, onde renascem como Ordem de Cristo",
+      "fonte": "Gomes I",
+      "pagina": "76-77"
+    },
+    {
       "ano": 1324,
       "texto": "Mansa Musa, rei do Mali, peregrina a Meca esbanjando mais de uma tonelada de ouro e vendendo 4 mil escravizados só no Cairo",
       "fonte": "Gomes I",
       "pagina": "106-107"
     },
     {
+      "ano": 1434,
+      "texto": "Gil Eanes vence o cabo Bojador ao descobrir a volta do mar: afastar-se da costa e retornar por um semicírculo no Atlântico",
+      "fonte": "Gomes I",
+      "pagina": "72"
+    },
+    {
+      "ano": 1441,
+      "texto": "Antão Gonçalves e Nuno Tristão fazem, no cabo Branco, as primeiras capturas de africanos registradas na história do tráfico atlântico — doze pessoas",
+      "fonte": "Gomes I",
+      "pagina": "45-46"
+    },
+    {
       "ano": 1444,
       "texto": "Primeiro leilão documentado de africanos escravizados em Portugal, diante do infante dom Henrique, na vila de Lagos, no Algarve",
       "fonte": "Gomes I",
       "pagina": "7"
+    },
+    {
+      "ano": 1445,
+      "texto": "Feitoria de Arguim, na atual Mauritânia, primeiro entreposto do comércio de cativos na costa africana. No mesmo ano, João Fernandes se torna o primeiro lançado",
+      "fonte": "Gomes I",
+      "pagina": "44"
+    },
+    {
+      "ano": 1446,
+      "texto": "Emboscada mata Nuno Tristão e outros vinte homens; dois anos depois, os portugueses trocam a razia pela compra de cativos aos mercadores africanos",
+      "fonte": "Gomes I",
+      "pagina": "47"
+    },
+    {
+      "ano": 1452,
+      "texto": "Bula Dum diversas: o papa Nicolau V autoriza o rei de Portugal a subjugar e escravizar «inimigos de Cristo» e a tomar-lhes as terras em perpetuidade",
+      "fonte": "Gomes I",
+      "pagina": "282"
     },
     {
       "ano": 1455,
@@ -124,6 +166,24 @@
       "texto": "Portugueses chegam a Cabo Verde, até então desabitado",
       "fonte": "Gomes I",
       "pagina": "7"
+    },
+    {
+      "ano": 1462,
+      "texto": "Ribeira Grande, em Cabo Verde, é a primeira aglomeração urbana construída por europeus nos trópicos, e o primeiro grande entreposto do tráfico",
+      "fonte": "Gomes I",
+      "pagina": "138"
+    },
+    {
+      "ano": 1466,
+      "texto": "O rei Afonso V concede aos moradores de Cabo Verde o livre comércio na Guiné — ou seja, autorização para traficar",
+      "fonte": "Gomes I",
+      "pagina": "140-141"
+    },
+    {
+      "ano": 1469,
+      "texto": "O cristão-novo Fernão Gomes arremata o primeiro contrato do tráfico de escravos da Guiné leiloado pela Coroa portuguesa",
+      "fonte": "Gomes I",
+      "pagina": "86"
     },
     {
       "ano": 1471,
@@ -148,6 +208,24 @@
       "pagina": "7"
     },
     {
+      "ano": 1486,
+      "texto": "João Afonso de Aveiro sobe o rio Benim, rebatizado «Rio dos Escravos». Funda-se em Lisboa a Casa dos Escravos",
+      "fonte": "Gomes I",
+      "pagina": "82"
+    },
+    {
+      "ano": 1491,
+      "texto": "Os jesuítas erguem em M'banza-Congo a primeira igreja católica de toda a África Subsaariana; o manicongo é batizado como dom João I",
+      "fonte": "Gomes I",
+      "pagina": "152"
+    },
+    {
+      "ano": 1493,
+      "texto": "Colombo despacha índios taino de Santo Domingo para Sevilha: a primeira carga de escravos a cruzar o Atlântico vai da América para a Europa",
+      "fonte": "Gomes I",
+      "pagina": "84"
+    },
+    {
       "ano": 1494,
       "texto": "Tratado de Tordesilhas: Portugal e Espanha repartem o mundo entre si",
       "fonte": "Gomes I",
@@ -166,16 +244,46 @@
       "pagina": "8, 203"
     },
     {
+      "ano": 1510,
+      "texto": "Decreto de Valladolid: o rei Fernando autoriza o envio de cinquenta escravos a Hispaniola «em benefício das minas» — o início oficial do tráfico para as Américas",
+      "fonte": "Gomes I",
+      "pagina": "85"
+    },
+    {
+      "ano": 1511,
+      "texto": "A nau Bretoa chega a Portugal com papagaios, pau-brasil e 35 índios cativos: o Brasil entra na rota do tráfico pela mão contrária",
+      "fonte": "Gomes I",
+      "pagina": "84"
+    },
+    {
       "ano": 1518,
       "texto": "Carlos I autoriza o transporte de 4 mil escravizados à América em sete anos — o primeiro grande contrato",
       "fonte": "Gomes I",
       "pagina": "204"
     },
     {
+      "ano": 1526,
+      "texto": "Dom Afonso I do Congo escreve ao rei de Portugal pedindo o fim do tráfico em seu reino. A resposta demorou dez anos e foi não",
+      "fonte": "Gomes I",
+      "pagina": "159-160"
+    },
+    {
       "ano": 1535,
       "texto": "Notícia da chegada dos primeiros africanos escravizados ao Brasil; engenhos começam a funcionar em Pernambuco",
       "fonte": "Gomes I",
       "pagina": "8"
+    },
+    {
+      "ano": 1545,
+      "texto": "A capitania de São Vicente já tem cerca de 3 mil nativos escravizados em seis engenhos",
+      "fonte": "Gomes I",
+      "pagina": "96"
+    },
+    {
+      "ano": 1553,
+      "texto": "A Companhia de Jesus de Angola justifica pagar dívidas em pessoas: os escravos são ali a moeda corrente, como o ouro na Europa e o açúcar no Brasil",
+      "fonte": "Gomes I",
+      "pagina": "285"
     },
     {
       "ano": 1560,
@@ -196,6 +304,12 @@
       "pagina": "187"
     },
     {
+      "ano": 1570,
+      "texto": "A Coroa declara os indígenas súditos do rei e proíbe escravizá-los — com exceções que, na prática, anulam a lei",
+      "fonte": "Gomes I",
+      "pagina": "103"
+    },
+    {
       "ano": 1571,
       "texto": "Angola é entregue a Paulo Dias de Novais como Capitania Hereditária",
       "fonte": "Gomes I",
@@ -214,16 +328,58 @@
       "pagina": "166"
     },
     {
+      "ano": 1595,
+      "texto": "Em São Tomé, 2,5 mil escravizados sob a liderança de Amador se levantam contra os colonos; cinco de seus chefes são enforcados e esquartejados",
+      "fonte": "Gomes I",
+      "pagina": "143-144"
+    },
+    {
+      "ano": 1609,
+      "texto": "Alvará de Filipe II declara livres todos os gentios do Brasil; a revolta dos moradores da Bahia faz a Coroa recuar e criar a «guerra justa»",
+      "fonte": "Gomes I",
+      "pagina": "103"
+    },
+    {
+      "ano": 1611,
+      "texto": "O reitor do colégio jesuíta de Luanda escreve que o tráfico nunca lhe pareceu ilícito: «na América, todo escrúpulo é fora de propósito»",
+      "fonte": "Gomes I",
+      "pagina": "285"
+    },
+    {
+      "ano": 1616,
+      "texto": "Antônio Fernandes Elvas acumula três concessões de tráfico ao mesmo tempo e transporta 37 mil pessoas em nove anos",
+      "fonte": "Gomes I",
+      "pagina": "146-147"
+    },
+    {
       "ano": 1618,
       "texto": "Os portugueses chegam às supostas minas de prata do interior de Angola e encontram chumbo. A partir daí todo o esforço se volta ao tráfico",
       "fonte": "Gomes I",
       "pagina": "170"
     },
     {
+      "ano": 1620,
+      "texto": "O governador de Angola premia o vencedor de um concurso de poesia religiosa com uma «peça da Índia» — um africano adulto e saudável",
+      "fonte": "Gomes I",
+      "pagina": "285-286"
+    },
+    {
       "ano": 1624,
       "texto": "Jinga toma o trono do Reino do Andongo e inicia quase quarenta anos de guerrilha contra Portugal, atacando os comboios de cativos",
       "fonte": "Gomes I",
       "pagina": "327"
+    },
+    {
+      "ano": 1625,
+      "texto": "Quatrocentos e cinquenta holandeses são degolados ao pé de São Jorge da Mina por cinquenta portugueses e novecentos guerreiros africanos",
+      "fonte": "Gomes I",
+      "pagina": "300"
+    },
+    {
+      "ano": 1628,
+      "texto": "A bandeira de Raposo Tavares parte de São Paulo e aprisiona, em dois anos, entre 40 mil e 60 mil guaranis do Guairá",
+      "fonte": "Gomes I",
+      "pagina": "99"
     },
     {
       "ano": 1630,
@@ -234,6 +390,12 @@
     {
       "ano": 1637,
       "texto": "Holandeses tomam São Jorge da Mina (Elmina)"
+    },
+    {
+      "ano": 1638,
+      "texto": "Maurício de Nassau relata a Haia que sem negros «nada de proveitoso se pode fazer no Brasil»",
+      "fonte": "Gomes I",
+      "pagina": "300"
     },
     {
       "ano": 1641,
@@ -296,10 +458,22 @@
       "pagina": "9"
     },
     {
+      "ano": 1670,
+      "texto": "Batalha de Kitombo: o conde do Soyo mata quinhentos portugueses e guerreiros nativos; o socorro vem de Pernambuco",
+      "fonte": "Gomes I",
+      "pagina": "313"
+    },
+    {
       "ano": 1672,
       "texto": "O Rio de Janeiro tem 4 mil habitantes brancos e 20 mil africanos",
       "fonte": "Gomes I",
       "pagina": "9"
+    },
+    {
+      "ano": 1675,
+      "texto": "O bandeirante Domingos Jorge Velho abre o caminho que liga São Paulo e Minas Gerais",
+      "fonte": "Gomes I",
+      "pagina": "10"
     },
     {
       "ano": 1681,
@@ -330,6 +504,18 @@
       "texto": "A população total do Brasil é estimada em 300 mil habitantes; 85% de todas as viagens negreiras da história ainda estão por vir",
       "fonte": "Gomes I",
       "pagina": "10, 204"
+    },
+    {
+      "ano": 1705,
+      "texto": "Sai em Roma a Economia cristã dos senhores no governo dos escravos, do jesuíta Jorge Benci, manual da moral escravista",
+      "fonte": "Gomes I",
+      "pagina": "280"
+    },
+    {
+      "ano": 1711,
+      "texto": "Publicado e imediatamente proibido o Cultura e opulência do Brasil, de Antonil; sobrevivem sete cópias. No mesmo ano Portugal paga a última prestação da compra do Nordeste aos holandeses",
+      "fonte": "Gomes I",
+      "pagina": "272 e 304"
     },
     {
       "ano": 1713,

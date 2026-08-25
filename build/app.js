@@ -996,6 +996,17 @@ function tabela(destino, colunas, linhas) {
     correntes equatoriais: um navio de Liverpool não cruzava o Atlântico em linha reta, descia até a
     costa africana, atravessava com o alísio de nordeste e voltava pelo norte com os ventos de oeste
     e a Corrente do Golfo. As curvas do mapa são esquemáticas, mas a lógica é a real.</p>
+    <h3>O que a segunda leitura acrescentou</h3>
+    <p>Numa primeira etapa foram lidos onze capítulos do volume I. Depois, os
+    <b>dezenove restantes</b> — 1 a 8, 10 a 13, 21, 22, 24 a 26, 29 e 30 —, que deram origem à aba
+    <b>As Origens</b>, à <b>Carta V</b>, à <b>Figura III</b> e a quinze quadros novos espalhados
+    pelas outras abas. Os autores abaixo entram na carta por essa leitura. Todos são citados por
+    Gomes no corpo do texto e constam das notas e da bibliografia do volume I;
+    <b>nenhum foi consultado diretamente</b> — o que a carta atribui a eles, atribui através dele.</p>
+    <div class="rolagem"><table><thead><tr><th>Autor</th><th>Obra</th><th>Onde entra nesta carta</th></tr></thead>
+    <tbody>${D.origens.bibliografia.itens.map((b) => `<tr><td><b>${b.autor}</b></td>
+      <td><i>${b.obra}</i></td><td>${b.uso}</td></tr>`).join('')}</tbody></table></div>
+
     <h3>Fontes externas ao livro</h3>
     <p>Duas coisas que a carta mostra estão <b>fora</b> do volume I de Gomes, que termina em 1695:
     o censo de 1872 (Carta III) e o tráfico por dentro do Brasil (Carta IV). Procurei nas 457
@@ -1512,6 +1523,601 @@ function montarMapaBrasil() {
 
 
 
+
+// =====================================================================
+//  ABA "AS ORIGENS"
+// =====================================================================
+const O = D.origens;
+const citeO = (p) => `<span class="cite">Gomes I, p. ${p}</span>`;
+
+// --- Carta V: as outras rotas e a frente de captura
+let origMontado = false;
+function montarMapaOrigens() {
+  if (origMontado) return;
+  origMontado = true;
+  const C = O.carta;
+
+  // A África inteira num quadro próprio: 18 px por grau.
+  const KO = 18;
+  const projO = (lon, lat) => [(lon - LON_MIN) * KO, (mercY(lat) - Y0) * KO];
+  const caminhoO = (anel) => {
+    let d = '';
+    for (let i = 0; i < anel.length; i++) {
+      const [x, y] = projO(anel[i][0], anel[i][1]);
+      d += (i ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1);
+    }
+    return d + 'Z';
+  };
+
+  const svg = html('mapa-origens');
+  const [bx0] = projO(-27, 0), [bx1] = projO(56, 0);
+  const [, by0] = projO(0, 41), [, by1] = projO(0, -36);
+  svg.setAttribute('viewBox', `${bx0.toFixed(0)} ${by0.toFixed(0)} ${(bx1 - bx0).toFixed(0)} ${(by1 - by0).toFixed(0)}`);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  el('rect', { x: bx0, y: by0, width: bx1 - bx0, height: by1 - by0, fill: 'var(--mar)' }, svg);
+  const gT = el('g', { class: 'terra' }, svg);
+  for (const anel of D.geo.litoral) el('path', { d: caminhoO(anel) }, gT);
+  const gF = el('g', null, svg);   // frente de captura
+  const gR = el('g', null, svg);   // rotas
+  const gP = el('g', null, svg);   // pontos
+  const gLL = el('g', null, svg);  // fios de chamada
+  const gL = el('g', null, svg);   // rótulos
+  const gE = el('g', null, svg);   // legenda
+
+  const LUG = {}; for (const l of C.lugares) LUG[l.id] = l;
+  const SIS = {}; for (const s of C.sistemas) SIS[s.id] = s;
+
+  const dica = html('dica-origens'), palco = html('palco-origens');
+  palco.addEventListener('pointerleave', () => dica.classList.remove('visivel'));
+  const mostrar = (e, conteudo) => {
+    dica.innerHTML = conteudo;
+    dica.classList.add('visivel');
+    const cx = palco.getBoundingClientRect();
+    let px = e.clientX - cx.left + 16, py = e.clientY - cx.top + 16;
+    if (px + dica.offsetWidth > cx.width - 8) px = e.clientX - cx.left - dica.offsetWidth - 16;
+    if (py + dica.offsetHeight > cx.height - 8) py = Math.max(8, e.clientY - cx.top - dica.offsetHeight - 16);
+    dica.style.left = px + 'px'; dica.style.top = py + 'px';
+  };
+
+  const camadas = { rotas: true, frente: true };
+  let rotulos = [];
+
+  // A frente de captura: linhas paralelas à costa, deslocadas para o interior
+  // pelas distâncias que o livro dá. São esquemáticas, e a carta diz isso.
+  function desenharFrente() {
+    const GRAU = 111;  // km por grau, aproximação corrente
+    for (const f of C.frente.faixas) {
+      const dg = f.km / GRAU;
+      for (const [costa, sinal] of [[C.frente.costa_atlantica, 1], [C.frente.costa_indica, -1]]) {
+        const pts = costa.map(([lo, la]) => projO(lo + sinal * dg, la));
+        let d = `M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+        for (let i = 1; i < pts.length - 1; i++) {
+          const mx = (pts[i][0] + pts[i + 1][0]) / 2, my = (pts[i][1] + pts[i + 1][1]) / 2;
+          d += `Q${pts[i][0].toFixed(1)},${pts[i][1].toFixed(1)} ${mx.toFixed(1)},${my.toFixed(1)}`;
+        }
+        d += `L${pts[pts.length - 1][0].toFixed(1)},${pts[pts.length - 1][1].toFixed(1)}`;
+        const p = el('path', { d, fill: 'none', stroke: f.cor, 'stroke-width': 3,
+          'stroke-dasharray': '2 7', 'stroke-linecap': 'round', opacity: .85 }, gF);
+        const conteudo = `<h4>A frente de captura</h4>
+          <dl><dt>Quando</dt><dd>${f.quando}</dd><dt>Distância do litoral</dt><dd>${num(f.km)} km</dd></dl>
+          <div class="nota">${f.rotulo}. Linha esquemática: o livro dá a distância, não o traçado.</div>`;
+        p.addEventListener('pointermove', (e) => mostrar(e, conteudo));
+        p.addEventListener('pointerleave', () => dica.classList.remove('visivel'));
+        el('path', { d, class: 'rota-toque' }, gF)
+          .addEventListener('pointermove', (e) => mostrar(e, conteudo));
+        if (sinal === 1) {
+          const i = C.frente.faixas.indexOf(f);
+          const [tx, ty] = projO(C.frente.costa_atlantica[0][0] + dg, C.frente.costa_atlantica[0][1] + 1.4);
+          texto(f.rotulo, { x: tx, y: ty - i * 22, class: 'rotulo', 'font-size': 13,
+            'text-anchor': 'middle', fill: f.cor, 'font-style': 'italic' }, gF);
+        }
+      }
+    }
+  }
+
+  function desenharRotas() {
+    for (const r of C.rotas) {
+      const a = LUG[r.de], b = LUG[r.para]; if (!a || !b) continue;
+      const s = SIS[r.sistema] || SIS.saara;
+      const [x1, y1] = projO(a.lon, a.lat), [x2, y2] = projO(b.lon, b.lat);
+      const dx = x2 - x1, dy = y2 - y1, comp = Math.hypot(dx, dy) || 1;
+      let nx = -dy / comp, ny = dx / comp;
+      if (ny > 0) { nx = -nx; ny = -ny; }          // arqueia sempre para o norte
+      const mag = Math.min(90, comp * 0.14);
+      const cx = (x1 + x2) / 2 + nx * mag, cy = (y1 + y2) / 2 + ny * mag;
+      const d = `M${x1.toFixed(1)},${y1.toFixed(1)}Q${cx.toFixed(1)},${cy.toFixed(1)} ${x2.toFixed(1)},${y2.toFixed(1)}`;
+      const w = 1.4 + r.peso * 1.3;
+      el('path', { d, fill: 'none', stroke: 'var(--papel)', 'stroke-width': w + 2.6,
+        'stroke-linecap': 'round', opacity: .45 }, gR);
+      const p = el('path', { d, class: 'rota-int', stroke: s.cor, 'stroke-width': w,
+        'stroke-dasharray': s.dash, opacity: .92 }, gR);
+      // seta
+      const t9 = 0.94, u = 1 - t9;
+      const px2 = u * u * x1 + 2 * u * t9 * cx + t9 * t9 * x2;
+      const py2 = u * u * y1 + 2 * u * t9 * cy + t9 * t9 * y2;
+      const ang = Math.atan2(y2 - py2, x2 - px2);
+      const sz = 4.5 + w * 0.8;
+      el('path', { fill: s.cor, opacity: .95, d:
+        `M${x2.toFixed(1)},${y2.toFixed(1)}` +
+        `L${(x2 - sz * Math.cos(ang - 0.42)).toFixed(1)},${(y2 - sz * Math.sin(ang - 0.42)).toFixed(1)}` +
+        `L${(x2 - sz * Math.cos(ang + 0.42)).toFixed(1)},${(y2 - sz * Math.sin(ang + 0.42)).toFixed(1)}Z` }, gR);
+      const conteudo = `<h4>${a.nome} → ${b.nome}</h4>
+        <dl><dt>Rota</dt><dd>${r.nome}</dd><dt>Sistema</dt><dd>${s.nome}</dd></dl>
+        ${r.nota ? `<div class="nota">${r.nota}</div>` : ''}`;
+      for (const alvo of [p, el('path', { d, class: 'rota-toque' }, gR)]) {
+        alvo.addEventListener('pointermove', (e) => mostrar(e, conteudo));
+        alvo.addEventListener('pointerleave', () => dica.classList.remove('visivel'));
+      }
+    }
+  }
+
+  const FORMA = {
+    feitoria: (x, y, g) => { el('circle', { cx: x, cy: y, r: 4.2, fill: 'var(--papel)', class: 'porto' }, g);
+      el('circle', { cx: x, cy: y, r: 1.8, fill: 'var(--tinta)' }, g); },
+    mercado: (x, y, g) => el('path', { d: `M${x},${y - 5}L${x + 5},${y}L${x},${y + 5}L${x - 5},${y}Z`,
+      fill: '#9c6b2f', 'fill-opacity': .85, stroke: 'var(--papel)', 'stroke-width': 1 }, g),
+    interior: (x, y, g) => el('rect', { x: x - 3.8, y: y - 3.8, width: 7.6, height: 7.6,
+      fill: '#7a5a2e', 'fill-opacity': .85, stroke: 'var(--papel)', 'stroke-width': 1 }, g),
+    reino: (x, y, g) => el('path', { d: `M${x},${y - 6}L${x + 5.2},${y + 3}L${x - 5.2},${y + 3}Z`,
+      fill: '#8c2f2f', 'fill-opacity': .85, stroke: 'var(--papel)', 'stroke-width': 1 }, g),
+    ilha: (x, y, g) => { el('circle', { cx: x, cy: y, r: 4.6, fill: '#3f4d7a', 'fill-opacity': .75,
+      stroke: 'var(--papel)', 'stroke-width': 1 }, g); },
+    europa: (x, y, g) => { el('circle', { cx: x, cy: y, r: 4.6, fill: '#3f4d7a', 'fill-opacity': .9,
+      stroke: 'var(--papel)', 'stroke-width': 1.2 }, g); },
+    saida: (x, y, g) => el('path', { d: `M${x - 7},${y}L${x + 7},${y}M${x + 1},${y - 5}L${x + 7},${y}L${x + 1},${y + 5}`,
+      fill: 'none', stroke: '#2f5d66', 'stroke-width': 2 }, g),
+  };
+
+  function desenharPontos() {
+    for (const l of C.lugares) {
+      const [x, y] = projO(l.lon, l.lat);
+      (FORMA[l.tipo] || FORMA.interior)(x, y, gP);
+      const t = texto(l.rotulo || l.nome, { class: 'rotulo porto', 'font-size': 13.5 }, gL);
+      const peso = C.rotas.filter((r) => r.de === l.id || r.para === l.id).reduce((s2, r) => s2 + r.peso, 0);
+      rotulos.push({ t, x, y, peso: peso + (l.tipo === 'saida' ? 9 : 0) });
+    }
+  }
+
+  function legenda() {
+    while (gE.firstChild) gE.removeChild(gE.firstChild);
+    const lx = bx0 + 20, ly = by1 - 276, lw = 344, lh = 258;
+    el('rect', { x: lx, y: ly, width: lw, height: lh, fill: 'var(--papel)',
+      'fill-opacity': .86, stroke: 'var(--terra-borda)', 'stroke-width': .8 }, gE);
+    let yy = ly + 26;
+    for (const s of C.sistemas) {
+      el('line', { x1: lx + 14, y1: yy, x2: lx + 66, y2: yy, stroke: s.cor,
+        'stroke-width': 3.4, 'stroke-dasharray': s.dash, 'stroke-linecap': 'round' }, gE);
+      texto(s.nome, { x: lx + 74, y: yy + 5, class: 'rotulo', 'font-size': 13, stroke: 'none' }, gE);
+      yy += 23;
+    }
+    yy += 8;
+    for (const f of C.frente.faixas) {
+      el('line', { x1: lx + 14, y1: yy, x2: lx + 66, y2: yy, stroke: f.cor,
+        'stroke-width': 3, 'stroke-dasharray': '2 7', 'stroke-linecap': 'round' }, gE);
+      texto(`a frente em ${f.quando}`, { x: lx + 74, y: yy + 5, class: 'rotulo',
+        'font-size': 13, stroke: 'none' }, gE);
+      yy += 23;
+    }
+    return { x: lx - 4, y: ly - 4, w: lw + 8, h: lh + 8 };
+  }
+
+  function descongestionar2(obst) {
+    const ocupados = (obst || []).slice();
+    const colide = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+    const medir = (t) => { const b = t.getBBox(); return { x: b.x - 3, y: b.y - 2, w: b.width + 6, h: b.height + 4 }; };
+    while (gLL.firstChild) gLL.removeChild(gLL.firstChild);
+    for (const it of [...rotulos].sort((a, b) => b.peso - a.peso)) {
+      const op = [
+        [it.x + 9, it.y + 4, 'start'], [it.x - 9, it.y + 4, 'end'],
+        [it.x, it.y - 10, 'middle'], [it.x, it.y + 18, 'middle'],
+        [it.x + 9, it.y - 9, 'start'], [it.x - 9, it.y + 17, 'end'],
+        [it.x + 9, it.y + 17, 'start'], [it.x - 9, it.y - 9, 'end'],
+        [it.x + 9, it.y + 30, 'start'], [it.x - 9, it.y + 30, 'end'],
+        [it.x + 9, it.y - 22, 'start'], [it.x - 9, it.y - 22, 'end'],
+      ];
+      it.t.style.display = '';
+      let posto = false;
+      for (let k = 0; k < op.length; k++) {
+        const [px, py, anc] = op[k];
+        it.t.setAttribute('x', px); it.t.setAttribute('y', py);
+        it.t.setAttribute('text-anchor', anc);
+        const r = medir(it.t);
+        if (ocupados.some((o) => colide(r, o))) continue;
+        ocupados.push(r); posto = true;
+        if (k >= 2) el('line', { x1: it.x, y1: it.y, x2: px, y2: py - 4,
+          stroke: 'var(--tinta-3)', 'stroke-width': .7, opacity: .6 }, gLL);
+        break;
+      }
+      if (!posto) it.t.style.display = 'none';
+    }
+  }
+
+  desenharFrente(); desenharRotas(); desenharPontos();
+  {
+    // O ponto em que as duas ondas quase se encontram é a frase do livro posta no mapa.
+    const [ex, ey] = projO(27.5, -13.0);
+    texto('as duas ondas se encontram aqui', { x: ex, y: ey, class: 'rotulo',
+      'font-size': 13, 'text-anchor': 'middle', 'font-style': 'italic', fill: '#7a1f1f' }, gF);
+    texto('— «a meio caminho entre Luanda e a Ilha de Moçambique» —', { x: ex, y: ey + 19,
+      class: 'rotulo', 'font-size': 12, 'text-anchor': 'middle', 'font-style': 'italic',
+      fill: 'var(--tinta-3)' }, gF);
+  }
+  descongestionar2([legenda()]);
+
+  {
+    const fi = html('fichas-origens');
+    const opcoes = [['rotas', 'As rotas'], ['frente', 'A frente de captura']];
+    const pintar = () => {
+      fi.innerHTML = '';
+      for (const [id, rot] of opcoes) {
+        fi.appendChild(ficha(rot, camadas[id], null, () => {
+          camadas[id] = !camadas[id];
+          gR.style.display = camadas.rotas ? '' : 'none';
+          gF.style.display = camadas.frente ? '' : 'none';
+          pintar();
+        }));
+      }
+    };
+    pintar();
+  }
+}
+
+// --- Figura III: a cadeia da mortalidade
+function desenharMortalidade() {
+  const M = O.mortalidade;
+  const fig = html('fig-mortalidade');
+  const W = 940, H = 78 + M.etapas.length * 62 + 56;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img',
+    'aria-label': 'Cascata da mortalidade em cinco etapas' }, fig);
+  const X0 = 300, LARGB = 560;
+  let vivosMin = 100, vivosMax = 100;
+  texto('de cada 100 pessoas capturadas no interior da África', { x: X0, y: 26,
+    class: 'diag-rot', 'font-size': 15, 'font-style': 'italic', fill: 'var(--tinta-2)' }, svg);
+  el('rect', { x: X0, y: 38, width: LARGB, height: 20, fill: 'var(--tinta)', opacity: .82 }, svg);
+  texto('100', { x: X0 + LARGB + 10, y: 53, class: 'diag-rot', 'font-size': 15,
+    'font-weight': 'bold' }, svg);
+  let y = 78;
+  for (const e of M.etapas) {
+    const perdaMin = vivosMin * e.min / 100, perdaMax = vivosMax * e.max / 100;
+    const novoMin = vivosMin - perdaMin, novoMax = vivosMax - perdaMax;
+    const g = el('g', null, svg);
+    texto(e.rotulo, { x: X0 - 14, y: y + 22, class: 'diag-rot', 'font-size': 14.5,
+      'text-anchor': 'end' }, g);
+    texto(e.min === e.max ? `− ${e.min}%` : `− ${e.min} a ${e.max}%`,
+      { x: X0 - 14, y: y + 40, class: 'diag-rot', 'font-size': 13, 'text-anchor': 'end',
+        fill: 'var(--sangue)' }, g);
+    // barra: sobreviventes (mínimo garantido), faixa incerta, mortos
+    const wMax = LARGB * novoMax / 100, wMin = LARGB * novoMin / 100;
+    el('rect', { x: X0, y: y + 8, width: wMax, height: 26, fill: 'var(--tinta)', opacity: .82 }, g);
+    el('rect', { x: X0 + wMax, y: y + 8, width: wMin - wMax, height: 26,
+      fill: 'var(--tinta)', opacity: .34 }, g);
+    el('rect', { x: X0 + wMin, y: y + 8, width: LARGB - wMin, height: 26,
+      fill: 'var(--sangue)', opacity: .16 }, g);
+    el('rect', { x: X0, y: y + 8, width: LARGB, height: 26, fill: 'none',
+      stroke: 'var(--terra-borda)', 'stroke-width': .7 }, g);
+    texto(`${Math.round(novoMax)} a ${Math.round(novoMin)}`,
+      { x: X0 + LARGB + 10, y: y + 27, class: 'diag-rot', 'font-size': 14.5 }, g);
+    const tt = el('title', null, g); tt.textContent = e.nota;
+    vivosMin = novoMin; vivosMax = novoMax;
+    y += 62;
+  }
+  el('line', { x1: X0, y1: y + 2, x2: X0 + LARGB, y2: y + 2, stroke: 'var(--terra-borda)',
+    'stroke-width': 1 }, svg);
+  texto(`sobrevivem ${Math.round(vivosMax)} a ${Math.round(vivosMin)} de cada 100`,
+    { x: X0, y: y + 28, class: 'diag-rot', 'font-size': 17, 'font-weight': 'bold' }, svg);
+  texto('o livro arredonda para quarenta', { x: X0 + LARGB + 10, y: y + 28,
+    class: 'diag-rot', 'font-size': 13, 'text-anchor': 'end', 'font-style': 'italic',
+    fill: 'var(--tinta-3)' }, svg);
+  const cap = document.createElement('figcaption');
+  cap.innerHTML = 'Cada etapa incide sobre quem sobrou da anterior. A faixa clara é a incerteza '
+    + 'entre o piso e o teto que Joseph Miller dá para cada etapa. ' + citeO(M.pagina);
+  fig.appendChild(cap);
+}
+
+// --- Figura: a substituição do cativo indígena pelo africano
+function desenharSubstituicao() {
+  const S = O.indigena.substituicao;
+  const fig = html('fig-substituicao');
+  const W = 900, H = 60 + S.length * 74 + 30;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img',
+    'aria-label': 'Composição da escravaria do engenho Sergipe do Conde' }, fig);
+  const X0 = 110, LARGB = 640;
+  texto('africanos', { x: X0, y: 26, class: 'diag-rot', 'font-size': 14,
+    fill: 'var(--tinta)' }, svg);
+  texto('indígenas', { x: X0 + LARGB, y: 26, class: 'diag-rot', 'font-size': 14,
+    'text-anchor': 'end', fill: '#7a5a2e' }, svg);
+  let y = 46;
+  for (const linha of S) {
+    const g = el('g', null, svg);
+    texto(String(linha.ano), { x: X0 - 16, y: y + 32, class: 'diag-rot', 'font-size': 19,
+      'text-anchor': 'end', 'font-family': 'var(--fonte-mapa)' }, g);
+    const wa = LARGB * linha.africanos / 100;
+    el('rect', { x: X0, y: y + 10, width: wa, height: 34, fill: 'var(--tinta)', opacity: .82 }, g);
+    el('rect', { x: X0 + wa, y: y + 10, width: LARGB - wa, height: 34, fill: '#7a5a2e', opacity: .5 }, g);
+    if (linha.africanos >= 12) texto(`${linha.africanos}%`, { x: X0 + 10, y: y + 33,
+      class: 'diag-rot', 'font-size': 15, fill: 'var(--papel)' }, g);
+    else texto(`${linha.africanos}%`, { x: X0 + wa + 8, y: y + 33, class: 'diag-rot',
+      'font-size': 15, fill: 'var(--tinta)' }, g);
+    if (linha.indios >= 12) texto(`${linha.indios}%`, { x: X0 + LARGB - 12, y: y + 33,
+      class: 'diag-rot', 'font-size': 15, 'text-anchor': 'end', fill: 'var(--papel)' }, g);
+    y += 74;
+  }
+  const cap = document.createElement('figcaption');
+  cap.innerHTML = 'Engenho Sergipe do Conde, Recôncavo Baiano, da Companhia de Jesus. '
+    + 'Em 64 anos a escravaria trocou inteiramente de origem. ' + citeO(101);
+  fig.appendChild(cap);
+}
+
+// --- a prosa da aba
+{
+  const C = O.carta, M = O.mortalidade;
+  html('epigrafe-origens').innerHTML =
+    `<p>“${O.epigrafe.texto}”</p><footer>${O.epigrafe.autor} ${citeO(O.epigrafe.pagina)}</footer>`;
+  html('abertura-origens').innerHTML = O.abertura;
+
+  html('titulo-origens').textContent = C.titulo;
+  html('intro-origens').innerHTML = C.intro;
+  html('nota-origens').innerHTML = `<b>Como ler as linhas de frente.</b> ${C.nota}`;
+  html('numeros-origens').innerHTML = C.numeros.map((n) => `<div class="numero">
+    <b>${n.valor}</b><span>${n.rubrica} ${citeO(n.pagina)}</span></div>`).join('');
+
+  html('titulo-mortalidade').textContent = M.titulo;
+  html('intro-mortalidade').innerHTML = M.intro;
+  html('verificacao-mortalidade').innerHTML = `<b>Conferência.</b> ${M.verificacao}`;
+  html('totais-mortalidade').innerHTML = M.totais.map((t) => `<div class="numero">
+    <b class="morte">${t.valor}</b><span>${t.rubrica}</span></div>`).join('');
+  html('catorze-mortalidade').innerHTML = M.catorze;
+  html('casos-mortalidade').innerHTML = M.casos.map((c) => `<div class="cartao">
+    <div class="miudo" style="font-family:var(--fonte-mapa);letter-spacing:.14em;
+      text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">${c.rota} · ${c.ano}</div>
+    <h3 style="margin-top:4px;font-style:italic">${c.navio}</h3>
+    <div class="miudo" style="margin-top:8px">${c.texto}</div></div>`).join('');
+  html('tubaroes-mortalidade').innerHTML = M.tubaroes + ' ' + citeO('38-39');
+
+  const A = O.antes;
+  html('titulo-antes').textContent = A.titulo;
+  html('intro-antes').innerHTML = A.intro;
+  html('cartoes-antes').innerHTML = A.itens.map((i) => `<div class="cartao">
+    <h3>${i.titulo}</h3><div class="miudo" style="margin-top:10px">${i.texto} ${citeO(i.pagina)}</div></div>`).join('');
+
+  const F = O.definicao;
+  html('titulo-definicao').textContent = F.titulo;
+  html('listas-definicao').innerHTML = `<div class="cartao"><h3>${F.lovejoy_titulo}</h3>
+      <ol style="margin:12px 0 0;padding-left:20px;font-size:15px;color:var(--tinta-2)">${
+      F.lovejoy.map((x) => `<li style="margin-bottom:7px">${x}</li>`).join('')}</ol></div>
+    <div class="cartao"><h3>${F.patterson_titulo}</h3>
+      <ol style="margin:12px 0 0;padding-left:20px;font-size:15px;color:var(--tinta-2)">${
+      F.patterson.map((x) => `<li style="margin-bottom:7px">${x}</li>`).join('')}</ol></div>`;
+  html('morte-social').innerHTML = F.morte_social + ' ' + citeO(53);
+  html('nomes-definicao').innerHTML = F.nomes + ' ' + citeO('53-54');
+  html('estrangeiro-definicao').innerHTML = F.estrangeiro + ' ' + citeO(54);
+
+  const R = O.racismo;
+  html('titulo-racismo').textContent = R.titulo;
+  html('intro-racismo').innerHTML = R.intro;
+  html('cam-racismo').innerHTML = R.cam + ' ' + citeO('60-61');
+  html('titulo-iluministas').textContent = R.iluministas_titulo;
+  html('cartoes-iluministas').innerHTML = R.iluministas.map((i) => `<div class="cartao">
+    <h3>${i.autor} <span style="font-family:var(--fonte-mapa);color:var(--tinta-3);
+      font-size:16px">${i.ano}</span></h3>
+    <div class="miudo" style="margin-top:10px;font-style:italic">“${i.texto}”</div></div>`).join('');
+  html('fecho-racismo').innerHTML = R.fecho;
+
+  const L = O.leilao;
+  html('titulo-leilao').textContent = L.titulo;
+  html('texto-leilao').innerHTML = L.texto;
+  html('cronista-leilao').innerHTML = L.cronista;
+  html('citacao-leilao').innerHTML = `<p>“${L.citacao}”</p><footer>${L.citacao_autor} ${citeO('41-42')}</footer>`;
+  html('consolo-leilao').innerHTML = L.consolo;
+  html('quem-leilao').innerHTML = L.quem;
+  html('antes-leilao').innerHTML = L.antes + ' ' + citeO('45-46');
+  html('virada-leilao').innerHTML = L.virada + ' ' + citeO('46-47');
+  tabela('tabela-leilao', [{ rotulo: 'O quê' }, { rotulo: 'Quanto', num: true },
+    { rotulo: 'Quando' }, { rotulo: '' }],
+    L.portugal.map((x) => [x.rubrica, `<b>${x.valor}</b>`, x.periodo, citeO(x.pagina)]));
+  html('saunders-leilao').innerHTML = `<p>“${L.saunders}”</p><footer>${L.saunders_autor} ${citeO('44-45')}</footer>`;
+  html('braga-leilao').innerHTML = L.braga + ' ' + citeO(45);
+
+  const P = O.patrono;
+  html('titulo-patrono').textContent = P.titulo;
+  html('intro-patrono').innerHTML = P.intro + ' ' + citeO(70);
+  html('definicao-patrono').innerHTML = `<p>“${P.definicao}”</p><footer>${P.definicao_autor} ${citeO(70)}</footer>`;
+  html('cartoes-patrono').innerHTML = P.itens.map((i) => `<div class="cartao">
+    <h3>${i.titulo}</h3><div class="miudo" style="margin-top:10px">${i.texto} ${citeO(i.pagina)}</div></div>`).join('');
+
+  const R2 = O.mar;
+  html('titulo-mar').textContent = R2.titulo;
+  html('intro-mar').innerHTML = R2.intro;
+  html('bojador-mar').innerHTML = R2.bojador + ' ' + citeO('71-72');
+  html('volta-mar').innerHTML = R2.volta_grande + ' ' + citeO(79);
+  html('titulo-calendario').textContent = R2.calendario_titulo;
+  html('calendario-mar').innerHTML = R2.calendario + ' ' + citeO(79);
+  html('titulo-consequencias').textContent = R2.consequencias_titulo;
+  html('cartoes-mar').innerHTML = R2.consequencias.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="miudo" style="margin-top:10px">${c.texto}</div></div>`).join('');
+  html('thornton-mar').innerHTML = `<p>“${R2.thornton}”</p><footer>${R2.thornton_autor} ${citeO(81)}</footer>`;
+  html('financiadores-mar').innerHTML = R2.financiadores + ' ' + citeO(83);
+  html('primeira-carga-mar').innerHTML = R2.primeira_carga + ' ' + citeO(84);
+  html('sangria-mar').innerHTML = `<b>A escravidão como resposta a um vazio.</b> ${R2.sangria} ${citeO(87)}`;
+
+  const I = O.ilhas;
+  html('titulo-ilhas').textContent = I.titulo;
+  html('intro-ilhas').innerHTML = I.intro;
+  html('cartoes-ilhas').innerHTML = [I.cabo_verde, I.sao_tome].map((c) => `<div class="cartao">
+    <div class="miudo" style="font-family:var(--fonte-mapa);letter-spacing:.2em;
+      text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">desde ${c.quando}</div>
+    <h3 style="margin-top:4px">${c.nome}</h3>
+    <div class="miudo" style="margin-top:10px">${c.texto} ${citeO(c.pagina)}</div></div>`).join('');
+  html('procedimentos-ilhas').innerHTML = I.procedimentos + ' ' + citeO(144);
+  html('bocais-ilhas').innerHTML = I.boçais + ' ' + citeO(139);
+  html('jardim-ilhas').innerHTML = I.jardim + ' ' + citeO(142);
+  html('mandioca-ilhas').innerHTML = I.mandioca + ' ' + citeO('142-143');
+  html('amador-ilhas').innerHTML = `<b>Amador, rei de São Tomé.</b> ${I.amador} ${citeO('143-144')}`;
+  html('assientos-ilhas').innerHTML = I.assientos + ' ' + citeO('145-146');
+  html('preco-ilhas').innerHTML = I.preco + ' ' + citeO(146);
+  html('elvas-ilhas').innerHTML = I.elvas + ' ' + citeO('146-147');
+  html('titulo-lancados').textContent = I.lancados_titulo;
+  html('lancados-ilhas').innerHTML = I.lancados + ' ' + citeO('147-149');
+  html('citacao-lancados').innerHTML = `<p>“${I.lancados_citacao}”</p><footer>${I.lancados_autor} ${citeO(148)}</footer>`;
+  html('cartoes-lancados').innerHTML = I.lancados_itens.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="miudo" style="margin-top:10px">${c.texto}</div></div>`).join('');
+
+  const G = O.congo;
+  html('titulo-congo').textContent = G.titulo;
+  html('intro-congo').innerHTML = G.intro;
+  html('boxer-congo').innerHTML = `<p>“${G.boxer}”</p><footer>${G.boxer_autor} ${citeO(153)}</footer>`;
+  html('cidade-congo').innerHTML = G.cidade + ' ' + citeO(153);
+  html('linha-congo').innerHTML = G.linha.map((m) => `<li><b>${m.ano}</b>
+    <div class="miudo" style="margin-top:5px">${m.texto}</div></li>`).join('');
+  html('cartas-congo').innerHTML = G.cartas + ' ' + citeO('157-158');
+  html('costa-congo').innerHTML = `<p>“${G.costa_silva}”</p><footer>${G.costa_silva_autor} ${citeO(160)}</footer>`;
+  html('irmao-congo').innerHTML = G.irmao + ' ' + citeO(161);
+  html('coroa-congo').innerHTML = G.coroa + ' ' + citeO(162);
+
+  const N = O.indigena;
+  html('titulo-indigena').textContent = N.titulo;
+  html('intro-indigena').innerHTML = N.intro;
+  tabela('tabela-catastrofe', [{ rotulo: 'O quê' }, { rotulo: 'Quanto', num: true }, { rotulo: '' }],
+    N.catastrofe.map((x) => [x.rubrica, `<b>${x.valor}</b>`, x.detalhe]));
+  html('alencastro-indigena').innerHTML = `<p>“${N.alencastro}”</p><footer>${N.alencastro_autor} ${citeO(93)}</footer>`;
+  html('epidemias-indigena').innerHTML = N.epidemias + ' ' + citeO(94);
+  html('bandeiras-indigena').innerHTML = N.bandeiras + ' ' + citeO('99-100');
+  html('guarani-indigena').innerHTML = N.guarani + ' ' + citeO(100);
+  html('titulo-substituicao').textContent = N.substituicao_titulo;
+  html('nota-substituicao').innerHTML = N.substituicao_nota;
+  html('titulo-razoes').textContent = N.razoes_titulo;
+  html('cartoes-razoes').innerHTML = N.razoes.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="miudo" style="margin-top:10px">${c.texto}</div></div>`).join('');
+  html('titulo-lei').textContent = N.lei_titulo;
+  html('lei-indigena').innerHTML = N.lei + ' ' + citeO('102-103');
+  html('cartoes-excecoes').innerHTML = N.excecoes.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="miudo" style="margin-top:10px">${c.texto}</div></div>`).join('');
+  html('vieira-indigena').innerHTML = `<b>E quem defendeu os índios propôs os africanos.</b> ${N.vieira} ${citeO('104-105')}`;
+
+  const J = O.igreja;
+  html('titulo-igreja').textContent = J.titulo;
+  html('epigrafe-igreja').innerHTML = `<p>“${J.epigrafe}”</p><footer>${J.epigrafe_autor} ${citeO(285)}</footer>`;
+  html('intro-igreja').innerHTML = J.intro;
+  html('cartoes-bulas').innerHTML = J.bulas.map((b) => `<div class="cartao">
+    <div class="miudo" style="font-family:var(--fonte-mapa);letter-spacing:.16em;
+      text-transform:uppercase;font-size:12.5px;color:var(--tinta-3)">${b.data} · ${b.papa}</div>
+    <h3 style="margin-top:4px;font-style:italic">${b.nome}</h3>
+    <div class="miudo" style="margin-top:10px">${b.texto}</div></div>`).join('');
+  html('indulgencia-igreja').innerHTML = J.indulgencia + ' ' + citeO(284);
+  html('titulo-proprietarios').textContent = J.proprietarios_titulo;
+  html('cartoes-proprietarios').innerHTML = J.proprietarios.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="miudo" style="margin-top:10px">${c.texto} ${citeO(c.pagina)}</div></div>`).join('');
+  html('loyola-igreja').innerHTML = J.loyola + ' ' + citeO('284-285');
+  html('moeda-igreja').innerHTML = J.moeda + ' ' + citeO(285);
+  html('concurso-igreja').innerHTML = `<b>O prêmio do concurso de poesia.</b> ${J.concurso} ${citeO('285-286')}`;
+  html('vieira-igreja').innerHTML = J.vieira + ' ' + citeO('276-277');
+  html('benci-igreja').innerHTML = J.benci + ' ' + citeO('280-281');
+  html('malta-igreja').innerHTML = J.malta + ' ' + citeO('281-282');
+  html('titulo-sangue').textContent = J.sangue_titulo;
+  html('sangue-igreja').innerHTML = J.sangue + ' ' + citeO('286-287');
+  html('claver-igreja').innerHTML = J.claver + ' ' + citeO('275-276');
+  html('irmandades-igreja').innerHTML = J.irmandades + ' ' + citeO('287-288');
+
+  const K = O.cicatriz;
+  html('titulo-cicatriz').textContent = K.titulo;
+  html('intro-cicatriz').innerHTML = K.intro;
+  html('cartoes-cicatriz').innerHTML = K.passos.map((c) => `<div class="cartao">
+    <h3>${c.titulo}</h3><div class="miudo" style="margin-top:10px">${c.texto}</div></div>`).join('');
+  html('titulo-armas').textContent = K.armas_titulo;
+  tabela('tabela-armas', [{ rotulo: 'O quê' }, { rotulo: 'Quanto', num: true }, { rotulo: 'De quem' }],
+    K.armas.map((x) => [x.rubrica, `<b>${x.valor}</b>`, x.fonte]));
+  html('rediker-cicatriz').innerHTML = `<p>“${K.rediker}”</p><footer>${K.rediker_autor} ${citeO(130)}</footer>`;
+  html('geografia-cicatriz').innerHTML = K.geografia + ' ' + citeO('130-131');
+  html('aliada-cicatriz').innerHTML = K.aliada + ' ' + citeO(131);
+  html('titulo-numeros-cicatriz').textContent = K.numeros_titulo;
+  tabela('tabela-cicatriz', [{ rotulo: 'O quê' }, { rotulo: 'Quanto', num: true },
+    { rotulo: 'De quem' }, { rotulo: '' }],
+    K.numeros.map((x) => [x.rubrica, `<b>${x.valor}</b>`, x.fonte, x.detalhe]));
+  html('mbokolo-cicatriz').innerHTML = `<p>“${K.mbokolo}”</p><footer>${K.mbokolo_autor} ${citeO(132)}</footer>`;
+  html('peonagem-cicatriz').innerHTML = K.peonagem + ' ' + citeO('127-128');
+  html('desterro-cicatriz').innerHTML = `<p>“${K.desterro}”</p><footer>${K.desterro_autor} ${citeO(128)}</footer>`;
+  html('terra-cicatriz').innerHTML = K.terra + ' ' + citeO('125-126');
+  html('titulo-reconciliacao').textContent = K.reconciliacao_titulo;
+  html('reconciliacao-cicatriz').innerHTML = K.reconciliacao + ' ' + citeO('134-136');
+  html('araujo-cicatriz').innerHTML = `<p>“${K.araujo}”</p><footer>${K.araujo_autor} ${citeO('136-137')}</footer>`;
+
+  desenharMortalidade();
+  desenharSubstituicao();
+}
+
+// =====================================================================
+//  O QUE A LEITURA DOS CAPÍTULOS RESTANTES ACRESCENTOU ÀS OUTRAS ABAS
+// =====================================================================
+{
+  const T = D.leituras;
+  const c = citeO;
+
+  const GX = T.guerra_extra;
+  html('titulo-guerra-extra').textContent = GX.titulo;
+  html('intro-guerra-extra').innerHTML = GX.intro;
+  html('cartoes-guerra-extra').innerHTML = GX.itens.map((i) => `<div class="cartao">
+    <h3>${i.titulo}</h3><div class="miudo" style="margin-top:10px">${i.texto} ${c(i.pagina)}</div></div>`).join('');
+  html('titulo-calote').textContent = GX.calote_titulo;
+  html('calote-texto').innerHTML = GX.calote + ' ' + c(GX.calote_pagina);
+  html('titulo-acucar').textContent = GX.acucar_titulo;
+  tabela('tabela-acucar', [{ rotulo: 'Quando' }, { rotulo: 'O quê' }, { rotulo: 'Quanto', num: true }],
+    GX.acucar.map((x) => [`<b>${x.quando}</b>`, x.rubrica, `<b>${x.valor}</b>`]));
+  html('nota-acucar').innerHTML = `<b>O que a guerra custou ao açúcar.</b> ${GX.acucar_nota} ${c(GX.acucar_pagina)}`;
+
+  const PE = T.padre_eterno;
+  html('titulo-padre-eterno').textContent = PE.titulo;
+  html('texto-padre-eterno').innerHTML = PE.texto;
+  html('titanic-padre-eterno').innerHTML = PE.titanic;
+  html('estaleiros-padre-eterno').innerHTML = PE.estaleiros;
+  html('titulo-dono').textContent = PE.dono_titulo;
+  html('dono-padre-eterno').innerHTML = PE.dono;
+  html('titulo-angola-1648').textContent = PE.angola_titulo;
+  html('angola-padre-eterno').innerHTML = PE.angola;
+  html('carnificina-padre-eterno').innerHTML = `<b>E o que veio depois da vitória.</b> ${PE.carnificina}`;
+  html('guardiao-padre-eterno').innerHTML = PE.guardiao;
+  html('fim-padre-eterno').innerHTML = PE.fim + ' ' + c(PE.pagina);
+
+  const CA = T.catarina;
+  html('titulo-catarina').textContent = CA.titulo;
+  html('texto-catarina').innerHTML = CA.texto;
+  html('pai-catarina').innerHTML = `<b>De onde vinha o dinheiro da família.</b> ${CA.pai}`;
+  html('rac-catarina').innerHTML = CA.rac;
+  html('estatua-catarina').innerHTML = CA.estatua;
+  html('cha-catarina').innerHTML = CA.cha + ' ' + c(CA.pagina);
+
+  const IN = T.inferno;
+  html('titulo-inferno').textContent = IN.titulo;
+  html('intro-inferno').innerHTML = IN.intro;
+  html('citacao-inferno').innerHTML = `<p>“${IN.citacao}”</p><footer>${IN.citacao_autor} ${c(IN.pagina)}</footer>`;
+  html('detalhes-inferno').innerHTML = IN.detalhes.map((x) => `<li>${x}</li>`).join('');
+
+  const Z = T.zumbi;
+  html('titulo-zumbi3').textContent = Z.titulo;
+  html('intro-zumbi3').innerHTML = Z.intro;
+  html('cartoes-zumbi3').innerHTML = Z.camadas.map((x) => `<div class="cartao">
+    <h3>${x.titulo}</h3><div class="miudo" style="margin-top:10px">${x.texto}</div></div>`).join('');
+  html('titulo-correcoes').textContent = Z.correcoes_titulo;
+  tabela('tabela-zumbi3', [{ rotulo: 'O quê' }, { rotulo: 'O que se repete' }, { rotulo: 'O que se sustenta' }],
+    Z.correcoes.map((x) => [`<b>${x.item}</b>`, x.errado, x.certo]));
+  html('calendario-zumbi3').innerHTML = Z.calendario + ' ' + c(348);
+  html('fecho-zumbi3').innerHTML = `<b>Uma ressalva sobre a ressalva.</b> ${Z.fecho} ${c(Z.pagina)}`;
+
+  const FM = T.fim_1695;
+  html('titulo-fim1695').textContent = FM.titulo;
+  tabela('tabela-fim1695', [{ rotulo: 'O quê' }, { rotulo: 'Quanto', num: true }, { rotulo: '' }],
+    FM.itens.map((x) => [x.rubrica, `<b>${x.valor}</b>`, x.detalhe]));
+  html('caranguejos-fim1695').innerHTML =
+    `<p>“${FM.caranguejos}”</p><footer>${FM.caranguejos_autor} ${c(360)}</footer>`;
+  html('virada-fim1695').innerHTML = FM.virada + ' ' + c(FM.pagina);
+
+  const AN = T.ancoras_interno;
+  html('ancoras-interno').innerHTML = `<b>Correção — ${AN.titulo}</b> ${AN.intro}
+    <ul style="margin:12px 0 0;padding-left:20px">${AN.itens.map((i) =>
+      `<li style="margin-bottom:9px"><b>${i.quando} · ${i.titulo}.</b> ${i.texto} ${c(i.pagina)}</li>`).join('')}</ul>
+    <p style="margin:12px 0 0">${AN.moncoes} ${c(AN.moncoes_pagina)}</p>`;
+}
+
+
 // =====================================================================
 //  Carta IV: o trafico interno, por dentro do Brasil
 // =====================================================================
@@ -1949,6 +2555,7 @@ function montarMapaInterno() {
 {
   const paineis = {
     trafico: html('painel-trafico'),
+    origens: html('painel-origens'),
     negocio: html('painel-negocio'),
     navio: html('painel-navio'),
     escravidao: html('painel-escravidao'),
@@ -1958,6 +2565,7 @@ function montarMapaInterno() {
     for (const b of botoes) b.setAttribute('aria-selected', String(b.dataset.aba === nome));
     for (const [k, el2] of Object.entries(paineis)) el2.hidden = k !== nome;
     if (nome === 'escravidao') { montarMapaPopulacoes(); montarMapaBrasil(); montarMapaInterno(); }
+    else if (nome === 'origens') { montarMapaOrigens(); }
     else if (prontoParaMedir) { descongestionar(); aplicarCamadas(); }
     if (location.hash !== '#' + nome) history.replaceState(null, '', '#' + nome);
   };
