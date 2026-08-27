@@ -1,0 +1,77 @@
+{
+  "_nota": "Circuitos mercantis por bandeira. As pernas 'ida' e 'retorno' transportavam mercadorias; a perna 'travessia' transportava pessoas escravizadas. O caso português/brasileiro é o mais importante contraexemplo do modelo triangular: o eixo Rio–Luanda e Bahia–Costa da Mina era BILATERAL, armado nos portos do Brasil e pago com cachaça, tabaco e ouro, sem passar pela Europa.",
+  "circuitos": [
+    {
+      "bandeira": "portugal",
+      "modelo": "bilateral (Atlântico Sul) + triangular com Lisboa",
+      "pernas": [
+        { "tipo": "bilateral", "de": [-43.18, -22.9], "para": [13.23, -8.83], "deNome": "Rio de Janeiro", "paraNome": "Luanda e Benguela", "carga": "Gerebita (cachaça), tabaco, fazendas, pólvora, fumo de rolo" },
+        { "tipo": "travessia", "de": [13.23, -8.83], "para": [-43.18, -22.9], "deNome": "Luanda e Benguela", "paraNome": "Rio de Janeiro", "carga": "Pessoas escravizadas" },
+        { "tipo": "bilateral", "de": [-38.51, -12.97], "para": [2.09, 6.36], "deNome": "Bahia", "paraNome": "Ajudá (Costa da Mina)", "carga": "Tabaco de rolo de terceira qualidade, aguardente, ouro" },
+        { "tipo": "travessia", "de": [2.09, 6.36], "para": [-38.51, -12.97], "deNome": "Ajudá", "paraNome": "Bahia", "carga": "Pessoas escravizadas" },
+        { "tipo": "retorno", "de": [-38.51, -12.97], "para": [-9.14, 38.71], "deNome": "Bahia", "paraNome": "Lisboa", "carga": "Açúcar, tabaco, ouro de Minas Gerais, algodão" },
+        { "tipo": "ida", "de": [-9.14, 38.71], "para": [13.23, -8.83], "deNome": "Lisboa", "paraNome": "Luanda", "carga": "Têxteis da Índia, vinho, armas, ferragens" }
+      ]
+    },
+    {
+      "bandeira": "gra_bretanha",
+      "modelo": "triangular clássico",
+      "pernas": [
+        { "tipo": "ida", "de": [-3.0, 53.41], "para": [-1.35, 5.05], "deNome": "Liverpool", "paraNome": "Costa do Ouro", "carga": "Algodões de Manchester e da Índia, armas de fogo de Birmingham, barras de ferro, aguardente, búzios, pólvora" },
+        { "tipo": "ida", "de": [-2.59, 51.45], "para": [7.6, 4.45], "deNome": "Bristol", "paraNome": "Bonny e Calabar", "carga": "Manufaturas, armas, manilhas de cobre" },
+        { "tipo": "travessia", "de": [-1.35, 5.05], "para": [-76.8, 17.99], "deNome": "Costa do Ouro", "paraNome": "Kingston", "carga": "Pessoas escravizadas" },
+        { "tipo": "travessia", "de": [7.6, 4.45], "para": [-59.62, 13.1], "deNome": "Bonny", "paraNome": "Barbados", "carga": "Pessoas escravizadas" },
+        { "tipo": "retorno", "de": [-76.8, 17.99], "para": [-3.0, 53.41], "deNome": "Kingston", "paraNome": "Liverpool", "carga": "Açúcar, rum, melaço, algodão, anil, pimenta" }
+      ]
+    },
+    {
+      "bandeira": "franca",
+      "modelo": "triangular clássico",
+      "pernas": [
+        { "tipo": "ida", "de": [-1.55, 47.22], "para": [2.09, 6.36], "deNome": "Nantes", "paraNome": "Ajudá", "carga": "Indiennes (chitas estampadas), aguardente, armas, quinquilharia" },
+        { "tipo": "ida", "de": [-1.15, 46.16], "para": [-17.4, 14.7], "deNome": "La Rochelle", "paraNome": "Gorée", "carga": "Tecidos, ferro, pólvora" },
+        { "tipo": "travessia", "de": [2.09, 6.36], "para": [-72.2, 19.76], "deNome": "Ajudá", "paraNome": "Cap-Français", "carga": "Pessoas escravizadas" },
+        { "tipo": "travessia", "de": [-17.4, 14.7], "para": [-61.18, 14.74], "deNome": "Gorée", "paraNome": "Martinica", "carga": "Pessoas escravizadas" },
+        { "tipo": "retorno", "de": [-72.2, 19.76], "para": [-1.55, 47.22], "deNome": "Cap-Français", "paraNome": "Nantes", "carga": "Açúcar branco, café, anil, algodão" }
+      ]
+    },
+    {
+      "bandeira": "paises_baixos",
+      "modelo": "triangular com entreposto",
+      "pernas": [
+        { "tipo": "ida", "de": [4.9, 52.37], "para": [-1.35, 5.05], "deNome": "Amsterdã", "paraNome": "Elmina", "carga": "Tecidos de Leiden, armas, aguardente, búzios das Maldivas" },
+        { "tipo": "travessia", "de": [-1.35, 5.05], "para": [-68.93, 12.11], "deNome": "Elmina", "paraNome": "Curaçao", "carga": "Pessoas escravizadas (reexportadas para a Hispano-América)" },
+        { "tipo": "travessia", "de": [-1.35, 5.05], "para": [-55.17, 5.85], "deNome": "Elmina", "paraNome": "Paramaribo", "carga": "Pessoas escravizadas" },
+        { "tipo": "retorno", "de": [-55.17, 5.85], "para": [4.9, 52.37], "deNome": "Suriname", "paraNome": "Amsterdã", "carga": "Açúcar, café, cacau" }
+      ]
+    },
+    {
+      "bandeira": "espanha",
+      "modelo": "asiento (séc. XVI-XVIII) e armação cubana (séc. XIX)",
+      "pernas": [
+        { "tipo": "ida", "de": [-6.29, 36.53], "para": [-17.4, 14.7], "deNome": "Cádis", "paraNome": "Rios da Guiné", "carga": "Licenças de asiento, manufaturas; na prática o transporte era terceirizado" },
+        { "tipo": "travessia", "de": [-17.4, 14.7], "para": [-75.51, 10.39], "deNome": "Senegâmbia", "paraNome": "Cartagena das Índias", "carga": "Pessoas escravizadas" },
+        { "tipo": "travessia", "de": [13.23, -8.83], "para": [-82.36, 23.13], "deNome": "África Centro-Ocidental", "paraNome": "Havana", "carga": "Pessoas escravizadas (auge no séc. XIX, já ilegal)" },
+        { "tipo": "retorno", "de": [-82.36, 23.13], "para": [-6.29, 36.53], "deNome": "Havana", "paraNome": "Cádis", "carga": "Prata, açúcar, tabaco, couros" }
+      ]
+    },
+    {
+      "bandeira": "estados_unidos",
+      "modelo": "triângulo do rum",
+      "pernas": [
+        { "tipo": "ida", "de": [-71.31, 41.49], "para": [-1.35, 5.05], "deNome": "Newport (Rhode Island)", "paraNome": "Costa do Ouro", "carga": "Rum destilado em Rhode Island" },
+        { "tipo": "travessia", "de": [-1.35, 5.05], "para": [-79.93, 32.78], "deNome": "Costa do Ouro", "paraNome": "Charleston", "carga": "Pessoas escravizadas" },
+        { "tipo": "retorno", "de": [-79.93, 32.78], "para": [-71.31, 41.49], "deNome": "Antilhas e Charleston", "paraNome": "Newport", "carga": "Melaço para destilar mais rum, arroz, índigo" }
+      ]
+    },
+    {
+      "bandeira": "dinamarca",
+      "modelo": "triangular clássico",
+      "pernas": [
+        { "tipo": "ida", "de": [12.57, 55.68], "para": [-0.18, 5.55], "deNome": "Copenhague", "paraNome": "Christiansborg (Acra)", "carga": "Armas, aguardente, tecidos" },
+        { "tipo": "travessia", "de": [-0.18, 5.55], "para": [-64.7, 17.75], "deNome": "Christiansborg", "paraNome": "St. Croix", "carga": "Pessoas escravizadas" },
+        { "tipo": "retorno", "de": [-64.7, 17.75], "para": [12.57, 55.68], "deNome": "St. Croix", "paraNome": "Copenhague", "carga": "Açúcar bruto e rum" }
+      ]
+    }
+  ]
+}

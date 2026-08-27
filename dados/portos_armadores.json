@@ -1,0 +1,87 @@
+{
+  "_fonte": "GOMES, Laurentino. Escravidão, vol. I. Globo Livros, 2019, p. 217. Volumes de cativos transportados em navios que saíam ou chegavam a cada localidade onde as viagens eram organizadas — não é o mesmo que porto de embarque ou de desembarque. Fonte primária do autor: slavevoyages.org, consulta de junho de 2019.",
+  "_nota": "Uma em cada três viagens negreiras da história foi organizada no Brasil: Rio de Janeiro 17%, Bahia 15%, Pernambuco 5% (p. 205). Das cerca de 36 mil viagens documentadas, 14.910 tiveram portos brasileiros como destino (p. 203). A partir do século XVIII, nove em cada dez expedições negreiras eram organizadas no Brasil. Numa série de navios atracados em Luanda entre 1736 e 1770, 41% vinham do Rio de Janeiro, 22% de Pernambuco, 22% da Bahia e apenas 15% de Portugal (p. 187).",
+  "portos": [
+    {
+      "nome": "Rio de Janeiro",
+      "pais": "Brasil",
+      "pessoas": 1500000,
+      "lon": -43.18,
+      "lat": -22.9,
+      "potencia": "portugal",
+      "nota": "O maior porto negreiro da história, entre meados do século XVI e 1852."
+    },
+    {
+      "nome": "Salvador",
+      "pais": "Brasil",
+      "pessoas": 1300000,
+      "lon": -38.51,
+      "lat": -12.97,
+      "potencia": "portugal",
+      "nota": "Trocava fumo de rolo do Recôncavo por cativos na Costa da Mina."
+    },
+    {
+      "nome": "Liverpool",
+      "pais": "Grã-Bretanha",
+      "pessoas": 1300000,
+      "lon": -3.0,
+      "lat": 53.41,
+      "potencia": "gra_bretanha",
+      "nota": "Praticamente empatada com Salvador."
+    },
+    {
+      "nome": "Londres",
+      "pais": "Grã-Bretanha",
+      "pessoas": 829000,
+      "lon": -0.1,
+      "lat": 51.5,
+      "potencia": "gra_bretanha",
+      "nota": "Sede da Royal African Company, criada em 1660."
+    },
+    {
+      "nome": "Bristol",
+      "pais": "Grã-Bretanha",
+      "pessoas": 565000,
+      "lon": -2.59,
+      "lat": 51.45,
+      "potencia": "gra_bretanha",
+      "nota": ""
+    },
+    {
+      "nome": "Nantes",
+      "pais": "França",
+      "pessoas": 542000,
+      "lon": -1.55,
+      "lat": 47.22,
+      "potencia": "franca",
+      "nota": "O maior porto negreiro francês."
+    },
+    {
+      "nome": "Recife",
+      "pais": "Brasil",
+      "pessoas": 437000,
+      "lon": -34.88,
+      "lat": -8.05,
+      "potencia": "portugal",
+      "nota": ""
+    },
+    {
+      "nome": "Lisboa",
+      "pais": "Portugal",
+      "pessoas": 333000,
+      "lon": -9.14,
+      "lat": 38.71,
+      "potencia": "portugal",
+      "nota": "Menos que qualquer um dos três portos brasileiros — o tráfico era armado sobretudo na colônia."
+    },
+    {
+      "nome": "Havana",
+      "pais": "Cuba",
+      "pessoas": 250000,
+      "lon": -82.36,
+      "lat": 23.13,
+      "potencia": "espanha",
+      "nota": "Quase todo o volume é do século XIX, com o tráfico já ilegal."
+    }
+  ]
+}

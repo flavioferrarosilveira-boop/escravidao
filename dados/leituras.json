@@ -1,0 +1,222 @@
+{
+  "guerra_extra": {
+    "titulo": "A guerra pelos cativos, por dentro",
+    "intro": "O quadro ao lado conta o desfecho político da guerra luso-holandesa. Os capítulos 24 e 25 contam a mecânica dela — e ela é toda escravista.",
+    "itens": [
+      {
+        "titulo": "1625: o primeiro round",
+        "texto": "Quatrocentos e cinquenta soldados holandeses foram massacrados e degolados nas praias ao pé do Castelo de São Jorge da Mina por uma força de <b>cinquenta portugueses e novecentos guerreiros africanos</b>. Doze anos depois, em 1637, os holandeses tomaram a fortificação — e só sairiam dela em <b>1872</b>, dois séculos e meio mais tarde.",
+        "pagina": 300
+      },
+      {
+        "titulo": "Os intérpretes brasileiros",
+        "texto": "Como o português era o idioma do tráfico em toda a costa africana, os navios holandeses precisavam levar <b>intérpretes brasileiros</b> a bordo para negociar com os fornecedores africanos.",
+        "pagina": 301
+      },
+      {
+        "titulo": "O humanista",
+        "texto": "Maurício de Nassau, o «príncipe humanista», precursor do Iluminismo, endossou de imediato a fórmula portuguesa. Em seu primeiro relatório oficial, em 1638: «Comprar alguns negros, sem os quais nada de proveitoso se pode fazer no Brasil». E: «Necessariamente deve haver escravos no Brasil».",
+        "pagina": 300
+      },
+      {
+        "titulo": "Por que os holandeses perderam",
+        "texto": "Não conseguiram traficar. No primeiro embarque de Luanda, em abril de 1642, despacharam <b>150</b> africanos; cinco meses depois, 405. Nassau contava com 15 mil por ano; a média não passou de 11 mil até 1646, e menos de 6 mil na Costa da Mina. <b>Entre 1600 e 1625 tinham entrado no Brasil cerca de 150 mil cativos; nos 25 anos seguintes, 50 mil</b> — um terço. As ações da Companhia das Índias Ocidentais valiam 46% do nominal em 1645.",
+        "pagina": "302-303"
+      },
+      {
+        "titulo": "«Sem Angola, não há Brasil»",
+        "texto": "A frase é do padre jesuíta Gonçalo João, em memorial de 1646. O governador-geral Telles da Silva dizia o mesmo ao rei em 1643: «Angola, senhor, está de todo perdida, e sem ela não tem Vossa Majestade o Brasil». E a Coroa impôs uma condição para recuperá-la: <b>tropas, navios, munições e dinheiro teriam de sair do Brasil</b>, não de Portugal.",
+        "pagina": 301
+      },
+      {
+        "titulo": "A conta final, e quando foi paga",
+        "texto": "Portugal ofereceu 2 milhões de cruzados pela retirada; os holandeses pediram 12,5 milhões e a cidade de Salvador como caução; fechou-se em <b>4 milhões</b>, em 1661. O dinheiro veio do Brasil, por <b>aumento dos impostos sobre a importação de escravos</b>. Boxer chamou o acordo de «paz de esgotamento». <b>A última prestação só foi paga em 1711</b> — meio século depois.",
+        "pagina": 304
+      }
+    ],
+    "calote_titulo": "A tese do calote",
+    "calote": "A historiografia oficial explica a expulsão dos holandeses pelo orgulho nativista. Luiz Felipe de Alencastro propõe outra causa, e ela é de crédito. O aparelho escravista do Nordeste funcionava sobre a <b>venda de africanos a prazo</b>, de preferência em troca do açúcar a ser fabricado; e a lei portuguesa limitava tanto os direitos dos credores sobre a terra e os equipamentos que executar a garantia era quase impossível. Pressionados por acionistas que queriam lucro imediato, os holandeses endureceram: a parcela de cativos vendidos <b>à vista</b> foi de 43% em 1643 para 78% em 1644 e <b>100% em 1645</b>. O crédito fácil secou de uma vez. «Desse ponto de vista, a revolta anti-holandesa nordestina se apresenta como um levante promovido por um bando de caloteiros», escreve Alencastro. Padre Antônio Vieira, em 1648, confirmava: os moradores de Pernambuco «tinham tomado muito dinheiro dos holandeses, e não puderam, ou não quiseram pagar».",
+    "calote_pagina": "304-305",
+    "acucar_titulo": "O preço do açúcar depois da guerra",
+    "acucar": [
+      {
+        "quando": "1624",
+        "rubrica": "produção total de açúcar do Brasil",
+        "valor": "960 mil arrobas"
+      },
+      {
+        "quando": "1637",
+        "rubrica": "preço por arroba",
+        "valor": "1.700 réis"
+      },
+      {
+        "quando": "1689",
+        "rubrica": "preço por arroba",
+        "valor": "778 réis"
+      },
+      {
+        "quando": "1737",
+        "rubrica": "produção total, mais de um século depois",
+        "valor": "937 mil arrobas"
+      }
+    ],
+    "acucar_nota": "Expulsos do Nordeste, os holandeses levaram para o Caribe a tecnologia do açúcar que haviam aprendido com os pernambucanos, e viraram os concorrentes. A produção brasileira levou <b>113 anos</b> para voltar ao patamar de 1624 — e, quando voltou, o preço tinha caído para menos da metade.",
+    "acucar_pagina": 305
+  },
+  "padre_eterno": {
+    "titulo": "O galeão que o Brasil construiu",
+    "texto": "Em 20 de outubro de 1665 um navio de proporções nunca vistas cruzou a barra do Tejo. O galeão <b>Padre eterno</b> pesava 2 mil toneladas, estava pronto para receber <b>144 canhões</b> e tinha um mastro feito do tronco de uma única árvore, com quase três metros de circunferência na base. Era a maior embarcação de todo o Império Português — e maior que qualquer navio inglês: a <i>Sovereign of the Seas</i>, o maior da Inglaterra, pesava 1,5 mil toneladas, um quarto menos. Foi construído inteiramente <b>na Baía de Guanabara</b>, num estaleiro na atual Ilha do Governador, onde hoje opera o aeroporto que ainda se chama Galeão.",
+    "titanic": "Antes mesmo de deixar o Rio, o jornal <i>Mercurio Portuguez</i> anunciava «o mais famoso baixel de guerra que os mares jamais viram». Naufragou no Oceano Índico pouco depois de passar por Lisboa — um <i>Titanic</i> do século XVII, na comparação de Alencastro.",
+    "estaleiros": "Não era caso isolado. Da Ilha Grande saiu a fragata <i>Madre de Deus</i>; do Recôncavo, a nau <i>Nossa Senhora da Conceição</i>, da Carreira das Índias. Estima-se que a Ribeira das Naus, na Bahia, tenha construído <b>45 embarcações de grande porte</b> no período colonial: oito carracas, oito fragatas, uma corveta, treze escunas, dois navios de guerra e três de correio.",
+    "dono_titulo": "E quem o mandou construir",
+    "dono": "<b>Salvador Correia de Sá e Benevides</b>, governador do Rio de Janeiro, nascido na cidade em 1602, descendente dos fundadores. Antes de tudo, montou uma rede de fornecimento de escravos de Angola para as minas espanholas do Peru e da Bolívia, desembarcados em Buenos Aires. Como governador, obteve da Câmara a concessão <b>perpétua</b> do monopólio da pesagem e armazenamento de todo o açúcar exportado pelo porto do Rio — «um dos mais lucrativos cartórios da história brasileira», na definição de Alencastro. A família Sá o manteve por <b>dois séculos</b>, até 1850.",
+    "angola_titulo": "1648: quando o Brasil invadiu a África",
+    "angola": "Em 12 de maio de 1648, <b>quinze navios e cerca de 2 mil homens</b>, financiados por negreiros e fazendeiros fluminenses, zarparam da Baía de Guanabara para retomar Angola dos holandeses. Duas expedições anteriores haviam fracassado — mas uma delas, na volta, trouxe 2 mil escravos, o que a tornou rentável mesmo derrotada. A frota de Salvador de Sá chegou a Luanda em 12 de agosto; no primeiro ataque perdeu 150 homens e recuou; horas depois, os 250 holandeses se renderam. São Tomé foi evacuada assim que chegou a notícia.",
+    "carnificina": "O que veio depois raramente se conta. As tropas avançaram cerca de <b>150 quilômetros</b> pelo interior, «degolando grandes quantidades de sobas poderosos», nas palavras do próprio Salvador de Sá no relatório que mandou a Lisboa — medida que, segundo ele, «facilitou os caminhos e acovardou o gentio». Dois missionários capuchinhos italianos denunciaram a Roma que as tropas «desbarataram muitas aldeias, mataram muita gente e fizeram <b>mais de 7 mil escravos</b>». Para cobrir as despesas da campanha, Salvador de Sá <b>aumentou em 75% os tributos sobre a exportação de escravos</b>.",
+    "guardiao": "A partir dali o Brasil se tornou o guardião da estabilidade de Angola. <b>Entre 1680 e 1810, mais de dez governadores de Angola ocuparam em seguida cargos equivalentes no Brasil</b>. E vice-versa: Manoel de Nojosa, nomeado capitão-mor de Benguela em 1685, tinha servido em Pernambuco contra os holandeses e depois participaria, a partir da Bahia, de várias expedições contra o Quilombo dos Palmares. Era a mesma gente, circulando pelos dois lados do oceano.",
+    "fim": "Salvador de Sá terminou preso, deposto e condenado ao degredo na mesma África que ajudara a tomar — pena comutada para internação num convento de Lisboa. Foi reabilitado e voltou ao Conselho Ultramarino, o órgão que apurava as denúncias contra ele. Em <b>1676</b>, um donativo régio deu à sua família uma fatia do território que ia do litoral de São Paulo ao rio da Prata e avançava trinta léguas continente adentro: <b>a maior fazenda do Brasil desde as Capitanias Hereditárias</b>.",
+    "pagina": "307-315"
+  },
+  "catarina": {
+    "titulo": "O dote",
+    "texto": "Em 1661, para conseguir a aliança inglesa que garantiria sua independência, Portugal casou <b>Catarina de Bragança</b> com o rei Carlos II. O dote incluía a transferência de <b>Bombaim e Tânger</b> e o pagamento de <b>2 milhões de cruzados</b> — cerca de 330 mil libras da época, hoje o equivalente a treze toneladas de ouro. Com os cofres exauridos pela guerra, fez-se coleta pública, com joias e pratarias das igrejas; fazendeiros e senhores de engenho do Brasil foram chamados a contribuir com tributos extraordinários e a Sisa dobrou em dois anos. <b>As contribuições do Brasil corresponderam a mais de um terço do total.</b> A aliança funcionou: no mesmo ano veio a paz com os holandeses, e em 1668 a Espanha reconheceu a independência portuguesa.",
+    "pai": "Seu pai, dom João IV, tinha entre seus negócios a <b>reprodução sistemática de escravos no Palácio Ducal de Vila Viçosa</b>. As crianças nascidas ali eram separadas das mães e vendidas por trinta a quarenta escudos por cabeça, segundo o depoimento do italiano Giambattista Venturino, que visitou o local em 1571.",
+    "rac": "Catarina nunca foi proprietária direta de cativos. Foi, porém, uma das principais <b>acionistas fundadoras da Company of Royal Adventures Trading to Africa</b> — a futura Royal African Company, criada em 1660 com o monopólio do tráfico inglês. Seu nome aparece entre os fundadores ao lado do marido, Carlos II, e do cunhado, o duque de York, que anos depois conquistaria Manhattan e daria à margem esquerda do East River o nome de <i>Queen's County</i> em homenagem a ela. É o bairro do Queens.",
+    "estatua": "Nos anos 1980 a comunidade portuguesa de Nova York arrecadou 3,5 milhões de dólares para erguer no Queens uma estátua de doze metros da rainha, de frente para o prédio da ONU. Em 1998, com a obra já parcialmente fundida, ativistas do movimento negro organizaram passeatas com faixas que diziam «Rainha da Escravidão»; o conselho municipal retirou o apoio. A estátua ficou anos num depósito, <b>foi derretida e arrematada como sucata</b>. Fez-se então uma versão reduzida, que hoje fica no Parque das Nações, em Lisboa, olhando o Tejo. Uma segunda cópia pequena está no Allen Memorial Art Museum, em Ohio.",
+    "cha": "E há o outro legado. Foi Catarina quem levou o hábito do chá para a Inglaterra. O ritual das cinco da tarde é posterior — invenção de Ana Maria Russell, duquesa de Bedford, camareira da rainha Vitória entre 1837 e 1841, que reclamava do intervalo entre o almoço e o jantar. Hoje cada britânico consome cerca de <b>900 xícaras por ano</b>, sessenta bilhões no país inteiro.",
+    "pagina": "316-323"
+  },
+  "inferno": {
+    "titulo": "Visão do inferno",
+    "intro": "O relato mais famoso do interior de um engenho é do padre <b>André João Antonil</b> — João Antônio Andreoni, toscano, jesuíta, secretário e professor de Retórica de Antônio Vieira, que chegou à Bahia em 1681 e morreu no Brasil em 1716. Seu <i>Cultura e opulência do Brasil por suas drogas e minas</i> saiu em Lisboa em 1711 e foi <b>proibido no mesmo ano</b> por ordem régia, que mandou recolher e destruir todos os exemplares: descrevia com detalhe técnico demais o funcionamento de um engenho, e a riqueza portuguesa dependia de manter aquilo em segredo. <b>Sobreviveram sete cópias.</b>",
+    "citacao": "Junto à casa da moenda, que chamam casa do engenho, segue-se a casa das fornalhas, bocas verdadeiramente tragadoras de matos, cárcere de fogo e fumo perpétuo e viva imagem dos vulcões Vesúvio e Etna, do purgatório e do inferno. Nem faltam perto destas fornalhas seus condenados, que são os escravos boubentos e os que têm corrimentos, obrigados a essa penosa assistência. Veem-se aí também outros escravos, facinorosos, que, presos em compridas e grossas correntes de ferro, pagam neste trabalhoso exercício os repetidos excessos de sua extraordinária maldade, com pouca ou nenhuma esperança de emenda.",
+    "citacao_autor": "André João Antonil, Cultura e opulência do Brasil, 1711",
+    "detalhes": [
+      "Nos engenhos reais havia <b>seis fornalhas</b>, e nelas outros tantos escravos, os «metedores de lenha».",
+      "As bocas eram cercadas de arcos de ferro «para que os metedores, no meter da lenha, não padeçam algum desastre».",
+      "Moíam de dia e de noite, «seis, sete, oito e nove meses do ano».",
+      "«O alimento do fogo é a lenha, e só o Brasil, com a imensidade dos matos que tem, podia fartar como fartou por tantos anos» — a frase é, também, a certidão de nascimento do desmatamento da mata atlântica."
+    ],
+    "pagina": "272-274"
+  },
+  "zumbi": {
+    "titulo": "Os três Zumbis",
+    "intro": "A carta já registra Palmares. O capítulo 29 obriga a registrar outra coisa: <b>quase nada do que se conta sobre Zumbi está documentado</b>. Os historiadores Jean Marcel Carvalho França e Ricardo Alexandre Ferreira sustentam que traçar sua biografia é hoje tarefa impossível — não há depoimentos nem documentos escritos por ele ou por seus comandados. O que existe é um mito construído em camadas, e o livro separa três.",
+    "camadas": [
+      {
+        "titulo": "O Zumbi dos colonos",
+        "texto": "Durante a existência do quilombo, era o exemplo da ameaça que fugitivos e rebeldes representavam ao sistema. Dos dez maiores redutos de fugitivos do Brasil colônia, <b>sete foram destruídos apenas dois anos depois de formados</b>."
+      },
+      {
+        "titulo": "O Zumbi do Brasil independente",
+        "texto": "No século XIX, Palmares aparece como núcleo de barbárie, «um câncer que os colonos tiveram de extirpar». Joaquim Manuel de Macedo, em 1869, falava da «sífilis moral da escravidão infeccionando a casa, a fazenda, a família dos senhores»."
+      },
+      {
+        "titulo": "O Zumbi dos oprimidos",
+        "texto": "Nasceu do movimento abolicionista e ganhou fôlego nas lutas ideológicas do século XX. Astrojildo Pereira, do PCB, chamou-o em 1929 de «nosso Espártaco negro»; nos anos 1970 Décio Freitas via na Serra da Barriga «um socialismo infuso» e uma república «igualitária, fraternal e livre», com assembleias de todos os habitantes adultos."
+      }
+    ],
+    "correcoes_titulo": "O que a documentação sustenta",
+    "correcoes": [
+      {
+        "item": "O tamanho",
+        "errado": "quase o tamanho de Portugal",
+        "certo": "cerca de <b>27 mil km²</b> — menos de um terço de Portugal"
+      },
+      {
+        "item": "A população",
+        "errado": "de 6 mil a 30 mil habitantes",
+        "certo": "cerca de <b>11 mil pessoas</b> em dez comunidades (Florentino e Amantino)"
+      },
+      {
+        "item": "A forma de governo",
+        "errado": "uma república igualitária, com assembleias",
+        "certo": "provavelmente uma <b>monarquia eletiva</b> nos moldes africanos, centralizada e por vezes despótica"
+      },
+      {
+        "item": "A posição sobre a escravidão",
+        "errado": "um foco abolicionista",
+        "certo": "<b>os chefes quilombolas, Zumbi inclusive, tinham seus próprios escravos</b>, capturados nos engenhos vizinhos"
+      },
+      {
+        "item": "A biografia em circulação",
+        "errado": "nascido em 1655, capturado bebê, criado pelo padre Antônio Melo, batizado Francisco, estudou em Portugal, fugiu aos quinze anos",
+        "certo": "<b>é ficção</b>, inventada por Décio Freitas em 1982 a partir de cartas a que nenhum outro historiador jamais teve acesso — e hoje reproduzida no site da Fundação Cultural Palmares e na placa da estátua do Pelourinho, em Salvador"
+      }
+    ],
+    "calendario": "A disputa segue no calendário. O <b>Treze de Maio</b> foi feriado nacional por quarenta anos, instituído em janeiro de 1890 e cassado por Vargas em dezembro de 1930. O <b>Vinte de Novembro</b> virou, pela lei 12.519 de 2011, o Dia Nacional de Zumbi e da Consciência Negra, sem obrigatoriedade de feriado. Em 2018, apenas <b>1.047 dos 5.561 municípios</b> brasileiros o adotaram como dia de descanso; no Rio Grande do Norte, no Ceará, em Pernambuco, no Pará e em Rondônia, nenhuma cidade.",
+    "fecho": "Nada disso diminui Palmares. O quilombo resistiu quase um século ao aparelho militar de duas potências coloniais, e essa é a parte que <b>está</b> documentada. Mas a carta prefere o que se pode provar ao que se gostaria que fosse verdade — inclusive quando o que se gostaria é simpático.",
+    "pagina": "348-358"
+  },
+  "fim_1695": {
+    "titulo": "O Brasil no ano em que este volume termina",
+    "itens": [
+      {
+        "rubrica": "Habitantes do Brasil",
+        "valor": "cerca de 300 mil",
+        "detalhe": "menos do que Taubaté, Uberaba, Pelotas ou Anápolis hoje"
+      },
+      {
+        "rubrica": "Proporção de escravizados",
+        "valor": "um em cada três",
+        "detalhe": ""
+      },
+      {
+        "rubrica": "Africanos desembarcados por ano em Salvador, Recife e Rio",
+        "valor": "cerca de 10 mil",
+        "detalhe": ""
+      },
+      {
+        "rubrica": "Brancos na arquidiocese da Bahia, de 90 mil habitantes",
+        "valor": "um em cada cinco",
+        "detalhe": "«Os brancos só servem para determinar aos escravos o que hão de fazer», informava o arcebispo à Coroa"
+      },
+      {
+        "rubrica": "Indígenas",
+        "valor": "cerca de 2 milhões",
+        "detalhe": "metade do número de duzentos anos antes"
+      },
+      {
+        "rubrica": "Habitantes de São Paulo",
+        "valor": "pouco mais de 2 mil",
+        "detalhe": "a maioria ainda falava tupi-guarani; o português só predominaria em meados do século XVIII"
+      }
+    ],
+    "caranguejos": "Da largura que a terra do Brasil tem para o sertão não trato, porque até agora não houve quem a andasse, por negligência dos portugueses, que sendo grandes conquistadores de terras não se aproveitam delas, mas contentam-se de as andar arranhando ao longo do mar, como caranguejos.",
+    "caranguejos_autor": "Frei Vicente do Salvador, o primeiro historiador do Brasil",
+    "virada": "É exatamente isso que o ouro vai mudar. Em 1695 tudo era litoral; no século seguinte <b>cerca de 2 milhões de cativos</b> chegariam ao Brasil e a população se multiplicaria por dez, empurrada para dentro do continente. O volume I termina aqui, na véspera. O que vem depois — os caminhos das Minas, os comboios, as monções — é a <b>Carta IV</b> desta carta, e é o assunto do volume II.",
+    "pagina": "359-361"
+  },
+  "ancoras_interno": {
+    "titulo": "O que o volume I diz, afinal, sobre o tráfico dentro do Brasil",
+    "intro": "Ao publicar a Carta IV, escrevi que o volume I não tocava no tráfico interno. A leitura dos capítulos restantes desmentiu isso em parte. O livro <b>não</b> trata do tráfico interprovincial do século XIX, que é mesmo dos volumes II e III. Mas registra, em quatro passagens, a circulação forçada de pessoas por dentro da colônia — e uma delas é uma rota que a Carta IV desenha.",
+    "itens": [
+      {
+        "quando": "c. 1554",
+        "titulo": "A feira de trato de Piratininga",
+        "texto": "A compra e venda de cativos indígenas foi <b>a primeira grande atividade econômica</b> dos Campos de Piratininga, a futura São Paulo. Alencastro a chama de «feira de trato»: João Ramalho e sua gente forneciam escravos do Planalto Paulista para a Baixada Santista — «escala para muitas nações dos índios», na descrição do padre Luís de Grã.",
+        "pagina": 97
+      },
+      {
+        "quando": "1576",
+        "titulo": "Pernambuco vendia gente às outras capitanias",
+        "texto": "Pero de Magalhães Gandavo, descrevendo a capitania: «tem muitos escravos índios, que é a principal fazenda da terra. <b>Daqui os levam e compram para todas as outras capitanias</b>, porque há nesta muitos, e mais baratos que em toda a costa».",
+        "pagina": 97
+      },
+      {
+        "quando": "séc. XVII",
+        "titulo": "O aluguel serra acima e serra abaixo",
+        "texto": "Nos pousos e roças paulistas a média era de <b>37 escravos indígenas por proprietário</b>, e cabia a eles produzir e <b>transportar</b> o que abastecia o resto da colônia. Em Santana do Parnaíba alugavam-se cativos para o transporte de carga e de gente serra acima e serra abaixo.",
+        "pagina": 100
+      },
+      {
+        "quando": "1695",
+        "titulo": "A deportação dos vencidos de Palmares",
+        "texto": "Os «negros filhos do mato» com mais de doze anos, capturados no assalto final ao quilombo por Domingos Jorge Velho, tinham de ser negociados <b>em Buenos Aires ou no Rio de Janeiro</b>, bem longe das suas regiões de origem — porque escravo recapturado perdia preço no mercado interno, por ser considerado rebelde e fomentador de fugas.",
+        "pagina": 352
+      }
+    ],
+    "moncoes": "E há a rota. A Carta IV desenha as monções de São Paulo a Cuiabá citando fontes externas; o próprio volume I a descreve: a vila de <b>Itu</b>, fundada em 1610, era chamada de <b>«Boca do Sertão»</b>, ponto de partida das canoas e batelões rumo ao interior, com embarque em <b>Porto Feliz</b>, depois de superadas as quedas e corredeiras do Tietê entre Pirapora do Bom Jesus e Salto. A rota estava no livro; eu é que não a tinha lido.",
+    "moncoes_pagina": 360
+  }
+}

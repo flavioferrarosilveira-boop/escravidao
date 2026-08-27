@@ -1,0 +1,215 @@
+{
+  "_metodo": "Sementes (priors) da distribuição de cada região africana de embarque entre os destinos, montadas a partir da historiografia dos corredores dominantes (Eltis & Richardson, 'Atlas of the Transatlantic Slave Trade', 2010; Alencastro, 'O Trato dos Viventes'; Klein, 'The Atlantic Slave Trade'). Estas sementes NÃO são o resultado final: elas são ajustadas por IPF (Iterative Proportional Fitting / RAS) até que as somas de linha reproduzam os embarcados por região e as somas de coluna reproduzam os desembarcados por destino do TSTD.",
+  "colunas": [
+    "brasil",
+    "caribe_britanico",
+    "caribe_frances",
+    "hispano_america",
+    "caribe_holandes",
+    "america_norte",
+    "caribe_danes",
+    "europa_africa"
+  ],
+  "linhas": {
+    "senegambia": [
+      0.152,
+      0.205010989010989,
+      0.25160439560439557,
+      0.1677362637362637,
+      0.03727472527472527,
+      0.1490989010989011,
+      0.009318681318681318,
+      0.027956043956043952
+    ],
+    "serra_leoa": [
+      0.057,
+      0.3772,
+      0.21837894736842106,
+      0.09926315789473684,
+      0.04963157894736842,
+      0.1290421052631579,
+      0.01985263157894737,
+      0.04963157894736842
+    ],
+    "barlavento": [
+      0.03,
+      0.35,
+      0.35,
+      0.06,
+      0.05,
+      0.12,
+      0.02,
+      0.02
+    ],
+    "costa_ouro": [
+      0.125,
+      0.41805555555555557,
+      0.14583333333333331,
+      0.07777777777777778,
+      0.12638888888888888,
+      0.04861111111111111,
+      0.03888888888888889,
+      0.019444444444444445
+    ],
+    "benim": [
+      0.456,
+      0.14916129032258066,
+      0.19303225806451613,
+      0.10529032258064516,
+      0.04387096774193549,
+      0.017548387096774195,
+      0.017548387096774195,
+      0.017548387096774195
+    ],
+    "biafra": [
+      0.078,
+      0.5179775280898876,
+      0.1346741573033708,
+      0.12431460674157302,
+      0.06215730337078651,
+      0.05179775280898877,
+      0.010359550561797753,
+      0.020719101123595506
+    ],
+    "centro_ocidental": [
+      0.699,
+      0.06336842105263159,
+      0.07128947368421054,
+      0.08713157894736843,
+      0.031684210526315794,
+      0.015842105263157897,
+      0.007921052631578948,
+      0.023763157894736844
+    ],
+    "sudeste": [
+      0.7,
+      0.02666666666666666,
+      0.11333333333333331,
+      0.11999999999999997,
+      0.01333333333333333,
+      0.006666666666666665,
+      0.0,
+      0.019999999999999993
+    ]
+  },
+  "_subdivisoes_nota": "As colunas 'brasil' e 'hispano_america' são macro-destinos: cada linha da matriz é repartida entre os portos reais de desembarque pelas proporções em 'subdivisoes', também tiradas da historiografia (Alencastro para o eixo Rio–Luanda e Bahia–Costa da Mina; Florentino para o Rio; TSTD 'principal place of landing'). O IPF então ajusta tudo às marginais publicadas.",
+  "subdivisoes": {
+    "brasil": {
+      "destinos": [
+        "brasil_sudeste",
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "brasil_norte"
+      ],
+      "linhas": {
+        "senegambia": [
+          0.0,
+          0.133,
+          0.071,
+          0.796
+        ],
+        "serra_leoa": [
+          0.05,
+          0.1,
+          0.05,
+          0.8
+        ],
+        "barlavento": [
+          0.3,
+          0.35,
+          0.25,
+          0.1
+        ],
+        "costa_ouro": [
+          0.078,
+          0.775,
+          0.116,
+          0.031
+        ],
+        "benim": [
+          0.071,
+          0.846,
+          0.07,
+          0.013
+        ],
+        "biafra": [
+          0.236,
+          0.472,
+          0.236,
+          0.056
+        ],
+        "centro_ocidental": [
+          0.566,
+          0.205,
+          0.222,
+          0.007
+        ],
+        "sudeste": [
+          0.862,
+          0.132,
+          0.004,
+          0.002
+        ]
+      }
+    },
+    "hispano_america": {
+      "destinos": [
+        "cuba",
+        "terra_firme",
+        "porto_rico",
+        "rio_da_prata"
+      ],
+      "linhas": {
+        "senegambia": [
+          0.25,
+          0.6,
+          0.1,
+          0.05
+        ],
+        "serra_leoa": [
+          0.45,
+          0.4,
+          0.1,
+          0.05
+        ],
+        "barlavento": [
+          0.45,
+          0.4,
+          0.1,
+          0.05
+        ],
+        "costa_ouro": [
+          0.4,
+          0.45,
+          0.1,
+          0.05
+        ],
+        "benim": [
+          0.6,
+          0.28,
+          0.08,
+          0.04
+        ],
+        "biafra": [
+          0.55,
+          0.33,
+          0.08,
+          0.04
+        ],
+        "centro_ocidental": [
+          0.55,
+          0.3,
+          0.06,
+          0.09
+        ],
+        "sudeste": [
+          0.8,
+          0.12,
+          0.04,
+          0.04
+        ]
+      }
+    }
+  },
+  "_calibragem": "As sementes da coluna 'brasil' e suas subdivisões foram recalibradas contra as cifras de GOMES, Laurentino. Escravidão, vol. I: 70% dos africanos levados ao Brasil saíram de Angola e do Congo (p. 210); 810 mil dos cativos da Bahia vieram da Costa da Mina, isto é Nigéria, Benim e Togo (p. 206, 212); quase 90% dos de Pernambuco vieram de Angola e Congo (p. 211); 280 mil dos do Sudeste vieram de Moçambique (p. 213); 97 mil dos 142 mil da Amazônia vieram da Senegâmbia, aqui entendida como Senegal, Gâmbia, Guiné-Bissau e Guiné-Conacri (p. 206, 214)."
+}

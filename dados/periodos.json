@@ -1,0 +1,804 @@
+{
+  "_fonte": "Trans-Atlantic Slave Trade Database (SlaveVoyages.org), Estimates. EMBARCADOS por período.",
+  "periodos": [
+    {
+      "id": "xvi",
+      "rotulo": "1501-1600",
+      "embarcados": 277500,
+      "regioes_dominantes": [
+        "senegambia",
+        "centro_ocidental"
+      ],
+      "destinos_dominantes": [
+        "terra_firme",
+        "brasil_pernambuco",
+        "brasil_bahia",
+        "europa_africa",
+        "cuba"
+      ],
+      "bandeiras_dominantes": [
+        "portugal",
+        "espanha"
+      ],
+      "sintese": "Tráfico ainda pequeno. Portugueses levam cativos da Senegâmbia e do Congo para as ilhas atlânticas (São Tomé, Cabo Verde), para a Península Ibérica e, a partir de 1550, para os engenhos de Pernambuco e da Bahia. Hispano-América abastecida por licenças e contratos."
+    },
+    {
+      "id": "xvii",
+      "rotulo": "1601-1700",
+      "embarcados": 1875600,
+      "regioes_dominantes": [
+        "centro_ocidental",
+        "benim",
+        "costa_ouro"
+      ],
+      "destinos_dominantes": [
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "brasil_sudeste",
+        "caribe_britanico",
+        "caribe_holandes",
+        "terra_firme"
+      ],
+      "bandeiras_dominantes": [
+        "portugal",
+        "paises_baixos",
+        "gra_bretanha"
+      ],
+      "sintese": "A revolução do açúcar chega ao Caribe. Holandeses tomam Elmina (1637) e Luanda (1641-48), britânicos ocupam Barbados e Jamaica, franceses as Antilhas. Angola torna-se o grande viveiro do Brasil."
+    },
+    {
+      "id": "xviii",
+      "rotulo": "1701-1800",
+      "embarcados": 6494600,
+      "regioes_dominantes": [
+        "centro_ocidental",
+        "benim",
+        "biafra",
+        "costa_ouro"
+      ],
+      "destinos_dominantes": [
+        "brasil_sudeste",
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "caribe_britanico",
+        "caribe_frances",
+        "america_norte",
+        "caribe_danes",
+        "terra_firme",
+        "caribe_holandes"
+      ],
+      "bandeiras_dominantes": [
+        "gra_bretanha",
+        "portugal",
+        "franca"
+      ],
+      "sintese": "Auge absoluto: mais da metade de todo o tráfico da história ocorre neste século. Liverpool e Nantes dominam; Saint-Domingue torna-se a colônia mais lucrativa do mundo; o ouro de Minas Gerais puxa o tráfico da Costa da Mina para a Bahia."
+    },
+    {
+      "id": "xix",
+      "rotulo": "1801-1866",
+      "embarcados": 3873600,
+      "regioes_dominantes": [
+        "centro_ocidental",
+        "benim",
+        "biafra",
+        "sudeste"
+      ],
+      "destinos_dominantes": [
+        "brasil_sudeste",
+        "brasil_bahia",
+        "brasil_pernambuco",
+        "brasil_norte",
+        "cuba",
+        "rio_da_prata",
+        "porto_rico"
+      ],
+      "bandeiras_dominantes": [
+        "portugal",
+        "espanha"
+      ],
+      "sintese": "Tráfico ilegal e concentrado: Brasil (café e açúcar) e Cuba absorvem quase tudo, sob perseguição do esquadrão britânico. Cresce o embarque em Moçambique. Última viagem documentada às Américas em 1866."
+    }
+  ],
+  "marcos": [
+    {
+      "ano": 1291,
+      "texto": "Os irmãos genoveses Vivaldi cruzam o cabo Bojador em busca de um caminho para a Índia e desaparecem para sempre",
+      "fonte": "Gomes I",
+      "pagina": "71-72"
+    },
+    {
+      "ano": 1307,
+      "texto": "Filipe, o Belo, manda invadir as sedes dos templários na França; dez anos depois, dom Dinis os acolhe em Portugal, onde renascem como Ordem de Cristo",
+      "fonte": "Gomes I",
+      "pagina": "76-77"
+    },
+    {
+      "ano": 1324,
+      "texto": "Mansa Musa, rei do Mali, peregrina a Meca esbanjando mais de uma tonelada de ouro e vendendo 4 mil escravizados só no Cairo",
+      "fonte": "Gomes I",
+      "pagina": "106-107"
+    },
+    {
+      "ano": 1434,
+      "texto": "Gil Eanes vence o cabo Bojador ao descobrir a volta do mar: afastar-se da costa e retornar por um semicírculo no Atlântico",
+      "fonte": "Gomes I",
+      "pagina": "72"
+    },
+    {
+      "ano": 1441,
+      "texto": "Antão Gonçalves e Nuno Tristão fazem, no cabo Branco, as primeiras capturas de africanos registradas na história do tráfico atlântico — doze pessoas",
+      "fonte": "Gomes I",
+      "pagina": "45-46"
+    },
+    {
+      "ano": 1444,
+      "texto": "Primeiro leilão documentado de africanos escravizados em Portugal, diante do infante dom Henrique, na vila de Lagos, no Algarve",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1445,
+      "texto": "Feitoria de Arguim, na atual Mauritânia, primeiro entreposto do comércio de cativos na costa africana. No mesmo ano, João Fernandes se torna o primeiro lançado",
+      "fonte": "Gomes I",
+      "pagina": "44"
+    },
+    {
+      "ano": 1446,
+      "texto": "Emboscada mata Nuno Tristão e outros vinte homens; dois anos depois, os portugueses trocam a razia pela compra de cativos aos mercadores africanos",
+      "fonte": "Gomes I",
+      "pagina": "47"
+    },
+    {
+      "ano": 1452,
+      "texto": "Bula Dum diversas: o papa Nicolau V autoriza o rei de Portugal a subjugar e escravizar «inimigos de Cristo» e a tomar-lhes as terras em perpetuidade",
+      "fonte": "Gomes I",
+      "pagina": "282"
+    },
+    {
+      "ano": 1455,
+      "texto": "A bula Romanus Pontifex, do papa Nicolau V, autoriza os portugueses a escravizar 'infiéis' entre o Marrocos e a Índia",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1456,
+      "texto": "Portugueses chegam a Cabo Verde, até então desabitado",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1462,
+      "texto": "Ribeira Grande, em Cabo Verde, é a primeira aglomeração urbana construída por europeus nos trópicos, e o primeiro grande entreposto do tráfico",
+      "fonte": "Gomes I",
+      "pagina": "138"
+    },
+    {
+      "ano": 1466,
+      "texto": "O rei Afonso V concede aos moradores de Cabo Verde o livre comércio na Guiné — ou seja, autorização para traficar",
+      "fonte": "Gomes I",
+      "pagina": "140-141"
+    },
+    {
+      "ano": 1469,
+      "texto": "O cristão-novo Fernão Gomes arremata o primeiro contrato do tráfico de escravos da Guiné leiloado pela Coroa portuguesa",
+      "fonte": "Gomes I",
+      "pagina": "86"
+    },
+    {
+      "ano": 1471,
+      "texto": "Portugueses batizam a Costa do Ouro ao encontrar moradores com adornos de ouro no Cabo das Três Pontas",
+      "fonte": "Gomes I",
+      "pagina": "108"
+    },
+    {
+      "ano": 1479,
+      "texto": "Primeiro carregamento de africanos escravizados registrado no Golfo do Benim: 400 pessoas levadas para a atual costa de Gana, trocadas por ouro com os mercadores acã",
+      "fonte": "Gomes II",
+      "pagina": "163"
+    },
+    {
+      "ano": 1482,
+      "texto": "Construção do Castelo de São Jorge da Mina (Elmina), primeiro grande entreposto do tráfico na costa africana"
+    },
+    {
+      "ano": 1484,
+      "texto": "Início da colonização da Ilha de São Tomé",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1485,
+      "texto": "O rei do Congo converte-se ao cristianismo",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1486,
+      "texto": "João Afonso de Aveiro sobe o rio Benim, rebatizado «Rio dos Escravos». Funda-se em Lisboa a Casa dos Escravos",
+      "fonte": "Gomes I",
+      "pagina": "82"
+    },
+    {
+      "ano": 1486,
+      "texto": "O português João Afonso de Aveiro sobe o rio Benim, que os europeus rebatizam de “Rio dos Escravos”",
+      "fonte": "Gomes II",
+      "pagina": "162"
+    },
+    {
+      "ano": 1491,
+      "texto": "Os jesuítas erguem em M'banza-Congo a primeira igreja católica de toda a África Subsaariana; o manicongo é batizado como dom João I",
+      "fonte": "Gomes I",
+      "pagina": "152"
+    },
+    {
+      "ano": 1493,
+      "texto": "Colombo despacha índios taino de Santo Domingo para Sevilha: a primeira carga de escravos a cruzar o Atlântico vai da América para a Europa",
+      "fonte": "Gomes I",
+      "pagina": "84"
+    },
+    {
+      "ano": 1494,
+      "texto": "Tratado de Tordesilhas: Portugal e Espanha repartem o mundo entre si",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1500,
+      "texto": "Os portugueses já haviam comprado ou capturado 150 mil africanos — antes de qualquer travessia do Atlântico",
+      "fonte": "Gomes I",
+      "pagina": "7"
+    },
+    {
+      "ano": 1501,
+      "texto": "Início oficial do tráfico de africanos para os domínios espanhóis na América. Os primeiros navios partiam de Sevilha, não da África",
+      "fonte": "Gomes I",
+      "pagina": "8, 203"
+    },
+    {
+      "ano": 1510,
+      "texto": "Decreto de Valladolid: o rei Fernando autoriza o envio de cinquenta escravos a Hispaniola «em benefício das minas» — o início oficial do tráfico para as Américas",
+      "fonte": "Gomes I",
+      "pagina": "85"
+    },
+    {
+      "ano": 1511,
+      "texto": "A nau Bretoa chega a Portugal com papagaios, pau-brasil e 35 índios cativos: o Brasil entra na rota do tráfico pela mão contrária",
+      "fonte": "Gomes I",
+      "pagina": "84"
+    },
+    {
+      "ano": 1518,
+      "texto": "Carlos I autoriza o transporte de 4 mil escravizados à América em sete anos — o primeiro grande contrato",
+      "fonte": "Gomes I",
+      "pagina": "204"
+    },
+    {
+      "ano": 1526,
+      "texto": "Dom Afonso I do Congo escreve ao rei de Portugal pedindo o fim do tráfico em seu reino. A resposta demorou dez anos e foi não",
+      "fonte": "Gomes I",
+      "pagina": "159-160"
+    },
+    {
+      "ano": 1535,
+      "texto": "Notícia da chegada dos primeiros africanos escravizados ao Brasil; engenhos começam a funcionar em Pernambuco",
+      "fonte": "Gomes I",
+      "pagina": "8"
+    },
+    {
+      "ano": 1545,
+      "texto": "A capitania de São Vicente já tem cerca de 3 mil nativos escravizados em seis engenhos",
+      "fonte": "Gomes I",
+      "pagina": "96"
+    },
+    {
+      "ano": 1553,
+      "texto": "A Companhia de Jesus de Angola justifica pagar dívidas em pessoas: os escravos são ali a moeda corrente, como o ouro na Europa e o açúcar no Brasil",
+      "fonte": "Gomes I",
+      "pagina": "285"
+    },
+    {
+      "ano": 1555,
+      "texto": "O padre português Fernando Oliveira publica em <i>Arte da guerra no mar</i> uma das primeiras críticas ao tráfico: sem compradores não haveria vendedores na África",
+      "fonte": "Gomes II",
+      "pagina": "353-354"
+    },
+    {
+      "ano": 1560,
+      "texto": "Começa o tráfico sistemático de cativos para o Brasil",
+      "fonte": "Gomes I",
+      "pagina": "204"
+    },
+    {
+      "ano": 1560,
+      "texto": "Primeira embaixada portuguesa ao reino de Angola fracassa: Paulo Dias de Novais fica cinco anos preso em Ngoleme, cidade de 5 a 6 mil casas",
+      "fonte": "Gomes I",
+      "pagina": "168"
+    },
+    {
+      "ano": 1562,
+      "texto": "Os ingleses entram no tráfico com John Hawkins, sócio da rainha Elizabeth I, que saqueia navios portugueses em Cacheu e na Serra Leoa",
+      "fonte": "Gomes I",
+      "pagina": "187"
+    },
+    {
+      "ano": 1570,
+      "texto": "A Coroa declara os indígenas súditos do rei e proíbe escravizá-los — com exceções que, na prática, anulam a lei",
+      "fonte": "Gomes I",
+      "pagina": "103"
+    },
+    {
+      "ano": 1571,
+      "texto": "Angola é entregue a Paulo Dias de Novais como Capitania Hereditária",
+      "fonte": "Gomes I",
+      "pagina": "169"
+    },
+    {
+      "ano": 1575,
+      "texto": "Paulo Dias de Novais dá início à ocupação portuguesa de Angola",
+      "fonte": "Gomes I",
+      "pagina": "8"
+    },
+    {
+      "ano": 1576,
+      "texto": "Fundação de Luanda, em 25 de janeiro — o porto de onde partiriam cerca de 12 mil viagens negreiras",
+      "fonte": "Gomes I",
+      "pagina": "166"
+    },
+    {
+      "ano": 1595,
+      "texto": "Em São Tomé, 2,5 mil escravizados sob a liderança de Amador se levantam contra os colonos; cinco de seus chefes são enforcados e esquartejados",
+      "fonte": "Gomes I",
+      "pagina": "143-144"
+    },
+    {
+      "ano": 1609,
+      "texto": "Alvará de Filipe II declara livres todos os gentios do Brasil; a revolta dos moradores da Bahia faz a Coroa recuar e criar a «guerra justa»",
+      "fonte": "Gomes I",
+      "pagina": "103"
+    },
+    {
+      "ano": 1611,
+      "texto": "O reitor do colégio jesuíta de Luanda escreve que o tráfico nunca lhe pareceu ilícito: «na América, todo escrúpulo é fora de propósito»",
+      "fonte": "Gomes I",
+      "pagina": "285"
+    },
+    {
+      "ano": 1616,
+      "texto": "Antônio Fernandes Elvas acumula três concessões de tráfico ao mesmo tempo e transporta 37 mil pessoas em nove anos",
+      "fonte": "Gomes I",
+      "pagina": "146-147"
+    },
+    {
+      "ano": 1618,
+      "texto": "Os portugueses chegam às supostas minas de prata do interior de Angola e encontram chumbo. A partir daí todo o esforço se volta ao tráfico",
+      "fonte": "Gomes I",
+      "pagina": "170"
+    },
+    {
+      "ano": 1620,
+      "texto": "O governador de Angola premia o vencedor de um concurso de poesia religiosa com uma «peça da Índia» — um africano adulto e saudável",
+      "fonte": "Gomes I",
+      "pagina": "285-286"
+    },
+    {
+      "ano": 1624,
+      "texto": "Jinga toma o trono do Reino do Andongo e inicia quase quarenta anos de guerrilha contra Portugal, atacando os comboios de cativos",
+      "fonte": "Gomes I",
+      "pagina": "327"
+    },
+    {
+      "ano": 1625,
+      "texto": "Quatrocentos e cinquenta holandeses são degolados ao pé de São Jorge da Mina por cinquenta portugueses e novecentos guerreiros africanos",
+      "fonte": "Gomes I",
+      "pagina": "300"
+    },
+    {
+      "ano": 1628,
+      "texto": "A bandeira de Raposo Tavares parte de São Paulo e aprisiona, em dois anos, entre 40 mil e 60 mil guaranis do Guairá",
+      "fonte": "Gomes I",
+      "pagina": "99"
+    },
+    {
+      "ano": 1630,
+      "texto": "Holandeses ocupam Pernambuco; em Angola, a rainha Jinga enfrenta as tropas portuguesas",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1637,
+      "texto": "Holandeses tomam São Jorge da Mina (Elmina)"
+    },
+    {
+      "ano": 1638,
+      "texto": "Maurício de Nassau relata a Haia que sem negros «nada de proveitoso se pode fazer no Brasil»",
+      "fonte": "Gomes I",
+      "pagina": "300"
+    },
+    {
+      "ano": 1641,
+      "texto": "Holandeses ocupam Luanda, Benguela e São Tomé",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1645,
+      "texto": "A expedição do capitão João Blaer sobe a Serra da Barriga e fracassa diante de Palmares; o diário de Reijimbach descreve um mocambo de 220 casas, com igreja, quatro forjas e casa de conselho",
+      "fonte": "Gomes I",
+      "pagina": "332-334"
+    },
+    {
+      "ano": 1648,
+      "texto": "Tropas vindas de Salvador, sob Salvador de Sá e Benevides, expulsam os holandeses de Angola",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1649,
+      "texto": "Criada a Companhia Geral de Comércio do Brasil",
+      "fonte": "Gomes I",
+      "pagina": "191"
+    },
+    {
+      "ano": 1654,
+      "texto": "Holandeses são expulsos do Recife",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1654,
+      "texto": "Holandeses capitulam em Guararapes, dez meses e duas batalhas depois",
+      "fonte": "Gomes I",
+      "pagina": "290"
+    },
+    {
+      "ano": 1660,
+      "texto": "Criada em Londres a Royal African Company, com o monopólio inglês do tráfico",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1661,
+      "texto": "Portugal compra de volta o Nordeste dos holandeses por 4 milhões de cruzados, pagos em dezesseis prestações",
+      "fonte": "Gomes I",
+      "pagina": "289-290"
+    },
+    {
+      "ano": 1663,
+      "texto": "Morre a rainha Jinga, aos 81 anos. Nos cem anos seguintes, mulheres ocupariam o trono do Andongo e da Matamba por oitenta",
+      "fonte": "Gomes I",
+      "pagina": "330-331"
+    },
+    {
+      "ano": 1663,
+      "texto": "Instruções de um senhor de engenho de Pernambuco ao feitor detalham o castigo — açoite, navalha, sal, limão e urina sobre as feridas",
+      "fonte": "Gomes II",
+      "pagina": "254"
+    },
+    {
+      "ano": 1665,
+      "texto": "A Batalha de Ambuíla destrói o Reino do Congo",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1670,
+      "texto": "Batalha de Kitombo: o conde do Soyo mata quinhentos portugueses e guerreiros nativos; o socorro vem de Pernambuco",
+      "fonte": "Gomes I",
+      "pagina": "313"
+    },
+    {
+      "ano": 1672,
+      "texto": "O Rio de Janeiro tem 4 mil habitantes brancos e 20 mil africanos",
+      "fonte": "Gomes I",
+      "pagina": "9"
+    },
+    {
+      "ano": 1675,
+      "texto": "O bandeirante Domingos Jorge Velho abre o caminho que liga São Paulo e Minas Gerais",
+      "fonte": "Gomes I",
+      "pagina": "10"
+    },
+    {
+      "ano": 1681,
+      "texto": "Em Aladá, 19,2 mil búzios cauris valem uma onça de ouro; em 1760 serão precisos 32 mil",
+      "fonte": "Gomes I",
+      "pagina": "186"
+    },
+    {
+      "ano": 1689,
+      "texto": "Dom Pedro II anula todas as cartas régias de 1642 a 1688 que obrigavam a vender o escravizado castigado desumanamente: delas “resultariam grandes inconvenientes a meu serviço”",
+      "fonte": "Gomes II",
+      "pagina": "257"
+    },
+    {
+      "ano": 1695,
+      "texto": "Palmares é destruído; a cabeça de Zumbi é exposta num poste no Recife, em 20 de novembro",
+      "fonte": "Gomes I",
+      "pagina": "10, 346"
+    },
+    {
+      "ano": 1697,
+      "texto": "Chegam a Salvador as primeiras notícias de ouro em Minas Gerais",
+      "fonte": "Gomes I",
+      "pagina": "10"
+    },
+    {
+      "ano": 1698,
+      "texto": "O Parlamento inglês abre o tráfico a traficantes privados, mediante taxa de 10% à Royal African Company",
+      "fonte": "Gomes I",
+      "pagina": "191"
+    },
+    {
+      "ano": 1700,
+      "texto": "A população total do Brasil é estimada em 300 mil habitantes; 85% de todas as viagens negreiras da história ainda estão por vir",
+      "fonte": "Gomes I",
+      "pagina": "10, 204"
+    },
+    {
+      "ano": 1703,
+      "texto": "No auge da corrida do ouro, um homem “bem feito, valente e ladino” custa em Minas Gerais um quilo de ouro — o mesmo que três bois",
+      "fonte": "Gomes II",
+      "pagina": "57-65"
+    },
+    {
+      "ano": 1705,
+      "texto": "Sai em Roma a Economia cristã dos senhores no governo dos escravos, do jesuíta Jorge Benci, manual da moral escravista",
+      "fonte": "Gomes I",
+      "pagina": "280"
+    },
+    {
+      "ano": 1707,
+      "texto": "As Constituições Primeiras do Arcebispado da Bahia fixam em doze anos a idade mínima de casamento para as mulheres, e vetam a ordenação de “mulato” ou “outra alguma infecta nação reprovada”",
+      "fonte": "Gomes II",
+      "pagina": "287"
+    },
+    {
+      "ano": 1711,
+      "texto": "Publicado e imediatamente proibido o Cultura e opulência do Brasil, de Antonil; sobrevivem sete cópias. No mesmo ano Portugal paga a última prestação da compra do Nordeste aos holandeses",
+      "fonte": "Gomes I",
+      "pagina": "272 e 304"
+    },
+    {
+      "ano": 1711,
+      "texto": "Criada a South Sea Company, com o rei da Espanha e a rainha da Inglaterra como sócios majoritários e Isaac Newton, Defoe e Swift entre os minoritários",
+      "fonte": "Gomes II",
+      "pagina": "346-347"
+    },
+    {
+      "ano": 1713,
+      "texto": "O asiento de negros passa à Grã-Bretanha pelo Tratado de Utrecht"
+    },
+    {
+      "ano": 1713,
+      "texto": "A França abre o tráfico a investidores particulares; os Países Baixos farão o mesmo em 1730",
+      "fonte": "Gomes I",
+      "pagina": "191"
+    },
+    {
+      "ano": 1727,
+      "texto": "O rei Agaja, do Daomé, invade e aniquila o reino de Ajudá, que exportava 20 mil pessoas por ano",
+      "fonte": "Gomes II",
+      "pagina": "173-186"
+    },
+    {
+      "ano": 1729,
+      "texto": "A extração de diamantes vira monopólio régio; cinco anos depois nasce a Intendência dos Diamantes e o Distrito Diamantino é fechado por registros e passaportes",
+      "fonte": "Gomes II",
+      "pagina": "299-300"
+    },
+    {
+      "ano": 1734,
+      "texto": "A Coroa passa a conceder alforria a quem encontrar um diamante de pelo menos uma oitava (3,58 g), indenizando o dono em 400 mil réis",
+      "fonte": "Gomes II",
+      "pagina": "269"
+    },
+    {
+      "ano": 1741,
+      "texto": "Alvará régio de 3 de março: quem for achado em quilombo é marcado a ferro com a letra F; na reincidência, tem uma orelha cortada — “sem processo algum”",
+      "fonte": "Gomes II",
+      "pagina": "310"
+    },
+    {
+      "ano": 1743,
+      "texto": "A Provisão de 8 de maio limita a 24 os navios autorizados a traficar na Costa da Mina, em comboios de oito — cartel pedido pelos próprios negreiros da Bahia",
+      "fonte": "Gomes II",
+      "pagina": "185-186"
+    },
+    {
+      "ano": 1749,
+      "texto": "Proibido a negros e mulatos das Conquistas, “ainda que se achem forros ou nascessem livres”, o uso de seda, tecidos finos e qualquer joia; a pena máxima é o degredo perpétuo para São Tomé. Quatro meses depois, tudo é suspenso sem explicação",
+      "fonte": "Gomes II",
+      "pagina": "290-291"
+    },
+    {
+      "ano": 1750,
+      "texto": "Churumá Nadir, embaixador do rei do Daomé, é recebido em Salvador com salva de canhões — a primeira de oito embaixadas africanas ao Brasil até 1811",
+      "fonte": "Gomes II",
+      "pagina": "188-196"
+    },
+    {
+      "ano": 1751,
+      "texto": "Bartolomeu Bueno do Prado volta a São Paulo com colares de 3.900 pares de orelhas cortadas de quilombolas",
+      "fonte": "Gomes II",
+      "pagina": "310"
+    },
+    {
+      "ano": 1755,
+      "texto": "Companhia Geral do Grão-Pará e Maranhão começa a operar, abastecendo o norte do Brasil a partir de Bissau e Cacheu",
+      "fonte": "Gomes I",
+      "pagina": "192"
+    },
+    {
+      "ano": 1755,
+      "texto": "A Câmara de Mariana propõe cortar o tendão de Aquiles dos fugitivos. O vice-rei conde dos Arcos veta: “é uma barbaridade indigna de homens que têm o nome de cristãos”",
+      "fonte": "Gomes II",
+      "pagina": "311"
+    },
+    {
+      "ano": 1761,
+      "texto": "Alvará de Pombal liberta os escravizados desembarcados em solo português — não por abolicionismo, mas para que não faltassem “para a cultura das terras e das minas” no Brasil",
+      "fonte": "Gomes II",
+      "pagina": "365"
+    },
+    {
+      "ano": 1763,
+      "texto": "Destruído o Quilombo do Buraco do Tatu, perto de Salvador, cujas trincheiras com estrepes eram idênticas às usadas para defender vilarejos na Nigéria, no Congo e em Angola",
+      "fonte": "Gomes II",
+      "pagina": "313"
+    },
+    {
+      "ano": 1770,
+      "texto": "João de Oliveira desembarca em Salvador depois de 37 anos na África: capturado criança, mandado de volta ainda escravo para comprar cativos, comprou a própria alforria remetendo gente ao Brasil — e fundou Porto Novo e Lagos",
+      "fonte": "Gomes II",
+      "pagina": "197-202"
+    },
+    {
+      "ano": 1773,
+      "texto": "Decreto de Pombal abole a distinção entre “cristãos-velhos” e “cristãos-novos”. Permanece firme o “defeito de cor”",
+      "fonte": "Gomes II",
+      "pagina": "214"
+    },
+    {
+      "ano": 1781,
+      "texto": "O navio Zong lança ao mar 133 pessoas vivas para cobrar o seguro da 'carga perdida'; o caso vira ícone do abolicionismo inglês",
+      "fonte": "Gomes I",
+      "pagina": "193"
+    },
+    {
+      "ano": 1781,
+      "texto": "O capitão do navio inglês <i>Zong</i> lança ao mar 133 pessoas vivas em três dias para cobrar o seguro. A Justiça decide quem paga, não quem matou",
+      "fonte": "Gomes II",
+      "pagina": "357"
+    },
+    {
+      "ano": 1788,
+      "texto": "Na noite de 26 de dezembro, em Vila Rica, os inconfidentes discutem o que fazer com os 174 mil escravizados de Minas — e não chegam a conclusão alguma",
+      "fonte": "Gomes II",
+      "pagina": "336-345"
+    },
+    {
+      "ano": 1789,
+      "texto": "Os cativos do Engenho Santana, em Ilhéus, propõem ao dono um “tratado de paz” com dezenove reivindicações. Ele finge aceitar, prende o líder e vende os demais para o Maranhão",
+      "fonte": "Gomes II",
+      "pagina": "316-317"
+    },
+    {
+      "ano": 1791,
+      "texto": "Começa a Revolução Haitiana em Saint-Domingue"
+    },
+    {
+      "ano": 1794,
+      "texto": "O <i>São José Paquete d’África</i> naufraga a cem metros da praia perto do cabo da Boa Esperança: a tripulação inteira se salva, 212 pessoas morrem afogadas no porão",
+      "fonte": "Gomes II",
+      "pagina": "361-362"
+    },
+    {
+      "ano": 1796,
+      "texto": "Morre no arraial do Tijuco dona Francisca da Silva de Oliveira, Chica da Silva, sepultada em tumba até então reservada a brancos de grande prestígio",
+      "fonte": "Gomes II",
+      "pagina": "295-296"
+    },
+    {
+      "ano": 1798,
+      "texto": "Conjuração Baiana: quatro mulatos pobres são enforcados e esquartejados na praça da Piedade por pregarem “o tempo em que todos seremos iguais”",
+      "fonte": "Gomes II",
+      "pagina": "333-335"
+    },
+    {
+      "ano": 1800,
+      "texto": "Um levantamento conta 840 mercadores de escravos em Benguela, cidade de 1,5 a 3 mil habitantes",
+      "fonte": "Gomes I",
+      "pagina": "172"
+    },
+    {
+      "ano": 1800,
+      "texto": "Em Vitória, onde 67% da população era escravizada, o governador Silva Pontes prefere anistiar os trezentos quilombolas dos arredores a atacá-los. Funciona",
+      "fonte": "Gomes II",
+      "pagina": "317"
+    },
+    {
+      "ano": 1803,
+      "texto": "Fim efetivo do tráfico dinamarquês"
+    },
+    {
+      "ano": 1807,
+      "texto": "Grã-Bretanha e Estados Unidos proíbem o tráfico, com vigência em 1808. Ainda assim, cerca de 3 milhões de africanos seriam embarcados depois disso — mais da metade rumo ao Brasil",
+      "fonte": "Gomes I",
+      "pagina": "200"
+    },
+    {
+      "ano": 1808,
+      "texto": "Com a chegada da corte, o tráfico para o Rio de Janeiro dispara: de 9.689 pessoas em 1807 para 23.230 em 1811. Em 1812, metade dos trinta maiores comerciantes da cidade era traficante de escravos",
+      "fonte": "Gomes II",
+      "pagina": "370"
+    },
+    {
+      "ano": 1815,
+      "texto": "Congresso de Viena: Portugal proíbe o tráfico ao norte do Equador"
+    },
+    {
+      "ano": 1831,
+      "texto": "Lei Feijó, no Brasil — 'para inglês ver'; o tráfico segue clandestino"
+    },
+    {
+      "ano": 1834,
+      "texto": "A Grã-Bretanha abole a escravidão indenizando os <i>donos</i> em vinte milhões de libras. A frota negreira britânica, ociosa, é vendida sobretudo ao Brasil",
+      "fonte": "Gomes II",
+      "pagina": "359-360"
+    },
+    {
+      "ano": 1850,
+      "texto": "Lei Eusébio de Queirós encerra o tráfico para o Brasil"
+    },
+    {
+      "ano": 1866,
+      "texto": "Último desembarque documentado nas Américas, em Cuba"
+    },
+    {
+      "ano": 1888,
+      "texto": "Lei Áurea abole a escravidão no Brasil, último país das Américas. Restavam cerca de 700 mil escravizados",
+      "fonte": "Gomes I",
+      "pagina": "207"
+    }
+  ],
+  "ciclos": {
+    "_fonte": "GOMES, Laurentino. Escravidão, vol. I, p. 202.",
+    "lista": [
+      {
+        "nome": "Ciclo da Guiné",
+        "quando": "século XVI",
+        "regioes": [
+          "senegambia",
+          "serra_leoa"
+        ],
+        "texto": "Começa poucas décadas depois da chegada de Cabral. Portos de origem no Senegal, na Gâmbia e na Guiné-Bissau, com escala em Cabo Verde."
+      },
+      {
+        "nome": "Ciclo do Congo e Angola",
+        "quando": "do século XVI a 1850",
+        "regioes": [
+          "centro_ocidental"
+        ],
+        "texto": "De onde veio a imensa maioria dos cativos. Atravessa todos os outros ciclos e só termina com o fim do tráfico."
+      },
+      {
+        "nome": "Ciclo da Costa da Mina",
+        "quando": "século XVIII",
+        "regioes": [
+          "costa_ouro",
+          "benim"
+        ],
+        "texto": "Tinha entre seus maiores traficantes os baianos, que compravam cativos em troca de fumo de corda."
+      },
+      {
+        "nome": "Ciclo de Moçambique",
+        "quando": "século XIX",
+        "regioes": [
+          "sudeste"
+        ],
+        "texto": "O último a se abrir, já no tráfico ilegal, alimentando sobretudo o Sudeste cafeeiro."
+      }
+    ]
+  }
+}

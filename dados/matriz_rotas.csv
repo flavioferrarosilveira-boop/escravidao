@@ -1,0 +1,106 @@
+regiao_embarque,regiao_embarque_nome,destino,destino_nome,embarcados,desembarcados_est,mortos_travessia_est,pct_do_total
+centro_ocidental,"África Centro-Ocidental",brasil_sudeste,"Brasil — Sudeste (Rio de Janeiro)",2254600,1928821,325779,18.01
+biafra,"Golfo do Biafra",caribe_britanico,"Caribe Britânico",890000,761399,128601,7.11
+centro_ocidental,"África Centro-Ocidental",brasil_pernambuco,"Brasil — Pernambuco e Nordeste",876500,749850,126650,7.00
+centro_ocidental,"África Centro-Ocidental",brasil_bahia,"Brasil — Bahia",815300,697493,117807,6.51
+benim,"Golfo do Benim",brasil_bahia,"Brasil — Bahia",776100,663957,112143,6.20
+costa_ouro,"Costa do Ouro",caribe_britanico,"Caribe Britânico",567600,485584,82016,4.53
+centro_ocidental,"África Centro-Ocidental",caribe_britanico,"Caribe Britânico",411000,351612,59388,3.28
+centro_ocidental,"África Centro-Ocidental",cuba,"Cuba",367700,314569,53131,2.94
+benim,"Golfo do Benim",caribe_britanico,"Caribe Britânico",342000,292583,49417,2.73
+centro_ocidental,"África Centro-Ocidental",caribe_frances,"Caribe Francês",326000,278894,47106,2.60
+sudeste,"Sudeste da África e Ilhas do Índico",brasil_sudeste,"Brasil — Sudeste (Rio de Janeiro)",325000,278039,46961,2.60
+benim,"Golfo do Benim",caribe_frances,"Caribe Francês",312100,267003,45097,2.49
+centro_ocidental,"África Centro-Ocidental",terra_firme,"Terra Firme e Nova Espanha",178100,152365,25735,1.42
+senegambia,"Senegâmbia e Atlântico costeiro",caribe_britanico,"Caribe Britânico",178000,152280,25720,1.42
+benim,"Golfo do Benim",cuba,"Cuba",171400,146633,24767,1.37
+serra_leoa,"Serra Leoa",caribe_britanico,"Caribe Britânico",166700,142613,24087,1.33
+biafra,"Golfo do Biafra",caribe_frances,"Caribe Francês",163200,139618,23582,1.30
+centro_ocidental,"África Centro-Ocidental",caribe_holandes,"Américas Holandesas",160200,137052,23148,1.28
+senegambia,"Senegâmbia e Atlântico costeiro",caribe_frances,"Caribe Francês",154100,131833,22267,1.23
+costa_ouro,"Costa do Ouro",caribe_frances,"Caribe Francês",139600,119428,20172,1.11
+biafra,"Golfo do Biafra",cuba,"Cuba",139000,118915,20085,1.11
+barlavento,"Costa do Barlavento",caribe_britanico,"Caribe Britânico",138200,118231,19969,1.10
+costa_ouro,"Costa do Ouro",caribe_holandes,"Américas Holandesas",133800,114467,19333,1.07
+costa_ouro,"Costa do Ouro",brasil_bahia,"Brasil — Bahia",115400,98725,16675,0.92
+senegambia,"Senegâmbia e Atlântico costeiro",america_norte,"América do Norte continental",109800,93934,15866,0.88
+barlavento,"Costa do Barlavento",caribe_frances,"Caribe Francês",97400,83326,14074,0.78
+centro_ocidental,"África Centro-Ocidental",europa_africa,"Europa e recapturados na África",97100,83069,14031,0.78
+senegambia,"Senegâmbia e Atlântico costeiro",brasil_norte,"Brasil — Maranhão e Pará",94100,80503,13597,0.75
+senegambia,"Senegâmbia e Atlântico costeiro",terra_firme,"Terra Firme e Nova Espanha",91800,78535,13265,0.73
+centro_ocidental,"África Centro-Ocidental",america_norte,"América do Norte continental",87100,74514,12586,0.70
+biafra,"Golfo do Biafra",caribe_holandes,"Américas Holandesas",83300,71264,12036,0.67
+benim,"Golfo do Benim",caribe_holandes,"Américas Holandesas",78400,67072,11328,0.63
+biafra,"Golfo do Biafra",america_norte,"América do Norte continental",75400,64505,10895,0.60
+biafra,"Golfo do Biafra",terra_firme,"Terra Firme e Nova Espanha",74100,63393,10707,0.59
+benim,"Golfo do Benim",terra_firme,"Terra Firme e Nova Espanha",71000,60741,10259,0.57
+sudeste,"Sudeste da África e Ilhas do Índico",cuba,"Cuba",69600,59543,10057,0.56
+serra_leoa,"Serra Leoa",caribe_frances,"Caribe Francês",68100,58260,9840,0.54
+benim,"Golfo do Benim",brasil_sudeste,"Brasil — Sudeste (Rio de Janeiro)",65200,55779,9421,0.52
+benim,"Golfo do Benim",brasil_pernambuco,"Brasil — Pernambuco e Nordeste",63700,54496,9204,0.51
+costa_ouro,"Costa do Ouro",america_norte,"América do Norte continental",56000,47908,8092,0.45
+biafra,"Golfo do Biafra",brasil_bahia,"Brasil — Bahia",55500,47481,8019,0.44
+costa_ouro,"Costa do Ouro",cuba,"Cuba",50000,42775,7225,0.40
+costa_ouro,"Costa do Ouro",terra_firme,"Terra Firme e Nova Espanha",49900,42690,7210,0.40
+sudeste,"Sudeste da África e Ilhas do Índico",brasil_bahia,"Brasil — Bahia",49700,42519,7181,0.40
+sudeste,"Sudeste da África e Ilhas do Índico",caribe_frances,"Caribe Francês",49000,41920,7080,0.39
+serra_leoa,"Serra Leoa",america_norte,"América do Norte continental",48300,41321,6979,0.39
+senegambia,"Senegâmbia e Atlântico costeiro",cuba,"Cuba",43100,36872,6228,0.34
+barlavento,"Costa do Barlavento",america_norte,"América do Norte continental",40200,34391,5809,0.32
+costa_ouro,"Costa do Ouro",caribe_danes,"Antilhas Dinamarquesas",36000,30798,5202,0.29
+centro_ocidental,"África Centro-Ocidental",caribe_danes,"Antilhas Dinamarquesas",35000,29943,5057,0.28
+benim,"Golfo do Benim",america_norte,"América do Norte continental",34100,29173,4927,0.27
+centro_ocidental,"África Centro-Ocidental",rio_da_prata,"Rio da Prata",33800,28916,4884,0.27
+centro_ocidental,"África Centro-Ocidental",brasil_norte,"Brasil — Maranhão e Pará",28400,24296,4104,0.23
+biafra,"Golfo do Biafra",brasil_sudeste,"Brasil — Sudeste (Rio de Janeiro)",27800,23783,4017,0.22
+biafra,"Golfo do Biafra",brasil_pernambuco,"Brasil — Pernambuco e Nordeste",27500,23526,3974,0.22
+benim,"Golfo do Benim",caribe_danes,"Antilhas Dinamarquesas",27400,23441,3959,0.22
+benim,"Golfo do Benim",europa_africa,"Europa e recapturados na África",25400,21730,3670,0.20
+senegambia,"Senegâmbia e Atlântico costeiro",caribe_holandes,"Américas Holandesas",25200,21559,3641,0.20
+centro_ocidental,"África Centro-Ocidental",porto_rico,"Porto Rico",23700,20275,3425,0.19
+serra_leoa,"Serra Leoa",cuba,"Cuba",23400,20019,3381,0.19
+biafra,"Golfo do Biafra",europa_africa,"Europa e recapturados na África",22400,19163,3237,0.18
+serra_leoa,"Serra Leoa",terra_firme,"Terra Firme e Nova Espanha",18400,15741,2659,0.15
+serra_leoa,"Serra Leoa",brasil_norte,"Brasil — Maranhão e Pará",18000,15399,2601,0.14
+serra_leoa,"Serra Leoa",caribe_holandes,"Américas Holandesas",17100,14629,2471,0.14
+costa_ouro,"Costa do Ouro",brasil_pernambuco,"Brasil — Pernambuco e Nordeste",17100,14629,2471,0.14
+costa_ouro,"Costa do Ouro",europa_africa,"Europa e recapturados na África",16600,14201,2399,0.13
+sudeste,"Sudeste da África e Ilhas do Índico",caribe_britanico,"Caribe Britânico",16300,13945,2355,0.13
+senegambia,"Senegâmbia e Atlântico costeiro",brasil_bahia,"Brasil — Bahia",15400,13175,2225,0.12
+barlavento,"Costa do Barlavento",caribe_holandes,"Américas Holandesas",15400,13175,2225,0.12
+senegambia,"Senegâmbia e Atlântico costeiro",europa_africa,"Europa e recapturados na África",15300,13089,2211,0.12
+serra_leoa,"Serra Leoa",europa_africa,"Europa e recapturados na África",13800,11806,1994,0.11
+benim,"Golfo do Benim",porto_rico,"Porto Rico",13500,11549,1951,0.11
+barlavento,"Costa do Barlavento",cuba,"Cuba",12600,10779,1821,0.10
+benim,"Golfo do Benim",brasil_norte,"Brasil — Maranhão e Pará",12200,10437,1763,0.10
+biafra,"Golfo do Biafra",caribe_danes,"Antilhas Dinamarquesas",12100,10352,1748,0.10
+biafra,"Golfo do Biafra",porto_rico,"Porto Rico",11900,10181,1719,0.10
+costa_ouro,"Costa do Ouro",brasil_sudeste,"Brasil — Sudeste (Rio de Janeiro)",11600,9924,1676,0.09
+senegambia,"Senegâmbia e Atlântico costeiro",porto_rico,"Porto Rico",10200,8726,1474,0.08
+barlavento,"Costa do Barlavento",terra_firme,"Terra Firme e Nova Espanha",10000,8555,1445,0.08
+sudeste,"Sudeste da África e Ilhas do Índico",terra_firme,"Terra Firme e Nova Espanha",9300,7956,1344,0.07
+senegambia,"Senegâmbia e Atlântico costeiro",brasil_pernambuco,"Brasil — Pernambuco e Nordeste",8200,7015,1185,0.07
+sudeste,"Sudeste da África e Ilhas do Índico",europa_africa,"Europa e recapturados na África",7700,6587,1113,0.06
+costa_ouro,"Costa do Ouro",porto_rico,"Porto Rico",7400,6331,1069,0.06
+biafra,"Golfo do Biafra",brasil_norte,"Brasil — Maranhão e Pará",6700,5732,968,0.05
+benim,"Golfo do Benim",rio_da_prata,"Rio da Prata",6400,5475,925,0.05
+sudeste,"Sudeste da África e Ilhas do Índico",caribe_holandes,"Américas Holandesas",6400,5475,925,0.05
+serra_leoa,"Serra Leoa",caribe_danes,"Antilhas Dinamarquesas",6000,5133,867,0.05
+biafra,"Golfo do Biafra",rio_da_prata,"Rio da Prata",5700,4876,824,0.05
+senegambia,"Senegâmbia e Atlântico costeiro",caribe_danes,"Antilhas Dinamarquesas",5500,4705,795,0.04
+barlavento,"Costa do Barlavento",caribe_danes,"Antilhas Dinamarquesas",5400,4620,780,0.04
+barlavento,"Costa do Barlavento",europa_africa,"Europa e recapturados na África",5000,4278,722,0.04
+senegambia,"Senegâmbia e Atlântico costeiro",rio_da_prata,"Rio da Prata",4800,4106,694,0.04
+costa_ouro,"Costa do Ouro",brasil_norte,"Brasil — Maranhão e Pará",4700,4021,679,0.04
+barlavento,"Costa do Barlavento",brasil_bahia,"Brasil — Bahia",3600,3080,520,0.03
+costa_ouro,"Costa do Ouro",rio_da_prata,"Rio da Prata",3500,2994,506,0.03
+sudeste,"Sudeste da África e Ilhas do Índico",america_norte,"América do Norte continental",3500,2994,506,0.03
+serra_leoa,"Serra Leoa",porto_rico,"Porto Rico",3100,2652,448,0.02
+barlavento,"Costa do Barlavento",brasil_sudeste,"Brasil — Sudeste (Rio de Janeiro)",3100,2652,448,0.02
+barlavento,"Costa do Barlavento",brasil_pernambuco,"Brasil — Pernambuco e Nordeste",2600,2224,376,0.02
+serra_leoa,"Serra Leoa",brasil_bahia,"Brasil — Bahia",2200,1882,318,0.02
+sudeste,"Sudeste da África e Ilhas do Índico",porto_rico,"Porto Rico",2100,1797,303,0.02
+sudeste,"Sudeste da África e Ilhas do Índico",rio_da_prata,"Rio da Prata",2000,1711,289,0.02
+barlavento,"Costa do Barlavento",porto_rico,"Porto Rico",1700,1454,246,0.01
+serra_leoa,"Serra Leoa",rio_da_prata,"Rio da Prata",1500,1283,217,0.01
+sudeste,"Sudeste da África e Ilhas do Índico",brasil_pernambuco,"Brasil — Pernambuco e Nordeste",1500,1283,217,0.01

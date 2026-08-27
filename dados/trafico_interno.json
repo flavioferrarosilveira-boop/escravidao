@@ -1,0 +1,782 @@
+{
+  "epigrafe": {
+    "texto": "Depois de 1850 o tráfico não acabou: mudou de escala. Deixou de atravessar o Atlântico e passou a atravessar o Brasil.",
+    "credito": "síntese desta carta, a partir da bibliografia listada abaixo"
+  },
+  "abertura": "As três cartas anteriores contam quem foi trazido da África e onde essa gente desembarcou. Falta a viagem seguinte, que quase nunca aparece nos mapas: o deslocamento das mesmas pessoas — e depois dos filhos delas — por dentro do Brasil. Ele teve três tempos distintos, com rotas, motores e fontes diferentes, e é preciso não somá-los: são três contagens feitas por autores diferentes, com métodos diferentes, sobre recortes que se sobrepõem.",
+  "lacuna_livro": "Este é o primeiro capítulo desta carta que <b>não</b> vem do livro. Procurei nas 457 páginas do Volume I de <i>Escravidão</i>, de Laurentino Gomes, os termos <i>tráfico interno</i>, <i>interprovincial</i>, <i>revenda</i>, <i>cabotagem</i>, <i>sampauleiro</i>, <i>Caminho Novo</i>, <i>Minas Gerais</i> e <i>mercado interno</i>: <b>nenhuma ocorrência</b>. Não é lacuna do autor — é o recorte do volume, que vai de 1444 a 1695 e se encerra antes de o tráfico interno existir como sistema. O Volume I toca no assunto por duas bordas: registra, na cronologia (p. 10), que <b>em 1675 o bandeirante Domingos Jorge Velho abre o caminho que liga São Paulo e Minas Gerais</b> — o eixo sobre o qual o comércio interno seria montado uma geração depois; e descreve (p. 327) o mesmo mecanismo do outro lado do oceano, os <b>libambos</b>, os comboios de cativos que os pombeiros conduziam do interior de Angola até o litoral. O tráfico por dentro do Brasil é matéria dos Volumes II (o ouro) e III (o café). Tudo o que segue vem, portanto, de fontes externas, cada número preso ao autor que o calculou.",
+  "eras": [
+    {
+      "id": "colonial",
+      "nome": "O ouro",
+      "periodo": "c. 1690 – 1800",
+      "titulo": "Os caminhos das Minas",
+      "resumo": "O ouro inverte a geografia da colônia. Até então tudo era litoral: engenho, porto, mar. A partir de 1690 abre-se, pela primeira vez, um mercado consumidor de mão de obra a seiscentos quilômetros da praia — e é preciso levar gente até lá a pé. Nascem os três caminhos: o Velho, de Santos e Paraty por São Paulo; o Novo, aberto do Rio de Janeiro para encurtar a viagem e vigiar o quinto; e a Via Bahia, que sobe o rio São Francisco desde o Recôncavo. O mesmo movimento leva gente a Goiás e, pelos rios, nas monções, até Cuiabá.",
+      "volume": null,
+      "nota_volume": "Continua sem existir uma estimativa de volume comparável às dos dois períodos seguintes — nenhuma fonte conta quantas pessoas passaram pelas três estradas. Mas o volume II de Laurentino Gomes fornece a proporção que faltava: <b>“quase a metade”</b> de todos os africanos desembarcados no Rio de Janeiro era <i>imediatamente</i> transferida para as regiões mineradoras de Minas Gerais, Goiás e Mato Grosso (vol. II, p. 121-122). Como 850 mil pessoas desembarcaram no porto do Rio ao longo do século XVIII (vol. II, p. 370), a ordem de grandeza do tráfico interno colonial só a partir do Rio já é de centenas de milhares. Não converto isso num número fechado — a proporção é aproximada e o autor não a apresenta como cálculo — mas ela deixa de ser um vazio.",
+      "proporcao_rio": {
+        "texto": "quase a metade dos que chegavam ao Rio de Janeiro seguia imediatamente para as minas",
+        "base": "850 mil desembarcados no Rio ao longo do século XVIII (Manolo Florentino)",
+        "fonte": "Laurentino Gomes, <i>Escravidão</i>, vol. II, p. 121-122 e p. 370"
+      }
+    },
+    {
+      "id": "corte",
+      "nome": "A partir da Corte",
+      "periodo": "1809 – 1833",
+      "titulo": "O Rio redistribui",
+      "resumo": "Com a Corte no Rio de Janeiro, o maior porto negreiro do mundo vira também o maior entreposto interno das Américas. Os africanos desembarcados no Valongo não ficavam: eram remetidos, com passaporte da Intendência Geral de Polícia, para as lavouras de café que subiam o Vale do Paraíba, para os engenhos de Campos, para as roças e as minas de Minas Gerais e, de navio, para os Portos do Sul. É o único dos três períodos em que se pode contar pessoa por pessoa, porque cada remessa deixou papel.",
+      "volume": 247663,
+      "unidade_volume": "pessoas remetidas do porto do Rio, em 49.395 partidas",
+      "nota_volume": "Manolo Florentino, Cacilda Machado e Carlos E. Valencia Villa, a partir da Seção de Passaportes da Intendência Geral de Polícia. 95% desse comércio ia para Minas Gerais, Rio de Janeiro, São Paulo e os chamados Portos do Sul."
+    },
+    {
+      "id": "interprovincial",
+      "nome": "O café",
+      "periodo": "1850 – 1881",
+      "titulo": "O tráfico interprovincial",
+      "resumo": "A Lei Eusébio de Queirós fecha o Atlântico em 1850 e o problema da reposição de mão de obra passa a ser resolvido dentro de casa. O açúcar do Nordeste está em declínio, o café do Sudeste em expansão, e a diferença de preço faz o resto: o Norte e o Sul vendem gente ao Sudeste, por cabotagem e por terra. O auge são os anos 1870, empurrado pela grande seca. Acaba em 1880-81, quando as próprias províncias cafeeiras taxam a entrada de escravizados a ponto de inviabilizá-la.",
+      "volume": 222500,
+      "unidade_volume": "pessoas transferidas entre províncias (~7.200 por ano)",
+      "nota_volume": "Estimativa de Robert Slenes. Contando também as transações dentro de uma mesma província, o próprio Slenes admite que o número pode chegar a 400 mil. Outras estimativas para 1850-1888 vão de 220 mil a 300 mil."
+    }
+  ],
+  "lugares": [
+    {
+      "id": "belem",
+      "nome": "Belém",
+      "lon": -48.5,
+      "lat": -1.46,
+      "tipo": "porto"
+    },
+    {
+      "id": "sao_luis",
+      "nome": "São Luís",
+      "lon": -44.3,
+      "lat": -2.53,
+      "tipo": "porto"
+    },
+    {
+      "id": "fortaleza",
+      "nome": "Fortaleza",
+      "lon": -38.52,
+      "lat": -3.73,
+      "tipo": "porto"
+    },
+    {
+      "id": "recife",
+      "nome": "Recife",
+      "lon": -34.88,
+      "lat": -8.05,
+      "tipo": "porto"
+    },
+    {
+      "id": "maceio",
+      "nome": "Maceió",
+      "lon": -35.74,
+      "lat": -9.67,
+      "tipo": "porto"
+    },
+    {
+      "id": "penedo",
+      "nome": "Penedo",
+      "lon": -36.58,
+      "lat": -10.29,
+      "tipo": "porto"
+    },
+    {
+      "id": "juazeiro",
+      "nome": "Juazeiro",
+      "lon": -40.5,
+      "lat": -9.41,
+      "tipo": "interior"
+    },
+    {
+      "id": "salvador",
+      "nome": "Salvador",
+      "lon": -38.51,
+      "lat": -12.97,
+      "tipo": "porto"
+    },
+    {
+      "id": "caetite",
+      "nome": "Alto Sertão da Bahia",
+      "lon": -42.48,
+      "lat": -14.07,
+      "tipo": "interior"
+    },
+    {
+      "id": "diamantina",
+      "nome": "Diamantina",
+      "lon": -43.6,
+      "lat": -18.24,
+      "tipo": "interior"
+    },
+    {
+      "id": "vila_boa",
+      "nome": "Vila Boa de Goiás",
+      "lon": -50.14,
+      "lat": -15.94,
+      "tipo": "interior"
+    },
+    {
+      "id": "cuiaba",
+      "nome": "Cuiabá",
+      "lon": -56.1,
+      "lat": -15.6,
+      "tipo": "interior"
+    },
+    {
+      "id": "ouro_preto",
+      "nome": "Vila Rica",
+      "lon": -43.51,
+      "lat": -20.39,
+      "tipo": "interior"
+    },
+    {
+      "id": "sao_joao",
+      "nome": "São João del-Rei",
+      "lon": -44.26,
+      "lat": -21.14,
+      "tipo": "interior"
+    },
+    {
+      "id": "vitoria",
+      "nome": "Vitória",
+      "lon": -40.34,
+      "lat": -20.32,
+      "tipo": "porto"
+    },
+    {
+      "id": "campos",
+      "nome": "Campos",
+      "lon": -41.3,
+      "lat": -21.75,
+      "tipo": "praca"
+    },
+    {
+      "id": "vassouras",
+      "nome": "Vale do Paraíba",
+      "lon": -43.66,
+      "lat": -22.4,
+      "tipo": "praca"
+    },
+    {
+      "id": "rio",
+      "nome": "Rio de Janeiro",
+      "lon": -43.17,
+      "lat": -22.91,
+      "tipo": "porto"
+    },
+    {
+      "id": "paraty",
+      "nome": "Paraty",
+      "lon": -44.72,
+      "lat": -23.22,
+      "tipo": "porto"
+    },
+    {
+      "id": "santos",
+      "nome": "Santos",
+      "lon": -46.33,
+      "lat": -23.96,
+      "tipo": "porto"
+    },
+    {
+      "id": "sao_paulo",
+      "nome": "São Paulo",
+      "lon": -46.63,
+      "lat": -23.55,
+      "tipo": "praca"
+    },
+    {
+      "id": "campinas",
+      "nome": "Campinas",
+      "lon": -47.06,
+      "lat": -22.91,
+      "tipo": "praca"
+    },
+    {
+      "id": "oeste_paulista",
+      "nome": "Oeste Paulista",
+      "lon": -47.81,
+      "lat": -21.18,
+      "tipo": "praca"
+    },
+    {
+      "id": "desterro",
+      "nome": "Desterro",
+      "lon": -48.55,
+      "lat": -27.6,
+      "tipo": "porto"
+    },
+    {
+      "id": "porto_alegre",
+      "nome": "Porto Alegre",
+      "lon": -51.23,
+      "lat": -30.03,
+      "tipo": "porto"
+    },
+    {
+      "id": "rio_grande",
+      "nome": "Rio Grande",
+      "lon": -52.1,
+      "lat": -32.03,
+      "tipo": "porto"
+    },
+    {
+      "id": "montevideu",
+      "nome": "Montevidéu",
+      "lon": -56.19,
+      "lat": -34.9,
+      "tipo": "porto"
+    },
+    {
+      "id": "buenos_aires",
+      "nome": "Buenos Aires",
+      "lon": -58.38,
+      "lat": -34.6,
+      "tipo": "porto"
+    }
+  ],
+  "rotas": [
+    {
+      "era": "colonial",
+      "de": "santos",
+      "para": "sao_paulo",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "Caminho Velho",
+      "nota": "O litoral paulista subia a serra para São Paulo; de lá partia a estrada das minas."
+    },
+    {
+      "era": "colonial",
+      "de": "sao_paulo",
+      "para": "ouro_preto",
+      "meio": "terra",
+      "peso": 3,
+      "nome": "Caminho Velho",
+      "nota": "A rota aberta pelas bandeiras. O Volume I registra que, em 1675, Domingos Jorge Velho abre o caminho que liga São Paulo e Minas Gerais (p. 10)."
+    },
+    {
+      "era": "colonial",
+      "de": "paraty",
+      "para": "ouro_preto",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "Caminho de Paraty",
+      "nota": "Variante marítima do Caminho Velho: desembarque em Paraty e subida da serra pelo vale do Paraíba."
+    },
+    {
+      "era": "colonial",
+      "de": "rio",
+      "para": "ouro_preto",
+      "meio": "terra",
+      "peso": 3,
+      "nome": "Caminho Novo",
+      "nota": "Aberto no início do século XVIII para encurtar a viagem e permitir fiscalizar o quinto do ouro. Nos registros da estrada aparecem com frequência carregamentos compostos exclusivamente de cativos."
+    },
+    {
+      "era": "colonial",
+      "de": "salvador",
+      "para": "juazeiro",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "Via Bahia",
+      "nota": "Do Recôncavo ao médio São Francisco, pelo sertão do gado."
+    },
+    {
+      "era": "colonial",
+      "de": "juazeiro",
+      "para": "diamantina",
+      "meio": "rio",
+      "peso": 2,
+      "nome": "Rio São Francisco",
+      "nota": "A via fluvial que abastecia a região diamantina de gente vinda da Bahia — inclusive depois de aberto o Caminho Novo."
+    },
+    {
+      "era": "colonial",
+      "de": "ouro_preto",
+      "para": "vila_boa",
+      "meio": "terra",
+      "peso": 1,
+      "nome": "Estrada de Goiás",
+      "nota": "O ouro de Goiás repete, vinte anos depois, o que o de Minas fizera."
+    },
+    {
+      "era": "colonial",
+      "de": "sao_paulo",
+      "para": "cuiaba",
+      "meio": "rio",
+      "peso": 1,
+      "nome": "Monções",
+      "nota": "As expedições fluviais que subiam o Tietê e desciam para o Guaporé, levando gente às minas de Mato Grosso."
+    },
+    {
+      "era": "colonial",
+      "de": "ouro_preto",
+      "para": "diamantina",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "Estrada dos diamantes",
+      "nota": ""
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "ouro_preto",
+      "meio": "terra",
+      "peso": 3,
+      "nome": "Minas Gerais",
+      "nota": "95 mil africanos remetidos do Rio para Minas Gerais entre 1809 e 1833 — o maior destino isolado."
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "campos",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "Campos",
+      "nota": "35 mil pessoas entre 1809 e 1833, das quais mais de 27 mil só entre 1822 e 1830, no auge do açúcar campista."
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "vassouras",
+      "meio": "terra",
+      "peso": 3,
+      "nome": "Vale do Paraíba",
+      "nota": "O café subindo a serra: as fazendas do Vale do Paraíba fluminense foram povoadas diretamente do Valongo."
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "sao_paulo",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "São Paulo",
+      "nota": ""
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "santos",
+      "meio": "mar",
+      "peso": 2,
+      "nome": "Porto do Sul",
+      "nota": ""
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "desterro",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Santa Catarina",
+      "nota": ""
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "rio_grande",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Rio Grande",
+      "nota": ""
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "montevideu",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Montevidéu",
+      "nota": "Os Portos do Sul incluíam destinos fora do Brasil: Montevidéu e Buenos Aires."
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "buenos_aires",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Buenos Aires",
+      "nota": ""
+    },
+    {
+      "era": "corte",
+      "de": "rio",
+      "para": "sao_joao",
+      "meio": "terra",
+      "peso": 1,
+      "nome": "Sul de Minas",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "belem",
+      "para": "rio",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Pará",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "sao_luis",
+      "para": "rio",
+      "meio": "mar",
+      "peso": 2,
+      "nome": "Maranhão",
+      "nota": "O Maranhão tinha, em 1872, a sexta maior população escravizada do Império — e o algodão em queda."
+    },
+    {
+      "era": "interprovincial",
+      "de": "fortaleza",
+      "para": "rio",
+      "meio": "mar",
+      "peso": 2,
+      "nome": "Ceará",
+      "nota": "7.667 pessoas vendidas para fora da província só nos três anos da grande seca, 1877-79. O porto foi fechado ao tráfico pelos jangadeiros em 27 de janeiro de 1881."
+    },
+    {
+      "era": "interprovincial",
+      "de": "fortaleza",
+      "para": "santos",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Ceará · São Paulo",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "recife",
+      "para": "rio",
+      "meio": "mar",
+      "peso": 3,
+      "nome": "Pernambuco",
+      "nota": "Como no Atlântico, o tráfico interno pernambucano não ficou livre de práticas ilegais — que se multiplicaram depois de 1850."
+    },
+    {
+      "era": "interprovincial",
+      "de": "penedo",
+      "para": "salvador",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Penedo",
+      "nota": "Circuito próprio do baixo São Francisco, alimentando o entreposto baiano."
+    },
+    {
+      "era": "interprovincial",
+      "de": "maceio",
+      "para": "salvador",
+      "meio": "mar",
+      "peso": 2,
+      "nome": "Alagoas · Bahia",
+      "nota": "Nos anos 1850 o porto de Salvador funcionava como entreposto de pessoas saídas de Alagoas com destino ao Rio de Janeiro."
+    },
+    {
+      "era": "interprovincial",
+      "de": "salvador",
+      "para": "rio",
+      "meio": "mar",
+      "peso": 3,
+      "nome": "Bahia · Corte",
+      "nota": "A principal artéria da cabotagem negreira interna."
+    },
+    {
+      "era": "interprovincial",
+      "de": "salvador",
+      "para": "santos",
+      "meio": "mar",
+      "peso": 2,
+      "nome": "Bahia · São Paulo",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "caetite",
+      "para": "salvador",
+      "meio": "terra",
+      "peso": 1,
+      "nome": "Sertão · Recôncavo",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "caetite",
+      "para": "oeste_paulista",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "Sampauleiros",
+      "nota": "Os comerciantes que levavam gente do Alto Sertão da Bahia, por terra, até o Oeste Cafeeiro Paulista — a rota que deu nome a eles."
+    },
+    {
+      "era": "interprovincial",
+      "de": "vitoria",
+      "para": "rio",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Espírito Santo",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "desterro",
+      "para": "santos",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Santa Catarina",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "porto_alegre",
+      "para": "rio",
+      "meio": "mar",
+      "peso": 2,
+      "nome": "Rio Grande do Sul",
+      "nota": "O charque perdia para o café: o Sul também virou província exportadora de gente."
+    },
+    {
+      "era": "interprovincial",
+      "de": "rio_grande",
+      "para": "santos",
+      "meio": "mar",
+      "peso": 1,
+      "nome": "Rio Grande · Santos",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "rio",
+      "para": "vassouras",
+      "meio": "terra",
+      "peso": 3,
+      "nome": "Vale do Paraíba",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "santos",
+      "para": "campinas",
+      "meio": "terra",
+      "peso": 3,
+      "nome": "Oeste Paulista",
+      "nota": ""
+    },
+    {
+      "era": "interprovincial",
+      "de": "campinas",
+      "para": "oeste_paulista",
+      "meio": "terra",
+      "peso": 3,
+      "nome": "Fronteira do café",
+      "nota": "Campinas foi um dos destinos mais temidos do tráfico interno."
+    },
+    {
+      "era": "interprovincial",
+      "de": "rio",
+      "para": "sao_paulo",
+      "meio": "terra",
+      "peso": 2,
+      "nome": "Corte · São Paulo",
+      "nota": ""
+    }
+  ],
+  "mecanica": [
+    {
+      "titulo": "1850: o tráfico não acaba, muda de endereço",
+      "texto": "A Lei Eusébio de Queirós fecha os portos brasileiros ao tráfico africano em setembro de 1850. A escravidão, porém, continua legal por mais 38 anos. Como não se pode mais comprar gente na África e a economia do café está em plena expansão, a reposição da mão de obra passa a ser feita dentro do país. É por isso que a historiografia recente insiste que o comércio interno da segunda metade do século XIX não foi um mero substituto do tráfico atlântico, mas a sua continuação.",
+      "fonte": "Scheffer, UFSC, 2006"
+    },
+    {
+      "titulo": "Dois mercados, não um",
+      "texto": "Robert Slenes mostrou que o Brasil não tinha um mercado interno de escravizados, mas dois, com relativa autonomia entre si: o do Norte e o do Sul. O fluxo entre eles é o que se chama de tráfico interprovincial, e teve o seu auge nos anos 1870.",
+      "fonte": "Slenes, apud Scheffer"
+    },
+    {
+      "titulo": "O mar fazia o trabalho pesado",
+      "texto": "A esmagadora maioria das transferências de longa distância se fez por cabotagem — navios de carga costeira, saindo dos portos provinciais com destino ao Rio de Janeiro e a Santos. As redes de comerciantes de cabotagem, montadas para o açúcar, o algodão e o couro, foram as mesmas que passaram a mover pessoas. Nos anos 1850, Salvador funcionava como entreposto: gente saída de Alagoas era reembarcada ali com destino à Corte.",
+      "fonte": "Revista Cantareira, UFF; Lima Filho, UFBA, 2019"
+    },
+    {
+      "titulo": "E o sertão fazia o resto a pé",
+      "texto": "O que não ia por mar ia por terra, em comboios. Do Alto Sertão da Bahia saíam os <i>sampauleiros</i> — traficantes assim chamados justamente porque levavam gente até o Oeste Cafeeiro Paulista. É a versão brasileira do mesmo mecanismo que Laurentino Gomes descreve do outro lado do Atlântico (p. 327): os <i>libambos</i>, os comboios de cativos conduzidos pelos pombeiros do interior de Angola até o litoral.",
+      "fonte": "Erivaldo Fagundes Neves, <i>Afro-Ásia</i> n. 24, 2000; Gomes I, p. 327"
+    },
+    {
+      "titulo": "A seca como leilão",
+      "texto": "A grande seca de 1877-1879 devastou o Nordeste e forçou a liquidação de bens fixos — inclusive de pessoas. No Ceará, o efeito é visível na série: 1.345 vendidos para fora da província entre 1856 e 1861; 2.170 entre 1863 e 1870; 3.168 entre 1872 e 1876; e 7.667 apenas nos três anos da seca. A província chegou a arrecadar receita significativa com o imposto sobre a exportação de escravizados.",
+      "fonte": "<i>História, Ciências, Saúde — Manguinhos</i>, v. 27, n. 1, 2020"
+    },
+    {
+      "titulo": "O tráfico invisível: dentro da própria província",
+      "texto": "Herbert Klein sustenta que, para sustentar as fazendas de café, o tráfico dentro de uma mesma província pesou mais do que o interprovincial. É também o mais difícil de medir: uma venda entre duas fazendas vizinhas não passa por porto nem por registro de exportação. Slenes calcula que, somando as transações intraprovinciais, o total de pessoas negociadas entre 1850 e 1881 pode chegar a 400 mil — quase o dobro do fluxo entre províncias.",
+      "fonte": "Klein e Slenes, apud Scheffer"
+    },
+    {
+      "titulo": "Ilegal também aqui",
+      "texto": "Assim como o tráfico atlântico depois de 1831, o tráfico interno tinha o seu lado clandestino: venda de pessoas já libertas ou de ingênuos nascidos livres pela Lei do Ventre Livre, falsificação de matrículas, embarques sem os papéis exigidos. As práticas ilegais se multiplicaram depois de 1850, quando o preço de uma pessoa disparou.",
+      "fonte": "<i>CLIO — Revista de Pesquisa Histórica</i>, UFPE"
+    },
+    {
+      "titulo": "Como acabou — e por que não foi por compaixão",
+      "texto": "O tráfico interprovincial não morreu de escrúpulo: morreu de imposto. Em 1880 e 1881 as próprias províncias cafeeiras — Rio de Janeiro, São Paulo e Minas Gerais — impuseram taxas proibitivas sobre a <i>entrada</i> de escravizados, temendo a concentração de uma população cativa cada vez maior e mais jovem. Em 1881 o comércio inter-regional estava praticamente morto. No mesmo ano, em 27 de janeiro, os jangadeiros de Fortaleza — que faziam o transporte entre a praia e os navios — recusaram-se a embarcar pessoas escravizadas, fechando o porto ao tráfico. O líder do movimento, Francisco José do Nascimento, ficou conhecido como o Dragão do Mar.",
+      "fonte": "Almanack Braziliense, USP; Fundação Cultural Palmares"
+    },
+    {
+      "titulo": "O que ficou no mapa",
+      "texto": "O tráfico interno esvaziou o Nordeste da sua população em idade de trabalho e deixou lá, sobretudo, idosos e crianças; e entregou ao Sudeste cafeeiro gente jovem e sadia, dando sobrevida à escravidão exatamente onde ela tinha força política para se defender. O censo de 1872, na carta anterior, é a fotografia desse resultado: Minas Gerais, Rio de Janeiro e São Paulo, os três destinos do tráfico interno, concentram 54% de toda a população escravizada do Império.",
+      "fonte": "Recenseamento de 1872, conferido por soma nesta carta"
+    }
+  ],
+  "numeros": [
+    {
+      "rubrica": "Pessoas remetidas do porto do Rio de Janeiro para o interior e para os Portos do Sul",
+      "valor": "247.663",
+      "detalhe": "em 49.395 partidas",
+      "periodo": "1809-1833",
+      "fonte": "Florentino, Machado e Valencia Villa, <i>Afro-Ásia</i> n. 70"
+    },
+    {
+      "rubrica": "Parcela dessas remessas destinada a Minas Gerais, Rio de Janeiro, São Paulo e Portos do Sul",
+      "valor": "95%",
+      "detalhe": "",
+      "periodo": "1809-1833",
+      "fonte": "idem"
+    },
+    {
+      "rubrica": "Africanos remetidos do Rio para a província de Minas Gerais",
+      "valor": "95.000",
+      "detalhe": "o maior destino isolado",
+      "periodo": "1809-1833",
+      "fonte": "idem"
+    },
+    {
+      "rubrica": "Pessoas recebidas por Campos, no norte fluminense",
+      "valor": "35.000",
+      "detalhe": "mais de 27.000 só entre 1822 e 1830",
+      "periodo": "1809-1833",
+      "fonte": "idem"
+    },
+    {
+      "rubrica": "Pessoas transferidas entre províncias",
+      "valor": "222.500",
+      "detalhe": "cerca de 7.200 por ano",
+      "periodo": "1850-1881",
+      "fonte": "Robert Slenes"
+    },
+    {
+      "rubrica": "O mesmo total, somando as transações dentro de uma mesma província",
+      "valor": "até 400.000",
+      "detalhe": "estimativa máxima do autor",
+      "periodo": "1850-1881",
+      "fonte": "Robert Slenes"
+    },
+    {
+      "rubrica": "Faixa das demais estimativas correntes para o mercado interno",
+      "valor": "220.000 a 300.000",
+      "detalhe": "sobre os 38 anos entre a lei de 1850 e a abolição",
+      "periodo": "1850-1888",
+      "fonte": "historiografia, apud Scheffer"
+    },
+    {
+      "rubrica": "Vendidos para fora da província do Ceará",
+      "valor": "1.345",
+      "detalhe": "",
+      "periodo": "1856-1861",
+      "fonte": "<i>Hist. Ciênc. Saúde — Manguinhos</i> 27(1), 2020"
+    },
+    {
+      "rubrica": "Vendidos para fora da província do Ceará",
+      "valor": "2.170",
+      "detalhe": "",
+      "periodo": "1863-1870",
+      "fonte": "idem"
+    },
+    {
+      "rubrica": "Vendidos para fora da província do Ceará",
+      "valor": "3.168",
+      "detalhe": "antes da grande seca",
+      "periodo": "1872-1876",
+      "fonte": "idem"
+    },
+    {
+      "rubrica": "Vendidos para fora da província do Ceará",
+      "valor": "7.667",
+      "detalhe": "durante a grande seca — mais do que nos vinte anos anteriores somados",
+      "periodo": "1877-1879",
+      "fonte": "idem"
+    },
+    {
+      "rubrica": "População escravizada do Ceará no censo do Império",
+      "valor": "31.913",
+      "detalhe": "4,4% da população da província — número idêntico ao apurado na Carta III",
+      "periodo": "1872",
+      "fonte": "Recenseamento Geral de 1872"
+    }
+  ],
+  "cautela": "Estes números vêm de autores, fontes e métodos diferentes e <b>não podem ser somados</b>. As remessas do Rio (1809-1833) são uma contagem de papéis de polícia; as transferências interprovinciais (1850-1881) são uma reconstrução demográfica indireta; a série cearense é fiscal, vinda do imposto de exportação. Períodos se sobrepõem, definições divergem — «pessoa remetida» não é a mesma coisa que «pessoa transferida entre províncias» — e o tráfico dentro de uma mesma província escapa quase inteiramente às três. As espessuras das rotas no mapa são qualitativas: indicam a importância relativa que a bibliografia atribui a cada trajeto, não um volume medido. Não existe, que eu tenha encontrado, uma matriz província-a-província do tráfico interno comparável à do tráfico atlântico.",
+  "fontes": [
+    {
+      "autor": "FLORENTINO, Manolo; MACHADO, Cacilda; VALENCIA VILLA, Carlos E.",
+      "obra": "O tráfico interno de escravos a partir do Rio de Janeiro, 1809-1833",
+      "onde": "<i>Afro-Ásia</i>, n. 70, p. 49-108, UFBA",
+      "url": "https://periodicos.ufba.br/index.php/afroasia/article/view/56327"
+    },
+    {
+      "autor": "SCHEFFER, Rafael da Cunha",
+      "obra": "Tráfico interprovincial e comerciantes de escravos em Desterro, 1849-1888",
+      "onde": "dissertação de mestrado, UFSC",
+      "url": "https://repositorio.ufsc.br/handle/123456789/89470"
+    },
+    {
+      "autor": "NEVES, Erivaldo Fagundes",
+      "obra": "Sampauleiros traficantes: comércio de escravos do Alto Sertão da Bahia para o Oeste Cafeeiro Paulista",
+      "onde": "<i>Afro-Ásia</i>, n. 24, UFBA, 2000",
+      "url": "https://periodicos.ufba.br/index.php/afroasia/article/view/20997"
+    },
+    {
+      "autor": "LIMA FILHO, Valney Mascarenhas de",
+      "obra": "Comércio e tráfico interprovincial de escravos em Salvador, 1840-1880",
+      "onde": "UFBA, 2019",
+      "url": "https://repositorio.ufba.br/handle/ri/33125"
+    },
+    {
+      "autor": "—",
+      "obra": "Comércio de cabotagem e tráfico interno de escravos em Salvador (1830-1880)",
+      "onde": "<i>Revista Cantareira</i>, UFF",
+      "url": "https://periodicos.uff.br/cantareira/article/view/38260"
+    },
+    {
+      "autor": "—",
+      "obra": "De cativeiro a cativeiro: práticas ilegais do tráfico interprovincial de escravos em Pernambuco, 1850-1880",
+      "onde": "<i>CLIO — Revista de Pesquisa Histórica</i>, UFPE",
+      "url": "https://periodicos.ufpe.br/revistas/index.php/revistaclio/article/view/241956"
+    },
+    {
+      "autor": "PIRES, Maria de Fátima Novaes",
+      "obra": "Travessias a caminho — tráfico interprovincial de escravos, Bahia e São Paulo (1850-1880)",
+      "onde": "<i>Revista África(s)</i>, v. 4, n. 8, UNEB, 2017",
+      "url": "https://revistas.uneb.br/africas/article/view/4390"
+    },
+    {
+      "autor": "—",
+      "obra": "A seca de 1877-1879 no Império do Brasil",
+      "onde": "<i>História, Ciências, Saúde — Manguinhos</i>, v. 27, n. 1, 2020",
+      "url": "https://www.scielo.br/j/hcsm/a/ynZxC9TkBJS5GdCnjKXmGKd/"
+    },
+    {
+      "autor": "—",
+      "obra": "Via Bahia: a importação de escravos para Minas Gerais",
+      "onde": "Cedeplar/UFMG, Seminário de Diamantina, 2006",
+      "url": "https://diamantina.cedeplar.ufmg.br/portal/download/diamantina-2006/D06A002.pdf"
+    },
+    {
+      "autor": "—",
+      "obra": "Um temido destino: o tráfico interno de escravizados para Campinas, 1850-1885",
+      "onde": "IHGG Campinas",
+      "url": "https://ihggcampinas.org/2022/11/20/um-temido-destino-o-trafico-interno-de-escravizados-para-campinas-1850-1885/"
+    }
+  ]
+}
