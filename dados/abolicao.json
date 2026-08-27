@@ -1,0 +1,89 @@
+{
+  "_fonte": "Laurentino Gomes, Escravidão, vol. II, caps. 29 e 30. Páginas deste volume.",
+  "brookes": {
+    "titulo": "O diagrama do Brookes",
+    "intro": "É a imagem mais reproduzida da história do abolicionismo, e foi desenhada como peça de campanha. O <i>Brookes</i> foi construído em 1781 nas docas de Liverpool por encomenda do negreiro Joseph Brookes Jr.; com 297 toneladas de arqueação — um terço acima da média mercante da época —, chegou a carregar 740 pessoas.",
+    "pagina": "357-358",
+    "viagens": { "total": 10, "anos": "em 25 anos", "transportou": 5163, "chegaram": 4559, "morreram": 604, "taxa": "11,7%" },
+    "medidas": [
+      { "quem": "Cada homem adulto", "compr_m": 1.82, "larg_m": 0.40, "rotulo": "1,82 m × 40 cm" },
+      { "quem": "Cada menina", "compr_m": 1.22, "larg_m": 0.356, "rotulo": "1,22 m × 35,6 cm" }
+    ],
+    "pe_direito": { "valor_m": 1.70, "texto": "A altura entre as plataformas abaixo do convés era de 1,70 metro — insuficiente para alguém caminhar ou ficar confortavelmente de pé." },
+    "compartimentos": ["homens adultos", "mulheres adultas", "meninos", "meninas"],
+    "corrente": "Uma corrente prendia os homens entre si, pela perna, na altura da canela.",
+    "diagrama": "No desenho apareciam 292 pessoas deitadas lado a lado, “como se fossem sardinhas dentro de uma lata de conserva”.",
+    "necessidades": "Para fazer as necessidades, em baldes enfileirados nas laterais, tinham de tropeçar ou pisar sobre os vizinhos — o que causava conflitos frequentes.",
+    "duracao": "Assim passavam os cerca de quarenta dias de travessia."
+  },
+  "zong": {
+    "titulo": "O Zong, 1781 — o julgamento que expôs a lógica",
+    "texto": "O navio inglês <i>Zong</i>, de Liverpool, saiu da África rumo à Jamaica em 6 de setembro de 1781 com excesso de gente a bordo. Em 29 de novembro, no meio do Atlântico, sessenta pessoas já haviam morrido de doença, fome e sede. Temendo perder toda a carga antes de chegar, o capitão Luke Collingwood decidiu <b>jogar ao mar todos os doentes e desnutridos</b>. Ao longo de três dias, 133 pessoas foram atiradas vivas da amurada. Só uma conseguiu escapar e subir de volta.",
+    "julgamento": "O dono do navio, James Gregson, pediu indenização à seguradora pela carga perdida. A empresa recorreu à Justiça. Pela lei inglesa, se a pessoa morresse a bordo por maus-tratos, fome ou sede, a responsabilidade era do capitão; <b>se caísse no mar, o seguro cobria</b>. A Justiça decidiu que a seguradora tinha razão: o capitão era o culpado pelas mortes.",
+    "pagina": "357",
+    "nota": "Não houve processo criminal. A pergunta que o tribunal respondeu não foi quem matou 133 pessoas, e sim quem pagaria por elas."
+  },
+  "sao_jose": {
+    "titulo": "O São José Paquete d’África, 1794",
+    "texto": "Navio negreiro português do capitão Manuel João Pereira. Saiu de Lisboa em 27 de abril de 1794 e, em dezembro, embarcou entre quatrocentas e quinhentas pessoas na ilha de Moçambique, no oceano Índico, rumo ao Maranhão. Na noite de 27 de dezembro, mal ultrapassado o cabo da Boa Esperança, uma tempestade o jogou contra um banco de pedras <b>a apenas cem metros da praia</b>, em Camps Bay. O capitão e todos os tripulantes foram salvos pelos moradores locais. <b>212 pessoas morreram afogadas no porão.</b> Os sobreviventes foram leiloados na Cidade do Cabo nos dias seguintes.",
+    "pagina": "361-362",
+    "achado": "Localizado nos anos 1980 ao largo de Clifton e tomado durante décadas por uma nau mercante holandesa, só foi identificado em 2015. O Slavevoyages registra cerca de mil naufrágios em 350 anos de tráfico, mas quase todos conhecidos apenas por fontes escritas: <b>antes deste, nunca se haviam encontrado os vestígios de um navio negreiro naufragado em pleno curso com toda a sua carga a bordo</b>. Os destroços — ganchos, roldanas e as barras de ferro que serviam de lastro — estão hoje no Museu Nacional de História e Cultura Afro-Americana, em Washington."
+  },
+  "campanha": {
+    "titulo": "A primeira campanha de massa da história",
+    "texto": "Os abolicionistas sabiam que princípios morais não bastavam para convencer uma opinião pública cuja prosperidade dependia do trabalho cativo. Recorreram a estatísticas, datas, mapas, desenhos, plantas e maquetes de navios, comícios, palestras e milhares de abaixo-assinados ao Parlamento. A participação feminina foi intensa: comitês regionais, coleta de assinaturas e o <b>boicote ao açúcar</b> das colônias escravistas do Caribe. O selo do movimento — a silhueta de um homem ajoelhado e acorrentado com a pergunta “Eu não sou um homem e um irmão?” — foi estampado em moedas, botões, livros e panfletos.",
+    "pagina": "356-357",
+    "quakers": "Nove dos doze fundadores da Society for Effecting the Abolition of the Slave Trade, criada em Londres em 22 de maio de 1787, eram quakers. Eram cerca de 90 mil em todo o mundo anglo-saxão por volta de 1750 — poucos, mas ricos, letrados e influentes. Entre eles havia banqueiros, armadores e financiadores do próprio tráfico, chamados a desistir.",
+    "newton": "O reverendo John Newton foi capitão de navio negreiro antes de se converter, tornar-se abolicionista e compor “Amazing Grace”."
+  },
+  "explicacoes": {
+    "titulo": "Por que a escravidão acabou — três respostas, nenhuma suficiente",
+    "pagina": "349-353",
+    "itens": [
+      {
+        "nome": "Filantropia branca",
+        "tese": "A abolição como obra generosa dos brancos em favor dos negros — “caberia, portanto, aos negros apenas serem gratos”.",
+        "objecao": "Entre os líderes do movimento havia africanos e afrodescendentes: Olaudah Equiano, Ottobah Cugoano e Charles Ignatius Sancho — ex-escravo <b>nascido em um navio negreiro</b>, compositor, e o primeiro afrodescendente a votar na Inglaterra. Nos Estados Unidos são quase quarenta nomes, entre eles Frederick Douglass, James Pennington (primeiro afrodescendente a estudar em Yale) e Harriet Tubman. No Brasil, ao lado de Joaquim Nabuco: José do Patrocínio, Luís Gama, André Rebouças e Maria Firmina dos Reis, autora de <i>Úrsula</i>, o primeiro romance publicado por uma mulher — e negra — no país."
+      },
+      {
+        "nome": "Inviabilidade econômica",
+        "tese": "Eric Williams, 1944: a escravidão teria caído de madura, substituída pelo trabalho assalariado do capitalismo industrial — que ela mesma financiara.",
+        "objecao": "Seymour Drescher, em <i>Econocide</i>: em 1783 o primeiro-ministro William Pitt estimava que <b>80% de todas as receitas britânicas no comércio ultramarino vinham das colônias do Caribe</b>, e nunca se transportaram tantos cativos quanto entre 1750 e 1805. Nos Estados Unidos, a Guerra da Secessão custou mais de 750 mil mortos — “por que um país pagaria um preço tão alto em vidas humanas se o sistema estivesse, de fato, em crise?”"
+      },
+      {
+        "nome": "A resistência dos escravizados",
+        "tese": "Mais de vinte revoltas em todo o continente em apenas 43 anos, entre 1789 e 1832: a escravidão trazia a semente da própria destruição.",
+        "objecao": "Com a única exceção do Haiti, nenhuma chegou a ameaçar a ordem. E nem toda revolta era contra a escravidão: na Revolta de Tacky, na Jamaica em 1760, os rebeldes pregavam tomar a ilha e <b>continuar produzindo açúcar escravizando os negros que não aderissem</b>."
+      }
+    ],
+    "fecho": "As três podem ter contribuído em graus diferentes. Nenhuma explica sozinha por que um sistema lucrativo, praticado por milhares de anos, foi desmontado em pouco mais de meio século."
+  },
+  "indenizacao": {
+    "titulo": "1834 — a abolição comprada",
+    "texto": "O Parlamento britânico aboliu a escravidão em todos os territórios do império indenizando os <b>donos</b> em vinte milhões de libras esterlinas. Na prática, comprou de seus proprietários os 800 mil cativos das colônias ultramarinas. O dinheiro do Tesouro e dos contribuintes britânicos não foi usado para indenizar quem trabalhara a vida inteira sem salário, e sim para compensar quem perdia o que considerava um investimento. Lord Harewood recebeu 26 mil libras pelos seus 1.277 cativos.",
+    "pagina": "359",
+    "aprendizes": "E a liberdade imediata era só para as crianças de até seis anos. Os demais trabalhariam <b>mais seis anos</b> para os antigos donos, na condição de “aprendizes”. Era, escreve Gomes, “uma forma mal disfarçada de esticar a escravidão” — a mesma que o Brasil adotaria décadas depois com as leis do Ventre Livre e dos Sexagenários."
+  },
+  "frota": {
+    "titulo": "Para onde foi a frota negreira britânica",
+    "texto": "Com a abolição, a enorme frota inglesa ficou ociosa. Os arquivos do <b>Lloyd’s Register of Shipping</b> mostram que o principal destino desses navios foi o <b>Brasil</b>, onde voltaram ao tráfico. Eram cascos forrados de lâminas de cobre, que os protegiam das cracas e os deixavam mais rápidos e duráveis nas águas quentes: “era tudo de que os traficantes brasileiros precisavam”. O trajeto continuou quase o mesmo — mercadorias da Revolução Industrial na Inglaterra, gente na África, cargas humanas até os portos brasileiros e, de volta à Europa, o algodão, o açúcar, o café e o tabaco que abasteciam as fábricas inglesas.",
+    "pagina": "360"
+  },
+  "cronologia": [
+    { "ano": "1555", "fato": "O padre português Fernando Oliveira, em <i>Arte da guerra no mar</i>, escreve uma das primeiras críticas ao tráfico: sem compradores não haveria vendedores na África, e os portugueses tinham inventado o comércio de “comprar e vender homens livres da mesma forma como se compram e vendem animais”.", "pagina": "353-354" },
+    { "ano": "1711-1713", "fato": "A South Sea Company recebe o monopólio de fornecer cativos ao império espanhol. Sócios majoritários: o rei Felipe V da Espanha (28%) e a rainha Ana da Inglaterra (22,5%). Entre os minoritários, Isaac Newton, Daniel Defoe e Jonathan Swift. Londres celebra com uma procissão de tochas.", "pagina": "346-347" },
+    { "ano": "1780", "fato": "A Pensilvânia aprova a primeira lei de emancipação gradual dos Estados Unidos.", "pagina": "358" },
+    { "ano": "1787", "fato": "Fundada em Londres a Society for Effecting the Abolition of the Slave Trade.", "pagina": "355" },
+    { "ano": "1807", "fato": "A Inglaterra proíbe totalmente o tráfico a partir de 1º de janeiro de 1808 — a mesma data em que os Estados Unidos proíbem a importação de novos cativos.", "pagina": "359" },
+    { "ano": "1815", "fato": "No Tratado de Viena as potências europeias concordam em extinguir o tráfico, <b>sem definir data</b>. As exceções são Portugal e Espanha.", "pagina": "359" },
+    { "ano": "1820-1880", "fato": "Ainda assim, cerca de 2,3 milhões de africanos embarcam rumo à América — a maior parte para o Brasil e Cuba.", "pagina": "359" },
+    { "ano": "1834", "fato": "Abolição em todos os territórios britânicos, com indenização de vinte milhões de libras aos proprietários.", "pagina": "359" },
+    { "ano": "1865", "fato": "Abolição total nos Estados Unidos, depois da Guerra da Secessão.", "pagina": "359" },
+    { "ano": "1888", "fato": "Lei Áurea no Brasil, o último país das Américas.", "pagina": "349" }
+  ],
+  "bolonha": {
+    "titulo": "A voz que foi calada no Brasil",
+    "texto": "Em 1794 o capuchinho italiano frei José de Bolonha, residente na Bahia, tentava persuadir seus fiéis de que “a escravidão era ilegítima e contrária à religião”. O governador dom Fernando José de Portugal julgou a ideia “sumamente delicada e melindrosa”: se a pregação se propagasse, “inquietaria as consciências dos habitantes desta cidade, e traria consigo para o futuro consequências funestas à conservação e subsistência desta colônia”. Bolonha foi proibido de confessar e despachado para Lisboa.",
+    "pagina": "360"
+  }
+}

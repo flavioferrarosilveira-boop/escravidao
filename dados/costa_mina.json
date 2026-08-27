@@ -1,0 +1,150 @@
+{
+  "_fonte": "Laurentino Gomes, Escravidão, vol. II, caps. 11 a 16. Páginas deste volume.",
+  "titulo": "A Costa da Mina",
+  "intro": "O volume I desta trilogia mapeou a África do tráfico de fora para dentro: as regiões de embarque, a frente de captura, os sistemas. O volume II desce a um só trecho de litoral — o Golfo do Benim, chamado nos documentos europeus de Costa da Mina ou Costa dos Escravos — e mostra como funcionava por dentro: quem vendia, a que preço, em troca de quê, e o que os reinos africanos ganhavam e perdiam nisso.",
+  "geologia": {
+    "titulo": "As duas margens do mesmo rio",
+    "texto": "O formato côncavo do Golfo do Benim encaixa na protuberância do Brasil entre a Bahia e o Ceará: é o corte da Pangeia. “Geologicamente separados ao longo de milhões de anos, Brasil e África se aproximaram novamente pela ação do tráfico negreiro, e durante quase quatro séculos funcionaram como se estivessem situados em margens opostas de um mesmo rio, o Atlântico.”",
+    "pagina": "161-162"
+  },
+  "moeda": {
+    "titulo": "O que valia o quê, em búzios",
+    "intro": "Os cauris — conchinhas extraídas nas ilhas Maldivas e na ilha de Luanda — eram a referência monetária de toda a costa ocidental africana. A tabela de 1681:",
+    "pagina": "163",
+    "linhas": [
+      { "item": "Uma onça de ouro (28 g)", "cauris": "19.200" },
+      { "item": "Uma vaca", "cauris": "8.000" },
+      { "item": "Uma ovelha", "cauris": "1.600" },
+      { "item": "Uma galinha", "cauris": "10" },
+      { "item": "Um dia de aluguel de um escravo carregador", "cauris": "20" },
+      { "item": "Os serviços de uma prostituta", "cauris": "3" }
+    ],
+    "cesta": {
+      "titulo": "O preço de um cativo, no começo do século XVIII",
+      "texto": "Quinze libras esterlinas — ou, em mercadoria: doze barras de ferro, ou cem manilhas de bronze, ou cinco espingardas, ou dois barris de pólvora, ou três peças de tecido da Índia, ou doze galões de aguardente.",
+      "pagina": "163",
+      "divergencia": "O livro acrescenta à lista “oitenta conchas de búzios (cauris)”. Pela sua própria tabela, oitenta cauris comprariam oito galinhas. A cifra não pode estar certa como está — provavelmente falta uma ordem de grandeza (oitenta <i>mil</i> cauris) ou trata-se de outra unidade. Fica registrada como o livro traz, e assinalada."
+    }
+  },
+  "ajuda": {
+    "titulo": "Ajudá",
+    "texto": "Um reino de 64 por 42 quilômetros, com menos de 100 mil habitantes, exportava <b>20 mil pessoas por ano</b> — mais do que qualquer outro porto africano do período. Entre 1700 e 1725 saíram dali mais de 400 mil cativos: cerca de 40% de todo o tráfico atlântico desses vinte e cinco anos. “Se tivéssemos que escolher o lugar que melhor representasse a força do tráfico de escravos na África, seria Ajudá”, escreveu Robert Harms.",
+    "pagina": "165",
+    "como": "Ajudá exportava sem se despovoar porque era o entreposto final de rotas que vinham de longe: gente de cerca de <b>trinta grupos étnicos diferentes</b>, trazida em caravanas muçulmanas de regiões a até 800 quilômetros ao norte, nas fraldas do Saara, e 1.600 quilômetros a oeste, no interior do atual Sudão.",
+    "fome": "Willem Bosman registrou que a região tinha chegado ao limite da sua capacidade agrícola: uma única safra malsucedida podia gerar “uma incrível fome”, e por causa disso muitos homens livres se vendiam como escravos para que suas famílias sobrevivessem.",
+    "fortes": {
+      "titulo": "Os três fortes",
+      "texto": "Ingleses, franceses e portugueses tinham fortificações lado a lado, a três quilômetros da praia, no meio de uma área pantanosa: o forte São Luís (francês), o William (inglês) e o São João Batista (português, com as obras nunca terminadas). O dinamarquês Paul Erdmann Isert descreveu doze canhões de bronze e um fosso de sete metros geralmente sem água — “o forte francês é o que se encontra em melhores condições. O português, nas piores”. Petley Weybourne, agente inglês por volta de 1700: “Os brancos enviados para este lugar dificilmente retornam para contar suas histórias”.",
+      "pagina": "167-168"
+    },
+    "polvora": "Pólvora e espingardas eram vendidas em pequenas quantidades e reservadas ao rei: qualquer súdito pego com mais de um punhado de pólvora era considerado rebelde, capturado e vendido como escravo pelas autoridades reais."
+  },
+  "fumo": {
+    "titulo": "O fumo baiano comprava gente",
+    "texto": "Das 2.871 viagens de navios negreiros da Bahia para a África entre 1649 e 1800 catalogadas pelo Slavevoyages, <b>1.848 — dois terços — foram à Costa da Mina</b>, mais do dobro das 777 registradas para Angola no mesmo período. O que explica isso é uma folha: a <b>“soca”</b>, o tabaco de terceira, desprezado na Europa, untado com melado de cana e torcido em corda, que conquistou o paladar africano a ponto de virar mercadoria indispensável.",
+    "pagina": "166-167",
+    "instrucao": {
+      "texto": "É constatado que o tabaco do Brasil é tão necessário para o resgate dos negros quanto os mesmos negros são precisos para a conservação da América Portuguesa.",
+      "credito": "Instrução da Coroa portuguesa ao marquês de Valença, 10 de setembro de 1779",
+      "pagina": "167"
+    }
+  },
+  "marcas": {
+    "titulo": "As marcas, e o que os traficantes projetavam nelas",
+    "intro": "Os europeus identificavam os povos pelas escarificações do rosto e do corpo — e associavam a cada marca um preço e uma função. O que segue é o que os traficantes diziam, não o que os povos eram.",
+    "pagina": "166",
+    "linhas": [
+      { "povo": "Aqueras", "marca": "Tatuagens de lagartos e serpentes nas costas e no peito", "reputacao": "“Trato dócil e cordial” — preferidos no serviço doméstico." },
+      { "povo": "Ardras (aladás)", "marca": "Incisões nas bochechas", "reputacao": "Avaliados como bem adaptados ao trabalho pesado." },
+      { "povo": "Nagôs (iorubá)", "marca": "Marcas em forma de raios na testa", "reputacao": "Considerados belos e de bom porte físico, mas “mais rebeldes e propensos a fugas”." },
+      { "povo": "Oió (iorubá)", "marca": "Raios partindo dos olhos em direção às orelhas", "reputacao": "“Grandes guerreiros, engenhosos e empreendedores” — e temidos por organizarem revoltas ainda a bordo. Des Marchais relata uma viagem em que toda a tripulação, incluindo o capitão, foi massacrada." }
+    ]
+  },
+  "agaja": {
+    "titulo": "Agaja e o Daomé",
+    "texto": "Em 1727 o rei Agaja invadiu e aniquilou Ajudá. O capitão inglês William Snelgrave, a caminho da audiência, atravessou campos de cadáveres e viu soldados carregando cabeças enfileiradas em cordões ao ombro. Na audiência, sentado de pernas cruzadas sobre um tapete de seda, Agaja disse que trataria o inglês “como se cuida de uma jovem noiva ou esposa no primeiro encontro, e para a qual não devemos negar nada” — o que significava, na prática, direito de primeira escolha dos cativos e taxas menores. Dias depois despachou seiscentas pessoas ao porto de Jaquim; na travessia de sete semanas para Antígua, cinquenta morreram.",
+    "pagina": "173-186",
+    "forca": "O Daomé era pequeno e melhor armado: 10 mil homens, um quinto do que tinham Aladá ou Ajudá, mas com mosquetes europeus, espadas de aço e 25 canhões “tão pesados que alguém poderia pensar que o diabo os tivesse trazido até aqui”. O recrutamento começava aos sete ou oito anos, com meninos carregadores. Robin Law: “A guerra era a própria razão da existência do Daomé”.",
+    "polvora": "Nas conversas com Bulfinch Lambe, o rei se lamentava de <b>não dominar a tecnologia para fabricar a própria pólvora</b> — que, como as balas, tinha de ser comprada dos europeus em troca de escravos.",
+    "law": {
+      "titulo": "A inversão de Robin Law",
+      "texto": "Todos no Daomé eram considerados propriedade do rei — “a minha cabeça pertence ao rei, não a mim mesmo”, dizia a máxima registrada em 1789. Law lê isso ao contrário do óbvio: <b>precisamente porque as pessoas eram posses do rei, ele não podia vendê-las</b>, salvo por condenação criminal. “A ideia de que o rei era proprietário de tudo e de todos era percebida como garantia de segurança, mais do que ameaça de exploração.” E daí a consequência: na impossibilidade de escravizar o próprio povo, restava expandir as conquistas.",
+      "pagina": "180-181"
+    },
+    "alibi": {
+      "titulo": "Os sacrifícios como álibi do tráfico",
+      "texto": "Os relatos sobre sacrifícios humanos no Daomé foram tão recorrentes que, segundo Robin Law, acabaram usados como desculpa para manter o tráfico. Em 1789, quando William Wilberforce apresentou seu projeto de fim do tráfico ao parlamento britânico, o deputado antiabolicionista John Henniker opôs-se lendo a carta que Agaja escrevera ao rei George I em 1726 — argumentando que a crueldade do tráfico não podia ser atribuída aos europeus, mas aos próprios africanos, e que o comércio “resgatava” os cativos de um destino pior.",
+      "pagina": "181-182"
+    },
+    "lambe": {
+      "titulo": "O traficante escravizado",
+      "texto": "Bulfinch Lambe foi enviado à África em 1722 como agente da Royal African Company. O rei Sozo, de Aladá, tomou-o como refém por dívidas não pagas da companhia. Quando o Daomé queimou Aladá, Lambe foi levado a Abomei — Agaja nunca vira um homem branco. Virou tradutor e escrivão do palácio, com casa, seis serviçais, conhaque francês e um secretário particular; sua única obrigação era hastear uma bandeira e dar um tiro de canhão, dia sim, dia não, para <b>abrir o mercado de escravos</b>. Depois de dois anos, propôs levar uma carta de Agaja ao rei da Inglaterra, e recebeu oitenta pessoas para a viagem — quarenta para ele, quarenta para o rei George I. <b>Vendeu as oitenta em Ajudá por ouro brasileiro</b> e fugiu para Barbados. Morreu pobre em Londres.",
+      "pagina": "177-179"
+    },
+    "escala": "Ao longo do século XVIII o Golfo do Benim exportou cerca de 1,2 milhão de pessoas — 18% de tudo que saiu da África Ocidental no período — e mais 421 mil no século seguinte. Tegbesso, filho de Agaja, exportava 9 mil por ano na segunda metade do XVIII, com renda anual estimada em 250 mil libras: cinco a seis vezes a renda de um rico proprietário de terras britânico."
+  },
+  "paradoxo": {
+    "titulo": "O paradoxo do traficante",
+    "texto": "Reinos africanos fortes eram mau negócio para os europeus: preços maiores, rotas fechadas, navios parados na costa gastando água e comida, com risco de revolta a bordo e de febre na tripulação. Em 1728 o vice-rei Vasco Fernandes César de Meneses alertava a Coroa de que “as guerras em que estão envoltos aqueles negros” faziam viagens de seis a sete meses durarem um ano ou mais, com “gravíssimo dano” à arrecadação — “e não menos no rendimento dos quintos das minas, para cujo trabalho vai a maior parte dos escravos que vem da dita costa”.",
+    "pagina": "184-185",
+    "cartel": {
+      "titulo": "A reação: cartel e comboio",
+      "texto": "A <b>Provisão de 8 de maio de 1743</b>, pedida pelos próprios “homens de negócio” da Bahia, limitou a 24 o número de navios autorizados a comerciar na Costa da Mina, organizados em comboios de oito, saindo a cada três meses — e desses, apenas seis eram de Pernambuco e <b>um</b> do Rio de Janeiro. Depois, Pombal criou a Mesa de Inspeção, com limite de 3 mil rolos de tabaco por navio e proibição de dois navios negociarem em Ajudá ao mesmo tempo — para não desvalorizar o fumo baiano nem encarecer as “peças”.",
+      "pagina": "185-186"
+    },
+    "galveias": {
+      "texto": "Seria muito difícil puni-los sem prejuízo da extração de escravos, que nos são tão precisos.",
+      "credito": "Conde de Galveias, vice-rei, sobre a hipótese de castigar o rei do Daomé, 1747",
+      "pagina": "190"
+    }
+  },
+  "embaixadas": {
+    "titulo": "As embaixadas africanas",
+    "intro": "Entre 1750 e 1811 há registro de <b>oito missões diplomáticas africanas ao Brasil</b>: quatro do Daomé, três do rei de Onim (atual Lagos) e uma de Aladá.",
+    "pagina": "188-196",
+    "salvador1750": {
+      "titulo": "Salvador, 22 de outubro de 1750",
+      "texto": "Churumá Nadir, embaixador do rei Tegbesso, chegou em 29 de setembro <b>saudado por uma salva de canhões</b> antes mesmo de desembarcar, e foi hospedado no Colégio dos Jesuítas numa cama “de ébano marchetado de marfim e tartaruga”, com lençóis da Holanda e rendas de Flandres. No dia da procissão desfilou em palanquim de seda, com saiote carmesim bordado a ouro e turbante — numa cidade em que os africanos eram maioria e andavam de corrente no pescoço. Na audiência, recusou a cadeira que o vice-rei lhe ofereceu.",
+      "presentes": "Entregou duas caixas de panos da costa e as “quatro negrinhas” que o acompanhavam. Três seguiram para Lisboa como damas de companhia da rainha Mariana Vitória. <b>A quarta ficou em Salvador porque cegara de oftalmia na travessia</b> — “já não serviria para coisa alguma”. Nunca mais se teve notícia dela.",
+      "volta": "A comitiva ficou seis meses e meio. Voltou no navio negreiro Bom Jesus d’Além com 8.101 rolos de fumo baiano no porão, trocados na África por mais novecentas pessoas; 834 desembarcaram em Salvador em 27 de junho de 1752. Os demais morreram no mar.",
+      "sweet": "James H. Sweet: “Na perspectiva das Coroas do Daomé e de Portugal, a missão diplomática tinha sido um sucesso. As vítimas mudas dessa amizade imperial eram milhares de africanos escravizados, que constituíam o elo comercial unindo as duas nações.”"
+    },
+    "cartas": {
+      "titulo": "As cartas de Adandozan a dom João",
+      "epigrafe": { "texto": "Ainda que negro, sou senhor de minha terra.", "credito": "Adandozan, rei do Daomé, ao príncipe regente dom João, 1799", "pagina": "188" },
+      "texto": "O rei do Daomé tratava o príncipe regente de “mano”, “meu irmão”, “meu senhor”, e referia-se a dona Maria I como “nossa mãe”. Numa carta de 1797 pedia carruagem, “duzentos, ou trezentos barris” de pólvora, sedas, espingardas, doze cadeiras e 24 chapéus de galão — “do que tudo eu farei <b>bom pagamento em escravos bons</b> no forte de Vossa Alteza”. E acrescentava um pós-escrito: que os barris de pólvora fossem de madeira boa, “que não bota a pólvora a perder”.",
+      "pagina": "195-196",
+      "carta1810": {
+        "titulo": "A carta de 1810",
+        "texto": "Já informado da invasão napoleônica e da fuga da corte (“Eu também cá na minha terra tenho pelejado muitas guerras”), Adandozan pedia vinhos do Porto, da Madeira e verde — e enviava de presente <b>seis crianças escravizadas</b>, “quatro moleconas e dois molecões”, para relatarem pessoalmente as guerras e depois “as fêmeas para espanarem o seu quarto, e os machos para limparem os seus sapatos”. Mandava crianças, explicava, “por razão de que [os adultos] banzam muito, e morrem”.",
+        "trono": "Junto ia um trono esculpido em madeira. Foi uma das relíquias do Museu Nacional destruídas no incêndio de 2018.",
+        "pagina": "196"
+      }
+    }
+  },
+  "oliveira": {
+    "titulo": "João de Oliveira",
+    "texto": "Em 11 de maio de 1770 desembarcou em Salvador um homem negro de cerca de 70 anos, com três escarificações iorubás em cada face, vestido de camisa de Holanda e chinelos de marroquim. Não era escravo: trazia consigo um navio com 122 cativos e quatro embaixadores do rei de Onim. Capturado criança na atual Nigéria e vendido no Recife, fora <b>mandado de volta à África por seu dono, por volta de 1733, ainda escravo, para comprar cativos em seu nome</b> — e comprou a própria alforria remetendo pessoas ao Brasil. Passou 37 anos na África prestando contas ao antigo amo, e socorreu a viúva dele quando morreu.",
+    "pagina": "197-202",
+    "verger": "Pierre Verger: “Mandado de volta à costa da África, ainda escravo, em nenhum momento aproveitou-se da oportunidade para escapar.”",
+    "portos": "Fundou dois embarcadouros: <b>Porto Novo</b> (em Semé, antes de 1758, atual Benim) e <b>Onim</b> (por volta de 1765, hoje Lagos, a maior cidade da Nigéria) — com barracões, vigilância e canoas até os navios.",
+    "prisao": "Ao voltar ao Brasil foi preso por sonegação e contrabando de fumo, e os quatro embaixadores também. Escreveu na cadeia o diário que é hoje um dos documentos mais preciosos da história da escravidão. Foi solto após um mês graças a uma petição de dezoito “homens de negócio” negreiros, encabeçada por um familiar do Santo Ofício. Recuperou cem dos seus cativos; os outros 22 tinham morrido. <b>Os embaixadores foram devolvidos à África sem sequer poder expor as propostas que traziam.</b>",
+    "economia": {
+      "titulo": "Por que Porto Novo venceu Ajudá",
+      "linhas": [
+        { "criterio": "Preço de um cativo, 1757-58", "ajuda": "13 a 16 rolos de fumo", "porto_novo": "8 a 12 rolos" },
+        { "criterio": "Cativos por navio, pelo mesmo dinheiro", "ajuda": "230", "porto_novo": "até 375" },
+        { "criterio": "Tempo de espera para completar a carga", "ajuda": "referência", "porto_novo": "um terço menor" },
+        { "criterio": "Participação nas saídas do Golfo do Benim, 1776-1800", "ajuda": "29%", "porto_novo": "37%" }
+      ],
+      "pagina": "201",
+      "credito": "Números reunidos pelo historiador Carlos da Silva Júnior.",
+      "protecao": "Porto Novo ficava sob a proteção de Oió: o rei Abiodun avisou ao Daomé que aquele porto era sua “cabaça”, e só a ele era permitido “comer” nela."
+    }
+  },
+  "tripulacao": {
+    "titulo": "Escravizados na tripulação negreira",
+    "texto": "<b>42% das 350 embarcações negreiras</b> chegadas da África ao Rio de Janeiro entre 1795 e 1811 tinham escravizados entre os tripulantes: 2.058 marinheiros cativos de propriedade de brasileiros, uma média de catorze por navio.",
+    "pagina": "202, 249"
+  }
+}

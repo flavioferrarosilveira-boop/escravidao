@@ -23,6 +23,9 @@ const navio = ler('dados/navio.json');
 const interno = ler('dados/trafico_interno.json');
 const origens = ler('dados/origens.json');
 const leituras = ler('dados/leituras.json');
+const ouro = ler('dados/ouro.json');
+const costa = ler('dados/costa_mina.json');
+const abolicao = ler('dados/abolicao.json');
 const geo = ler('dados/geo_atlantico.json');
 
 // ---------------------------------------------------------------------------
@@ -153,7 +156,7 @@ const dados = {
   abolicoes: escravidao.abolicoes, depois: escravidao.depois,
   chegada: escravidao.chegada, castigos: escravidao.castigos,
   armadores: armadores.portos, armadoresNota: armadores._nota, ciclos: ciclos.lista,
-  cotejo: cotejo.linhas, cotejoNota: cotejo._nota, negocio, africa, brasil, navio, interno, origens, leituras,
+  cotejo: cotejo.linhas, cotejoNota: cotejo._nota, negocio, africa, brasil, navio, interno, origens, leituras, ouro, costa, abolicao,
   coresRegiao: CORES_REGIAO,
 };
 

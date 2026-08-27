@@ -192,6 +192,12 @@
       "pagina": "108"
     },
     {
+      "ano": 1479,
+      "texto": "Primeiro carregamento de africanos escravizados registrado no Golfo do Benim: 400 pessoas levadas para a atual costa de Gana, trocadas por ouro com os mercadores acã",
+      "fonte": "Gomes II",
+      "pagina": "163"
+    },
+    {
       "ano": 1482,
       "texto": "Construção do Castelo de São Jorge da Mina (Elmina), primeiro grande entreposto do tráfico na costa africana"
     },
@@ -212,6 +218,12 @@
       "texto": "João Afonso de Aveiro sobe o rio Benim, rebatizado «Rio dos Escravos». Funda-se em Lisboa a Casa dos Escravos",
       "fonte": "Gomes I",
       "pagina": "82"
+    },
+    {
+      "ano": 1486,
+      "texto": "O português João Afonso de Aveiro sobe o rio Benim, que os europeus rebatizam de “Rio dos Escravos”",
+      "fonte": "Gomes II",
+      "pagina": "162"
     },
     {
       "ano": 1491,
@@ -284,6 +296,12 @@
       "texto": "A Companhia de Jesus de Angola justifica pagar dívidas em pessoas: os escravos são ali a moeda corrente, como o ouro na Europa e o açúcar no Brasil",
       "fonte": "Gomes I",
       "pagina": "285"
+    },
+    {
+      "ano": 1555,
+      "texto": "O padre português Fernando Oliveira publica em <i>Arte da guerra no mar</i> uma das primeiras críticas ao tráfico: sem compradores não haveria vendedores na África",
+      "fonte": "Gomes II",
+      "pagina": "353-354"
     },
     {
       "ano": 1560,
@@ -452,6 +470,12 @@
       "pagina": "330-331"
     },
     {
+      "ano": 1663,
+      "texto": "Instruções de um senhor de engenho de Pernambuco ao feitor detalham o castigo — açoite, navalha, sal, limão e urina sobre as feridas",
+      "fonte": "Gomes II",
+      "pagina": "254"
+    },
+    {
       "ano": 1665,
       "texto": "A Batalha de Ambuíla destrói o Reino do Congo",
       "fonte": "Gomes I",
@@ -482,6 +506,12 @@
       "pagina": "186"
     },
     {
+      "ano": 1689,
+      "texto": "Dom Pedro II anula todas as cartas régias de 1642 a 1688 que obrigavam a vender o escravizado castigado desumanamente: delas “resultariam grandes inconvenientes a meu serviço”",
+      "fonte": "Gomes II",
+      "pagina": "257"
+    },
+    {
       "ano": 1695,
       "texto": "Palmares é destruído; a cabeça de Zumbi é exposta num poste no Recife, em 20 de novembro",
       "fonte": "Gomes I",
@@ -506,16 +536,34 @@
       "pagina": "10, 204"
     },
     {
+      "ano": 1703,
+      "texto": "No auge da corrida do ouro, um homem “bem feito, valente e ladino” custa em Minas Gerais um quilo de ouro — o mesmo que três bois",
+      "fonte": "Gomes II",
+      "pagina": "57-65"
+    },
+    {
       "ano": 1705,
       "texto": "Sai em Roma a Economia cristã dos senhores no governo dos escravos, do jesuíta Jorge Benci, manual da moral escravista",
       "fonte": "Gomes I",
       "pagina": "280"
     },
     {
+      "ano": 1707,
+      "texto": "As Constituições Primeiras do Arcebispado da Bahia fixam em doze anos a idade mínima de casamento para as mulheres, e vetam a ordenação de “mulato” ou “outra alguma infecta nação reprovada”",
+      "fonte": "Gomes II",
+      "pagina": "287"
+    },
+    {
       "ano": 1711,
       "texto": "Publicado e imediatamente proibido o Cultura e opulência do Brasil, de Antonil; sobrevivem sete cópias. No mesmo ano Portugal paga a última prestação da compra do Nordeste aos holandeses",
       "fonte": "Gomes I",
       "pagina": "272 e 304"
+    },
+    {
+      "ano": 1711,
+      "texto": "Criada a South Sea Company, com o rei da Espanha e a rainha da Inglaterra como sócios majoritários e Isaac Newton, Defoe e Swift entre os minoritários",
+      "fonte": "Gomes II",
+      "pagina": "346-347"
     },
     {
       "ano": 1713,
@@ -528,10 +576,88 @@
       "pagina": "191"
     },
     {
+      "ano": 1727,
+      "texto": "O rei Agaja, do Daomé, invade e aniquila o reino de Ajudá, que exportava 20 mil pessoas por ano",
+      "fonte": "Gomes II",
+      "pagina": "173-186"
+    },
+    {
+      "ano": 1729,
+      "texto": "A extração de diamantes vira monopólio régio; cinco anos depois nasce a Intendência dos Diamantes e o Distrito Diamantino é fechado por registros e passaportes",
+      "fonte": "Gomes II",
+      "pagina": "299-300"
+    },
+    {
+      "ano": 1734,
+      "texto": "A Coroa passa a conceder alforria a quem encontrar um diamante de pelo menos uma oitava (3,58 g), indenizando o dono em 400 mil réis",
+      "fonte": "Gomes II",
+      "pagina": "269"
+    },
+    {
+      "ano": 1741,
+      "texto": "Alvará régio de 3 de março: quem for achado em quilombo é marcado a ferro com a letra F; na reincidência, tem uma orelha cortada — “sem processo algum”",
+      "fonte": "Gomes II",
+      "pagina": "310"
+    },
+    {
+      "ano": 1743,
+      "texto": "A Provisão de 8 de maio limita a 24 os navios autorizados a traficar na Costa da Mina, em comboios de oito — cartel pedido pelos próprios negreiros da Bahia",
+      "fonte": "Gomes II",
+      "pagina": "185-186"
+    },
+    {
+      "ano": 1749,
+      "texto": "Proibido a negros e mulatos das Conquistas, “ainda que se achem forros ou nascessem livres”, o uso de seda, tecidos finos e qualquer joia; a pena máxima é o degredo perpétuo para São Tomé. Quatro meses depois, tudo é suspenso sem explicação",
+      "fonte": "Gomes II",
+      "pagina": "290-291"
+    },
+    {
+      "ano": 1750,
+      "texto": "Churumá Nadir, embaixador do rei do Daomé, é recebido em Salvador com salva de canhões — a primeira de oito embaixadas africanas ao Brasil até 1811",
+      "fonte": "Gomes II",
+      "pagina": "188-196"
+    },
+    {
+      "ano": 1751,
+      "texto": "Bartolomeu Bueno do Prado volta a São Paulo com colares de 3.900 pares de orelhas cortadas de quilombolas",
+      "fonte": "Gomes II",
+      "pagina": "310"
+    },
+    {
       "ano": 1755,
       "texto": "Companhia Geral do Grão-Pará e Maranhão começa a operar, abastecendo o norte do Brasil a partir de Bissau e Cacheu",
       "fonte": "Gomes I",
       "pagina": "192"
+    },
+    {
+      "ano": 1755,
+      "texto": "A Câmara de Mariana propõe cortar o tendão de Aquiles dos fugitivos. O vice-rei conde dos Arcos veta: “é uma barbaridade indigna de homens que têm o nome de cristãos”",
+      "fonte": "Gomes II",
+      "pagina": "311"
+    },
+    {
+      "ano": 1761,
+      "texto": "Alvará de Pombal liberta os escravizados desembarcados em solo português — não por abolicionismo, mas para que não faltassem “para a cultura das terras e das minas” no Brasil",
+      "fonte": "Gomes II",
+      "pagina": "365"
+    },
+    {
+      "ano": 1763,
+      "texto": "Destruído o Quilombo do Buraco do Tatu, perto de Salvador, cujas trincheiras com estrepes eram idênticas às usadas para defender vilarejos na Nigéria, no Congo e em Angola",
+      "fonte": "Gomes II",
+      "pagina": "313"
+    },
+    {
+      "ano": 1770,
+      "texto": "João de Oliveira desembarca em Salvador depois de 37 anos na África: capturado criança, mandado de volta ainda escravo para comprar cativos, comprou a própria alforria remetendo gente ao Brasil — e fundou Porto Novo e Lagos",
+      "fonte": "Gomes II",
+      "pagina": "197-202"
+    },
+    {
+      "ano": 1773,
+      "texto": "Decreto de Pombal abole a distinção entre “cristãos-velhos” e “cristãos-novos”. Permanece firme o “defeito de cor”",
+      "fonte": "Gomes II",
+      "pagina": "214"
     },
     {
       "ano": 1781,
@@ -540,14 +666,56 @@
       "pagina": "193"
     },
     {
+      "ano": 1781,
+      "texto": "O capitão do navio inglês <i>Zong</i> lança ao mar 133 pessoas vivas em três dias para cobrar o seguro. A Justiça decide quem paga, não quem matou",
+      "fonte": "Gomes II",
+      "pagina": "357"
+    },
+    {
+      "ano": 1788,
+      "texto": "Na noite de 26 de dezembro, em Vila Rica, os inconfidentes discutem o que fazer com os 174 mil escravizados de Minas — e não chegam a conclusão alguma",
+      "fonte": "Gomes II",
+      "pagina": "336-345"
+    },
+    {
+      "ano": 1789,
+      "texto": "Os cativos do Engenho Santana, em Ilhéus, propõem ao dono um “tratado de paz” com dezenove reivindicações. Ele finge aceitar, prende o líder e vende os demais para o Maranhão",
+      "fonte": "Gomes II",
+      "pagina": "316-317"
+    },
+    {
       "ano": 1791,
       "texto": "Começa a Revolução Haitiana em Saint-Domingue"
+    },
+    {
+      "ano": 1794,
+      "texto": "O <i>São José Paquete d’África</i> naufraga a cem metros da praia perto do cabo da Boa Esperança: a tripulação inteira se salva, 212 pessoas morrem afogadas no porão",
+      "fonte": "Gomes II",
+      "pagina": "361-362"
+    },
+    {
+      "ano": 1796,
+      "texto": "Morre no arraial do Tijuco dona Francisca da Silva de Oliveira, Chica da Silva, sepultada em tumba até então reservada a brancos de grande prestígio",
+      "fonte": "Gomes II",
+      "pagina": "295-296"
+    },
+    {
+      "ano": 1798,
+      "texto": "Conjuração Baiana: quatro mulatos pobres são enforcados e esquartejados na praça da Piedade por pregarem “o tempo em que todos seremos iguais”",
+      "fonte": "Gomes II",
+      "pagina": "333-335"
     },
     {
       "ano": 1800,
       "texto": "Um levantamento conta 840 mercadores de escravos em Benguela, cidade de 1,5 a 3 mil habitantes",
       "fonte": "Gomes I",
       "pagina": "172"
+    },
+    {
+      "ano": 1800,
+      "texto": "Em Vitória, onde 67% da população era escravizada, o governador Silva Pontes prefere anistiar os trezentos quilombolas dos arredores a atacá-los. Funciona",
+      "fonte": "Gomes II",
+      "pagina": "317"
     },
     {
       "ano": 1803,
@@ -560,12 +728,24 @@
       "pagina": "200"
     },
     {
+      "ano": 1808,
+      "texto": "Com a chegada da corte, o tráfico para o Rio de Janeiro dispara: de 9.689 pessoas em 1807 para 23.230 em 1811. Em 1812, metade dos trinta maiores comerciantes da cidade era traficante de escravos",
+      "fonte": "Gomes II",
+      "pagina": "370"
+    },
+    {
       "ano": 1815,
       "texto": "Congresso de Viena: Portugal proíbe o tráfico ao norte do Equador"
     },
     {
       "ano": 1831,
       "texto": "Lei Feijó, no Brasil — 'para inglês ver'; o tráfico segue clandestino"
+    },
+    {
+      "ano": 1834,
+      "texto": "A Grã-Bretanha abole a escravidão indenizando os <i>donos</i> em vinte milhões de libras. A frota negreira britânica, ociosa, é vendida sobretudo ao Brasil",
+      "fonte": "Gomes II",
+      "pagina": "359-360"
     },
     {
       "ano": 1850,

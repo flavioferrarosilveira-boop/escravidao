@@ -1,5 +1,5 @@
 {
-  "_nota": "Confronto entre os números que a carta usava, os que GOMES, Laurentino traz em Escravidão, vol. I (Globo Livros, 2019) e o que ficou. Ambos bebem da mesma fonte primária — slavevoyages.org —, o livro em consulta de junho de 2019.",
+  "_nota": "Confronto entre os números que a carta usava, os que GOMES, Laurentino traz em <i>Escravidão</i> — volume I (Globo Livros, 2019) e volume II (Globo Livros) — e o que ficou. A coluna <b>vol.</b> diz de qual dos dois livros vem a linha. Nas cifras do tráfico atlântico, carta e livro bebem da mesma fonte primária, slavevoyages.org, o livro em consulta de junho de 2019.",
   "linhas": [
     {
       "item": "Total embarcado na África",
@@ -8,7 +8,8 @@
       "pagina": "201",
       "agora": "12.521.500",
       "estado": "igual",
-      "obs": "A carta soma as marginais por região, o livro cita a consulta exata. Diferença de 163 pessoas — arredondamento."
+      "obs": "A carta soma as marginais por região, o livro cita a consulta exata. Diferença de 163 pessoas — arredondamento.",
+      "volume": "I"
     },
     {
       "item": "Chegaram vivos à América",
@@ -17,7 +18,8 @@
       "pagina": "201",
       "agora": "10.712.200",
       "estado": "igual",
-      "obs": "Diferença de 9.543, também de arredondamento das marginais por destino."
+      "obs": "Diferença de 9.543, também de arredondamento das marginais por destino.",
+      "volume": "I"
     },
     {
       "item": "Mortos na travessia",
@@ -26,7 +28,8 @@
       "pagina": "201",
       "agora": "1.809.300",
       "estado": "igual",
-      "obs": "Decorre das duas linhas acima."
+      "obs": "Decorre das duas linhas acima.",
+      "volume": "I"
     },
     {
       "item": "Viagens documentadas",
@@ -35,7 +38,8 @@
       "pagina": "203",
       "agora": "citado",
       "estado": "novo",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Brasil — total",
@@ -44,7 +48,8 @@
       "pagina": "202",
       "agora": "4.864.400",
       "estado": "igual",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Brasil — Sudeste",
@@ -53,7 +58,8 @@
       "pagina": "205, 213",
       "agora": "2.300.000",
       "estado": "mudou",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Brasil — Bahia",
@@ -62,7 +68,8 @@
       "pagina": "205, 212",
       "agora": "1.568.400",
       "estado": "mudou",
-      "obs": "O livro se contradiz entre duas páginas. A Bahia recebe o resíduo até o total brasileiro, ficando entre as duas cifras."
+      "obs": "O livro se contradiz entre duas páginas. A Bahia recebe o resíduo até o total brasileiro, ficando entre as duas cifras.",
+      "volume": "I"
     },
     {
       "item": "Brasil — Pernambuco",
@@ -71,7 +78,8 @@
       "pagina": "205, 211",
       "agora": "854.000",
       "estado": "mudou",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Brasil — Maranhão e Pará",
@@ -80,7 +88,8 @@
       "pagina": "205, 214",
       "agora": "142.000",
       "estado": "mudou",
-      "obs": "A maior correção de volume: eu estava 51% acima."
+      "obs": "A maior correção de volume: eu estava 51% acima.",
+      "volume": "I"
     },
     {
       "item": "Bahia — vindos da Costa da Mina",
@@ -89,7 +98,8 @@
       "pagina": "206, 212",
       "agora": "810.163 · 52%",
       "estado": "corrigido",
-      "obs": "Inversão real. Minha matriz dava a maioria baiana como angolana; o livro mostra que mais da metade veio da Costa da Mina — Nigéria, Benim e Togo."
+      "obs": "Inversão real. Minha matriz dava a maioria baiana como angolana; o livro mostra que mais da metade veio da Costa da Mina — Nigéria, Benim e Togo.",
+      "volume": "I"
     },
     {
       "item": "Maranhão e Pará — vindos da Senegâmbia",
@@ -98,7 +108,8 @@
       "pagina": "206, 214",
       "agora": "95.902 · 80%",
       "estado": "corrigido",
-      "obs": "Segunda inversão. Eu tinha a Amazônia abastecida por Angola; era a Guiné-Bissau."
+      "obs": "Segunda inversão. Eu tinha a Amazônia abastecida por Angola; era a Guiné-Bissau.",
+      "volume": "I"
     },
     {
       "item": "Pernambuco — vindos de Angola e Congo",
@@ -107,7 +118,8 @@
       "pagina": "211",
       "agora": "89,0%",
       "estado": "corrigido",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Sudeste — vindos de Moçambique",
@@ -116,7 +128,8 @@
       "pagina": "213",
       "agora": "278.039",
       "estado": "corrigido",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Brasil — vindos de Angola e Congo",
@@ -125,7 +138,8 @@
       "pagina": "210",
       "agora": "70,7%",
       "estado": "igual",
-      "obs": "Batia antes e continua batendo depois do reajuste."
+      "obs": "Batia antes e continua batendo depois do reajuste.",
+      "volume": "I"
     },
     {
       "item": "Entre Gana e Angola",
@@ -134,7 +148,8 @@
       "pagina": "220",
       "agora": "83,8%",
       "estado": "igual",
-      "obs": "Parcela do tráfico saída dessa faixa da costa."
+      "obs": "Parcela do tráfico saída dessa faixa da costa.",
+      "volume": "I"
     },
     {
       "item": "Portugal e Brasil (bandeira)",
@@ -143,7 +158,8 @@
       "pagina": "205, 216",
       "agora": "5.848.300",
       "estado": "igual",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Grã-Bretanha (bandeira)",
@@ -152,7 +168,8 @@
       "pagina": "205, 216",
       "agora": "3.259.400",
       "estado": "igual",
-      "obs": "Outra contradição interna do livro; a carta fica no meio."
+      "obs": "Outra contradição interna do livro; a carta fica no meio.",
+      "volume": "I"
     },
     {
       "item": "França, Espanha, Países Baixos, EUA",
@@ -161,7 +178,8 @@
       "pagina": "205, 216",
       "agora": "inalterado",
       "estado": "igual",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Luanda, Ajudá, Benguela",
@@ -170,7 +188,8 @@
       "pagina": "205, 219",
       "agora": "nas fichas dos portos",
       "estado": "novo",
-      "obs": "Volume por porto africano de embarque, que a carta não tinha."
+      "obs": "Volume por porto africano de embarque, que a carta não tinha.",
+      "volume": "I"
     },
     {
       "item": "Portos que armavam as viagens",
@@ -179,7 +198,8 @@
       "pagina": "217",
       "agora": "Quadro IV",
       "estado": "novo",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Expectativa de vida ao nascer",
@@ -188,7 +208,8 @@
       "pagina": "206",
       "agora": "18,3 anos",
       "estado": "corrigido",
-      "obs": "Troquei uma estimativa vaga e discutida por uma cifra datada e citável."
+      "obs": "Troquei uma estimativa vaga e discutida por uma cifra datada e citável.",
+      "volume": "I"
     },
     {
       "item": "Brasil na Lei Áurea",
@@ -197,7 +218,8 @@
       "pagina": "207",
       "agora": "na tabela de populações",
       "estado": "novo",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "Construção de São Jorge da Mina",
@@ -206,7 +228,8 @@
       "pagina": "7, 109",
       "agora": "1482",
       "estado": "divergente",
-      "obs": "Quarta contradição interna. A linha do tempo do livro data Elmina em 1492; o capítulo 9 traz 1482, que é a data estabelecida da fundação por Diogo de Azambuja. A carta segue o capítulo."
+      "obs": "Quarta contradição interna. A linha do tempo do livro data Elmina em 1492; o capítulo 9 traz 1482, que é a data estabelecida da fundação por Diogo de Azambuja. A carta segue o capítulo.",
+      "volume": "I"
     },
     {
       "item": "Luanda — cativos embarcados",
@@ -215,7 +238,8 @@
       "pagina": "166, 205",
       "agora": "2.800.000",
       "estado": "divergente",
-      "obs": "Terceira contradição interna do livro. Fiquei com a cifra do capítulo dos números, que é a que ele atribui ao slavevoyages.org."
+      "obs": "Terceira contradição interna do livro. Fiquei com a cifra do capítulo dos números, que é a que ele atribui ao slavevoyages.org.",
+      "volume": "I"
     },
     {
       "item": "Salvador — porto armador",
@@ -224,7 +248,8 @@
       "pagina": "187, 217",
       "agora": "1.300.000",
       "estado": "divergente",
-      "obs": "Fiquei com a cifra da tabela da p. 217, que é a mais explícita."
+      "obs": "Fiquei com a cifra da tabela da p. 217, que é a mais explícita.",
+      "volume": "I"
     },
     {
       "item": "Mortalidade por século e por rota",
@@ -233,7 +258,8 @@
       "pagina": "195",
       "agora": "Quadro XVI",
       "estado": "novo",
-      "obs": "A matriz continua com a taxa média, porque é ela que fecha com as marginais do TSTD. Os números reais viraram quadro próprio, na aba O Negócio."
+      "obs": "A matriz continua com a taxa média, porque é ela que fecha com as marginais do TSTD. Os números reais viraram quadro próprio, na aba O Negócio.",
+      "volume": "I"
     },
     {
       "item": "Lucratividade do tráfico",
@@ -242,7 +268,8 @@
       "pagina": "192",
       "agora": "Quadro XV",
       "estado": "novo",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "O navio negreiro",
@@ -251,7 +278,8 @@
       "pagina": "221-236",
       "agora": "Quadro XV",
       "estado": "novo",
-      "obs": "As cinco marcas a ferro, a tripulação dobrada, as seiscentas revoltas em alto-mar, a ração diária, o speculum oris."
+      "obs": "As cinco marcas a ferro, a tripulação dobrada, as seiscentas revoltas em alto-mar, a ração diária, o speculum oris.",
+      "volume": "I"
     },
     {
       "item": "A chegada e o Valongo",
@@ -260,7 +288,8 @@
       "pagina": "237-248",
       "agora": "Quadros XX e XXI",
       "estado": "novo",
-      "obs": "O leilão em três escolhas, o exame do corpo, o Valongo com 18 a 22 mil pessoas por ano em 1808, os instrumentos de castigo na classificação de Artur Ramos."
+      "obs": "O leilão em três escolhas, o exame do corpo, o Valongo com 18 a 22 mil pessoas por ano em 1808, os instrumentos de castigo na classificação de Artur Ramos.",
+      "volume": "I"
     },
     {
       "item": "A África antes do tráfico",
@@ -269,7 +298,8 @@
       "pagina": "106-120",
       "agora": "Quadro VII",
       "estado": "novo",
-      "obs": "População, tamanho dos Estados, cidades, manufaturas — e a origem inventada dos topônimos que esta própria carta usa."
+      "obs": "População, tamanho dos Estados, cidades, manufaturas — e a origem inventada dos topônimos que esta própria carta usa.",
+      "volume": "I"
     },
     {
       "item": "A guerra luso-holandesa",
@@ -278,7 +308,8 @@
       "pagina": "289-299",
       "agora": "Quadro XX",
       "estado": "novo",
-      "obs": "A tese de que o destino do Nordeste se decidiu primeiro na África, e a compra do Nordeste de volta em 1661 por 4 milhões de cruzados."
+      "obs": "A tese de que o destino do Nordeste se decidiu primeiro na África, e a compra do Nordeste de volta em 1661 por 4 milhões de cruzados.",
+      "volume": "I"
     },
     {
       "item": "A rainha Jinga",
@@ -287,7 +318,8 @@
       "pagina": "324-331",
       "agora": "na resistência",
       "estado": "novo",
-      "obs": ""
+      "obs": "",
+      "volume": "I"
     },
     {
       "item": "População escravizada por província, 1872",
@@ -296,7 +328,8 @@
       "pagina": "—",
       "agora": "Carta III, 2ª vista",
       "estado": "novo",
-      "obs": "Fonte externa, não o livro: Recenseamento Geral do Império de 1872, o único censo brasileiro que contou a população escravizada. Os números por província foram levantados em busca na web e conferidos por soma — as 20 províncias mais o Município Neutro dão exatamente 1.510.806, o total publicado. Há uma digitalização do Cedeplar/UFMG que corrige erros aritméticos do original e difere em algumas províncias; a carta usa a tabulação corrente."
+      "obs": "Fonte externa, não o livro: Recenseamento Geral do Império de 1872, o único censo brasileiro que contou a população escravizada. Os números por província foram levantados em busca na web e conferidos por soma — as 20 províncias mais o Município Neutro dão exatamente 1.510.806, o total publicado. Há uma digitalização do Cedeplar/UFMG que corrige erros aritméticos do original e difere em algumas províncias; a carta usa a tabulação corrente.",
+      "volume": "I"
     },
     {
       "item": "Aba O Navio",
@@ -305,7 +338,8 @@
       "pagina": "221-236",
       "agora": "aba própria, com dois diagramas",
       "estado": "novo",
-      "obs": "A cadeia inteira do cativeiro em escala de tempo — seis meses de marcha, cinco de barracão, um e meio de travessia — e um corte esquemático do navio mostrando a barricada e a posição dos dois porões. Mais a tripulação e seus salários, os escravizados que iam como marinheiros, oito navios documentados um a um e o alvará de 1684 que nunca pegou."
+      "obs": "A cadeia inteira do cativeiro em escala de tempo — seis meses de marcha, cinco de barracão, um e meio de travessia — e um corte esquemático do navio mostrando a barricada e a posição dos dois porões. Mais a tripulação e seus salários, os escravizados que iam como marinheiros, oito navios documentados um a um e o alvará de 1684 que nunca pegou.",
+      "volume": "I"
     },
     {
       "item": "Carta IV — o tráfico por dentro do Brasil",
@@ -314,7 +348,8 @@
       "pagina": "10, 327",
       "agora": "carta nova, com três tempos",
       "estado": "novo",
-      "obs": "Inteiramente de fontes externas, cada número preso ao autor que o calculou: as remessas do porto do Rio, 1809-1833 (Florentino, Machado e Valencia Villa, Afro-Ásia n. 70), o tráfico interprovincial de 1850-1881 (estimativa de Robert Slenes) e a série fiscal cearense da grande seca (Hist. Ciênc. Saúde — Manguinhos, 2020). O volume I toca o assunto por duas bordas: a cronologia registra que em 1675 Domingos Jorge Velho abre o caminho de São Paulo a Minas Gerais (p. 10), e a p. 327 descreve os libambos, os comboios de cativos conduzidos do interior de Angola ao litoral — o mesmo mecanismo, do outro lado do oceano. Os três conjuntos de números não são somáveis e a carta diz isso na própria página."
+      "obs": "Inteiramente de fontes externas, cada número preso ao autor que o calculou: as remessas do porto do Rio, 1809-1833 (Florentino, Machado e Valencia Villa, Afro-Ásia n. 70), o tráfico interprovincial de 1850-1881 (estimativa de Robert Slenes) e a série fiscal cearense da grande seca (Hist. Ciênc. Saúde — Manguinhos, 2020). O volume I toca o assunto por duas bordas: a cronologia registra que em 1675 Domingos Jorge Velho abre o caminho de São Paulo a Minas Gerais (p. 10), e a p. 327 descreve os libambos, os comboios de cativos conduzidos do interior de Angola ao litoral — o mesmo mecanismo, do outro lado do oceano. Os três conjuntos de números não são somáveis e a carta diz isso na própria página.",
+      "volume": "I"
     },
     {
       "item": "Aba As Origens",
@@ -323,7 +358,8 @@
       "pagina": "33-163, 272-323, 348-361",
       "agora": "aba nova, com a Carta V e a Figura III",
       "estado": "novo",
-      "obs": "Leitura dos dezenove capítulos que ainda não tinham sido lidos. Rendeu a Carta V (o tráfico transaariano, do Mar Vermelho e do Índico, mais a frente de captura), a Figura III (a cascata de mortalidade de Joseph Miller), a figura da substituição do cativo indígena pelo africano num só engenho e onze quadros novos, do leilão de 1444 às bulas papais."
+      "obs": "Leitura dos dezenove capítulos que ainda não tinham sido lidos. Rendeu a Carta V (o tráfico transaariano, do Mar Vermelho e do Índico, mais a frente de captura), a Figura III (a cascata de mortalidade de Joseph Miller), a figura da substituição do cativo indígena pelo africano num só engenho e onze quadros novos, do leilão de 1444 às bulas papais.",
+      "volume": "I"
     },
     {
       "item": "O tráfico interno no volume I",
@@ -332,7 +368,8 @@
       "pagina": "97, 100, 352, 360",
       "agora": "corrigido na própria Carta IV",
       "estado": "corrigido",
-      "obs": "Erro meu, e de método: a busca por palavras-chave (tráfico interno, interprovincial, cabotagem, sampauleiro) não achou o assunto porque o livro não usa esses termos — mas trata da coisa. A feira de trato de Piratininga (p. 97); Pernambuco vendendo cativos indígenas «para todas as outras capitanias» (p. 97); o aluguel de cativos para transporte serra acima e serra abaixo em Santana do Parnaíba (p. 100); e a deportação dos vencidos de Palmares para Buenos Aires e o Rio, porque escravo recapturado perdia preço no mercado interno (p. 352). A rota das monções, que a Carta IV citava de fonte externa, está descrita na p. 360: Itu, a «Boca do Sertão», e o embarque em Porto Feliz."
+      "obs": "Erro meu, e de método: a busca por palavras-chave (tráfico interno, interprovincial, cabotagem, sampauleiro) não achou o assunto porque o livro não usa esses termos — mas trata da coisa. A feira de trato de Piratininga (p. 97); Pernambuco vendendo cativos indígenas «para todas as outras capitanias» (p. 97); o aluguel de cativos para transporte serra acima e serra abaixo em Santana do Parnaíba (p. 100); e a deportação dos vencidos de Palmares para Buenos Aires e o Rio, porque escravo recapturado perdia preço no mercado interno (p. 352). A rota das monções, que a Carta IV citava de fonte externa, está descrita na p. 360: Itu, a «Boca do Sertão», e o embarque em Porto Feliz.",
+      "volume": "I"
     },
     {
       "item": "Feitoria de Arguim",
@@ -341,7 +378,8 @@
       "pagina": "44 e 71",
       "agora": "1445 na cronologia, com a divergência anotada",
       "estado": "divergente",
-      "obs": "Quinta contradição interna do livro. A data corrente na historiografia é 1445, e é a que a cronologia desta carta usa."
+      "obs": "Quinta contradição interna do livro. A data corrente na historiografia é 1445, e é a que a cronologia desta carta usa.",
+      "volume": "I"
     },
     {
       "item": "A figura de pedra de Sagres",
@@ -350,7 +388,8 @@
       "pagina": "69",
       "agora": "não é usada como dado",
       "estado": "divergente",
-      "obs": "Sexta contradição interna, no mesmo parágrafo. Como o próprio livro trata a Escola de Sagres como enigma não resolvido, a carta registra o episódio sem adotar nenhum dos dois números."
+      "obs": "Sexta contradição interna, no mesmo parágrafo. Como o próprio livro trata a Escola de Sagres como enigma não resolvido, a carta registra o episódio sem adotar nenhum dos dois números.",
+      "volume": "I"
     },
     {
       "item": "A cascata de mortalidade de Joseph Miller",
@@ -359,7 +398,8 @@
       "pagina": "34-35",
       "agora": "Figura III, com a conta refeita",
       "estado": "divergente",
-      "obs": "Refiz a multiplicação das cinco etapas. Com o piso de cada faixa sobram 39; com o teto, 34. O livro adota o piso e arredonda para quarenta — defensável, mas é o melhor dos casos, não o caso médio. A figura mostra as duas pontas."
+      "obs": "Refiz a multiplicação das cinco etapas. Com o piso de cada faixa sobram 39; com o teto, 34. O livro adota o piso e arredonda para quarenta — defensável, mas é o melhor dos casos, não o caso médio. A figura mostra as duas pontas.",
+      "volume": "I"
     },
     {
       "item": "A velocidade da frente de captura",
@@ -368,7 +408,8 @@
       "pagina": "33",
       "agora": "Carta V, com a ressalva",
       "estado": "divergente",
-      "obs": "Os três dados do livro não fecham entre si a taxa constante: 30 km por década dariam 900 km em três séculos, não 2.000. Ou a taxa mais que dobrou no século XIX — o que é plausível, e o próprio livro descreve o recrudescimento —, ou os marcos vêm de séries diferentes. A carta desenha as distâncias, não a taxa, e declara que as linhas são esquemáticas."
+      "obs": "Os três dados do livro não fecham entre si a taxa constante: 30 km por década dariam 900 km em três séculos, não 2.000. Ou a taxa mais que dobrou no século XIX — o que é plausível, e o próprio livro descreve o recrudescimento —, ou os marcos vêm de séries diferentes. A carta desenha as distâncias, não a taxa, e declara que as linhas são esquemáticas.",
+      "volume": "I"
     },
     {
       "item": "A guerra luso-holandesa",
@@ -377,7 +418,8 @@
       "pagina": "300-306",
       "agora": "Quadro IX, com a tese do calote",
       "estado": "novo",
-      "obs": "O motor da expulsão dos holandeses, segundo Alencastro, não foi o orgulho nativista: foi o fim do crédito. A parcela de cativos vendidos à vista no Nordeste foi de 43% em 1643 para 100% em 1645, e os senhores de engenho endividados se voltaram contra os credores. A última prestação da compra do Nordeste só foi paga em 1711."
+      "obs": "O motor da expulsão dos holandeses, segundo Alencastro, não foi o orgulho nativista: foi o fim do crédito. A parcela de cativos vendidos à vista no Nordeste foi de 43% em 1643 para 100% em 1645, e os senhores de engenho endividados se voltaram contra os credores. A última prestação da compra do Nordeste só foi paga em 1711.",
+      "volume": "I"
     },
     {
       "item": "Palmares e Zumbi",
@@ -386,7 +428,98 @@
       "pagina": "348-358",
       "agora": "Quadro XLI, com a ressalva historiográfica",
       "estado": "corrigido",
-      "obs": "O número da carta estava certo. O resto do que circula, não: Palmares tinha cerca de 27 mil km² (menos de um terço de Portugal, não «quase o tamanho»); não era república nem socialista, e sim provavelmente uma monarquia eletiva; e não era abolicionista — os chefes quilombolas, Zumbi inclusive, tinham seus próprios escravos. A biografia em circulação (nascido em 1655, criado por um padre, estudos em Portugal) é ficção inventada por Décio Freitas em 1982 e hoje reproduzida pela Fundação Cultural Palmares."
+      "obs": "O número da carta estava certo. O resto do que circula, não: Palmares tinha cerca de 27 mil km² (menos de um terço de Portugal, não «quase o tamanho»); não era república nem socialista, e sim provavelmente uma monarquia eletiva; e não era abolicionista — os chefes quilombolas, Zumbi inclusive, tinham seus próprios escravos. A biografia em circulação (nascido em 1655, criado por um padre, estudos em Portugal) é ficção inventada por Décio Freitas em 1982 e hoje reproduzida pela Fundação Cultural Palmares.",
+      "volume": "I"
+    },
+    {
+      "volume": "II",
+      "item": "A pólvora inglesa vendida na África",
+      "antes": "—",
+      "livro": "«mais de 22 milhões de toneladas de pólvora» e «5 milhões de toneladas» de chumbo, 1750-1807",
+      "pagina": "143",
+      "agora": "22 mil toneladas — quilos, não toneladas",
+      "estado": "divergente",
+      "obs": "A conta é do próprio livro e não fecha por um fator de mil. Ele dá a taxa: 384 mil kg por ano. Multiplicada pelos 57 anos do período, dá 21.888.000 kg = 21.888 toneladas, não 22 milhões. O volume I, na p. 130, traz a mesma taxa de 384 mil kg/ano e os 91 mil kg/ano de chumbo, coerentes com a ordem de grandeza correta. É erro de unidade, e ele se repete no capítulo 12 (p. 150, «20 mil toneladas de pólvora» vendidas só pelos holandeses em 1700). A carta usa quilos."
+    },
+    {
+      "volume": "II",
+      "item": "Bougainville na Casa da Moeda do Rio",
+      "antes": "—",
+      "livro": "cita Bougainville descrevendo a cunhagem «naquele ano» — 1697",
+      "pagina": "62-63",
+      "agora": "a citação não pode ser de 1697",
+      "estado": "divergente",
+      "obs": "Louis-Antoine de Bougainville viveu de 1729 a 1811. Não podia descrever o Rio de Janeiro em 1697, trinta e dois anos antes de nascer. Ou a data do episódio está errada, ou o depoimento é de outro autor, ou é uma descrição posterior aplicada retroativamente. A carta não reproduz a cena com essa data."
+    },
+    {
+      "volume": "II",
+      "item": "O preço de um cativo em cauris na Costa da Mina",
+      "antes": "—",
+      "livro": "15 libras esterlinas = «oitenta conchas de búzios (cauris)», começo do séc. XVIII",
+      "pagina": "163",
+      "agora": "registrado com a ressalva",
+      "estado": "divergente",
+      "obs": "Na mesma página o livro dá a tabela de 1681: dez cauris compravam uma galinha, 1.600 uma ovelha, 8.000 uma vaca. Oitenta cauris comprariam, portanto, oito galinhas — não uma pessoa. Falta ao menos uma ordem de grandeza (oitenta mil?), ou a unidade é outra. A carta traz a cifra como está no livro e assinala a incoerência em vez de corrigi-la por conta própria."
+    },
+    {
+      "volume": "II",
+      "item": "Ajudá, 1700-1725",
+      "antes": "—",
+      "livro": "20 mil embarcados por ano; «mais de 400 mil» no período de 25 anos",
+      "pagina": "165",
+      "agora": "ordem de grandeza aceita",
+      "estado": "igual",
+      "obs": "20 mil por ano durante 25 anos dariam 500 mil, e o livro diz «mais de 400 mil». Não é contradição: 20 mil era o pico, e «mais de 400 mil» é um piso. As duas cifras convivem. Fica anotado porque a diferença entre elas — cem mil pessoas — é maior do que tudo o que os Estados Unidos importaram em vinte anos."
+    },
+    {
+      "volume": "II",
+      "item": "A medida do Distrito Diamantino",
+      "antes": "—",
+      "livro": "«formato ovalado com cerca de 280 quilômetros de circunferência por cem de largura»",
+      "pagina": "299",
+      "agora": "desenhado por ordem de grandeza",
+      "estado": "divergente",
+      "obs": "Uma figura fechada de 280 km de perímetro tem cerca de 89 km de diâmetro. As duas medidas do livro não fecham entre si com exatidão. A Carta VI desenha um oval de pouco menos de cem quilômetros de ponta a ponta e diz que a cifra é aproximada, em vez de somar as duas."
+    },
+    {
+      "volume": "II",
+      "item": "O tráfico interno na era colonial",
+      "antes": "volume desconhecido, campo em branco",
+      "livro": "«quase a metade» dos chegados ao Rio ia imediatamente às minas; 850 mil desembarcaram no Rio no séc. XVIII",
+      "pagina": "121-122 e 370",
+      "agora": "a proporção entra; o total continua em branco",
+      "estado": "novo",
+      "obs": "Era a maior lacuna da Carta IV. O volume II não dá o total, mas dá a proporção e a base — o que já situa o tráfico interno colonial na casa das centenas de milhares só a partir do Rio. Não converto a proporção em número fechado, porque o autor não a apresenta como cálculo. Mas o campo deixou de ser um vazio."
+    },
+    {
+      "volume": "II",
+      "item": "Chico Rei",
+      "antes": "—",
+      "livro": "«Chico rei existiu de fato? Aparentemente, não.»",
+      "pagina": "206",
+      "agora": "registrado como lenda",
+      "estado": "novo",
+      "obs": "O chefe congo que teria comprado a própria liberdade e a mina, alforriado compatriotas e financiado a igreja de Santa Efigênia, em Ouro Preto, não tem comprovação em registro histórico algum. É a segunda biografia inventada que este cotejo registra, depois da de Zumbi."
+    },
+    {
+      "volume": "II",
+      "item": "Chica da Silva",
+      "antes": "—",
+      "livro": "cap. 25 desmonta os três estereótipos",
+      "pagina": "295-306",
+      "agora": "seção própria, com o desmonte",
+      "estado": "novo",
+      "obs": "O lago artificial com o navio de dez tripulantes nunca existiu. Ela não foi heroína da causa negra: depois de alforriada teve mais de cem cativos e uma única alforria registrada em toda a biografia. E não foi exceção: a alforria alta e majoritariamente feminina era regra em Minas. A terceira biografia reescrita pela ficção — e a terceira que esta carta corrige."
+    },
+    {
+      "volume": "II",
+      "item": "A alforria brasileira como «brandura»",
+      "antes": "a taxa alta, sem leitura",
+      "livro": "1% ao ano no Brasil contra 0,04% nos EUA — e expectativa de vida de 18,3 contra 35,5 anos",
+      "pagina": "260-262",
+      "agora": "Figura V, com as duas colunas juntas",
+      "estado": "novo",
+      "obs": "É o número que mais se cita como prova de uma escravidão branda, e o próprio livro o desmonta ao pôr as duas séries lado a lado: o Brasil importou 4,9 milhões de pessoas e tinha 750 mil cativos em 1888; os Estados Unidos importaram 400 mil e tinham 4 milhões em 1860. A alforria alta não era generosidade — era o outro lado de uma mortalidade que obrigava a repor gente pelo tráfico sem parar. Donald Ramos: «a alforria foi, ironicamente, um dos mais importantes pilares do regime escravocrata»."
     }
   ]
 }

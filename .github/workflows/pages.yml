@@ -36,6 +36,8 @@ jobs:
           test -s index.html
           grep -q 'window.DADOS' index.html
           grep -q 'painel-escravidao' index.html
+          grep -q 'painel-ouro' index.html
+          grep -q 'Carta VI' index.html
 
       - name: Gerar o PDF da carta
         id: pdf

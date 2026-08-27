@@ -1,0 +1,1612 @@
+{
+  "_fonte": "Laurentino Gomes, Escravidão, vol. II — Da corrida do ouro em Minas Gerais até a chegada da corte de dom João ao Brasil (Globo Livros). Todas as páginas citadas nesta carta são deste volume, salvo indicação em contrário.",
+  "epigrafe": {
+    "texto": "Sem negros não pode haver ouro, açúcar nem tabaco.",
+    "credito": "André de Melo e Castro, conde de Galveias, vice-rei do Brasil, 1739 — epígrafe do próprio volume II",
+    "pagina": "240"
+  },
+  "abertura": "O primeiro volume termina no mar. O segundo começa no sertão. Entre a notícia do ouro em Minas Gerais e a chegada da corte ao Rio de Janeiro, em 1808, o Brasil deixou de ser uma orla e virou um território — e quem o atravessou, abriu, alimentou e cavou foi gente comprada na África e revendida no interior. Esta aba é a leitura do volume II: as estradas, os rios, os preços, o trabalho, o castigo, a alforria, a família e o medo. Como no resto da carta, cada número vem com a página em que está escrito, e o que não fecha está dito, não corrigido em silêncio.",
+  "carta": {
+    "titulo": "O Brasil do ouro",
+    "intro": "As três estradas para as Minas, as monções que subiam os rios até Cuiabá, o caminho da Amazônia e a cerca legal do Distrito Diamantino. Não são rotas do tráfico atlântico: são o que vinha depois do cais. Passe o cursor sobre cada traço para ver a distância, o tempo de viagem e a página do livro.",
+    "lugares": [
+      {
+        "id": "vila_rica",
+        "nome": "Vila Rica",
+        "lon": -43.51,
+        "lat": -20.39,
+        "peso": 3,
+        "nota": "Ouro Preto. A cabeça da corrida do ouro; sede pretendida da universidade da república inconfidente."
+      },
+      {
+        "id": "mariana",
+        "nome": "Mariana",
+        "lon": -43.42,
+        "lat": -20.38,
+        "peso": 2,
+        "nota": "Uma das sete dioceses do Brasil em meados do XVIII. Em 1755 sua Câmara propôs cortar o tendão de Aquiles dos fugitivos — vetado pelo vice-rei."
+      },
+      {
+        "id": "sabara",
+        "nome": "Sabará",
+        "lon": -43.81,
+        "lat": -19.88,
+        "peso": 2,
+        "nota": "Rio das Velhas. Casa de fundição e registro."
+      },
+      {
+        "id": "sjdr",
+        "nome": "São João del-Rei",
+        "lon": -44.26,
+        "lat": -21.14,
+        "peso": 2,
+        "nota": "Comarca do Rio das Mortes. Seria a capital da república mineira planejada em 1788."
+      },
+      {
+        "id": "tijuco",
+        "nome": "Arraial do Tijuco",
+        "lon": -43.6,
+        "lat": -18.24,
+        "peso": 3,
+        "nota": "Hoje Diamantina. Centro do Distrito Diamantino e casa de Chica da Silva e do contratador João Fernandes de Oliveira."
+      },
+      {
+        "id": "serro",
+        "nome": "Vila do Príncipe",
+        "lon": -43.38,
+        "lat": -18.6,
+        "peso": 2,
+        "nota": "Sede da comarca do Serro do Frio. No censo de 1738, 83,5% dos 9.681 habitantes eram homens."
+      },
+      {
+        "id": "barbacena",
+        "nome": "Barbacena",
+        "lon": -43.77,
+        "lat": -21.23,
+        "peso": 1,
+        "nota": "Registro no Caminho Novo. Entre 1721 e 1781, dos 717 africanos casados no distrito, 68% tinham cônjuge também africano."
+      },
+      {
+        "id": "rio",
+        "nome": "Rio de Janeiro",
+        "lon": -43.2,
+        "lat": -22.9,
+        "peso": 3,
+        "nota": "Porto de entrada de 850 mil africanos no século XVIII — metade de todos os trazidos ao Brasil no período."
+      },
+      {
+        "id": "paraty",
+        "nome": "Paraty",
+        "lon": -44.72,
+        "lat": -23.22,
+        "peso": 1,
+        "nota": "Escala marítima do Caminho Velho antes da abertura do Caminho Novo."
+      },
+      {
+        "id": "santos",
+        "nome": "Santos",
+        "lon": -46.33,
+        "lat": -23.96,
+        "peso": 2,
+        "nota": "Porto do planalto paulista."
+      },
+      {
+        "id": "sao_paulo",
+        "nome": "São Paulo",
+        "lon": -46.63,
+        "lat": -23.55,
+        "peso": 2,
+        "nota": "Ponto de partida das bandeiras e das estradas para Goiás."
+      },
+      {
+        "id": "porto_feliz",
+        "nome": "Porto Feliz",
+        "lon": -47.52,
+        "lat": -23.21,
+        "peso": 2,
+        "nota": "Araritaguaba. Daqui saíam as monções rio Tietê abaixo."
+      },
+      {
+        "id": "camapua",
+        "nome": "Camapuã",
+        "lon": -54.04,
+        "lat": -19.53,
+        "peso": 2,
+        "nota": "O Varadouro: 15 quilômetros de terra em que as canoas eram arrastadas do Pardo ao Coxim."
+      },
+      {
+        "id": "cuiaba",
+        "nome": "Cuiabá",
+        "lon": -56.1,
+        "lat": -15.6,
+        "peso": 2,
+        "nota": "Fim da monção, a 3.700 quilômetros de Porto Feliz."
+      },
+      {
+        "id": "vila_bela",
+        "nome": "Vila Bela",
+        "lon": -59.95,
+        "lat": -15.0,
+        "peso": 1,
+        "nota": "Vila Bela da Santíssima Trindade, primeira capital do Mato Grosso — posto avançado na fronteira com a América espanhola."
+      },
+      {
+        "id": "goias",
+        "nome": "Vila Boa de Goiás",
+        "lon": -50.14,
+        "lat": -15.93,
+        "peso": 2,
+        "nota": "Descoberta do ouro por Bartolomeu Bueno da Silva, o Anhanguera filho, em 1725."
+      },
+      {
+        "id": "salvador",
+        "nome": "Salvador",
+        "lon": -38.51,
+        "lat": -12.97,
+        "peso": 3,
+        "nota": "Capital até 1763. Das 2.871 viagens negreiras baianas para a África entre 1649 e 1800, dois terços foram à Costa da Mina."
+      },
+      {
+        "id": "cachoeira",
+        "nome": "Cachoeira",
+        "lon": -38.97,
+        "lat": -12.6,
+        "peso": 1,
+        "nota": "Recôncavo. O fumo daqui comprava gente no Golfo do Benim; daqui saiu, em 1765, a petição jeje-mahi recusada pelo clero."
+      },
+      {
+        "id": "recife",
+        "nome": "Recife",
+        "lon": -34.88,
+        "lat": -8.05,
+        "peso": 2,
+        "nota": "Pernambuco. Só seis de seus navios foram autorizados a traficar na Costa da Mina pela provisão de 1743."
+      },
+      {
+        "id": "sao_luis",
+        "nome": "São Luís",
+        "lon": -44.3,
+        "lat": -2.53,
+        "peso": 2,
+        "nota": "Maranhão: algodão e arroz. Cerca de 100 mil africanos desembarcaram aqui entre 1751 e 1842."
+      },
+      {
+        "id": "belem",
+        "nome": "Belém",
+        "lon": -48.5,
+        "lat": -1.45,
+        "peso": 2,
+        "nota": "Grão-Pará. Porta do único caminho fluvial que levava escravizados para dentro da Amazônia."
+      },
+      {
+        "id": "rio_negro",
+        "nome": "Rio Negro",
+        "lon": -60.02,
+        "lat": -3.1,
+        "peso": 1,
+        "nota": "Fim da rota amazônica, mais de 1.500 km rio acima."
+      },
+      {
+        "id": "ambrosio",
+        "nome": "Quilombo do Ambrósio",
+        "lon": -46.5,
+        "lat": -19.45,
+        "peso": 2,
+        "quilombo": true,
+        "nota": "Quilombo Grande, Alto São Francisco: mais de mil pessoas em vilarejos cercados de paliçadas. “Quase reino”, escreveu quem o destruiu."
+      },
+      {
+        "id": "quariterê",
+        "nome": "Quariterê",
+        "lon": -58.3,
+        "lat": -14.6,
+        "peso": 1,
+        "quilombo": true,
+        "nota": "Mato Grosso, fundado por volta de 1730. Em 1770 tinha 79 negros e 30 índios sob um rei e uma rainha, e duas tendas de ferro para fabricar armas."
+      },
+      {
+        "id": "buraco_tatu",
+        "nome": "Buraco do Tatu",
+        "lon": -38.42,
+        "lat": -12.85,
+        "peso": 1,
+        "quilombo": true,
+        "nota": "Nos arredores de Salvador, destruído em 1763. As trincheiras com estrepes eram idênticas às usadas para defender vilarejos na Nigéria, no Congo e em Angola."
+      },
+      {
+        "id": "trombetas",
+        "nome": "Trombetas",
+        "lon": -56.2,
+        "lat": -1.75,
+        "peso": 2,
+        "quilombo": true,
+        "nota": "Bacia do rio Trombetas: um relatório da época fala em 2 mil habitantes. Atacado em 1823, cresceu — e passou a exportar cacau para a Guiana Francesa."
+      },
+      {
+        "id": "juazeiro",
+        "nome": "Juazeiro",
+        "lon": -40.5,
+        "lat": -9.42,
+        "peso": 1,
+        "nota": "Passagem do rio São Francisco. O caminho da Bahia subia o vale do rio e descia para as minas — era também o caminho dos currais."
+      },
+      {
+        "id": "pirapora",
+        "nome": "Pirapora",
+        "lon": -44.94,
+        "lat": -17.35,
+        "peso": 1,
+        "nota": "Alto São Francisco: onde a estrada da Bahia entrava em Minas Gerais."
+      },
+      {
+        "id": "santarem",
+        "nome": "Santarém",
+        "lon": -54.7,
+        "lat": -2.44,
+        "peso": 1,
+        "nota": "Foz do Tapajós. Escala da subida do Amazonas rumo ao rio Negro."
+      },
+      {
+        "id": "gurupi",
+        "nome": "Baía do Gurupi",
+        "lon": -46.3,
+        "lat": -1.1,
+        "peso": 1,
+        "invisivel": true,
+        "nota": "Ponto de passagem da navegação costeira entre São Luís e Belém."
+      }
+    ],
+    "rotas": [
+      {
+        "id": "caminho_velho",
+        "de": "santos",
+        "para": "vila_rica",
+        "por": [
+          "sao_paulo"
+        ],
+        "nome": "Caminho Velho",
+        "meio": "terra",
+        "peso": 3,
+        "texto": "O primeiro dos três, aberto pelos paulistas: do litoral ao planalto, e daí pela serra da Mantiqueira até as minas.",
+        "pagina": "78"
+      },
+      {
+        "id": "caminho_novo",
+        "de": "rio",
+        "para": "vila_rica",
+        "nome": "Caminho Novo",
+        "meio": "terra",
+        "peso": 3,
+        "texto": "Aberto por Garcia Rodrigues Pais e descrito por Antonil. Encurtou a viagem e transferiu ao Rio de Janeiro o papel de porta das Minas — e, com ele, o tráfico.",
+        "pagina": "61-62, 78"
+      },
+      {
+        "id": "caminho_bahia",
+        "de": "salvador",
+        "para": "sabara",
+        "por": [
+          "cachoeira",
+          "juazeiro",
+          "pirapora"
+        ],
+        "nome": "Caminho da Bahia",
+        "meio": "terra",
+        "peso": 2,
+        "texto": "Pelo vale do São Francisco, o caminho dos currais: gado, couro e gente subindo do Nordeste para as minas.",
+        "pagina": "78"
+      },
+      {
+        "id": "paraty",
+        "de": "paraty",
+        "para": "sjdr",
+        "nome": "Variante de Paraty",
+        "meio": "terra",
+        "peso": 1,
+        "texto": "Antes do Caminho Novo, quem vinha do Rio desembarcava em Paraty e subia a serra a pé.",
+        "pagina": "78"
+      },
+      {
+        "id": "moncoes",
+        "de": "porto_feliz",
+        "para": "cuiaba",
+        "por": [
+          "camapua"
+        ],
+        "nome": "As monções",
+        "meio": "rio",
+        "peso": 3,
+        "texto": "3.700 quilômetros por dez rios, 113 corredeiras e cachoeiras, quatro a seis meses de viagem. Canoas de mais de 15 metros levando de 8 a 20 pessoas e até 5 toneladas de carga. No meio do trajeto, o Varadouro de Camapuã: 15 quilômetros em que tudo era arrastado por terra.",
+        "pagina": "93-102"
+      },
+      {
+        "id": "cuiaba_vilabela",
+        "de": "cuiaba",
+        "para": "vila_bela",
+        "nome": "Ao pé da fronteira",
+        "meio": "terra",
+        "peso": 1,
+        "texto": "Vila Bela da Santíssima Trindade, primeira capital do Mato Grosso: o ponto mais fundo a que o escravismo brasileiro chegou por dentro do continente.",
+        "pagina": "93-102"
+      },
+      {
+        "id": "goias_paulista",
+        "de": "sao_paulo",
+        "para": "goias",
+        "nome": "Estrada de Goiás",
+        "meio": "terra",
+        "peso": 2,
+        "texto": "Aberta atrás do ouro anunciado pelo Anhanguera em 1725, ligava o planalto paulista às minas goianas.",
+        "pagina": "93-102"
+      },
+      {
+        "id": "goias_minas",
+        "de": "goias",
+        "para": "vila_rica",
+        "nome": "Picada das Minas a Goiás",
+        "meio": "terra",
+        "peso": 2,
+        "texto": "As minas mais novas eram abastecidas com gente já desembarcada e revendida nas mais velhas.",
+        "pagina": "121-122"
+      },
+      {
+        "id": "amazonia",
+        "de": "sao_luis",
+        "para": "rio_negro",
+        "por": [
+          "gurupi",
+          "belem",
+          "santarem"
+        ],
+        "nome": "A rota amazônica",
+        "meio": "rio",
+        "peso": 2,
+        "texto": "Cerca de 100 mil africanos desembarcaram em São Luís entre 1751 e 1842; 49 mil foram redirecionados para o Pará e daí rio Negro acima, o mais fundo que o tráfico entrou na floresta.",
+        "pagina": "112-122"
+      },
+      {
+        "id": "cabotagem_rio_salvador",
+        "de": "salvador",
+        "para": "rio",
+        "nome": "Cabotagem Salvador–Rio",
+        "meio": "mar",
+        "peso": 2,
+        "texto": "Cerca de 10 mil escravizados tripulavam os aproximadamente 2 mil barcos da navegação de costa. Metade da gente que chegava ao Rio era imediatamente reembarcada ou posta na estrada.",
+        "pagina": "121-122, 249"
+      },
+      {
+        "id": "cabotagem_recife",
+        "de": "recife",
+        "para": "salvador",
+        "nome": "Cabotagem Recife–Salvador",
+        "meio": "mar",
+        "peso": 1,
+        "texto": "O trecho mais movimentado do litoral açucareiro.",
+        "pagina": "249"
+      },
+      {
+        "id": "rio_minas",
+        "de": "rio",
+        "para": "tijuco",
+        "por": [
+          "barbacena"
+        ],
+        "nome": "Rio → Distrito Diamantino",
+        "meio": "terra",
+        "peso": 2,
+        "texto": "Quase a metade de todos os que chegavam ao Rio era imediatamente transferida para as regiões mineradoras de Minas Gerais, Goiás e Mato Grosso.",
+        "pagina": "121-122"
+      }
+    ],
+    "distrito": {
+      "titulo": "O Distrito Diamantino",
+      "texto": "Área ovalada com o arraial do Tijuco ao centro, entre os vales do Jequitinhonha e do Pardo. Depois de 1734 virou, nas palavras de Charles Boxer, “virtualmente uma colônia dentro de outra colônia, desligado do resto do Brasil por uma barreira legal e administrativa mais eficaz do que as pedras e tijolos da Grande Muralha da China”. Todas as escrituras anuladas; as pedras num cofre de três fechaduras que só abria diante dos três detentores das chaves; garimpeiros negros e mestiços expulsos; as mulheres escravizadas que vendiam comida proibidas de entrar; passaporte especial para atravessar os registros — nem o governador da capitania entrava sem ele — e revista minuciosa na saída.",
+      "pagina": "299-300",
+      "centro": [
+        -43.6,
+        -18.24
+      ],
+      "raio_lon": 0.47,
+      "raio_lat": 0.4,
+      "nota_medida": "O livro dá “cerca de 280 quilômetros de circunferência por cem de largura”. Uma figura de 280 km de perímetro tem cerca de 89 km de diâmetro: as duas medidas não fecham com exatidão. O desenho aqui adota a ordem de grandeza — pouco menos de cem quilômetros de ponta a ponta — e não a soma das duas cifras."
+    },
+    "legenda": [
+      {
+        "cor": "#7a5a2e",
+        "dash": "9 6",
+        "rotulo": "por terra — estradas e picadas"
+      },
+      {
+        "cor": "#3f6a72",
+        "dash": "2 6",
+        "rotulo": "por rio — monções e Amazônia"
+      },
+      {
+        "cor": "#22525c",
+        "dash": null,
+        "rotulo": "por mar — cabotagem"
+      },
+      {
+        "cor": "#8c3b2f",
+        "dash": "4 3",
+        "rotulo": "cerca do Distrito Diamantino"
+      }
+    ],
+    "numeros": [
+      {
+        "cifra": "quase a metade",
+        "texto": "dos africanos que chegavam ao Rio de Janeiro era imediatamente transferida para as regiões mineradoras de Minas Gerais, Goiás e Mato Grosso.",
+        "pagina": "121-122"
+      },
+      {
+        "cifra": "3.700 km",
+        "texto": "de rio entre Porto Feliz e Cuiabá, com 113 corredeiras e cachoeiras a vencer em dez rios diferentes.",
+        "pagina": "93-102"
+      },
+      {
+        "cifra": "4 a 6 meses",
+        "texto": "era a duração de uma monção — quando corria bem.",
+        "pagina": "93-102"
+      },
+      {
+        "cifra": "15 km",
+        "texto": "de arrasto por terra no Varadouro de Camapuã, o único ponto em que as canoas saíam da água.",
+        "pagina": "93-102"
+      },
+      {
+        "cifra": "100 mil",
+        "texto": "africanos desembarcados em São Luís entre 1751 e 1842; 49 mil foram redirecionados ao Pará e rio Negro acima.",
+        "pagina": "112-122"
+      },
+      {
+        "cifra": "850 mil",
+        "texto": "desembarcaram no porto do Rio de Janeiro durante o século XVIII — metade de todos os trazidos ao Brasil no período (Manolo Florentino).",
+        "pagina": "370"
+      },
+      {
+        "cifra": "10 mil",
+        "texto": "escravizados tripulavam os cerca de 2 mil barcos da navegação de costa brasileira.",
+        "pagina": "249"
+      },
+      {
+        "cifra": "174 mil",
+        "texto": "escravizados em Minas Gerais em 1788, quase metade dos 394 mil habitantes: a maior concentração de pessoas de origem africana de todo o continente americano.",
+        "pagina": "338"
+      }
+    ],
+    "fontes": [
+      "Laurentino Gomes, <i>Escravidão</i>, vol. II, caps. 5 a 8 (as três estradas, as monções, o isolamento) e 25 (o Distrito Diamantino).",
+      "Coordenadas de portos, arraiais e quilombos posicionadas pelas localidades atuais correspondentes; os traçados são esquemáticos e indicam ligação e sentido, não o leito exato da estrada ou do rio.",
+      "Os quilombos assinalados são os que o volume II descreve com localização: Ambrósio (MG), Quariterê (MT), Buraco do Tatu (BA) e Trombetas (PA)."
+    ]
+  },
+  "precos_1703": {
+    "titulo": "Quanto valia uma pessoa, em ouro",
+    "intro": "Em 1703, no auge da corrida, os preços em Minas Gerais eram cotados em ouro em pó. A tabela abaixo põe lado a lado o que o livro registra: uma pessoa custava cerca de um quilo de ouro — o mesmo que três bois, ou setenta e uma galinhas.",
+    "pagina": "57-65",
+    "unidade": "gramas de ouro",
+    "itens": [
+      {
+        "rotulo": "Um “negro bem feito, valente e ladino”",
+        "gramas": 1000,
+        "detalhe": "1 quilo de ouro",
+        "destaque": true
+      },
+      {
+        "rotulo": "Um boi",
+        "gramas": 360,
+        "detalhe": "360 gramas"
+      },
+      {
+        "rotulo": "Uma galinha",
+        "gramas": 14,
+        "detalhe": "14 gramas"
+      }
+    ],
+    "equivalencias": [
+      "Uma pessoa valia cerca de <b>três bois</b>.",
+      "Ou <b>setenta e uma galinhas</b>.",
+      "Ou, na outra ponta da mesma conta, <b>a soma de setenta e uma vidas de galinha</b> não pagava nem um sétimo do que os contratadores remeteram a Lisboa em diamantes num único ano."
+    ],
+    "travessia": {
+      "titulo": "O que a travessia multiplicava",
+      "texto": "Dois contratos assinados na Costa da Mina em 1724 fixavam o preço de um homem em quatro onças e um quarto de ouro — cerca de <b>120 gramas</b>. O de uma mulher, quatro onças (113 g); o de uma criança, três onças e três quartos (105 g). Vinte e um anos antes, do outro lado do Atlântico, o mesmo homem custava em Minas Gerais <b>um quilo</b>. A travessia multiplicava o preço por cerca de oito.",
+      "paginas": "168-169 (África) e 57-65 (Minas)",
+      "cautela": "As duas cifras não são do mesmo ano nem da mesma praça, e o preço em Minas era o de um homem já “ladino” — falante de português e adaptado. A comparação mostra a ordem de grandeza do ganho da travessia, não uma margem exata."
+    }
+  },
+  "trabalho": {
+    "titulo": "O trabalho",
+    "epigrafe": {
+      "texto": "Sem negros não pode haver ouro, açúcar nem tabaco.",
+      "credito": "conde de Galveias, vice-rei, 1739",
+      "pagina": "240"
+    },
+    "intro": "Em meados do século XVIII, a vida útil de um escravizado em Minas Gerais não passava de doze anos. Estas são as ocupações que consumiam esses doze anos.",
+    "pagina": "240-252",
+    "cartoes": [
+      {
+        "titulo": "O bateador",
+        "texto": "Doze horas por dia com o corpo mergulhado até a cintura em riachos gelados, separando pepitas do cascalho. O choque entre a água fria e o calor do verão dava febres, reumatismo, pleurite e pneumonia. O cirurgião Luís Gomes Ferreira escreveu em 1735, no <i>Erário mineral</i>: “uns habitam dentro d’água [...] lá trabalham, lá comem e lá dormem muitas vezes”.",
+        "pagina": "241-242"
+      },
+      {
+        "titulo": "O garimpo de diamantes",
+        "texto": "Trabalho seminu, de tanga, curvado de frente para o capataz. Ao achar uma pedra, o cativo devia erguê-la entre o polegar e o indicador e bater palmas. Um feitor para cada oito pessoas, com troca frequente de posto para impedir que alguém escondesse a pedra na terra; revista rigorosa no fim do dia.",
+        "pagina": "242-243"
+      },
+      {
+        "titulo": "O prêmio e o purgante",
+        "texto": "Pela pedra grande vinha uma grinalda de flores, uma procissão até o administrador e a liberdade — o dono era indenizado. John Mawe registrou o preço da pedra menor: “duas camisas novas, um terno completo, com chapéu, e uma bonita faca”. Quem fosse pego escondendo um diamante — sob as unhas, no cabelo, entre os dedos dos pés, nas narinas, ou engolido — era trancado num quarto e obrigado a beber purgante de pimenta malagueta.",
+        "pagina": "242-243"
+      },
+      {
+        "titulo": "As barragens",
+        "texto": "Mineradores represavam riachos com diques precários para trabalhar o leito seco abaixo. As barragens se rompiam com frequência, despejando avalanches de pedra e lama sobre os garimpeiros. O próprio livro liga a cena a Mariana, em 2015, e a Brumadinho, quatro anos depois.",
+        "pagina": "242"
+      },
+      {
+        "titulo": "Os “tigres”",
+        "texto": "Todas as noites, depois das dez, atravessavam o Rio de Janeiro com barris de excremento na cabeça. A amônia e a ureia que escorriam deixavam listras brancas nas costas negras — daí o apelido.",
+        "pagina": "245"
+      },
+      {
+        "titulo": "A dupla jornada",
+        "texto": "João José Reis sobre Salvador: compravam o alimento nas feiras, preparavam-no na cozinha senhorial e voltavam à rua para vendê-lo pronto. “Após cumprirem as tarefas do serviço doméstico, saíam para o ganho na rua, uma típica dupla jornada escravista.”",
+        "pagina": "244"
+      },
+      {
+        "titulo": "O engenheiro cativo",
+        "texto": "Em 1778, em Campos dos Goytacazes, oito engenhos estavam sendo construídos com o trabalho de 142 cativos. O responsável por um dos canteiros era “mestre carpinteiro de engenho e moenda” — cargo hoje equivalente ao de um engenheiro civil. Também ele era escravo.",
+        "pagina": "240-241"
+      },
+      {
+        "titulo": "A guarda armada",
+        "texto": "Uma das tarefas mais comuns era a segurança armada da colônia. Em 1660, no Rio, revoltosos depuseram o governador substituto com o apoio armado de seus escravos — e Salvador Correia de Sá, ao voltar, armou os próprios. Em 1732, Felisberto Caldeira Brant escapou da prisão mobilizando mais de cem cativos armados.",
+        "pagina": "246-247"
+      }
+    ],
+    "senzala": {
+      "titulo": "A senzala",
+      "texto": "Taipa e palha, chão de terra batida, às vezes uma porta e nenhuma janela, teto tão baixo que um adulto não ficava de pé. À noite o feitor trancava as portas por fora com cadeado e corrente. Tollenare, no Engenho Salgado, em Pernambuco: “Uma esteira, uma cuia ou cabaça, e às vezes alguns potes de barro e andrajos, eis toda a mobília do lar de um casal negro”.",
+      "pagina": "241"
+    },
+    "comida": {
+      "titulo": "A comida — uma polêmica com nome",
+      "texto": "Gilberto Freyre sustentou que os cativos dos engenhos ricos comiam bem, com fartura de proteína. As fontes contemporâneas dizem outra coisa, e o volume II as alinha:",
+      "vozes": [
+        {
+          "quem": "Antonil, começo do XVIII",
+          "diz": "“Costumam alguns senhores dar aos escravos um dia em cada semana, para plantarem para si [...] Porém, não lhes dar farinha, nem dia para a plantarem, e querer que sirvam de sol a sol [...] como se admitirá no tribunal de Deus sem castigo?”",
+          "pagina": "250"
+        },
+        {
+          "quem": "Padre Jorge Benci",
+          "diz": "“Como nas casas de alguns senhores andam mui luzidos e gordos os cães, e pelo contrário pálidos e amarelos os servos, e tão consumidos da fome, que não se podem manter de pé?”",
+          "pagina": "250"
+        },
+        {
+          "quem": "Henry Koster, Pernambuco",
+          "diz": "Duas refeições diárias para jornadas que na safra chegavam a dezoito horas. “Não creio que a alimentação fornecida aos escravos seja em suficiente quantidade.”",
+          "pagina": "251"
+        },
+        {
+          "quem": "John Mawe, Minas Gerais",
+          "diz": "“São mal e mesquinhamente alimentados.”",
+          "pagina": "251"
+        },
+        {
+          "quem": "Jean-Baptiste Debret, Rio de Janeiro",
+          "diz": "Dois punhados de farinha seca, umedecidos na boca pelo suco de bananas e laranjas.",
+          "pagina": "251"
+        }
+      ]
+    },
+    "brecha": {
+      "titulo": "O “sistema Brasil” e a brecha camponesa",
+      "texto": "Dar ao cativo terra e tempo para a própria roça era prática luso-brasileira anterior à colonização do Brasil — já usada em São Tomé no fim do século XV — e tão disseminada que em outras regiões da América ficou conhecida como <b>“sistema Brasil”</b>. Darwin, numa fazenda de café do Rio, viu os escravizados trabalhando “para si próprios” aos sábados e domingos; o barão de Paty do Alferes recomendava a prática e comprava o café dos próprios cativos para revender. Ciro Flamarion Cardoso chamou a isso de <b>brecha camponesa</b>: era poupança, era caminho para a alforria — e era, ao mesmo tempo, a transferência ao escravizado do custo do próprio sustento, que reduzia fugas, estimulava famílias e aumentava o lucro do senhor.",
+      "pagina": "251-252"
+    },
+    "latifundio": {
+      "titulo": "Contra o estereótipo do latifúndio",
+      "texto": "Herbert S. Klein e Francisco Vidal Luna: “Pelo menos de 1700 em diante, em nenhum momento da história da escravidão brasileira os cativos dos engenhos, minas e cafezais compuseram a maioria dos escravos residentes no Brasil”. A maioria vivia em propriedades de cinco a dez cativos — o lavrador que fornecia cana ao engenho vizinho, o padre com uma negra idosa na igreja, o agricultor que trabalhava de sol a sol ao lado do seu único escravo.",
+      "pagina": "249-250"
+    }
+  },
+  "violencia": {
+    "titulo": "A violência",
+    "epigrafe": {
+      "texto": "Quem quiser tirar proveito dos seus negros, há de mantê-los, fazê-los trabalhar bem e surrá-los melhor.",
+      "credito": "Johannes de Laet, diretor da Companhia das Índias Ocidentais no Brasil",
+      "pagina": "253"
+    },
+    "intro": "Silvia Hunold Lara chamou os tratados coloniais sobre como castigar de “uma verdadeira ciência da dominação senhorial”. O padre jesuíta Jorge Benci falava em “economia cristã dos senhores no governo dos escravos”. Não era vingança: era controle social, calculado, com regra, dose e cicatrizante.",
+    "pagina": "253-259",
+    "limites": {
+      "titulo": "O limite escrito e o limite real",
+      "linhas": [
+        {
+          "onde": "Ordenações vigentes",
+          "quanto": "no máximo 120 açoites",
+          "nota": "regra que “em geral os fazendeiros e mineradores não cumpriam”.",
+          "pagina": "256"
+        },
+        {
+          "onde": "Padre Jorge Benci",
+          "quanto": "nunca mais de 40 por dia",
+          "nota": "“de modo a não mutilar o escravo nem o incapacitar para o trabalho”.",
+          "pagina": "257"
+        },
+        {
+          "onde": "Engenho Pitanga (BA), regimento de 1692",
+          "quanto": "até 24 açoites",
+          "nota": "escrito pelo padre jesuíta Barnabé Soares para crimes comuns.",
+          "pagina": "256"
+        },
+        {
+          "onde": "Na prática, no século XVIII",
+          "quanto": "200, 300 e até 400 chibatadas",
+          "nota": "líderes de quilombo recebiam em geral trezentos açoites por dia.",
+          "grave": true,
+          "pagina": "256-257"
+        }
+      ]
+    },
+    "cicatrizante": {
+      "titulo": "O escravizado como ativo",
+      "texto": "Matar alguém no açoite era perder investimento; ferido, era preciso curá-lo depressa. Sobre as feridas aplicavam-se salmoura, suco de limão, vinagre, pó de carvão ou urina. As instruções de um senhor de engenho de Pernambuco ao seu feitor, em 1663: “depois de bem açoitado, o mandará picar com uma navalha ou faca que corte bem e dar-lhe-á com sal, sumo de limão, e urina e o meterá alguns dias na corrente”.",
+      "pagina": "254"
+    },
+    "calabouco": {
+      "titulo": "O Estado assume o chicote",
+      "texto": "No século XIX o castigo migra para o poder público. Nas casas de correção — o Calabouço, no Rio, entre elas — os cativos eram recebidos a qualquer hora do dia ou da noite e registrados, e o livro-caixa anotava o custo do açoite e da estada, depois <b>reembolsado pelo dono</b>. Para Kátia Mattoso, é esse cuidado burocrático que mostra que os castigos obedeciam a critérios racionais.",
+      "pagina": "254-255"
+    },
+    "recuos": {
+      "titulo": "As leis que foram anuladas",
+      "linhas": [
+        {
+          "quando": "1642-1688",
+          "o_que": "Cartas régias mandavam que o senhor que castigasse desumanamente fosse obrigado a vender o escravizado.",
+          "pagina": "257"
+        },
+        {
+          "quando": "1689",
+          "o_que": "Dom Pedro II anula todas elas: delas “resultariam grandes inconvenientes a meu serviço e à conservação dessas conquistas”.",
+          "grave": true,
+          "pagina": "257"
+        },
+        {
+          "quando": "1698",
+          "o_que": "Informado de que os senhores prendiam os cativos com algemas e argolas, o rei pede providências ao governador do Rio — mas que sejam “prudentes e eficazes”, sem “alvoroço aos povos” e “sem ruído ou alteração dos mesmos escravos”.",
+          "pagina": "258-259"
+        }
+      ],
+      "fecho": "Punir um senhor seria tirar-lhe a legitimidade dentro dos próprios domínios e, pior, dar à escravaria a ideia de buscar no Estado proteção contra a violência do sistema de que era vítima. É por isso que a lei não pegava — não por descuido, mas por cálculo."
+    },
+    "joaquim": {
+      "titulo": "O inquérito do dia 19 de janeiro de 1788",
+      "texto": "Joaquim, escravo de Bento José Rabelo, era fugitivo contumaz e incentivava os outros a fugir. Foi preso ao tronco e açoitado três dias seguidos: cem chibatadas no primeiro, oitenta no segundo, sessenta no terceiro. No quarto dia, ainda preso ao tronco, foi encontrado degolado, com uma navalha ao lado do corpo. Trinta e duas testemunhas depuseram, quatro delas senhores de engenho vizinhos. Todas confirmaram a versão do feitor. <b>Conclusão do inquérito: suicídio.</b>",
+      "pagina": "257-258"
+    },
+    "torre_do_tombo": {
+      "titulo": "A denúncia da Casa da Torre",
+      "texto": "Doze folhas nos arquivos da Torre do Tombo, em Lisboa, recuperadas pelo antropólogo Luiz Mott: a denúncia à Inquisição contra o mestre de campo Garcia d’Ávila Pereira Aragão pelas “heresias que fez aos seus escravos”. O documento descreve queimaduras, mutilação, cera derretida, um homem pendurado pelos pulsos com peso atado aos testículos, outro açoitado seis a sete horas sem interrupção — e sal e limão nos olhos quando desmaiava.",
+      "pagina": "257-258",
+      "aviso": "Esta carta não reproduz o inventário completo das sevícias. O que está aqui basta para o argumento: havia denúncia, havia documento, e não houve punição."
+    }
+  },
+  "alforria": {
+    "titulo": "A alforria",
+    "intro": "A alta taxa de alforria é o traço que mais distinguiu o escravismo brasileiro de todos os outros das Américas. Ela costuma ser lida como brandura. O volume II mostra que era o contrário: era o outro lado de uma mortalidade que obrigava a repor gente pelo tráfico sem parar.",
+    "pagina": "260-271",
+    "comparacao": {
+      "titulo": "Duas aritméticas opostas",
+      "linhas": [
+        {
+          "pais": "Brasil",
+          "importou": 4900000,
+          "tinha": 750000,
+          "ano": "1888",
+          "alforria_ano": "≈ 1% ao ano",
+          "expectativa": "18,3 anos",
+          "nota": "Importou doze vezes mais — e tinha, no fim, sete vezes menos gente cativa."
+        },
+        {
+          "pais": "Estados Unidos",
+          "importou": 400000,
+          "tinha": 4000000,
+          "ano": "1860",
+          "alforria_ano": "0,04% ao ano (1850)",
+          "expectativa": "35,5 anos",
+          "nota": "Importou menos de 3,5% do tráfico atlântico e multiplicou a população cativa por dez."
+        }
+      ],
+      "pagina": "260-262",
+      "fecho": "O Brasil libertava vinte e cinco vezes mais gente por ano do que os Estados Unidos — e precisava importar sem parar porque quem ficava morria cedo. Uma em cada dez crianças escravizadas, ao entrar no trabalho por volta dos dez anos, podia esperar ser libertada antes dos quarenta."
+    },
+    "serie": {
+      "titulo": "A população livre de cor, no tempo",
+      "pagina": "260-261",
+      "pontos": [
+        {
+          "ano": "1780",
+          "valor": 406000,
+          "rotulo": "406 mil libertos",
+          "nota": "mais de um quarto de toda a população negra."
+        },
+        {
+          "ano": "1800",
+          "valor": null,
+          "rotulo": "30% da população",
+          "nota": "empatada com os brancos e com os escravizados — um terço cada."
+        },
+        {
+          "ano": "1872",
+          "valor": 4200000,
+          "rotulo": "4,2 milhões",
+          "nota": "negros e pardos livres, 42% dos 10 milhões de brasileiros — mais que os 3,8 milhões de brancos. Escravizados: 1,5 milhão."
+        }
+      ]
+    },
+    "portas": {
+      "titulo": "As oito portas da liberdade",
+      "pagina": "264-265",
+      "itens": [
+        {
+          "nome": "Autocompra (coartação)",
+          "texto": "A pessoa comprava a si mesma, à vista ou em prestações, em dinheiro ou serviços. A <i>Carta de Corte</i>, que deu nome à coartação, garantia ao portador o direito de buscar os meios de saldar as parcelas."
+        },
+        {
+          "nome": "Voluntária",
+          "texto": "Por afeto, sem contrapartida. “Relativamente raras no conjunto dos processos.”"
+        },
+        {
+          "nome": "Na pia batismal",
+          "texto": "Concedida pelo pai biológico branco, por parente ou padrinho, à criança nascida cativa. Chamava-se então “forra de pia”."
+        },
+        {
+          "nome": "Por decisão de governo",
+          "texto": "Dom Pedro I prometeu alforria a quem lutasse na Guerra da Independência; dom Pedro II fez o mesmo na Guerra do Paraguai."
+        },
+        {
+          "nome": "Por maus-tratos comprovados",
+          "texto": "Em processo judicial. “Bastante raras.”"
+        },
+        {
+          "nome": "Por achar uma pedra",
+          "texto": "A partir de 1734, quem encontrasse um diamante de pelo menos uma oitava (3,58 g, 17,5 quilates) tinha direito a roupas novas em público e à carta de alforria; o dono era indenizado em 400 mil réis."
+        },
+        {
+          "nome": "Por denunciar contrabando",
+          "texto": "Liberdade mais um prêmio de 200 mil réis a quem denunciasse desvio de diamantes."
+        },
+        {
+          "nome": "Por chegada ilegal",
+          "texto": "Já na segunda metade do XIX, provando em juízo que o africano tinha desembarcado depois da proibição do tráfico."
+        }
+      ]
+    },
+    "preco": {
+      "titulo": "Quanto custava comprar a si mesmo",
+      "linhas": [
+        {
+          "caso": "Média no Rio de Janeiro",
+          "valor": "117.350 réis",
+          "nota": "acima do preço médio de 100 mil réis dos cativos declarados nos inventários post-mortem da época.",
+          "pagina": "265-266"
+        },
+        {
+          "caso": "O barbeiro Antônio Mina",
+          "valor": "350.000 réis + um “moleque” chamado Mateus",
+          "nota": "pagos pela mulher dele.",
+          "pagina": "266"
+        },
+        {
+          "caso": "Maria, em Goiás, 1739",
+          "valor": "2,5 quilos de ouro",
+          "nota": "o minerador Domingos Jorge de Sintra ofereceu-lhe a liberdade com a condição de que ela extraísse antes essa quantidade para ele. Não se sabe se conseguiu.",
+          "pagina": "269"
+        },
+        {
+          "caso": "Margarida, Porto, 1552",
+          "valor": "10 mil réis",
+          "nota": "escrava de cerca de quarenta anos; a prática das cartas de alforria já existia em Portugal no século XVI.",
+          "pagina": "263"
+        }
+      ]
+    },
+    "circularidade": {
+      "titulo": "A alforria alimentava o tráfico",
+      "texto": "Em 1738, Manuel Ferrão recebeu dois jovens angolanos em troca da liberdade de Mariana Angola. Em 1743, Ângela Pereira da Glória libertou Maria Mina por 60 mil réis <b>mais “uma negra recém-chegada de nome Izabel”</b>. Entre 1781 e 1783, o mosteiro beneditino do Rio vendeu alforria a quatro de seus cativos e, com o dinheiro, comprou outros sete, mais baratos.",
+      "pagina": "265-266"
+    },
+    "ingratidao": {
+      "titulo": "A liberdade revogável",
+      "texto": "Muitas cartas traziam a cláusula de revogação “por ingratidão”: mesmo uma agressão verbal podia bastar. Clóvis Moura registra que em 1795 um forro do Convento do Carmo, em Salvador, foi <b>reescravizado</b> por desobediência e calúnia contra os religiosos, seus ex-donos. E os africanos libertos não adquiriam cidadania — continuavam tecnicamente estrangeiros, o que serviu de base para degredar muitos de volta à África depois da Revolta dos Malês, em 1835.",
+      "pagina": "266"
+    },
+    "joana": {
+      "titulo": "A mulher que se vendeu",
+      "texto": "Em agosto de 1780, no Pará, a cafuza <b>Joana Batista</b>, nascida livre, apresentou-se ao tabelião e, por “livre e espontânea vontade”, tornou-se escrava do catalão Pedro da Costa por 80 mil réis. O motivo declarado: “viver em sossego” — ter teto e amparo, e não enfrentar sozinha as incertezas da vida de uma mulher só. No mesmo documento fez a ressalva de que a venda era “unicamente de si, ou de sua pessoa” e que, “se algum dia tiver filhos, estes serão forros e livres e isentos de cativeiro”.",
+      "pagina": "266-267",
+      "credito": "Júnia Ferreira Furtado, na documentação da Torre do Tombo."
+    },
+    "minas": {
+      "titulo": "Minas Gerais, o caso extremo",
+      "linhas": [
+        {
+          "quando": "1776",
+          "o_que": "Escravizados eram metade dos 320 mil habitantes da capitania; os forros já eram um terço do total de moradores.",
+          "pagina": "267-268"
+        },
+        {
+          "quando": "1808",
+          "o_que": "Os libertos superam os escravizados: 41% contra 34%. “Nenhuma outra região do Brasil e de toda a América apresentou índices tão altos de alforrias em tão pouco tempo.”",
+          "pagina": "268"
+        },
+        {
+          "quando": "1738, comarca do Serro do Frio",
+          "o_que": "387 negros forros eram donos de escravos — 244 deles mulheres. Representavam 22% de todos os proprietários de cativos e detinham 10% dos escravizados da região.",
+          "pagina": "268"
+        }
+      ]
+    },
+    "quem": {
+      "titulo": "Quem era alforriado",
+      "texto": "Contra o mito de que se libertavam os velhos para economizar: as mulheres jovens alcançavam a alforria incondicional com frequência muito maior que os homens de qualquer idade; os filhos da miscigenação eram muitas vezes libertados pelos pais brancos ainda na pia batismal; e eram os <b>homens africanos</b> a maioria dos que tiveram de comprar a própria liberdade. Crianças de menos de quinze anos eram de 20% a 40% dos forros; a idade média dos alforriados ficava entre 20 e 22 anos; e os “idosos” — então, quem passasse dos 40 — eram apenas 10% do total.",
+      "pagina": "263"
+    },
+    "leitura": {
+      "titulo": "Como o livro lê esse número",
+      "texto": "Robert W. Slenes fala de “uma política de domínio que combinava incentivos com violência”, que “tendia a criar uma hierarquia social dentro da escravidão [...] dividir a senzala e dar aos senhores uma poderosa arma de controle social”. Donald Ramos vai adiante: <b>“A alforria foi, ironicamente, um dos mais importantes pilares do regime escravocrata.”</b> E o próprio Gomes: “a alforria foi geralmente mais uma conquista dos escravos do que uma concessão dos escravizadores”.",
+      "pagina": "262-264"
+    }
+  },
+  "familia": {
+    "titulo": "A família escrava",
+    "intro": "Em 30 de outubro de 1820, na freguesia de Pouso Alegre, Joaquim Crioulo e Feliciana iam se casar. Ele disse sim. Ela disse não — que viera “obrigada pelo seu senhor a casar” e que ele a ameaçara castigá-la “asperamente” se recusasse diante do altar. O padre cancelou a cerimônia na hora: sem consentimento, não há matrimônio. O episódio prova as duas coisas ao mesmo tempo: que os cativos podiam casar formalmente, e que nem sempre escolhiam com quem — e que se rebelavam mesmo sob ameaça.",
+    "pagina": "272-273",
+    "antes": {
+      "titulo": "O que se dizia",
+      "vozes": [
+        {
+          "quem": "Joaquim Nabuco",
+          "diz": "A escravidão “impediu o aparecimento regular da família nas camadas fundamentais do país; reduziu a procriação humana a um interesse venal dos senhores”.",
+          "pagina": "273"
+        },
+        {
+          "quem": "Perdigão Malheiro, jurista e senhor de escravos",
+          "diz": "“As escravas, em geral, viviam ou vivem em concubinato, ou, o que é pior, em devassidão.”",
+          "pagina": "274"
+        },
+        {
+          "quem": "Charles Ribeyrolles, 1859",
+          "diz": "Na senzala não haveria famílias, “só ninhadas”.",
+          "pagina": "274"
+        },
+        {
+          "quem": "Jean-Baptiste Debret",
+          "diz": "“Tem-se por hábito, nas grandes propriedades, reservar uma negra para cada quatro homens; essa concessão é feita tanto para evitar os pretextos de fuga como em vista de uma procriação destinada a equilibrar os efeitos da mortalidade.”",
+          "pagina": "274"
+        }
+      ]
+    },
+    "numeros": {
+      "titulo": "O que os arquivos mostram",
+      "linhas": [
+        {
+          "onde": "Rio e Taubaté, 1.200 inventários, ~14 mil pessoas",
+          "quanto": "1% a 2%",
+          "o_que": "aparecem como fugitivos — e “o número de escravos fugitivos era infinitamente menor entre aqueles que tinham famílias”.",
+          "pagina": "276"
+        },
+        {
+          "onde": "Inventário de Ana Maria de Jesus, Irajá, 1795",
+          "quanto": "33 famílias",
+          "o_que": "entre os seus 225 escravizados; 20 nucleares (60,6%) e 10 matrifocais (30,3%). Nenhuma foi separada na partilha. Nos demais inventários, três em cada quatro grupos familiares seguiram unidos depois da herança.",
+          "pagina": "276-277"
+        },
+        {
+          "onde": "Catas Altas do Mato Dentro (MG)",
+          "quanto": "≈80%",
+          "o_que": "das crianças batizadas eram registradas só com o nome da mãe — famílias matrifocais, muitas chefiadas por alforriadas que eram também proprietárias de escravos ou madrinhas de outros cativos.",
+          "pagina": "279-280"
+        },
+        {
+          "onde": "Campinas, censo de 1872",
+          "quanto": "67%",
+          "o_que": "das mulheres escravizadas eram casadas ou viúvas; 80% dos filhos menores de dez anos viviam com os dois pais ou com o pai ou a mãe viúvos.",
+          "pagina": "282"
+        },
+        {
+          "onde": "Bananal, Vale do Paraíba",
+          "quanto": "83%",
+          "o_que": "dos 2.282 cativos viviam em unidades familiares. Na fazenda Resgate, 90% dos 436 eram parentes de outros cativos ou de negros e pardos livres.",
+          "pagina": "282"
+        },
+        {
+          "onde": "Salvador, censo de 1855",
+          "quanto": "59%",
+          "o_que": "dos casais com filhos não eram legalmente casados; na paróquia da Sé, entre 1830 e 1874, só 38% das mais de 9 mil crianças batizadas foram registradas como legítimas.",
+          "pagina": "283"
+        },
+        {
+          "onde": "Barbacena (MG), 1721-1781",
+          "quanto": "96%",
+          "o_que": "dos 717 africanos casados que tinham cônjuge também africano (68% do total) pertenciam ao mesmo grupo étnico de origem.",
+          "pagina": "282-283"
+        },
+        {
+          "onde": "Senhor Bom Jesus do Rio Pardo (MG), 1838-1887",
+          "quanto": "69%",
+          "o_que": "dos padrinhos das 1.970 crianças escravas batizadas eram pessoas negras livres, não cativas.",
+          "pagina": "278"
+        }
+      ]
+    },
+    "paz": {
+      "titulo": "“A paz na senzala”",
+      "texto": "Manolo Florentino e José Roberto Góes mostraram que a família cativa interessava também ao senhor: fixava a pessoa ao lugar e dificultava fuga, quilombo e revolta. “Era o parentesco escravo a possibilidade e o cimento da comunidade cativa. Era o amálgama imprescindível a senhores e escravos, por intermédio do qual se tecia a paz das senzalas.”",
+      "pagina": "275-276"
+    },
+    "estrategia": {
+      "titulo": "A estratégia que Slenes descreveu",
+      "texto": "“A mulher africana jovem e recém-chegada rapidamente se daria conta de que ‘o melhor partido’ [...] não seria o ‘malungo’ bonito da mesma idade, mas o homem com mais experiência de Brasil: o cativo ladino, com laços de amizade e dependência já formados, talvez com ocupação diferenciada, em todo caso com algum pecúlio e com poder de poupança maior.”",
+      "pagina": "283"
+    },
+    "assumar": {
+      "titulo": "A ordem que nunca foi respeitada",
+      "texto": "No início do século XVIII, preocupado com escravizados que viravam padrinhos de muitas crianças — o que traria, dizia, “dano de seus senhores” —, o conde de Assumar ordenou que só brancos pudessem ser padrinhos de batismo ou casamento de cativos. O livro registra o desfecho em cinco palavras: <b>ordem que nunca foi respeitada</b>.",
+      "pagina": "278-279"
+    },
+    "clã": {
+      "titulo": "Uma geração, em São João del-Rei",
+      "texto": "Alexandre Correia e Maria Correia de Andrade, africanos, casaram-se “em face da Igreja”; ela já tinha dois filhos, e vieram mais cinco. A liberdade dos dois foi comprada com o ouro que mineraram. No testamento de 1761 ele declarou uma morada de casas com quintal murado (180 mil réis), outra menor (50 mil), “umas terras minerais” (450 mil réis), instrumentos e <b>doze escravos</b> — dois contos de réis, cerca de 5,5 quilos de ouro, algo como 1,7 milhão de reais de 2021. E o último desejo: “Mando que no dia do meu falecimento se deem de esmola a doze pobres que acompanharem meu corpo à sepultura quatro vinténs de ouro a cada um”.",
+      "pagina": "281-282"
+    }
+  },
+  "mulheres": {
+    "titulo": "As mulheres",
+    "epigrafe": {
+      "texto": "Os casamentos se fazem aqui muito cedo. Não é raro encontrarem-se mães de treze anos.",
+      "credito": "Alexander Caldcleugh, viajante inglês, começo do século XIX",
+      "pagina": "284"
+    },
+    "intro": "As Constituições Primeiras do Arcebispado da Bahia, de 1707 — régua de conduta moral por dois séculos —, fixavam em <b>doze anos</b> a idade mínima de casamento para as mulheres e catorze para os homens. Sheila de Castro Faria descreve os dois estereótipos que a documentação masculina construiu: de um lado a branca reclusa e submissa; de outro a negra “sensual” cujo suposto descontrole corromperia os costumes da colônia.",
+    "pagina": "284-294",
+    "citacoes": [
+      {
+        "quem": "Gilberto Freyre",
+        "diz": "Sobre a mulher negra, a “que nos iniciou no amor físico e nos transmitiu, ao ranger da cama de vento, a primeira sensação completa de homem”. Sobre as indígenas: “Davam-se ao europeu por um pente ou um caco de espelho”.",
+        "pagina": "285"
+      },
+      {
+        "quem": "José Bonifácio, 1822",
+        "diz": "“Nós tiranizamos os escravos e os reduzimos a brutos animais; eles nos inoculam toda a sua imoralidade e todos os seus vícios.”",
+        "pagina": "286"
+      },
+      {
+        "quem": "Marquês do Lavradio, vice-rei, carta ao primo, 1768",
+        "diz": "“Este país é ardentíssimo, as mulheres têm infinita liberdade [...] andam quase nuas a pouco mais de meia cintura para cima [...] traje em que andavam todas as mulheres, assim brancas como pretas.” No ano seguinte, gabava-se de já haver “menos fraldas fora” nas ruas de Salvador.",
+        "pagina": "291"
+      }
+    ],
+    "oficios": {
+      "titulo": "O que elas de fato faziam",
+      "texto": "Foram donas de engenhos, fazendas, minas, vendas e tabernas. Trabalharam nas lavouras e nos engenhos em jornadas iguais às dos homens, e no Nordeste como vaqueiras e curraleiras. Num país sem médicos nem hospitais, foram benzedeiras e curandeiras. <b>A maioria dos brasileiros, brancos ou negros, veio ao mundo pelas mãos de parteiras cativas ou libertas</b> — que depois os amamentavam como amas de leite. O aluguel de amas de leite, anunciado em jornais e revistas, foi um dos negócios mais prósperos do Brasil nos séculos XVIII e XIX.",
+      "pagina": "286"
+    },
+    "roupa": {
+      "titulo": "A lei contra a roupa das escravas",
+      "intro": "Poucos assuntos ocuparam tanto a Coroa. É uma legislação inteira sobre o vestuário de mulheres escravizadas e forras — e o seu próprio fracasso está escrito nela.",
+      "linhas": [
+        {
+          "ano": "1696",
+          "o_que": "Duas cartas régias proíbem “vestidos de seda, cambraias, holandas com ou sem rendas, brincos de ouro ou prata”, para reprimir “a demasia do luxo, de que usam no vestir as escravas”.",
+          "pagina": "289"
+        },
+        {
+          "ano": "1702",
+          "o_que": "O bispo do Rio pede ao rei que se proíba às “pretas, pardas e ainda mulheres de cor” sair à noite e usar seda e ouro, “porque estes enfeites que veem em outras as movem poderosamente a imitá-las nos erros”.",
+          "pagina": "288"
+        },
+        {
+          "ano": "1703",
+          "o_que": "O Conselho Ultramarino decide não proibir a saída noturna — poderia “causar revolta nos moradores” — mas fiscalizar o traje. Carta régia proíbe às escravas roupas com seda e ouro.",
+          "pagina": "289"
+        },
+        {
+          "ano": "1709",
+          "o_que": "A Câmara da Bahia reclama do “excesso e luxo com que os negros e mulatos se vestem naquela terra”; o rei escreve ao governador sobre as “roupas lascivas”.",
+          "pagina": "289-290"
+        },
+        {
+          "ano": "1726",
+          "o_que": "O bispo de Pernambuco proíbe as senhoras de entrar na igreja em rede ou serpentina e manda que os senhores não deixem as escravas entrar “despidas como vulgarmente costumam”, sob pena de excomunhão maior.",
+          "pagina": "288-289"
+        },
+        {
+          "ano": "1749",
+          "o_que": "A proibição é estendida a todos os “negros e mulatos das Conquistas”, “ainda que se achem forros ou nascessem livres”: nada de seda, lã fina, holanda, linho ou algodão fino, “nem lhes seja lícito trazerem sobre si ornato de joias, nem de ouro ou prata, por mínimo que seja”. Pena: confisco, multa e açoite público; na reincidência, cadeia; persistindo, <b>degredo para a ilha de São Tomé por toda a vida</b>.",
+          "grave": true,
+          "pagina": "290-291"
+        },
+        {
+          "ano": "1749, quatro meses depois",
+          "o_que": "Uma nova decisão real suspende todas as proibições anteriores. Sem dar razões.",
+          "pagina": "291"
+        }
+      ]
+    },
+    "falta": {
+      "titulo": "A falta de mulheres",
+      "texto": "Em 1722 o governador dom Lourenço de Almeida escrevia que os moradores de Minas eram homens solteiros que nada tinham a perder, “nem mulher e filhos que deixar”. Charles Boxer explica por quê: os pais das poucas brancas preferiam mandá-las para conventos na Bahia ou em Portugal — “não cuidam de outra coisa senão em as mandarem para freiras [...] e por nenhuma razão as querem casar”. Chegou-se a proibir, em 1732, a viagem de moças brancas do Brasil para Portugal; a medida foi logo revogada. “A solução era o concubinato com as escravas” — e daí a rápida população mestiça das minas.",
+      "pagina": "291-292"
+    },
+    "serro": {
+      "titulo": "O censo de 1738, comarca do Serro do Frio",
+      "texto": "Dos 9.681 habitantes, <b>83,5% eram homens</b>. Entre os escravizados a desproporção era ainda maior: <b>só 3,1% eram mulheres</b>, porque o trabalho na mineração era feito por homens. Mas entre os 387 forros, <b>63% eram mulheres</b>. Em Minas, entre os alforriados havia duas mulheres para cada homem — e a alforria vinha do trabalho de ganho, da venda de comida e da poupança feita fora do olhar do senhor.",
+      "pagina": "293-294"
+    },
+    "rainhas": {
+      "titulo": "Duas mulheres, dois testamentos",
+      "cartoes": [
+        {
+          "titulo": "Joanna Gomes",
+          "texto": "“Preta forra” nascida em Angola, moradora do Rio das Mortes. Testamento de 1761: pagara o “preço justo” da própria alforria; tinha um rancho de capim e “um par de brincos pequenos de aljôfar” — e <b>três escravos</b>. Vivia com outra Joanna Gomes, “à qual dei já há anos a liberdade com a condição de me servir enquanto eu viva”. Dizia-se <b>rainha</b> da Irmandade do Rosário, a quem doou dois cativos em troca do próprio funeral.",
+          "pagina": "292-293"
+        },
+        {
+          "titulo": "Isabel Gonçalves",
+          "texto": "Africana da Costa da Mina, forra, eleita <b>rainha de São Baltasar</b> da Irmandade da Lampadosa, no Rio. Herdou do marido dois escravos angolas. No inventário dela, além dos dois, algumas joias, uma colher de prata e um tacho de cobre — sinal, sugere a historiadora Larissa Viana, de que fazia doces para vender na rua.",
+          "pagina": "293"
+        }
+      ]
+    }
+  },
+  "chica": {
+    "titulo": "Chica da Silva, sem a lenda",
+    "intro": "Em 16 de fevereiro de 1796, dona Francisca da Silva de Oliveira foi sepultada na tumba de número dezesseis da Igreja de São Francisco, no arraial do Tijuco — lugar até então reservado a pessoas brancas de grande prestígio. No mesmo país, no mesmo ano, os cativos que morriam recém-chegados ao Rio eram descartados em valas junto ao Cais do Valongo, onde muitos de seus restos continuam anônimos.",
+    "pagina": "295-306",
+    "desmontes": [
+      {
+        "lenda": "A sedutora de vida delirante, dona de um lago artificial com um navio de dez tripulantes.",
+        "documento": "O lago e o navio <b>nunca existiram</b>. Chica foi comprada por senhores sucessivos com o propósito deliberado de servir de objeto sexual desde a mais tenra idade; teve o primeiro filho na adolescência, ainda escrava, e catorze filhos no total — em média, uma gravidez por ano.",
+        "pagina": "296-297"
+      },
+      {
+        "lenda": "A heroína da causa negra, redentora de escravos.",
+        "documento": "Depois de alforriada, foi dona de <b>mais de cem cativos</b>, e nunca se empenhou em libertá-los. Há na sua biografia uma única alforria: a da menina Francisca, filha da ama de leite Catarina, concedida na pia batismal em retribuição pelo aleitamento. Uma das filhas, Mariana de Jesus, só libertou a escrava Leonor Mina em troca de “um moleque por nome Antônio, da nação benguela”.",
+        "pagina": "297-298"
+      },
+      {
+        "lenda": "A exceção, a excentricidade da história brasileira.",
+        "documento": "Foi o contrário: “longe de ser uma exceção, ela foi parte de um fenômeno bastante comum na sociedade mineira do século XVIII, na qual as chances de alforria eram relativamente altas e beneficiavam principalmente as mulheres”.",
+        "pagina": "296-297"
+      }
+    ],
+    "credito": "A biógrafa é a historiadora Júnia Ferreira Furtado, e é dela a conclusão de que “nenhum desses estereótipos se sustenta diante da documentação histórica disponível”.",
+    "vida": [
+      {
+        "quando": "1731-1735",
+        "o_que": "Nasce no arraial de Milho Verde, filha de Maria da Costa, negra escravizada, e Antônio Caetano de Sá, homem branco — daí a designação “parda” nos documentos.",
+        "pagina": "298"
+      },
+      {
+        "quando": "até 1753",
+        "o_que": "Escrava de três senhores sucessivos. O segundo, o médico e juiz Manuel Pires Sardinha, “a comprou para este efeito”, segundo denúncia à Inquisição de 1750. Com ele teve Simão.",
+        "pagina": "298"
+      },
+      {
+        "quando": "1753",
+        "o_que": "Comprada por 800 mil réis pelo desembargador e contratador João Fernandes de Oliveira, e alforriada por ele em dezembro do mesmo ano. Até ali era conhecida como “Francisca Parda”; no mundo lusitano, o sobrenome Silva indicava pessoas sem procedência definida.",
+        "pagina": "298, 302"
+      },
+      {
+        "quando": "1753-1770",
+        "o_que": "União estável, nunca formalizada, com treze filhos — uma gravidez a cada treze meses. Ele os reconheceu e os incluiu no testamento.",
+        "pagina": "302"
+      },
+      {
+        "quando": "1796",
+        "o_que": "Morre com mais de sessenta anos, irmã de seis das mais importantes fraternidades religiosas da América Portuguesa.",
+        "pagina": "295-296"
+      }
+    ],
+    "simao": {
+      "titulo": "O filho que apagou a mãe",
+      "texto": "Simão, o primogênito — fruto da exploração sexual pelo médico Pires Sardinha —, estudou em Roma, comprou patente de tenente-coronel da cavalaria de Minas e obteve do rei o hábito de cavaleiro da Ordem de Cristo, a mais alta distinção acessível a quem não nascera nobre. Para isso <b>omitiu que a mãe fora escrava de descendência africana</b>: pelas leis de limpeza de sangue, isso o impediria. Reescreveu a própria genealogia — e as doze testemunhas que arrolou confirmaram sua versão.",
+      "pagina": "306"
+    },
+    "distrito": {
+      "titulo": "Os números dos diamantes",
+      "linhas": [
+        {
+          "o_que": "Remetido a Portugal nas três décadas de contratos (1740-1771)",
+          "quanto": "1,7 milhão de quilates ≈ 340 quilos",
+          "pagina": "300"
+        },
+        {
+          "o_que": "Contrabando estimado",
+          "quanto": "cinco quilates para cada dez extraídos oficialmente",
+          "pagina": "300"
+        },
+        {
+          "o_que": "Comprado sozinho pelo holandês Daniel Gildemeester entre 1761 e 1771",
+          "quanto": "925.589 quilates — dois terços de toda a produção brasileira",
+          "pagina": "301"
+        },
+        {
+          "o_que": "Escravizados alugados à Intendência dos Diamantes no auge (1770-1795)",
+          "quanto": "cerca de 5 mil pessoas",
+          "pagina": "300"
+        },
+        {
+          "o_que": "Escravizados que o contratador podia empregar diretamente na extração",
+          "quanto": "no máximo seis",
+          "nota": "limite imposto pela Coroa para conter a produção e o contrabando.",
+          "pagina": "301"
+        }
+      ]
+    },
+    "tijuco": {
+      "titulo": "O arraial",
+      "texto": "Censo de domicílios de 1774: dos 511 lares, 229 eram chefiados por mulheres, predominantemente negras ou mestiças, e 166 de 197 delas apareciam vivendo sozinhas — embora as devassas episcopais de 1750 e 1753 tivessem denunciado 115 pessoas por concubinato, o que explica os muitos filhos registrados em casas de mulheres oficialmente solteiras. O arraial tinha a casa de ópera mais antiga de Minas, cerca de 120 músicos ao longo do século, uma biblioteca particular com <i>O espírito das leis</i> e um resumo da <i>Enciclopédia</i> — e <b>quatro dos nove alunos brasileiros matriculados em Coimbra em 1782</b> eram de lá.",
+      "pagina": "302-304"
+    }
+  },
+  "quilombos": {
+    "titulo": "Fugitivos e rebeldes",
+    "epigrafe": {
+      "texto": "É uma barbaridade indigna de homens que têm o nome de cristãos.",
+      "credito": "conde dos Arcos, vice-rei, vetando a proposta da Câmara de Mariana de cortar o tendão de Aquiles dos fugitivos, 1755",
+      "pagina": "307"
+    },
+    "intro": "<i>Kilombo</i>, do quicondo e do quimbundo, queria dizer acampamento, arraial, união, cabana; entre os imbangalas de Angola designava uma sociedade guerreira com rituais de iniciação e disciplina militar. <i>Mocambo</i> era o pau de fieira, a forquilha com que se erguia a choupana. No Brasil as duas palavras passaram a nomear a mesma coisa.",
+    "pagina": "307-324",
+    "penas": {
+      "titulo": "A escala da pena",
+      "texto": "O alvará régio de 3 de março de 1741: a quem fosse achado em quilombo, “se lhes ponha com fogo uma marca em uma espádua com a letra F”; se já estivesse marcado, “se lhe cortará uma orelha, tudo por simples mandado do juiz [...] <b>sem processo algum</b> e só pela notoriedade do fato”. Na terceira vez, podia ser morto.",
+      "pagina": "310",
+      "comparacao": [
+        {
+          "onde": "São Domingos (Código Negro francês, 1768)",
+          "pena": "Quatro dias de ausência: 50 chibatadas e tronco até o pôr do sol. Oito dias: 100 chibatadas e dois meses arrastando um peso de ferro de dez quilos."
+        },
+        {
+          "onde": "Louisiana",
+          "pena": "Orelhas cortadas e costas marcadas a ferro; na reincidência, um braço amputado; na terceira fuga, morte."
+        },
+        {
+          "onde": "Suriname",
+          "pena": "Tendão de Aquiles cortado ou amputação da perna direita."
+        }
+      ],
+      "recusas": {
+        "titulo": "As três propostas que a Coroa recusou",
+        "itens": [
+          {
+            "quando": "1719",
+            "quem": "Conde de Assumar, governador de Minas",
+            "o_que": "Pena de morte para fugitivos. <b>Os mineradores reagiram</b>, por prejuízo. “Para a lógica do escravismo, era melhor um escravo fugitivo reincidente do que um escravo morto” (Carlos Magno Guimarães).",
+            "pagina": "311"
+          },
+          {
+            "quando": "1719",
+            "quem": "O mesmo Assumar",
+            "o_que": "Cortar a perna direita e substituí-la por uma de pau, “para que os donos os aproveitassem em tarefas que não exigissem caminhadas”. Falava em “remédios violentos, como tão preciosos a uma canalha tão indômita”. Recusado pela Coroa por desumano.",
+            "pagina": "311"
+          },
+          {
+            "quando": "1755",
+            "quem": "Câmara de Mariana",
+            "o_que": "Cortar o tendão de Aquiles. Vetado pelo conde dos Arcos, que repreendeu os proponentes: “a maior parte desses cativos fogem porque seus donos não os sustentam, não os vestem e não os tratam com o amor e a caridade devidas”.",
+            "pagina": "311"
+          }
+        ]
+      }
+    },
+    "orelhas": {
+      "titulo": "3.900 pares de orelhas",
+      "texto": "Ao voltar a São Paulo em 1751, depois de atacar redutos de fugitivos numa vasta região entre Minas Gerais e Goiás, o bandeirante Bartolomeu Bueno do Prado levava como troféu pessoal colares com <b>3.900 pares de orelhas cortadas</b>.",
+      "pagina": "310"
+    },
+    "capitao_do_mato": {
+      "titulo": "A tabela do capitão do mato",
+      "intro": "O regimento criado no governo de dom Lourenço de Almeida, em Minas Gerais, fixava a recompensa pela distância percorrida. Os valores em reais são a conversão feita pelo próprio livro, em 2021.",
+      "pagina": "318-320",
+      "linhas": [
+        {
+          "caso": "Recaptura até meia légua (≈3 km)",
+          "ouro": "4 oitavas · 14,4 g",
+          "hoje": "≈ R$ 4.500"
+        },
+        {
+          "caso": "Acima de uma légua, medido em dias de viagem",
+          "ouro": "até 25 oitavas · 90 g",
+          "hoje": "≈ R$ 28.000"
+        },
+        {
+          "caso": "Pessoa encontrada em quilombo (com pelo menos outras quatro)",
+          "ouro": "20 oitavas · 72 g",
+          "hoje": "≈ R$ 22.400"
+        },
+        {
+          "caso": "Quilombola que resistisse e morresse no confronto",
+          "ouro": "8 oitavas · 28,8 g",
+          "hoje": "≈ R$ 8.950",
+          "nota": "A cabeça era exposta num poste em praça pública. “Uma cena comum no interior do Brasil era o capitão do mato montado a cavalo, transportando a cabeça de um escravo, salgada e acondicionada dentro de um saco, em busca da recompensa.”",
+          "grave": true
+        }
+      ],
+      "premios": [
+        {
+          "quando": "agosto de 1734",
+          "quem": "Dionízio Marques Pinto, capitão-mor das estradas de Itaubira",
+          "quanto": "quase 1,5 quilo de ouro (≈ R$ 470 mil)",
+          "pagina": "319"
+        },
+        {
+          "quando": "1735",
+          "quem": "Francisco de Mattos",
+          "quanto": "7,5 quilos de ouro (≈ R$ 2,4 milhões) mais 24 soldados, para “extinguir os negros calhambolas” em Vila Rica",
+          "pagina": "319-320"
+        },
+        {
+          "quando": "1759",
+          "quem": "Bartolomeu Bueno do Prado, pelo Quilombo do Ambrósio",
+          "quanto": "uma sesmaria de cerca de 13 mil hectares — 82 vezes o parque do Ibirapuera, mais de três vezes o parque nacional da Tijuca",
+          "pagina": "320"
+        }
+      ],
+      "escravos_cacadores": {
+        "titulo": "Escravizados caçando escravizados",
+        "texto": "Quase 15% dos 467 capitães do mato registrados em Minas Gerais eram ex-escravos alforriados. E havia cativos com a patente: em 17 de janeiro de 1731 o “preto escravo” Amaro de Queiroz, propriedade de José de Queiroz; em 5 de novembro de 1760 Domingos Moreira de Azevedo, “crioulo escravo”; em dezembro de 1779 José Ferreira, “pardo escravo”. Andavam armados e sozinhos pelo sertão e não fugiam — o que, para Carlos Magno Guimarães, fazia deles “peças importantes na manutenção do sistema que os coloca na condição de escravos”.",
+        "pagina": "321"
+      }
+    },
+    "mapa_quilombos": {
+      "titulo": "Onde eram",
+      "linhas": [
+        {
+          "onde": "Grão-Pará e Maranhão, 1734-1816",
+          "quanto": "cerca de 80 quilombos",
+          "pagina": "312"
+        },
+        {
+          "onde": "Minas Gerais, século XVIII",
+          "quanto": "160 conhecidos — só em 1737 e 1738 catorze foram destruídos",
+          "pagina": "312"
+        },
+        {
+          "onde": "Quilombo do Ambrósio (Alto São Francisco)",
+          "quanto": "mais de mil pessoas, vilarejos cercados de paliçadas, valas de 2 a 3 metros de profundidade e pântanos artificiais",
+          "pagina": "312-313"
+        },
+        {
+          "onde": "Quariterê (MT), fundado ≈1730",
+          "quanto": "79 negros e 30 índios sob um rei e uma rainha, com duas tendas de ferro para fabricar ferramentas e armas",
+          "pagina": "313"
+        },
+        {
+          "onde": "Buraco do Tatu (BA), destruído em 1763",
+          "quanto": "cerca de 100 pessoas; trincheiras com estrepes idênticas às da Nigéria, do Congo e de Angola",
+          "pagina": "313"
+        },
+        {
+          "onde": "Trombetas (PA)",
+          "quanto": "2 mil habitantes segundo um relatório da época; atacado em 1823, cresceu e passou a exportar cacau para a Guiana Francesa",
+          "pagina": "313-314"
+        }
+      ]
+    },
+    "tratado": {
+      "titulo": "O tratado de paz do Engenho Santana, 1789",
+      "texto": "No mesmo ano da Revolução Francesa e da Inconfidência, os trezentos cativos do engenho de Manuel da Silva Ferreira, em Ilhéus, fugiram sob a liderança do “cabra” Gregório Luís depois de matar o mestre de açúcar. <b>O engenho ficou parado dois anos.</b> Então propuseram um “tratado de paz” com dezenove reivindicações — um dos raros documentos em que os escravizados falam diretamente, sem intermediários.",
+      "pagina": "316-317",
+      "pediam": [
+        "Redução de 30% da cota diária de cana a cortar.",
+        "Cota de mandioca das mulheres pelo menos 20% menor que a dos homens.",
+        "Número mínimo de pessoas designadas para cada tarefa.",
+        "Folgas semanais e hortas próprias, com direito de revender no mercado o que produzissem.",
+        "Demissão dos feitores acusados de maus-tratos, e aprovação dos novos por eles.",
+        "Poder “jogar, descansar, cantar e dançar” quando quisessem, sem autorização prévia."
+      ],
+      "nao_pediam": "Em momento algum questionaram o próprio cativeiro: aceitavam voltar como escravos, sob feitores. Nem pediram o fim dos castigos.",
+      "desfecho": "O senhor fingiu aceitar. Na volta dos fugitivos, mandou Gregório para a cadeia e vendeu todos os demais para o Maranhão."
+    },
+    "anistia": {
+      "titulo": "A anistia que funcionou",
+      "texto": "Em 1800, Vitória tinha 7.225 habitantes: 67% escravizados, 13% forros, apenas 20% brancos — e uns trezentos fugitivos aquilombados nos arredores. O governador Silva Pontes tinha cem homens para atacar. Preferiu dar <b>trinta dias de prazo para o retorno voluntário, com anistia total</b>. Funcionou.",
+      "pagina": "317"
+    },
+    "economia": {
+      "titulo": "A economia clandestina dos quilombos",
+      "texto": "Em Itu vendiam café furtado e roubavam vacas e porcos <b>por encomenda</b> dos comerciantes de couro e cera. Na Baía de Guanabara refugiavam-se nas senzalas das três fazendas beneditinas, “aparentemente com a cumplicidade dos próprios monges”. Em 1859, <b>a lenha usada pela corte imperial no Rio era cortada por quilombolas</b> nos mangues da Guanabara e revendida pelos taberneiros. Donos de barcos pagavam pedágio pelo direito de navegar. Um relatório de 1878 ao ministro da Justiça explicava por que a polícia nunca os achava: os taberneiros “os preveniam de qualquer movimento da força”.",
+      "pagina": "323-324"
+    },
+    "oitizeiro": {
+      "titulo": "O quilombo que tinha escravos",
+      "texto": "O Quilombo do Oitizeiro, na barra do rio das Contas — atual Itacaré, na Bahia —, era dirigido por homens livres (negros, brancos e até um índio), tinha <b>seus próprios escravos</b> além dos alheios que acoitava, e a produção integrada ao mercado regional. João José Reis registra o detalhe que desfaz a imagem simples: muitos dos cativos ali encontrados “não estavam fugindo da escravidão, mas apenas buscando trocar de senhores”.",
+      "pagina": "324"
+    },
+    "ramos": {
+      "titulo": "A tese incômoda",
+      "texto": "Donald Ramos sustenta que os quilombos de Minas nunca ameaçaram de fato a ordem escravista: eram pequenos, ficavam perto das minas e viviam em intercâmbio constante com as vilas. “Apesar de os escravos individualmente rejeitarem o cativeiro, geralmente não trabalharam coletivamente para derrubar a instituição da escravidão. [...] De uma maneira complexa, o quilombo complementava o sistema escravocrata.” A prova que ele oferece: nas zonas de mineração não houve rebelião significativa em todo o século XVIII — e havia centenas de quilombos.",
+      "pagina": "322-323"
+    },
+    "hoje": {
+      "titulo": "Os quilombos hoje",
+      "texto": "No início de 2019 havia <b>3.212 comunidades quilombolas certificadas</b> pela Fundação Palmares, com 1,2 milhão de moradores — 75% deles em pobreza extrema — ocupando cerca de 1,2 milhão de hectares, ou <b>0,14% do território nacional</b>. É menos que as dez maiores propriedades do agronegócio brasileiro. Só as terras do Grupo André Maggi somam 252 mil hectares: duas vezes o município do Rio de Janeiro, e um quarto de toda a área quilombola do país.",
+      "pagina": "309"
+    }
+  },
+  "medo": {
+    "titulo": "O medo",
+    "epigrafe": {
+      "texto": "O que sempre se receou nas colônias é a escravatura.",
+      "credito": "Fernando José de Portugal e Castro, governador da Bahia, 13 de fevereiro de 1799",
+      "pagina": "325"
+    },
+    "intro": "Em setembro de 1789 um barco atracou em Porto Príncipe com notícias de Paris, e o capitão saiu correndo pelas ruas aos gritos: a Bastilha tomada, a revolução, a Declaração dos Direitos do Homem, o rei refém em Versalhes. Do que se seguiu, o Brasil escravista tirou a sua lição — e não foi a que os revolucionários pretendiam.",
+    "pagina": "325-334",
+    "haiti": {
+      "titulo": "São Domingos, 1789",
+      "numeros": [
+        {
+          "cifra": "40% a 50%",
+          "texto": "da produção mundial de açúcar e café, e cerca de 40% de todo o comércio externo francês."
+        },
+        {
+          "cifra": "9 para 1",
+          "texto": "cerca de 500 mil escravizados (dois terços nascidos na África) para 30 mil brancos e 28 mil mestiços livres sem direitos plenos."
+        },
+        {
+          "cifra": "40 mil por ano",
+          "texto": "era o que os navios negreiros despejavam na ilha."
+        },
+        {
+          "cifra": "8 mil de 40 mil",
+          "texto": "soldados franceses enviados para reprimir a revolta voltaram para casa."
+        }
+      ],
+      "texto": "As famílias mais fúteis mandavam a roupa de navio para ser lavada em São Domingos, onde o sol e as águas limpas deixavam os tecidos mais alvos. A revolução começou entre os próprios escravistas — <i>grands blancs</i> contra <i>petits blancs</i>, e depois ambos contra os mestiços — e correu, como escreveu João Pedro Marques, “perante os olhos de uma massa escrava que era quase nove vezes maior do que o conjunto da população livre”.",
+      "livro": {
+        "titulo": "O livro que armou a revolta",
+        "texto": "Toussaint Louverture sabia ler e escrever — coisa rara entre os cativos do continente. Sua leitura predileta era a <i>História filosófica e política</i> do abade Raynal, proibida em 1772 e <b>queimada em praça pública em toda a França em 1779</b>; em Portugal, proibida em 1773 e nunca publicada. Raynal convocava um chefe: “Ele aparecerá, não duvidem disso; ele se apresentará e erguerá a sagrada bandeira da liberdade”. E fechava: “Povos, cujos rugidos tantas vezes fizeram os senhores tremerem, o que estais esperando? Para quando estais reservando vossas tochas e as pedras que calçam as ruas?”.",
+        "pagina": "328-329"
+      },
+      "abolicao_que_nao_aboliu": {
+        "titulo": "A abolição que não aboliu",
+        "texto": "Vitorioso, Toussaint promulgou uma Constituição em 1801, aboliu a escravidão e proclamou-se governador perpétuo — e então convidou os antigos proprietários brancos a reassumir as fazendas, obrigou os ex-escravos a voltar às lavouras sob supervisão do exército, com chicote e forca para quem se recusasse, e <b>chegou a restaurar o tráfico negreiro</b>: os cativos recém-chegados da África não eram considerados livres.",
+        "pagina": "329-330"
+      },
+      "conta": {
+        "titulo": "A conta que o Haiti pagou",
+        "texto": "Jefferson recusou-se a reconhecer o país; o Vaticano demorou sessenta anos; o Congresso americano proibiu qualquer comércio; e em 1825, para ser reconhecido, o Haiti teve de pagar à França uma indenização de <b>150 milhões de francos</b>. “Hoje está entre os países mais pobres do mundo.”",
+        "pagina": "331"
+      }
+    },
+    "lucro": {
+      "titulo": "O que o Brasil ganhou com o Haiti",
+      "texto": "A insurreição fez o açúcar subir 50% em cinco anos. As exportações da Bahia foram de 480 mil para 746 mil arrobas entre 1788 e 1798; as de Pernambuco, de 275 mil (1790) para 560 mil (1807); as do Rio, de 200 mil (1790) para 487.200 (1800). “O medo, porém, era maior do que os eventuais benefícios econômicos temporários.”",
+      "pagina": "332"
+    },
+    "babel": {
+      "titulo": "A divisão como política de segurança",
+      "texto": "Os senhores catalogavam a origem étnica dos cativos também para <b>evitar que um mesmo plantel reunisse pessoas da mesma língua ou parentesco</b>. Em 1725 o governador do Rio, Luiz Vahia Monteiro, aconselhava a Coroa a introduzir “negros de todas as nações”: “O meio da divisão sempre foi o maior antídoto de semelhantes máquinas, porque o reino em si dividido será desolado e a confusão das línguas foi o que arruinou a Torre de Babel”.",
+      "pagina": "332"
+    },
+    "alfaiates": {
+      "titulo": "A Conjuração Baiana, 1798",
+      "texto": "Soldados, oficiais, alfaiates, escravizados e um cirurgião — Cipriano José Barata de Almeida. Exigiam o fim “do detestável jugo metropolitano de Portugal”, a abolição da escravatura e igualdade “especialmente [para] mulatos e negros”. Um panfleto de 12 de agosto: “Animai-vos Povo Bahiense [...] o tempo em que todos seremos irmãos; o tempo em que todos seremos iguais”.",
+      "pagina": "333-334",
+      "definicao": {
+        "quem": "O soldado mestiço Lucas Dantas, explicando ao alfaiate João de Deus, de 27 anos, o que era uma revolução",
+        "diz": "“É fazer uma guerra civil entre nós, para que não se distinga a cor branca, parda e preta, e seremos todos felizes, sem exceção de pessoa [...] só governarão aqueles que tiverem maior juízo, e capacidade para comandar homens, seja ele de que Nação for.”"
+      },
+      "desfecho": "Lucas Dantas foi preso em 9 de setembro; na madrugada de 5 para 6 de novembro tentou se matar enfiando várias vezes uma colher de prata pela garganta. Na tarde seguinte foi enforcado na praça da Piedade com João de Deus, o soldado Luiz Gonzaga das Virgens e o alfaiate alforriado Manuel Faustino dos Santos Lira — <b>todos mulatos pobres</b>. Os corpos foram esquartejados e as cabeças espetadas em quatro pontos da cidade. Dos 43 presos, só 16 saíram livres; os que não foram condenados à morte foram banidos para a África.",
+      "nota_final": "Cipriano Barata, arauto da liberdade, era dono de cinco escravos quando foi preso: Noé, Moisés, Isaías, Raquel e Custódia."
+    },
+    "inconfidencia": {
+      "titulo": "A liberdade é branca",
+      "texto": "Na noite chuvosa de 26 de dezembro de 1788, oito homens reunidos em Vila Rica desenharam a república mineira: capital em São João del-Rei, casa da moeda, fábrica de pólvora e de ferro, universidade em Vila Rica, milícia popular no lugar do exército, câmaras municipais sob um parlamento, perdão de todas as dívidas com a Fazenda Real, e a bandeira com o triângulo verde e o <i>Libertas quae sera tamen</i>. Havia um item na lista que ficou sem conclusão.",
+      "pagina": "336-345",
+      "impasse": {
+        "titulo": "O item que não se resolveu",
+        "texto": "Minas era então a capitania mais populosa do Brasil e a maior concentração de pessoas de origem africana de todo o continente americano: <b>174 mil escravizados</b> em 394 mil habitantes, contra apenas 70 mil brancos (18%). Alvarenga Peixoto propôs libertar todos os que defendessem o novo Estado — a alforria como prêmio pela adesão. Maciel rebateu que a abolição privaria os mineradores da mão de obra vital, e sem ela nenhum Estado se manteria livre diante das forças portuguesas. <b>“Diante de um argumento tão forte, os demais participantes da reunião se mantiveram calados.”</b> A saída aventada, sem conclusão: libertar apenas os nascidos no Brasil; os africanos continuariam escravos, e o tráfico seria mantido."
+      },
+      "donos": {
+        "titulo": "Os inconfidentes e os seus escravos",
+        "linhas": [
+          {
+            "quem": "Alvarenga Peixoto",
+            "quantos": "132 cativos",
+            "nota": "os “meus negros”, como dizia."
+          },
+          {
+            "quem": "Padre Toledo",
+            "quantos": "32 “peças”",
+            "nota": ""
+          },
+          {
+            "quem": "Padre Rolim",
+            "quantos": "7",
+            "nota": "entre eles Alexandre Pardo, que redigia as cartas dele. Rolim era ainda contrabandista, agiota e falsificador de moedas, e desviava diamantes do Tijuco por uma rota que terminava em Amsterdã."
+          },
+          {
+            "quem": "Cláudio Manuel da Costa",
+            "quantos": "muitos",
+            "nota": "sócio de minas, garimpos e fazendas; manteve um longo romance clandestino com sua escrava Francisca Arcângela de Souza, de quem teve cinco filhos. Sua mansão era o ponto de encontro dos conjurados."
+          },
+          {
+            "quem": "Inácio Correia Pamplona",
+            "quantos": "58 cativos armados numa só expedição, com uma orquestra de câmara também de escravos, tocando minuetos enquanto caçavam fugitivos",
+            "nota": "caçador de índios e quilombolas, recebeu sete sesmarias que somavam oito vezes a área do atual município de Belo Horizonte. Era casado com uma forra, Eugênia Luísa da Silva, cuja mãe viera escravizada da Costa da Mina. Foi um dos delatores da Inconfidência."
+          },
+          {
+            "quem": "Tiradentes",
+            "quantos": "pelo menos 6",
+            "nota": "Francisco Caetano, Bangelas, João Camundongo, Maria Angola e os dois filhos dela, Jerônimo e Francisca. No posto de alferes, recrutara negros escravizados para combater outros negros na serra da Mantiqueira."
+          }
+        ],
+        "maxwell": "Kenneth Maxwell: “A conspiração dos mineiros era, basicamente, um movimento de oligarcas e no interesse da oligarquia, sendo o nome do povo invocado apenas como justificativa.”"
+      },
+      "pena": {
+        "titulo": "A pena que variou com a cor",
+        "texto": "Só Tiradentes foi enforcado. Mas <b>Vitoriano Gonçalves Veloso, o único conjurado “pardo”</b>, antes de partir para o degredo foi obrigado a refazer a pé o trajeto de Tiradentes até a forca — pouco mais de um quilômetro — sendo açoitado em público durante todo o percurso. Dois escravizados envolvidos involuntariamente também foram punidos, “não por serem rebeldes, mas por serem cativos”, escreve Lucas Figueiredo. Alexandre Pardo, o que redigia as cartas do padre, foi vendido em praça pública. E o “Preto Nicolau”, que sequer fazia parte do processo, embarcou com o dono para o degredo africano, para lhe prestar assistência.",
+        "pagina": "344-345"
+      },
+      "fundadores": {
+        "titulo": "A mesma contradição, do outro lado",
+        "texto": "Dois terços dos 21 principais líderes da independência americana eram donos de escravos. Henry Laurens, presidente do Congresso Continental, era traficante negreiro. Washington tinha 317 pessoas em Mount Vernon — e as libertou em testamento, em 1799. <b>Jefferson, no ano em que escreveu que “todos os homens nascem iguais”, era dono de 150 escravos</b>, e escreveu um tratado defendendo que os negros eram biologicamente inferiores. Benjamin Franklin publicava no seu jornal anúncios de recompensa por escravos fugitivos, até libertar os seus e aderir ao abolicionismo em 1781. E John Locke, o autor do conceito moderno de liberdade, era acionista da Royal African Company.",
+        "pagina": "342-343"
+      }
+    }
+  },
+  "irmandades": {
+    "titulo": "As irmandades",
+    "intro": "Entre o fim do século XVIII e o início do XIX, <b>pelo menos 80% da população negra ou mestiça da Bahia</b> estava ligada a alguma irmandade religiosa. Não era devoção apenas: num país com sete dioceses e menos de seiscentas paróquias para três milhões de pessoas, era a única estrutura de auxílio mútuo disponível.",
+    "pagina": "228-239",
+    "o_que_faziam": [
+      "Coleta de fundos para <b>comprar alforrias</b>.",
+      "Ajuda material e financeira em desgraça pessoal ou familiar.",
+      "Enterro digno e missas pelos mortos.",
+      "Assistência aos doentes e apoio em causas legais.",
+      "Procissões, festas do padroeiro e a eleição de reis e rainhas negros."
+    ],
+    "numeros": [
+      {
+        "o_que": "Confraria de N. S. do Rosário dos Homens Pretos de Lisboa",
+        "quando": "criada por volta de 1460",
+        "nota": "citada em alvará de dom Manuel I de 14 de junho de 1496 — quatro anos antes de Cabral. Tinha fundo mútuo para comprar alforrias.",
+        "pagina": "231"
+      },
+      {
+        "o_que": "Irmandades do Rosário mais antigas do Brasil",
+        "quando": "Rio 1639, Belém 1682, Bahia 1685",
+        "nota": "por volta de 1720 era a maior entre os 52 tipos de irmandade registrados em Minas Gerais.",
+        "pagina": "231"
+      },
+      {
+        "o_que": "Mesa diretora do Rosário de Mariana, 1748-1819",
+        "quando": "984 pessoas com função",
+        "nota": "303 delas eram escravizadas; dos 273 de origem conhecida, 88% eram africanos.",
+        "pagina": "231"
+      },
+      {
+        "o_que": "Procissão do Corpo de Deus em Lisboa, 1719",
+        "quando": "143 irmandades",
+        "nota": "com a de São Jorge à frente; três eram “irmandades de pretos”.",
+        "pagina": "232"
+      }
+    ],
+    "controle": {
+      "titulo": "O controle, escrito nos estatutos",
+      "linhas": [
+        {
+          "quando": "1565",
+          "o_que": "O primeiro compromisso da confraria de Lisboa proíbe que qualquer escravo “seja oficial nem tenha mando na confraria” — proibição estendida a “mourisco branco”, “mulato” e “índio” — e <b>reserva o cargo de escrivão a candidatos “brancos” e de “reconhecida nobreza”</b>.",
+          "pagina": "232"
+        },
+        {
+          "quando": "1720",
+          "o_que": "A Irmandade da Boa Morte, no Rio, admite apenas “pardos legítimos” e “homens e mulheres brancas”. Negros ficam automaticamente excluídos.",
+          "pagina": "216"
+        },
+        {
+          "quando": "1761",
+          "o_que": "Os irmãos <b>escravizados</b> da Boa Morte apelam ao Conselho Ultramarino acusando os irmãos libertos “pardos” de os tratarem com “desprezo” e “petulância” e de desviar seus donativos.",
+          "pagina": "216"
+        },
+        {
+          "quando": "1765",
+          "o_que": "Jeje-mahis de Cachoeira pedem a confirmação de sua confraria; o clero local recomenda a recusa porque os negros “são tirados do paganismo na África e sempre lhes fica uma propensão para coisas supersticiosas”.",
+          "pagina": "236"
+        },
+        {
+          "quando": "1788",
+          "o_que": "O estatuto de N. S. dos Remédios: “Se o novo irmão notoriamente constar que é preto de péssimos costumes, vicioso, infame, ou que usa de feitiçarias e superstições, de nenhuma sorte o aceitará o procurador”.",
+          "pagina": "235"
+        },
+        {
+          "quando": "1794",
+          "o_que": "Autoridades eclesiásticas de Minas: “Os pretos não ousavam levantar os olhos [...] Porém, depois que se estabeleceram as ditas irmandades, animaram-se do espírito de intriga, revestiram-se de arrogância”.",
+          "pagina": "236"
+        }
+      ]
+    },
+    "capelas": {
+      "titulo": "A política de deixar cair",
+      "texto": "A partir de 1750 os negros ergueram no Rio inúmeras capelas sem supervisão eclesiástica. O vice-rei marquês de Lavradio, com apoio do bispo, propôs a solução: <b>proibir qualquer reforma ou obra de melhoria nesses templos</b>, até que se deteriorassem a ponto de serem interditados, forçando os fiéis a se incorporarem à Irmandade do Rosário. Algumas resistiram — e são hoje as igrejas de Santa Efigênia, Lampadosa, São Domingos e Senhor Jesus do Cálix.",
+      "pagina": "236-237",
+      "credito": "Mariza de Carvalho Soares."
+    },
+    "reis": {
+      "titulo": "Reis e rainhas",
+      "texto": "As cortes eleitas pelas irmandades — com condes, marqueses e viscondes — eram “como espelhos de imagens invertidas das casas reais europeias”. Antônio, africano da nação rebolo-tundá, foi aclamado imperador da Irmandade da Lampadosa: negro, pobre, analfabeto, e <b>escravo do próprio vice-rei do Brasil</b>, o conde da Cunha. O compromisso de Santo Elesbão e Santa Efigênia, de 1764, previa até <b>sete reis simultâneos</b>, cada um com sua corte e seu cofre; no reinado de Ignácio Gonçalves do Monte, o cofre ficava com a rainha, sua mulher.",
+      "pagina": "237-238",
+      "reacao": "Em 1771 o vigário de São Sebastião de Mariana escrevia: “Tem mostrado a experiência que, depois de ser rei algum escravo, é tal a sua presunção que não serve mais a seu senhor com satisfação [...] onde é tão superior o corpo dos negros ao número dos brancos, facilmente pode produzir as funestas consequências”. Em 1729 a Irmandade do Rosário de Salvador foi proibida de sair às ruas — interdição que durou mais de meio século. No Rio, as folias negras foram definitivamente proibidas <b>depois da chegada da corte, em 1808</b>, segundo Debret. Delas nasceram as folias de reis do interior e, para alguns estudiosos, os desfiles de Carnaval.",
+      "pagina_reacao": "238-239"
+    },
+    "santos": {
+      "titulo": "Os santos e as divindades",
+      "intro": "Três correções que o volume II faz de uma vez: o sincretismo nem sempre foi disfarce (houve conversão genuína, e houve quem somasse sem ver antagonismo); o candomblé “não existia na África nem no período colonial brasileiro” — é criação brasileira a partir de heranças africanas; e os orixás não eram “a religião africana”, mas o culto dos iorubás, enquanto no Daomé as entidades se chamavam <i>vuduns</i>.",
+      "pagina": "222-227",
+      "pares": [
+        {
+          "santo": "São Jorge",
+          "orixa": "Ogum (Rio) / Oxóssi (Bahia)",
+          "nota": "O primeiro registro do culto em Lisboa é de 1387, na Procissão do Corpo de Deus, sob o estandarte dos espadeiros, serralheiros, ferreiros e fundidores — ofícios com muitos negros africanos. No Rio, o estatuto de 1757 da irmandade reunia os mesmos ofícios do ferro e do fogo."
+        },
+        {
+          "santo": "São Benedito",
+          "orixa": "Ossaim",
+          "nota": "Nascido em 1524 em São Fratello, Messina; cozinheiro do convento de Palermo. Canonizado só em 1807 — mas cultuado no Brasil bem antes."
+        },
+        {
+          "santo": "Santa Bárbara",
+          "orixa": "Iansã",
+          "nota": "Nicomédia, fim do século III. Teve os seios decepados e foi degolada pelo próprio pai, Dióscorus, que caiu morto fulminado por um raio."
+        },
+        {
+          "santo": "Santa Efigênia",
+          "orixa": "Mawu",
+          "nota": "Princesa da Núbia, reino negro ao sul do Egito, batizada pelo apóstolo Mateus."
+        },
+        {
+          "santo": "Santo Elesbão",
+          "orixa": "Lissa",
+          "nota": "Imperador da Etiópia no século VI."
+        },
+        {
+          "santo": "Santo Antônio de Categeró",
+          "orixa": "Exu",
+          "nota": "Família muçulmana da Guiné, vendido como escravo para a Sicília, convertido e alforriado. Morreu em 1549."
+        }
+      ],
+      "efigenia": {
+        "titulo": "A África dentro de Santa Efigênia",
+        "texto": "Em Ouro Preto, o guia Marcelo Hypólito aponta na igreja da Irmandade do Rosário dos Pretos: quatro sequências de quatro búzios sob o altar de santa Rita — dezesseis, o número do <i>erindinlogum</i>, o método de adivinhação de Ifá; um leque de Oxum, um véu de Iansã e uma fita de Iemanjá entre conchas e caramujos; um casco de tartaruga de Xangô com três linhas paralelas que lembram escarificações iorubás; um <b>papa negro de barrete frígio vermelho</b> numa pintura de 1768, quando o papa era o veneziano Clemente XIII e nenhum dos três papas nascidos no norte da África fora negro; e, sob o altar de santo Antônio de Noto, um crucifixo encobrindo três ramos de pipoca em forma de vassourinha — o xaxará de Omolu. Os mestres carpinteiros e artesãos da obra eram todos pretos ou pardos.",
+        "pagina": "204-206",
+        "cautela": "O livro apresenta isso como hipótese de um guia local, não como achado documentado, e registra que “o silêncio dos documentos históricos impede qualquer resposta”."
+      },
+      "mural": {
+        "titulo": "O mural da rua Direita, 134",
+        "texto": "Em 2017, na reforma do porão de um sobrado de Ouro Preto onde funcionou uma senzala — a cem metros da praça em que a cabeça de Tiradentes foi exposta em 1792 —, apareceram figuras esculpidas a ponta seca no reboco: duas mulheres socando grãos num pilão, gente dançando numa aldeia murada, um pássaro, um leopardo — e, à direita, <b>um navio com gente dentro, navegando na direção contrária à da aldeia</b>. “É, sem dúvida alguma, a jornada de uma pessoa que vivia numa aldeia e foi levada de barco para outra parte”, diz Angelo Oswaldo, ex-presidente do Iphan. Não se conhece nenhum outro registro dessa natureza no país. O Iphan iniciou estudos técnicos em 2019.",
+        "pagina": "203-204"
+      },
+      "chico_rei": {
+        "titulo": "Chico Rei",
+        "texto": "O chefe congo que teria comprado a própria liberdade e a mina, alforriado compatriotas e financiado a igreja de Santa Efigênia. O livro responde em duas palavras: <b>“Aparentemente, não.”</b> Até hoje não se comprovou sua existência em registros históricos.",
+        "pagina": "206",
+        "eco": "É a terceira biografia inventada que esta carta registra, depois de Zumbi (volume I) e de Chica da Silva. O padrão importa: quando falta documento, a lacuna é preenchida por ficção — e a ficção circula como se fosse fonte."
+      }
+    }
+  },
+  "bibliografia": [
+    "Laurentino Gomes, <i>Escravidão — volume II: Da corrida do ouro em Minas Gerais até a chegada da corte de dom João ao Brasil</i>. Globo Livros. É a fonte de tudo o que está nesta aba; cada afirmação traz a página.",
+    "Autores citados pelo volume II e reproduzidos aqui pela leitura dele: Herbert S. Klein e Francisco Vidal Luna, Robert W. Slenes, Donald Ramos, Manolo Florentino, José Roberto Góes, Márcia Amantino, Silvia Hunold Lara, Kátia Mattoso, Emilia Viotti da Costa, Clóvis Moura, Eduardo França Paiva, Júnia Ferreira Furtado, Sheila de Castro Faria, Leila Mezan Algranti, Hebe Maria Mattos de Castro, Larissa Viana, Mariza de Carvalho Soares, Tarcísio R. Botelho, Isaías Pascoal, Carlos Magno Guimarães, Flávio dos Santos Gomes, João José Reis, Mary Karasch, Luiz Mott, Laura Mello e Souza, Stuart B. Schwartz, Luís Nicolau Parés, Charles Boxer, Kenneth Maxwell, Lucas Figueiredo, Robin Law, Robert Harms, John Thornton, Richard Price, Roger Bastide, Pierre Verger, Orlando Patterson, Seymour Drescher, Eric Williams, David Brion Davis, Christopher Leslie Brown, João Pedro Marques, István Jancsó, Carlos da Silva Júnior, Daniele Santos de Souza, Marvin Harris.",
+    "Conversões para reais de 2021 e equivalências em ouro são as do próprio livro, reproduzidas como estão."
+  ]
+}

@@ -19,6 +19,7 @@ O resultado é um único arquivo autocontido: **`index.html`**. Basta abri-lo no
 | **O Negócio** (aba) | Como o tráfico funcionava por dentro: a moeda de búzios, o que ia no porão de ida, os pumbos e pombeiros do interior, o navio negreiro, os lucros reais, a mortalidade por rota e por século, Luanda, as companhias monopolistas, **a guerra luso-holandesa pelo fornecimento de cativos** |
 | **O Navio** (aba) | Dois diagramas — a cadeia do cativeiro em escala de tempo e um corte esquemático do navio — mais a tripulação, os escravizados que iam como marinheiros, oito navios documentados e o alvará de 1684 |
 | **As Origens** (aba) | **Carta V — o outro tráfico e a frente de captura**: as rotas transaarianas, do Mar Vermelho e do Índico (12 milhões de pessoas entre os séculos VII e XIX, tantas quantas o Atlântico levou em 350 anos) e a linha de captura avançando para o interior do continente. **Figura III — a cascata de mortalidade** de Joseph Miller, de 100 capturados a 34-39 sobreviventes. Mais: a escravidão antes do Atlântico, o leilão de Lagos em 1444, dom Henrique, a volta do mar, as ilhas-laboratório, os lançados, o Reino do Congo, a escravidão indígena e sua substituição medida num só engenho, as três bulas papais e a cicatriz da corresponsabilidade africana |
+| **O Ouro** (aba) | O volume II inteiro. **Carta VI — o Brasil do ouro**: as três estradas para as Minas, as monções (3.700 km, 113 corredeiras, quatro a seis meses), a rota amazônica até o rio Negro, a cabotagem e a cerca legal do Distrito Diamantino, com quatro quilombos localizados. **Figura IV** — o preço de uma pessoa em ouro em 1703: um quilo, contra 360 g de um boi e 14 g de uma galinha. **Figura V** — a alforria brasileira contra a norte-americana, e por que a taxa alta não era brandura. Mais: o trabalho, a violência e sua contabilidade, as oito portas da liberdade, a família escrava, as mulheres, Chica da Silva sem a lenda, os quilombos e a tabela de preços do capitão do mato, o medo depois do Haiti e as irmandades |
 | **A Escravidão** (aba) | **Carta III do Brasil escravista**, em duas vistas que se alternam: onde as pessoas desembarcaram (1501-1856) e onde estavam vivas no censo de 1872, província a província. **Carta IV — o tráfico por dentro do Brasil**, em três tempos: os caminhos das Minas (c. 1690-1800), as remessas do porto do Rio (1809-1833) e o tráfico interprovincial do café (1850-1881), com as rotas de cabotagem coladas à costa e os comboios de terra. Mais: a chegada e o Valongo, os instrumentos de castigo, populações escravizadas em censos e atos de emancipação, demografia, trabalho, resistência, abolição país a país |
 
 Quadros: os corredores um a um · as quantidades · as bandeiras · os portos que armavam as
@@ -35,7 +36,7 @@ portos principais, portos secundários e graticulado. Arrastar move a carta;
 `Ctrl`/`Shift` + roda dá zoom; duplo clique restaura.
 
 **Versão em PDF:** [carta-do-trafico-atlantico.pdf](https://flavioferrarosilveira-boop.github.io/escravidao/carta-do-trafico-atlantico.pdf)
-— 18 páginas A3, as duas abas inteiras, vetorial.
+— A3, todas as abas, vetorial.
 
 ## Números-chave
 
@@ -60,6 +61,9 @@ dados/
   navio.json              cadeia do cativeiro, tripulação, navios nomeados, alvará de 1684
   trafico_interno.json    o tráfico dentro do Brasil: três tempos, rotas, números e fontes
   origens.json            a aba As Origens: Carta V, cascata de mortalidade, treze quadros
+  ouro.json               a aba O Ouro: Carta VI, Figuras IV e V, o volume II inteiro
+  costa_mina.json         Costa da Mina, Ajudá, Agaja, as embaixadas, João de Oliveira (vol. II)
+  abolicao.json           o Brookes, o Zong, o São José, a campanha abolicionista (vol. II)
   leituras.json           o que a leitura dos capítulos restantes acrescentou às outras abas
   portos_armadores.json   onde as viagens eram organizadas (Gomes I, p. 217)
   cotejo.json             confronto linha a linha entre a carta, o livro e o resultado
@@ -148,11 +152,21 @@ receberam 2,4 milhões e tinham 256 mil pessoas em 1872.
 
 ## O tráfico por dentro do Brasil
 
-A Carta IV também **não** vem de Gomes. Procurei nas 457 páginas do volume I os termos
+A Carta IV nasceu **fora** de Gomes. Procurei nas 457 páginas do volume I os termos
 *tráfico interno*, *interprovincial*, *revenda*, *cabotagem*, *sampauleiro*,
 *Caminho Novo* e *Minas Gerais*: **nenhuma ocorrência**. Não é lacuna do autor — o volume
 termina em 1695, antes de o tráfico interno existir como sistema; a matéria é dos volumes
-II (o ouro) e III (o café). O livro toca no assunto por duas bordas: a cronologia registra
+II (o ouro) e III (o café).
+
+O **volume II, agora lido, resolveu a metade colonial dessa lacuna**: dele vêm as três
+estradas (p. 78), as monções com todas as suas medidas (pp. 93-102), a rota amazônica
+(pp. 112-122) e, sobretudo, a proporção que faltava — **«quase a metade»** de todos os
+africanos desembarcados no Rio era imediatamente transferida para as regiões mineradoras
+de Minas Gerais, Goiás e Mato Grosso (pp. 121-122), sobre uma base de 850 mil desembarques
+no Rio ao longo do século XVIII (p. 370). Continuo sem fechar um número: o autor não
+apresenta a proporção como cálculo, e não vou transformá-la num total que ele não deu.
+Mas o campo `volume` da era colonial deixou de ser um vazio sem explicação. O período do
+café segue fora dos dois volumes lidos — é matéria do volume III. O livro toca no assunto por duas bordas: a cronologia registra
 que em 1675 Domingos Jorge Velho abre o caminho que liga São Paulo e Minas Gerais (p. 10),
 e a p. 327 descreve os *libambos* — os comboios de cativos conduzidos pelos pombeiros do
 interior de Angola até o litoral, o mesmo mecanismo do outro lado do oceano.
@@ -173,10 +187,10 @@ somam** — a carta diz isso na própria página. As espessuras das rotas são q
 não existe, que eu tenha encontrado, uma matriz província-a-província do tráfico interno
 comparável à do tráfico atlântico.
 
-## As duas leituras do livro
+## As três leituras
 
-O volume I tem **trinta capítulos**. A carta foi construída em duas etapas, e o registro disso
-importa porque a segunda corrigiu a primeira.
+O volume I tem **trinta capítulos**; o volume II, **trinta e um**. A carta foi construída em três
+etapas, e o registro disso importa porque cada etapa corrigiu a anterior.
 
 Na primeira etapa foram lidos **onze** capítulos — 9, 14 a 20, 23, 27 e 28. Deles saíram a
 recalibração da matriz, a aba O Negócio, a aba O Navio e as cartas II e III.
@@ -203,6 +217,54 @@ E mais duas contradições internas do livro, que se somam às quatro já regist
 Arguim é datada de **1445** no capítulo 2 e de **1448** no capítulo 5; e a figura de pedra de
 Sagres tem **48 linhas** numa frase e **58** três frases adiante, na mesma página.
 
+### A terceira leitura — o volume II inteiro
+
+Depois vieram os **trinta e um capítulos do volume II**, *Da corrida do ouro em Minas Gerais até
+a chegada da corte de dom João ao Brasil* (pp. 31-373), lidos por inteiro. Deles saíram:
+
+- a aba **O Ouro**, com a **Carta VI** (as três estradas, as monções, a rota amazônica, a
+  cabotagem e a cerca do Distrito Diamantino), a **Figura IV** (o preço de uma pessoa em ouro em
+  1703) e a **Figura V** (a alforria brasileira contra a norte-americana), mais oito quadros;
+- quatro quadros novos na aba **As Origens** — a Costa da Mina e a tabela de preços em cauris,
+  Agaja e o Daomé, as oito embaixadas africanas ao Brasil entre 1750 e 1811, e João de Oliveira,
+  o homem que foi mandado de volta à África ainda escravo para comprar cativos em nome do dono e
+  comprou a própria alforria remetendo gente ao Brasil;
+- na aba **O Navio**, a **Figura VI** — as medidas do *Brookes* desenhadas em escala —, o caso do
+  *Zong*, o naufrágio do *São José Paquete d’África* e a campanha abolicionista;
+- o preenchimento parcial da lacuna colonial da Carta IV (acima);
+- e **nove linhas novas no cotejo**.
+
+### Onde não segui o volume II
+
+| O quê | O que o livro traz | O problema |
+|---|---|---|
+| A pólvora inglesa vendida na África | «mais de 22 milhões de toneladas» entre 1750 e 1807 (p. 143) | A taxa que o próprio autor dá — 384 mil kg/ano × 57 anos — resulta em **21.888 toneladas**, não 22 milhões. É erro de unidade por um fator de mil, e o volume I (p. 130) traz a mesma taxa na ordem de grandeza correta. O erro se repete na p. 150 |
+| Bougainville na Casa da Moeda do Rio | uma descrição da cunhagem «naquele ano», 1697 (pp. 62-63) | Bougainville viveu de **1729 a 1811**. Não podia descrever o Rio trinta e dois anos antes de nascer |
+| O preço de um cativo em cauris | 15 libras = «oitenta conchas de búzios» (p. 163) | Na **mesma página**, dez cauris compram uma galinha e 8.000 compram uma vaca. Oitenta cauris comprariam oito galinhas. Falta ao menos uma ordem de grandeza |
+| A medida do Distrito Diamantino | «280 km de circunferência por cem de largura» (p. 299) | Uma figura de 280 km de perímetro tem ~89 km de diâmetro. As duas medidas não fecham; a Carta VI desenha a ordem de grandeza e diz isso |
+
+### O que o volume II acrescentou de mais forte
+
+- **A alforria não era brandura.** O Brasil libertava 1% dos cativos por ano contra 0,04% dos
+  Estados Unidos — e importou 4,9 milhões de pessoas para ter 750 mil em 1888, enquanto os
+  Estados Unidos importaram 400 mil e tinham 4 milhões em 1860. A diferença é a expectativa de
+  vida: **18,3 anos aqui, 35,5 lá**. A taxa alta de alforria era o outro lado de uma mortalidade
+  que obrigava a repor gente pelo tráfico sem parar. Donald Ramos: «a alforria foi, ironicamente,
+  um dos mais importantes pilares do regime escravocrata».
+- **Chico Rei e Chica da Silva.** Depois de Zumbi, no volume I, o volume II desmonta outras duas
+  biografias em circulação. Chico Rei «aparentemente» não existiu — não há registro histórico
+  algum. E Chica da Silva não teve o lago artificial com o navio de dez tripulantes, não foi
+  redentora de escravos (teve mais de cem cativos e uma única alforria registrada) e não foi
+  exceção: alforria alta e majoritariamente feminina era a regra em Minas.
+- **O item que a Inconfidência não resolveu.** Na noite de 26 de dezembro de 1788, os
+  conjurados discutiram o que fazer com os 174 mil escravizados de Minas — quase metade da
+  população da capitania. Diante do argumento de que sem eles a república não se sustentaria,
+  «os demais participantes da reunião se mantiveram calados». A saída aventada, sem conclusão:
+  libertar só os nascidos no Brasil, e manter o tráfico.
+- **A tabela de preços do capitão do mato**, que pagava 8 oitavas de ouro por um quilombola
+  morto em confronto — com a cabeça exposta num poste — e 20 por um vivo. E quase 15% dos 467
+  capitães do mato registrados em Minas eram eles próprios ex-escravos alforriados.
+
 ## Método e limites
 
 Os **totais** por região africana, por destino, por bandeira e por século são os do
@@ -227,6 +289,7 @@ europeias: isso só ocorre depois de 1885, duas décadas após o fim do tráfico
 
 ## Bibliografia
 
+- GOMES, Laurentino. *Escravidão*, vol. I e vol. II. Globo Livros. Lidos por inteiro.
 - ELTIS, David; RICHARDSON, David. *Atlas of the Transatlantic Slave Trade*. Yale, 2010.
 - *Trans-Atlantic Slave Trade Database* — SlaveVoyages.org.
 - ALENCASTRO, Luiz Felipe de. *O Trato dos Viventes*. Companhia das Letras, 2000.

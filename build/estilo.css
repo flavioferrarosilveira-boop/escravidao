@@ -172,8 +172,9 @@ tbody tr:hover{background:rgba(222,208,172,.4)}
   body{background:var(--papel)}
   .envoltorio{max-width:none;padding:0}
   .controles,.abas,.aba-pdf,.dica,.resumo{display:none !important}
-  #painel-trafico,#painel-negocio,#painel-navio,#painel-escravidao,
-  #painel-negocio[hidden],#painel-navio[hidden],#painel-escravidao[hidden]{display:block !important}
+  #painel-trafico,#painel-origens,#painel-negocio,#painel-navio,#painel-escravidao,#painel-ouro,
+  #painel-origens[hidden],#painel-negocio[hidden],#painel-navio[hidden],
+  #painel-escravidao[hidden],#painel-ouro[hidden]{display:block !important}
   .figura{break-inside:avoid}
   .capa{padding:0 0 18px}
   .capa h1{font-size:44px}

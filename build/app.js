@@ -949,10 +949,11 @@ function tabela(destino, colunas, linhas) {
     <h3>O cotejo com o livro</h3>
     <p>${D.cotejoNota} Verde = mudou por causa do livro; vermelho = onde não segui o livro.</p>
     <div class="rolagem"><table class="cotejo"><thead><tr>
-      <th>O quê</th><th>A carta antes</th><th>Escravidão, vol. I</th><th class="num">p.</th><th>Como ficou</th>
+      <th>O quê</th><th>A carta antes</th><th>O que o livro traz</th><th class="num">vol.</th><th class="num">p.</th><th>Como ficou</th>
     </tr></thead><tbody>${D.cotejo.map((c) => `<tr class="est-${c.estado}">
       <td><b>${c.item}</b>${c.obs ? `<div class="miudo" style="font-size:13.5px">${c.obs}</div>` : ''}</td>
       <td class="num">${c.antes}</td><td class="num">${c.livro}</td>
+      <td class="num">${c.volume || 'I'}</td>
       <td class="num">${c.pagina}</td><td class="num"><b>${c.agora}</b></td>
     </tr>`).join('')}</tbody></table></div>
 
@@ -1007,13 +1008,31 @@ function tabela(destino, colunas, linhas) {
     <tbody>${D.origens.bibliografia.itens.map((b) => `<tr><td><b>${b.autor}</b></td>
       <td><i>${b.obra}</i></td><td>${b.uso}</td></tr>`).join('')}</tbody></table></div>
 
+    <h3>O que a terceira leitura acrescentou — o volume II</h3>
+    <p>Depois vieram os <b>trinta e um capítulos do volume II</b> — <i>Da corrida do ouro em Minas
+    Gerais até a chegada da corte de dom João ao Brasil</i>, páginas 31 a 373 —, lidos por inteiro.
+    Deles nasceu a aba <b>O Ouro</b>, com a <b>Carta VI</b> (as três estradas, as monções, a rota
+    amazônica e a cerca do Distrito Diamantino), a <b>Figura IV</b> (o preço de uma pessoa em ouro,
+    em 1703), a <b>Figura V</b> (a alforria brasileira contra a norte-americana) e oito quadros;
+    quatro quadros novos na aba <b>As Origens</b>, sobre a Costa da Mina, Agaja e o Daomé, as
+    embaixadas africanas ao Brasil e João de Oliveira; e, na aba <b>O Navio</b>, a
+    <b>Figura VI</b> — as medidas do <i>Brookes</i> em escala —, o caso do <i>Zong</i>, o naufrágio
+    do <i>São José Paquete d’África</i> e a campanha abolicionista. Nove linhas novas entraram no
+    cotejo, entre elas <b>três em que não segui o livro</b>: o erro de unidade da pólvora inglesa
+    (toneladas onde a conta do próprio autor dá quilos), o anacronismo de Bougainville no Rio de
+    1697 e o preço de um cativo em oitenta cauris, incompatível com a tabela de preços da mesma
+    página.</p>
+
     <h3>Fontes externas ao livro</h3>
-    <p>Duas coisas que a carta mostra estão <b>fora</b> do volume I de Gomes, que termina em 1695:
+    <p>Duas coisas que a carta mostra estão fora do volume I de Gomes, que termina em 1695:
     o censo de 1872 (Carta III) e o tráfico por dentro do Brasil (Carta IV). Procurei nas 457
-    páginas os termos <i>tráfico interno</i>, <i>interprovincial</i>, <i>revenda</i>,
+    páginas do volume I os termos <i>tráfico interno</i>, <i>interprovincial</i>, <i>revenda</i>,
     <i>cabotagem</i>, <i>sampauleiro</i>, <i>Caminho Novo</i> e <i>Minas Gerais</i>: nenhuma
-    ocorrência. Essa matéria é dos volumes II e III. O que a Carta IV traz vem, portanto, da
-    bibliografia acadêmica brasileira, com cada número preso ao autor que o calculou:</p>
+    ocorrência. O <b>volume II resolveu parte disso</b>: dele vêm agora as três estradas das Minas,
+    as monções, a rota amazônica e a proporção que faltava — “quase a metade” dos que chegavam ao
+    Rio seguia imediatamente para as regiões mineradoras. O período do café, esse sim, continua
+    fora dos dois volumes lidos: é matéria do volume III. O que a Carta IV traz sobre ele vem,
+    portanto, da bibliografia acadêmica brasileira, com cada número preso ao autor que o calculou:</p>
     <ul>${D.interno.fontes.map((f) => `<li>${f.autor !== '—' ? `${f.autor}. ` : ''}` +
       `<i>${f.obra}</i>. ${f.onde}.${f.url ? ` <a href="${f.url}" target="_blank" rel="noopener">${f.url}</a>` : ''}</li>`).join('')}</ul>
     <p style="font-size:14.5px">Os três conjuntos de números do tráfico interno — as remessas do
@@ -1026,6 +1045,9 @@ function tabela(destino, colunas, linhas) {
       <li>GOMES, Laurentino. <i>Escravidão — Volume I: Do primeiro leilão de cativos em Portugal
         até a morte de Zumbi dos Palmares</i>. Revisão e anotações de Alberto da Costa e Silva.
         Rio de Janeiro: Globo Livros, 2019.</li>
+      <li>GOMES, Laurentino. <i>Escravidão — Volume II: Da corrida do ouro em Minas Gerais até a
+        chegada da corte de dom João ao Brasil</i>. Rio de Janeiro: Globo Livros. Lido por inteiro;
+        é a fonte de toda a aba <b>O Ouro</b>, dos quadros da Costa da Mina e da Figura VI.</li>
       <li>ELTIS, David; RICHARDSON, David. <i>Atlas of the Transatlantic Slave Trade</i>. Yale University Press, 2010.</li>
       <li><i>Trans-Atlantic Slave Trade Database</i> — SlaveVoyages.org (Emory University / Rice University).</li>
       <li>ALENCASTRO, Luiz Felipe de. <i>O Trato dos Viventes: formação do Brasil no Atlântico Sul</i>. Companhia das Letras, 2000.</li>
@@ -2551,6 +2573,720 @@ function montarMapaInterno() {
   html('lei-1684').innerHTML = `<b>${V.lei1684.titulo}.</b> ${V.lei1684.texto} ${cite(V.lei1684.pagina)}`;
 }
 
+
+// ===========================================================================
+//  VOLUME II — "O Ouro", a Costa da Mina e a abolição
+// ===========================================================================
+const cII = (p) => `<span class="cite">Gomes II, p. ${p}</span>`;
+const cartaoSimples = (t, corpo, pag) =>
+  `<div class="cartao"><h3>${t}</h3><p class="miudo" style="margin-top:8px">${corpo}${pag ? ' ' + cII(pag) : ''}</p></div>`;
+const bloco = (id, titulo, corpo, pag) => {
+  const n = html(id); if (!n) return;
+  n.innerHTML = `<b>${titulo}.</b> ${corpo}${pag ? ' ' + cII(pag) : ''}`;
+};
+const epig = (id, e) => {
+  const n = html(id); if (!n || !e) return;
+  n.innerHTML = `<p>“${e.texto}”</p><footer>${e.credito}${e.pagina ? ' — ' + cII(e.pagina) : ''}</footer>`;
+};
+
+// --- Carta VI: o Brasil do ouro -------------------------------------------
+let ouroMontado = false;
+function montarOuro() {
+  if (ouroMontado) return;
+  ouroMontado = true;
+  const O = D.ouro, C = O.carta;
+
+  epig('epigrafe-ouro', O.epigrafe);
+  html('abertura-ouro').innerHTML = O.abertura;
+  html('titulo-carta-ouro').textContent = C.titulo;
+  html('intro-carta-ouro').innerHTML = C.intro;
+
+  // Escala própria: este recorte tem 29 graus de largura; a 10 px/grau do
+  // Atlântico inteiro a moldura sairia com 290 px e a letra, gigante.
+  const KO = 26;
+  const projO = (lon, lat) => [(lon - LON_MIN) * KO, (mercY(lat) - Y0) * KO];
+  const caminhoO = (anel) => {
+    let d = '';
+    for (let i = 0; i < anel.length; i++) {
+      const [x, y] = projO(anel[i][0], anel[i][1]);
+      d += (i ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1);
+    }
+    return d + 'Z';
+  };
+
+  const LUG = {};
+  for (const l of C.lugares) LUG[l.id] = l;
+
+  const svgO = html('mapa-ouro');
+  const [bx0] = projO(-62.5, 0), [bx1] = projO(-32.5, 0);
+  const [, by0] = projO(0, 1.5), [, by1] = projO(0, -26.5);
+  svgO.setAttribute('viewBox', `${bx0.toFixed(0)} ${by0.toFixed(0)} ${(bx1 - bx0).toFixed(0)} ${(by1 - by0).toFixed(0)}`);
+  svgO.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+  el('rect', { x: bx0, y: by0, width: bx1 - bx0, height: by1 - by0, fill: 'var(--mar)' }, svgO);
+  const gTo = el('g', { class: 'terra' }, svgO);
+  for (const anel of D.geo.litoral) el('path', { d: caminhoO(anel) }, gTo);
+  const gDist = el('g', null, svgO);   // cerca do Distrito
+  const gRo = el('g', null, svgO);     // rotas
+  const gPo = el('g', null, svgO);     // pontos
+  const gLLo = el('g', null, svgO);    // fios de chamada
+  const gLo = el('g', null, svgO);     // rótulos
+  const gEo = el('g', null, svgO);     // legenda
+
+  const dicaO = html('dica-ouro'), palcoO = html('palco-ouro');
+  palcoO.addEventListener('pointerleave', () => dicaO.classList.remove('visivel'));
+  const mostrarO = (e, conteudo) => {
+    dicaO.innerHTML = conteudo;
+    dicaO.classList.add('visivel');
+    const cx = palcoO.getBoundingClientRect();
+    let px = e.clientX - cx.left + 16, py = e.clientY - cx.top + 16;
+    if (px + dicaO.offsetWidth > cx.width - 8) px = e.clientX - cx.left - dicaO.offsetWidth - 16;
+    if (py + dicaO.offsetHeight > cx.height - 8) py = Math.max(8, e.clientY - cx.top - dicaO.offsetHeight - 16);
+    dicaO.style.left = px + 'px'; dicaO.style.top = py + 'px';
+  };
+
+  const TRACO_O = {
+    terra: { cor: '#7a5a2e', dash: '9 6' },
+    rio:   { cor: '#3f6a72', dash: '2 6' },
+    mar:   { cor: '#22525c', dash: null },
+  };
+  const ESP_O = { 1: 2.2, 2: 3.6, 3: 5.4 };
+
+  // A cabotagem não corta o continente: desce colada à costa.
+  const COSTA_O = [
+    [-34.5, -8.6], [-35.4, -9.8], [-36.7, -10.9], [-37.7, -11.9], [-38.2, -12.8],
+    [-38.4, -14.4], [-38.7, -16.0], [-39.1, -17.6], [-39.6, -19.2], [-40.4, -21.0],
+    [-41.6, -22.5], [-42.7, -23.3],
+  ];
+  const laneMar = (a, b) => {
+    // Escolhe o trecho da linha d'água entre as latitudes dos dois portos.
+    const la = a[1], lb = b[1];
+    const lo = Math.min(la, lb), hi = Math.max(la, lb);
+    let mid = COSTA_O.filter((p) => p[1] < hi && p[1] > lo);
+    if (la > lb) mid = mid.slice(); else mid.reverse();
+    return [a, ...mid, b];
+  };
+
+  // Catmull-Rom convertido em Bézier cúbica: a curva PASSA por todos os
+  // pontos. Importa porque cada ponto é um lugar real — Juazeiro, Camapuã,
+  // Santarém —, e uma curva que corta o canto mentiria sobre o traçado.
+  const suaveO = (pts) => {
+    const P = pts.map(([lo, la]) => projO(lo, la));
+    if (P.length < 2) return '';
+    if (P.length === 2) return `M${P[0][0].toFixed(1)},${P[0][1].toFixed(1)}L${P[1][0].toFixed(1)},${P[1][1].toFixed(1)}`;
+    let d = `M${P[0][0].toFixed(1)},${P[0][1].toFixed(1)}`;
+    for (let i = 0; i < P.length - 1; i++) {
+      const p0 = P[i - 1] || P[i], p1 = P[i], p2 = P[i + 1], p3 = P[i + 2] || P[i + 1];
+      const c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+      const c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+      d += `C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+    }
+    return d;
+  };
+
+  // Arco simples entre dois pontos, com a barriga voltada para o lado indicado.
+  const arcoO = (a, b, curva) => {
+    const [x1, y1] = projO(a[0], a[1]), [x2, y2] = projO(b[0], b[1]);
+    const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+    const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy) || 1;
+    const cx = mx + (-dy / L) * L * curva, cy = my + (dx / L) * L * curva;
+    return `M${x1.toFixed(1)},${y1.toFixed(1)}Q${cx.toFixed(1)},${cy.toFixed(1)} ${x2.toFixed(1)},${y2.toFixed(1)}`;
+  };
+
+  // --- cerca do Distrito Diamantino
+  const dist = C.distrito;
+  {
+    const [cx, cy] = projO(dist.centro[0], dist.centro[1]);
+    const [rx1] = projO(dist.centro[0] + dist.raio_lon, dist.centro[1]);
+    const [, ry1] = projO(dist.centro[0], dist.centro[1] + dist.raio_lat);
+    const e2 = el('ellipse', {
+      cx, cy, rx: Math.abs(rx1 - cx), ry: Math.abs(ry1 - cy),
+      fill: 'rgba(140,59,47,.09)', stroke: '#8c3b2f', 'stroke-width': 1.6,
+      'stroke-dasharray': '4 3', class: 'camada-distrito',
+    }, gDist);
+    e2.style.cursor = 'help';
+    e2.addEventListener('pointermove', (ev) => mostrarO(ev,
+      `<b>${dist.titulo}</b><div class="miudo" style="margin-top:6px">${dist.nota_medida}</div>`));
+  }
+
+  // --- rotas
+  const camadas = { terra: true, rio: true, mar: true, distrito: true, quilombos: true };
+  const desenharRotasOuro = () => {
+    limpar(gRo);
+    for (const r of C.rotas) {
+      if (!camadas[r.meio]) continue;
+      const a = LUG[r.de], b = LUG[r.para];
+      if (!a || !b) continue;
+      const T = TRACO_O[r.meio];
+      let d;
+      if (r.meio === 'mar') {
+        d = suaveO(laneMar([a.lon, a.lat], [b.lon, b.lat]));
+      } else if (r.por && r.por.length) {
+        d = suaveO([[a.lon, a.lat], ...r.por.map((id) => [LUG[id].lon, LUG[id].lat]), [b.lon, b.lat]]);
+      } else {
+        d = arcoO([a.lon, a.lat], [b.lon, b.lat], r.meio === 'rio' ? 0.13 : -0.09);
+      }
+      const halo = el('path', { d, fill: 'none', stroke: 'var(--papel)', 'stroke-width': ESP_O[r.peso] + 3,
+        'stroke-linecap': 'round', opacity: .55 }, gRo);
+      const p = el('path', { d, fill: 'none', stroke: T.cor, 'stroke-width': ESP_O[r.peso],
+        'stroke-linecap': 'round', opacity: .9 }, gRo);
+      if (T.dash) p.setAttribute('stroke-dasharray', T.dash);
+      p.style.cursor = 'help';
+      const dica = `<b>${r.nome}</b><div class="miudo" style="margin-top:6px">${r.texto}</div>` +
+        `<div class="miudo" style="margin-top:8px">${LUG[r.de].nome} → ${LUG[r.para].nome} ${cII(r.pagina)}</div>`;
+      for (const n of [halo, p]) n.addEventListener('pointermove', (ev) => mostrarO(ev, dica));
+    }
+  };
+
+  // --- pontos e rótulos
+  const RAIO = { 1: 3.0, 2: 4.4, 3: 6.2 };
+  const desenharPontosOuro = () => {
+    limpar(gPo); limpar(gLo); limpar(gLLo);
+    const caixas = [];
+    const visiveis = C.lugares.filter((l) => !l.invisivel && (l.quilombo ? camadas.quilombos : true));
+    for (const l of visiveis) {
+      const [x, y] = projO(l.lon, l.lat);
+      const cor = l.quilombo ? '#4f7a4a' : '#8a2f22';
+      const c = el('circle', { cx: x, cy: y, r: RAIO[l.peso], fill: cor,
+        stroke: 'var(--papel)', 'stroke-width': 1.3 }, gPo);
+      if (l.quilombo) c.setAttribute('stroke-dasharray', '2 1.6');
+      c.style.cursor = 'help';
+      c.addEventListener('pointermove', (ev) => mostrarO(ev,
+        `<b>${l.nome}</b><div class="miudo" style="margin-top:6px">${l.nota}</div>`));
+    }
+    // Rótulos: tenta oito posições, esconde o que não couber, e puxa um fio
+    // quando o rótulo teve de ir longe do ponto.
+    const OFF = [[9, 4], [-9, 4], [9, -6], [-9, -6], [0, -11], [0, 15], [16, 12], [-16, 12]];
+    for (const l of [...visiveis].sort((a, b) => b.peso - a.peso)) {
+      const [x, y] = projO(l.lon, l.lat);
+      let posto = false;
+      for (let i = 0; i < OFF.length && !posto; i++) {
+        const [dx, dy] = OFF[i];
+        const t = texto(l.nome, {
+          x: x + dx, y: y + dy, class: 'rotulo',
+          'text-anchor': dx > 0 ? 'start' : dx < 0 ? 'end' : 'middle',
+          'font-size': l.peso >= 3 ? 12 : 10.5,
+          'font-weight': l.peso >= 3 ? 600 : 400,
+          fill: l.quilombo ? '#3d5f39' : 'var(--tinta)',
+        }, gLo);
+        let bb;
+        try { bb = t.getBBox(); } catch (e) { bb = null; }
+        if (!bb) { posto = true; break; }
+        const choca = caixas.some((k) => !(bb.x > k.x + k.width + 1.5 || bb.x + bb.width + 1.5 < k.x ||
+          bb.y > k.y + k.height + 1.5 || bb.y + bb.height + 1.5 < k.y));
+        if (choca) { gLo.removeChild(t); continue; }
+        caixas.push(bb); posto = true;
+        if (i > 1) el('line', { x1: x, y1: y, x2: x + dx * 0.6, y2: y + dy * 0.6,
+          stroke: 'var(--tinta-3, #9a8f80)', 'stroke-width': .7, opacity: .65 }, gLLo);
+      }
+    }
+  };
+
+  // --- legenda
+  {
+    const lx = bx0 + 14, ly = by1 - 118;
+    el('rect', { x: lx, y: ly, width: 232, height: 104, fill: 'var(--papel)',
+      stroke: 'var(--terra-borda)', 'stroke-width': 1, opacity: .95, rx: 2 }, gEo);
+    texto('Legenda', { x: lx + 12, y: ly + 20, class: 'rotulo', 'font-size': 11.5, 'font-weight': 600 }, gEo);
+    C.legenda.forEach((L, i) => {
+      const yy = ly + 38 + i * 16;
+      const ln = el('line', { x1: lx + 12, y1: yy, x2: lx + 36, y2: yy, stroke: L.cor, 'stroke-width': 2.6 }, gEo);
+      if (L.dash) ln.setAttribute('stroke-dasharray', L.dash);
+      texto(L.rotulo, { x: lx + 43, y: yy + 4, class: 'rotulo', 'font-size': 10 }, gEo);
+    });
+  }
+
+  // --- fichas de camada
+  const CAM = [['terra', 'Estradas'], ['rio', 'Rios e monções'], ['mar', 'Cabotagem'],
+    ['quilombos', 'Quilombos'], ['distrito', 'Distrito Diamantino']];
+  const fo = html('fichas-ouro');
+  const repintarOuro = () => {
+    desenharRotasOuro(); desenharPontosOuro();
+    gDist.style.display = camadas.distrito ? '' : 'none';
+    [...fo.children].forEach((b, i) => b.setAttribute('aria-pressed', String(camadas[CAM[i][0]])));
+  };
+  for (const [id, rot] of CAM) {
+    fo.appendChild(ficha(rot, true, TRACO_O[id] ? TRACO_O[id].cor : (id === 'quilombos' ? '#4f7a4a' : '#8c3b2f'),
+      () => { camadas[id] = !camadas[id]; repintarOuro(); }));
+  }
+  repintarOuro();
+
+  bloco('distrito-ouro', dist.titulo, dist.texto + ' <br><br><i>' + dist.nota_medida + '</i>', dist.pagina);
+  html('numeros-ouro').innerHTML = C.numeros.map((n) => `<div class="cartao">
+    <div class="grande">${n.cifra}</div>
+    <div class="miudo" style="margin-top:6px">${n.texto} ${cII(n.pagina)}</div></div>`).join('');
+  html('fontes-ouro').innerHTML = C.fontes.map((f) => `<li>${f}</li>`).join('');
+
+  montarPrecos(O.precos_1703);
+  montarTrabalhoOuro(O.trabalho);
+  montarViolencia(O.violencia);
+  montarAlforria(O.alforria);
+  montarFamilia(O.familia);
+  montarMulheres(O.mulheres);
+  montarChica(O.chica);
+  montarQuilombos(O.quilombos);
+  montarMedo(O.medo);
+  montarIrmandades(O.irmandades);
+  html('bibliografia-ouro').innerHTML = O.bibliografia.map((b) => `<li>${b}</li>`).join('');
+}
+
+// --- Figura IV: quanto valia uma pessoa, em ouro ---------------------------
+function montarPrecos(P) {
+  html('titulo-precos').textContent = P.titulo;
+  html('intro-precos').innerHTML = P.intro + ' ' + cII(P.pagina);
+
+  const svg = html('fig-precos');
+  const W = 720, H = 40 + P.itens.length * 62 + 20;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  const x0 = 250, largMax = W - x0 - 90;
+  const max = Math.max(...P.itens.map((i) => i.gramas));
+
+  texto(`escala: ${P.unidade}`, { x: x0, y: 20, class: 'rotulo', 'font-size': 11, fill: 'var(--tinta-2)' }, svg);
+  P.itens.forEach((it, i) => {
+    const y = 42 + i * 62;
+    const w = Math.max(2, (it.gramas / max) * largMax);
+    texto(it.rotulo, { x: x0 - 14, y: y + 20, class: 'rotulo', 'text-anchor': 'end',
+      'font-size': it.destaque ? 14 : 12.5, 'font-weight': it.destaque ? 600 : 400 }, svg);
+    el('rect', { x: x0, y, width: w, height: 28, rx: 1.5,
+      fill: it.destaque ? '#8a2f22' : '#a8894f' }, svg);
+    texto(it.detalhe, { x: x0 + w + 10, y: y + 20, class: 'rotulo', 'font-size': 12,
+      fill: 'var(--tinta-2)' }, svg);
+  });
+
+  html('equiv-precos').innerHTML = P.equivalencias.slice(0, 2).map((e) => `<li>${e}</li>`).join('');
+  const T = P.travessia;
+  bloco('travessia-precos', T.titulo, T.texto + `<br><br><i>${T.cautela}</i>`, T.paginas);
+}
+
+// --- O trabalho ------------------------------------------------------------
+function montarTrabalhoOuro(T) {
+  html('titulo-trabalho-ouro').textContent = T.titulo;
+  epig('epigrafe-trabalho-ouro', T.epigrafe);
+  html('intro-trabalho-ouro').innerHTML = T.intro + ' ' + cII(T.pagina);
+  html('cartoes-trabalho-ouro').innerHTML = T.cartoes.map((c) =>
+    cartaoSimples(c.titulo, c.texto, c.pagina)).join('');
+  bloco('senzala-ouro', T.senzala.titulo, T.senzala.texto, T.senzala.pagina);
+  html('titulo-comida').textContent = T.comida.titulo;
+  html('intro-comida').innerHTML = T.comida.texto;
+  tabela('tabela-comida', [{ rotulo: 'Quem' }, { rotulo: 'O que disse' }, { rotulo: '' }],
+    T.comida.vozes.map((v) => [`<b>${v.quem}</b>`, v.diz, cII(v.pagina)]));
+  bloco('brecha-ouro', T.brecha.titulo, T.brecha.texto, T.brecha.pagina);
+  bloco('latifundio-ouro', T.latifundio.titulo, T.latifundio.texto, T.latifundio.pagina);
+}
+
+// --- A violência -----------------------------------------------------------
+function montarViolencia(V) {
+  html('titulo-violencia').textContent = V.titulo;
+  epig('epigrafe-violencia', V.epigrafe);
+  html('intro-violencia').innerHTML = V.intro + ' ' + cII(V.pagina);
+  html('titulo-limites').textContent = V.limites.titulo;
+  tabela('tabela-limites', [{ rotulo: 'Onde está escrito' }, { rotulo: 'Quantos açoites' }, { rotulo: 'Observação' }, { rotulo: '' }],
+    V.limites.linhas.map((l) => [l.onde,
+      `<b style="${l.grave ? 'color:var(--sangue)' : ''}">${l.quanto}</b>`, l.nota, cII(l.pagina)]));
+  bloco('cicatrizante', V.cicatrizante.titulo, V.cicatrizante.texto, V.cicatrizante.pagina);
+  bloco('calabouco', V.calabouco.titulo, V.calabouco.texto, V.calabouco.pagina);
+  html('titulo-recuos').textContent = V.recuos.titulo;
+  tabela('tabela-recuos', [{ rotulo: 'Quando' }, { rotulo: 'O quê' }, { rotulo: '' }],
+    V.recuos.linhas.map((l) => [`<b>${l.quando}</b>`,
+      `<span style="${l.grave ? 'color:var(--sangue)' : ''}">${l.o_que}</span>`, cII(l.pagina)]));
+  html('fecho-recuos').innerHTML = V.recuos.fecho;
+  bloco('caso-joaquim', V.joaquim.titulo, V.joaquim.texto, V.joaquim.pagina);
+  bloco('caso-torre', V.torre_do_tombo.titulo,
+    V.torre_do_tombo.texto + `<br><br><i>${V.torre_do_tombo.aviso}</i>`, V.torre_do_tombo.pagina);
+}
+
+// --- Figura V: a alforria --------------------------------------------------
+function montarAlforria(A) {
+  html('titulo-alforria').textContent = A.titulo;
+  html('intro-alforria').innerHTML = A.intro + ' ' + cII(A.pagina);
+
+  const svg = html('fig-alforria');
+  const W = 760, H = 260;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  const L = A.comparacao.linhas;
+  const max = Math.max(...L.flatMap((l) => [l.importou, l.tinha]));
+  const x0 = 190, largMax = W - x0 - 170;
+  texto('Quantas pessoas foram trazidas da África — e quantas ainda estavam em cativeiro no fim',
+    { x: 14, y: 20, class: 'rotulo', 'font-size': 11.5, fill: 'var(--tinta-2)' }, svg);
+  L.forEach((l, i) => {
+    const yb = 46 + i * 100;
+    texto(l.pais, { x: x0 - 14, y: yb + 34, class: 'rotulo', 'text-anchor': 'end',
+      'font-size': 15, 'font-weight': 600 }, svg);
+    const pares = [
+      { v: l.importou, cor: '#8a2f22', rot: 'trazidas da África', det: num(l.importou) },
+      { v: l.tinha, cor: '#4a6070', rot: `em cativeiro em ${l.ano}`, det: num(l.tinha) },
+    ];
+    pares.forEach((p, k) => {
+      const y = yb + k * 34;
+      const w = Math.max(2, (p.v / max) * largMax);
+      el('rect', { x: x0, y, width: w, height: 24, rx: 1.5, fill: p.cor }, svg);
+      texto(`${p.det} · ${p.rot}`, { x: x0 + w + 10, y: y + 17, class: 'rotulo',
+        'font-size': 11.5, fill: 'var(--tinta-2)' }, svg);
+    });
+    texto(`alforria: ${l.alforria_ano}  ·  expectativa de vida: ${l.expectativa}`,
+      { x: x0, y: yb + 82, class: 'rotulo', 'font-size': 11, fill: 'var(--tinta-2)' }, svg);
+  });
+
+  bloco('fecho-alforria', 'O que essas duas barras dizem',
+    A.comparacao.fecho, A.comparacao.pagina);
+
+  html('titulo-serie').textContent = A.serie.titulo;
+  html('cartoes-serie').innerHTML = A.serie.pontos.map((p) => `<div class="cartao">
+    <h3>${p.ano}</h3><div class="grande">${p.rotulo}</div>
+    <div class="miudo" style="margin-top:6px">${p.nota} ${cII(A.serie.pagina)}</div></div>`).join('');
+
+  html('titulo-portas').textContent = A.portas.titulo;
+  html('cartoes-portas').innerHTML = A.portas.itens.map((p, i) => `<div class="cartao">
+    <h3>${i + 1}. ${p.nome}</h3>
+    <p class="miudo" style="margin-top:8px">${p.texto}</p></div>`).join('') +
+    `<div class="cartao"><h3>Fonte</h3><p class="miudo" style="margin-top:8px">A lista das oito é do próprio livro. ${cII(A.portas.pagina)}</p></div>`;
+
+  tabela('tabela-preco-alforria', [{ rotulo: 'Caso' }, { rotulo: 'Quanto' }, { rotulo: 'Observação' }, { rotulo: '' }],
+    A.preco.linhas.map((l) => [l.caso, `<b>${l.valor}</b>`, l.nota, cII(l.pagina)]));
+
+  bloco('circularidade', A.circularidade.titulo, A.circularidade.texto, A.circularidade.pagina);
+  bloco('ingratidao', A.ingratidao.titulo, A.ingratidao.texto, A.ingratidao.pagina);
+  bloco('joana', A.joana.titulo, A.joana.texto + `<br><br><i>${A.joana.credito}</i>`, A.joana.pagina);
+
+  html('titulo-minas-alforria').textContent = A.minas.titulo;
+  tabela('tabela-minas-alforria', [{ rotulo: 'Quando' }, { rotulo: 'O quê' }, { rotulo: '' }],
+    A.minas.linhas.map((l) => [`<b>${l.quando}</b>`, l.o_que, cII(l.pagina)]));
+
+  bloco('quem-alforria', A.quem.titulo, A.quem.texto, A.quem.pagina);
+  bloco('leitura-alforria', A.leitura.titulo, A.leitura.texto, A.leitura.pagina);
+}
+
+// --- A família escrava -----------------------------------------------------
+function montarFamilia(F) {
+  html('titulo-familia').textContent = F.titulo;
+  html('intro-familia').innerHTML = F.intro + ' ' + cII(F.pagina);
+  html('titulo-familia-antes').textContent = F.antes.titulo;
+  tabela('tabela-familia-antes', [{ rotulo: 'Quem' }, { rotulo: 'O que disse' }, { rotulo: '' }],
+    F.antes.vozes.map((v) => [`<b>${v.quem}</b>`, v.diz, cII(v.pagina)]));
+  html('titulo-familia-numeros').textContent = F.numeros.titulo;
+  tabela('tabela-familia-numeros', [{ rotulo: 'Onde' }, { rotulo: 'Quanto', num: true }, { rotulo: 'O quê' }, { rotulo: '' }],
+    F.numeros.linhas.map((l) => [l.onde, `<b>${l.quanto}</b>`, l.o_que, cII(l.pagina)]));
+  bloco('paz-senzala', F.paz.titulo, F.paz.texto, F.paz.pagina);
+  bloco('estrategia-familia', F.estrategia.titulo, F.estrategia.texto, F.estrategia.pagina);
+  bloco('assumar', F.assumar.titulo, F.assumar.texto, F.assumar.pagina);
+  bloco('cla-sjdr', F['clã'].titulo, F['clã'].texto, F['clã'].pagina);
+}
+
+// --- As mulheres -----------------------------------------------------------
+function montarMulheres(M) {
+  html('titulo-mulheres').textContent = M.titulo;
+  epig('epigrafe-mulheres', M.epigrafe);
+  html('intro-mulheres').innerHTML = M.intro + ' ' + cII(M.pagina);
+  bloco('oficios-mulheres', M.oficios.titulo, M.oficios.texto, M.oficios.pagina);
+  html('titulo-roupa').textContent = M.roupa.titulo;
+  html('intro-roupa').innerHTML = M.roupa.intro;
+  tabela('tabela-roupa', [{ rotulo: 'Ano' }, { rotulo: 'O que se decidiu' }, { rotulo: '' }],
+    M.roupa.linhas.map((l) => [`<b>${l.ano}</b>`,
+      `<span style="${l.grave ? 'color:var(--sangue)' : ''}">${l.o_que}</span>`, cII(l.pagina)]));
+  bloco('serro-mulheres', M.serro.titulo, M.serro.texto, M.serro.pagina);
+  bloco('falta-mulheres', M.falta.titulo, M.falta.texto, M.falta.pagina);
+  html('titulo-rainhas').textContent = M.rainhas.titulo;
+  html('cartoes-rainhas').innerHTML = M.rainhas.cartoes.map((c) =>
+    cartaoSimples(c.titulo, c.texto, c.pagina)).join('');
+  tabela('tabela-citacoes-mulheres', [{ rotulo: 'Quem' }, { rotulo: 'O que escreveu' }, { rotulo: '' }],
+    M.citacoes.map((c) => [`<b>${c.quem}</b>`, c.diz, cII(c.pagina)]));
+}
+
+// --- Chica da Silva --------------------------------------------------------
+function montarChica(C) {
+  html('titulo-chica').textContent = C.titulo;
+  html('intro-chica').innerHTML = C.intro + ' ' + cII(C.pagina);
+  tabela('tabela-chica', [{ rotulo: 'O que se conta' }, { rotulo: 'O que a documentação mostra' }, { rotulo: '' }],
+    C.desmontes.map((d) => [d.lenda, d.documento, cII(d.pagina)]));
+  html('credito-chica').innerHTML = C.credito;
+  html('vida-chica').innerHTML = C.vida.map((v) =>
+    `<li><b>${v.quando}</b>${v.o_que} ${cII(v.pagina)}</li>`).join('');
+  bloco('simao', C.simao.titulo, C.simao.texto, C.simao.pagina);
+  html('titulo-diamantes').textContent = C.distrito.titulo;
+  tabela('tabela-diamantes', [{ rotulo: 'O quê' }, { rotulo: 'Quanto', num: true }, { rotulo: 'Observação' }, { rotulo: '' }],
+    C.distrito.linhas.map((l) => [l.o_que, `<b>${l.quanto}</b>`, l.nota || '', cII(l.pagina)]));
+  bloco('tijuco', C.tijuco.titulo, C.tijuco.texto, C.tijuco.pagina);
+}
+
+// --- Os quilombos ----------------------------------------------------------
+function montarQuilombos(Q) {
+  html('titulo-quilombos').textContent = Q.titulo;
+  epig('epigrafe-quilombos', Q.epigrafe);
+  html('intro-quilombos').innerHTML = Q.intro + ' ' + cII(Q.pagina);
+  bloco('penas-quilombos', Q.penas.titulo, Q.penas.texto, Q.penas.pagina);
+  tabela('tabela-penas-comp', [{ rotulo: 'Onde' }, { rotulo: 'A pena pela fuga' }],
+    Q.penas.comparacao.map((c) => [`<b>${c.onde}</b>`, c.pena]));
+  html('titulo-recusas').textContent = Q.penas.recusas.titulo;
+  tabela('tabela-recusas', [{ rotulo: 'Quando' }, { rotulo: 'Quem propôs' }, { rotulo: 'O quê, e por que não passou' }, { rotulo: '' }],
+    Q.penas.recusas.itens.map((r) => [`<b>${r.quando}</b>`, r.quem, r.o_que, cII(r.pagina)]));
+  bloco('orelhas', Q.orelhas.titulo, Q.orelhas.texto, Q.orelhas.pagina);
+
+  const K = Q.capitao_do_mato;
+  html('titulo-capitao').textContent = K.titulo;
+  html('intro-capitao').innerHTML = K.intro + ' ' + cII(K.pagina);
+  tabela('tabela-capitao', [{ rotulo: 'Caso' }, { rotulo: 'Recompensa em ouro' }, { rotulo: 'Em reais de 2021', num: true }, { rotulo: 'Observação' }],
+    K.linhas.map((l) => [l.caso,
+      `<b style="${l.grave ? 'color:var(--sangue)' : ''}">${l.ouro}</b>`, l.hoje, l.nota || '']));
+  tabela('tabela-premios', [{ rotulo: 'Quando' }, { rotulo: 'Quem' }, { rotulo: 'Quanto' }, { rotulo: '' }],
+    K.premios.map((p) => [`<b>${p.quando}</b>`, p.quem, p.quanto, cII(p.pagina)]));
+  bloco('cacadores', K.escravos_cacadores.titulo, K.escravos_cacadores.texto, K.escravos_cacadores.pagina);
+
+  html('titulo-mapa-quilombos').textContent = Q.mapa_quilombos.titulo;
+  tabela('tabela-mapa-quilombos', [{ rotulo: 'Onde e quando' }, { rotulo: 'O que se sabe' }, { rotulo: '' }],
+    Q.mapa_quilombos.linhas.map((l) => [`<b>${l.onde}</b>`, l.quanto, cII(l.pagina)]));
+
+  const T = Q.tratado;
+  bloco('tratado-santana', T.titulo, T.texto +
+    '<br><br><b>O que pediam:</b><ul style="margin:8px 0 0;padding-left:20px">' +
+    T.pediam.map((p) => `<li>${p}</li>`).join('') + '</ul>' +
+    `<br><b>O que não pediam.</b> ${T.nao_pediam}<br><br><b>O desfecho.</b> ${T.desfecho}`, T.pagina);
+  bloco('anistia', Q.anistia.titulo, Q.anistia.texto, Q.anistia.pagina);
+  bloco('economia-quilombos', Q.economia.titulo, Q.economia.texto, Q.economia.pagina);
+  bloco('oitizeiro', Q.oitizeiro.titulo, Q.oitizeiro.texto, Q.oitizeiro.pagina);
+  bloco('ramos', Q.ramos.titulo, Q.ramos.texto, Q.ramos.pagina);
+  bloco('quilombos-hoje', Q.hoje.titulo, Q.hoje.texto, Q.hoje.pagina);
+}
+
+// --- O medo ----------------------------------------------------------------
+function montarMedo(M) {
+  html('titulo-medo').textContent = M.titulo;
+  epig('epigrafe-medo', M.epigrafe);
+  html('intro-medo').innerHTML = M.intro + ' ' + cII(M.pagina);
+
+  const H = M.haiti;
+  html('titulo-haiti').textContent = H.titulo;
+  html('numeros-haiti').innerHTML = H.numeros.map((n) => `<div class="cartao">
+    <div class="grande">${n.cifra}</div>
+    <div class="miudo" style="margin-top:6px">${n.texto}</div></div>`).join('');
+  html('texto-haiti').innerHTML = H.texto;
+  bloco('raynal', H.livro.titulo, H.livro.texto, H.livro.pagina);
+  bloco('toussaint', H.abolicao_que_nao_aboliu.titulo, H.abolicao_que_nao_aboliu.texto, H.abolicao_que_nao_aboliu.pagina);
+  bloco('conta-haiti', H.conta.titulo, H.conta.texto, H.conta.pagina);
+  bloco('lucro-haiti', M.lucro.titulo, M.lucro.texto, M.lucro.pagina);
+  bloco('babel', M.babel.titulo, M.babel.texto, M.babel.pagina);
+
+  const A = M.alfaiates;
+  html('titulo-alfaiates').textContent = A.titulo;
+  html('texto-alfaiates').innerHTML = A.texto + ' ' + cII(A.pagina);
+  html('definicao-revolucao').innerHTML =
+    `<p>${A.definicao.diz}</p><footer>${A.definicao.quem}</footer>`;
+  html('desfecho-alfaiates').innerHTML = A.desfecho;
+  bloco('nota-barata', 'Uma nota final', A.nota_final);
+
+  const I = M.inconfidencia;
+  html('titulo-inconfidencia').textContent = I.titulo;
+  html('texto-inconfidencia').innerHTML = I.texto + ' ' + cII(I.pagina);
+  bloco('impasse', I.impasse.titulo, I.impasse.texto);
+  html('titulo-donos').textContent = I.donos.titulo;
+  tabela('tabela-donos', [{ rotulo: 'Inconfidente' }, { rotulo: 'Quantos cativos' }, { rotulo: 'O que mais se sabe' }],
+    I.donos.linhas.map((l) => [`<b>${l.quem}</b>`, l.quantos, l.nota]));
+  html('maxwell').innerHTML = I.donos.maxwell;
+  bloco('pena-cor', I.pena.titulo, I.pena.texto, I.pena.pagina);
+  bloco('fundadores', I.fundadores.titulo, I.fundadores.texto, I.fundadores.pagina);
+}
+
+// --- As irmandades ---------------------------------------------------------
+function montarIrmandades(R) {
+  html('titulo-irmandades').textContent = R.titulo;
+  html('intro-irmandades').innerHTML = R.intro + ' ' + cII(R.pagina);
+  html('funcoes-irmandades').innerHTML = R.o_que_faziam.map((f) => `<li>${f}</li>`).join('');
+  tabela('tabela-irmandades', [{ rotulo: 'O quê' }, { rotulo: 'Quando / quanto' }, { rotulo: 'Observação' }, { rotulo: '' }],
+    R.numeros.map((n) => [`<b>${n.o_que}</b>`, n.quando, n.nota, cII(n.pagina)]));
+  html('titulo-controle').textContent = R.controle.titulo;
+  tabela('tabela-controle', [{ rotulo: 'Quando' }, { rotulo: 'O quê' }, { rotulo: '' }],
+    R.controle.linhas.map((l) => [`<b>${l.quando}</b>`, l.o_que, cII(l.pagina)]));
+  bloco('capelas', R.capelas.titulo, R.capelas.texto + `<br><br><i>${R.capelas.credito}</i>`, R.capelas.pagina);
+  bloco('reis-negros', R.reis.titulo,
+    R.reis.texto + `<br><br><b>A reação.</b> ${R.reis.reacao} ${cII(R.reis.pagina_reacao)}`, R.reis.pagina);
+  const S = R.santos;
+  html('titulo-santos').textContent = S.titulo;
+  html('intro-santos').innerHTML = S.intro + ' ' + cII(S.pagina);
+  tabela('tabela-santos', [{ rotulo: 'Santo católico' }, { rotulo: 'Divindade africana' }, { rotulo: 'Quem era' }],
+    S.pares.map((p) => [`<b>${p.santo}</b>`, p.orixa, p.nota]));
+  bloco('efigenia', S.efigenia.titulo, S.efigenia.texto + `<br><br><i>${S.efigenia.cautela}</i>`, S.efigenia.pagina);
+  bloco('mural', S.mural.titulo, S.mural.texto, S.mural.pagina);
+  bloco('chico-rei', S.chico_rei.titulo,
+    S.chico_rei.texto + `<br><br>${S.chico_rei.eco}`, S.chico_rei.pagina);
+}
+
+// --- A Costa da Mina (aba As Origens) --------------------------------------
+let costaMontada = false;
+function montarCostaMina() {
+  if (costaMontada) return;
+  costaMontada = true;
+  const C = D.costa;
+  html('titulo-costa').textContent = C.titulo;
+  html('intro-costa').innerHTML = C.intro;
+  bloco('geologia-costa', C.geologia.titulo, C.geologia.texto, C.geologia.pagina);
+
+  html('titulo-moeda').textContent = C.moeda.titulo;
+  html('intro-moeda').innerHTML = C.moeda.intro + ' ' + cII(C.moeda.pagina);
+  tabela('tabela-cauris', [{ rotulo: 'O quê' }, { rotulo: 'Em cauris', num: true }],
+    C.moeda.linhas.map((l) => [l.item, `<b>${l.cauris}</b>`]));
+  bloco('cesta-costa', C.moeda.cesta.titulo,
+    C.moeda.cesta.texto + `<br><br><b>Onde a conta não fecha.</b> ${C.moeda.cesta.divergencia}`, C.moeda.cesta.pagina);
+
+  const A = C.ajuda;
+  html('titulo-ajuda').textContent = A.titulo;
+  html('texto-ajuda').innerHTML = A.texto + ' ' + cII(A.pagina);
+  bloco('como-ajuda', 'Como um reino minúsculo exportava tanto', A.como);
+  bloco('fome-ajuda', 'A fome como fornecedora', A.fome);
+  bloco('fortes-ajuda', A.fortes.titulo, A.fortes.texto, A.fortes.pagina);
+  bloco('polvora-ajuda', 'O monopólio da pólvora', A.polvora);
+
+  const F = C.fumo;
+  html('titulo-fumo').textContent = F.titulo;
+  html('texto-fumo').innerHTML = F.texto + ' ' + cII(F.pagina);
+  epig('instrucao-fumo', F.instrucao);
+
+  const M = C.marcas;
+  html('titulo-marcas').textContent = M.titulo;
+  html('intro-marcas').innerHTML = M.intro + ' ' + cII(M.pagina);
+  tabela('tabela-marcas', [{ rotulo: 'Povo' }, { rotulo: 'A marca' }, { rotulo: 'O que os traficantes diziam' }],
+    M.linhas.map((l) => [`<b>${l.povo}</b>`, l.marca, l.reputacao]));
+
+  const G = C.agaja;
+  html('titulo-agaja').textContent = G.titulo;
+  html('texto-agaja').innerHTML = G.texto + ' ' + cII(G.pagina);
+  bloco('forca-agaja', 'Pequeno e melhor armado', G.forca);
+  bloco('polvora-agaja', 'O que o rei não sabia fabricar', G.polvora);
+  bloco('law-agaja', G.law.titulo, G.law.texto, G.law.pagina);
+  bloco('alibi-agaja', G.alibi.titulo, G.alibi.texto, G.alibi.pagina);
+  bloco('lambe', G.lambe.titulo, G.lambe.texto, G.lambe.pagina);
+  html('escala-agaja').innerHTML = G.escala;
+
+  const P = C.paradoxo;
+  html('titulo-paradoxo').textContent = P.titulo;
+  html('texto-paradoxo').innerHTML = P.texto + ' ' + cII(P.pagina);
+  epig('galveias', P.galveias);
+  bloco('cartel', P.cartel.titulo, P.cartel.texto, P.cartel.pagina);
+
+  const E = C.embaixadas;
+  html('titulo-embaixadas').textContent = E.titulo;
+  html('intro-embaixadas').innerHTML = E.intro + ' ' + cII(E.pagina);
+  const S = E.salvador1750;
+  html('titulo-salvador1750').textContent = S.titulo;
+  html('texto-salvador1750').innerHTML = S.texto;
+  bloco('presentes-1750', 'Os presentes', S.presentes);
+  bloco('volta-1750', 'A viagem de volta', S.volta);
+  html('sweet').innerHTML = `<p>${S.sweet.replace(/^James H\. Sweet: /, '')}</p><footer>James H. Sweet, historiador</footer>`;
+  const K = E.cartas;
+  html('titulo-cartas').textContent = K.titulo;
+  epig('epigrafe-adandozan', K.epigrafe);
+  html('texto-cartas').innerHTML = K.texto + ' ' + cII(K.pagina);
+  bloco('carta1810', K.carta1810.titulo,
+    K.carta1810.texto + `<br><br>${K.carta1810.trono}`, K.carta1810.pagina);
+
+  const J = C.oliveira;
+  html('titulo-oliveira').textContent = J.titulo;
+  html('texto-oliveira').innerHTML = J.texto + ' ' + cII(J.pagina);
+  html('verger-oliveira').innerHTML =
+    `<p>${J.verger.replace(/^Pierre Verger: /, '')}</p><footer>Pierre Verger</footer>`;
+  bloco('portos-oliveira', 'Os dois portos que ele fundou', J.portos);
+  bloco('prisao-oliveira', 'A prisão, e o abaixo-assinado dos negreiros', J.prisao);
+  html('titulo-economia-portos').textContent = J.economia.titulo;
+  tabela('tabela-portos', [{ rotulo: 'Critério' }, { rotulo: 'Ajudá' }, { rotulo: 'Porto Novo' }],
+    J.economia.linhas.map((l) => [l.criterio, l.ajuda, `<b>${l.porto_novo}</b>`]));
+  html('credito-portos').innerHTML = J.economia.credito + ' ' + cII(J.economia.pagina);
+  bloco('protecao-oio', 'A “cabaça” de Oió', J.economia.protecao);
+  bloco('tripulacao-cativa', C.tripulacao.titulo, C.tripulacao.texto, C.tripulacao.pagina);
+}
+
+// --- O Brookes, o Zong e a abolição (aba O Navio) ---------------------------
+let abolMontada = false;
+function montarAbolicao() {
+  if (abolMontada) return;
+  abolMontada = true;
+  const A = D.abolicao, B = A.brookes;
+
+  html('titulo-brookes').textContent = B.titulo;
+  html('intro-brookes').innerHTML = B.intro + ' ' + cII(B.pagina);
+
+  // Desenho em escala: 90 px por metro.
+  const svg = html('fig-brookes');
+  const PX = 90, W = 700, H = 350;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  texto('Cada retângulo é o espaço, em escala, reservado a uma pessoa durante os quarenta dias de travessia.',
+    { x: 14, y: 20, class: 'rotulo', 'font-size': 11.5, fill: 'var(--tinta-2)' }, svg);
+  let cx = 30;
+  B.medidas.forEach((m) => {
+    const w = m.compr_m * PX, h = m.larg_m * PX;
+    el('rect', { x: cx, y: 56, width: w, height: h, fill: 'rgba(138,47,34,.14)',
+      stroke: '#8a2f22', 'stroke-width': 1.6 }, svg);
+    texto(m.quem, { x: cx, y: 46, class: 'rotulo', 'font-size': 12.5, 'font-weight': 600 }, svg);
+    texto(m.rotulo, { x: cx, y: 56 + h + 18, class: 'rotulo', 'font-size': 11.5, fill: 'var(--tinta-2)' }, svg);
+    cx += w + 46;
+  });
+  // Pé-direito, na MESMA escala dos retângulos — 90 px por metro. Se a cota
+  // fosse comprimida para caber, a figura desmentiria o que ela promete medir.
+  const py = 172, ph = B.pe_direito.valor_m * PX;
+  el('rect', { x: 30, y: py, width: 220, height: ph, fill: 'rgba(74,96,112,.07)',
+    stroke: 'none' }, svg);
+  el('line', { x1: 30, y1: py, x2: 30, y2: py + ph, stroke: '#4a6070', 'stroke-width': 1.6 }, svg);
+  el('line', { x1: 24, y1: py, x2: 250, y2: py, stroke: '#4a6070', 'stroke-width': 1.4 }, svg);
+  el('line', { x1: 24, y1: py + ph, x2: 250, y2: py + ph, stroke: '#4a6070', 'stroke-width': 1.4 }, svg);
+  // Uma pessoa de 1,70 m, na mesma escala, encostaria no teto.
+  const hx = 150, hb = py + ph, esc = ph / 1.70;
+  el('circle', { cx: hx, cy: py + 0.14 * esc, r: 0.10 * esc, fill: '#8a2f22', opacity: .55 }, svg);
+  el('line', { x1: hx, y1: py + 0.24 * esc, x2: hx, y2: py + 0.95 * esc, stroke: '#8a2f22',
+    'stroke-width': 3.2, opacity: .55, 'stroke-linecap': 'round' }, svg);
+  el('line', { x1: hx, y1: py + 0.95 * esc, x2: hx - 0.13 * esc, y2: hb, stroke: '#8a2f22',
+    'stroke-width': 3.2, opacity: .55, 'stroke-linecap': 'round' }, svg);
+  el('line', { x1: hx, y1: py + 0.95 * esc, x2: hx + 0.13 * esc, y2: hb, stroke: '#8a2f22',
+    'stroke-width': 3.2, opacity: .55, 'stroke-linecap': 'round' }, svg);
+  el('line', { x1: hx - 0.20 * esc, y1: py + 0.62 * esc, x2: hx + 0.20 * esc, y2: py + 0.62 * esc,
+    stroke: '#8a2f22', 'stroke-width': 3.0, opacity: .55, 'stroke-linecap': 'round' }, svg);
+  texto('uma pessoa de 1,70 m', { x: hx + 0.24 * esc, y: py + 0.55 * esc, class: 'rotulo',
+    'font-size': 10.5, fill: 'var(--tinta-2)' }, svg);
+  texto(`pé-direito entre as plataformas: ${B.pe_direito.valor_m.toFixed(2).replace('.', ',')} m`,
+    { x: 262, y: py + ph / 2 - 4, class: 'rotulo', 'font-size': 12.5, 'font-weight': 600 }, svg);
+  texto('— insuficiente para caminhar ou ficar de pé com folga.',
+    { x: 262, y: py + ph / 2 + 16, class: 'rotulo', 'font-size': 11.5, fill: 'var(--tinta-2)' }, svg);
+  texto('Tudo nesta figura está na mesma escala: 90 pixels por metro.',
+    { x: 262, y: py + ph / 2 + 38, class: 'rotulo', 'font-size': 10.5, fill: 'var(--tinta-2)' }, svg);
+
+  html('cartoes-brookes').innerHTML = [
+    cartaoSimples('As dez viagens',
+      `Em 25 anos o <i>Brookes</i> transportou <b>${num(B.viagens.transportou)}</b> pessoas. Chegaram vivas ${num(B.viagens.chegaram)}. Morreram na travessia <b>${num(B.viagens.morreram)}</b> — ${B.viagens.taxa}.`, B.pagina),
+    cartaoSimples('Os quatro compartimentos',
+      `O porão era dividido em ${B.compartimentos.join(', ')}. ${B.corrente}`, B.pagina),
+    cartaoSimples('O diagrama', `${B.diagrama} ${B.necessidades}`, B.pagina),
+  ].join('');
+
+  const Z = A.zong;
+  html('titulo-zong').textContent = Z.titulo;
+  html('texto-zong').innerHTML = Z.texto + ' ' + cII(Z.pagina);
+  bloco('julgamento-zong', 'O que a Justiça decidiu', Z.julgamento);
+  bloco('nota-zong', 'A pergunta que ninguém fez', Z.nota);
+
+  const S = A.sao_jose;
+  html('titulo-sao-jose').textContent = S.titulo;
+  html('texto-sao-jose').innerHTML = S.texto + ' ' + cII(S.pagina);
+  bloco('achado-sao-jose', 'O achado de 2015', S.achado);
+
+  const K = A.campanha;
+  html('titulo-campanha').textContent = K.titulo;
+  html('texto-campanha').innerHTML = K.texto + ' ' + cII(K.pagina);
+  bloco('quakers', 'Os quakers', K.quakers);
+  bloco('newton', 'O autor de “Amazing Grace”', K.newton);
+
+  const E = A.explicacoes;
+  html('titulo-explicacoes').textContent = E.titulo;
+  tabela('tabela-explicacoes', [{ rotulo: 'A explicação' }, { rotulo: 'A tese' }, { rotulo: 'Por que não basta' }],
+    E.itens.map((i) => [`<b>${i.nome}</b>`, i.tese, i.objecao]));
+  html('fecho-explicacoes').innerHTML = E.fecho + ' ' + cII(E.pagina);
+
+  bloco('indenizacao', A.indenizacao.titulo, A.indenizacao.texto, A.indenizacao.pagina);
+  bloco('aprendizes', 'Os “aprendizes”', A.indenizacao.aprendizes);
+  bloco('frota-britanica', A.frota.titulo, A.frota.texto, A.frota.pagina);
+  bloco('bolonha', A.bolonha.titulo, A.bolonha.texto, A.bolonha.pagina);
+  html('cronologia-abolicao2').innerHTML = A.cronologia.map((c) =>
+    `<li><b>${c.ano}</b>${c.fato} ${cII(c.pagina)}</li>`).join('');
+}
+
 // --- troca de abas
 {
   const paineis = {
@@ -2559,13 +3295,16 @@ function montarMapaInterno() {
     negocio: html('painel-negocio'),
     navio: html('painel-navio'),
     escravidao: html('painel-escravidao'),
+    ouro: html('painel-ouro'),
   };
   const botoes = [...document.querySelectorAll('.aba')];
   const ir = (nome) => {
     for (const b of botoes) b.setAttribute('aria-selected', String(b.dataset.aba === nome));
     for (const [k, el2] of Object.entries(paineis)) el2.hidden = k !== nome;
     if (nome === 'escravidao') { montarMapaPopulacoes(); montarMapaBrasil(); montarMapaInterno(); }
-    else if (nome === 'origens') { montarMapaOrigens(); }
+    else if (nome === 'origens') { montarMapaOrigens(); montarCostaMina(); }
+    else if (nome === 'navio') { montarAbolicao(); }
+    else if (nome === 'ouro') { montarOuro(); }
     else if (prontoParaMedir) { descongestionar(); aplicarCamadas(); }
     if (location.hash !== '#' + nome) history.replaceState(null, '', '#' + nome);
   };

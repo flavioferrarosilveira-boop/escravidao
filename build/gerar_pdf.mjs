@@ -39,11 +39,14 @@ const pagina = await navegador.newPage({ viewport: { width: 1500, height: 1050 }
 await pagina.goto('file://' + RAIZ + 'index.html', { waitUntil: 'load' });
 await pagina.waitForTimeout(2000);
 
-// Abre a aba da escravidão para que a carta II seja construída, e volta.
-await pagina.locator('.aba[data-aba="escravidao"]').click();
-await pagina.waitForTimeout(1500);
+// Cada aba constrói os seus mapas só quando é aberta pela primeira vez.
+// Para o PDF sair completo é preciso passar por todas antes de imprimir.
+for (const aba of ['origens', 'negocio', 'navio', 'escravidao', 'ouro']) {
+  await pagina.locator(`.aba[data-aba="${aba}"]`).click();
+  await pagina.waitForTimeout(1800);
+}
 await pagina.locator('.aba[data-aba="trafico"]').click();
-await pagina.waitForTimeout(800);
+await pagina.waitForTimeout(900);
 
 await pagina.emulateMedia({ media: 'print' });
 await pagina.waitForTimeout(600);
